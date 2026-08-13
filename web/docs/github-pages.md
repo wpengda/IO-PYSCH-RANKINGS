@@ -1,49 +1,21 @@
 # Deploy to GitHub Pages
 
-## Recommended: publish the `web/` folder
+The live site is the contents of `web/` (the ranking UI), **not** the repository README.
 
-1. Push the repository to GitHub.
-2. A workflow is included at [`.github/workflows/pages.yml`](../../.github/workflows/pages.yml). It publishes `web/` on pushes to `main`/`master`.
-3. In **Settings → Pages**, set the source to **GitHub Actions**.
+## Setup
 
-If you prefer a branch deploy instead, push only the contents of `web/` to a `gh-pages` branch and set Pages to that branch root.
+1. Keep only [`.github/workflows/pages.yml`](../../.github/workflows/pages.yml). Do **not** add GitHub’s starter **“Deploy Jekyll with GitHub Pages dependencies preinstalled”** workflow — that publishes a README page at the site root and hides the ranking UI.
+2. In **Settings → Pages**, set Source to **GitHub Actions** (not “Deploy from a branch”).
+3. Push to `main`. After a green **Deploy Pages** run, the site is `https://<user>.github.io/IO-PYSCH-RANKINGS/`.
 
-### Workflow (reference)
+If the root URL still looks like a README, hard-refresh (`Ctrl+F5`) or open a private window — an older Jekyll deploy may be cached.
 
-```yaml
-name: Deploy Pages
-on:
-  push:
-    branches: [main, master]
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-concurrency:
-  group: pages
-  cancel-in-progress: true
-jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: web
-      - id: deployment
-        uses: actions/deploy-pages@v4
-```
-
-After each faculty/venue update, regenerate scores before pushing:
+## After data edits
 
 ```bash
 python pipeline/run_all.py
 ```
 
-Commit `web/data/rankings.json` so the live site stays current.
+Commit `web/data/rankings.json` before pushing so the live table stays current.
 
-Site documentation pages are served via `doc.html` (for example `doc.html?p=faq`); Markdown sources live in `web/docs/`.
+Site docs are `web/docs/`, shown at `doc.html?p=faq` (and methodology, faculty-roster, contributing).

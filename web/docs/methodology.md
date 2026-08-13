@@ -1,75 +1,87 @@
 # Methodology
 
-IO Psychology Rankings is a metrics-based ranking of U.S. and Canadian industrial-organizational (I-O) psychology programs by faculty research output in a curated set of selective journals.
+IO Psychology Rankings ranks U.S. and Canadian industrial-organizational (I-O) psychology PhD programs by faculty research output in a curated journal whitelist.
 
-It is inspired by [CSRankings](https://csrankings.org/) (selective venues + author-adjusted counts), but is independent of it. Faculty rosters are built from program websites first. After names are fixed, publications come from **Google Scholar profiles**. Scholar fetch stores the full profile; default rankings use the journal whitelist in `venues.json` and can be re-scored if that list changes. We do not identify faculty by searching bibliographic databases.
+It is inspired by [CSRankings](https://csrankings.org/) (selective venues + author-adjusted counts), but is independent of it.
+
+## Pipeline (what actually runs)
+
+1. **Roster first.** Faculty names come from each program’s official I-O page. See [faculty-roster.md](faculty-roster.md).
+2. **Attach Google Scholar IDs** from homepages/CVs (`data/faculty.csv`). We do not search bibliographic databases by name.
+3. **Fetch papers** from each person’s Google Scholar profile (`pipeline/fetch_scholar.py`). The cache stores the full profile.
+4. **Score** with `pipeline/score.py`: keep papers whose venue string matches [`data/venues.json`](../../data/venues.json), then apply 1/N credit.
+
+Default rebuild: `python pipeline/run_all.py` (extract IDs → Scholar fetch → score). Changing the journal list does **not** require a re-fetch; re-run `score.py` only.
 
 ## Who is counted
 
 - Tenure-track / full-time research faculty (assistant, associate, full professor).
-- Affiliated with an I-O psychology (or closely related) graduate program in the **United States** or **Canada**.
-- Excluded: emeritus (unless still listed as active research faculty by the program), adjunct/clinical teaching-only appointments, visiting scholars, and industry affiliates without a primary academic appointment.
+- Primary appointment in a U.S. or Canadian I-O (or closely related) graduate program.
+- Excluded: emeritus-only, adjunct/clinical/teaching-only, visitors, postdocs, students, and business-school affiliates listed only as affiliates.
 
-Faculty lists are curated from each program’s own faculty page. See [faculty-roster.md](faculty-roster.md). A person is scored after a Google Scholar ID is attached. Incomplete rosters bias scores downward.
+A person appears in the ranking after they are on the roster. **Scores are 0** until a Google Scholar ID is attached and papers are fetched. Incomplete rosters bias a school downward.
 
-## What publications count
+## What publications count (ranking scores)
 
-Only works that match **all** of the following:
+A paper counts toward the **ranking table** if it matches **all** of the following in the UI:
 
-1. Appear in a journal listed in [`data/venues.json`](../../data/venues.json).
-2. Are journal articles/reviews (editorials, comments, errata excluded) listed on the faculty member’s Google Scholar profile.
-3. Fall inside the selected publication year range in the UI (default: about the last **10** calendar years; any from–to range is supported).
+1. The Scholar venue string matches a journal in `venues.json` (longest prefix match, then a volume/year-style continuation so handbooks and similarly named outlets are not counted).
+2. The journal is checked in **Journals**. Default is **core only** (23 I-O / methods titles, including *Industrial and Organizational Psychology*). Cross-boundary titles are off until you check them or choose **all**.
+3. The publication year is inside the Years slider (default ≈ last 10 calendar years). Papers with no year count only when the slider covers the full available span.
 
-Cross-boundary outlets are tagged `cross_boundary` and are **off by default** (Journals → **core only**). That set includes management journals (*AMJ*, *AMR*, *ASQ*, *JoM*, *JMS*, *MS*, *Organization Science*, *Organization Studies*, *SMJ*, *Human Relations*, *AOM Annals*, *AOM Discoveries*) and broad psychology / HCI outlets (*JPSP*, *Psychological Science*, *Psychological Bulletin*, *Computers in Human Behavior*). Core I-O and methods journals (including *JOOP*, *Work & Stress*, *IJSA*, *Psychological Methods*, *AMPPS*) count by default. Use the **Journals** dialog to include individual titles or choose **all**.
+Scholar profiles include whatever Google Scholar lists (articles, and sometimes commentaries or other items). There is **no separate editorial/errata filter** beyond journal matching.
+
+### Core vs cross-boundary
+
+**Core (on by default):** JAP, Personnel Psychology, OBHDP, JOB, Leadership Quarterly, ORM, JVB, JOHP, HRM, HRMJ, HRMR, Work Aging and Retirement, JBP, EJWOP, JOOP, *Industrial and Organizational Psychology*, Work & Stress, IJSA, Applied Psychology, Organizational Psychology Review, Group & Organization Management, Psychological Methods, AMPPS.
+
+**Cross-boundary (off by default):** AMJ, AMR, ASQ, Journal of Management, JMS, Management Science, Organization Science, Organization Studies, SMJ, Human Relations, AOM Annals, AOM Discoveries, JPSP, Psychological Science, Psychological Bulletin, Computers in Human Behavior.
 
 ## Credit: adjusted counts (1/N)
 
-Each counted paper contributes **1 / N**, where **N** is the number of authors on the paper. Credit does not depend on author order or affiliation of co-authors. This matches the CSRankings incentive: adding honorary authors cannot increase anyone’s share above 1/N.
+Each counted paper contributes **1 / N**, where **N** is the number of authors on the Scholar record. Author order and co-author affiliation do not matter.
 
 ## Switchable metrics
 
-Scores are computed on the **same** filtered paper set:
+All metrics use the **same** filtered paper set (Years + Journals + Areas):
 
-| Key | Definition |
+| UI label | Definition |
 | --- | --- |
-| `adj_count` | Sum of 1/N over counted papers (default sort) |
-| `raw_count` | Number of counted papers (unadjusted; diagnostic only) |
-| `citations` | Sum of Google Scholar citation counts for those papers (diagnostic; default ranking is still `adj_count`) |
-| `weighted_if` | Sum of Clarivate Journal Impact Factors over counted papers (**no** 1/N). Uses `impact_factor` in `venues.json`. |
+| Adjusted count (1/N) | Sum of 1/N (default sort) |
+| Raw paper count | Number of counted papers |
+| Citations | Sum of Google Scholar citation counts for those papers |
+| Impact factor (sum) | Sum of curated Clarivate JIF (`impact_factor` in `venues.json`) per paper — **not** 1/N |
+| … / faculty | The metric above divided by rostered faculty count |
 
-Institution score defaults to the **sum** across affiliated faculty. The UI can also show a **per-faculty** average (`metric / faculty_count`).
+Institution scores are the **sum** across rostered faculty. Per-faculty options divide by that roster size (including faculty with zero counted papers in the current filters).
 
-Citation- and impact-weighted views are provided for exploration. Default ranking uses `adj_count` because citation metrics are easier to manipulate and change quickly.
+Default ranking is adjusted count because citation and IF sums move quickly and are easier to game.
 
-## Areas (taxonomy)
+## Faculty labels (pills)
 
-Canonical areas live in [`data/taxonomy.json`](../../data/taxonomy.json) and drive **both** faculty pills and paper tags.
+These are **independent of Years / Journals / Areas**. Changing those controls must not change the pills.
 
-| Domain | Areas |
-| --- | --- |
-| Industrial / Personnel | Selection, Training, Personality |
-| Organizational | Leadership, Motivation/Attitudes, Teams, Diversity, Careers |
-| Technology & Future of Work | Technology |
-| Occupational Health | OHP |
-| Methods & General | Methods, General |
+For each faculty member, pills come from **all of their papers in the full whitelist** (every journal in `venues.json`, all years):
 
-### Faculty labels
+- Paper areas skip `General`.
+- Order: paper count per area (high → low); ties by 1/N, then name.
+- If Scholar/homepage interests were mapped in `data/faculty_areas.json` and that area has no whitelist papers, the area can still appear, **last**.
 
-1. Pull self-described interests primarily from **Google Scholar** author chips (SerpAPI), plus homepage “Research Interests” blocks when parseable (`pipeline/fetch_interests.py`).
-2. Map free-text phrases onto the taxonomy via `aliases` (`pipeline/build_taxonomy.py` → `data/faculty_areas.json`).
-3. Display pills are based on **all** of that faculty member’s papers in the **full** journal whitelist (every venue in `venues.json`, all years)—**not** the currently selected Journals / Years / Areas filters. Order is by paper count per area (high → low; ties by 1/N credit). Scholar/homepage areas with no whitelist pubs still appear, but last. Changing journal checkboxes must not change these labels.
+Optional interest mapping (`pipeline/fetch_interests.py`) is **not** part of `run_all.py`. It is only a fallback when whitelist papers do not yield a non-General area.
 
-### Paper labels
+## Paper labels (used by the Areas filter)
 
-Broad journals: title keywords from `taxonomy.json` → `paper_keywords` (same area names). Specialty journals (LQ, JOHP, ORM) keep a single venue area. Rebuild with `python pipeline/score.py` after taxonomy edits.
+- Broad journals: areas from **title keywords** in `taxonomy.json`.
+- Specialty journals with a single venue area (e.g. LQ, JOHP, ORM): keep that area, and add extra title-keyword hits.
+- No title hit: `General` if the venue allows it.
 
-Area filters in the UI restrict the paper set to papers whose assigned areas intersect the selection (not merely venue tags).
+The sidebar **Areas** filter keeps a paper if **any** of its assigned areas is selected. It does not filter by the faculty pills.
 
 ## Transparency and limitations
 
-- Coverage in v1 is a **pilot** subset of U.S./Canadian programs; incomplete faculty lists bias scores downward for missing schools.
-- Papers come only from Google Scholar profiles tied to a named faculty member. We do not search bibliographic databases by name.
-- Relative `weight` values in `venues.json` are coarse ranking aids, not official JIFs. The **Impact factor (sum)** metric uses curated Clarivate JIF values (`impact_factor`; see `impact_factor_note` in that file).
-- This site does **not** claim to measure teaching quality, student outcomes, or overall program prestige.
+- v1 is a **pilot**. Incomplete faculty lists bias scores downward.
+- Papers come only from Google Scholar profiles. Coverage follows Scholar (missing IDs, missing papers, messy venue strings).
+- Relative `weight` in `venues.json` is unused for the live IF metric. **Impact factor (sum)** uses curated Clarivate JIF values in that file (not a live JCR pull).
+- This site does **not** measure teaching quality, student outcomes, or overall prestige.
 
-The site footer shows the month/year of the latest score rebuild (`generated_at` in `web/data/rankings.json`).
+The footer shows the month/year of the latest score rebuild (`generated_at` in `web/data/rankings.json`).

@@ -2,7 +2,7 @@
 
 ## What is this site?
 
-A transparent, metrics-based ranking of U.S. and Canadian industrial-organizational (I-O) psychology programs. Faculty lists come from program websites; papers come from Google Scholar profiles, restricted to a journal whitelist.
+A metrics-based ranking of U.S. and Canadian industrial-organizational (I-O) psychology PhD programs. Faculty lists come from program websites; papers come from Google Scholar profiles, then a journal whitelist.
 
 ## Is this an official SIOP or APA ranking?
 
@@ -10,37 +10,41 @@ No. It is an independent open project. It does not represent SIOP, APA, or any u
 
 ## Why journals instead of conferences?
 
-Unlike computer science, I-O psychology primarily evaluates research through peer-reviewed journals. The venue whitelist therefore focuses on journals.
+I-O psychology primarily evaluates research through peer-reviewed journals, so the whitelist is journals only.
 
 ## What does “adjusted count” mean?
 
-Each paper contributes `1 / N`, where `N` is the number of authors. This is the default ranking metric.
+Each paper contributes `1 / N`, where `N` is the number of authors. That is the default ranking metric.
 
-## Why can I also sort by citations or weighted impact?
+## Why can I also sort by citations or impact factor?
 
-They are useful for exploration, but citation-based numbers change quickly and can be gamed. Prefer adjusted counts for stable comparisons.
+Those views are for exploration. Citation and IF numbers change quickly and can be gamed. Prefer adjusted counts for stable comparisons.
+
+**Impact factor (sum)** adds the journal’s curated Clarivate JIF once per paper (no 1/N).
 
 ## Why are some well-known faculty missing?
 
-v1 is a **pilot**. Faculty lists are incomplete by design until programs are fully curated. Open a contribution PR to add people (see [contributing.md](contributing.md)).
+v1 is a **pilot**. Rosters are incomplete until each program is fully curated. See [contributing.md](contributing.md).
 
 ## Why might a paper be missing?
 
-Common reasons:
-
-- The journal is not on the whitelist in `data/venues.json`
-- The faculty member has no Google Scholar ID on file (or the paper is missing from their Scholar profile)
-- The paper falls outside the selected year range
-- The journal is unchecked in the **Journals** dialog (cross-boundary titles are off by default)
+- The journal is not in [`data/venues.json`](../../data/venues.json), or the Scholar venue string did not match (handbooks, similarly named outlets, truncated titles).
+- The faculty member has no Google Scholar ID, or the paper is missing from their Scholar profile.
+- The paper is outside the Years slider.
+- The journal is unchecked in **Journals** (cross-boundary titles are off by default).
 
 ## Are Academy of Management Journal and Journal of Management included?
 
-They are tagged as **cross-boundary** and off by default (Journals → **core only**). Open **Journals** and check those titles, or choose **all**, to count them.
+They are **cross-boundary** and off by default (**Journals → core only**). Check those titles, or choose **all**.
+
+## How are the area pills next to a name chosen?
+
+From **all** of that person’s whitelist-journal papers, **all years**. Years / Journals / Areas filters do not change the pills. See [methodology.md](methodology.md).
 
 ## How often is data refreshed?
 
-Whenever someone re-runs `python pipeline/run_all.py` and publishes the updated `web/data/rankings.json`. Automated monthly refresh can be added later via GitHub Actions.
+When someone re-runs `python pipeline/run_all.py` and commits `web/data/rankings.json`.
 
 ## Can I reproduce the numbers?
 
-Yes. All faculty IDs, venues, and pipeline code are in this repository. See the README for the exact commands.
+Yes. Faculty IDs, venues, and pipeline code are in this repository. See the README.
