@@ -1,0 +1,5061 @@
+{
+  "generated_from": "C:/Users/WangP/Documents/PW/IO_Psyc_Index/pipeline/cache/interests/faculty_interests.json",
+  "taxonomy_version": 1,
+  "faculty": [
+    {
+      "faculty_id": "ackerman_phillip",
+      "name": "Phillip L. Ackerman",
+      "phrases": [
+        "Bio"
+      ],
+      "areas": [],
+      "unmapped": [
+        "Bio"
+      ],
+      "source": {
+        "scholar": false,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "adair_wendi",
+      "name": "Wendi L. Adair",
+      "phrases": [
+        "cross-cultural negotiation and teamwork",
+        "intercultural workplace communication",
+        "Negotiation and Conflict Management Research",
+        "and",
+        "Academy of Management Discoveries"
+      ],
+      "areas": [
+        "Diversity",
+        "Motivation/Attitudes",
+        "Teams"
+      ],
+      "unmapped": [
+        "and",
+        "Academy of Management Discoveries"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "albritton_betsy",
+      "name": "Betsy Albritton",
+      "phrases": [
+        "Leadership, emotions, quantitative research methods, natural language processing"
+      ],
+      "areas": [
+        "Leadership",
+        "Motivation/Attitudes",
+        "Methods",
+        "Technology"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "alexander_leo",
+      "name": "Leo Alexander III",
+      "phrases": [
+        "personnel selection",
+        "adverse impact",
+        "psychometrics",
+        "machine learning",
+        "quantitative methods",
+        "Edit Your Profile"
+      ],
+      "areas": [
+        "Selection",
+        "Methods",
+        "Technology"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "allen_tammy",
+      "name": "Tammy D. Allen",
+      "phrases": [
+        "work-family",
+        "careers",
+        "remote work",
+        "occupational health"
+      ],
+      "areas": [
+        "OHP",
+        "Careers"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "arthur_winfred",
+      "name": "Winfred Arthur Jr.",
+      "phrases": [
+        "Testing and Assessment",
+        "Personnel Psychology",
+        "Individual and Team Training and Development"
+      ],
+      "areas": [
+        "Selection",
+        "Training",
+        "Teams"
+      ],
+      "unmapped": [
+        "Personnel Psychology"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "askew_kevin",
+      "name": "Kevin Askew",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "ayman_roya",
+      "name": "Roya Ayman",
+      "phrases": [
+        "Leadership"
+      ],
+      "areas": [
+        "Leadership"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "baker_nathan",
+      "name": "Nathan Baker",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "banks_george",
+      "name": "George C. Banks",
+      "phrases": [
+        "Organizational behavior",
+        "Human Resources",
+        "Leadership and teams",
+        "Ethics",
+        "Research methods and statistics (e.g., meta-analysis, open science)"
+      ],
+      "areas": [
+        "Selection",
+        "Leadership",
+        "Teams",
+        "Motivation/Attitudes",
+        "Methods"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "barratt_clare",
+      "name": "Clare L. Barratt",
+      "phrases": [
+        "Social support in the workplace",
+        "work stress and recovery",
+        "counterproductive work behavior",
+        "high-risk occupations"
+      ],
+      "areas": [
+        "OHP",
+        "Motivation/Attitudes"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "bauer_kristina",
+      "name": "Kristina N. Bauer",
+      "phrases": [
+        "gamified learning",
+        "transfer of training",
+        "self-regulated learning"
+      ],
+      "areas": [
+        "Training"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "bazzoli_andrea",
+      "name": "Andrea Bazzoli",
+      "phrases": [
+        "Occupational Health Psychology",
+        "Job Insecurity",
+        "Financial Stress",
+        "Workplace Safety",
+        "Psychometrics"
+      ],
+      "areas": [
+        "OHP",
+        "Methods"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "beck_james",
+      "name": "James W. Beck",
+      "phrases": [
+        "apomixis",
+        "hybridization",
+        "Solidago",
+        "Student co-authors are underlined"
+      ],
+      "areas": [],
+      "unmapped": [
+        "apomixis",
+        "hybridization",
+        "Solidago",
+        "Student co-authors are underlined"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "beier_margaret",
+      "name": "Margaret E. Beier",
+      "phrases": [
+        "Industrial and Organizational Psychology",
+        "Attention",
+        "Working Memory",
+        "Aging",
+        "Education and Training",
+        "Individual Differences",
+        "Training",
+        "Occupational Health"
+      ],
+      "areas": [
+        "Personality",
+        "Careers",
+        "Training",
+        "OHP"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "benson_alex",
+      "name": "Alex J. Benson",
+      "phrases": [
+        "group dynamics",
+        "leadership",
+        "followership"
+      ],
+      "areas": [
+        "Teams",
+        "Leadership"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "bergman_mindy",
+      "name": "Mindy E. Bergman",
+      "phrases": [
+        "Occupational Health Psychology",
+        "I/O Psychology Doctoral Program Admission Criteria",
+        "I/O Psychology Doctoral Program Structure",
+        "I/O Program Documents",
+        "I/O PhD Students"
+      ],
+      "areas": [
+        "OHP"
+      ],
+      "unmapped": [
+        "I/O Program Documents"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "bisbey_tiffany",
+      "name": "Tiffany M. Bisbey",
+      "phrases": [
+        "teamwork",
+        "training and development",
+        "safety",
+        "workplace resilience",
+        "Team performance and collaboration",
+        "Organizational safety"
+      ],
+      "areas": [
+        "Teams",
+        "Training",
+        "OHP",
+        "Motivation/Attitudes"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "bixter_michael",
+      "name": "Michael T. Bixter",
+      "phrases": [
+        "Assistant Professor"
+      ],
+      "areas": [],
+      "unmapped": [
+        "Assistant Professor"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "blanchard_anita",
+      "name": "Anita L. Blanchard",
+      "phrases": [
+        "Groups",
+        "Community",
+        "Organizational Science"
+      ],
+      "areas": [
+        "Teams"
+      ],
+      "unmapped": [
+        "Organizational Science"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "block_caryn",
+      "name": "Caryn J. Block",
+      "phrases": [
+        "Stereotypes in the workplace"
+      ],
+      "areas": [
+        "Diversity"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "bobocel_ramona",
+      "name": "D. Ramona Bobocel",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "bourdage_joshua",
+      "name": "Joshua S. Bourdage",
+      "phrases": [
+        "Job Interviews",
+        "Technology and Hiring",
+        "Artificial Intelligence",
+        "Personality",
+        "Impression Management",
+        "Job Interviews and Technology",
+        "Influence, and Leadership",
+        "At a broad level",
+        "Personality and Individual Differences",
+        "In addition to these areas",
+        "I study the influence that personality plays in the workplace. Previously"
+      ],
+      "areas": [
+        "Selection",
+        "Technology",
+        "Personality",
+        "Leadership"
+      ],
+      "unmapped": [
+        "At a broad level",
+        "In addition to these areas"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "bowling_nathan",
+      "name": "Nathan A. Bowling",
+      "phrases": [
+        "Occupational Health Psychology",
+        "Job Satisfaction",
+        "Counterproductive Work Behavior",
+        "Careless"
+      ],
+      "areas": [
+        "OHP",
+        "Motivation/Attitudes"
+      ],
+      "unmapped": [
+        "Careless"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "bragger_jennifer",
+      "name": "Jennifer D. Bragger",
+      "phrases": [
+        "job interview",
+        "escalation of commitment",
+        "work family conflict",
+        "faith at work",
+        "leadership"
+      ],
+      "areas": [
+        "Selection",
+        "Motivation/Attitudes",
+        "Leadership"
+      ],
+      "unmapped": [
+        "work family conflict",
+        "faith at work"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "britt_thomas",
+      "name": "Thomas W. Britt",
+      "phrases": [
+        "occupational health psychology",
+        "resilience",
+        "stigma",
+        "Leadership, emotions, quantitative research methods, natural language processing"
+      ],
+      "areas": [
+        "OHP",
+        "Diversity",
+        "Leadership",
+        "Motivation/Attitudes",
+        "Methods",
+        "Technology"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "brooks_margaret",
+      "name": "Margaret E. Brooks",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "brooks_ricardo",
+      "name": "Ricardo Brooks",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "brossoit_rebecca",
+      "name": "Rebecca Brossoit",
+      "phrases": [
+        "Occupational Health Psychology",
+        "Sleep",
+        "Well-Being",
+        "Nature and Health",
+        "Workplace Interventions",
+        "Interventions",
+        "Work-Life Interface",
+        "Safety",
+        "Nature"
+      ],
+      "areas": [
+        "OHP"
+      ],
+      "unmapped": [
+        "Workplace Interventions",
+        "Interventions",
+        "Nature"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "brown_douglas",
+      "name": "Douglas J. Brown",
+      "phrases": [
+        "Leadership",
+        "Organizational Behavior",
+        "Abusive Supervision"
+      ],
+      "areas": [
+        "Leadership"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "bruklee_valentina",
+      "name": "Valentina Bruk-Lee",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "brummel_bradley",
+      "name": "Bradley J. Brummel",
+      "phrases": [
+        "Executive Coaching",
+        "Leader Development",
+        "Personality",
+        "Employee Engagement",
+        "Sexual Harassment"
+      ],
+      "areas": [
+        "Leadership",
+        "Personality",
+        "Motivation/Attitudes",
+        "Diversity"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "burns_gary",
+      "name": "Gary N. Burns",
+      "phrases": [
+        "Personality",
+        "Assessment",
+        "Selection",
+        "HR Practices",
+        "Learning Theory and Instructional Design",
+        "Testing and Assessment",
+        "Educational Research and Evaluation"
+      ],
+      "areas": [
+        "Personality",
+        "Selection",
+        "Training",
+        "Methods"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "caird_jeff",
+      "name": "Jeff K. Caird",
+      "phrases": [
+        "Clinical Research, and more, making a real-life impact with our researchers"
+      ],
+      "areas": [],
+      "unmapped": [
+        "Clinical Research",
+        "and more",
+        "making a real-life impact with our researchers"
+      ],
+      "source": {
+        "scholar": false,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "calderwood_charles",
+      "name": "Charles Calderwood",
+      "phrases": [
+        "Occupational Health",
+        "Work Stress",
+        "Work / Life Issues",
+        "Technology"
+      ],
+      "areas": [
+        "OHP",
+        "Technology"
+      ],
+      "unmapped": [
+        "Work / Life Issues"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "canevello_amy",
+      "name": "Amy Canevello",
+      "phrases": [
+        "social psychology"
+      ],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "carter_nathan",
+      "name": "Nathan T. Carter",
+      "phrases": [
+        "Personality and Individual Differences",
+        "Psychometrics",
+        "History of Applied Psychology",
+        "Decision-making in Selection & Attraction"
+      ],
+      "areas": [
+        "Personality",
+        "Methods",
+        "Selection"
+      ],
+      "unmapped": [
+        "History of Applied Psychology"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "cartersowell_adrienne",
+      "name": "Adrienne R. Carter-Sowell",
+      "phrases": [
+        "Diversity",
+        "Ostracism Experiences",
+        "Social Needs",
+        "Well-Being"
+      ],
+      "areas": [
+        "Diversity",
+        "OHP"
+      ],
+      "unmapped": [
+        "Ostracism Experiences",
+        "Social Needs"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "carver_sarah",
+      "name": "Sarah Carver",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "chang_daisy",
+      "name": "Chu-Hsiang (Daisy) Chang",
+      "phrases": [
+        "stress",
+        "violence",
+        "politics",
+        "meta-analysis"
+      ],
+      "areas": [
+        "OHP",
+        "Methods"
+      ],
+      "unmapped": [
+        "violence",
+        "politics"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "chang_yingyi",
+      "name": "Yingyi Chang",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "chao_georgia",
+      "name": "Georgia T. Chao",
+      "phrases": [
+        "organizational socialization",
+        "team effectiveness",
+        "young adults"
+      ],
+      "areas": [
+        "Teams"
+      ],
+      "unmapped": [
+        "organizational socialization",
+        "young adults"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "chatterjee_dia",
+      "name": "Dia Chatterjee",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "chebangore_yuliya",
+      "name": "Yuliya Cheban-Gore",
+      "phrases": [
+        "Selection",
+        "Assessment",
+        "Research Methods",
+        "Multivariate Statistics"
+      ],
+      "areas": [
+        "Selection",
+        "Methods"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "chen_xiaowen",
+      "name": "Xiaowen Chen",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "cheung_hokwan",
+      "name": "Ho Kwan Cheung",
+      "phrases": [
+        "Quantitative Psychology",
+        "Psychometrics",
+        "Statistical Methods",
+        "Methodology",
+        "Quantitative Methods"
+      ],
+      "areas": [
+        "Methods"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "christiansen_neil",
+      "name": "Neil D. Christiansen",
+      "phrases": [
+        "Effects of Personality on Work Strain: The role of job-person fit",
+        "= 97) to those of incumbents ("
+      ],
+      "areas": [
+        "Personality"
+      ],
+      "unmapped": [
+        "= 97) to those of incumbents ("
+      ],
+      "source": {
+        "scholar": false,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "chung_helen",
+      "name": "Helen Chung",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "chungyan_greg",
+      "name": "Greg A. Chung-Yan",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "clark_malissa",
+      "name": "Malissa A. Clark",
+      "phrases": [
+        "workaholism",
+        "burnout",
+        "stressors",
+        "work-family",
+        "affect/emotions"
+      ],
+      "areas": [
+        "OHP",
+        "Motivation/Attitudes"
+      ],
+      "unmapped": [
+        "workaholism"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "cohencharash_yochi",
+      "name": "Yochi Cohen-Charash",
+      "phrases": [
+        "Emotions",
+        "envy",
+        "justice",
+        "unconscious influences on behavior and decisions"
+      ],
+      "areas": [
+        "Motivation/Attitudes",
+        "Leadership"
+      ],
+      "unmapped": [
+        "envy"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "coleman_peter",
+      "name": "Peter T. Coleman",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "collins_joey",
+      "name": "Joey Collins",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "connelly_shane",
+      "name": "Shane Connelly",
+      "phrases": [
+        "Leadership",
+        "emotions",
+        "ethics",
+        "ideological groups"
+      ],
+      "areas": [
+        "Leadership",
+        "Motivation/Attitudes",
+        "Teams"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "converse_patrick",
+      "name": "Patrick D. Converse",
+      "phrases": [
+        "Learning Theory and Instructional Design",
+        "Testing and Assessment",
+        "Educational Research and Evaluation"
+      ],
+      "areas": [
+        "Training",
+        "Selection",
+        "Methods"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "craig_bart",
+      "name": "S. Bartholomew Craig",
+      "phrases": [
+        "leadership"
+      ],
+      "areas": [
+        "Leadership"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "crain_tori",
+      "name": "Tori L. Crain",
+      "phrases": [
+        "Work-Family Interface",
+        "Sleep",
+        "Occupational Health Psychology"
+      ],
+      "areas": [
+        "OHP"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "dalal_dev",
+      "name": "Dev K. Dalal",
+      "phrases": [
+        "Judgment and Decision Making",
+        "Item Response Theory",
+        "Measurement Theory",
+        "Research Methods"
+      ],
+      "areas": [
+        "Motivation/Attitudes",
+        "Methods"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "dalal_reeshad",
+      "name": "Reeshad S. Dalal",
+      "phrases": [
+        "Counterproductive Behavior",
+        "Citizenship Behavior",
+        "Decision Making",
+        "Person-Situation Interactions",
+        "Within-Person Variability",
+        "Personal website"
+      ],
+      "areas": [
+        "Motivation/Attitudes"
+      ],
+      "unmapped": [
+        "Counterproductive Behavior",
+        "Citizenship Behavior",
+        "Person-Situation Interactions",
+        "Within-Person Variability",
+        "Personal website"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "davenport_meghan",
+      "name": "Meghan K. Davenport",
+      "phrases": [
+        "lifespan development",
+        "successful aging at work",
+        "workplace motivation",
+        "individual differences"
+      ],
+      "areas": [
+        "Careers",
+        "Motivation/Attitudes",
+        "Personality"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "day_arla",
+      "name": "Arla L. Day",
+      "phrases": [
+        "Health Psychology",
+        "Stress",
+        "Health and Wellness",
+        "Occupational Health and Disease"
+      ],
+      "areas": [
+        "OHP"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "day_eric",
+      "name": "Eric A. Day",
+      "phrases": [
+        "Research & Application"
+      ],
+      "areas": [],
+      "unmapped": [
+        "Research & Application"
+      ],
+      "source": {
+        "scholar": false,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "dickson_marcus",
+      "name": "Marcus W. Dickson",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "digiovanni_ana",
+      "name": "Ana M. DiGiovanni",
+      "phrases": [
+        "close relationships",
+        "emotion regulation",
+        "social support",
+        "quantitative methods",
+        "longitudinal data"
+      ],
+      "areas": [
+        "Motivation/Attitudes",
+        "OHP",
+        "Methods"
+      ],
+      "unmapped": [
+        "close relationships",
+        "longitudinal data"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "dik_bryan",
+      "name": "Bryan J. Dik",
+      "phrases": [
+        "Vocational psychology",
+        "calling",
+        "meaningful work",
+        "workplace spirituality"
+      ],
+      "areas": [
+        "Careers",
+        "Motivation/Attitudes"
+      ],
+      "unmapped": [
+        "workplace spirituality"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "dishop_christopher",
+      "name": "Christopher R. Dishop",
+      "phrases": [
+        "Organizational Behavior",
+        "Management"
+      ],
+      "areas": [
+        "Motivation/Attitudes"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "durik_amanda",
+      "name": "Amanda M. Durik",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "eaton_asia",
+      "name": "Asia A. Eaton",
+      "phrases": [
+        "psychology and human rights"
+      ],
+      "areas": [],
+      "unmapped": [
+        "psychology and human rights"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "ehrhart_mark",
+      "name": "Mark G. Ehrhart",
+      "phrases": [
+        "Organizational Climate",
+        "Leadership",
+        "Organizational Citizenship Behavior",
+        "Implementation Science"
+      ],
+      "areas": [
+        "Motivation/Attitudes",
+        "Leadership"
+      ],
+      "unmapped": [
+        "Implementation Science"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "elicker_joelle",
+      "name": "Joelle D. Elicker",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "endacott_camille",
+      "name": "Camille G. Endacott",
+      "phrases": [
+        "organizational communication",
+        "identities",
+        "identification",
+        "technology",
+        "artificial intelligence"
+      ],
+      "areas": [
+        "Motivation/Attitudes",
+        "Diversity",
+        "Technology"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "espinoza_jose",
+      "name": "Jose A. Espinoza",
+      "phrases": [
+        "purpose",
+        "motivation",
+        "well-being",
+        "personality",
+        "person-centered analyses"
+      ],
+      "areas": [
+        "Motivation/Attitudes",
+        "OHP",
+        "Personality"
+      ],
+      "unmapped": [
+        "purpose",
+        "person-centered analyses"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "evans_blair",
+      "name": "M. Blair Evans",
+      "phrases": [
+        "Small groups",
+        "exercise psychology",
+        "sport psychology",
+        "disability sport"
+      ],
+      "areas": [
+        "Teams"
+      ],
+      "unmapped": [
+        "exercise psychology",
+        "sport psychology",
+        "disability sport"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "fan_jinyan",
+      "name": "Jinyan Fan",
+      "phrases": [
+        "AI/ML in talent assessment",
+        "faking and cheating on selection tests"
+      ],
+      "areas": [
+        "Selection"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "finkelstein_lisa",
+      "name": "Lisa M. Finkelstein",
+      "phrases": [
+        "Aging",
+        "Mentoring"
+      ],
+      "areas": [
+        "Careers"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "fisher_gwen",
+      "name": "Gwenith G. Fisher",
+      "phrases": [
+        "Aging workforce issues",
+        "occupational health psychology",
+        "work/life balance",
+        "research methods"
+      ],
+      "areas": [
+        "Careers",
+        "OHP",
+        "Methods"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "fleming_mark",
+      "name": "Mark Fleming",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "fletcher_keaton",
+      "name": "Keaton A. Fletcher",
+      "phrases": [
+        "Leadership",
+        "Teams",
+        "Occupational Health Psychology",
+        "Social Stress"
+      ],
+      "areas": [
+        "Leadership",
+        "Teams",
+        "OHP"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "folberg_abigail",
+      "name": "Abigail M. Folberg",
+      "phrases": [
+        "stereotyping and prejudice",
+        "prejudice reduction",
+        "diversity initiatives",
+        "racism",
+        "sexism"
+      ],
+      "areas": [
+        "Diversity"
+      ],
+      "unmapped": [
+        "stereotyping and prejudice",
+        "prejudice reduction",
+        "racism",
+        "sexism"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "ford_kevin",
+      "name": "J. Kevin Ford",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "foster_lori",
+      "name": "Lori Foster",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "foti_roseanne",
+      "name": "Roseanne J. Foti",
+      "phrases": [
+        "leadership"
+      ],
+      "areas": [
+        "Leadership"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "french_kimberly",
+      "name": "Kimberly A. French",
+      "phrases": [
+        "Industrial and Organizational Psychology"
+      ],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "fritzsche_barbara",
+      "name": "Barbara A. Fritzsche",
+      "phrases": [
+        "industrial and organizational psychology"
+      ],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "gardner_danielle",
+      "name": "Danielle M. Gardner",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "gibbons_alyssa",
+      "name": "Alyssa M. Gibbons",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "gilin_debra",
+      "name": "Debra Gilin",
+      "phrases": [
+        "Organizational conflict and negotiation",
+        "Quantitative methods"
+      ],
+      "areas": [
+        "Motivation/Attitudes",
+        "Methods"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "gill_harjinder",
+      "name": "Harjinder Gill",
+      "phrases": [
+        "Trust"
+      ],
+      "areas": [
+        "Motivation/Attitudes"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "gillespie_michael",
+      "name": "Michael A. Gillespie",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "godollei_anna",
+      "name": "Anna Godollei",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "goldstein_harold",
+      "name": "Harold W. Goldstein",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "gonzalez_manuel",
+      "name": "Manuel F. Gonzalez",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "gooty_janaki",
+      "name": "Janaki Gooty",
+      "phrases": [
+        "Leadership",
+        "Emotions and Well-being",
+        "Multi-level Methods"
+      ],
+      "areas": [
+        "Leadership",
+        "OHP",
+        "Methods"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "gossett_loril",
+      "name": "Loril M. Gossett",
+      "phrases": [
+        "Organizational Identification",
+        "Control",
+        "Resistance",
+        "Voice"
+      ],
+      "areas": [
+        "Motivation/Attitudes"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "graham_baylor",
+      "name": "Baylor Graham",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "grand_james",
+      "name": "James A. Grand",
+      "phrases": [
+        "Teams",
+        "Multilevel Theory",
+        "Dynamics",
+        "Complex Systems",
+        "Complex dynamic systems",
+        "Team functioning & cognition",
+        "Learning & decision-making",
+        "Personnel testing/selection",
+        "Computational modeling & simulation",
+        "Bayesian analytic methods"
+      ],
+      "areas": [
+        "Teams",
+        "Methods",
+        "Training",
+        "Selection"
+      ],
+      "unmapped": [
+        "Complex Systems",
+        "Complex dynamic systems",
+        "Computational modeling & simulation"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "grandey_alicia",
+      "name": "Alicia A. Grandey",
+      "phrases": [
+        "Emotion regulation",
+        "emotional labor",
+        "mistreatment",
+        "burnout",
+        "diversity"
+      ],
+      "areas": [
+        "Motivation/Attitudes",
+        "OHP",
+        "Diversity"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "grant_ryan",
+      "name": "Ryan Grant",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "gray_cheryl",
+      "name": "Cheryl E. Gray",
+      "phrases": [
+        "occupational health psychology",
+        "social support",
+        "unhelpful help"
+      ],
+      "areas": [
+        "OHP"
+      ],
+      "unmapped": [
+        "unhelpful help"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "griffin_daniel",
+      "name": "Daniel Griffin",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "griffith_richard",
+      "name": "Richard L. Griffith",
+      "phrases": [
+        "Learning Theory and Instructional Design",
+        "Testing and Assessment",
+        "Educational Research and Evaluation"
+      ],
+      "areas": [
+        "Training",
+        "Selection",
+        "Methods"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "grossman_rebecca",
+      "name": "Rebecca Grossman",
+      "phrases": [
+        "Child Clinical Psychology",
+        "Anxiety Disorders",
+        "Evidence Based Practice",
+        "Selection",
+        "Research Methods",
+        "Multivariate Statistics"
+      ],
+      "areas": [
+        "Selection",
+        "Methods"
+      ],
+      "unmapped": [
+        "Child Clinical Psychology",
+        "Anxiety Disorders",
+        "Evidence Based Practice"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "halpert_jane",
+      "name": "Jane A. Halpert",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "hanges_paul",
+      "name": "Paul J. Hanges",
+      "phrases": [
+        "Leadership",
+        "Culture",
+        "HR practices",
+        "Fairness",
+        "Diversity and Fairness",
+        "Personnel Selection and Testing",
+        "Cross-Cultural Leadership",
+        "Ethical Leadership/Toxic Leadership",
+        "Dynamic Systems & Processes",
+        "Research Methodology"
+      ],
+      "areas": [
+        "Leadership",
+        "OHP",
+        "Selection",
+        "Diversity",
+        "Methods"
+      ],
+      "unmapped": [
+        "Fairness",
+        "Dynamic Systems & Processes"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "harriswatson_alex",
+      "name": "Alexandra Harris-Watson",
+      "phrases": [
+        "Personality",
+        "Psychometrics",
+        "Teams",
+        "Leadership",
+        "Human-Agent Teams",
+        "onflict management",
+        "goals and motivation",
+        "cultural diversity",
+        "mindsets",
+        "difficult conversations"
+      ],
+      "areas": [
+        "Personality",
+        "Methods",
+        "Teams",
+        "Leadership",
+        "Motivation/Attitudes",
+        "Diversity"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "harvey_richard",
+      "name": "Richard D. Harvey",
+      "phrases": [
+        "Racial Identity",
+        "Organizational Identity",
+        "Prejudice",
+        "Oppression",
+        "Program Evaluation",
+        "and program evaluation"
+      ],
+      "areas": [
+        "Diversity"
+      ],
+      "unmapped": [
+        "Organizational Identity",
+        "Prejudice",
+        "Oppression",
+        "Program Evaluation",
+        "and program evaluation"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "hausdorf_peter",
+      "name": "Peter A. Hausdorf",
+      "phrases": [
+        "employee selection",
+        "worker health and well-being",
+        "organizational change"
+      ],
+      "areas": [
+        "Selection",
+        "OHP"
+      ],
+      "unmapped": [
+        "organizational change"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "he_yaqing",
+      "name": "Yaqing He",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "he_yimin",
+      "name": "Yimin He",
+      "phrases": [
+        "Occupational Health",
+        "Organizational Climate",
+        "Social Network",
+        "Quantitative Methods"
+      ],
+      "areas": [
+        "OHP",
+        "Motivation/Attitudes",
+        "Methods"
+      ],
+      "unmapped": [
+        "Social Network"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "hebl_mikki",
+      "name": "Michelle R. Hebl",
+      "phrases": [
+        "diversity discrimination"
+      ],
+      "areas": [
+        "Diversity"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "heggestad_eric",
+      "name": "Eric D. Heggestad",
+      "phrases": [
+        "Personality",
+        "Selection",
+        "Measurement",
+        "Talent Assessment",
+        "Social Skills"
+      ],
+      "areas": [
+        "Personality",
+        "Selection",
+        "Methods"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "hernandez_ivan",
+      "name": "Ivan Hernandez",
+      "phrases": [
+        "Computational Research Methods",
+        "Text Analysis",
+        "Social Networks",
+        "Group Processes"
+      ],
+      "areas": [
+        "Methods"
+      ],
+      "unmapped": [
+        "Text Analysis",
+        "Social Networks",
+        "Group Processes"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "hewlin_patricia",
+      "name": "Patricia Faison Hewlin",
+      "phrases": [
+        "authenticity",
+        "silence",
+        "leadership"
+      ],
+      "areas": [
+        "Leadership"
+      ],
+      "unmapped": [
+        "authenticity",
+        "silence"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "hickman_louis",
+      "name": "Louis Hickman",
+      "phrases": [
+        "Personnel assessment",
+        "interpersonal perception",
+        "machine learning",
+        "natural language processing"
+      ],
+      "areas": [
+        "Selection",
+        "Technology"
+      ],
+      "unmapped": [
+        "interpersonal perception"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "highhouse_scott",
+      "name": "Scott Highhouse",
+      "phrases": [
+        "judgment and decision making"
+      ],
+      "areas": [
+        "Motivation/Attitudes"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "hillebrandt_annika",
+      "name": "Annika Hillebrandt",
+      "phrases": [
+        "Organizational Justice",
+        "Ethics",
+        "Emotions"
+      ],
+      "areas": [
+        "Motivation/Attitudes"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "hoff_kevin",
+      "name": "Kevin A. Hoff",
+      "phrases": [
+        "vocational interests",
+        "personality",
+        "career assessment",
+        "career success",
+        "automation"
+      ],
+      "areas": [
+        "Careers",
+        "Personality",
+        "Selection",
+        "Technology"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "hoffman_brian",
+      "name": "Brian J. Hoffman",
+      "phrases": [
+        "Leadership",
+        "assessment centers",
+        "performance management"
+      ],
+      "areas": [
+        "Leadership",
+        "Selection",
+        "Motivation/Attitudes"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "holmvall_camilla",
+      "name": "Camilla M. Holmvall",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "hou_daphne",
+      "name": "Daphne Xin Hou",
+      "phrases": [
+        "Vocational Interests",
+        "Careers",
+        "Future of Work & Technology",
+        "Research Methods"
+      ],
+      "areas": [
+        "Careers",
+        "Technology",
+        "Methods"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "houlfort_nathalie",
+      "name": "Nathalie Houlfort",
+      "phrases": [
+        "work-family balance",
+        "work motivation",
+        "passion"
+      ],
+      "areas": [
+        "OHP",
+        "Motivation/Attitudes"
+      ],
+      "unmapped": [
+        "passion"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "hsu_ning",
+      "name": "Ning Hsu",
+      "phrases": [
+        "leadership",
+        "personality",
+        "gender",
+        "individual differences"
+      ],
+      "areas": [
+        "Leadership",
+        "Personality",
+        "Diversity"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "hughes_ian",
+      "name": "Ian M. Hughes",
+      "phrases": [
+        "Employee Well-Being",
+        "Work-Nonwork",
+        "Occupational Health Psychology",
+        "I/O Psychology Doctoral Program Admission Criteria",
+        "I/O Psychology Doctoral Program Structure",
+        "I/O Program Documents",
+        "I/O PhD Students"
+      ],
+      "areas": [
+        "OHP"
+      ],
+      "unmapped": [
+        "Work-Nonwork",
+        "I/O Program Documents"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "hunter_samuel",
+      "name": "Samuel T. Hunter",
+      "phrases": [
+        "Leadership",
+        "Innovation",
+        "Creativity",
+        "Malevolence"
+      ],
+      "areas": [
+        "Leadership",
+        "Motivation/Attitudes"
+      ],
+      "unmapped": [
+        "Malevolence"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "jason_kendra",
+      "name": "Kendra Jason",
+      "phrases": [
+        "Social Inequality",
+        "Work and Organizations",
+        "Stratification",
+        "Aging",
+        "Health Disparities"
+      ],
+      "areas": [
+        "Diversity",
+        "Careers"
+      ],
+      "unmapped": [
+        "Work and Organizations"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "kaplan_seth",
+      "name": "Seth A. Kaplan",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "katz_ian",
+      "name": "Ian M. Katz",
+      "phrases": [
+        "Feedback",
+        "Meta-Analysis",
+        "Employee Green Behavior"
+      ],
+      "areas": [
+        "Motivation/Attitudes",
+        "Methods"
+      ],
+      "unmapped": [
+        "Employee Green Behavior"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "keith_melissa",
+      "name": "Melissa G. Keith",
+      "phrases": [
+        "Creativity",
+        "Sampling"
+      ],
+      "areas": [
+        "Motivation/Attitudes"
+      ],
+      "unmapped": [
+        "Sampling"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "kelloway_kevin",
+      "name": "E. Kevin Kelloway",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "kenworthy_jared",
+      "name": "Jared B. Kenworthy",
+      "phrases": [
+        "Social Psychology",
+        "Intergroup Relations",
+        "Group Dynamics",
+        "Group Creativity",
+        "Research",
+        "Overview",
+        "Cyber Psychology",
+        "Behavioral Neuroscience",
+        "Cognitive Psychology",
+        "Developmental Psychology",
+        "Health Psychology",
+        "Industrial and Organizational Psychology",
+        "Social and Personality Psychology"
+      ],
+      "areas": [
+        "Teams",
+        "Motivation/Attitudes",
+        "Methods",
+        "Technology",
+        "OHP",
+        "Personality"
+      ],
+      "unmapped": [
+        "Intergroup Relations",
+        "Behavioral Neuroscience",
+        "Cognitive Psychology",
+        "Developmental Psychology"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "kim_jeongjin",
+      "name": "JeongJin Kim",
+      "phrases": [
+        "organizational behavior"
+      ],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "king_danielle",
+      "name": "Danielle King Jordan",
+      "phrases": [
+        "Employee Resilience",
+        "Well-being Resources",
+        "Racial Identity",
+        "Voice"
+      ],
+      "areas": [
+        "OHP",
+        "Diversity",
+        "Motivation/Attitudes"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "king_eden",
+      "name": "Eden B. King",
+      "phrases": [
+        "diversity",
+        "organization",
+        "work",
+        "family",
+        "Diversity & Inclusion",
+        "Work-Family",
+        "Occupational Health Psychology",
+        "Workplace Discrimination",
+        "Health Disparities"
+      ],
+      "areas": [
+        "Diversity",
+        "OHP"
+      ],
+      "unmapped": [
+        "organization",
+        "work"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "kocum_lucie",
+      "name": "Lucie Kocum",
+      "phrases": [
+        "Psychosocial Risk Factors at Work",
+        "Work Reintegration",
+        "Mixed-Methods"
+      ],
+      "areas": [
+        "Methods"
+      ],
+      "unmapped": [
+        "Psychosocial Risk Factors at Work",
+        "Work Reintegration"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "kowalski_robin",
+      "name": "Robin Kowalski",
+      "phrases": [
+        "Department of Psychology",
+        "cyberbullying",
+        "Leadership, emotions, quantitative research methods, natural language processing"
+      ],
+      "areas": [
+        "Technology",
+        "Leadership",
+        "Motivation/Attitudes",
+        "Methods"
+      ],
+      "unmapped": [
+        "Department of Psychology"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "kozlowski_steve",
+      "name": "Steve W. J. Kozlowski",
+      "phrases": [
+        "Multilevel Organizational Theory",
+        "Team Effectiveness",
+        "Team Leadership",
+        "Learning",
+        "Adaptability"
+      ],
+      "areas": [
+        "Methods",
+        "Teams",
+        "Leadership",
+        "Training"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "kramer_william",
+      "name": "William S. Kramer",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "kreamer_liana",
+      "name": "Liana Kreamer",
+      "phrases": [
+        "Meetings",
+        "Leadership",
+        "Teams",
+        "Gender",
+        "Voice",
+        "Learning Theory and Instructional Design",
+        "Testing and Assessment",
+        "Educational Research and Evaluation"
+      ],
+      "areas": [
+        "Teams",
+        "Leadership",
+        "Diversity",
+        "Motivation/Attitudes",
+        "Training",
+        "Selection",
+        "Methods"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "kronberg_annekathrin",
+      "name": "Anne-Kathrin Kronberg",
+      "phrases": [
+        "Work and Labor Markets",
+        "Organizations",
+        "Race Class and Gender",
+        "Quantitative and Qualitative Research"
+      ],
+      "areas": [
+        "Careers",
+        "Diversity"
+      ],
+      "unmapped": [
+        "Organizations",
+        "Quantitative and Qualitative Research"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "kuncel_nathan",
+      "name": "Nathan R. Kuncel",
+      "phrases": [
+        "Admissions",
+        "Personnel Selection and Staffing",
+        "Judgment and Decision Making",
+        "Critical Thinking",
+        "Test Faking"
+      ],
+      "areas": [
+        "Selection",
+        "Motivation/Attitudes"
+      ],
+      "unmapped": [
+        "Admissions",
+        "Critical Thinking",
+        "Test Faking"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "kung_franki",
+      "name": "Franki Y. H. Kung",
+      "phrases": [
+        "Conflict Management",
+        "Lay Beliefs",
+        "Cultural Diversity",
+        "Inclusion",
+        "Self-Regulation",
+        "onflict management",
+        "goals and motivation",
+        "mindsets",
+        "difficult conversations"
+      ],
+      "areas": [
+        "Motivation/Attitudes",
+        "Diversity"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "kunstman_jonathan",
+      "name": "Jonathan W. Kunstman",
+      "phrases": [
+        "Social Psychology"
+      ],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "kuykendall_lauren",
+      "name": "Lauren E. Kuykendall",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "kwantes_catherine",
+      "name": "Catherine T. Kwantes",
+      "phrases": [
+        "Organizational Culture",
+        "International Management"
+      ],
+      "areas": [],
+      "unmapped": [
+        "Organizational Culture",
+        "International Management"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "lahuis_david",
+      "name": "David M. LaHuis",
+      "phrases": [
+        "Quantitative Psychology"
+      ],
+      "areas": [
+        "Methods"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "landers_richard",
+      "name": "Richard N. Landers",
+      "phrases": [
+        "artificial intelligence",
+        "gamification",
+        "psychological assessment"
+      ],
+      "areas": [
+        "Technology",
+        "Selection"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "lazarte_alejandro",
+      "name": "Alejandro A. Lazarte",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "lebreton_james",
+      "name": "James M. LeBreton",
+      "phrases": [
+        "Organizational Behavior",
+        "Human Resources",
+        "Personality",
+        "Applied Psychology",
+        "Applied Statistics",
+        "Psychometrics",
+        "Multilevel Modeling",
+        "Regression",
+        "Individual Differences",
+        "Employee Selection & Staffing",
+        "Work Motivation & Morale"
+      ],
+      "areas": [
+        "Selection",
+        "Personality",
+        "Methods",
+        "Motivation/Attitudes"
+      ],
+      "unmapped": [
+        "Applied Psychology"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "lee_juseob",
+      "name": "Juseob Lee",
+      "phrases": [
+        "Occupational Stress",
+        "Recovery from Work",
+        "Recruitment",
+        "Future of Work"
+      ],
+      "areas": [
+        "OHP",
+        "Selection",
+        "Technology"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "lee_kibeom",
+      "name": "Kibeom Lee",
+      "phrases": [
+        "Clinical Research, and more, making a real-life impact with our researchers"
+      ],
+      "areas": [],
+      "unmapped": [
+        "Clinical Research",
+        "and more",
+        "making a real-life impact with our researchers"
+      ],
+      "source": {
+        "scholar": false,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "lee_philseok",
+      "name": "Philseok Lee",
+      "phrases": [
+        "industrial and organizational psychology"
+      ],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "lenoble_chelsea",
+      "name": "Chelsea LeNoble",
+      "phrases": [
+        "Occupational Health Psychology",
+        "Organizational Stress",
+        "Employee Recovery and Resilience"
+      ],
+      "areas": [
+        "OHP"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "levy_paul",
+      "name": "Paul E. Levy",
+      "phrases": [
+        "Feedback",
+        "Performance Management",
+        "Coaching",
+        "Development"
+      ],
+      "areas": [
+        "Motivation/Attitudes",
+        "Leadership"
+      ],
+      "unmapped": [
+        "Coaching"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "liang_yijue",
+      "name": "Yijue Liang",
+      "phrases": [
+        "occupational well-being",
+        "sexual harassment",
+        "bystander intervention"
+      ],
+      "areas": [
+        "OHP",
+        "Diversity"
+      ],
+      "unmapped": [
+        "bystander intervention"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "litson_kaylee",
+      "name": "Kaylee Litson",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "lukacik_edenraye",
+      "name": "Eden-Raye Lukacik",
+      "phrases": [
+        "Selection",
+        "Recruitment",
+        "Video Interviews",
+        "Impression Management",
+        "Faking"
+      ],
+      "areas": [
+        "Selection",
+        "Personality"
+      ],
+      "unmapped": [
+        "Faking"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "macnamara_brooke",
+      "name": "Brooke N. Macnamara",
+      "phrases": [
+        "achievement",
+        "skill",
+        "expertise",
+        "onflict management",
+        "goals and motivation",
+        "cultural diversity",
+        "mindsets",
+        "difficult conversations"
+      ],
+      "areas": [
+        "Motivation/Attitudes",
+        "Training",
+        "Diversity"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "martinez_larry",
+      "name": "Larry R. Martinez",
+      "phrases": [
+        "Diversity",
+        "Discrimination",
+        "Stigma",
+        "Allies",
+        "Workplace"
+      ],
+      "areas": [
+        "Diversity"
+      ],
+      "unmapped": [
+        "Allies",
+        "Workplace"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "martini_kate",
+      "name": "Kate Martini",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "martinraugh_michelle",
+      "name": "Michelle P. Martín-Raugh",
+      "phrases": [
+        "Research",
+        "Overview",
+        "Cyber Psychology",
+        "Behavioral Neuroscience",
+        "Cognitive Psychology",
+        "Developmental Psychology",
+        "Health Psychology",
+        "Industrial and Organizational Psychology",
+        "Social and Personality Psychology"
+      ],
+      "areas": [
+        "Methods",
+        "Technology",
+        "OHP",
+        "Personality"
+      ],
+      "unmapped": [
+        "Behavioral Neuroscience",
+        "Cognitive Psychology",
+        "Developmental Psychology"
+      ],
+      "source": {
+        "scholar": false,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "mcabee_samuel",
+      "name": "Samuel T. McAbee",
+      "phrases": [
+        "Personnel Selection",
+        "Psychometrics",
+        "Individual Differences"
+      ],
+      "areas": [
+        "Selection",
+        "Methods",
+        "Personality"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "mccarthy_randy",
+      "name": "Randy J. McCarthy",
+      "phrases": [
+        "social psychology"
+      ],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "mcgee_heather",
+      "name": "Heather M. McGee",
+      "phrases": [
+        "Radiation Oncology",
+        "Tumor Immunology",
+        "Cancer Immunotherapy"
+      ],
+      "areas": [],
+      "unmapped": [
+        "Radiation Oncology",
+        "Tumor Immunology",
+        "Cancer Immunotherapy"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "mcgonagle_alyssa",
+      "name": "Alyssa McGonagle",
+      "phrases": [
+        "Occupational Health",
+        "Worker Stress",
+        "Safety"
+      ],
+      "areas": [
+        "OHP"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "meade_adam",
+      "name": "Adam W. Meade",
+      "phrases": [
+        "psychometrics"
+      ],
+      "areas": [
+        "Methods"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "mehta_paras",
+      "name": "Paras D. Mehta",
+      "phrases": [
+        "Multilevel Structural Equation Modeling",
+        "xxM: software for n-level multilevel structural equation modeling"
+      ],
+      "areas": [
+        "Methods"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "melsonsilimon_arturia",
+      "name": "Arturia Melson-Silimon",
+      "phrases": [
+        "workplace experiences",
+        "stereotypes",
+        "navigating stigma"
+      ],
+      "areas": [
+        "Diversity"
+      ],
+      "unmapped": [
+        "workplace experiences"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "menard_julie",
+      "name": "Julie Menard",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "meunier_sophie",
+      "name": "Sophie Meunier",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "meyer_john",
+      "name": "John P. Meyer",
+      "phrases": [
+        "work motivation and engagement",
+        "work attitudes and behavior",
+        "leadership",
+        "employee well-being",
+        "Profile",
+        "A Concise Introduction to Workplace Commitments",
+        "(Edward Elgar, 2025), co-author of",
+        "Commitment in the Workplace: Theory",
+        "Research and Application",
+        "(Sage Publications, 1997) and",
+        "Best Practices: Employee Retention",
+        "(Carswell, 2000), editor of",
+        "The Handbook of Employee Commitment",
+        "(Edward Elgar, 2016), and co-editor of",
+        "Commitment in Organizations: Accumulated Wisdom and New Directions",
+        "(Routledge, 2009), and"
+      ],
+      "areas": [
+        "Motivation/Attitudes",
+        "Leadership",
+        "OHP"
+      ],
+      "unmapped": [
+        "work attitudes and behavior",
+        "Profile",
+        "(Edward Elgar",
+        "2025)",
+        "co-author of",
+        "Research and Application",
+        "(Sage Publications",
+        "1997) and",
+        "Best Practices: Employee Retention",
+        "(Carswell",
+        "2000)",
+        "editor of",
+        "(Edward Elgar",
+        "2016)",
+        "and co-editor of",
+        "(Routledge",
+        "2009)",
+        "and"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "michel_jesse",
+      "name": "Jesse S. Michel",
+      "phrases": [
+        "Work and Family"
+      ],
+      "areas": [],
+      "unmapped": [
+        "Work and Family"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "miller_corey",
+      "name": "Corey E. Miller",
+      "phrases": [
+        "Leadership",
+        "Generational Research",
+        "Professional Identity"
+      ],
+      "areas": [
+        "Leadership"
+      ],
+      "unmapped": [
+        "Generational Research",
+        "Professional Identity"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "min_hanyi",
+      "name": "Hanyi Min",
+      "phrases": [
+        "measurement",
+        "individual difference",
+        "big data"
+      ],
+      "areas": [
+        "Methods",
+        "Personality"
+      ],
+      "unmapped": [
+        "big data"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "morris_scott",
+      "name": "Scott B. Morris",
+      "phrases": [
+        "Employee Selection",
+        "Employment Discrimination",
+        "Statistics",
+        "Psychometrics"
+      ],
+      "areas": [
+        "Selection",
+        "Diversity",
+        "Methods"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "murry_adam",
+      "name": "Adam T. Murry",
+      "phrases": [
+        "research methods",
+        "First Nations",
+        "Indigenous",
+        "Clinical Research, and more, making a real-life impact with our researchers"
+      ],
+      "areas": [
+        "Methods"
+      ],
+      "unmapped": [
+        "First Nations",
+        "Indigenous",
+        "Clinical Research",
+        "and more",
+        "making a real-life impact with our researchers"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "narayan_anupama",
+      "name": "Anupama Narayan",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "newman_daniel",
+      "name": "Daniel A. Newman",
+      "phrases": [
+        "Emotional Intelligence",
+        "Leadership & Gender",
+        "Race in HR (Adverse Impact)",
+        "Work Engagement",
+        "Narcissism",
+        "Edit Your Profile"
+      ],
+      "areas": [
+        "Motivation/Attitudes",
+        "Leadership",
+        "Diversity",
+        "Selection"
+      ],
+      "unmapped": [
+        "Narcissism"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "nguyen_tin",
+      "name": "Tin Nguyen",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "nolan_kevin",
+      "name": "Kevin P. Nolan",
+      "phrases": [
+        "Selection",
+        "Research Methods",
+        "Multivariate Statistics"
+      ],
+      "areas": [
+        "Selection",
+        "Methods"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "noumair_debra",
+      "name": "Debra A. Noumair",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "nye_christopher",
+      "name": "Christopher D. Nye",
+      "phrases": [
+        "psychological measurement",
+        "employee selection",
+        "personality",
+        "workplace deviance",
+        "organizational research methods"
+      ],
+      "areas": [
+        "Methods",
+        "Selection",
+        "Personality"
+      ],
+      "unmapped": [
+        "workplace deviance"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "obrien_kimberly",
+      "name": "Kimberly E. O'Brien",
+      "phrases": [
+        "return to top of page"
+      ],
+      "areas": [],
+      "unmapped": [
+        "return to top of page"
+      ],
+      "source": {
+        "scholar": false,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "offermann_lynn",
+      "name": "Lynn R. Offermann",
+      "phrases": [
+        "Leadership and followership",
+        "Teams",
+        "Diversity issues",
+        "Organizational processes and influence"
+      ],
+      "areas": [
+        "Leadership",
+        "Teams",
+        "Diversity"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "olenick_jeffrey",
+      "name": "Jeffrey Olenick",
+      "phrases": [
+        "teamwork",
+        "motivation",
+        "human learning",
+        "methods"
+      ],
+      "areas": [
+        "Teams",
+        "Motivation/Attitudes",
+        "Training",
+        "Methods"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "oneill_thomas",
+      "name": "Thomas A. O'Neill",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "ones_deniz",
+      "name": "Deniz S. Ones",
+      "phrases": [
+        "Talent Acquisition",
+        "Assessment",
+        "Employee Selection",
+        "Personality",
+        "Cognitive Ability"
+      ],
+      "areas": [
+        "Selection",
+        "Personality"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "outland_neal",
+      "name": "Neal Outland",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "paolettihatcher_jensine",
+      "name": "Jensine Paoletti-Hatcher",
+      "phrases": [
+        "Occupational health psychology",
+        "Work-family",
+        "Psychoneuroimmunology"
+      ],
+      "areas": [
+        "OHP"
+      ],
+      "unmapped": [
+        "Psychoneuroimmunology"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "payne_stephanie",
+      "name": "Stephanie C. Payne",
+      "phrases": [
+        "Job Attitudes",
+        "Occupational Health",
+        "Team and Leadership",
+        "Individual Differences"
+      ],
+      "areas": [
+        "Motivation/Attitudes",
+        "OHP",
+        "Leadership",
+        "Teams",
+        "Personality"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "peng_yisheng",
+      "name": "Yisheng Peng",
+      "phrases": [
+        "Aging and older workers' issues",
+        "Stressors & stress coping",
+        "Emotion regulation",
+        "Workplace"
+      ],
+      "areas": [
+        "Careers",
+        "OHP",
+        "Motivation/Attitudes"
+      ],
+      "unmapped": [
+        "Workplace"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "perry_elissa",
+      "name": "Elissa L. Perry",
+      "phrases": [
+        "Diversity and inclusion",
+        "sexual harassment",
+        "discrimination"
+      ],
+      "areas": [
+        "Diversity"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "phetmisy_cassandra",
+      "name": "Cassandra Phetmisy",
+      "phrases": [
+        "workplace resilience",
+        "financial stress",
+        "job stressors",
+        "discrimination",
+        "Financial and Economic Stressors",
+        "Organizational Pay (e.g., amount, timing, volatility)",
+        "Stress and Wellbeing",
+        "Resilience and Motivation"
+      ],
+      "areas": [
+        "OHP",
+        "Diversity",
+        "Motivation/Attitudes"
+      ],
+      "unmapped": [
+        "Organizational Pay (e.g.",
+        "amount",
+        "timing",
+        "volatility)"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "pindek_shani",
+      "name": "Shani Pindek",
+      "phrases": [
+        "Occupational Health Psychology",
+        "Selection",
+        "Research Methods",
+        "Multivariate Statistics"
+      ],
+      "areas": [
+        "OHP",
+        "Selection",
+        "Methods"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "powell_deborah",
+      "name": "Deborah M. Powell",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "prasad_josh",
+      "name": "Joshua J. Prasad",
+      "phrases": [
+        "Industrial and Organizational Psychology"
+      ],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "prewett_matthew",
+      "name": "Matthew S. Prewett",
+      "phrases": [
+        "Team performance regulation",
+        "Team personality composition",
+        "Teamwork training",
+        "Technology in work",
+        "return to top of page"
+      ],
+      "areas": [
+        "Motivation/Attitudes",
+        "Teams",
+        "Personality",
+        "Training",
+        "Technology"
+      ],
+      "unmapped": [
+        "return to top of page"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "provostsavard_yanick",
+      "name": "Yanick Provost Savard",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "pury_cynthia",
+      "name": "Cynthia Pury",
+      "phrases": [
+        "Courage",
+        "Positive Psychology",
+        "Leadership, emotions, quantitative research methods, natural language processing"
+      ],
+      "areas": [
+        "Leadership",
+        "Motivation/Attitudes",
+        "Methods",
+        "Technology"
+      ],
+      "unmapped": [
+        "Courage",
+        "Positive Psychology"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "rafacz_sharlet",
+      "name": "Sharlet D. Rafacz",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "randall_jason",
+      "name": "Jason G. Randall",
+      "phrases": [
+        "Self-regulation",
+        "Training",
+        "Personnel Selection"
+      ],
+      "areas": [
+        "Motivation/Attitudes",
+        "Training",
+        "Selection"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "rauvola_shelly",
+      "name": "R. Shelly Rauvola",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "raymark_patrick",
+      "name": "Patrick Raymark",
+      "phrases": [
+        "Leadership, emotions, quantitative research methods, natural language processing"
+      ],
+      "areas": [
+        "Leadership",
+        "Motivation/Attitudes",
+        "Methods",
+        "Technology"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "reed_brent",
+      "name": "Brent Reed",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "reichin_sydney",
+      "name": "Sydney L. Reichin",
+      "phrases": [
+        "Workplace Deviance",
+        "Personality",
+        "Psychometrics",
+        "Security"
+      ],
+      "areas": [
+        "Personality",
+        "Methods",
+        "OHP"
+      ],
+      "unmapped": [
+        "Workplace Deviance"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "reiterpalmon_roni",
+      "name": "Roni Reiter-Palmon",
+      "phrases": [
+        "creativity",
+        "innovation",
+        "teams"
+      ],
+      "areas": [
+        "Motivation/Attitudes",
+        "Teams"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "reyes_denise",
+      "name": "Denise L. Reyes",
+      "phrases": [
+        "leadership training",
+        "diversity",
+        "workplace rejection"
+      ],
+      "areas": [
+        "Training",
+        "Diversity",
+        "OHP"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "robertson_melissa",
+      "name": "Melissa M. Robertson",
+      "phrases": [
+        "Developmental Relationships",
+        "Mentoring",
+        "Training and Development",
+        "Inclusion",
+        "Attachment"
+      ],
+      "areas": [
+        "Careers",
+        "Training",
+        "Diversity"
+      ],
+      "unmapped": [
+        "Developmental Relationships",
+        "Attachment"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "roch_sylvia",
+      "name": "Sylvia G. Roch",
+      "phrases": [
+        "performance management",
+        "performance appraisal",
+        "organizational justice"
+      ],
+      "areas": [
+        "Motivation/Attitudes"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "rogelberg_steven",
+      "name": "Steven G. Rogelberg",
+      "phrases": [
+        "Organizational science",
+        "organizational behavior"
+      ],
+      "areas": [],
+      "unmapped": [
+        "Organizational science"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "rosopa_patrick",
+      "name": "Patrick J. Rosopa",
+      "phrases": [
+        "Applied Statistics",
+        "Research Methods",
+        "Leadership, emotions, quantitative research methods, natural language processing"
+      ],
+      "areas": [
+        "Methods",
+        "Leadership",
+        "Motivation/Attitudes",
+        "Technology"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "roulin_nicolas",
+      "name": "Nicolas Roulin",
+      "phrases": [
+        "selection",
+        "interview",
+        "impression management",
+        "faking",
+        "cyber-vetting"
+      ],
+      "areas": [
+        "Selection",
+        "Personality",
+        "Technology"
+      ],
+      "unmapped": [
+        "faking"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "rudolph_cort",
+      "name": "Cort W. Rudolph",
+      "phrases": [
+        "Work & Aging",
+        "Lifespan Development",
+        "Occupational Health Psychology",
+        "Performance Appraisal",
+        "Diversity & Inclusion in Organization"
+      ],
+      "areas": [
+        "Careers",
+        "OHP",
+        "Motivation/Attitudes",
+        "Diversity"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "rupp_deborah",
+      "name": "Deborah E. Rupp",
+      "phrases": [
+        "Employment Discrimination",
+        "Organizational Justice",
+        "Corporate Social Responsibility"
+      ],
+      "areas": [
+        "Diversity",
+        "Motivation/Attitudes"
+      ],
+      "unmapped": [
+        "Corporate Social Responsibility"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "sabat_isaac",
+      "name": "Isaac E. Sabat",
+      "phrases": [
+        "Stigma",
+        "Disclosure",
+        "Workplace Diversity"
+      ],
+      "areas": [
+        "Diversity"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "sabin_edward",
+      "name": "Edward J. Sabin",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "sackett_paul",
+      "name": "Paul R. Sackett",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "saef_rachel",
+      "name": "Rachel Saef",
+      "phrases": [
+        "Personality",
+        "Individual Differences",
+        "Organizational Justice",
+        "Stress & Well-Being",
+        "PSYC 332 - Personality Psychology",
+        "PSYC 471 - Industrial-Organizational Psychology",
+        "PSYC 615 - Personnel Psychology"
+      ],
+      "areas": [
+        "Personality",
+        "Motivation/Attitudes",
+        "OHP"
+      ],
+      "unmapped": [
+        "PSYC 471 - Industrial-Organizational Psychology",
+        "PSYC 615 - Personnel Psychology"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "sagarin_brad",
+      "name": "Brad J. Sagarin",
+      "phrases": [
+        "Social influence",
+        "resistance to persuasion",
+        "evolutionary psychology",
+        "human sexuality",
+        "statistics and research methods"
+      ],
+      "areas": [
+        "Leadership",
+        "Motivation/Attitudes",
+        "Methods"
+      ],
+      "unmapped": [
+        "evolutionary psychology",
+        "human sexuality"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "salas_eduardo",
+      "name": "Eduardo Salas",
+      "phrases": [
+        "team training",
+        "safety culture",
+        "human factors",
+        "teamwork"
+      ],
+      "areas": [
+        "Training",
+        "OHP",
+        "Teams"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "salter_nicholas",
+      "name": "Nicholas P. Salter",
+      "phrases": [
+        "workplace diversity inclusion",
+        "Selection",
+        "Research Methods",
+        "Multivariate Statistics"
+      ],
+      "areas": [
+        "Diversity",
+        "Selection",
+        "Methods"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "santuzzi_alecia",
+      "name": "Alecia M. Santuzzi",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "sawhney_gargi",
+      "name": "Gargi Sawhney",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "saxena_mahima",
+      "name": "Mahima Saxena",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "schattke_kaspar",
+      "name": "Kaspar Philipp Schattke",
+      "phrases": [
+        "work motivation",
+        "goal disengagement",
+        "mindfulness",
+        "greenwashing",
+        "flow experience"
+      ],
+      "areas": [
+        "Motivation/Attitudes"
+      ],
+      "unmapped": [
+        "mindfulness",
+        "greenwashing",
+        "flow experience"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "scherbaum_charles",
+      "name": "Charles A. Scherbaum",
+      "phrases": [
+        "intelligence",
+        "item response theory",
+        "research methods",
+        "measurement",
+        "self-efficacy"
+      ],
+      "areas": [
+        "Methods"
+      ],
+      "unmapped": [
+        "intelligence",
+        "self-efficacy"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "schmidt_aaron",
+      "name": "Aaron M. Schmidt",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "scott_cliff",
+      "name": "Cliff Scott",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "sessa_valerie",
+      "name": "Valerie I. Sessa",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "shahanidenning_comila",
+      "name": "Comila Shahani-Denning",
+      "phrases": [
+        "Selection",
+        "Research Methods",
+        "Multivariate Statistics"
+      ],
+      "areas": [
+        "Selection",
+        "Methods"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "sheets_tilman",
+      "name": "Tilman L. Sheets",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "shoss_mindy",
+      "name": "Mindy K. Shoss",
+      "phrases": [
+        "Future of Work",
+        "Occupational Health Psychology",
+        "Job Insecurity",
+        "Adaptive Performance",
+        "Counterproductive Work Behavior"
+      ],
+      "areas": [
+        "Technology",
+        "OHP",
+        "Motivation/Attitudes"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "shuffler_marissa",
+      "name": "Marissa Shuffler",
+      "phrases": [
+        "Team Leadership",
+        "Team Building",
+        "Team Training",
+        "Multiteam Systems",
+        "Team Development",
+        "Leadership, emotions, quantitative research methods, natural language processing"
+      ],
+      "areas": [
+        "Leadership",
+        "Teams",
+        "Training",
+        "Motivation/Attitudes",
+        "Methods",
+        "Technology"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "silver_elisabeth",
+      "name": "Elisabeth Silver",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "simkins_susan",
+      "name": "Susan J. Simkins",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "sinclair_robert",
+      "name": "Robert R. Sinclair",
+      "phrases": [
+        "Occupational Health Psychology",
+        "Leadership, emotions, quantitative research methods, natural language processing"
+      ],
+      "areas": [
+        "OHP",
+        "Leadership",
+        "Motivation/Attitudes",
+        "Methods",
+        "Technology"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "siuta_rose",
+      "name": "Rose L. Siuta",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "smith_claire",
+      "name": "Claire E. Smith",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "smith_nicholas",
+      "name": "Nicholas A. Smith",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "snell_andrea",
+      "name": "Andrea F. Snell",
+      "phrases": [
+        "Industrial and Organizational Psychology"
+      ],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "snyder_lori",
+      "name": "Lori Anderson Snyder",
+      "phrases": [
+        "Environmental Economics",
+        "Policy Analysis"
+      ],
+      "areas": [],
+      "unmapped": [
+        "Environmental Economics",
+        "Policy Analysis"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "sonhing_leanne",
+      "name": "Leanne S. Son Hing",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "spence_jeffrey",
+      "name": "Jeffrey R. Spence",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "stanley_david",
+      "name": "David J. Stanley",
+      "phrases": [
+        "reliability",
+        "statistics",
+        "replication",
+        "commitment",
+        "Workplace attitudes",
+        "Replication crisis",
+        "Quantitative methods",
+        "Groups and teams"
+      ],
+      "areas": [
+        "Methods",
+        "Motivation/Attitudes",
+        "Teams"
+      ],
+      "unmapped": [
+        "reliability",
+        "replication",
+        "Workplace attitudes",
+        "Replication crisis"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "stark_stephen",
+      "name": "Stephen Stark",
+      "phrases": [
+        "psychometrics",
+        "item response theory",
+        "computerized adaptive testing",
+        "differential item functioning",
+        "personality"
+      ],
+      "areas": [
+        "Methods",
+        "Personality"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "steelejohnson_debra",
+      "name": "Debra Steele-Johnson",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "steelman_lisa",
+      "name": "Lisa A. Steelman",
+      "phrases": [
+        "feedback, gender and leadership, employee engagement and wellbeing"
+      ],
+      "areas": [
+        "Motivation/Attitudes",
+        "Leadership",
+        "Diversity",
+        "OHP"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "stuhlmacher_alice",
+      "name": "Alice F. Stuhlmacher",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "su_shiyang",
+      "name": "Shiyang Su",
+      "phrases": [
+        "Psychometrics",
+        "Occupational Health Psychology",
+        "Item Response Theory",
+        "Longitudinal Modeling"
+      ],
+      "areas": [
+        "Methods",
+        "OHP"
+      ],
+      "unmapped": [
+        "Longitudinal Modeling"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "sun_tianjun",
+      "name": "Tianjun Sun",
+      "phrases": [
+        "personnel selection",
+        "individual differences",
+        "research methods",
+        "applied psychometrics",
+        "cross-cultural psychology"
+      ],
+      "areas": [
+        "Selection",
+        "Personality",
+        "Methods",
+        "Diversity"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "svyantek_dan",
+      "name": "Dan J. Svyantek",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "tay_louis",
+      "name": "Louis Tay",
+      "phrases": [
+        "Well-being",
+        "Character",
+        "Vocational Interests",
+        "Measurement",
+        "Machine Learning",
+        "Data Science"
+      ],
+      "areas": [
+        "OHP",
+        "Personality",
+        "Careers",
+        "Methods",
+        "Technology"
+      ],
+      "unmapped": [
+        "Data Science"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "taylor_maryanne",
+      "name": "Mary Anne Taylor",
+      "phrases": [
+        "Leadership, emotions, quantitative research methods, natural language processing"
+      ],
+      "areas": [
+        "Leadership",
+        "Motivation/Attitudes",
+        "Methods",
+        "Technology"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "thapa_stuti",
+      "name": "Stuti Thapa",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "thayer_amanda",
+      "name": "Amanda L. Thayer",
+      "phrases": [
+        "Team composition",
+        "Trust and Cohesion",
+        "Adaptation",
+        "Team measurement",
+        "Human-agent Teams",
+        "Personal Overview",
+        "Dr. Amanda L. Thayer",
+        "and",
+        "Group & Organization Management",
+        "American Psychologist",
+        "Human Resource Management Review",
+        "Organizational Psychology Review",
+        "trust violation and repair",
+        "team cohesion, adaptation, and resilience"
+      ],
+      "areas": [
+        "Teams",
+        "Motivation/Attitudes",
+        "Methods",
+        "OHP"
+      ],
+      "unmapped": [
+        "Adaptation",
+        "Personal Overview",
+        "Dr. Amanda L. Thayer",
+        "and",
+        "Group & Organization Management",
+        "American Psychologist",
+        "Human Resource Management Review",
+        "Organizational Psychology Review",
+        "adaptation"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "thorntonlugo_meghan",
+      "name": "Meghan A. Thornton-Lugo",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "toaddy_steven",
+      "name": "Steven R. Toaddy",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "tonidandel_scott",
+      "name": "Scott Tonidandel",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "traylor_allison",
+      "name": "Allison Traylor",
+      "phrases": [
+        "teams",
+        "diversity",
+        "Leadership, emotions, quantitative research methods, natural language processing"
+      ],
+      "areas": [
+        "Teams",
+        "Diversity",
+        "Leadership",
+        "Motivation/Attitudes",
+        "Methods",
+        "Technology"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "valle_ibette",
+      "name": "Ibette Valle",
+      "phrases": [
+        "first-generation college students",
+        "higher education",
+        "home-school cultural value mismatch"
+      ],
+      "areas": [],
+      "unmapped": [
+        "first-generation college students",
+        "higher education",
+        "home-school cultural value mismatch"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "vanfossen_jenna",
+      "name": "Jenna Van Fossen",
+      "phrases": [
+        "Technology and Work",
+        "Occupational Health",
+        "Identity",
+        "Trust",
+        "Leadership, emotions, quantitative research methods, natural language processing"
+      ],
+      "areas": [
+        "Technology",
+        "OHP",
+        "Diversity",
+        "Motivation/Attitudes",
+        "Leadership",
+        "Methods"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "vanhouten_ron",
+      "name": "Ron Van Houten",
+      "phrases": [
+        "Traffic Safety",
+        "Medicine",
+        "Aviation"
+      ],
+      "areas": [
+        "OHP"
+      ],
+      "unmapped": [
+        "Medicine",
+        "Aviation"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "viswesvaran_chockalingam",
+      "name": "Chockalingam Viswesvaran",
+      "phrases": [
+        "Human Resources"
+      ],
+      "areas": [
+        "Selection"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "walker_lisa",
+      "name": "Lisa Slattery Walker",
+      "phrases": [
+        "Small Groups",
+        "Social Psychology"
+      ],
+      "areas": [
+        "Teams"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "wang_wei",
+      "name": "Wei Wang",
+      "phrases": [
+        "Applied Psychometrics",
+        "Psychometric AI",
+        "Big Data",
+        "Computational Psychology",
+        "Meta-Analysis"
+      ],
+      "areas": [
+        "Methods"
+      ],
+      "unmapped": [
+        "Big Data",
+        "Computational Psychology"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "watson_paige",
+      "name": "Paige E. Watson",
+      "phrases": [
+        "Occupational Health Psychology",
+        "Organizational Behavior"
+      ],
+      "areas": [
+        "OHP"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "watts_logan",
+      "name": "Logan L. Watts",
+      "phrases": [
+        "ethics education",
+        "creative problem solving",
+        "leadership",
+        "Research",
+        "Overview",
+        "Cyber Psychology",
+        "Behavioral Neuroscience",
+        "Cognitive Psychology",
+        "Developmental Psychology",
+        "Health Psychology",
+        "Industrial and Organizational Psychology",
+        "Social and Personality Psychology"
+      ],
+      "areas": [
+        "Motivation/Attitudes",
+        "Leadership",
+        "Methods",
+        "Technology",
+        "OHP",
+        "Personality"
+      ],
+      "unmapped": [
+        "creative problem solving",
+        "Behavioral Neuroscience",
+        "Cognitive Psychology",
+        "Developmental Psychology"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "weiss_howard",
+      "name": "Howard M. Weiss",
+      "phrases": [
+        "Work Psychology"
+      ],
+      "areas": [],
+      "unmapped": [
+        "Work Psychology"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "wessel_jennifer",
+      "name": "Jennifer L. Wessel",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "westaby_james",
+      "name": "James D. Westaby",
+      "phrases": [
+        "Behavioral Reasoning Theory and Dynamic Network Theory",
+        "Areas:",
+        "https://www.tc.columbia.edu/dnl/decision-making-calculator/",
+        "Group decision making: Uncovering deeper processes through the Pro",
+        "Con",
+        "Counter Reasoning approach from multifaceted reasoning theory",
+        "Improving bots to better interface with people when making decisions",
+        "Social interaction analysis of dyads, couples, and groups",
+        "Modeling network dynamics of leaders, subordinates, and their complex systems",
+        "Founder and Director of the Dynamic Network Lab",
+        "https://www.tc.columbia.edu/dnl/"
+      ],
+      "areas": [
+        "Motivation/Attitudes",
+        "Teams",
+        "Leadership"
+      ],
+      "unmapped": [
+        "Behavioral Reasoning Theory and Dynamic Network Theory",
+        "Areas:",
+        "https://www.tc.columbia.edu/dnl/decision-making-calculator/",
+        "Con",
+        "Counter Reasoning approach from multifaceted reasoning theory",
+        "Improving bots to better interface with people when making decisions",
+        "Social interaction analysis of dyads",
+        "couples",
+        "subordinates",
+        "and their complex systems",
+        "Founder and Director of the Dynamic Network Lab",
+        "https://www.tc.columbia.edu/dnl/"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "wiese_christopher",
+      "name": "Christopher W. Wiese",
+      "phrases": [
+        "Well-Being",
+        "Teams",
+        "Commuting",
+        "Meta-Analysis"
+      ],
+      "areas": [
+        "OHP",
+        "Teams",
+        "Methods"
+      ],
+      "unmapped": [
+        "Commuting"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "wildman_jessica",
+      "name": "Jessica L. Wildman",
+      "phrases": [
+        "culture",
+        "trust",
+        "teams",
+        "human-agent teams",
+        "culture, teams, human-agent teams, attitudes, trust"
+      ],
+      "areas": [
+        "OHP",
+        "Motivation/Attitudes",
+        "Teams"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "williams_kevin",
+      "name": "Kevin J. Williams",
+      "phrases": [
+        "His major areas of research are:",
+        "Human Performance"
+      ],
+      "areas": [
+        "Motivation/Attitudes"
+      ],
+      "unmapped": [
+        "His major areas of research are:"
+      ],
+      "source": {
+        "scholar": false,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "woehr_david",
+      "name": "David J. Woehr",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "woo_sang",
+      "name": "Sang Eun Woo",
+      "phrases": [
+        "personality",
+        "workplace relationships",
+        "future of work",
+        "research methods",
+        "mesurement"
+      ],
+      "areas": [
+        "Personality",
+        "Motivation/Attitudes",
+        "Technology",
+        "Methods"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "yang_liuqin",
+      "name": "Liu-Qin Yang",
+      "phrases": [
+        "industrial and organizational psychology",
+        "occupational health psychology"
+      ],
+      "areas": [
+        "OHP"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "yang_zhixu",
+      "name": "Zhixu (Rick) Yang",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "yavorsky_jill",
+      "name": "Jill Yavorsky",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "yost_paul",
+      "name": "Paul R. Yost",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "zaccaro_stephen",
+      "name": "Stephen J. Zaccaro",
+      "phrases": [],
+      "areas": [],
+      "unmapped": [],
+      "source": {
+        "scholar": false,
+        "homepage": false
+      }
+    },
+    {
+      "faculty_id": "zhang_bo",
+      "name": "Bo Zhang",
+      "phrases": [
+        "Personnel selection",
+        "Personality",
+        "Psychometrics",
+        "Edit Your Profile"
+      ],
+      "areas": [
+        "Selection",
+        "Personality",
+        "Methods"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "zhu_ze",
+      "name": "Ze (Mia) Zhu",
+      "phrases": [
+        "I/O Psychology Doctoral Program Admission Criteria",
+        "I/O Psychology Doctoral Program Structure",
+        "I/O Program Documents",
+        "I/O PhD Students"
+      ],
+      "areas": [],
+      "unmapped": [
+        "I/O Program Documents"
+      ],
+      "source": {
+        "scholar": false,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "zickar_michael",
+      "name": "Michael J. Zickar",
+      "phrases": [
+        "Psychometrics",
+        "Personality Testing",
+        "Item Response Theory",
+        "History of Applied Psychology"
+      ],
+      "areas": [
+        "Methods",
+        "Personality",
+        "Selection"
+      ],
+      "unmapped": [
+        "History of Applied Psychology"
+      ],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    }
+  ]
+}

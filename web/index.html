@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IO Psychology Rankings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="top">
+      <h1 class="brand">IO Psychology Rankings</h1>
+      <p class="intro">
+        IO Psychology Rankings is a metrics-based ranking of top industrial-organizational
+        psychology programs based on faculty publications in selective journals.
+      </p>
+    </header>
+
+    <div class="toolbar" aria-label="Global filters">
+      <label class="tb-field" data-tour="region">
+        <span>Region</span>
+        <select id="countries">
+          <option value="US,CA">US + Canada</option>
+          <option value="US">USA</option>
+          <option value="CA">Canada</option>
+        </select>
+      </label>
+      <label class="tb-field year-field" data-tour="years">
+        <span>Years</span>
+        <div class="year-range" id="yearRange">
+          <output class="year-box" id="yearFromOut">2017</output>
+          <div class="year-slider">
+            <div class="year-track">
+              <div class="year-fill" id="yearFill"></div>
+            </div>
+            <input type="range" id="yearFrom" min="1973" max="2026" value="2017" step="1" aria-label="From year" />
+            <input type="range" id="yearTo" min="1973" max="2026" value="2026" step="1" aria-label="To year" />
+          </div>
+          <output class="year-box" id="yearToOut">2026</output>
+        </div>
+      </label>
+      <label class="tb-field" data-tour="metric">
+        <span>Metric</span>
+        <select id="metric"></select>
+      </label>
+      <label class="tb-field" data-tour="minFaculty">
+        <span>Min faculty</span>
+        <input id="minFaculty" type="number" min="1" step="1" value="1" />
+      </label>
+      <label class="tb-field search-field" data-tour="search">
+        <span>School</span>
+        <input
+          id="schoolSearch"
+          type="search"
+          placeholder="Search schools…"
+          autocomplete="off"
+          spellcheck="false"
+        />
+      </label>
+      <button type="button" id="journalsBtn" class="journals-btn" data-tour="journals">Journals</button>
+      <button type="button" id="tourBtn" class="tour-btn" title="Take a guided tour">Tour</button>
+    </div>
+
+    <div id="tourRoot" class="tour-root hidden" aria-live="polite">
+      <div class="tour-backdrop" id="tourBackdrop"></div>
+      <div class="tour-spotlight" id="tourSpotlight" hidden></div>
+      <div class="tour-popover" id="tourPopover" role="dialog" aria-modal="true" aria-labelledby="tourTitle">
+        <header class="tour-pop-head">
+          <h2 id="tourTitle"></h2>
+          <button type="button" id="tourSkip" class="tour-skip" aria-label="Close tour">×</button>
+        </header>
+        <div class="tour-pop-body" id="tourBody"></div>
+        <footer class="tour-pop-foot">
+          <span class="tour-progress" id="tourProgress"></span>
+          <div class="tour-actions">
+            <button type="button" id="tourBack" class="tour-btn-secondary">Back</button>
+            <button type="button" id="tourNext" class="tour-btn-primary">Next</button>
+          </div>
+        </footer>
+        <div class="tour-arrow" id="tourArrow" hidden></div>
+      </div>
+    </div>
+
+    <dialog id="journalsDialog" class="journals-dialog" aria-labelledby="journalsTitle">
+      <div class="journals-card">
+        <header class="journals-head">
+          <h2 id="journalsTitle">Include journals</h2>
+          <button type="button" id="journalsClose" class="modal-close" aria-label="Close">×</button>
+        </header>
+        <div class="journals-presets">
+          <button type="button" id="venuesCore" class="linkish">core only</button>
+          <button type="button" id="venuesAll" class="linkish">all</button>
+          <button type="button" id="venuesNone" class="linkish">none</button>
+          <span id="venuesCount" class="venues-count"></span>
+        </div>
+        <div id="venuesTree" class="venues-tree"></div>
+        <footer class="journals-foot">
+          <button type="button" id="journalsDone" class="primary-btn">Done</button>
+        </footer>
+      </div>
+    </dialog>
+
+    <div class="layout">
+      <aside class="sidebar" aria-label="Research areas" data-tour="areas">
+        <label class="area-row all-areas">
+          <span class="area-name">All Areas</span>
+          <input type="checkbox" id="allAreas" checked />
+        </label>
+        <div id="areaTree"></div>
+      </aside>
+
+      <main class="main" data-tour="table">
+        <div class="table-tools">
+          <button type="button" id="expandAll" class="linkish">expand all</button>
+          <button type="button" id="collapseAll" class="linkish">collapse all</button>
+        </div>
+        <div class="table-wrap">
+          <table id="rankTable">
+            <thead>
+              <tr>
+                <th class="col-rank">Rank</th>
+                <th class="col-inst">Institution</th>
+                <th class="col-count" id="metricHead">Count</th>
+                <th class="col-fac">Faculty</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <p id="empty" class="empty hidden">No institutions match the current filters.</p>
+        </div>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <p>
+        Publication data from
+        <a href="https://scholar.google.com/" rel="noopener noreferrer" target="_blank">Google Scholar</a>
+        (<span id="dataStamp">2026</span>)
+        ·
+        <a class="gh-link" href="https://github.com/wpengda/IO-PYSCH-RANKINGS" rel="noopener noreferrer" target="_blank">
+          GitHub
+          <svg class="gh-icon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+            <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+        </a>
+      </p>
+      <p>
+        Inspired by
+        <a href="https://csrankings.org/" rel="noopener noreferrer" target="_blank">CSRankings</a>
+        · independent open project
+      </p>
+      <p class="footer-nav">
+        <a href="doc.html?p=methodology">Methodology</a>
+        ·
+        <a href="doc.html?p=faculty-roster">Faculty roster</a>
+        ·
+        <a href="doc.html?p=faq">FAQ</a>
+        ·
+        <a href="doc.html?p=contributing">Contributing</a>
+      </p>
+      <p class="footer-note">
+        Pilot research tool · not an official SIOP/APA ranking
+      </p>
+    </footer>
+  </div>
+
+  <dialog id="facultyModal" class="faculty-modal" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <header class="modal-head">
+        <div>
+          <h2 id="modalTitle"></h2>
+          <p id="modalMeta" class="modal-meta"></p>
+        </div>
+        <button type="button" id="modalClose" class="modal-close" aria-label="Close">×</button>
+      </header>
+      <div class="modal-score" id="modalScore"></div>
+      <ol id="modalPapers" class="modal-papers"></ol>
+    </div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>

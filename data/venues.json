@@ -1,0 +1,919 @@
+{
+  "version": 1,
+  "weight_note": "Legacy relative weights kept for reference. Ranking metric Impact factor (1/N) uses impact_factor (Clarivate JIF) instead.",
+  "impact_factor_year": 2024,
+  "impact_factor_note": "Clarivate Journal Impact Factor values curated for ranking (primarily JIF 2024 / Clarivate 2025). Not a live JCR pull—verify annually. Metric Impact factor (sum) = sum of journal IF over counted papers (no 1/N).",
+  "areas": [
+    "Selection",
+    "Training",
+    "Personality",
+    "Leadership",
+    "Motivation/Attitudes",
+    "Teams",
+    "Diversity",
+    "Careers",
+    "Technology",
+    "OHP",
+    "Methods",
+    "General"
+  ],
+  "domains": [
+    {
+      "id": "industrial",
+      "label": "Industrial / Personnel",
+      "color": "#1a75bb",
+      "areas": [
+        "Selection",
+        "Training",
+        "Personality"
+      ]
+    },
+    {
+      "id": "organizational",
+      "label": "Organizational",
+      "color": "#ca7c1b",
+      "areas": [
+        "Leadership",
+        "Motivation/Attitudes",
+        "Teams",
+        "Diversity",
+        "Careers"
+      ]
+    },
+    {
+      "id": "technology",
+      "label": "Technology & Future of Work",
+      "color": "#c45c26",
+      "areas": [
+        "Technology"
+      ]
+    },
+    {
+      "id": "health",
+      "label": "Occupational Health",
+      "color": "#2e8b57",
+      "areas": [
+        "OHP"
+      ]
+    },
+    {
+      "id": "methods",
+      "label": "Methods & General",
+      "color": "#6b4fa0",
+      "areas": [
+        "Methods",
+        "General"
+      ]
+    }
+  ],
+  "venues": [
+    {
+      "id": "jap",
+      "name": "Journal of Applied Psychology",
+      "issn": [
+        "0021-9010",
+        "1939-1854"
+      ],
+      "weight": 1.5,
+      "cross_boundary": false,
+      "areas": [
+        "Selection",
+        "Training",
+        "Leadership",
+        "Motivation/Attitudes",
+        "Teams",
+        "OHP",
+        "Careers",
+        "Methods",
+        "Diversity",
+        "General"
+      ],
+      "impact_factor": 6.1
+    },
+    {
+      "id": "pp",
+      "name": "Personnel Psychology",
+      "issn": [
+        "0031-5826",
+        "1744-6570"
+      ],
+      "weight": 1.5,
+      "cross_boundary": false,
+      "areas": [
+        "Selection",
+        "Training",
+        "Motivation/Attitudes",
+        "Teams",
+        "Careers",
+        "Diversity",
+        "General"
+      ],
+      "impact_factor": 6.4
+    },
+    {
+      "id": "obhdp",
+      "name": "Organizational Behavior and Human Decision Processes",
+      "issn": [
+        "0749-5978",
+        "1095-9920"
+      ],
+      "weight": 1.35,
+      "cross_boundary": false,
+      "areas": [
+        "Leadership",
+        "Motivation/Attitudes",
+        "Teams",
+        "Diversity",
+        "Careers",
+        "OHP",
+        "General"
+      ],
+      "impact_factor": 3.8
+    },
+    {
+      "id": "job",
+      "name": "Journal of Organizational Behavior",
+      "issn": [
+        "0894-3796",
+        "1099-1379"
+      ],
+      "weight": 1.2,
+      "cross_boundary": false,
+      "areas": [
+        "Motivation/Attitudes",
+        "Leadership",
+        "Teams",
+        "OHP",
+        "Diversity",
+        "Careers",
+        "General"
+      ],
+      "impact_factor": 6.8
+    },
+    {
+      "id": "lq",
+      "name": "The Leadership Quarterly",
+      "issn": [
+        "1048-9843",
+        "1873-3409"
+      ],
+      "weight": 1.35,
+      "cross_boundary": false,
+      "areas": [
+        "Leadership"
+      ],
+      "impact_factor": 9.7
+    },
+    {
+      "id": "orm",
+      "name": "Organizational Research Methods",
+      "issn": [
+        "1094-4281",
+        "1552-7425"
+      ],
+      "weight": 1.3,
+      "cross_boundary": false,
+      "areas": [
+        "Methods"
+      ],
+      "impact_factor": 7.6
+    },
+    {
+      "id": "jvb",
+      "name": "Journal of Vocational Behavior",
+      "issn": [
+        "0001-8791",
+        "1095-9084"
+      ],
+      "weight": 1.15,
+      "cross_boundary": false,
+      "areas": [
+        "Careers",
+        "Motivation/Attitudes",
+        "Diversity",
+        "General"
+      ],
+      "impact_factor": 5.2
+    },
+    {
+      "id": "johp",
+      "name": "Journal of Occupational Health Psychology",
+      "issn": [
+        "1076-8998",
+        "1939-1307"
+      ],
+      "weight": 1.2,
+      "cross_boundary": false,
+      "areas": [
+        "OHP"
+      ],
+      "impact_factor": 5.1
+    },
+    {
+      "id": "hrm",
+      "name": "Human Resource Management",
+      "issn": [
+        "0090-4848",
+        "1099-050X"
+      ],
+      "weight": 1.05,
+      "cross_boundary": false,
+      "areas": [
+        "Selection",
+        "Training",
+        "Motivation/Attitudes",
+        "Careers",
+        "Diversity",
+        "General"
+      ],
+      "aliases": [
+        "Human Resource Management: Published in Cooperation with the School of"
+      ],
+      "impact_factor": 9.0
+    },
+    {
+      "id": "hrmj",
+      "name": "Human Resource Management Journal",
+      "issn": [
+        "1748-8583",
+        "0954-5395"
+      ],
+      "weight": 1.0,
+      "cross_boundary": false,
+      "areas": [
+        "Selection",
+        "Training",
+        "Motivation/Attitudes",
+        "Careers",
+        "Diversity",
+        "General"
+      ],
+      "impact_factor": 5.4
+    },
+    {
+      "id": "hrmr",
+      "name": "Human Resource Management Review",
+      "issn": [
+        "1053-4822",
+        "1873-7889"
+      ],
+      "weight": 1.1,
+      "cross_boundary": false,
+      "areas": [
+        "Selection",
+        "Training",
+        "Motivation/Attitudes",
+        "Methods",
+        "Careers",
+        "General"
+      ],
+      "impact_factor": 10.4
+    },
+    {
+      "id": "war",
+      "name": "Work, Aging and Retirement",
+      "issn": [
+        "2054-4642",
+        "2054-4650"
+      ],
+      "weight": 1.0,
+      "cross_boundary": false,
+      "areas": [
+        "OHP",
+        "Careers",
+        "Motivation/Attitudes",
+        "General"
+      ],
+      "impact_factor": 3.4
+    },
+    {
+      "id": "jbp",
+      "name": "Journal of Business and Psychology",
+      "issn": [
+        "0889-3268",
+        "1573-353X"
+      ],
+      "weight": 1.05,
+      "cross_boundary": false,
+      "areas": [
+        "Selection",
+        "Training",
+        "Leadership",
+        "Motivation/Attitudes",
+        "Teams",
+        "OHP",
+        "Careers",
+        "Methods",
+        "Diversity",
+        "General"
+      ],
+      "impact_factor": 3.7
+    },
+    {
+      "id": "ejwop",
+      "name": "European Journal of Work and Organizational Psychology",
+      "issn": [
+        "1359-432X",
+        "1464-0643"
+      ],
+      "weight": 1.0,
+      "cross_boundary": false,
+      "areas": [
+        "Motivation/Attitudes",
+        "Teams",
+        "OHP",
+        "Leadership",
+        "Diversity",
+        "Careers",
+        "General"
+      ],
+      "impact_factor": 4.1
+    },
+    {
+      "id": "jom",
+      "name": "Journal of Management",
+      "issn": [
+        "0149-2063",
+        "1557-1211"
+      ],
+      "weight": 1.4,
+      "cross_boundary": true,
+      "areas": [
+        "Leadership",
+        "Motivation/Attitudes",
+        "Teams",
+        "Methods",
+        "Diversity",
+        "Careers",
+        "Technology",
+        "Selection",
+        "Personality",
+        "Training",
+        "OHP",
+        "General"
+      ],
+      "impact_factor": 9.0
+    },
+    {
+      "id": "amj",
+      "name": "Academy of Management Journal",
+      "issn": [
+        "0001-4273",
+        "1948-0989"
+      ],
+      "weight": 1.55,
+      "cross_boundary": true,
+      "areas": [
+        "Leadership",
+        "Motivation/Attitudes",
+        "Teams",
+        "Diversity",
+        "Careers",
+        "Technology",
+        "Selection",
+        "Personality",
+        "Training",
+        "OHP",
+        "Methods",
+        "General"
+      ],
+      "impact_factor": 10.5
+    },
+    {
+      "id": "amr",
+      "name": "Academy of Management Review",
+      "issn": [
+        "0363-7425",
+        "1930-3807"
+      ],
+      "weight": 1.55,
+      "cross_boundary": true,
+      "areas": [
+        "Leadership",
+        "Motivation/Attitudes",
+        "Teams",
+        "Diversity",
+        "Careers",
+        "Technology",
+        "Selection",
+        "Personality",
+        "Training",
+        "OHP",
+        "Methods",
+        "General"
+      ],
+      "impact_factor": 13.9
+    },
+    {
+      "id": "asq",
+      "name": "Administrative Science Quarterly",
+      "issn": [
+        "0001-8392",
+        "1930-3815"
+      ],
+      "weight": 1.5,
+      "cross_boundary": true,
+      "areas": [
+        "Leadership",
+        "Motivation/Attitudes",
+        "Teams",
+        "Diversity",
+        "Careers",
+        "Technology",
+        "Methods",
+        "General"
+      ],
+      "impact_factor": 6.5
+    },
+    {
+      "id": "ms",
+      "name": "Management Science",
+      "issn": [
+        "0025-1909",
+        "1526-5501"
+      ],
+      "weight": 1.45,
+      "cross_boundary": true,
+      "areas": [
+        "Motivation/Attitudes",
+        "Teams",
+        "Leadership",
+        "Technology",
+        "Methods",
+        "Selection",
+        "Diversity",
+        "General"
+      ],
+      "impact_factor": 4.6
+    },
+    {
+      "id": "os",
+      "name": "Organization Science",
+      "issn": [
+        "1047-7039",
+        "1526-5455"
+      ],
+      "weight": 1.4,
+      "cross_boundary": true,
+      "areas": [
+        "Leadership",
+        "Motivation/Attitudes",
+        "Teams",
+        "Diversity",
+        "Careers",
+        "Technology",
+        "Methods",
+        "General"
+      ],
+      "impact_factor": 4.9
+    },
+    {
+      "id": "smj",
+      "name": "Strategic Management Journal",
+      "issn": [
+        "0143-2095",
+        "1097-0266"
+      ],
+      "weight": 1.45,
+      "cross_boundary": true,
+      "areas": [
+        "Leadership",
+        "Motivation/Attitudes",
+        "Teams",
+        "Technology",
+        "Careers",
+        "Diversity",
+        "Methods",
+        "General"
+      ],
+      "impact_factor": 6.5
+    },
+    {
+      "id": "joop",
+      "name": "Journal of Occupational and Organizational Psychology",
+      "issn": [
+        "0963-1798",
+        "2044-8325"
+      ],
+      "weight": 1.15,
+      "cross_boundary": false,
+      "areas": [
+        "Motivation/Attitudes",
+        "Teams",
+        "OHP",
+        "Leadership",
+        "Diversity",
+        "Careers",
+        "Selection",
+        "General"
+      ],
+      "aliases": [
+        "Journal of Occupational & Organizational Psychology"
+      ],
+      "impact_factor": 4.9
+    },
+    {
+      "id": "iop",
+      "name": "Industrial and Organizational Psychology",
+      "issn": [
+        "1754-9426",
+        "1754-9434"
+      ],
+      "weight": 1.0,
+      "cross_boundary": false,
+      "areas": [
+        "Selection",
+        "Training",
+        "Personality",
+        "Leadership",
+        "Motivation/Attitudes",
+        "Teams",
+        "Diversity",
+        "Careers",
+        "Technology",
+        "OHP",
+        "Methods",
+        "General"
+      ],
+      "aliases": [
+        "Industrial & Organizational Psychology",
+        "Industrial and Organizational Psychology: Perspectives on Science and Practice"
+      ],
+      "impact_factor": 3.2
+    },
+    {
+      "id": "was",
+      "name": "Work & Stress",
+      "issn": [
+        "0267-8373",
+        "1464-5335"
+      ],
+      "weight": 1.15,
+      "cross_boundary": false,
+      "areas": [
+        "OHP",
+        "General"
+      ],
+      "aliases": [
+        "Work and Stress"
+      ],
+      "impact_factor": 5.6
+    },
+    {
+      "id": "ijsa",
+      "name": "International Journal of Selection and Assessment",
+      "issn": [
+        "0965-075X",
+        "1468-2389"
+      ],
+      "weight": 1.05,
+      "cross_boundary": false,
+      "areas": [
+        "Selection",
+        "Personality",
+        "Methods",
+        "Diversity",
+        "Technology",
+        "General"
+      ],
+      "aliases": [
+        "Int J Sel Assess",
+        "International Journal of Selection & Assessment"
+      ],
+      "impact_factor": 2.2
+    },
+    {
+      "id": "apir",
+      "name": "Applied Psychology: An International Review",
+      "issn": [
+        "0269-994X",
+        "1464-0597"
+      ],
+      "weight": 1.1,
+      "cross_boundary": false,
+      "areas": [
+        "Selection",
+        "Training",
+        "Leadership",
+        "Motivation/Attitudes",
+        "Teams",
+        "OHP",
+        "Diversity",
+        "Careers",
+        "Personality",
+        "Methods",
+        "Technology",
+        "General"
+      ],
+      "aliases": [
+        "Applied Psychology An International Review",
+        "Applied Psychology"
+      ],
+      "impact_factor": 4.9
+    },
+    {
+      "id": "opr",
+      "name": "Organizational Psychology Review",
+      "issn": [
+        "2041-3866",
+        "2041-3874"
+      ],
+      "weight": 1.2,
+      "cross_boundary": false,
+      "areas": [
+        "Leadership",
+        "Motivation/Attitudes",
+        "Teams",
+        "OHP",
+        "Diversity",
+        "Selection",
+        "Methods",
+        "Careers",
+        "Personality",
+        "Training",
+        "Technology",
+        "General"
+      ],
+      "aliases": [
+        "Organ Psychol Rev"
+      ],
+      "impact_factor": 5.5
+    },
+    {
+      "id": "gom",
+      "name": "Group & Organization Management",
+      "issn": [
+        "1059-6011",
+        "1552-3993"
+      ],
+      "weight": 1.05,
+      "cross_boundary": false,
+      "areas": [
+        "Teams",
+        "Leadership",
+        "Motivation/Attitudes",
+        "Diversity",
+        "General"
+      ],
+      "aliases": [
+        "Group and Organization Management"
+      ],
+      "impact_factor": 4.0
+    },
+    {
+      "id": "pm",
+      "name": "Psychological Methods",
+      "issn": [
+        "1082-989X",
+        "1939-1463"
+      ],
+      "weight": 1.4,
+      "cross_boundary": false,
+      "areas": [
+        "Methods",
+        "General"
+      ],
+      "aliases": [
+        "Psychol Methods"
+      ],
+      "impact_factor": 11.0
+    },
+    {
+      "id": "ampps",
+      "name": "Advances in Methods and Practices in Psychological Science",
+      "issn": [
+        "2515-2459",
+        "2515-2467"
+      ],
+      "weight": 1.25,
+      "cross_boundary": false,
+      "areas": [
+        "Methods",
+        "General"
+      ],
+      "aliases": [
+        "Advances in Methods and Practices in Psychological Science (AMPPS)",
+        "AMPPS"
+      ],
+      "impact_factor": 8.5
+    },
+    {
+      "id": "jpsp",
+      "name": "Journal of Personality and Social Psychology",
+      "issn": [
+        "0022-3514",
+        "1939-1315"
+      ],
+      "weight": 1.5,
+      "cross_boundary": true,
+      "areas": [
+        "Personality",
+        "Motivation/Attitudes",
+        "Diversity",
+        "Methods",
+        "General"
+      ],
+      "aliases": [
+        "J Pers Soc Psychol",
+        "Journal of Personality & Social Psychology"
+      ],
+      "impact_factor": 6.4
+    },
+    {
+      "id": "psci",
+      "name": "Psychological Science",
+      "issn": [
+        "0956-7976",
+        "1467-9280"
+      ],
+      "weight": 1.5,
+      "cross_boundary": true,
+      "areas": [
+        "Personality",
+        "Motivation/Attitudes",
+        "Methods",
+        "Diversity",
+        "Technology",
+        "General"
+      ],
+      "aliases": [
+        "Psychol Sci"
+      ],
+      "impact_factor": 4.8
+    },
+    {
+      "id": "pbul",
+      "name": "Psychological Bulletin",
+      "issn": [
+        "0033-2909",
+        "1939-1455"
+      ],
+      "weight": 1.6,
+      "cross_boundary": true,
+      "areas": [
+        "Methods",
+        "Personality",
+        "Motivation/Attitudes",
+        "OHP",
+        "Diversity",
+        "Leadership",
+        "Selection",
+        "General"
+      ],
+      "aliases": [
+        "Psychol Bull",
+        "Psychological bulletin"
+      ],
+      "impact_factor": 17.3
+    },
+    {
+      "id": "chb",
+      "name": "Computers in Human Behavior",
+      "issn": [
+        "0747-5632",
+        "1873-7692"
+      ],
+      "weight": 1.05,
+      "cross_boundary": true,
+      "areas": [
+        "Technology",
+        "Teams",
+        "Motivation/Attitudes",
+        "OHP",
+        "Methods",
+        "General"
+      ],
+      "aliases": [
+        "Computers in Human Behavior"
+      ],
+      "impact_factor": 9.0
+    },
+    {
+      "id": "jms",
+      "name": "Journal of Management Studies",
+      "issn": [
+        "0022-2380",
+        "1467-6486"
+      ],
+      "weight": 1.4,
+      "cross_boundary": true,
+      "areas": [
+        "Leadership",
+        "Motivation/Attitudes",
+        "Teams",
+        "Diversity",
+        "Careers",
+        "Technology",
+        "Methods",
+        "General"
+      ],
+      "aliases": [
+        "J Manage Stud",
+        "Journal of Management Studies"
+      ],
+      "impact_factor": 7.3
+    },
+    {
+      "id": "hr",
+      "name": "Human Relations",
+      "issn": [
+        "0018-7267",
+        "1741-282X"
+      ],
+      "weight": 1.2,
+      "cross_boundary": true,
+      "areas": [
+        "Leadership",
+        "Motivation/Attitudes",
+        "Teams",
+        "Diversity",
+        "Careers",
+        "OHP",
+        "Technology",
+        "General"
+      ],
+      "aliases": [
+        "Hum Relat"
+      ],
+      "impact_factor": 4.5
+    },
+    {
+      "id": "ostud",
+      "name": "Organization Studies",
+      "issn": [
+        "0170-8406",
+        "1741-3044"
+      ],
+      "weight": 1.25,
+      "cross_boundary": true,
+      "areas": [
+        "Leadership",
+        "Motivation/Attitudes",
+        "Teams",
+        "Diversity",
+        "Careers",
+        "Technology",
+        "Methods",
+        "General"
+      ],
+      "aliases": [
+        "Organization Studies",
+        "Organ Stud"
+      ],
+      "impact_factor": 4.9
+    },
+    {
+      "id": "aoma",
+      "name": "Academy of Management Annals",
+      "issn": [
+        "1941-6520",
+        "1941-6061"
+      ],
+      "weight": 1.6,
+      "cross_boundary": true,
+      "areas": [
+        "Leadership",
+        "Motivation/Attitudes",
+        "Teams",
+        "Diversity",
+        "Careers",
+        "Technology",
+        "Selection",
+        "Methods",
+        "OHP",
+        "General"
+      ],
+      "aliases": [
+        "Acad Manag Ann",
+        "Academy of Management Annals"
+      ],
+      "impact_factor": 16.4
+    },
+    {
+      "id": "amd",
+      "name": "Academy of Management Discoveries",
+      "issn": [
+        "2168-1007",
+        "2168-1015"
+      ],
+      "weight": 1.2,
+      "cross_boundary": true,
+      "areas": [
+        "Leadership",
+        "Motivation/Attitudes",
+        "Teams",
+        "Diversity",
+        "Careers",
+        "Technology",
+        "Methods",
+        "General"
+      ],
+      "aliases": [
+        "Acad Manag Discov"
+      ],
+      "impact_factor": 3.8
+    }
+  ],
+  "impact_factor_note": "Clarivate Journal Impact Factor (JIF) values curated for ranking (primarily JIF 2024 / Clarivate 2025). Not a substitute for official JCR; update yearly. Metric weighted_if = sum(1/N * impact_factor).",
+  "impact_factor_year": 2024
+}
