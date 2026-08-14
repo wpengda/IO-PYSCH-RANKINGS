@@ -229,6 +229,11 @@ def normalize_issn(issn: str) -> str:
     return "".join(ch for ch in str(issn).upper() if ch.isalnum())
 
 
+def has_google_scholar_id(value) -> bool:
+    text = str(value or "").strip()
+    return bool(text) and text.lower() not in {"nan", "none"}
+
+
 def normalize_orcid(value: str) -> str:
     text = str(value or "").strip()
     if not text or text.lower() in {"nan", "none"}:

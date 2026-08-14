@@ -8,19 +8,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="prefetch" href="data/coauthor_network.json" />
 </head>
-<body>
+<body class="is-rankings">
   <div class="page">
     <header class="top">
-      <h1 class="brand">IO Psychology Rankings</h1>
-      <p class="intro">
+      <div class="brand-row">
+        <h1 class="brand"><a id="brandLink" href="#rankings"><span id="brandTitle">IO Psychology Rankings</span></a></h1>
+        <nav class="view-tabs" aria-label="Site views">
+          <a href="#rankings" class="view-tab is-active" id="tabRankings" data-tour="rankings">Rankings</a>
+          <a href="#network" class="view-tab" id="tabNetwork" data-tour="network">Network</a>
+        </nav>
+      </div>
+      <p class="intro" id="siteIntro">
         IO Psychology Rankings is a metrics-based ranking of top industrial-organizational
         psychology programs based on faculty publications in selective journals.
       </p>
     </header>
 
+    <div id="view-rankings" class="view-pane">
     <div class="toolbar" aria-label="Global filters">
-      <label class="tb-field" data-tour="region">
+      <div class="tb-shared">
+      <label class="tb-field tb-region" data-tour="region">
         <span>Region</span>
         <select id="countries">
           <option value="US,CA">US + Canada</option>
@@ -42,11 +51,13 @@
           <output class="year-box" id="yearToOut">2026</output>
         </div>
       </label>
-      <label class="tb-field" data-tour="metric">
+      </div>
+      <div class="tb-rest">
+      <label class="tb-field tb-metric" data-tour="metric">
         <span>Metric</span>
         <select id="metric"></select>
       </label>
-      <label class="tb-field" data-tour="minFaculty">
+      <label class="tb-field tb-num" data-tour="minFaculty">
         <span>Min faculty</span>
         <input id="minFaculty" type="number" min="1" step="1" value="1" />
       </label>
@@ -60,8 +71,11 @@
           spellcheck="false"
         />
       </label>
-      <button type="button" id="journalsBtn" class="journals-btn" data-tour="journals">Journals</button>
-      <button type="button" id="tourBtn" class="tour-btn" title="Take a guided tour">Tour</button>
+      </div>
+      <div class="tb-actions">
+        <button type="button" id="journalsBtn" class="journals-btn" data-tour="journals">Journals</button>
+        <button type="button" id="tourBtn" class="tour-btn" title="Take a guided tour">Tour</button>
+      </div>
     </div>
 
     <div id="tourRoot" class="tour-root hidden" aria-live="polite">
@@ -124,7 +138,7 @@
                 <th class="col-rank">Rank</th>
                 <th class="col-inst">Institution</th>
                 <th class="col-count" id="metricHead">Count</th>
-                <th class="col-fac">Faculty</th>
+                <th class="col-fac" title="Faculty with a Google Scholar ID">Faculty</th>
               </tr>
             </thead>
             <tbody></tbody>
@@ -132,6 +146,117 @@
           <p id="empty" class="empty hidden">No institutions match the current filters.</p>
         </div>
       </main>
+    </div>
+    </div>
+
+    <div id="view-network" class="view-pane" hidden>
+    <div class="toolbar" aria-label="Network filters">
+      <div class="tb-shared">
+      <label class="tb-field tb-region" data-tour="region">
+        <span>Region</span>
+        <select id="netCountries">
+          <option value="US,CA">US + Canada</option>
+          <option value="US">USA</option>
+          <option value="CA">Canada</option>
+        </select>
+      </label>
+      <label class="tb-field year-field" data-tour="years">
+        <span>Years</span>
+        <div class="year-range" id="netYearRange">
+          <output class="year-box" id="netYearFromOut">2017</output>
+          <div class="year-slider">
+            <div class="year-track">
+              <div class="year-fill" id="netYearFill"></div>
+            </div>
+            <input type="range" id="netYearFrom" min="1973" max="2026" value="2017" step="1" aria-label="From year" />
+            <input type="range" id="netYearTo" min="1973" max="2026" value="2026" step="1" aria-label="To year" />
+          </div>
+          <output class="year-box" id="netYearToOut">2026</output>
+        </div>
+      </label>
+      </div>
+      <div class="tb-rest">
+      <label class="tb-field tb-num" data-tour="minPapers">
+        <span>Min papers</span>
+        <input id="minWeight" type="number" min="1" step="1" value="1" title="Minimum shared papers for a tie" />
+      </label>
+      <label class="tb-field tb-num" data-tour="minConnections">
+        <span>Min connections</span>
+        <input id="minDegree" type="number" min="0" step="1" value="1" title="Minimum roster coauthors in the current filters" />
+      </label>
+      <label class="tb-field search-field" data-tour="faculty">
+        <span>Faculty</span>
+        <input id="netSearch" type="search" placeholder="Search names…" autocomplete="off" spellcheck="false" />
+      </label>
+      <label class="tb-field search-field" data-tour="program">
+        <span>Program</span>
+        <input id="programSearch" type="search" placeholder="Search programs…" autocomplete="off" spellcheck="false" />
+      </label>
+      </div>
+      <div class="tb-actions">
+        <button type="button" id="netJournalsBtn" class="journals-btn" data-tour="journals">Journals</button>
+        <button type="button" id="netTourBtn" class="tour-btn" title="Take a guided tour">Tour</button>
+      </div>
+    </div>
+
+    <div id="netTourRoot" class="tour-root hidden" aria-live="polite">
+      <div class="tour-backdrop" id="netTourBackdrop"></div>
+      <div class="tour-spotlight" id="netTourSpotlight" hidden></div>
+      <div class="tour-popover" id="netTourPopover" role="dialog" aria-modal="true" aria-labelledby="netTourTitle">
+        <header class="tour-pop-head">
+          <h2 id="netTourTitle"></h2>
+          <button type="button" id="netTourSkip" class="tour-skip" aria-label="Close tour">×</button>
+        </header>
+        <div class="tour-pop-body" id="netTourBody"></div>
+        <footer class="tour-pop-foot">
+          <span class="tour-progress" id="netTourProgress"></span>
+          <div class="tour-actions">
+            <button type="button" id="netTourBack" class="tour-btn-secondary">Back</button>
+            <button type="button" id="netTourNext" class="tour-btn-primary">Next</button>
+          </div>
+        </footer>
+        <div class="tour-arrow" id="netTourArrow" hidden></div>
+      </div>
+    </div>
+
+    <dialog id="netJournalsDialog" class="journals-dialog" aria-labelledby="netJournalsTitle">
+      <div class="journals-card">
+        <header class="journals-head">
+          <h2 id="netJournalsTitle">Include journals</h2>
+          <button type="button" id="netJournalsClose" class="modal-close" aria-label="Close">×</button>
+        </header>
+        <div class="journals-presets">
+          <button type="button" id="netVenuesCore" class="linkish">core only</button>
+          <button type="button" id="netVenuesAll" class="linkish">all</button>
+          <button type="button" id="netVenuesNone" class="linkish">none</button>
+          <span id="netVenuesCount" class="venues-count"></span>
+        </div>
+        <div id="netVenuesTree" class="venues-tree"></div>
+        <footer class="journals-foot">
+          <button type="button" id="netJournalsDone" class="primary-btn">Done</button>
+        </footer>
+      </div>
+    </dialog>
+
+    <div class="layout">
+      <aside class="sidebar" aria-label="Research areas" data-tour="areas">
+        <label class="area-row all-areas">
+          <span class="area-name">All Areas</span>
+          <input type="checkbox" id="netAllAreas" checked />
+        </label>
+        <div id="netAreaTree"></div>
+      </aside>
+      <div class="net-layout">
+        <div class="net-stage" data-tour="graph">
+          <canvas id="netCanvas"></canvas>
+          <p id="netStatus" class="net-status">Loading network…</p>
+          <div id="netPop" class="net-pop hidden" hidden>
+            <button type="button" id="netPopClose" class="modal-close" aria-label="Close">×</button>
+            <div id="netPopBody"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
 
     <footer class="site-footer">
@@ -160,6 +285,8 @@
         <a href="doc.html?p=faq">FAQ</a>
         ·
         <a href="doc.html?p=contributing">Contributing</a>
+        ·
+        <a href="#network">Network analysis</a>
       </p>
       <p class="footer-note">
         Pilot research tool · not an official SIOP/APA ranking
@@ -181,6 +308,8 @@
     </div>
   </dialog>
 
+  <script src="views.js"></script>
   <script src="app.js"></script>
+  <script src="network.js"></script>
 </body>
 </html>

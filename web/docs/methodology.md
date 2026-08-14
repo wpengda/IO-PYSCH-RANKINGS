@@ -51,9 +51,9 @@ All metrics use the **same** filtered paper set (Years + Journals + Areas):
 | Raw paper count | Number of counted papers |
 | Citations | Sum of Google Scholar citation counts for those papers |
 | Impact factor (sum) | Sum of curated Clarivate JIF (`impact_factor` in `venues.json`) per paper — **not** 1/N |
-| … / faculty | The metric above divided by rostered faculty count |
+| … / faculty | The metric above divided by faculty with a fetched Scholar profile |
 
-Institution scores are the **sum** across rostered faculty. Per-faculty options divide by that roster size (including faculty with zero counted papers in the current filters).
+Institution scores are the **sum** across rostered faculty. Per-faculty options divide by faculty with a **fetched Google Scholar profile** (including those with zero counted papers in the current filters). Faculty with no Scholar ID, or a 404/empty profile, are listed on the roster but are not in that denominator.
 
 Default ranking is adjusted count because citation and IF sums move quickly and are easier to game.
 

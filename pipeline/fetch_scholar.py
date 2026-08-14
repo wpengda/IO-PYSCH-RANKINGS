@@ -49,13 +49,29 @@ def parse_year(bib: dict) -> int | None:
         return None
 
 
+_AUTHOR_SPLIT = re.compile(r"\s+and\s+|,\s*")
+
+
+def parse_author_names(raw: str) -> list[str]:
+    """Split Scholar/SerpAPI author strings into display names."""
+    names: list[str] = []
+    for part in _AUTHOR_SPLIT.split(raw or ""):
+        name = " ".join(part.split())
+        if not name or re.fullmatch(r"[.…]+", name):
+            continue
+        if name.lower().rstrip(".") in {"et al", "etal"}:
+            continue
+        names.append(name)
+    return names
+
+
 def records_from_raw(raw: list[dict], row: pd.Series, venues: dict) -> list[dict]:
     out = []
     sid = str(row.get("google_scholar_id") or "").strip()
     for pub in raw:
         bib = pub.get("bib") or {}
-        authors = re.split(r"\s+and\s+|,", bib.get("author") or "")
-        n = max(1, len([a for a in authors if a.strip()]))
+        authors = parse_author_names(bib.get("author") or "")
+        n = max(1, len(authors))
         out.append(
             apply_venue(
                 {
@@ -66,6 +82,7 @@ def records_from_raw(raw: list[dict], row: pd.Series, venues: dict) -> list[dict
                     "type": bib.get("pub_type") or "article",
                     "cited_by_count": int(pub.get("num_citations") or 0),
                     "n_authors": n,
+                    "authors": authors,
                     "adj_credit": 1.0 / n,
                     "raw_venue": bib.get("citation") or bib.get("venue") or bib.get("journal") or "",
                     "source": "google_scholar",

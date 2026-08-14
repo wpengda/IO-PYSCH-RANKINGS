@@ -15,6 +15,7 @@ from config import (
     WEB_DATA,
     apply_venue,
     ensure_dirs,
+    has_google_scholar_id,
     load_faculty_areas,
     load_venues,
     venue_name_lookup,
@@ -160,6 +161,9 @@ def score_rows(
             key=lambda x: (-(x["year"] or 0), -x["adj_credit"]),
         )
         curated_map = curated_areas or {}
+        has_scholar_data = has_google_scholar_id(row.get("google_scholar_id")) and (
+            CACHE / "scholar" / f"{fid}.json"
+        ).exists()
         faculty_rows.append(
             {
                 "faculty_id": fid,
@@ -169,6 +173,7 @@ def score_rows(
                 "google_scholar_id": "" if pd.isna(row.get("google_scholar_id")) else str(row.get("google_scholar_id")),
                 "homepage": "" if pd.isna(row.get("homepage")) else str(row.get("homepage")),
                 "rank": "" if pd.isna(row.get("rank")) else str(row.get("rank")),
+                "has_scholar_data": has_scholar_data,
                 "adj_count": round(m["adj_count"], 4),
                 "raw_count": int(m["raw_count"]),
                 "citations": int(m["citations"]),
@@ -179,7 +184,8 @@ def score_rows(
                 "papers": papers,
             }
         )
-        inst_agg[iid]["faculty_count"] += 1
+        if has_scholar_data:
+            inst_agg[iid]["faculty_count"] += 1
         inst_agg[iid]["adj_count"] += m["adj_count"]
         inst_agg[iid]["raw_count"] += m["raw_count"]
         inst_agg[iid]["citations"] += m["citations"]

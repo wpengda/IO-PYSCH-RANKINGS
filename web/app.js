@@ -138,6 +138,18 @@
     dataStamp: document.getElementById("dataStamp"),
   };
 
+  function tourEl(selector) {
+    if (!selector) return null;
+    if (
+      selector.includes('data-tour="network"') ||
+      selector.includes('data-tour="rankings"')
+    ) {
+      return document.querySelector(selector);
+    }
+    const root = document.getElementById("view-rankings");
+    return (root || document).querySelector(selector);
+  }
+
   function domains() {
     return state.data?.domains?.length ? state.data.domains : FALLBACK_DOMAINS;
   }
@@ -383,7 +395,15 @@
         });
       }
       const inst = byInst.get(f.institution_id);
-      inst.faculty_count += 1;
+      const scholarId = String(f.google_scholar_id || "").trim();
+      const hasScholarData =
+        f.has_scholar_data !== false &&
+        Boolean(scholarId) &&
+        scholarId.toLowerCase() !== "nan" &&
+        scholarId.toLowerCase() !== "none";
+      if (hasScholarData) {
+        inst.faculty_count += 1;
+      }
       inst.adj_count += f.adj_count;
       inst.raw_count += f.raw_count;
       inst.citations += f.citations;
@@ -594,6 +614,11 @@
       selector: '[data-tour="journals"]',
     },
     {
+      title: "Network analysis",
+      body: "Switch to the Network tab for a coauthorship map of rostered faculty, using the same journal list.",
+      selector: '[data-tour="network"]',
+    },
+    {
       title: "Research areas",
       body: "Use the left sidebar to include or exclude areas (Selection, Leadership, Teams, …). Domain headers toggle a whole group at once.",
       selector: '[data-tour="areas"]',
@@ -647,7 +672,7 @@
       return;
     }
 
-    const el = document.querySelector(step.selector);
+    const el = tourEl(step.selector);
     if (!el) {
       backdrop.classList.remove("is-clear");
       pop.style.left = `${margin}px`;
@@ -749,7 +774,7 @@
       tourIndex === TOUR_STEPS.length - 1 ? "Done" : "Next";
 
     if (step.selector) {
-      const el = document.querySelector(step.selector);
+      const el = tourEl(step.selector);
       if (el) {
         tourTarget = el;
         tourTarget.classList.add("tour-target");
