@@ -15,13 +15,22 @@ import time
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
+import pandas as pd
 from ddgs import DDGS
+
+from config import write_scholar_table
 
 ROOT = Path(__file__).resolve().parents[1]
 FACULTY = ROOT / "data" / "faculty.csv"
 INST = ROOT / "data" / "institutions.csv"
 LOG = ROOT / "pipeline" / "cache" / "scholar_lookup_log.csv"
 
+BLOCKED_IDS = {
+    "mHCtGhcAAAAJ",  # botanist James Beck, not Waterloo I-O
+    "qRrkCbkAAAAJ",  # Andrew F. Hayes PROCESS profile, not Ho Kwan Cheung
+    "Io3oUv4AAAAJ",  # Robert Henning, University of Chicago crystallography
+    "kZeVQQ0AAAAJ",  # Xiaohong (Violet) Xu, not Stephanie Payne
+}
 SCHOLAR_ID_RE = re.compile(r"^[A-Za-z0-9_-]{10,16}$")
 SUFFIXES = {"jr", "jr.", "sr", "sr.", "ii", "iii", "iv", "phd", "ph.d."}
 
@@ -78,6 +87,10 @@ AFFILIATION_HINTS = {
     "western": ["western university", "western ontario", "uwo.ca"],
     "uqam": ["uqam", "québec à montréal", "quebec a montreal", "uqam.ca"],
     "windsor": ["windsor", "uwindsor.ca"],
+    "ksu": ["kansas state", "k-state", "kstate", "ksu.edu", "k-state.edu"],
+    "uconn": ["connecticut", "uconn", "uconn.edu"],
+    "lsu": ["louisiana state", "lsu.edu", "lsu"],
+    "wsu": ["washington state", "wsu.edu", "wsu vancouver"],
 }
 
 
@@ -134,6 +147,35 @@ NICKNAMES = {
     "oneill_thomas": ["Tom O'Neill", "Thomas O'Neill"],
     "hunter_samuel": ["Sam Hunter", "Samuel Hunter"],
     "kaplan_seth": ["Seth Kaplan"],
+    "bobocel_ramona": ["Ramona Bobocel", "D Ramona Bobocel"],
+    "foster_lori": ["Lori Foster Thompson", "Lori Foster"],
+    "sonhing_leanne": ["Leanne Son Hing"],
+    "steelejohnson_debra": ["Debra Steele-Johnson", "Debra Steele Johnson"],
+    "simkins_susan": ["Susan Mohammed", "Susan J Mohammed"],
+    "taylor_maryanne": ["Maryanne Taylor", "Mary A Taylor"],
+    "shahanidenning_comila": ["Comila Shahani"],
+    "svyantek_dan": ["Daniel Svyantek", "Dan Svyantek"],
+    "menard_julie": ["Julie Ménard"],
+    "scott_cliff": ["Clifford Scott"],
+    "godollei_anna": ["Anna Godöllei"],
+    "chatterjee_dia": ["Deepshikha Chatterjee", "Dia Chatterjee"],
+    "carver_sarah": ["Sarah J Carver", "Sarah J. Carver"],
+    "nguyen_tin": ["Tin L Nguyen", "Tin L. Nguyen"],
+    "gibbons_alyssa": ["Alyssa Mitchell Gibbons"],
+    "scott_cliff": ["Clifton Scott", "Clifton W Scott", "Cliff Scott"],
+    "baker_nathan": ["NM Baker", "Nathan M Baker"],
+    "martini_kate": ["Katherine Martini", "Katherine Jane-Binder Martini"],
+    "magley_vicki": ["Vicki J Magley", "Vicki J. Magley"],
+    "henning_robert": ["Robert A Henning", "Robert A. Henning"],
+    "zhang_don": ["Don C Zhang", "Don C. Zhang"],
+    "cobb_haley": ["Haley R Cobb", "Haley R. Cobb"],
+    "allen_shalene": ["Shalene J Allen", "Shalene J. Allen"],
+    "snyder_lori": ["Lori Anderson Snyder", "Lori A Snyder"],
+    "mcgee_heather": ["Heather M McGee", "Heather McGee"],
+    "beck_james": ["James W Beck", "James Beck"],
+    "lee_kibeom": ["Kibeom Lee"],
+    "albritton_betsy": ["Betsy Albritton", "Elizabeth Albritton"],
+    "smith_nicholas": ["Nicholas A Smith", "Nicholas A. Smith"],
 }
 
 
@@ -200,6 +242,9 @@ def search_one(
             body = r.get("body") or ""
             sid = scholar_id_from_url(url)
             if not sid or sid in seen:
+                continue
+            if sid in BLOCKED_IDS:
+                notes.append(f"blocked:{sid}")
                 continue
             seen.add(sid)
             snippet = f"{title} {body}"
@@ -283,6 +328,7 @@ def main() -> None:
         w = csv.DictWriter(f, fieldnames=fields, lineterminator="\n")
         w.writeheader()
         w.writerows(rows)
+    write_scholar_table(pd.DataFrame(rows))
 
     write_header = not LOG.exists()
     with LOG.open("a", encoding="utf-8", newline="") as f:

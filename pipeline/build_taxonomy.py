@@ -103,18 +103,58 @@ def sync_venues(tax: dict) -> None:
     specialty = {
         "lq": ["Leadership"],
         "orm": ["Methods"],
-        "johp": ["OHP"],
+        "johp": ["Stress / Well-being", "Work–Family", "Safety"],
+        "was": ["Stress / Well-being", "Work–Family", "Safety"],
+        "ijtd": ["Training"],
+        "apm": ["Methods"],
+        "assess": ["Methods"],
+        "brm": ["Methods"],
+        "epm": ["Methods"],
+        "mbr": ["Methods"],
+        "pas": ["Methods"],
+        "pmetrika": ["Methods"],
+        "smr": ["Methods"],
+        "gdyn": ["Teams"],
+        "sgr": ["Teams"],
+        "ohs": ["Stress / Well-being", "Work–Family", "Safety"],
+        "sah": ["Stress / Well-being", "Work–Family", "Safety"],
+        "ijsm": ["Stress / Well-being", "Work–Family", "Safety"],
+        "pad": ["Selection"],
     }
+    rename = {
+        "Personality": "Individual Differences / Personality",
+        "Motivation/Attitudes": "Motivation / Attitudes",
+        "Technology": "AI / Technology",
+    }
+    ohp_split = ["Stress / Well-being", "Work–Family", "Safety"]
+    tax_areas = set(tax["areas"])
     broad = [a for a in tax["areas"] if a != "General"] + ["General"]
     for v in doc["venues"]:
         if v["id"] in specialty:
             v["areas"] = specialty[v["id"]]
-        else:
-            # preserve prior focus when possible by intersecting old with new, else full broad
-            old = [a for a in (v.get("areas") or []) if a in tax["areas"]]
-            v["areas"] = old if len(old) >= 2 else list(broad)
-            if "General" not in v["areas"]:
-                v["areas"].append("General")
+            continue
+        old_raw = list(v.get("areas") or [])
+        remapped: list[str] = []
+        seen: set[str] = set()
+        had_mot = any(a in {"Motivation/Attitudes", "Motivation / Attitudes"} for a in old_raw)
+        had_sel = "Selection" in old_raw
+        for a in old_raw:
+            mapped = ohp_split if a == "OHP" else [rename.get(a, a)]
+            for m in mapped:
+                if m in tax_areas and m not in seen:
+                    seen.add(m)
+                    remapped.append(m)
+        if had_mot:
+            for extra in ("Work Design", "Culture / Climate"):
+                if extra in tax_areas and extra not in seen:
+                    seen.add(extra)
+                    remapped.append(extra)
+        if had_sel or had_mot:
+            if "Performance" in tax_areas and "Performance" not in seen:
+                remapped.append("Performance")
+        v["areas"] = remapped if len(remapped) >= 2 else list(broad)
+        if "General" not in v["areas"]:
+            v["areas"].append("General")
     venues_path.write_text(json.dumps(doc, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
@@ -133,12 +173,27 @@ def main() -> None:
     parser.add_argument("--min-count", type=int, default=1)
     args = parser.parse_args()
 
-    if not INTERESTS.exists():
-        raise SystemExit(f"Missing {INTERESTS}; run pipeline/fetch_interests.py first")
-
     tax = load_taxonomy()
     aliases = {normalize(k): v for k, v in (tax.get("aliases") or {}).items()}
-    rows = json.loads(INTERESTS.read_text(encoding="utf-8"))
+    if INTERESTS.exists():
+        rows = json.loads(INTERESTS.read_text(encoding="utf-8"))
+    elif FACULTY_AREAS.exists():
+        prev = json.loads(FACULTY_AREAS.read_text(encoding="utf-8"))
+        rows = []
+        for row in prev.get("faculty") or []:
+            src = row.get("source") or {}
+            rows.append(
+                {
+                    "faculty_id": row["faculty_id"],
+                    "name": row.get("name"),
+                    "phrases": row.get("phrases") or [],
+                    "scholar_phrases": src.get("scholar"),
+                    "homepage_phrases": src.get("homepage"),
+                }
+            )
+        print(f"No {INTERESTS.name}; remapping phrases already in {FACULTY_AREAS.name}")
+    else:
+        raise SystemExit(f"Missing {INTERESTS}; run pipeline/fetch_interests.py first")
 
     faculty_out: list[dict] = []
     unmapped_counter: Counter[str] = Counter()

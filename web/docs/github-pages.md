@@ -14,8 +14,9 @@ If the root URL still looks like a README, hard-refresh (`Ctrl+F5`) or open a pr
 
 ```bash
 python pipeline/run_all.py
+python pipeline/build_coauthor_network.py
 ```
 
-Commit `web/data/rankings.json` before pushing so the live table stays current.
+Commit `web/data/rankings.json` and `web/data/coauthor_network.json` before pushing so the live Rankings table and Network tab stay current.
 
-Site docs are `web/docs/`, shown at `doc.html?p=faq` (and methodology, faculty-roster, contributing).
+Site docs are `web/docs/`, shown at `doc.html?p=ranking`, `doc.html?p=network`, and `doc.html?p=faq`.

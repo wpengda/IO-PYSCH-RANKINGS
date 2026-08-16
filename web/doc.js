@@ -1,18 +1,23 @@
 (() => {
   const PAGES = {
-    methodology: { file: "docs/methodology.md", title: "Methodology" },
-    "faculty-roster": { file: "docs/faculty-roster.md", title: "Faculty roster" },
+    ranking: { file: "docs/ranking.md", title: "How we rank" },
+    methodology: { file: "docs/ranking.md", title: "How we rank" },
+    network: { file: "docs/network.md", title: "How we network" },
     faq: { file: "docs/faq.md", title: "FAQ" },
-    contributing: { file: "docs/contributing.md", title: "Contributing" },
   };
+  const ALIASES = { methodology: "ranking" };
 
   const REPO_BLOB =
     "https://github.com/wpengda/IO-PYSCH-RANKINGS/blob/main/";
 
   const body = document.getElementById("docBody");
   const params = new URLSearchParams(location.search);
-  const key = params.get("p") || "methodology";
-  const page = PAGES[key];
+  const rawKey = params.get("p") || "ranking";
+  const key = ALIASES[rawKey] || rawKey;
+  const navLink = document.querySelector(`.doc-nav a[data-page="${key}"]`);
+  const page = navLink?.dataset.file
+    ? { file: navLink.dataset.file, title: navLink.dataset.title || key }
+    : PAGES[key];
 
   document.querySelectorAll(".doc-nav a").forEach((a) => {
     if (a.dataset.page === key) a.classList.add("active");
@@ -23,9 +28,10 @@
     if (/^https?:\/\//i.test(href) || href.startsWith("mailto:")) return href;
 
     const md = href.match(/(?:^|\/)?([a-z0-9-]+)\.md(?:#.*)?$/i);
-    if (md && PAGES[md[1]]) {
+    if (md && (PAGES[md[1]] || ALIASES[md[1]])) {
+      const pageKey = ALIASES[md[1]] || md[1];
       const hash = href.includes("#") ? href.slice(href.indexOf("#")) : "";
-      return `doc.html?p=${md[1]}${hash}`;
+      return `doc.html?p=${pageKey}${hash}`;
     }
 
     const data = href.match(/^(?:\.\.\/)*(data\/.+)$/i);

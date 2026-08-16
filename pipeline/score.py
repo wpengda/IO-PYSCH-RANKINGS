@@ -16,10 +16,12 @@ from config import (
     apply_venue,
     ensure_dirs,
     has_google_scholar_id,
+    load_faculty,
     load_faculty_areas,
     load_venues,
     venue_name_lookup,
 )
+from build_coauthor_network import name_keys
 
 
 WINDOWS = {
@@ -33,7 +35,7 @@ def faculty_area_labels(
     papers: list[dict],
     *,
     curated: list[str] | None = None,
-    max_labels: int = 10,
+    max_labels: int = 7,
     min_share: float = 0.0,
     min_credit: float = 0.0,
 ) -> list[str]:
@@ -72,6 +74,37 @@ def faculty_area_labels(
     return [area for area, _n in ranked[:max_labels]]
 
 
+def ego_author_pos(authors: list | None, faculty_name: str) -> int | None:
+    """0-based index of this faculty member in the Scholar author list, if matched."""
+    keys = name_keys(faculty_name)
+    if not keys:
+        return None
+    hits = [i for i, a in enumerate(authors or []) if name_keys(a) & keys]
+    return hits[0] if hits else None
+
+
+def authorship_flags(authors: list | None, faculty_name: str) -> dict:
+    """First / second / last from the Scholar author string.
+
+    Solo papers count as first only. On a 2-author paper the second author is
+    also last. Unmatched names count as none of the three.
+    """
+    names = [a for a in (authors or []) if a]
+    n = len(names)
+    pos = ego_author_pos(names, faculty_name)
+    is_first = pos == 0
+    is_second = pos == 1
+    is_last = pos is not None and n >= 2 and pos == n - 1
+    return {
+        "n_authors": n,
+        "author_pos": pos,
+        "is_first": is_first,
+        "is_second": is_second,
+        "is_last": is_last,
+        "is_first_second_last": is_first or is_second or is_last,
+    }
+
+
 def in_window(year: int | None, window: int | None, current_year: int) -> bool:
     if year is None:
         return window is None
@@ -91,9 +124,20 @@ def score_rows(
     curated_areas: dict[str, list[str]] | None = None,
 ) -> dict:
     fac_metrics: dict[str, dict[str, float]] = defaultdict(
-        lambda: {"adj_count": 0.0, "raw_count": 0.0, "citations": 0.0, "weighted_if": 0.0}
+        lambda: {
+            "adj_count": 0.0,
+            "raw_count": 0.0,
+            "citations": 0.0,
+            "weighted_if": 0.0,
+            "first_second_last": 0.0,
+            "last_author": 0.0,
+        }
     )
     fac_papers: dict[str, list[dict]] = defaultdict(list)
+    fac_names = {
+        str(r["faculty_id"]): str(r["name"] or "")
+        for _, r in faculty.iterrows()
+    }
 
     for p in pubs:
         if not include_cross_boundary and p.get("cross_boundary"):
@@ -109,11 +153,16 @@ def score_rows(
         credit = float(p["adj_credit"])
         weight = float(p["venue_weight"])
         cites = float(p["cited_by_count"])
+        role = authorship_flags(p.get("authors"), fac_names.get(str(fid), p.get("name") or ""))
         fac_metrics[fid]["adj_count"] += credit
         fac_metrics[fid]["raw_count"] += 1.0
         fac_metrics[fid]["citations"] += cites
         # Impact-factor metric: full journal IF per paper (no 1/N)
         fac_metrics[fid]["weighted_if"] += weight
+        if role["is_first_second_last"]:
+            fac_metrics[fid]["first_second_last"] += 1.0
+        if role["is_last"]:
+            fac_metrics[fid]["last_author"] += 1.0
         fac_papers[fid].append(
             {
                 "work_id": p["work_id"],
@@ -128,6 +177,12 @@ def score_rows(
                 "cross_boundary": bool(p.get("cross_boundary", False)),
                 "areas": p.get("areas") or [],
                 "doi": p.get("doi"),
+                "n_authors": role["n_authors"],
+                "author_pos": role["author_pos"],
+                "is_first": role["is_first"],
+                "is_second": role["is_second"],
+                "is_last": role["is_last"],
+                "is_first_second_last": role["is_first_second_last"],
             }
         )
 
@@ -147,6 +202,8 @@ def score_rows(
             "raw_count": 0.0,
             "citations": 0.0,
             "weighted_if": 0.0,
+            "first_second_last": 0.0,
+            "last_author": 0.0,
             "faculty_ids": [],
         }
 
@@ -178,6 +235,8 @@ def score_rows(
                 "raw_count": int(m["raw_count"]),
                 "citations": int(m["citations"]),
                 "weighted_if": round(m["weighted_if"], 4),
+                "first_second_last": int(m["first_second_last"]),
+                "last_author": int(m["last_author"]),
                 "areas": faculty_area_labels(
                     papers, curated=curated_map.get(str(fid))
                 ),
@@ -190,6 +249,8 @@ def score_rows(
         inst_agg[iid]["raw_count"] += m["raw_count"]
         inst_agg[iid]["citations"] += m["citations"]
         inst_agg[iid]["weighted_if"] += m["weighted_if"]
+        inst_agg[iid]["first_second_last"] += m["first_second_last"]
+        inst_agg[iid]["last_author"] += m["last_author"]
         inst_agg[iid]["faculty_ids"].append(fid)
 
     institutions_out = []
@@ -202,6 +263,8 @@ def score_rows(
                 "raw_count": int(inst["raw_count"]),
                 "citations": int(inst["citations"]),
                 "weighted_if": round(inst["weighted_if"], 4),
+                "first_second_last": int(inst["first_second_last"]),
+                "last_author": int(inst["last_author"]),
                 "adj_count_per_faculty": round(inst["adj_count"] / fc, 4),
                 "citations_per_faculty": round(inst["citations"] / fc, 4),
                 "weighted_if_per_faculty": round(inst["weighted_if"] / fc, 4),
@@ -231,7 +294,7 @@ def main() -> None:
         raise SystemExit(f"Missing {pubs_path}; run fetch_scholar.py first")
 
     raw_pubs = json.loads(pubs_path.read_text(encoding="utf-8"))
-    faculty = pd.read_csv(DATA / "faculty.csv")
+    faculty = load_faculty()
     institutions = pd.read_csv(DATA / "institutions.csv")
     venues_doc = load_venues()
     venues = venue_name_lookup(venues_doc)
@@ -261,6 +324,8 @@ def main() -> None:
         "metrics": [
             {"key": "adj_count", "label": "Adjusted count (1/N)", "default": True},
             {"key": "raw_count", "label": "Raw paper count"},
+            {"key": "first_second_last", "label": "1st / 2nd / last author"},
+            {"key": "last_author", "label": "Last-author papers"},
             {"key": "citations", "label": "Citations"},
             {"key": "weighted_if", "label": "Impact factor (sum)"},
             {"key": "adj_count_per_faculty", "label": "Adj. count / faculty"},
@@ -270,10 +335,12 @@ def main() -> None:
         "windows": ["5", "10", "all"],
         "areas": venues_doc.get("areas") or [],
         "domains": venues_doc.get("domains") or [],
+        "disciplines": venues_doc.get("disciplines") or [],
         "venues": venues_doc["venues"],
         "default": {
             "window": "10",
-            "cross_boundary": False,
+            "cross_boundary": True,
+            "venues": "all",
             "metric": "adj_count",
             "countries": ["US", "CA"],
         },

@@ -7,13 +7,15 @@ Inspired by [CSRankings](https://csrankings.org/), but independent of it. Build 
 ## Features
 
 - Default ranking by **author-adjusted publication counts** (`1/N`) in a curated journal whitelist
-- Switchable metrics: raw count, citations, impact-factor sum, and per-faculty averages
+- Switchable metrics: raw count, 1st/2nd/last author, last author, citations, impact-factor sum, and per-faculty averages
+- **Network** tab: coauthorship among current rostered faculty (same journals and years)
 - Continuous publication year range (default ≈ last 10 years)
-- Journals picker: core venues by default; optional cross-boundary titles (AMJ, JoM, …)
+- Journals picker: all whitelist titles on by default, grouped by discipline and sorted by impact factor, with IF / JCR / ABDC columns; uncheck to exclude, or use **Q1 only** / **A* only** / **A* & A only**
 - School search in the toolbar
-- Area filter (Selection, Leadership, OHP, Methods, …)
+- Area filter (Selection, Leadership, Stress / Well-being, Methods, …)
 - Expand an institution to inspect faculty and counted papers
 - Shareable URL hash for the current view
+- Header links: How we rank, How we network, FAQ, and a [feedback form](https://docs.google.com/forms/d/e/1FAIpQLSco-_VbMsAgw0Qgz3H2d4-yFXM68cbcLk00zZdiM1RIEtegEQ/viewform)
 
 ## Quick start
 
@@ -30,19 +32,21 @@ Serve the site locally (required so `fetch('data/rankings.json')` works):
 python -m http.server 8000 --bind 127.0.0.1 --directory web
 ```
 
-Open http://127.0.0.1:8000/ — docs are in the footer (**Methodology / FAQ / …**) or `doc.html?p=faq`.
+Open http://127.0.0.1:8000/ — site docs are **How we rank** / **How we network** / **FAQ** in the header, or `doc.html?p=faq`.
 
 ## Repository layout
 
 | Path | Purpose |
 | --- | --- |
+| `data/google_scholar.csv` | Google Scholar `user=` IDs used for scoring (source of truth) |
 | `data/faculty.csv` | Curated faculty + homepage ORCID / Google Scholar IDs |
-| `data/institutions.csv` | U.S./Canada I-O PhD programs (57); `roster_status` marks complete vs seed |
-| `data/venues.json` | Journal whitelist, weights, Clarivate IF, areas |
+| `data/institutions.csv` | U.S./Canada I-O PhD programs (61); `roster_status` marks complete vs seed |
+| `data/venues.json` | Journal whitelist, Clarivate IF, JCR quartile, ABDC rating, areas |
 | `pipeline/` | Scholar import + scoring (`pipeline/cache/` is gitignored) |
 | `web/` | Static ranking UI + doc viewer |
-| `web/docs/` | Methodology, FAQ, contributing (site docs) |
+| `web/docs/` | How we rank (`ranking.md`), How we network (`network.md`), and FAQ |
 | `web/data/rankings.json` | Generated scores served by the site (commit after rebuilds) |
+| `web/data/coauthor_network.json` | Generated coauthor graph for the Network tab (commit after rebuilds) |
 
 ## GitHub Pages
 
@@ -52,9 +56,12 @@ After editing faculty or venues, regenerate before pushing:
 
 ```bash
 python pipeline/run_all.py
+python pipeline/build_coauthor_network.py
 python pipeline/validate_pilot.py
 ```
 
+Commit `web/data/rankings.json` and `web/data/coauthor_network.json` so the live Rankings and Network tabs stay current.
+
 ## Disclaimer
 
-This is a pilot research tool, not an official SIOP/APA ranking. Faculty coverage is incomplete; always verify important cases against program websites. See [methodology](web/docs/methodology.md).
+This is a pilot research tool, not an official SIOP/APA ranking. Faculty coverage is incomplete and currently includes **current program faculty only**. Always verify important cases against program websites. See [How we rank](web/docs/ranking.md).

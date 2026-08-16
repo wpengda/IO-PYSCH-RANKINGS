@@ -20,30 +20,34 @@ Each paper contributes `1 / N`, where `N` is the number of authors. That is the 
 
 Those views are for exploration. Citation and IF numbers change quickly and can be gamed. Prefer adjusted counts for stable comparisons.
 
-**Impact factor (sum)** adds the journal’s curated Clarivate JIF once per paper (no 1/N).
+**Citations** is not “cites received during the selected years.” The Years slider keeps whitelist papers by **publication year**; the metric sums each paper’s Google Scholar **lifetime** citation total as of the last profile fetch. See [ranking.md](ranking.md).
+
+**Impact factor (sum)** adds the journal’s Clarivate JIF (JCR 2026 / 2025 JIF) once per paper (no 1/N). The Journals list shows each title’s 2025 JIF, best JCR 2025 quartile, and 2025 ABDC rating (`A*`–`C`, or **—** if unlisted). The whitelist is Q1–Q2.
+
+**1st / 2nd / last author** counts whitelist papers where the person is first, second, or last on Google Scholar’s author list (once per paper). **Last-author papers** counts only last position among two or more authors. Sole-author papers count as first, not last. See [ranking.md](ranking.md).
 
 ## Why are some well-known faculty missing?
 
-v1 is a **pilot**. Rosters are incomplete until each program is fully curated. See [contributing.md](contributing.md).
+v1 is a **pilot**. Rosters are incomplete until each program is fully curated. The table also includes **current faculty only**; people who used to be in a program are not counted yet and will be added later. See [ranking.md](ranking.md).
 
 ## Why might a paper be missing?
 
 - The journal is not in [`data/venues.json`](../../data/venues.json), or the Scholar venue string did not match (handbooks, similarly named outlets, truncated titles).
 - The faculty member has no Google Scholar ID, or the paper is missing from their Scholar profile.
 - The paper is outside the Years slider.
-- The journal is unchecked in **Journals** (cross-boundary titles are off by default).
+- The journal is unchecked in **Journals** (all whitelist titles are on by default; uncheck ones you want to exclude).
 
 ## Are Academy of Management Journal and Journal of Management included?
 
-They are **cross-boundary** and off by default (**Journals → core only**). Check those titles, or choose **all**.
+They are in the **OB / Management** group and **on by default**. Uncheck those titles, or use **Q1 only** / **A* only**, if you want a narrower set.
 
-## How are the area pills next to a name chosen?
+## What does the Network tab show?
 
-From **all** of that person’s whitelist-journal papers, **all years**. Years / Journals / Areas filters do not change the pills. See [methodology.md](methodology.md).
+Coauthorship among **current** rostered faculty who have a Google Scholar profile, using the same journal whitelist as Rankings. A line is shared whitelist papers, not a ranking score. See [network.md](network.md).
 
 ## How often is data refreshed?
 
-When someone re-runs `python pipeline/run_all.py` and commits `web/data/rankings.json`.
+When someone re-runs `python pipeline/run_all.py` and commits `web/data/rankings.json`. The Network tab also needs `python pipeline/build_coauthor_network.py` and a commit of `web/data/coauthor_network.json`.
 
 ## Can I reproduce the numbers?
 

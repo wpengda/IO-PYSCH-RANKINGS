@@ -16,7 +16,7 @@ from collections import defaultdict
 
 import pandas as pd
 
-from config import CACHE, DATA, WEB_DATA, ensure_dirs, has_google_scholar_id, load_venues
+from config import CACHE, DATA, WEB_DATA, apply_venue, ensure_dirs, has_google_scholar_id, load_faculty, load_venues, venue_name_lookup
 
 SUFFIXES = {"jr", "sr", "ii", "iii", "iv", "phd", "ph.d"}
 
@@ -54,7 +54,7 @@ def name_keys(name: str) -> set[str]:
 
 
 def load_roster() -> pd.DataFrame:
-    faculty = pd.read_csv(DATA / "faculty.csv")
+    faculty = load_faculty()
     faculty = faculty[faculty["active"].astype(str).str.lower().isin(["true", "1", "yes"])]
     faculty = faculty[faculty["google_scholar_id"].map(has_google_scholar_id)]
     return faculty
@@ -127,6 +127,9 @@ def main() -> None:
         raise SystemExit(f"Missing {pubs_path}; run fetch_scholar_serpapi.py first")
 
     pubs = json.loads(pubs_path.read_text(encoding="utf-8"))
+    venues_doc = load_venues()
+    venues = venue_name_lookup(venues_doc)
+    pubs = [apply_venue(p, venues) for p in pubs]
     faculty = load_roster()
     by_id = {str(r["faculty_id"]): r for _, r in faculty.iterrows()}
     by_key = roster_index(faculty)
@@ -216,12 +219,17 @@ def main() -> None:
             }
         )
 
-    venues_doc = load_venues()
     venue_meta = [
         {
             "id": v["id"],
             "name": v["name"],
             "cross_boundary": bool(v.get("cross_boundary")),
+            "discipline": v.get("discipline") or "",
+            "subfield": v.get("subfield") or "",
+            "io_relevance": v.get("io_relevance") or "",
+            "jcr_quartile": v.get("jcr_quartile") or "",
+            "impact_factor": v.get("impact_factor"),
+            "abdc": v.get("abdc") or "",
         }
         for v in venues_doc.get("venues") or []
     ]
@@ -258,6 +266,7 @@ def main() -> None:
         "venues": venue_meta,
         "areas": venues_doc.get("areas") or [],
         "domains": venues_doc.get("domains") or [],
+        "disciplines": venues_doc.get("disciplines") or [],
         "nodes": nodes,
         "roster_edges": roster_edge_list,
     }
@@ -270,6 +279,7 @@ def main() -> None:
         "venues": venue_meta,
         "areas": payload["areas"],
         "domains": payload["domains"],
+        "disciplines": payload["disciplines"],
         "nodes": nodes,
         "roster_edges": roster_edge_list,
     }

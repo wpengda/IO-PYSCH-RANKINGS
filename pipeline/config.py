@@ -7,10 +7,13 @@ import re
 from functools import lru_cache
 from pathlib import Path
 
+import pandas as pd
+
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 WEB_DATA = ROOT / "web" / "data"
 CACHE = ROOT / "pipeline" / "cache"
+SCHOLAR_TABLE = DATA / "google_scholar.csv"
 
 MAILTO = "io-psyc-rankings@example.com"
 USER_AGENT = f"IO-Psyc-Index/0.1 (mailto:{MAILTO})"
@@ -102,7 +105,9 @@ def refine_paper_areas(
     Paper-level areas for ranking filters.
 
     - Specialty venue (one candidate area): keep that area, and also keep any
-      additional title keyword hits (e.g. an LQ paper on AI → Leadership + Technology).
+      additional title keyword hits (e.g. an LQ paper on AI → Leadership + AI / Technology).
+    - Tight specialty group (e.g. JOHP: a few OHP areas, no General): keep title
+      hits inside the group, plus extra hits; if none, keep the first area.
     - Broad venue: use all title keyword hits.
     - No title hit: General when the venue allows it; else the specialty/candidate list.
     """
@@ -116,6 +121,17 @@ def refine_paper_areas(
     if len(candidates) == 1:
         chosen = list(candidates)
         for a in hits:
+            if a not in chosen:
+                chosen.append(a)
+        return chosen
+
+    tight = "General" not in candidates and 1 < len(candidates) <= 4
+    if tight:
+        chosen = [a for a in hits if a in candidates]
+        extra = [a for a in hits if a not in candidates]
+        if not chosen:
+            chosen = [candidates[0]]
+        for a in extra:
             if a not in chosen:
                 chosen.append(a)
         return chosen
@@ -173,9 +189,9 @@ def match_venue(title_or_venue: str, venues: dict[str, dict]) -> dict | None:
         if not text.startswith(name) or len(text) <= len(name):
             return False
         nxt = text[len(name)]
-        if nxt not in " ,.;:([{/|-–—":
+        if nxt not in " ,.;:([{/|-–—…⋯":
             return False
-        rest = text[len(name) :].lstrip(" ,.;:([{/|-–—")
+        rest = text[len(name) :].lstrip(" ,.;:([{/|-–—…⋯")
         if not rest:
             return True
         # Skip leading junk (Scholar truncation artifacts) then require vol/year.
@@ -245,3 +261,40 @@ def normalize_orcid(value: str) -> str:
 def ensure_dirs() -> None:
     CACHE.mkdir(parents=True, exist_ok=True)
     WEB_DATA.mkdir(parents=True, exist_ok=True)
+
+
+def _clean_scholar_id(value) -> str:
+    text = str(value or "").strip()
+    if not text or text.lower() in {"nan", "none"}:
+        return ""
+    return text
+
+
+def apply_scholar_table(faculty: pd.DataFrame) -> pd.DataFrame:
+    """Overlay Scholar IDs from data/google_scholar.csv when that table exists."""
+    out = faculty.copy()
+    out["google_scholar_id"] = out["google_scholar_id"].map(_clean_scholar_id)
+    if not SCHOLAR_TABLE.exists():
+        return out
+    table = pd.read_csv(SCHOLAR_TABLE)
+    if "faculty_id" not in table.columns or "google_scholar_id" not in table.columns:
+        return out
+    overlay = (
+        table.drop_duplicates("faculty_id")
+        .assign(google_scholar_id=lambda d: d["google_scholar_id"].map(_clean_scholar_id))
+        .set_index("faculty_id")["google_scholar_id"]
+    )
+    mapped = out["faculty_id"].map(overlay)
+    out["google_scholar_id"] = mapped.where(mapped.notna(), out["google_scholar_id"])
+    return out
+
+
+def load_faculty() -> pd.DataFrame:
+    return apply_scholar_table(pd.read_csv(DATA / "faculty.csv"))
+
+
+def write_scholar_table(faculty: pd.DataFrame) -> None:
+    cols = ["faculty_id", "name", "institution_id", "google_scholar_id"]
+    df = faculty[cols].copy()
+    df["google_scholar_id"] = df["google_scholar_id"].map(_clean_scholar_id)
+    df.to_csv(SCHOLAR_TABLE, index=False)

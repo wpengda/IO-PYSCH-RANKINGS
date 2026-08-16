@@ -48,6 +48,14 @@ html {
   .brand {
     min-width: 0;
   }
+
+  .intro-row {
+    flex-wrap: wrap;
+  }
+
+  .guide-links {
+    justify-content: flex-start;
+  }
 }
 
 .view-tabs {
@@ -107,6 +115,45 @@ body {
   font-size: 0.98rem;
   line-height: 1.45;
   min-height: calc(1.45em * 2);
+}
+
+.intro-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem 1.5rem;
+}
+
+.guide-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.35rem 0.9rem;
+  flex: 0 0 auto;
+  padding-top: 0.15rem;
+}
+
+.guide-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.guide-link:hover {
+  text-decoration: underline;
+}
+
+.guide-link.is-soon {
+  color: var(--muted);
+  cursor: default;
+  text-decoration: none;
+}
+
+.guide-link.is-soon:hover {
+  text-decoration: none;
 }
 
 .view-pane[hidden] {
@@ -613,7 +660,7 @@ a.journals-btn {
   border: none;
   padding: 0;
   background: transparent;
-  max-width: min(820px, calc(100vw - 1.5rem));
+  max-width: min(960px, calc(100vw - 1.5rem));
   width: 100%;
 }
 
@@ -622,6 +669,7 @@ a.journals-btn {
 }
 
 .journals-card {
+  --venue-cols: 1.25rem 9.5rem minmax(7rem, 1fr) 2.55rem 2.2rem 2.55rem;
   background: #fff;
   border: 1px solid var(--line);
   border-radius: 6px;
@@ -661,27 +709,75 @@ a.journals-btn {
   gap: 1rem;
 }
 
-.venue-group-title {
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--muted);
+.venue-group-title,
+.venue-subgroup-title {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
   margin-bottom: 0.4rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.venue-group-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.venue-group-title input,
+.venue-subgroup-title input {
+  flex-shrink: 0;
+}
+
+.venue-subgroup {
+  margin: 0.35rem 0 0.55rem 0.15rem;
+  padding-left: 0.65rem;
+  border-left: 2px solid var(--line);
+}
+
+.venue-subgroup-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 0.25rem;
 }
 
 .venue-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 0.2rem 0.75rem;
+  grid-template-columns: 1fr;
+  gap: 0.15rem 0;
+}
+
+.venue-cols-head,
+.venue-row {
+  display: grid;
+  grid-template-columns: var(--venue-cols);
+  column-gap: 0.4rem;
+  align-items: start;
+  padding: 0.32rem 0.2rem;
+}
+
+.venue-cols-head {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  margin: 0 -0.2rem 0.35rem;
+  padding: 0.45rem 0.4rem 0.4rem;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+.venue-cols-head > :nth-child(n + 4) {
+  justify-self: center;
+  text-align: center;
 }
 
 .venue-row {
-  display: grid;
-  grid-template-columns: auto auto 1fr;
-  gap: 0.35rem;
-  align-items: baseline;
-  padding: 0.28rem 0.2rem;
   cursor: pointer;
   font-size: 0.88rem;
   border-radius: 3px;
@@ -691,17 +787,100 @@ a.journals-btn {
   background: var(--hover);
 }
 
+.venue-row > input {
+  width: 0.95rem;
+  height: 0.95rem;
+  margin: 0.2rem 0 0;
+  justify-self: center;
+}
+
 .venue-short {
   font-weight: 700;
   color: var(--accent);
-  min-width: 4.5rem;
+  line-height: 1.35;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .venue-name {
+  color: var(--ink);
+  white-space: normal;
+  overflow: visible;
+  line-height: 1.35;
+  word-break: break-word;
+}
+
+.venue-if {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.75rem;
+  font-weight: 600;
   color: var(--muted);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  text-align: center;
+  justify-self: center;
+  line-height: 1.35;
+  padding-top: 0.08rem;
+}
+
+.jcr-badge,
+.abdc-badge {
+  display: inline-block;
+  min-width: 1.85rem;
+  padding: 0.06rem 0.32rem;
+  border-radius: 3px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: center;
+  line-height: 1.35;
+  justify-self: center;
+}
+
+.jcr-q1 {
+  background: #d9f0d9;
+  color: #1b5e20;
+}
+
+.jcr-q2 {
+  background: #d6e8f8;
+  color: #1a5276;
+}
+
+.jcr-q3 {
+  background: #fdebd0;
+  color: #9a4d00;
+}
+
+.jcr-q4 {
+  background: #f5d0d0;
+  color: #922b21;
+}
+
+.jcr-na,
+.abdc-na {
+  background: #ececec;
+  color: #666;
+  font-weight: 600;
+}
+
+.abdc-astar {
+  background: #f3e5c8;
+  color: #7a4f00;
+}
+
+.abdc-a {
+  background: #d9f0d9;
+  color: #1b5e20;
+}
+
+.abdc-b {
+  background: #d6e8f8;
+  color: #1a5276;
+}
+
+.abdc-c {
+  background: #ececec;
+  color: #555;
 }
 
 .journals-foot {
@@ -1192,11 +1371,6 @@ th.col-fac {
 .site-footer .gh-icon {
   display: inline-block;
   vertical-align: -0.1em;
-}
-
-.site-footer .footer-nav {
-  margin-top: 0.75rem;
-  font-weight: 700;
 }
 
 .site-footer .footer-note {

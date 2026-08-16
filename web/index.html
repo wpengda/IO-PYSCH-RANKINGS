@@ -20,10 +20,17 @@
           <a href="#network" class="view-tab" id="tabNetwork" data-tour="network">Network</a>
         </nav>
       </div>
-      <p class="intro" id="siteIntro">
-        IO Psychology Rankings is a metrics-based ranking of top industrial-organizational
-        psychology programs based on faculty publications in selective journals.
-      </p>
+      <div class="intro-row">
+        <p class="intro" id="siteIntro">
+          IO Psychology Rankings is a metrics-based ranking of top industrial-organizational
+          psychology programs based on faculty publications in selective journals.
+        </p>
+        <nav class="guide-links" aria-label="About this site">
+          <a class="guide-link" id="howLink" href="doc.html?p=ranking">How we rank</a>
+          <a class="guide-link" href="doc.html?p=faq">FAQ</a>
+          <a class="guide-link" id="feedbackLink" href="">Feedback</a>
+        </nav>
+      </div>
     </header>
 
     <div id="view-rankings" class="view-pane">
@@ -105,10 +112,20 @@
           <button type="button" id="journalsClose" class="modal-close" aria-label="Close">×</button>
         </header>
         <div class="journals-presets">
-          <button type="button" id="venuesCore" class="linkish">core only</button>
           <button type="button" id="venuesAll" class="linkish">all</button>
+          <button type="button" id="venuesQ1" class="linkish">Q1 only</button>
+          <button type="button" id="venuesAstar" class="linkish">A* only</button>
+          <button type="button" id="venuesA" class="linkish">A* &amp; A only</button>
           <button type="button" id="venuesNone" class="linkish">none</button>
           <span id="venuesCount" class="venues-count"></span>
+        </div>
+        <div class="venue-cols-head" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span>IF</span>
+          <span>JCR</span>
+          <span>ABDC</span>
         </div>
         <div id="venuesTree" class="venues-tree"></div>
         <footer class="journals-foot">
@@ -226,10 +243,20 @@
           <button type="button" id="netJournalsClose" class="modal-close" aria-label="Close">×</button>
         </header>
         <div class="journals-presets">
-          <button type="button" id="netVenuesCore" class="linkish">core only</button>
           <button type="button" id="netVenuesAll" class="linkish">all</button>
+          <button type="button" id="netVenuesQ1" class="linkish">Q1 only</button>
+          <button type="button" id="netVenuesAstar" class="linkish">A* only</button>
+          <button type="button" id="netVenuesA" class="linkish">A* &amp; A only</button>
           <button type="button" id="netVenuesNone" class="linkish">none</button>
           <span id="netVenuesCount" class="venues-count"></span>
+        </div>
+        <div class="venue-cols-head" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span>IF</span>
+          <span>JCR</span>
+          <span>ABDC</span>
         </div>
         <div id="netVenuesTree" class="venues-tree"></div>
         <footer class="journals-foot">
@@ -276,17 +303,6 @@
         Inspired by
         <a href="https://csrankings.org/" rel="noopener noreferrer" target="_blank">CSRankings</a>
         · independent open project
-      </p>
-      <p class="footer-nav">
-        <a href="doc.html?p=methodology">Methodology</a>
-        ·
-        <a href="doc.html?p=faculty-roster">Faculty roster</a>
-        ·
-        <a href="doc.html?p=faq">FAQ</a>
-        ·
-        <a href="doc.html?p=contributing">Contributing</a>
-        ·
-        <a href="#network">Network analysis</a>
       </p>
       <p class="footer-note">
         Pilot research tool · not an official SIOP/APA ranking

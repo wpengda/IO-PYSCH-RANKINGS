@@ -1,19 +1,25 @@
 {
-  "version": 1,
-  "weight_note": "Legacy relative weights kept for reference. Ranking metric Impact factor (1/N) uses impact_factor (Clarivate JIF) instead.",
-  "impact_factor_year": 2024,
-  "impact_factor_note": "Clarivate Journal Impact Factor values curated for ranking (primarily JIF 2024 / Clarivate 2025). Not a live JCR pull—verify annually. Metric Impact factor (sum) = sum of journal IF over counted papers (no 1/N).",
+  "version": 2,
+  "weight_note": "Legacy relative weights kept for reference. Ranking metric Impact factor (sum) uses impact_factor (Clarivate JIF) instead.",
+  "impact_factor_year": 2025,
+  "abdc_year": 2025,
+  "impact_factor_note": "Clarivate Journal Impact Factor, JCR 2026 release (2025 JIF, 17 Jun 2026). Compiled from public reprints of that JCR (not a live Web of Science export). Metric weighted_if = sum(impact_factor) per paper. jcr_quartile is the journal's best Clarivate JCR 2025 quartile across its Web of Science categories. abdc is the 2025 ABDC Journal Quality List rating (A*, A, B, C) when the journal is listed; omitted if not.",
   "areas": [
     "Selection",
     "Training",
-    "Personality",
+    "Individual Differences / Personality",
+    "Performance",
     "Leadership",
-    "Motivation/Attitudes",
+    "Motivation / Attitudes",
     "Teams",
+    "Work Design",
+    "Culture / Climate",
     "Diversity",
     "Careers",
-    "Technology",
-    "OHP",
+    "Stress / Well-being",
+    "Work–Family",
+    "Safety",
+    "AI / Technology",
     "Methods",
     "General"
   ],
@@ -25,7 +31,8 @@
       "areas": [
         "Selection",
         "Training",
-        "Personality"
+        "Individual Differences / Personality",
+        "Performance"
       ]
     },
     {
@@ -34,8 +41,10 @@
       "color": "#ca7c1b",
       "areas": [
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Teams",
+        "Work Design",
+        "Culture / Climate",
         "Diversity",
         "Careers"
       ]
@@ -45,7 +54,7 @@
       "label": "Technology & Future of Work",
       "color": "#c45c26",
       "areas": [
-        "Technology"
+        "AI / Technology"
       ]
     },
     {
@@ -53,7 +62,9 @@
       "label": "Occupational Health",
       "color": "#2e8b57",
       "areas": [
-        "OHP"
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety"
       ]
     },
     {
@@ -80,15 +91,24 @@
         "Selection",
         "Training",
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Teams",
-        "OHP",
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety",
         "Careers",
         "Methods",
         "Diversity",
-        "General"
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
-      "impact_factor": 6.1
+      "impact_factor": 6.7,
+      "discipline": "io",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
     },
     {
       "id": "pp",
@@ -102,13 +122,20 @@
       "areas": [
         "Selection",
         "Training",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Teams",
         "Careers",
         "Diversity",
-        "General"
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
-      "impact_factor": 6.4
+      "impact_factor": 10.8,
+      "discipline": "io",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
     },
     {
       "id": "obhdp",
@@ -121,14 +148,26 @@
       "cross_boundary": false,
       "areas": [
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Teams",
         "Diversity",
         "Careers",
-        "OHP",
-        "General"
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety",
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
-      "impact_factor": 3.8
+      "impact_factor": 5.0,
+      "discipline": "ob_mgmt",
+      "aliases": [
+        "Organizational Behavior and Human Performance"
+      ],
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
     },
     {
       "id": "job",
@@ -140,15 +179,30 @@
       "weight": 1.2,
       "cross_boundary": false,
       "areas": [
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Leadership",
         "Teams",
-        "OHP",
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety",
         "Diversity",
         "Careers",
-        "General"
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
-      "impact_factor": 6.8
+      "impact_factor": 9.0,
+      "discipline": "ob_mgmt",
+      "aliases": [
+        "Journal of Organizational Behavior: The International Journal of Industrial, Occupational and Organizational Psychology and Behavior",
+        "Journal of Organizational Behavior: The International Journal of Industrial",
+        "Journal of Organizational Behavior (John Wiley & Sons, Inc.)",
+        "Journal of Organizational Behavior (John Wiley & Sons Inc.)"
+      ],
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
     },
     {
       "id": "lq",
@@ -162,7 +216,11 @@
       "areas": [
         "Leadership"
       ],
-      "impact_factor": 9.7
+      "impact_factor": 10.0,
+      "discipline": "ob_mgmt",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
     },
     {
       "id": "orm",
@@ -176,7 +234,11 @@
       "areas": [
         "Methods"
       ],
-      "impact_factor": 7.6
+      "impact_factor": 8.7,
+      "discipline": "methods",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
     },
     {
       "id": "jvb",
@@ -189,11 +251,18 @@
       "cross_boundary": false,
       "areas": [
         "Careers",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Diversity",
-        "General"
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
-      "impact_factor": 5.2
+      "impact_factor": 7.0,
+      "discipline": "io",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
     },
     {
       "id": "johp",
@@ -205,9 +274,15 @@
       "weight": 1.2,
       "cross_boundary": false,
       "areas": [
-        "OHP"
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety"
       ],
-      "impact_factor": 5.1
+      "impact_factor": 6.7,
+      "discipline": "io",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A"
     },
     {
       "id": "hrm",
@@ -221,15 +296,22 @@
       "areas": [
         "Selection",
         "Training",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Careers",
         "Diversity",
-        "General"
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
       "aliases": [
         "Human Resource Management: Published in Cooperation with the School of"
       ],
-      "impact_factor": 9.0
+      "impact_factor": 8.5,
+      "discipline": "ob_mgmt",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
     },
     {
       "id": "hrmj",
@@ -243,12 +325,19 @@
       "areas": [
         "Selection",
         "Training",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Careers",
         "Diversity",
-        "General"
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
-      "impact_factor": 5.4
+      "impact_factor": 8.0,
+      "discipline": "ob_mgmt",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
     },
     {
       "id": "hrmr",
@@ -262,12 +351,171 @@
       "areas": [
         "Selection",
         "Training",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Methods",
         "Careers",
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
+      ],
+      "impact_factor": 7.4,
+      "discipline": "ob_mgmt",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A"
+    },
+    {
+      "id": "ijhrm",
+      "name": "International Journal of Human Resource Management",
+      "issn": [
+        "0958-5192",
+        "1466-4399"
+      ],
+      "weight": 1.0,
+      "cross_boundary": false,
+      "areas": [
+        "Selection",
+        "Training",
+        "Motivation / Attitudes",
+        "Careers",
+        "Diversity",
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
+      ],
+      "aliases": [
+        "The International Journal of Human Resource Management",
+        "Int. J. Hum. Resour. Manage.",
+        "Int J Hum Resour Manag",
+        "International Journal of Human Resource Management (Routledge)"
+      ],
+      "impact_factor": 4.7,
+      "discipline": "ob_mgmt",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q2",
+      "abdc": "A"
+    },
+    {
+      "id": "perrev",
+      "name": "Personnel Review",
+      "issn": [
+        "0048-3486",
+        "1758-6933"
+      ],
+      "weight": 1.0,
+      "cross_boundary": false,
+      "areas": [
+        "Selection",
+        "Training",
+        "Motivation / Attitudes",
+        "Careers",
+        "Diversity",
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
+      ],
+      "aliases": [
+        "Pers. Rev.",
+        "Pers Rev",
+        "Personnel Review (Emerald)"
+      ],
+      "impact_factor": 5.1,
+      "discipline": "ob_mgmt",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A"
+    },
+    {
+      "id": "hrdq",
+      "name": "Human Resource Development Quarterly",
+      "issn": [
+        "1044-8004",
+        "1532-1096"
+      ],
+      "weight": 1.0,
+      "cross_boundary": false,
+      "areas": [
+        "Training",
+        "Careers",
+        "Motivation / Attitudes",
+        "Performance",
+        "Culture / Climate",
+        "Work Design",
         "General"
       ],
-      "impact_factor": 10.4
+      "aliases": [
+        "Hum. Resour. Dev. Q.",
+        "Hum Resour Dev Q",
+        "Human Resource Development Quarterly (Wiley)"
+      ],
+      "impact_factor": 4.0,
+      "discipline": "io",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A"
+    },
+    {
+      "id": "jlos",
+      "name": "Journal of Leadership & Organizational Studies",
+      "issn": [
+        "1548-0518",
+        "1939-7089"
+      ],
+      "weight": 1.0,
+      "cross_boundary": false,
+      "areas": [
+        "Leadership",
+        "Teams",
+        "Motivation / Attitudes",
+        "Culture / Climate",
+        "Diversity",
+        "Performance",
+        "General"
+      ],
+      "aliases": [
+        "Journal of Leadership and Organizational Studies",
+        "J. Leadersh. Organ. Stud.",
+        "J Leadersh Organ Stud",
+        "JLOS"
+      ],
+      "impact_factor": 4.4,
+      "discipline": "ob_mgmt",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A"
+    },
+    {
+      "id": "cdi",
+      "name": "Career Development International",
+      "issn": [
+        "1362-0436",
+        "1758-6003"
+      ],
+      "weight": 1.0,
+      "cross_boundary": false,
+      "areas": [
+        "Careers",
+        "Motivation / Attitudes",
+        "Diversity",
+        "Training",
+        "Work–Family",
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
+      ],
+      "aliases": [
+        "Career Dev. Int.",
+        "Career Dev Int"
+      ],
+      "impact_factor": 3.1,
+      "discipline": "io",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q2",
+      "abdc": "A"
     },
     {
       "id": "war",
@@ -279,12 +527,21 @@
       "weight": 1.0,
       "cross_boundary": false,
       "areas": [
-        "OHP",
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety",
         "Careers",
-        "Motivation/Attitudes",
-        "General"
+        "Motivation / Attitudes",
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
-      "impact_factor": 3.4
+      "impact_factor": 3.7,
+      "discipline": "io",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "B"
     },
     {
       "id": "jbp",
@@ -299,15 +556,24 @@
         "Selection",
         "Training",
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Teams",
-        "OHP",
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety",
         "Careers",
         "Methods",
         "Diversity",
-        "General"
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
-      "impact_factor": 3.7
+      "impact_factor": 4.8,
+      "discipline": "io",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A"
     },
     {
       "id": "ejwop",
@@ -319,15 +585,24 @@
       "weight": 1.0,
       "cross_boundary": false,
       "areas": [
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Teams",
-        "OHP",
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety",
         "Leadership",
         "Diversity",
         "Careers",
-        "General"
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
-      "impact_factor": 4.1
+      "impact_factor": 4.4,
+      "discipline": "io",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A"
     },
     {
       "id": "jom",
@@ -340,19 +615,28 @@
       "cross_boundary": true,
       "areas": [
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Teams",
         "Methods",
         "Diversity",
         "Careers",
-        "Technology",
+        "AI / Technology",
         "Selection",
-        "Personality",
+        "Individual Differences / Personality",
         "Training",
-        "OHP",
-        "General"
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety",
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
-      "impact_factor": 9.0
+      "impact_factor": 10.0,
+      "discipline": "ob_mgmt",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
     },
     {
       "id": "amj",
@@ -365,19 +649,28 @@
       "cross_boundary": true,
       "areas": [
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Teams",
         "Diversity",
         "Careers",
-        "Technology",
+        "AI / Technology",
         "Selection",
-        "Personality",
+        "Individual Differences / Personality",
         "Training",
-        "OHP",
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety",
         "Methods",
-        "General"
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
-      "impact_factor": 10.5
+      "impact_factor": 12.8,
+      "discipline": "ob_mgmt",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
     },
     {
       "id": "amr",
@@ -390,19 +683,28 @@
       "cross_boundary": true,
       "areas": [
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Teams",
         "Diversity",
         "Careers",
-        "Technology",
+        "AI / Technology",
         "Selection",
-        "Personality",
+        "Individual Differences / Personality",
         "Training",
-        "OHP",
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety",
         "Methods",
-        "General"
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
-      "impact_factor": 13.9
+      "impact_factor": 13.8,
+      "discipline": "ob_mgmt",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
     },
     {
       "id": "asq",
@@ -415,15 +717,22 @@
       "cross_boundary": true,
       "areas": [
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Teams",
         "Diversity",
         "Careers",
-        "Technology",
+        "AI / Technology",
         "Methods",
-        "General"
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
-      "impact_factor": 6.5
+      "impact_factor": 7.9,
+      "discipline": "ob_mgmt",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
     },
     {
       "id": "ms",
@@ -435,16 +744,23 @@
       "weight": 1.45,
       "cross_boundary": true,
       "areas": [
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Teams",
         "Leadership",
-        "Technology",
+        "AI / Technology",
         "Methods",
         "Selection",
         "Diversity",
-        "General"
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
-      "impact_factor": 4.6
+      "impact_factor": 5.7,
+      "discipline": "ob_mgmt",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
     },
     {
       "id": "os",
@@ -457,15 +773,22 @@
       "cross_boundary": true,
       "areas": [
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Teams",
         "Diversity",
         "Careers",
-        "Technology",
+        "AI / Technology",
         "Methods",
-        "General"
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
-      "impact_factor": 4.9
+      "impact_factor": 5.7,
+      "discipline": "ob_mgmt",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
     },
     {
       "id": "smj",
@@ -478,15 +801,22 @@
       "cross_boundary": true,
       "areas": [
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Teams",
-        "Technology",
+        "AI / Technology",
         "Careers",
         "Diversity",
         "Methods",
-        "General"
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
-      "impact_factor": 6.5
+      "impact_factor": 7.6,
+      "discipline": "ob_mgmt",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
     },
     {
       "id": "joop",
@@ -498,19 +828,28 @@
       "weight": 1.15,
       "cross_boundary": false,
       "areas": [
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Teams",
-        "OHP",
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety",
         "Leadership",
         "Diversity",
         "Careers",
         "Selection",
-        "General"
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
       "aliases": [
         "Journal of Occupational & Organizational Psychology"
       ],
-      "impact_factor": 4.9
+      "impact_factor": 4.8,
+      "discipline": "io",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
     },
     {
       "id": "iop",
@@ -524,22 +863,31 @@
       "areas": [
         "Selection",
         "Training",
-        "Personality",
+        "Individual Differences / Personality",
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Teams",
         "Diversity",
         "Careers",
-        "Technology",
-        "OHP",
+        "AI / Technology",
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety",
         "Methods",
-        "General"
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
       "aliases": [
         "Industrial & Organizational Psychology",
         "Industrial and Organizational Psychology: Perspectives on Science and Practice"
       ],
-      "impact_factor": 3.2
+      "impact_factor": 3.2,
+      "discipline": "io",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q2",
+      "abdc": "B"
     },
     {
       "id": "was",
@@ -551,13 +899,18 @@
       "weight": 1.15,
       "cross_boundary": false,
       "areas": [
-        "OHP",
-        "General"
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety"
       ],
       "aliases": [
         "Work and Stress"
       ],
-      "impact_factor": 5.6
+      "impact_factor": 5.5,
+      "discipline": "io",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A"
     },
     {
       "id": "ijsa",
@@ -570,17 +923,22 @@
       "cross_boundary": false,
       "areas": [
         "Selection",
-        "Personality",
+        "Individual Differences / Personality",
         "Methods",
         "Diversity",
-        "Technology",
-        "General"
+        "AI / Technology",
+        "General",
+        "Performance"
       ],
       "aliases": [
         "Int J Sel Assess",
         "International Journal of Selection & Assessment"
       ],
-      "impact_factor": 2.2
+      "impact_factor": 2.7,
+      "discipline": "io",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q2",
+      "abdc": "A"
     },
     {
       "id": "apir",
@@ -595,21 +953,30 @@
         "Selection",
         "Training",
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Teams",
-        "OHP",
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety",
         "Diversity",
         "Careers",
-        "Personality",
+        "Individual Differences / Personality",
         "Methods",
-        "Technology",
-        "General"
+        "AI / Technology",
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
       "aliases": [
         "Applied Psychology An International Review",
         "Applied Psychology"
       ],
-      "impact_factor": 4.9
+      "impact_factor": 3.9,
+      "discipline": "io",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A"
     },
     {
       "id": "opr",
@@ -622,22 +989,31 @@
       "cross_boundary": false,
       "areas": [
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Teams",
-        "OHP",
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety",
         "Diversity",
         "Selection",
         "Methods",
         "Careers",
-        "Personality",
+        "Individual Differences / Personality",
         "Training",
-        "Technology",
-        "General"
+        "AI / Technology",
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
       "aliases": [
         "Organ Psychol Rev"
       ],
-      "impact_factor": 5.5
+      "impact_factor": 3.8,
+      "discipline": "io",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A"
     },
     {
       "id": "gom",
@@ -651,14 +1027,21 @@
       "areas": [
         "Teams",
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Diversity",
-        "General"
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
       "aliases": [
         "Group and Organization Management"
       ],
-      "impact_factor": 4.0
+      "impact_factor": 3.6,
+      "discipline": "ob_mgmt",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q2",
+      "abdc": "A"
     },
     {
       "id": "pm",
@@ -676,7 +1059,11 @@
       "aliases": [
         "Psychol Methods"
       ],
-      "impact_factor": 11.0
+      "impact_factor": 7.5,
+      "discipline": "methods",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "B"
     },
     {
       "id": "ampps",
@@ -695,7 +1082,10 @@
         "Advances in Methods and Practices in Psychological Science (AMPPS)",
         "AMPPS"
       ],
-      "impact_factor": 8.5
+      "impact_factor": 14.6,
+      "discipline": "methods",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1"
     },
     {
       "id": "jpsp",
@@ -707,17 +1097,24 @@
       "weight": 1.5,
       "cross_boundary": true,
       "areas": [
-        "Personality",
-        "Motivation/Attitudes",
+        "Individual Differences / Personality",
+        "Motivation / Attitudes",
         "Diversity",
         "Methods",
-        "General"
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
       "aliases": [
         "J Pers Soc Psychol",
         "Journal of Personality & Social Psychology"
       ],
-      "impact_factor": 6.4
+      "impact_factor": 6.8,
+      "discipline": "social_id",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
     },
     {
       "id": "psci",
@@ -729,17 +1126,24 @@
       "weight": 1.5,
       "cross_boundary": true,
       "areas": [
-        "Personality",
-        "Motivation/Attitudes",
+        "Individual Differences / Personality",
+        "Motivation / Attitudes",
         "Methods",
         "Diversity",
-        "Technology",
-        "General"
+        "AI / Technology",
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
       "aliases": [
         "Psychol Sci"
       ],
-      "impact_factor": 4.8
+      "impact_factor": 5.4,
+      "discipline": "general_psych",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
     },
     {
       "id": "pbul",
@@ -752,19 +1156,205 @@
       "cross_boundary": true,
       "areas": [
         "Methods",
-        "Personality",
-        "Motivation/Attitudes",
-        "OHP",
+        "Individual Differences / Personality",
+        "Motivation / Attitudes",
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety",
         "Diversity",
         "Leadership",
         "Selection",
-        "General"
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
       "aliases": [
         "Psychol Bull",
         "Psychological bulletin"
       ],
-      "impact_factor": 17.3
+      "impact_factor": 19.9,
+      "discipline": "general_psych",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
+    },
+    {
+      "id": "nhb",
+      "name": "Nature Human Behaviour",
+      "issn": [
+        "2397-3374"
+      ],
+      "weight": 1.5,
+      "cross_boundary": true,
+      "areas": [
+        "Methods",
+        "Individual Differences / Personality",
+        "Motivation / Attitudes",
+        "Stress / Well-being",
+        "Diversity",
+        "Leadership",
+        "Selection",
+        "AI / Technology",
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
+      ],
+      "aliases": [
+        "Nature Human Behavior",
+        "Nat. Hum. Behav.",
+        "Nat Hum Behav",
+        "Nat. Hum. Behav"
+      ],
+      "impact_factor": 17.5,
+      "discipline": "general_psych",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1"
+    },
+    {
+      "id": "nrp",
+      "name": "Nature Reviews Psychology",
+      "issn": [
+        "2731-0574"
+      ],
+      "weight": 1.5,
+      "cross_boundary": true,
+      "areas": [
+        "Methods",
+        "Individual Differences / Personality",
+        "Motivation / Attitudes",
+        "Stress / Well-being",
+        "Diversity",
+        "Leadership",
+        "Selection",
+        "AI / Technology",
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
+      ],
+      "aliases": [
+        "Nat. Rev. Psychol.",
+        "Nat Rev Psychol"
+      ],
+      "impact_factor": 22.0,
+      "discipline": "general_psych",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1"
+    },
+    {
+      "id": "nature",
+      "name": "Nature",
+      "issn": [
+        "0028-0836",
+        "1476-4687"
+      ],
+      "weight": 1.5,
+      "cross_boundary": true,
+      "areas": [
+        "Methods",
+        "Individual Differences / Personality",
+        "Motivation / Attitudes",
+        "General",
+        "AI / Technology",
+        "Performance"
+      ],
+      "aliases": [
+        "Nature (London)"
+      ],
+      "impact_factor": 56.1,
+      "discipline": "general_psych",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1"
+    },
+    {
+      "id": "science",
+      "name": "Science",
+      "issn": [
+        "0036-8075",
+        "1095-9203"
+      ],
+      "weight": 1.5,
+      "cross_boundary": true,
+      "areas": [
+        "Methods",
+        "Individual Differences / Personality",
+        "Motivation / Attitudes",
+        "General",
+        "AI / Technology",
+        "Performance"
+      ],
+      "aliases": [
+        "Science (New York, N.Y.)",
+        "Science (New York)"
+      ],
+      "impact_factor": 47.3,
+      "discipline": "general_psych",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1"
+    },
+    {
+      "id": "pnas",
+      "name": "Proceedings of the National Academy of Sciences",
+      "issn": [
+        "0027-8424",
+        "1091-6490"
+      ],
+      "weight": 1.5,
+      "cross_boundary": true,
+      "areas": [
+        "Methods",
+        "Individual Differences / Personality",
+        "Motivation / Attitudes",
+        "Stress / Well-being",
+        "Diversity",
+        "Leadership",
+        "Selection",
+        "AI / Technology",
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
+      ],
+      "aliases": [
+        "PNAS",
+        "Proc. Natl. Acad. Sci. U.S.A.",
+        "Proc Natl Acad Sci USA",
+        "Proc. Natl. Acad. Sci.",
+        "Proceedings of the National Academy of Sciences of the United States of America",
+        "Proceedings of the National Academy of Sciences of the USA"
+      ],
+      "impact_factor": 9.5,
+      "discipline": "general_psych",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1"
+    },
+    {
+      "id": "ncomms",
+      "name": "Nature Communications",
+      "issn": [
+        "2041-1723"
+      ],
+      "weight": 1.5,
+      "cross_boundary": true,
+      "areas": [
+        "Methods",
+        "Individual Differences / Personality",
+        "Motivation / Attitudes",
+        "Stress / Well-being",
+        "AI / Technology",
+        "General",
+        "Performance"
+      ],
+      "aliases": [
+        "Nat. Commun.",
+        "Nat Commun"
+      ],
+      "impact_factor": 18.1,
+      "discipline": "general_psych",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1"
     },
     {
       "id": "chb",
@@ -776,17 +1366,26 @@
       "weight": 1.05,
       "cross_boundary": true,
       "areas": [
-        "Technology",
+        "AI / Technology",
         "Teams",
-        "Motivation/Attitudes",
-        "OHP",
+        "Motivation / Attitudes",
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety",
         "Methods",
-        "General"
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
       "aliases": [
         "Computers in Human Behavior"
       ],
-      "impact_factor": 9.0
+      "impact_factor": 12.2,
+      "discipline": "applied",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A"
     },
     {
       "id": "jms",
@@ -799,19 +1398,26 @@
       "cross_boundary": true,
       "areas": [
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Teams",
         "Diversity",
         "Careers",
-        "Technology",
+        "AI / Technology",
         "Methods",
-        "General"
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
       "aliases": [
         "J Manage Stud",
         "Journal of Management Studies"
       ],
-      "impact_factor": 7.3
+      "impact_factor": 7.8,
+      "discipline": "ob_mgmt",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
     },
     {
       "id": "hr",
@@ -824,18 +1430,27 @@
       "cross_boundary": true,
       "areas": [
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Teams",
         "Diversity",
         "Careers",
-        "OHP",
-        "Technology",
-        "General"
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety",
+        "AI / Technology",
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
       "aliases": [
         "Hum Relat"
       ],
-      "impact_factor": 4.5
+      "impact_factor": 4.6,
+      "discipline": "ob_mgmt",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
     },
     {
       "id": "ostud",
@@ -848,19 +1463,26 @@
       "cross_boundary": true,
       "areas": [
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Teams",
         "Diversity",
         "Careers",
-        "Technology",
+        "AI / Technology",
         "Methods",
-        "General"
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
       "aliases": [
         "Organization Studies",
         "Organ Stud"
       ],
-      "impact_factor": 4.9
+      "impact_factor": 6.4,
+      "discipline": "ob_mgmt",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
     },
     {
       "id": "aoma",
@@ -873,21 +1495,30 @@
       "cross_boundary": true,
       "areas": [
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Teams",
         "Diversity",
         "Careers",
-        "Technology",
+        "AI / Technology",
         "Selection",
         "Methods",
-        "OHP",
-        "General"
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety",
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
       "aliases": [
         "Acad Manag Ann",
         "Academy of Management Annals"
       ],
-      "impact_factor": 16.4
+      "impact_factor": 18.0,
+      "discipline": "ob_mgmt",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
     },
     {
       "id": "amd",
@@ -900,20 +1531,1083 @@
       "cross_boundary": true,
       "areas": [
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Teams",
         "Diversity",
         "Careers",
-        "Technology",
+        "AI / Technology",
         "Methods",
-        "General"
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
       ],
       "aliases": [
         "Acad Manag Discov"
       ],
-      "impact_factor": 3.8
+      "impact_factor": 5.1,
+      "discipline": "ob_mgmt",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
+    },
+    {
+      "id": "aropob",
+      "name": "Annual Review of Organizational Psychology and Organizational Behavior",
+      "issn": [
+        "2327-0608",
+        "2327-0616"
+      ],
+      "weight": 1.5,
+      "cross_boundary": false,
+      "areas": [
+        "Selection",
+        "Training",
+        "Individual Differences / Personality",
+        "Performance",
+        "Leadership",
+        "Motivation / Attitudes",
+        "Teams",
+        "Work Design",
+        "Culture / Climate",
+        "Diversity",
+        "Careers",
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety",
+        "AI / Technology",
+        "Methods",
+        "General"
+      ],
+      "aliases": [
+        "Annu. Rev. Organ. Psychol. Organ. Behav.",
+        "Annu Rev Organ Psychol Organ Behav",
+        "Annual Review of Organizational Psychology & Organizational Behavior",
+        "AROPOB"
+      ],
+      "impact_factor": 55.9,
+      "discipline": "io",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
+    },
+    {
+      "id": "odyn",
+      "name": "Organizational Dynamics",
+      "issn": [
+        "0090-2616",
+        "1873-3530"
+      ],
+      "weight": 1.05,
+      "cross_boundary": true,
+      "areas": [
+        "Leadership",
+        "Motivation / Attitudes",
+        "Teams",
+        "Diversity",
+        "Careers",
+        "Culture / Climate",
+        "Work Design",
+        "Performance",
+        "General"
+      ],
+      "aliases": [
+        "Organ. Dyn.",
+        "Organ Dyn",
+        "Organizational Dynamics"
+      ],
+      "impact_factor": 6.3,
+      "discipline": "ob_mgmt",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A"
+    },
+    {
+      "id": "assess",
+      "name": "Assessment",
+      "issn": [
+        "1073-1911",
+        "1552-3489"
+      ],
+      "weight": 1.15,
+      "cross_boundary": false,
+      "areas": [
+        "Methods"
+      ],
+      "aliases": [
+        "Assessment (Odessa)",
+        "Assessment Sage"
+      ],
+      "impact_factor": 3.0,
+      "discipline": "methods",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q2"
+    },
+    {
+      "id": "brm",
+      "name": "Behavior Research Methods",
+      "issn": [
+        "1554-351X",
+        "1554-3528"
+      ],
+      "weight": 1.25,
+      "cross_boundary": false,
+      "areas": [
+        "Methods"
+      ],
+      "aliases": [
+        "Behav. Res. Methods",
+        "Behav Res Methods",
+        "Behavior Research Methods, Instruments, & Computers",
+        "Behavior Research Methods Instruments & Computers",
+        "Behavior Research Methods & Instrumentation"
+      ],
+      "impact_factor": 5.0,
+      "discipline": "methods",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1"
+    },
+    {
+      "id": "epm",
+      "name": "Educational and Psychological Measurement",
+      "issn": [
+        "0013-1644",
+        "1552-3888"
+      ],
+      "weight": 1.15,
+      "cross_boundary": false,
+      "areas": [
+        "Methods"
+      ],
+      "aliases": [
+        "Educ. Psychol. Meas.",
+        "Educ Psychol Meas"
+      ],
+      "impact_factor": 4.4,
+      "discipline": "methods",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A"
+    },
+    {
+      "id": "mbr",
+      "name": "Multivariate Behavioral Research",
+      "issn": [
+        "0027-3171",
+        "1532-7906"
+      ],
+      "weight": 1.2,
+      "cross_boundary": false,
+      "areas": [
+        "Methods"
+      ],
+      "aliases": [
+        "Multivar. Behav. Res.",
+        "Multivar Behav Res"
+      ],
+      "impact_factor": 3.5,
+      "discipline": "methods",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1"
+    },
+    {
+      "id": "pas",
+      "name": "Psychological Assessment",
+      "issn": [
+        "1040-3590",
+        "1939-134X"
+      ],
+      "weight": 1.2,
+      "cross_boundary": false,
+      "areas": [
+        "Methods"
+      ],
+      "aliases": [
+        "Psychol. Assess.",
+        "Psychol Assess"
+      ],
+      "impact_factor": 3.1,
+      "discipline": "methods",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1"
+    },
+    {
+      "id": "pmetrika",
+      "name": "Psychometrika",
+      "issn": [
+        "0033-3123",
+        "1860-0980"
+      ],
+      "weight": 1.2,
+      "cross_boundary": false,
+      "areas": [
+        "Methods"
+      ],
+      "aliases": [
+        "Psychometrika"
+      ],
+      "impact_factor": 2.9,
+      "discipline": "methods",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1"
+    },
+    {
+      "id": "smr",
+      "name": "Sociological Methods & Research",
+      "issn": [
+        "0049-1241",
+        "1552-8294"
+      ],
+      "weight": 1.2,
+      "cross_boundary": false,
+      "areas": [
+        "Methods"
+      ],
+      "aliases": [
+        "Sociol. Methods Res.",
+        "Sociol Methods Res",
+        "Sociological Methods and Research"
+      ],
+      "impact_factor": 5.3,
+      "discipline": "methods",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1"
+    },
+    {
+      "id": "ampsych",
+      "name": "American Psychologist",
+      "issn": [
+        "0003-066X",
+        "1935-990X"
+      ],
+      "weight": 1.4,
+      "cross_boundary": true,
+      "areas": [
+        "Selection",
+        "Training",
+        "Individual Differences / Personality",
+        "Performance",
+        "Leadership",
+        "Motivation / Attitudes",
+        "Teams",
+        "Work Design",
+        "Culture / Climate",
+        "Diversity",
+        "Careers",
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety",
+        "AI / Technology",
+        "Methods",
+        "General"
+      ],
+      "aliases": [
+        "Am. Psychol.",
+        "Am Psychol"
+      ],
+      "impact_factor": 6.6,
+      "discipline": "general_psych",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
+    },
+    {
+      "id": "arp",
+      "name": "Annual Review of Psychology",
+      "issn": [
+        "0066-4308",
+        "1545-2085"
+      ],
+      "weight": 1.5,
+      "cross_boundary": true,
+      "areas": [
+        "Selection",
+        "Training",
+        "Individual Differences / Personality",
+        "Performance",
+        "Leadership",
+        "Motivation / Attitudes",
+        "Teams",
+        "Work Design",
+        "Culture / Climate",
+        "Diversity",
+        "Careers",
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety",
+        "AI / Technology",
+        "Methods",
+        "General"
+      ],
+      "aliases": [
+        "Annu. Rev. Psychol.",
+        "Annu Rev Psychol"
+      ],
+      "impact_factor": 41.8,
+      "discipline": "general_psych",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
+    },
+    {
+      "id": "cdps",
+      "name": "Current Directions in Psychological Science",
+      "issn": [
+        "0963-7214",
+        "1467-8721"
+      ],
+      "weight": 1.3,
+      "cross_boundary": true,
+      "areas": [
+        "Selection",
+        "Training",
+        "Individual Differences / Personality",
+        "Performance",
+        "Leadership",
+        "Motivation / Attitudes",
+        "Teams",
+        "Work Design",
+        "Culture / Climate",
+        "Diversity",
+        "Careers",
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety",
+        "AI / Technology",
+        "Methods",
+        "General"
+      ],
+      "aliases": [
+        "Curr. Dir. Psychol. Sci.",
+        "Curr Dir Psychol Sci"
+      ],
+      "impact_factor": 5.6,
+      "discipline": "general_psych",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1"
+    },
+    {
+      "id": "pps",
+      "name": "Perspectives on Psychological Science",
+      "issn": [
+        "1745-6916",
+        "1745-6924"
+      ],
+      "weight": 1.4,
+      "cross_boundary": true,
+      "areas": [
+        "Selection",
+        "Training",
+        "Individual Differences / Personality",
+        "Performance",
+        "Leadership",
+        "Motivation / Attitudes",
+        "Teams",
+        "Work Design",
+        "Culture / Climate",
+        "Diversity",
+        "Careers",
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety",
+        "AI / Technology",
+        "Methods",
+        "General"
+      ],
+      "aliases": [
+        "Perspect. Psychol. Sci.",
+        "Perspect Psychol Sci"
+      ],
+      "impact_factor": 9.5,
+      "discipline": "general_psych",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1"
+    },
+    {
+      "id": "prev",
+      "name": "Psychological Review",
+      "issn": [
+        "0033-295X",
+        "1939-1471"
+      ],
+      "weight": 1.5,
+      "cross_boundary": true,
+      "areas": [
+        "Selection",
+        "Training",
+        "Individual Differences / Personality",
+        "Performance",
+        "Leadership",
+        "Motivation / Attitudes",
+        "Teams",
+        "Work Design",
+        "Culture / Climate",
+        "Diversity",
+        "Careers",
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety",
+        "AI / Technology",
+        "Methods",
+        "General"
+      ],
+      "aliases": [
+        "Psychol. Rev.",
+        "Psychol Rev"
+      ],
+      "impact_factor": 5.7,
+      "discipline": "general_psych",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
+    },
+    {
+      "id": "pspi",
+      "name": "Psychological Science in the Public Interest",
+      "issn": [
+        "1529-1006",
+        "1539-6053",
+        "2160-0031"
+      ],
+      "weight": 1.5,
+      "cross_boundary": true,
+      "areas": [
+        "Selection",
+        "Training",
+        "Individual Differences / Personality",
+        "Performance",
+        "Leadership",
+        "Motivation / Attitudes",
+        "Teams",
+        "Work Design",
+        "Culture / Climate",
+        "Diversity",
+        "Careers",
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety",
+        "AI / Technology",
+        "Methods",
+        "General"
+      ],
+      "aliases": [
+        "Psychol. Sci. Public Interest",
+        "Psychol Sci Public Interest",
+        "Psychological Science in the Public Interest, Supplement"
+      ],
+      "impact_factor": 17.6,
+      "discipline": "general_psych",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1"
+    },
+    {
+      "id": "jepg",
+      "name": "Journal of Experimental Psychology: General",
+      "issn": [
+        "0096-3445",
+        "1939-2222"
+      ],
+      "weight": 1.25,
+      "cross_boundary": true,
+      "areas": [
+        "Selection",
+        "Training",
+        "Individual Differences / Personality",
+        "Performance",
+        "Leadership",
+        "Motivation / Attitudes",
+        "Teams",
+        "Work Design",
+        "Culture / Climate",
+        "Diversity",
+        "Careers",
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety",
+        "AI / Technology",
+        "Methods",
+        "General"
+      ],
+      "aliases": [
+        "J. Exp. Psychol. Gen.",
+        "J Exp Psychol Gen",
+        "Journal of Experimental Psychology General"
+      ],
+      "impact_factor": 3.7,
+      "discipline": "general_psych",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
+    },
+    {
+      "id": "jdm",
+      "name": "Judgment and Decision Making",
+      "issn": [
+        "1930-2975"
+      ],
+      "weight": 1.1,
+      "cross_boundary": true,
+      "areas": [
+        "Motivation / Attitudes",
+        "Individual Differences / Personality",
+        "Methods",
+        "Performance",
+        "General"
+      ],
+      "aliases": [
+        "Judgm. Decis. Mak.",
+        "Judgm Decis Mak",
+        "Judgment & Decision Making"
+      ],
+      "impact_factor": 2.5,
+      "discipline": "general_psych",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q2",
+      "abdc": "A"
+    },
+    {
+      "id": "pspb",
+      "name": "Personality and Social Psychology Bulletin",
+      "issn": [
+        "0146-1672",
+        "1552-7433"
+      ],
+      "weight": 1.25,
+      "cross_boundary": true,
+      "areas": [
+        "Individual Differences / Personality",
+        "Motivation / Attitudes",
+        "Diversity",
+        "Teams",
+        "Leadership",
+        "General",
+        "Culture / Climate",
+        "Performance"
+      ],
+      "aliases": [
+        "Pers. Soc. Psychol. Bull.",
+        "Pers Soc Psychol Bull",
+        "PSPB"
+      ],
+      "impact_factor": 3.3,
+      "discipline": "social_id",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A*"
+    },
+    {
+      "id": "pspr",
+      "name": "Personality and Social Psychology Review",
+      "issn": [
+        "1088-8683",
+        "1532-7957"
+      ],
+      "weight": 1.4,
+      "cross_boundary": true,
+      "areas": [
+        "Individual Differences / Personality",
+        "Motivation / Attitudes",
+        "Diversity",
+        "Teams",
+        "Leadership",
+        "General",
+        "Culture / Climate",
+        "Performance"
+      ],
+      "aliases": [
+        "Pers. Soc. Psychol. Rev.",
+        "Pers Soc Psychol Rev",
+        "PSPR"
+      ],
+      "impact_factor": 14.6,
+      "discipline": "social_id",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1"
+    },
+    {
+      "id": "jpers",
+      "name": "Journal of Personality",
+      "issn": [
+        "0022-3506",
+        "1467-6494"
+      ],
+      "weight": 1.2,
+      "cross_boundary": true,
+      "areas": [
+        "Individual Differences / Personality",
+        "Motivation / Attitudes",
+        "Diversity",
+        "General",
+        "Performance"
+      ],
+      "aliases": [
+        "J. Pers.",
+        "J Pers"
+      ],
+      "impact_factor": 3.3,
+      "discipline": "social_id",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A"
+    },
+    {
+      "id": "jrp",
+      "name": "Journal of Research in Personality",
+      "issn": [
+        "0092-6566",
+        "1095-7251"
+      ],
+      "weight": 1.15,
+      "cross_boundary": true,
+      "areas": [
+        "Individual Differences / Personality",
+        "Motivation / Attitudes",
+        "Diversity",
+        "General",
+        "Performance"
+      ],
+      "aliases": [
+        "J. Res. Pers.",
+        "J Res Pers"
+      ],
+      "impact_factor": 3.4,
+      "discipline": "social_id",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "B"
+    },
+    {
+      "id": "paid",
+      "name": "Personality and Individual Differences",
+      "issn": [
+        "0191-8869",
+        "1873-3549"
+      ],
+      "weight": 1.1,
+      "cross_boundary": true,
+      "areas": [
+        "Individual Differences / Personality",
+        "Motivation / Attitudes",
+        "Diversity",
+        "General",
+        "Performance"
+      ],
+      "aliases": [
+        "Pers. Individ. Differ.",
+        "Pers Individ Differ",
+        "PAID"
+      ],
+      "impact_factor": 2.8,
+      "discipline": "social_id",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q2",
+      "abdc": "A"
+    },
+    {
+      "id": "intel",
+      "name": "Intelligence",
+      "issn": [
+        "0160-2896",
+        "1873-7935"
+      ],
+      "weight": 1.15,
+      "cross_boundary": true,
+      "areas": [
+        "Individual Differences / Personality",
+        "Selection",
+        "Methods",
+        "General",
+        "Performance"
+      ],
+      "aliases": [
+        "Intelligence (Norwood)"
+      ],
+      "impact_factor": 3.1,
+      "discipline": "social_id",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1"
+    },
+    {
+      "id": "lid",
+      "name": "Learning and Individual Differences",
+      "issn": [
+        "1041-6080",
+        "1873-3425"
+      ],
+      "weight": 1.1,
+      "cross_boundary": true,
+      "areas": [
+        "Individual Differences / Personality",
+        "Training",
+        "Methods",
+        "General",
+        "Performance"
+      ],
+      "aliases": [
+        "Learn. Individ. Differ.",
+        "Learn Individ Differ"
+      ],
+      "impact_factor": 9.7,
+      "discipline": "social_id",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1"
+    },
+    {
+      "id": "jasp",
+      "name": "Journal of Applied Social Psychology",
+      "issn": [
+        "0021-9029",
+        "1559-1816"
+      ],
+      "weight": 1.05,
+      "cross_boundary": true,
+      "areas": [
+        "Individual Differences / Personality",
+        "Motivation / Attitudes",
+        "Diversity",
+        "Teams",
+        "Leadership",
+        "General",
+        "Culture / Climate",
+        "Performance"
+      ],
+      "aliases": [
+        "J. Appl. Soc. Psychol.",
+        "J Appl Soc Psychol"
+      ],
+      "impact_factor": 2.6,
+      "discipline": "social_id",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q2",
+      "abdc": "B"
+    },
+    {
+      "id": "jca",
+      "name": "Journal of Career Assessment",
+      "issn": [
+        "1069-0727",
+        "1552-4590"
+      ],
+      "weight": 1.1,
+      "cross_boundary": false,
+      "areas": [
+        "Careers",
+        "Motivation / Attitudes",
+        "Diversity",
+        "Training",
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance"
+      ],
+      "aliases": [
+        "J. Career Assess.",
+        "J Career Assess"
+      ],
+      "impact_factor": 3.3,
+      "discipline": "io",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q2",
+      "abdc": "A"
+    },
+    {
+      "id": "jcouns",
+      "name": "Journal of Counseling Psychology",
+      "issn": [
+        "0022-0167",
+        "1939-2168"
+      ],
+      "weight": 1.15,
+      "cross_boundary": true,
+      "areas": [
+        "Careers",
+        "Motivation / Attitudes",
+        "Diversity",
+        "Training",
+        "General",
+        "Work Design",
+        "Culture / Climate",
+        "Performance",
+        "Stress / Well-being"
+      ],
+      "aliases": [
+        "J. Couns. Psychol.",
+        "J Couns Psychol"
+      ],
+      "impact_factor": 3.5,
+      "discipline": "career",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q2"
+    },
+    {
+      "id": "jedu",
+      "name": "Journal of Educational Psychology",
+      "issn": [
+        "0022-0663",
+        "1939-2176"
+      ],
+      "weight": 1.2,
+      "cross_boundary": true,
+      "areas": [
+        "Training",
+        "Individual Differences / Personality",
+        "Methods",
+        "Motivation / Attitudes",
+        "General",
+        "Performance"
+      ],
+      "aliases": [
+        "J. Educ. Psychol.",
+        "J Educ Psychol"
+      ],
+      "impact_factor": 6.4,
+      "discipline": "career",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1"
+    },
+    {
+      "id": "hf",
+      "name": "Human Factors",
+      "issn": [
+        "0018-7208",
+        "1547-8181"
+      ],
+      "weight": 1.15,
+      "cross_boundary": true,
+      "areas": [
+        "Safety",
+        "AI / Technology",
+        "Performance",
+        "Training",
+        "Work Design",
+        "General"
+      ],
+      "aliases": [
+        "Hum. Factors",
+        "Hum Factors",
+        "Human Factors: The Journal of the Human Factors and Ergonomics Society",
+        "Human Factors The Journal of the Human Factors and Ergonomics Society"
+      ],
+      "impact_factor": 3.6,
+      "discipline": "applied",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1"
+    },
+    {
+      "id": "jhp",
+      "name": "Journal of Health Psychology",
+      "issn": [
+        "1359-1053",
+        "1461-7277"
+      ],
+      "weight": 1.05,
+      "cross_boundary": true,
+      "areas": [
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety",
+        "General"
+      ],
+      "aliases": [
+        "J. Health Psychol.",
+        "J Health Psychol"
+      ],
+      "impact_factor": 2.0,
+      "discipline": "applied",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q2"
+    },
+    {
+      "id": "page",
+      "name": "Psychology and Aging",
+      "issn": [
+        "0882-7974",
+        "1939-1498"
+      ],
+      "weight": 1.15,
+      "cross_boundary": true,
+      "areas": [
+        "Careers",
+        "Stress / Well-being",
+        "Work Design",
+        "Individual Differences / Personality",
+        "General",
+        "Performance"
+      ],
+      "aliases": [
+        "Psychol. Aging",
+        "Psychol Aging"
+      ],
+      "impact_factor": 3.6,
+      "discipline": "applied",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1"
+    },
+    {
+      "id": "mil",
+      "name": "Military Psychology",
+      "issn": [
+        "0899-5605",
+        "1532-7876"
+      ],
+      "weight": 1.05,
+      "cross_boundary": true,
+      "areas": [
+        "Selection",
+        "Training",
+        "Leadership",
+        "Stress / Well-being",
+        "Teams",
+        "General",
+        "Performance"
+      ],
+      "aliases": [
+        "Mil. Psychol.",
+        "Mil Psychol"
+      ],
+      "impact_factor": 1.7,
+      "discipline": "io",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q2"
+    },
+    {
+      "id": "jmp",
+      "name": "Journal of Managerial Psychology",
+      "issn": [
+        "0268-3946",
+        "1758-7778"
+      ],
+      "weight": 1.1,
+      "cross_boundary": false,
+      "areas": [
+        "Leadership",
+        "Motivation / Attitudes",
+        "Teams",
+        "Diversity",
+        "Careers",
+        "Culture / Climate",
+        "Work Design",
+        "Performance",
+        "General"
+      ],
+      "aliases": [
+        "J. Manag. Psychol.",
+        "J Manag Psychol"
+      ],
+      "impact_factor": 3.8,
+      "discipline": "ob_mgmt",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "B"
+    },
+    {
+      "id": "sah",
+      "name": "Stress and Health",
+      "issn": [
+        "1532-3005",
+        "1532-2998"
+      ],
+      "weight": 1.1,
+      "cross_boundary": false,
+      "areas": [
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety"
+      ],
+      "aliases": [
+        "Stress Health",
+        "Stress Med.",
+        "Stress Medicine"
+      ],
+      "impact_factor": 2.9,
+      "discipline": "io",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q2",
+      "abdc": "A"
+    },
+    {
+      "id": "ijsm",
+      "name": "International Journal of Stress Management",
+      "issn": [
+        "1072-5245",
+        "1573-3424"
+      ],
+      "weight": 1.1,
+      "cross_boundary": false,
+      "areas": [
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety"
+      ],
+      "aliases": [
+        "Int. J. Stress Manag.",
+        "Int J Stress Manag"
+      ],
+      "impact_factor": 2.5,
+      "discipline": "io",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q2",
+      "abdc": "A"
+    },
+    {
+      "id": "hbr",
+      "name": "Harvard Business Review",
+      "issn": [
+        "0017-8012"
+      ],
+      "weight": 1.0,
+      "cross_boundary": true,
+      "areas": [
+        "Leadership",
+        "Motivation / Attitudes",
+        "Teams",
+        "Diversity",
+        "Careers",
+        "Culture / Climate",
+        "Work Design",
+        "Performance",
+        "General"
+      ],
+      "aliases": [
+        "Harv. Bus. Rev.",
+        "Harv Bus Rev",
+        "HBR"
+      ],
+      "impact_factor": 6.2,
+      "discipline": "ob_mgmt",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1",
+      "abdc": "A"
     }
   ],
-  "impact_factor_note": "Clarivate Journal Impact Factor (JIF) values curated for ranking (primarily JIF 2024 / Clarivate 2025). Not a substitute for official JCR; update yearly. Metric weighted_if = sum(1/N * impact_factor).",
-  "impact_factor_year": 2024
+  "disciplines": [
+    {
+      "id": "io",
+      "label": "I-O / Work Psychology"
+    },
+    {
+      "id": "ob_mgmt",
+      "label": "OB / Management"
+    },
+    {
+      "id": "methods",
+      "label": "Methods / Measurement / Psychometrics"
+    },
+    {
+      "id": "general_psych",
+      "label": "General / Experimental / Decision Psychology"
+    },
+    {
+      "id": "social_id",
+      "label": "Social / Individual Differences"
+    },
+    {
+      "id": "career",
+      "label": "Career / Vocational / Counseling / Educational Psychology"
+    },
+    {
+      "id": "applied",
+      "label": "Human Factors / Health / Aging / Technology"
+    }
+  ]
 }

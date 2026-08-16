@@ -1,6 +1,6 @@
 {
-  "generated_from": "C:/Users/WangP/Documents/PW/IO_Psyc_Index/pipeline/cache/interests/faculty_interests.json",
-  "taxonomy_version": 1,
+  "generated_from": "C:/Users/WangP/Documents/PW/IO-PYSCH-RANKINGS/pipeline/cache/interests/faculty_interests.json",
+  "taxonomy_version": 2,
   "faculty": [
     {
       "faculty_id": "ackerman_phillip",
@@ -29,7 +29,7 @@
       ],
       "areas": [
         "Diversity",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Teams"
       ],
       "unmapped": [
@@ -49,9 +49,9 @@
       ],
       "areas": [
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Methods",
-        "Technology"
+        "AI / Technology"
       ],
       "unmapped": [],
       "source": {
@@ -73,7 +73,7 @@
       "areas": [
         "Selection",
         "Methods",
-        "Technology"
+        "AI / Technology"
       ],
       "unmapped": [],
       "source": {
@@ -91,8 +91,10 @@
         "occupational health"
       ],
       "areas": [
-        "OHP",
-        "Careers"
+        "Work–Family",
+        "Careers",
+        "Work Design",
+        "Stress / Well-being"
       ],
       "unmapped": [],
       "source": {
@@ -172,7 +174,7 @@
         "Selection",
         "Leadership",
         "Teams",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Methods"
       ],
       "unmapped": [],
@@ -191,8 +193,9 @@
         "high-risk occupations"
       ],
       "areas": [
-        "OHP",
-        "Motivation/Attitudes"
+        "Stress / Well-being",
+        "Performance",
+        "Safety"
       ],
       "unmapped": [],
       "source": {
@@ -228,7 +231,8 @@
         "Psychometrics"
       ],
       "areas": [
-        "OHP",
+        "Stress / Well-being",
+        "Safety",
         "Methods"
       ],
       "unmapped": [],
@@ -272,10 +276,10 @@
         "Occupational Health"
       ],
       "areas": [
-        "Personality",
+        "Individual Differences / Personality",
         "Careers",
         "Training",
-        "OHP"
+        "Stress / Well-being"
       ],
       "unmapped": [],
       "source": {
@@ -312,7 +316,7 @@
         "I/O PhD Students"
       ],
       "areas": [
-        "OHP"
+        "Stress / Well-being"
       ],
       "unmapped": [
         "I/O Program Documents"
@@ -336,8 +340,8 @@
       "areas": [
         "Teams",
         "Training",
-        "OHP",
-        "Motivation/Attitudes"
+        "Safety",
+        "Stress / Well-being"
       ],
       "unmapped": [],
       "source": {
@@ -423,8 +427,8 @@
       ],
       "areas": [
         "Selection",
-        "Technology",
-        "Personality",
+        "AI / Technology",
+        "Individual Differences / Personality",
         "Leadership"
       ],
       "unmapped": [
@@ -446,8 +450,9 @@
         "Careless"
       ],
       "areas": [
-        "OHP",
-        "Motivation/Attitudes"
+        "Stress / Well-being",
+        "Motivation / Attitudes",
+        "Performance"
       ],
       "unmapped": [
         "Careless"
@@ -469,7 +474,7 @@
       ],
       "areas": [
         "Selection",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Leadership"
       ],
       "unmapped": [
@@ -491,12 +496,12 @@
         "Leadership, emotions, quantitative research methods, natural language processing"
       ],
       "areas": [
-        "OHP",
+        "Stress / Well-being",
         "Diversity",
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Methods",
-        "Technology"
+        "AI / Technology"
       ],
       "unmapped": [],
       "source": {
@@ -541,9 +546,12 @@
         "Nature"
       ],
       "areas": [
-        "OHP"
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety"
       ],
       "unmapped": [
+        "Nature and Health",
         "Workplace Interventions",
         "Interventions",
         "Nature"
@@ -593,8 +601,8 @@
       ],
       "areas": [
         "Leadership",
-        "Personality",
-        "Motivation/Attitudes",
+        "Individual Differences / Personality",
+        "Motivation / Attitudes",
         "Diversity"
       ],
       "unmapped": [],
@@ -616,7 +624,7 @@
         "Educational Research and Evaluation"
       ],
       "areas": [
-        "Personality",
+        "Individual Differences / Personality",
         "Selection",
         "Training",
         "Methods"
@@ -654,8 +662,8 @@
         "Technology"
       ],
       "areas": [
-        "OHP",
-        "Technology"
+        "Stress / Well-being",
+        "AI / Technology"
       ],
       "unmapped": [
         "Work / Life Issues"
@@ -688,7 +696,7 @@
         "Decision-making in Selection & Attraction"
       ],
       "areas": [
-        "Personality",
+        "Individual Differences / Personality",
         "Methods",
         "Selection"
       ],
@@ -711,7 +719,7 @@
       ],
       "areas": [
         "Diversity",
-        "OHP"
+        "Stress / Well-being"
       ],
       "unmapped": [
         "Ostracism Experiences",
@@ -743,7 +751,7 @@
         "meta-analysis"
       ],
       "areas": [
-        "OHP",
+        "Stress / Well-being",
         "Methods"
       ],
       "unmapped": [
@@ -854,7 +862,7 @@
         "= 97) to those of incumbents ("
       ],
       "areas": [
-        "Personality"
+        "Individual Differences / Personality"
       ],
       "unmapped": [
         "= 97) to those of incumbents ("
@@ -897,8 +905,9 @@
         "affect/emotions"
       ],
       "areas": [
-        "OHP",
-        "Motivation/Attitudes"
+        "Stress / Well-being",
+        "Work–Family",
+        "Motivation / Attitudes"
       ],
       "unmapped": [
         "workaholism"
@@ -918,7 +927,7 @@
         "unconscious influences on behavior and decisions"
       ],
       "areas": [
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Leadership"
       ],
       "unmapped": [
@@ -962,7 +971,7 @@
       ],
       "areas": [
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Teams"
       ],
       "unmapped": [],
@@ -1014,7 +1023,8 @@
         "Occupational Health Psychology"
       ],
       "areas": [
-        "OHP"
+        "Work–Family",
+        "Stress / Well-being"
       ],
       "unmapped": [],
       "source": {
@@ -1032,7 +1042,7 @@
         "Research Methods"
       ],
       "areas": [
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Methods"
       ],
       "unmapped": [],
@@ -1053,7 +1063,7 @@
         "Personal website"
       ],
       "areas": [
-        "Motivation/Attitudes"
+        "Motivation / Attitudes"
       ],
       "unmapped": [
         "Counterproductive Behavior",
@@ -1078,8 +1088,8 @@
       ],
       "areas": [
         "Careers",
-        "Motivation/Attitudes",
-        "Personality"
+        "Motivation / Attitudes",
+        "Individual Differences / Personality"
       ],
       "unmapped": [],
       "source": {
@@ -1097,9 +1107,11 @@
         "Occupational Health and Disease"
       ],
       "areas": [
-        "OHP"
+        "Stress / Well-being"
       ],
-      "unmapped": [],
+      "unmapped": [
+        "Health and Wellness"
+      ],
       "source": {
         "scholar": true,
         "homepage": false
@@ -1142,8 +1154,8 @@
         "longitudinal data"
       ],
       "areas": [
-        "Motivation/Attitudes",
-        "OHP",
+        "Motivation / Attitudes",
+        "Stress / Well-being",
         "Methods"
       ],
       "unmapped": [
@@ -1166,7 +1178,7 @@
       ],
       "areas": [
         "Careers",
-        "Motivation/Attitudes"
+        "Motivation / Attitudes"
       ],
       "unmapped": [
         "workplace spirituality"
@@ -1184,7 +1196,8 @@
         "Management"
       ],
       "areas": [
-        "Motivation/Attitudes"
+        "Motivation / Attitudes",
+        "Culture / Climate"
       ],
       "unmapped": [],
       "source": {
@@ -1228,8 +1241,9 @@
         "Implementation Science"
       ],
       "areas": [
-        "Motivation/Attitudes",
-        "Leadership"
+        "Culture / Climate",
+        "Leadership",
+        "Performance"
       ],
       "unmapped": [
         "Implementation Science"
@@ -1261,9 +1275,9 @@
         "artificial intelligence"
       ],
       "areas": [
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Diversity",
-        "Technology"
+        "AI / Technology"
       ],
       "unmapped": [],
       "source": {
@@ -1282,9 +1296,9 @@
         "person-centered analyses"
       ],
       "areas": [
-        "Motivation/Attitudes",
-        "OHP",
-        "Personality"
+        "Motivation / Attitudes",
+        "Stress / Well-being",
+        "Individual Differences / Personality"
       ],
       "unmapped": [
         "purpose",
@@ -1360,7 +1374,8 @@
       ],
       "areas": [
         "Careers",
-        "OHP",
+        "Stress / Well-being",
+        "Work–Family",
         "Methods"
       ],
       "unmapped": [],
@@ -1392,7 +1407,7 @@
       "areas": [
         "Leadership",
         "Teams",
-        "OHP"
+        "Stress / Well-being"
       ],
       "unmapped": [],
       "source": {
@@ -1517,7 +1532,7 @@
         "Quantitative methods"
       ],
       "areas": [
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Methods"
       ],
       "unmapped": [],
@@ -1533,7 +1548,7 @@
         "Trust"
       ],
       "areas": [
-        "Motivation/Attitudes"
+        "Motivation / Attitudes"
       ],
       "unmapped": [],
       "source": {
@@ -1595,7 +1610,7 @@
       ],
       "areas": [
         "Leadership",
-        "OHP",
+        "Stress / Well-being",
         "Methods"
       ],
       "unmapped": [],
@@ -1614,7 +1629,7 @@
         "Voice"
       ],
       "areas": [
-        "Motivation/Attitudes"
+        "Motivation / Attitudes"
       ],
       "unmapped": [],
       "source": {
@@ -1675,8 +1690,8 @@
         "diversity"
       ],
       "areas": [
-        "Motivation/Attitudes",
-        "OHP",
+        "Motivation / Attitudes",
+        "Stress / Well-being",
         "Diversity"
       ],
       "unmapped": [],
@@ -1705,7 +1720,7 @@
         "unhelpful help"
       ],
       "areas": [
-        "OHP"
+        "Stress / Well-being"
       ],
       "unmapped": [
         "unhelpful help"
@@ -1798,7 +1813,7 @@
       ],
       "areas": [
         "Leadership",
-        "OHP",
+        "Safety",
         "Selection",
         "Diversity",
         "Methods"
@@ -1828,11 +1843,11 @@
         "difficult conversations"
       ],
       "areas": [
-        "Personality",
+        "Individual Differences / Personality",
         "Methods",
         "Teams",
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Diversity"
       ],
       "unmapped": [],
@@ -1877,11 +1892,10 @@
       ],
       "areas": [
         "Selection",
-        "OHP"
+        "Stress / Well-being",
+        "Culture / Climate"
       ],
-      "unmapped": [
-        "organizational change"
-      ],
+      "unmapped": [],
       "source": {
         "scholar": true,
         "homepage": false
@@ -1908,8 +1922,8 @@
         "Quantitative Methods"
       ],
       "areas": [
-        "OHP",
-        "Motivation/Attitudes",
+        "Stress / Well-being",
+        "Culture / Climate",
         "Methods"
       ],
       "unmapped": [
@@ -1946,7 +1960,7 @@
         "Social Skills"
       ],
       "areas": [
-        "Personality",
+        "Individual Differences / Personality",
         "Selection",
         "Methods"
       ],
@@ -2009,7 +2023,7 @@
       ],
       "areas": [
         "Selection",
-        "Technology"
+        "AI / Technology"
       ],
       "unmapped": [
         "interpersonal perception"
@@ -2026,7 +2040,7 @@
         "judgment and decision making"
       ],
       "areas": [
-        "Motivation/Attitudes"
+        "Motivation / Attitudes"
       ],
       "unmapped": [],
       "source": {
@@ -2043,7 +2057,7 @@
         "Emotions"
       ],
       "areas": [
-        "Motivation/Attitudes"
+        "Motivation / Attitudes"
       ],
       "unmapped": [],
       "source": {
@@ -2063,9 +2077,9 @@
       ],
       "areas": [
         "Careers",
-        "Personality",
+        "Individual Differences / Personality",
         "Selection",
-        "Technology"
+        "AI / Technology"
       ],
       "unmapped": [],
       "source": {
@@ -2084,7 +2098,7 @@
       "areas": [
         "Leadership",
         "Selection",
-        "Motivation/Attitudes"
+        "Performance"
       ],
       "unmapped": [],
       "source": {
@@ -2114,7 +2128,7 @@
       ],
       "areas": [
         "Careers",
-        "Technology",
+        "AI / Technology",
         "Methods"
       ],
       "unmapped": [],
@@ -2132,8 +2146,8 @@
         "passion"
       ],
       "areas": [
-        "OHP",
-        "Motivation/Attitudes"
+        "Work–Family",
+        "Motivation / Attitudes"
       ],
       "unmapped": [
         "passion"
@@ -2154,7 +2168,7 @@
       ],
       "areas": [
         "Leadership",
-        "Personality",
+        "Individual Differences / Personality",
         "Diversity"
       ],
       "unmapped": [],
@@ -2176,7 +2190,7 @@
         "I/O PhD Students"
       ],
       "areas": [
-        "OHP"
+        "Stress / Well-being"
       ],
       "unmapped": [
         "Work-Nonwork",
@@ -2198,7 +2212,7 @@
       ],
       "areas": [
         "Leadership",
-        "Motivation/Attitudes"
+        "Motivation / Attitudes"
       ],
       "unmapped": [
         "Malevolence"
@@ -2250,7 +2264,7 @@
         "Employee Green Behavior"
       ],
       "areas": [
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Methods"
       ],
       "unmapped": [
@@ -2269,7 +2283,7 @@
         "Sampling"
       ],
       "areas": [
-        "Motivation/Attitudes"
+        "Motivation / Attitudes"
       ],
       "unmapped": [
         "Sampling"
@@ -2310,11 +2324,11 @@
       ],
       "areas": [
         "Teams",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Methods",
-        "Technology",
-        "OHP",
-        "Personality"
+        "AI / Technology",
+        "Stress / Well-being",
+        "Individual Differences / Personality"
       ],
       "unmapped": [
         "Intergroup Relations",
@@ -2350,9 +2364,9 @@
         "Voice"
       ],
       "areas": [
-        "OHP",
+        "Stress / Well-being",
         "Diversity",
-        "Motivation/Attitudes"
+        "Motivation / Attitudes"
       ],
       "unmapped": [],
       "source": {
@@ -2376,7 +2390,8 @@
       ],
       "areas": [
         "Diversity",
-        "OHP"
+        "Work–Family",
+        "Stress / Well-being"
       ],
       "unmapped": [
         "organization",
@@ -2416,9 +2431,9 @@
         "Leadership, emotions, quantitative research methods, natural language processing"
       ],
       "areas": [
-        "Technology",
+        "AI / Technology",
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Methods"
       ],
       "unmapped": [
@@ -2479,7 +2494,7 @@
         "Teams",
         "Leadership",
         "Diversity",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Training",
         "Selection",
         "Methods"
@@ -2524,7 +2539,7 @@
       ],
       "areas": [
         "Selection",
-        "Motivation/Attitudes"
+        "Motivation / Attitudes"
       ],
       "unmapped": [
         "Admissions",
@@ -2551,7 +2566,7 @@
         "difficult conversations"
       ],
       "areas": [
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Diversity"
       ],
       "unmapped": [],
@@ -2591,9 +2606,10 @@
         "Organizational Culture",
         "International Management"
       ],
-      "areas": [],
+      "areas": [
+        "Culture / Climate"
+      ],
       "unmapped": [
-        "Organizational Culture",
         "International Management"
       ],
       "source": {
@@ -2625,7 +2641,7 @@
         "psychological assessment"
       ],
       "areas": [
-        "Technology",
+        "AI / Technology",
         "Selection"
       ],
       "unmapped": [],
@@ -2663,9 +2679,9 @@
       ],
       "areas": [
         "Selection",
-        "Personality",
+        "Individual Differences / Personality",
         "Methods",
-        "Motivation/Attitudes"
+        "Motivation / Attitudes"
       ],
       "unmapped": [
         "Applied Psychology"
@@ -2685,9 +2701,9 @@
         "Future of Work"
       ],
       "areas": [
-        "OHP",
+        "Stress / Well-being",
         "Selection",
-        "Technology"
+        "AI / Technology"
       ],
       "unmapped": [],
       "source": {
@@ -2734,7 +2750,7 @@
         "Employee Recovery and Resilience"
       ],
       "areas": [
-        "OHP"
+        "Stress / Well-being"
       ],
       "unmapped": [],
       "source": {
@@ -2752,8 +2768,10 @@
         "Development"
       ],
       "areas": [
-        "Motivation/Attitudes",
-        "Leadership"
+        "Motivation / Attitudes",
+        "Performance",
+        "Leadership",
+        "Methods"
       ],
       "unmapped": [
         "Coaching"
@@ -2772,7 +2790,7 @@
         "bystander intervention"
       ],
       "areas": [
-        "OHP",
+        "Stress / Well-being",
         "Diversity"
       ],
       "unmapped": [
@@ -2806,7 +2824,7 @@
       ],
       "areas": [
         "Selection",
-        "Personality"
+        "Individual Differences / Personality"
       ],
       "unmapped": [
         "Faking"
@@ -2830,7 +2848,7 @@
         "difficult conversations"
       ],
       "areas": [
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Training",
         "Diversity"
       ],
@@ -2851,11 +2869,11 @@
         "Workplace"
       ],
       "areas": [
-        "Diversity"
+        "Diversity",
+        "Safety"
       ],
       "unmapped": [
-        "Allies",
-        "Workplace"
+        "Allies"
       ],
       "source": {
         "scholar": true,
@@ -2889,9 +2907,9 @@
       ],
       "areas": [
         "Methods",
-        "Technology",
-        "OHP",
-        "Personality"
+        "AI / Technology",
+        "Stress / Well-being",
+        "Individual Differences / Personality"
       ],
       "unmapped": [
         "Behavioral Neuroscience",
@@ -2914,7 +2932,7 @@
       "areas": [
         "Selection",
         "Methods",
-        "Personality"
+        "Individual Differences / Personality"
       ],
       "unmapped": [],
       "source": {
@@ -2963,7 +2981,8 @@
         "Safety"
       ],
       "areas": [
-        "OHP"
+        "Stress / Well-being",
+        "Safety"
       ],
       "unmapped": [],
       "source": {
@@ -3065,9 +3084,10 @@
         "(Routledge, 2009), and"
       ],
       "areas": [
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Leadership",
-        "OHP"
+        "Stress / Well-being",
+        "Careers"
       ],
       "unmapped": [
         "work attitudes and behavior",
@@ -3078,7 +3098,6 @@
         "Research and Application",
         "(Sage Publications",
         "1997) and",
-        "Best Practices: Employee Retention",
         "(Carswell",
         "2000)",
         "editor of",
@@ -3139,7 +3158,7 @@
       ],
       "areas": [
         "Methods",
-        "Personality"
+        "Individual Differences / Personality"
       ],
       "unmapped": [
         "big data"
@@ -3216,7 +3235,7 @@
         "Edit Your Profile"
       ],
       "areas": [
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Leadership",
         "Diversity",
         "Selection"
@@ -3282,7 +3301,7 @@
       "areas": [
         "Methods",
         "Selection",
-        "Personality"
+        "Individual Differences / Personality"
       ],
       "unmapped": [
         "workplace deviance"
@@ -3338,7 +3357,7 @@
       ],
       "areas": [
         "Teams",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Training",
         "Methods"
       ],
@@ -3371,7 +3390,7 @@
       ],
       "areas": [
         "Selection",
-        "Personality"
+        "Individual Differences / Personality"
       ],
       "unmapped": [],
       "source": {
@@ -3399,7 +3418,8 @@
         "Psychoneuroimmunology"
       ],
       "areas": [
-        "OHP"
+        "Stress / Well-being",
+        "Work–Family"
       ],
       "unmapped": [
         "Psychoneuroimmunology"
@@ -3419,11 +3439,11 @@
         "Individual Differences"
       ],
       "areas": [
-        "Motivation/Attitudes",
-        "OHP",
+        "Motivation / Attitudes",
+        "Stress / Well-being",
         "Leadership",
         "Teams",
-        "Personality"
+        "Individual Differences / Personality"
       ],
       "unmapped": [],
       "source": {
@@ -3442,12 +3462,11 @@
       ],
       "areas": [
         "Careers",
-        "OHP",
-        "Motivation/Attitudes"
+        "Stress / Well-being",
+        "Motivation / Attitudes",
+        "Safety"
       ],
-      "unmapped": [
-        "Workplace"
-      ],
+      "unmapped": [],
       "source": {
         "scholar": true,
         "homepage": false
@@ -3484,9 +3503,9 @@
         "Resilience and Motivation"
       ],
       "areas": [
-        "OHP",
+        "Stress / Well-being",
         "Diversity",
-        "Motivation/Attitudes"
+        "Motivation / Attitudes"
       ],
       "unmapped": [
         "Organizational Pay (e.g.",
@@ -3509,7 +3528,7 @@
         "Multivariate Statistics"
       ],
       "areas": [
-        "OHP",
+        "Stress / Well-being",
         "Selection",
         "Methods"
       ],
@@ -3554,11 +3573,10 @@
         "return to top of page"
       ],
       "areas": [
-        "Motivation/Attitudes",
         "Teams",
-        "Personality",
+        "Individual Differences / Personality",
         "Training",
-        "Technology"
+        "AI / Technology"
       ],
       "unmapped": [
         "return to top of page"
@@ -3589,9 +3607,9 @@
       ],
       "areas": [
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Methods",
-        "Technology"
+        "AI / Technology"
       ],
       "unmapped": [
         "Courage",
@@ -3622,7 +3640,7 @@
         "Personnel Selection"
       ],
       "areas": [
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Training",
         "Selection"
       ],
@@ -3651,9 +3669,9 @@
       ],
       "areas": [
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Methods",
-        "Technology"
+        "AI / Technology"
       ],
       "unmapped": [],
       "source": {
@@ -3682,9 +3700,9 @@
         "Security"
       ],
       "areas": [
-        "Personality",
+        "Individual Differences / Personality",
         "Methods",
-        "OHP"
+        "Stress / Well-being"
       ],
       "unmapped": [
         "Workplace Deviance"
@@ -3703,7 +3721,7 @@
         "teams"
       ],
       "areas": [
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Teams"
       ],
       "unmapped": [],
@@ -3723,7 +3741,7 @@
       "areas": [
         "Training",
         "Diversity",
-        "OHP"
+        "Stress / Well-being"
       ],
       "unmapped": [],
       "source": {
@@ -3764,7 +3782,8 @@
         "organizational justice"
       ],
       "areas": [
-        "Motivation/Attitudes"
+        "Performance",
+        "Motivation / Attitudes"
       ],
       "unmapped": [],
       "source": {
@@ -3799,8 +3818,8 @@
       "areas": [
         "Methods",
         "Leadership",
-        "Motivation/Attitudes",
-        "Technology"
+        "Motivation / Attitudes",
+        "AI / Technology"
       ],
       "unmapped": [],
       "source": {
@@ -3820,8 +3839,8 @@
       ],
       "areas": [
         "Selection",
-        "Personality",
-        "Technology"
+        "Individual Differences / Personality",
+        "AI / Technology"
       ],
       "unmapped": [
         "faking"
@@ -3843,8 +3862,8 @@
       ],
       "areas": [
         "Careers",
-        "OHP",
-        "Motivation/Attitudes",
+        "Stress / Well-being",
+        "Performance",
         "Diversity"
       ],
       "unmapped": [],
@@ -3863,7 +3882,7 @@
       ],
       "areas": [
         "Diversity",
-        "Motivation/Attitudes"
+        "Motivation / Attitudes"
       ],
       "unmapped": [
         "Corporate Social Responsibility"
@@ -3925,9 +3944,9 @@
         "PSYC 615 - Personnel Psychology"
       ],
       "areas": [
-        "Personality",
-        "Motivation/Attitudes",
-        "OHP"
+        "Individual Differences / Personality",
+        "Motivation / Attitudes",
+        "Stress / Well-being"
       ],
       "unmapped": [
         "PSYC 471 - Industrial-Organizational Psychology",
@@ -3950,7 +3969,7 @@
       ],
       "areas": [
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Methods"
       ],
       "unmapped": [
@@ -3973,7 +3992,7 @@
       ],
       "areas": [
         "Training",
-        "OHP",
+        "Safety",
         "Teams"
       ],
       "unmapped": [],
@@ -4046,7 +4065,7 @@
         "flow experience"
       ],
       "areas": [
-        "Motivation/Attitudes"
+        "Motivation / Attitudes"
       ],
       "unmapped": [
         "mindfulness",
@@ -4153,11 +4172,13 @@
         "Counterproductive Work Behavior"
       ],
       "areas": [
-        "Technology",
-        "OHP",
-        "Motivation/Attitudes"
+        "AI / Technology",
+        "Stress / Well-being",
+        "Performance"
       ],
-      "unmapped": [],
+      "unmapped": [
+        "Adaptive Performance"
+      ],
       "source": {
         "scholar": true,
         "homepage": false
@@ -4178,9 +4199,9 @@
         "Leadership",
         "Teams",
         "Training",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Methods",
-        "Technology"
+        "AI / Technology"
       ],
       "unmapped": [],
       "source": {
@@ -4218,11 +4239,11 @@
         "Leadership, emotions, quantitative research methods, natural language processing"
       ],
       "areas": [
-        "OHP",
+        "Stress / Well-being",
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Methods",
-        "Technology"
+        "AI / Technology"
       ],
       "unmapped": [],
       "source": {
@@ -4330,7 +4351,7 @@
       ],
       "areas": [
         "Methods",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Teams"
       ],
       "unmapped": [
@@ -4356,7 +4377,7 @@
       ],
       "areas": [
         "Methods",
-        "Personality"
+        "Individual Differences / Personality"
       ],
       "unmapped": [],
       "source": {
@@ -4382,10 +4403,10 @@
         "feedback, gender and leadership, employee engagement and wellbeing"
       ],
       "areas": [
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Leadership",
         "Diversity",
-        "OHP"
+        "Stress / Well-being"
       ],
       "unmapped": [],
       "source": {
@@ -4415,7 +4436,7 @@
       ],
       "areas": [
         "Methods",
-        "OHP"
+        "Stress / Well-being"
       ],
       "unmapped": [
         "Longitudinal Modeling"
@@ -4437,7 +4458,7 @@
       ],
       "areas": [
         "Selection",
-        "Personality",
+        "Individual Differences / Personality",
         "Methods",
         "Diversity"
       ],
@@ -4470,11 +4491,11 @@
         "Data Science"
       ],
       "areas": [
-        "OHP",
-        "Personality",
+        "Stress / Well-being",
+        "Individual Differences / Personality",
         "Careers",
         "Methods",
-        "Technology"
+        "AI / Technology"
       ],
       "unmapped": [
         "Data Science"
@@ -4492,9 +4513,9 @@
       ],
       "areas": [
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Methods",
-        "Technology"
+        "AI / Technology"
       ],
       "unmapped": [],
       "source": {
@@ -4534,9 +4555,9 @@
       ],
       "areas": [
         "Teams",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Methods",
-        "OHP"
+        "Stress / Well-being"
       ],
       "unmapped": [
         "Adaptation",
@@ -4599,9 +4620,9 @@
         "Teams",
         "Diversity",
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Methods",
-        "Technology"
+        "AI / Technology"
       ],
       "unmapped": [],
       "source": {
@@ -4639,10 +4660,10 @@
         "Leadership, emotions, quantitative research methods, natural language processing"
       ],
       "areas": [
-        "Technology",
-        "OHP",
+        "AI / Technology",
+        "Stress / Well-being",
         "Diversity",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Leadership",
         "Methods"
       ],
@@ -4661,7 +4682,7 @@
         "Aviation"
       ],
       "areas": [
-        "OHP"
+        "Safety"
       ],
       "unmapped": [
         "Medicine",
@@ -4733,7 +4754,7 @@
         "Organizational Behavior"
       ],
       "areas": [
-        "OHP"
+        "Stress / Well-being"
       ],
       "unmapped": [],
       "source": {
@@ -4759,12 +4780,12 @@
         "Social and Personality Psychology"
       ],
       "areas": [
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Leadership",
         "Methods",
-        "Technology",
-        "OHP",
-        "Personality"
+        "AI / Technology",
+        "Stress / Well-being",
+        "Individual Differences / Personality"
       ],
       "unmapped": [
         "creative problem solving",
@@ -4820,7 +4841,7 @@
         "https://www.tc.columbia.edu/dnl/"
       ],
       "areas": [
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Teams",
         "Leadership"
       ],
@@ -4853,13 +4874,12 @@
         "Meta-Analysis"
       ],
       "areas": [
-        "OHP",
+        "Stress / Well-being",
         "Teams",
+        "Work Design",
         "Methods"
       ],
-      "unmapped": [
-        "Commuting"
-      ],
+      "unmapped": [],
       "source": {
         "scholar": true,
         "homepage": true
@@ -4876,8 +4896,8 @@
         "culture, teams, human-agent teams, attitudes, trust"
       ],
       "areas": [
-        "OHP",
-        "Motivation/Attitudes",
+        "Safety",
+        "Motivation / Attitudes",
         "Teams"
       ],
       "unmapped": [],
@@ -4893,11 +4913,10 @@
         "His major areas of research are:",
         "Human Performance"
       ],
-      "areas": [
-        "Motivation/Attitudes"
-      ],
+      "areas": [],
       "unmapped": [
-        "His major areas of research are:"
+        "His major areas of research are:",
+        "Human Performance"
       ],
       "source": {
         "scholar": false,
@@ -4926,9 +4945,9 @@
         "mesurement"
       ],
       "areas": [
-        "Personality",
-        "Motivation/Attitudes",
-        "Technology",
+        "Individual Differences / Personality",
+        "Motivation / Attitudes",
+        "AI / Technology",
         "Methods"
       ],
       "unmapped": [],
@@ -4945,7 +4964,7 @@
         "occupational health psychology"
       ],
       "areas": [
-        "OHP"
+        "Stress / Well-being"
       ],
       "unmapped": [],
       "source": {
@@ -5008,7 +5027,7 @@
       ],
       "areas": [
         "Selection",
-        "Personality",
+        "Individual Differences / Personality",
         "Methods"
       ],
       "unmapped": [],
@@ -5046,7 +5065,7 @@
       ],
       "areas": [
         "Methods",
-        "Personality",
+        "Individual Differences / Personality",
         "Selection"
       ],
       "unmapped": [

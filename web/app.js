@@ -4,7 +4,12 @@
       id: "industrial",
       label: "Industrial / Personnel",
       color: "#1a75bb",
-      areas: ["Selection", "Training", "Personality"],
+      areas: [
+        "Selection",
+        "Training",
+        "Individual Differences / Personality",
+        "Performance",
+      ],
     },
     {
       id: "organizational",
@@ -12,8 +17,10 @@
       color: "#ca7c1b",
       areas: [
         "Leadership",
-        "Motivation/Attitudes",
+        "Motivation / Attitudes",
         "Teams",
+        "Work Design",
+        "Culture / Climate",
         "Diversity",
         "Careers",
       ],
@@ -22,13 +29,13 @@
       id: "technology",
       label: "Technology & Future of Work",
       color: "#c45c26",
-      areas: ["Technology"],
+      areas: ["AI / Technology"],
     },
     {
       id: "health",
       label: "Occupational Health",
       color: "#2e8b57",
-      areas: ["OHP"],
+      areas: ["Stress / Well-being", "Work–Family", "Safety"],
     },
     {
       id: "methods",
@@ -36,6 +43,16 @@
       color: "#6b4fa0",
       areas: ["Methods", "General"],
     },
+  ];
+
+  const FALLBACK_DISCIPLINES = [
+    { id: "io", label: "I-O / Work Psychology" },
+    { id: "ob_mgmt", label: "OB / Management" },
+    { id: "methods", label: "Methods / Measurement / Psychometrics" },
+    { id: "general_psych", label: "General / Experimental / Decision Psychology" },
+    { id: "social_id", label: "Social / Individual Differences" },
+    { id: "career", label: "Career / Vocational / Counseling / Educational Psychology" },
+    { id: "applied", label: "Human Factors / Health / Aging / Technology" },
   ];
 
   const VENUE_SHORT = {
@@ -50,6 +67,11 @@
     hrm: "HRM",
     hrmj: "HRMJ",
     hrmr: "HRMR",
+    ijhrm: "IJHRM",
+    perrev: "Pers Rev",
+    hrdq: "HRDQ",
+    jlos: "JLOS",
+    cdi: "CDI",
     war: "WAR",
     jbp: "JBP",
     ejwop: "EJWOP",
@@ -77,7 +99,49 @@
     jpsp: "JPSP",
     psci: "Psych Sci",
     pbul: "Psych Bull",
+    nhb: "Nat Hum Behav",
+    nrp: "Nat Rev Psych",
+    nature: "Nature",
+    science: "Science",
+    pnas: "PNAS",
+    ncomms: "Nat Commun",
     chb: "CHB",
+    aropob: "AROPOB",
+    odyn: "Org Dyn",
+    assess: "Assessment",
+    brm: "BRM",
+    epm: "EPM",
+    mbr: "MBR",
+    pas: "Psych Assess",
+    pmetrika: "Psychometrika",
+    smr: "SMR",
+    ampsych: "Am Psychol",
+    arp: "ARP",
+    cdps: "Curr Dir",
+    pps: "Perspect Psych Sci",
+    prev: "Psych Rev",
+    pspi: "PSPI",
+    jepg: "JEP:Gen",
+    jdm: "JDM",
+    pspb: "PSPB",
+    pspr: "PSPR",
+    jpers: "J Pers",
+    jrp: "JRP",
+    paid: "PAID",
+    intel: "Intelligence",
+    lid: "LID",
+    jasp: "JASP",
+    jca: "JCA",
+    jcouns: "J Couns Psych",
+    jedu: "J Educ Psych",
+    hf: "Hum Factors",
+    jhp: "J Health Psych",
+    page: "Psych Aging",
+    mil: "Mil Psych",
+    jmp: "J Manag Psychol",
+    sah: "Stress & Health",
+    ijsm: "IJSM",
+    hbr: "HBR",
   };
 
   const state = {
@@ -107,8 +171,10 @@
     journalsClose: document.getElementById("journalsClose"),
     journalsDone: document.getElementById("journalsDone"),
     venuesTree: document.getElementById("venuesTree"),
-    venuesCore: document.getElementById("venuesCore"),
     venuesAll: document.getElementById("venuesAll"),
+    venuesQ1: document.getElementById("venuesQ1"),
+    venuesAstar: document.getElementById("venuesAstar"),
+    venuesA: document.getElementById("venuesA"),
     venuesNone: document.getElementById("venuesNone"),
     venuesCount: document.getElementById("venuesCount"),
     tourBtn: document.getElementById("tourBtn"),
@@ -158,8 +224,75 @@
     return state.data?.venues || [];
   }
 
-  function coreVenueIds() {
-    return venuesList().filter((v) => !v.cross_boundary).map((v) => v.id);
+  function disciplines() {
+    return state.data?.disciplines?.length
+      ? state.data.disciplines
+      : FALLBACK_DISCIPLINES;
+  }
+
+  function venueDiscipline(v) {
+    return v.discipline || "other";
+  }
+
+  function sortVenues(list) {
+    return [...list].sort((a, b) => {
+      const ia = Number(a.impact_factor);
+      const ib = Number(b.impact_factor);
+      const na = Number.isFinite(ia) ? ia : -1;
+      const nb = Number.isFinite(ib) ? ib : -1;
+      if (nb !== na) return nb - na;
+      return String(a.name || "").localeCompare(String(b.name || ""));
+    });
+  }
+
+  function venuesForDiscipline(id, subfield) {
+    return sortVenues(
+      venuesList().filter((v) => {
+        if (venueDiscipline(v) !== id) return false;
+        if (subfield) return (v.subfield || "") === subfield;
+        return true;
+      })
+    );
+  }
+
+  function ioVenueIds() {
+    return venuesList()
+      .filter(
+        (v) =>
+          venueDiscipline(v) === "io" ||
+          v.io_relevance === "high" ||
+          v.io_relevance === "core"
+      )
+      .map((v) => v.id);
+  }
+
+  function q1VenueIds() {
+    return venuesList()
+      .filter((v) => String(v.jcr_quartile || "").toUpperCase() === "Q1")
+      .map((v) => v.id);
+  }
+
+  function astarVenueIds() {
+    return venuesList()
+      .filter((v) => String(v.abdc || "").trim() === "A*")
+      .map((v) => v.id);
+  }
+
+  function aAndAstarVenueIds() {
+    return venuesList()
+      .filter((v) => {
+        const r = String(v.abdc || "").trim();
+        return r === "A*" || r === "A";
+      })
+      .map((v) => v.id);
+  }
+
+  function selectionMatches(ids) {
+    return (
+      ids.length > 0 &&
+      state.selectedVenues.size === ids.length &&
+      ids.every((id) => state.selectedVenues.has(id))
+    );
   }
 
   function allVenueIds() {
@@ -185,11 +318,15 @@
     else if (areasRaw) areas = areasRaw.split("|").filter(Boolean);
 
     const venuesRaw = params.get("venues");
-    let venues = null; // null = default core
+    let venues = null; // null = default all
     if (venuesRaw === "all") venues = "all";
+    else if (venuesRaw === "q1") venues = "q1";
+    else if (venuesRaw === "astar" || venuesRaw === "a*") venues = "astar";
+    else if (venuesRaw === "a") venues = "a";
+    else if (venuesRaw === "io") venues = "io";
     else if (venuesRaw === "") venues = [];
     else if (venuesRaw) venues = venuesRaw.split("|").filter(Boolean);
-    // Back-compat: old #cross=1 meant include all cross-boundary journals
+    // Back-compat: old #cross=1 meant include all journals
     else if (params.get("cross") === "1") venues = "all";
 
     return {
@@ -221,16 +358,17 @@
       params.set("areas", [...state.selectedAreas].join("|"));
     }
 
-    const core = coreVenueIds();
     const allV = allVenueIds();
     const selected = [...state.selectedVenues];
-    const isCore =
-      selected.length === core.length && core.every((id) => state.selectedVenues.has(id));
     const isAll =
       selected.length === allV.length && allV.every((id) => state.selectedVenues.has(id));
     if (selected.length === 0) params.set("venues", "");
-    else if (isAll) params.set("venues", "all");
-    else if (!isCore) params.set("venues", selected.join("|"));
+    else if (isAll) {
+      /* omit — all journals is the default */
+    } else if (selectionMatches(q1VenueIds())) params.set("venues", "q1");
+    else if (selectionMatches(astarVenueIds())) params.set("venues", "astar");
+    else if (selectionMatches(aAndAstarVenueIds())) params.set("venues", "a");
+    else params.set("venues", selected.join("|"));
 
     history.replaceState(null, "", `#${params.toString()}`);
   }
@@ -278,7 +416,12 @@
   }
 
   function formatScore(value, key) {
-    if (key.includes("citation") || key === "raw_count") {
+    if (
+      key.includes("citation") ||
+      key === "raw_count" ||
+      key === "first_second_last" ||
+      key === "last_author"
+    ) {
       return Math.round(value).toLocaleString();
     }
     return Number(value).toFixed(1);
@@ -321,7 +464,7 @@
     return (paper.areas || []).some((a) => state.selectedAreas.has(a));
   }
 
-  function facultyAreasFromPapers(papers, curated = null, maxLabels = 10) {
+  function facultyAreasFromPapers(papers, curated = null, maxLabels = 7) {
     // Labels use the full whitelist paper set (all venues, all years).
     // Journal / year / area UI filters must not change these pills.
     const counts = new Map();
@@ -362,10 +505,16 @@
       let adj = 0;
       let cites = 0;
       let weighted = 0;
+      let firstSecondLast = 0;
+      let lastAuthor = 0;
       for (const p of papers) {
         adj += Number(p.adj_credit);
         cites += Number(p.cited_by_count);
         weighted += Number(p.weighted_if);
+        if (p.is_first_second_last || p.is_first || p.is_second || p.is_last) {
+          firstSecondLast += 1;
+        }
+        if (p.is_last) lastAuthor += 1;
       }
       return {
         ...f,
@@ -375,6 +524,8 @@
         raw_count: papers.length,
         citations: cites,
         weighted_if: weighted,
+        first_second_last: firstSecondLast,
+        last_author: lastAuthor,
       };
     });
 
@@ -391,6 +542,8 @@
           raw_count: 0,
           citations: 0,
           weighted_if: 0,
+          first_second_last: 0,
+          last_author: 0,
           faculty_ids: [],
         });
       }
@@ -408,6 +561,8 @@
       inst.raw_count += f.raw_count;
       inst.citations += f.citations;
       inst.weighted_if += f.weighted_if;
+      inst.first_second_last += f.first_second_last;
+      inst.last_author += f.last_author;
       inst.faculty_ids.push(f.faculty_id);
     }
 
@@ -420,6 +575,8 @@
           raw_count: inst.raw_count,
           citations: inst.citations,
           weighted_if: Number(inst.weighted_if.toFixed(4)),
+          first_second_last: inst.first_second_last,
+          last_author: inst.last_author,
           adj_count_per_faculty: Number((inst.adj_count / fc).toFixed(4)),
           citations_per_faculty: Number((inst.citations / fc).toFixed(4)),
           weighted_if_per_faculty: Number((inst.weighted_if / fc).toFixed(4)),
@@ -462,8 +619,17 @@
   }
 
   function syncVenueUI() {
-    els.venuesTree.querySelectorAll('input[data-venue]').forEach((box) => {
+    els.venuesTree.querySelectorAll("input[data-venue]").forEach((box) => {
       box.checked = state.selectedVenues.has(box.dataset.venue);
+    });
+    els.venuesTree.querySelectorAll("input[data-discipline]").forEach((box) => {
+      const list = venuesForDiscipline(
+        box.dataset.discipline,
+        box.dataset.subfield || null
+      );
+      const n = list.filter((v) => state.selectedVenues.has(v.id)).length;
+      box.checked = n === list.length && n > 0;
+      box.indeterminate = n > 0 && n < list.length;
     });
     const n = state.selectedVenues.size;
     const total = allVenueIds().length;
@@ -473,15 +639,14 @@
   function updateJournalsBtn() {
     const n = state.selectedVenues.size;
     const total = allVenueIds().length;
-    const core = coreVenueIds();
-    const isCore =
-      n === core.length && core.every((id) => state.selectedVenues.has(id));
     const isAll = n === total && total > 0;
     let label = `Journals (${n})`;
-    if (isCore) label = `Journals (core · ${n})`;
-    else if (isAll) label = `Journals (all · ${n})`;
+    if (isAll) label = `Journals (all · ${n})`;
+    else if (selectionMatches(q1VenueIds())) label = `Journals (Q1 · ${n})`;
+    else if (selectionMatches(astarVenueIds())) label = `Journals (A* · ${n})`;
+    else if (selectionMatches(aAndAstarVenueIds())) label = `Journals (A* & A · ${n})`;
     els.journalsBtn.textContent = label;
-    els.journalsBtn.classList.toggle("active", !isCore);
+    els.journalsBtn.classList.toggle("active", !isAll);
   }
 
   function buildSidebar() {
@@ -529,33 +694,108 @@
   }
 
   function buildVenuesTree() {
-    const core = venuesList().filter((v) => !v.cross_boundary);
-    const cross = venuesList().filter((v) => v.cross_boundary);
-    const block = (title, list) => `
-      <div class="venue-group">
-        <div class="venue-group-title">${escapeHtml(title)}</div>
-        <div class="venue-grid">
-          ${list
-            .map(
-              (v) => `
-            <label class="venue-row" title="${escapeAttr(v.name)}">
-              <input type="checkbox" data-venue="${escapeAttr(v.id)}" />
-              <span class="venue-short">${escapeHtml(venueShort(v))}</span>
-              <span class="venue-name">${escapeHtml(v.name)}</span>
-            </label>`
-            )
-            .join("")}
-        </div>
-      </div>`;
+    const formatIf = (v) => {
+      const n = Number(v.impact_factor);
+      if (!Number.isFinite(n) || n <= 0) return "—";
+      return n.toFixed(1);
+    };
+    const jcrBadge = (v) => {
+      const q = String(v.jcr_quartile || "").toUpperCase();
+      if (!q) {
+        return `<span class="jcr-badge jcr-na" title="Not in Web of Science; no JCR quartile">—</span>`;
+      }
+      return `<span class="jcr-badge jcr-${q.toLowerCase()}" title="Best Clarivate JCR 2025 quartile across the journal’s Web of Science categories">${escapeHtml(q)}</span>`;
+    };
+    const abdcBadge = (v) => {
+      const r = String(v.abdc || "").trim();
+      if (!r) {
+        return `<span class="abdc-badge abdc-na" title="Not on the 2025 ABDC Journal Quality List">—</span>`;
+      }
+      const cls = r === "A*" ? "astar" : r.toLowerCase();
+      return `<span class="abdc-badge abdc-${cls}" title="ABDC 2025 Journal Quality List">${escapeHtml(r)}</span>`;
+    };
+    const venueRow = (v) => `
+      <label class="venue-row" title="${escapeAttr(v.name)}">
+        <input type="checkbox" data-venue="${escapeAttr(v.id)}" />
+        <span class="venue-short">${escapeHtml(venueShort(v))}</span>
+        <span class="venue-name">${escapeHtml(v.name)}</span>
+        <span class="venue-if" title="Clarivate Journal Impact Factor 2025 (JCR 2026)">${escapeHtml(formatIf(v))}</span>
+        ${jcrBadge(v)}
+        ${abdcBadge(v)}
+      </label>`;
+    const venueGrid = (list) =>
+      `<div class="venue-grid">${list.map(venueRow).join("")}</div>`;
 
-    els.venuesTree.innerHTML =
-      block("Core I-O & methods (default)", core) +
-      block("Cross-boundary (mgmt / broad psych / HCI)", cross);
+    const used = new Set();
+    const groups = [];
+    for (const disc of disciplines()) {
+      const allIn = venuesForDiscipline(disc.id);
+      if (!allIn.length) continue;
+      allIn.forEach((v) => used.add(v.id));
+      const subs = (disc.subfields || []).filter(
+        (sf) => venuesForDiscipline(disc.id, sf.id).length
+      );
+      let inner = "";
+      if (subs.length > 1) {
+        inner = subs
+          .map((sf) => {
+            const list = venuesForDiscipline(disc.id, sf.id);
+            return `
+              <div class="venue-subgroup">
+                <label class="venue-subgroup-title">
+                  <input type="checkbox" data-discipline="${escapeAttr(disc.id)}" data-subfield="${escapeAttr(sf.id)}" />
+                  <span>${escapeHtml(sf.label)}</span>
+                </label>
+                ${venueGrid(list)}
+              </div>`;
+          })
+          .join("");
+        const leftovers = allIn.filter(
+          (v) => !subs.some((sf) => (v.subfield || "") === sf.id)
+        );
+        if (leftovers.length) inner += venueGrid(leftovers);
+      } else {
+        inner = venueGrid(allIn);
+      }
+      groups.push(`
+        <div class="venue-group">
+          <label class="venue-group-title">
+            <input type="checkbox" data-discipline="${escapeAttr(disc.id)}" />
+            <span>${escapeHtml(disc.label)}</span>
+          </label>
+          ${inner}
+        </div>`);
+    }
+    const leftover = sortVenues(venuesList().filter((v) => !used.has(v.id)));
+    if (leftover.length) {
+      groups.push(`
+        <div class="venue-group">
+          <label class="venue-group-title">
+            <input type="checkbox" data-discipline="other" />
+            <span>Other</span>
+          </label>
+          ${venueGrid(leftover)}
+        </div>`);
+    }
+    els.venuesTree.innerHTML = groups.join("");
 
     els.venuesTree.querySelectorAll("input[data-venue]").forEach((box) => {
       box.addEventListener("change", () => {
         if (box.checked) state.selectedVenues.add(box.dataset.venue);
         else state.selectedVenues.delete(box.dataset.venue);
+        syncVenueUI();
+        updateJournalsBtn();
+        render();
+      });
+    });
+    els.venuesTree.querySelectorAll("input[data-discipline]").forEach((box) => {
+      box.addEventListener("change", () => {
+        const list = venuesForDiscipline(
+          box.dataset.discipline,
+          box.dataset.subfield || null
+        );
+        if (box.checked) list.forEach((v) => state.selectedVenues.add(v.id));
+        else list.forEach((v) => state.selectedVenues.delete(v.id));
         syncVenueUI();
         updateJournalsBtn();
         render();
@@ -595,7 +835,7 @@
     },
     {
       title: "Pick a metric",
-      body: "Adjusted count (1/N) splits credit across coauthors (default). You can also rank by raw papers, citations, impact-factor sum, or per-faculty versions.",
+      body: "Adjusted count (1/N) splits credit across coauthors (default). You can also rank by raw papers, 1st/2nd/last author, last author only, citations, impact-factor sum, or per-faculty versions.",
       selector: '[data-tour="metric"]',
     },
     {
@@ -610,7 +850,7 @@
     },
     {
       title: "Select journals",
-      body: "Open Journals to choose which venues count. Core is the default I-O/methods set; all adds cross-boundary outlets like AMJ or Psych Science.",
+      body: "Open Journals to choose which venues count. All whitelist journals are on by default, grouped by discipline and sorted by impact factor. Each row shows JIF, JCR quartile, and ABDC rating. Use Q1 only, A* only, or A* & A only to narrow the set.",
       selector: '[data-tour="journals"]',
     },
     {
@@ -872,13 +1112,18 @@
               : venueImpactFactor(p.venue_id);
           const ifText =
             ifVal != null ? ` · IF ${Number(ifVal).toFixed(1)}` : "";
+          const roles = [];
+          if (p.is_first) roles.push("1st");
+          if (p.is_second) roles.push("2nd");
+          if (p.is_last) roles.push("last");
+          const roleText = roles.length ? ` · ${roles.join("/")}` : "";
           return `<li>
             <div class="paper-year">${p.year ?? "—"}</div>
             <div>
               <div class="paper-title">${escapeHtml(p.title || "(untitled)")}${doi}</div>
               <div class="paper-venue">${escapeHtml(p.venue_name || "")}
                 · credit ${Number(p.adj_credit || 0).toFixed(2)}${ifText}
-                · cites ${Number(p.cited_by_count || 0).toLocaleString()}
+                · cites ${Number(p.cited_by_count || 0).toLocaleString()}${roleText}
               </div>
               ${tags ? `<div class="paper-areas">${tags}</div>` : ""}
             </div>
@@ -1119,11 +1364,18 @@
     else state.selectedAreas = new Set(h.areas.filter((a) => all.includes(a)));
 
     const known = new Set(allVenueIds());
-    if (h.venues === "all") state.selectedVenues = new Set(allVenueIds());
-    else if (Array.isArray(h.venues)) {
+    if (h.venues === "all" || h.venues === null) {
+      state.selectedVenues = new Set(allVenueIds());
+    } else if (h.venues === "q1") {
+      state.selectedVenues = new Set(q1VenueIds());
+    } else if (h.venues === "astar") {
+      state.selectedVenues = new Set(astarVenueIds());
+    } else if (h.venues === "a") {
+      state.selectedVenues = new Set(aAndAstarVenueIds());
+    } else if (h.venues === "io") {
+      state.selectedVenues = new Set(ioVenueIds());
+    } else if (Array.isArray(h.venues)) {
       state.selectedVenues = new Set(h.venues.filter((id) => known.has(id)));
-    } else {
-      state.selectedVenues = new Set(coreVenueIds());
     }
   }
 
@@ -1204,8 +1456,10 @@
         positionTourPopover(TOUR_STEPS[tourIndex]);
       }
     });
-    els.venuesCore.addEventListener("click", () => setVenues(coreVenueIds()));
     els.venuesAll.addEventListener("click", () => setVenues(allVenueIds()));
+    els.venuesQ1.addEventListener("click", () => setVenues(q1VenueIds()));
+    els.venuesAstar.addEventListener("click", () => setVenues(astarVenueIds()));
+    els.venuesA.addEventListener("click", () => setVenues(aAndAstarVenueIds()));
     els.venuesNone.addEventListener("click", () => setVenues([]));
     els.expandAll.addEventListener("click", () => {
       const view = state.data.views[viewKey()];

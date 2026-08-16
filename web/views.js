@@ -1,4 +1,7 @@
 (() => {
+  const FEEDBACK_FORM_URL =
+    "https://docs.google.com/forms/d/e/1FAIpQLSco-_VbMsAgw0Qgz3H2d4-yFXM68cbcLk00zZdiM1RIEtegEQ/viewform";
+
   const COPY = {
     rankings: {
       title: "IO Psychology Rankings",
@@ -42,6 +45,11 @@
     if (brandTitle) brandTitle.textContent = copy.title;
     if (brandLink) brandLink.setAttribute("href", view === "network" ? "#network" : "#rankings");
     if (siteIntro) siteIntro.textContent = copy.intro;
+    const howLink = document.getElementById("howLink");
+    if (howLink) {
+      howLink.href = isNet ? "doc.html?p=network" : "doc.html?p=ranking";
+      howLink.textContent = isNet ? "How we network" : "How we rank";
+    }
     tabRankings?.classList.toggle("is-active", !isNet);
     tabNetwork?.classList.toggle("is-active", isNet);
     tabRankings?.setAttribute("aria-current", isNet ? "false" : "page");
@@ -89,4 +97,24 @@
   });
 
   go(viewFromHash(), true);
+
+  const feedbackUrl = String(FEEDBACK_FORM_URL || "").trim();
+  const headerFeedback = document.getElementById("feedbackLink");
+  if (headerFeedback) {
+    if (feedbackUrl) {
+      headerFeedback.href = feedbackUrl;
+      headerFeedback.target = "_blank";
+      headerFeedback.rel = "noopener noreferrer";
+      headerFeedback.classList.remove("is-soon");
+      headerFeedback.removeAttribute("aria-disabled");
+      headerFeedback.title = "Send feedback";
+    } else {
+      headerFeedback.removeAttribute("href");
+      headerFeedback.setAttribute("role", "link");
+      headerFeedback.setAttribute("aria-disabled", "true");
+      headerFeedback.classList.add("is-soon");
+      headerFeedback.title = "Google Form coming soon";
+      headerFeedback.addEventListener("click", (ev) => ev.preventDefault());
+    }
+  }
 })();
