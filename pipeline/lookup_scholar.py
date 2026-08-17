@@ -86,6 +86,7 @@ AFFILIATION_HINTS = {
     "guelph": ["guelph", "uoguelph.ca"],
     "western": ["western university", "western ontario", "uwo.ca"],
     "uqam": ["uqam", "québec à montréal", "quebec a montreal", "uqam.ca"],
+    "umontreal": ["université de montréal", "universite de montreal", "umontreal.ca", "udem"],
     "windsor": ["windsor", "uwindsor.ca"],
     "ksu": ["kansas state", "k-state", "kstate", "ksu.edu", "k-state.edu"],
     "uconn": ["connecticut", "uconn", "uconn.edu"],

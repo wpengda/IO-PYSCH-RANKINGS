@@ -40,7 +40,7 @@ Open http://127.0.0.1:8000/ — site docs are **How we rank** / **How we network
 | --- | --- |
 | `data/google_scholar.csv` | Google Scholar `user=` IDs used for scoring (source of truth) |
 | `data/faculty.csv` | Curated faculty + homepage ORCID / Google Scholar IDs |
-| `data/institutions.csv` | U.S./Canada I-O PhD programs (61); `roster_status` marks complete vs seed |
+| `data/institutions.csv` | U.S./Canada I-O PhD programs (62); `roster_status` marks complete vs seed |
 | `data/venues.json` | Journal whitelist, Clarivate IF, JCR quartile, ABDC rating, areas |
 | `pipeline/` | Scholar import + scoring (`pipeline/cache/` is gitignored) |
 | `web/` | Static ranking UI + doc viewer |
