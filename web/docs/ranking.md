@@ -23,11 +23,11 @@ A person appears in the ranking after they are on the roster. **Scores are 0** u
 
 **Current faculty only (default).** The default ranking uses each program’s **present** roster (people listed on the official I-O page now). It does not include people who used to be in that program and have since left, retired, or moved.
 
-**By faculty appointment.** Turn on the orange **by faculty appointment** control (above the table) to score programs that have a faculty timeline in [`data/faculty_appointments.csv`](../../data/faculty_appointments.csv). For those schools, a paper counts only if its year falls inside that person’s start/end years at the school (blank `end_year` means present). Former members are included when their appointment overlaps the selected years. Schools **without** a timeline stay on the current-faculty default. **UIUC is the first complete program history.** Other programs will be added the same way.
+**By faculty appointment.** Turn on the orange **by faculty appointment** control (above the table) to score programs that have a faculty timeline in [`data/faculty_appointments.csv`](../../data/faculty_appointments.csv). For those schools, a paper counts only if its year falls inside that person’s start/end years at the school (blank `end_year` means present). Former members are included when their appointment overlaps the selected years. Schools **without** a timeline stay on the current-faculty default. **UIUC, Rice, and Minnesota** currently have complete program histories. Other programs will be added the same way.
 
 `faculty_id` matches `faculty.csv` when the person is already on the current roster; former members still get a stable id on the appointments table, with Google Scholar IDs where a public profile exists.
 
-**Faculty ranking.** Turn on the teal **faculty ranking** control (next to **by faculty appointment**) to sort **people** instead of programs. The two controls cannot be on at once. Faculty ranking uses each person’s **full** counted paper list (same Years / Journals / Areas). Appointment years are not used to clip papers. If someone appears at more than one program, the Institution column lists each school and the years they were there. Search matches a name or a school. Click a name to see counted papers. Per-faculty metrics become that person’s own totals.
+**Faculty ranking.** Turn on the teal **faculty ranking** control (next to **by faculty appointment**) to sort **people** instead of programs. The two controls cannot be on at once. Faculty ranking uses each person’s **full** counted paper list (same Years / Journals / Areas). Appointment years are not used to clip papers. If someone appears at more than one program, the Institution column lists each school and the years they were there. Search matches a name or a school. Click a name to see counted papers. The Metric menu hides **… / faculty** options in this view — those only apply to program totals.
 
 ## What publications count (ranking scores)
 
@@ -73,7 +73,7 @@ All metrics use the **same** filtered paper set (Years + Journals + Areas):
 | Last-author papers | Counted papers where this person is last among **two or more** authors (sole-author papers are not last) |
 | Citations | Sum of each counted paper’s Google Scholar citation total (see below) |
 | Impact factor (sum) | Sum of Clarivate JIF (`impact_factor` in `venues.json`) per paper — **not** 1/N. Values are the JCR 2026 release (2025 JIF, 17 Jun 2026). |
-| … / faculty | The metric above divided by faculty with a fetched Scholar profile |
+| … / faculty | The metric above divided by faculty with a fetched Scholar profile. Program ranking only — hidden in **faculty ranking**. |
 
 Institution scores are the **sum** across rostered faculty. Per-faculty options divide by faculty with a **fetched Google Scholar profile** (including those with zero counted papers in the current filters). Faculty with no Scholar ID, or a 404/empty profile, are listed on the roster but are not in that denominator.
 
@@ -117,7 +117,7 @@ This metric answers: *among whitelist papers published in the selected years, ho
 
 ## Transparency and limitations
 
-- v1 is a **pilot**. Incomplete faculty lists bias scores downward. The default ranking is **current** program faculty only. **By faculty appointment** uses `faculty_appointments.csv` for schools that have a timeline (UIUC first); other schools stay on the current roster. **Faculty ranking** sorts people by their full counted paper list and cannot be combined with by faculty appointment.
+- v1 is a **pilot**. Incomplete faculty lists bias scores downward. The default ranking is **current** program faculty only. **By faculty appointment** uses `faculty_appointments.csv` for schools that have a timeline (UIUC, Rice, and Minnesota so far); other schools stay on the current roster. **Faculty ranking** sorts people by their full counted paper list and cannot be combined with by faculty appointment.
 - Papers come only from Google Scholar profiles. Coverage follows Scholar (missing IDs, missing papers, messy venue strings).
 - Relative `weight` in `venues.json` is unused for the live IF metric. **Impact factor (sum)** uses Clarivate JIF values stored in that file from the JCR 2026 release (2025 JIF). Journal list rows use the same release’s JIF and **best JCR quartile**, plus the **2025 ABDC Journal Quality List** rating when the title is listed. This site cannot query Web of Science/JCR (subscription) or ABDC’s live database.
 - This site does **not** measure teaching quality, student outcomes, or overall prestige.

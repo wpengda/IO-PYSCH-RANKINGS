@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "note": "Canonical I-O taxonomy. Faculty interest phrases (Scholar/homepage) and paper titles are mapped into these areas. Edit aliases/keywords; rebuild with pipeline/build_taxonomy.py then score.py.",
+  "note": "Canonical I-O taxonomy. Paper titles map into these areas. Faculty pills are the top 7 labels from each person's whitelist papers. Edit aliases/keywords; rebuild with pipeline/build_taxonomy.py then score.py.",
   "domains": [
     {
       "id": "industrial",

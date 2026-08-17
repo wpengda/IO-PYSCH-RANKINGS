@@ -28,7 +28,7 @@ Those views are for exploration. Citation and IF numbers change quickly and can 
 
 ## Why are some well-known faculty missing?
 
-v1 is a **pilot**. Rosters are incomplete until each program is fully curated. The default table uses **current faculty only**. Turn on **by faculty appointment** to score schools that have a faculty timeline in [`data/faculty_appointments.csv`](../../data/faculty_appointments.csv) using only papers from those years (UIUC is filled in first). Turn on **faculty ranking** to sort every person by their full counted paper list (this turns off by faculty appointment). See [ranking.md](ranking.md).
+v1 is a **pilot**. Rosters are incomplete until each program is fully curated. The default table uses **current faculty only**. Turn on **by faculty appointment** to score schools that have a faculty timeline in [`data/faculty_appointments.csv`](../../data/faculty_appointments.csv) using only papers from those years (UIUC, Rice, and Minnesota so far). Turn on **faculty ranking** to sort every person by their full counted paper list (this turns off by faculty appointment). See [ranking.md](ranking.md).
 
 ## Why might a paper be missing?
 

@@ -1,11 +1,11 @@
 {
   "stats": {
-    "publications": 23439,
-    "with_author_names": 23435,
-    "roster_nodes": 265,
-    "roster_edges": 1599,
-    "external_name_strings": 18406,
-    "year_min": 1986,
+    "publications": 24500,
+    "with_author_names": 24496,
+    "roster_nodes": 272,
+    "roster_edges": 1732,
+    "external_name_strings": 18887,
+    "year_min": 1981,
     "year_max": 2026
   },
   "venues": [
@@ -1072,13 +1072,13 @@
           "institution_id": "umn",
           "name": "University of Minnesota",
           "country": "US",
-          "start_year": null,
+          "start_year": 1998,
           "end_year": null,
           "current": true
         }
       ],
-      "degree": 18,
-      "strength": 90
+      "degree": 19,
+      "strength": 92
     },
     {
       "id": "kuncel_nathan",
@@ -1092,7 +1092,7 @@
           "institution_id": "umn",
           "name": "University of Minnesota",
           "country": "US",
-          "start_year": null,
+          "start_year": 2005,
           "end_year": null,
           "current": true
         },
@@ -1105,8 +1105,8 @@
           "current": false
         }
       ],
-      "degree": 9,
-      "strength": 95
+      "degree": 11,
+      "strength": 97
     },
     {
       "id": "landers_richard",
@@ -1120,13 +1120,13 @@
           "institution_id": "umn",
           "name": "University of Minnesota",
           "country": "US",
-          "start_year": null,
+          "start_year": 2018,
           "end_year": null,
           "current": true
         }
       ],
       "degree": 10,
-      "strength": 26
+      "strength": 27
     },
     {
       "id": "ones_deniz",
@@ -1140,13 +1140,13 @@
           "institution_id": "umn",
           "name": "University of Minnesota",
           "country": "US",
-          "start_year": null,
+          "start_year": 1996,
           "end_year": null,
           "current": true
         }
       ],
-      "degree": 20,
-      "strength": 183
+      "degree": 23,
+      "strength": 186
     },
     {
       "id": "ford_kevin",
@@ -1165,8 +1165,8 @@
           "current": true
         }
       ],
-      "degree": 27,
-      "strength": 50
+      "degree": 30,
+      "strength": 58
     },
     {
       "id": "carter_nathan",
@@ -1205,8 +1205,8 @@
           "current": true
         }
       ],
-      "degree": 25,
-      "strength": 50
+      "degree": 27,
+      "strength": 52
     },
     {
       "id": "rounds_james",
@@ -1225,8 +1225,8 @@
           "current": false
         }
       ],
-      "degree": 15,
-      "strength": 82
+      "degree": 16,
+      "strength": 84
     },
     {
       "id": "drasgow_fritz",
@@ -1245,8 +1245,8 @@
           "current": false
         }
       ],
-      "degree": 30,
-      "strength": 248
+      "degree": 33,
+      "strength": 252
     },
     {
       "id": "highhouse_scott",
@@ -1265,8 +1265,8 @@
           "current": true
         }
       ],
-      "degree": 43,
-      "strength": 99
+      "degree": 44,
+      "strength": 100
     },
     {
       "id": "brooks_margaret",
@@ -1305,8 +1305,8 @@
           "current": true
         }
       ],
-      "degree": 43,
-      "strength": 88
+      "degree": 45,
+      "strength": 90
     },
     {
       "id": "levy_paul",
@@ -1325,8 +1325,8 @@
           "current": true
         }
       ],
-      "degree": 18,
-      "strength": 36
+      "degree": 19,
+      "strength": 37
     },
     {
       "id": "elicker_joelle",
@@ -1360,7 +1360,7 @@
           "institution_id": "rice",
           "name": "Rice University",
           "country": "US",
-          "start_year": null,
+          "start_year": 2026,
           "end_year": null,
           "current": true
         }
@@ -1380,13 +1380,13 @@
           "institution_id": "rice",
           "name": "Rice University",
           "country": "US",
-          "start_year": null,
+          "start_year": 2004,
           "end_year": null,
           "current": true
         }
       ],
-      "degree": 20,
-      "strength": 77
+      "degree": 24,
+      "strength": 99
     },
     {
       "id": "brossoit_rebecca",
@@ -1400,7 +1400,7 @@
           "institution_id": "rice",
           "name": "Rice University",
           "country": "US",
-          "start_year": null,
+          "start_year": 2024,
           "end_year": null,
           "current": true
         }
@@ -1420,13 +1420,13 @@
           "institution_id": "rice",
           "name": "Rice University",
           "country": "US",
-          "start_year": null,
+          "start_year": 1998,
           "end_year": null,
           "current": true
         }
       ],
-      "degree": 61,
-      "strength": 242
+      "degree": 65,
+      "strength": 248
     },
     {
       "id": "king_danielle",
@@ -1440,7 +1440,7 @@
           "institution_id": "rice",
           "name": "Rice University",
           "country": "US",
-          "start_year": null,
+          "start_year": 2018,
           "end_year": null,
           "current": true
         }
@@ -1460,18 +1460,46 @@
           "institution_id": "rice",
           "name": "Rice University",
           "country": "US",
-          "start_year": null,
+          "start_year": 2017,
           "end_year": null,
           "current": true
         }
       ],
-      "degree": 68,
-      "strength": 252
+      "degree": 73,
+      "strength": 259
     },
     {
       "id": "oswald_fred",
       "kind": "roster",
       "name": "Frederick L. Oswald",
+      "institution_id": "uci",
+      "institution": "University of California Irvine",
+      "country": "US",
+      "institutions": [
+        {
+          "institution_id": "uci",
+          "name": "University of California Irvine",
+          "country": "US",
+          "start_year": 2026,
+          "end_year": null,
+          "current": true
+        },
+        {
+          "institution_id": "rice",
+          "name": "Rice University",
+          "country": "US",
+          "start_year": 2008,
+          "end_year": 2025,
+          "current": false
+        }
+      ],
+      "degree": 47,
+      "strength": 136
+    },
+    {
+      "id": "motowidlo_stephan",
+      "kind": "roster",
+      "name": "Stephan J. Motowidlo",
       "institution_id": "rice",
       "institution": "Rice University",
       "country": "US",
@@ -1480,13 +1508,13 @@
           "institution_id": "rice",
           "name": "Rice University",
           "country": "US",
-          "start_year": null,
-          "end_year": null,
+          "start_year": 2005,
+          "end_year": 2019,
           "current": false
         }
       ],
-      "degree": 33,
-      "strength": 106
+      "degree": 25,
+      "strength": 35
     },
     {
       "id": "salas_eduardo",
@@ -1500,13 +1528,13 @@
           "institution_id": "rice",
           "name": "Rice University",
           "country": "US",
-          "start_year": null,
+          "start_year": 2015,
           "end_year": null,
           "current": true
         }
       ],
-      "degree": 58,
-      "strength": 334
+      "degree": 62,
+      "strength": 339
     },
     {
       "id": "sun_tianjun",
@@ -1520,13 +1548,13 @@
           "institution_id": "rice",
           "name": "Rice University",
           "country": "US",
-          "start_year": null,
+          "start_year": 2024,
           "end_year": null,
           "current": true
         }
       ],
       "degree": 21,
-      "strength": 83
+      "strength": 85
     },
     {
       "id": "zaccaro_stephen",
@@ -1545,8 +1573,8 @@
           "current": true
         }
       ],
-      "degree": 35,
-      "strength": 78
+      "degree": 38,
+      "strength": 86
     },
     {
       "id": "dalal_reeshad",
@@ -1565,8 +1593,8 @@
           "current": true
         }
       ],
-      "degree": 19,
-      "strength": 67
+      "degree": 21,
+      "strength": 69
     },
     {
       "id": "hoffman_brian",
@@ -1625,8 +1653,8 @@
           "current": true
         }
       ],
-      "degree": 11,
-      "strength": 68
+      "degree": 13,
+      "strength": 91
     },
     {
       "id": "payne_stephanie",
@@ -1645,8 +1673,8 @@
           "current": true
         }
       ],
-      "degree": 9,
-      "strength": 42
+      "degree": 10,
+      "strength": 43
     },
     {
       "id": "allen_tammy",
@@ -1665,8 +1693,8 @@
           "current": true
         }
       ],
-      "degree": 62,
-      "strength": 142
+      "degree": 65,
+      "strength": 148
     },
     {
       "id": "chao_georgia",
@@ -1685,8 +1713,8 @@
           "current": true
         }
       ],
-      "degree": 31,
-      "strength": 100
+      "degree": 34,
+      "strength": 104
     },
     {
       "id": "gillespie_michael",
@@ -1706,7 +1734,7 @@
         }
       ],
       "degree": 5,
-      "strength": 15
+      "strength": 20
     },
     {
       "id": "griffin_daniel",
@@ -1765,8 +1793,8 @@
           "current": true
         }
       ],
-      "degree": 36,
-      "strength": 158
+      "degree": 37,
+      "strength": 161
     },
     {
       "id": "smith_claire",
@@ -1785,8 +1813,8 @@
           "current": true
         }
       ],
-      "degree": 15,
-      "strength": 31
+      "degree": 16,
+      "strength": 37
     },
     {
       "id": "stark_stephen",
@@ -1805,8 +1833,8 @@
           "current": true
         }
       ],
-      "degree": 27,
-      "strength": 157
+      "degree": 28,
+      "strength": 158
     },
     {
       "id": "woo_sang",
@@ -1825,8 +1853,8 @@
           "current": true
         }
       ],
-      "degree": 32,
-      "strength": 97
+      "degree": 33,
+      "strength": 98
     },
     {
       "id": "tay_louis",
@@ -1865,8 +1893,8 @@
           "current": true
         }
       ],
-      "degree": 12,
-      "strength": 26
+      "degree": 13,
+      "strength": 27
     },
     {
       "id": "sabat_isaac",
@@ -1965,8 +1993,8 @@
           "current": true
         }
       ],
-      "degree": 10,
-      "strength": 17
+      "degree": 11,
+      "strength": 18
     },
     {
       "id": "fisher_gwen",
@@ -1985,8 +2013,8 @@
           "current": true
         }
       ],
-      "degree": 25,
-      "strength": 56
+      "degree": 26,
+      "strength": 57
     },
     {
       "id": "fletcher_keaton",
@@ -2005,8 +2033,8 @@
           "current": true
         }
       ],
-      "degree": 11,
-      "strength": 21
+      "degree": 12,
+      "strength": 24
     },
     {
       "id": "french_kimberly",
@@ -2085,8 +2113,8 @@
           "current": true
         }
       ],
-      "degree": 31,
-      "strength": 88
+      "degree": 34,
+      "strength": 94
     },
     {
       "id": "rogelberg_steven",
@@ -2105,8 +2133,8 @@
           "current": true
         }
       ],
-      "degree": 48,
-      "strength": 124
+      "degree": 50,
+      "strength": 126
     },
     {
       "id": "mcgonagle_alyssa",
@@ -2145,8 +2173,8 @@
           "current": true
         }
       ],
-      "degree": 44,
-      "strength": 99
+      "degree": 46,
+      "strength": 101
     },
     {
       "id": "gooty_janaki",
@@ -2285,8 +2313,8 @@
           "current": true
         }
       ],
-      "degree": 12,
-      "strength": 27
+      "degree": 13,
+      "strength": 32
     },
     {
       "id": "jason_kendra",
@@ -2325,8 +2353,8 @@
           "current": true
         }
       ],
-      "degree": 12,
-      "strength": 38
+      "degree": 13,
+      "strength": 39
     },
     {
       "id": "adair_wendi",
@@ -2365,8 +2393,8 @@
           "current": true
         }
       ],
-      "degree": 23,
-      "strength": 39
+      "degree": 25,
+      "strength": 41
     },
     {
       "id": "brown_douglas",
@@ -2385,8 +2413,8 @@
           "current": true
         }
       ],
-      "degree": 23,
-      "strength": 33
+      "degree": 24,
+      "strength": 34
     },
     {
       "id": "hillebrandt_annika",
@@ -2425,8 +2453,8 @@
           "current": true
         }
       ],
-      "degree": 18,
-      "strength": 61
+      "degree": 19,
+      "strength": 62
     },
     {
       "id": "oneill_thomas",
@@ -2465,8 +2493,8 @@
           "current": true
         }
       ],
-      "degree": 9,
-      "strength": 33
+      "degree": 11,
+      "strength": 35
     },
     {
       "id": "powell_deborah",
@@ -2505,8 +2533,36 @@
           "current": true
         }
       ],
-      "degree": 6,
-      "strength": 11
+      "degree": 7,
+      "strength": 12
+    },
+    {
+      "id": "kanfer_ruth",
+      "kind": "roster",
+      "name": "Ruth Kanfer",
+      "institution_id": "umn",
+      "institution": "University of Minnesota",
+      "country": "US",
+      "institutions": [
+        {
+          "institution_id": "umn",
+          "name": "University of Minnesota",
+          "country": "US",
+          "start_year": 1984,
+          "end_year": 1997,
+          "current": false
+        },
+        {
+          "institution_id": "gatech",
+          "name": "Georgia Institute of Technology",
+          "country": "US",
+          "start_year": null,
+          "end_year": null,
+          "current": false
+        }
+      ],
+      "degree": 38,
+      "strength": 133
     },
     {
       "id": "ackerman_phillip",
@@ -2525,8 +2581,8 @@
           "current": true
         }
       ],
-      "degree": 27,
-      "strength": 68
+      "degree": 28,
+      "strength": 119
     },
     {
       "id": "weiss_howard",
@@ -2545,8 +2601,8 @@
           "current": true
         }
       ],
-      "degree": 17,
-      "strength": 34
+      "degree": 20,
+      "strength": 51
     },
     {
       "id": "wiese_christopher",
@@ -2585,8 +2641,8 @@
           "current": true
         }
       ],
-      "degree": 10,
-      "strength": 21
+      "degree": 11,
+      "strength": 22
     },
     {
       "id": "craig_bart",
@@ -2625,8 +2681,8 @@
           "current": true
         }
       ],
-      "degree": 33,
-      "strength": 87
+      "degree": 35,
+      "strength": 89
     },
     {
       "id": "vanfossen_jenna",
@@ -2685,8 +2741,8 @@
           "current": true
         }
       ],
-      "degree": 31,
-      "strength": 96
+      "degree": 32,
+      "strength": 97
     },
     {
       "id": "ehrhart_mark",
@@ -2725,8 +2781,8 @@
           "current": true
         }
       ],
-      "degree": 41,
-      "strength": 67
+      "degree": 42,
+      "strength": 68
     },
     {
       "id": "fritzsche_barbara",
@@ -2745,8 +2801,8 @@
           "current": true
         }
       ],
-      "degree": 7,
-      "strength": 14
+      "degree": 8,
+      "strength": 15
     },
     {
       "id": "lenoble_chelsea",
@@ -2765,8 +2821,8 @@
           "current": true
         }
       ],
-      "degree": 23,
-      "strength": 32
+      "degree": 24,
+      "strength": 33
     },
     {
       "id": "shoss_mindy",
@@ -2785,8 +2841,8 @@
           "current": true
         }
       ],
-      "degree": 36,
-      "strength": 62
+      "degree": 37,
+      "strength": 63
     },
     {
       "id": "su_shiyang",
@@ -2865,8 +2921,8 @@
           "current": true
         }
       ],
-      "degree": 11,
-      "strength": 31
+      "degree": 12,
+      "strength": 32
     },
     {
       "id": "godollei_anna",
@@ -2965,8 +3021,8 @@
           "current": true
         }
       ],
-      "degree": 12,
-      "strength": 29
+      "degree": 13,
+      "strength": 38
     },
     {
       "id": "yang_liuqin",
@@ -3025,8 +3081,8 @@
           "current": true
         }
       ],
-      "degree": 31,
-      "strength": 91
+      "degree": 33,
+      "strength": 93
     },
     {
       "id": "wessel_jennifer",
@@ -3105,8 +3161,8 @@
           "current": true
         }
       ],
-      "degree": 7,
-      "strength": 23
+      "degree": 8,
+      "strength": 24
     },
     {
       "id": "prewett_matthew",
@@ -3265,8 +3321,8 @@
           "current": true
         }
       ],
-      "degree": 2,
-      "strength": 2
+      "degree": 3,
+      "strength": 3
     },
     {
       "id": "finkelstein_lisa",
@@ -3285,8 +3341,8 @@
           "current": true
         }
       ],
-      "degree": 9,
-      "strength": 32
+      "degree": 10,
+      "strength": 42
     },
     {
       "id": "mccarthy_randy",
@@ -3425,8 +3481,8 @@
           "current": true
         }
       ],
-      "degree": 13,
-      "strength": 60
+      "degree": 14,
+      "strength": 68
     },
     {
       "id": "kim_jeongjin",
@@ -3445,8 +3501,8 @@
           "current": true
         }
       ],
-      "degree": 12,
-      "strength": 48
+      "degree": 13,
+      "strength": 49
     },
     {
       "id": "cartersowell_adrienne",
@@ -3465,8 +3521,8 @@
           "current": true
         }
       ],
-      "degree": 22,
-      "strength": 32
+      "degree": 23,
+      "strength": 33
     },
     {
       "id": "ayman_roya",
@@ -3505,8 +3561,8 @@
           "current": true
         }
       ],
-      "degree": 6,
-      "strength": 15
+      "degree": 7,
+      "strength": 16
     },
     {
       "id": "morris_scott",
@@ -3525,8 +3581,8 @@
           "current": true
         }
       ],
-      "degree": 6,
-      "strength": 8
+      "degree": 7,
+      "strength": 9
     },
     {
       "id": "katz_ian",
@@ -3685,8 +3741,8 @@
           "current": true
         }
       ],
-      "degree": 16,
-      "strength": 26
+      "degree": 17,
+      "strength": 27
     },
     {
       "id": "folberg_abigail",
@@ -3885,8 +3941,8 @@
           "current": true
         }
       ],
-      "degree": 31,
-      "strength": 169
+      "degree": 35,
+      "strength": 173
     },
     {
       "id": "eaton_asia",
@@ -4065,8 +4121,8 @@
           "current": true
         }
       ],
-      "degree": 3,
-      "strength": 3
+      "degree": 4,
+      "strength": 4
     },
     {
       "id": "vanhouten_ron",
@@ -4305,8 +4361,8 @@
           "current": true
         }
       ],
-      "degree": 2,
-      "strength": 2
+      "degree": 3,
+      "strength": 3
     },
     {
       "id": "block_caryn",
@@ -4345,8 +4401,8 @@
           "current": true
         }
       ],
-      "degree": 20,
-      "strength": 20
+      "degree": 21,
+      "strength": 21
     },
     {
       "id": "hewlin_patricia",
@@ -4485,8 +4541,8 @@
           "current": true
         }
       ],
-      "degree": 7,
-      "strength": 19
+      "degree": 8,
+      "strength": 25
     },
     {
       "id": "chang_daisy",
@@ -4546,7 +4602,7 @@
         }
       ],
       "degree": 6,
-      "strength": 45
+      "strength": 48
     },
     {
       "id": "sheets_tilman",
@@ -4585,8 +4641,8 @@
           "current": true
         }
       ],
-      "degree": 9,
-      "strength": 49
+      "degree": 10,
+      "strength": 50
     },
     {
       "id": "peng_yisheng",
@@ -4845,8 +4901,8 @@
           "current": true
         }
       ],
-      "degree": 29,
-      "strength": 59
+      "degree": 30,
+      "strength": 60
     },
     {
       "id": "gilin_debra",
@@ -5025,8 +5081,8 @@
           "current": true
         }
       ],
-      "degree": 20,
-      "strength": 65
+      "degree": 21,
+      "strength": 66
     },
     {
       "id": "thorntonlugo_meghan",
@@ -5205,8 +5261,8 @@
           "current": true
         }
       ],
-      "degree": 18,
-      "strength": 49
+      "degree": 19,
+      "strength": 51
     },
     {
       "id": "kuykendall_lauren",
@@ -5293,8 +5349,8 @@
           "current": false
         }
       ],
-      "degree": 54,
-      "strength": 132
+      "degree": 58,
+      "strength": 138
     },
     {
       "id": "clark_malissa",
@@ -5313,8 +5369,8 @@
           "current": true
         }
       ],
-      "degree": 30,
-      "strength": 54
+      "degree": 31,
+      "strength": 55
     },
     {
       "id": "he_yimin",
@@ -5373,8 +5429,8 @@
           "current": true
         }
       ],
-      "degree": 31,
-      "strength": 72
+      "degree": 32,
+      "strength": 73
     },
     {
       "id": "hughes_ian",
@@ -5454,7 +5510,7 @@
         }
       ],
       "degree": 17,
-      "strength": 30
+      "strength": 32
     },
     {
       "id": "keith_melissa",
@@ -5473,8 +5529,8 @@
           "current": true
         }
       ],
-      "degree": 16,
-      "strength": 36
+      "degree": 17,
+      "strength": 37
     },
     {
       "id": "zhang_bo",
@@ -5553,8 +5609,8 @@
           "current": true
         }
       ],
-      "degree": 10,
-      "strength": 30
+      "degree": 11,
+      "strength": 34
     },
     {
       "id": "hernandez_ivan",
@@ -5633,8 +5689,8 @@
           "current": true
         }
       ],
-      "degree": 23,
-      "strength": 28
+      "degree": 24,
+      "strength": 29
     },
     {
       "id": "carver_sarah",
@@ -5753,8 +5809,8 @@
           "current": true
         }
       ],
-      "degree": 10,
-      "strength": 23
+      "degree": 11,
+      "strength": 24
     },
     {
       "id": "yang_zhixu",
@@ -5853,8 +5909,8 @@
           "current": true
         }
       ],
-      "degree": 33,
-      "strength": 146
+      "degree": 34,
+      "strength": 147
     },
     {
       "id": "traylor_allison",
@@ -6013,8 +6069,8 @@
           "current": true
         }
       ],
-      "degree": 5,
-      "strength": 16
+      "degree": 6,
+      "strength": 17
     },
     {
       "id": "macnamara_brooke",
@@ -6034,7 +6090,7 @@
         }
       ],
       "degree": 4,
-      "strength": 6
+      "strength": 7
     },
     {
       "id": "silver_elisabeth",
@@ -6093,8 +6149,8 @@
           "current": true
         }
       ],
-      "degree": 48,
-      "strength": 105
+      "degree": 51,
+      "strength": 110
     },
     {
       "id": "reed_brent",
@@ -6153,8 +6209,8 @@
           "current": true
         }
       ],
-      "degree": 29,
-      "strength": 60
+      "degree": 30,
+      "strength": 61
     },
     {
       "id": "allen_shalene",
@@ -6253,8 +6309,8 @@
           "current": true
         }
       ],
-      "degree": 6,
-      "strength": 15
+      "degree": 7,
+      "strength": 16
     },
     {
       "id": "burke_vanessa",
@@ -6313,8 +6369,8 @@
           "current": true
         }
       ],
-      "degree": 29,
-      "strength": 85
+      "degree": 31,
+      "strength": 87
     },
     {
       "id": "fitzgerald_louise",
@@ -6373,8 +6429,108 @@
           "current": false
         }
       ],
-      "degree": 13,
+      "degree": 14,
+      "strength": 24
+    },
+    {
+      "id": "bono_joyce",
+      "kind": "roster",
+      "name": "Joyce E. Bono",
+      "institution_id": "umn",
+      "institution": "University of Minnesota",
+      "country": "US",
+      "institutions": [
+        {
+          "institution_id": "umn",
+          "name": "University of Minnesota",
+          "country": "US",
+          "start_year": 2001,
+          "end_year": 2007,
+          "current": false
+        }
+      ],
+      "degree": 14,
+      "strength": 16
+    },
+    {
+      "id": "dipboye_robert",
+      "kind": "roster",
+      "name": "Robert L. Dipboye",
+      "institution_id": "rice",
+      "institution": "Rice University",
+      "country": "US",
+      "institutions": [
+        {
+          "institution_id": "rice",
+          "name": "Rice University",
+          "country": "US",
+          "start_year": 1978,
+          "end_year": 2004,
+          "current": false
+        }
+      ],
+      "degree": 14,
       "strength": 22
+    },
+    {
+      "id": "quinones_miguel",
+      "kind": "roster",
+      "name": "Miguel A. Qui\u00f1ones",
+      "institution_id": "rice",
+      "institution": "Rice University",
+      "country": "US",
+      "institutions": [
+        {
+          "institution_id": "rice",
+          "name": "Rice University",
+          "country": "US",
+          "start_year": 1993,
+          "end_year": 2003,
+          "current": false
+        }
+      ],
+      "degree": 7,
+      "strength": 15
+    },
+    {
+      "id": "beal_daniel",
+      "kind": "roster",
+      "name": "Daniel J. Beal",
+      "institution_id": "rice",
+      "institution": "Rice University",
+      "country": "US",
+      "institutions": [
+        {
+          "institution_id": "rice",
+          "name": "Rice University",
+          "country": "US",
+          "start_year": 2004,
+          "end_year": 2012,
+          "current": false
+        }
+      ],
+      "degree": 13,
+      "strength": 28
+    },
+    {
+      "id": "villado_anton",
+      "kind": "roster",
+      "name": "Anton J. Villado",
+      "institution_id": "rice",
+      "institution": "Rice University",
+      "country": "US",
+      "institutions": [
+        {
+          "institution_id": "rice",
+          "name": "Rice University",
+          "country": "US",
+          "start_year": 2008,
+          "end_year": 2016,
+          "current": false
+        }
+      ],
+      "degree": 10,
+      "strength": 49
     }
   ],
   "roster_edges": [
@@ -7402,6 +7558,152 @@
       ],
       "year_min": 2006,
       "year_max": 2026
+    },
+    {
+      "source": "ackerman_phillip",
+      "target": "kanfer_ruth",
+      "weight": 51,
+      "venues": {
+        "jap": 3,
+        "amr": 1,
+        "apir": 2,
+        "jedu": 3,
+        "lid": 1,
+        "paid": 2,
+        "page": 1,
+        "ampsych": 1,
+        "jpsp": 1
+      },
+      "papers": [
+        {
+          "y": 1989,
+          "v": "jap",
+          "a": [
+            "Training",
+            "Motivation / Attitudes"
+          ],
+          "t": "Motivation and cognitive abilities: An integrative/aptitude-treatment interaction approach to skill acquisition."
+        },
+        {
+          "y": 2004,
+          "v": "amr",
+          "a": [
+            "Motivation / Attitudes",
+            "Careers"
+          ],
+          "t": "Aging, adult development, and work motivation"
+        },
+        {
+          "y": 1994,
+          "v": "jap",
+          "a": [
+            "Motivation / Attitudes",
+            "Performance"
+          ],
+          "t": "Goal setting, conditions of practice, and task performance: A resource allocation perspective."
+        },
+        {
+          "y": 2000,
+          "v": "apir",
+          "a": [
+            "Motivation / Attitudes",
+            "Individual Differences / Personality"
+          ],
+          "t": "Individual differences in work motivation: Further explorations of a trait framework"
+        },
+        {
+          "y": 2001,
+          "v": "jedu",
+          "a": [
+            "Individual Differences / Personality",
+            "Diversity"
+          ],
+          "t": "Determinants of individual differences and gender differences in knowledge."
+        },
+        {
+          "y": 1996,
+          "v": "lid",
+          "a": [
+            "General"
+          ],
+          "t": "Motivational skills & self-regulation for learning: A trait perspective"
+        },
+        {
+          "y": 2013,
+          "v": "jedu",
+          "a": [
+            "Selection",
+            "Diversity"
+          ],
+          "t": "Trait complex, cognitive ability, and domain knowledge predictors of baccalaureate success, STEM persistence, and gender differences."
+        },
+        {
+          "y": 1996,
+          "v": "paid",
+          "a": [
+            "General"
+          ],
+          "t": "To \u201cact wisely in human relations:\u201d Exploring the dimensions of social competence"
+        },
+        {
+          "y": 2010,
+          "v": "page",
+          "a": [
+            "General"
+          ],
+          "t": "Use it or lose it? Wii brain exercise practice and reading for domain knowledge."
+        },
+        {
+          "y": 1993,
+          "v": "jap",
+          "a": [
+            "Selection"
+          ],
+          "t": "Integrating laboratory and field study for improving selection: Development of a battery for predicting air traffic controller success."
+        },
+        {
+          "y": 2020,
+          "v": "ampsych",
+          "a": [
+            "Careers"
+          ],
+          "t": "Work in the 21st century: New directions for aging and adult development."
+        },
+        {
+          "y": 1996,
+          "v": "jpsp",
+          "a": [
+            "Individual Differences / Personality"
+          ],
+          "t": "Toward an interactionist taxonomy of personality and situations: An integrative situational\u2014dispositional representation of personality traits."
+        },
+        {
+          "y": 2010,
+          "v": "apir",
+          "a": [
+            "Performance"
+          ],
+          "t": "Ability and trait complex predictors of academic and job performance: A person\u2013situation approach"
+        },
+        {
+          "y": 2014,
+          "v": "paid",
+          "a": [
+            "Diversity"
+          ],
+          "t": "Self-estimated intellectual abilities: Stability, determinants, and gender differences"
+        },
+        {
+          "y": null,
+          "v": "jedu",
+          "a": [
+            "General"
+          ],
+          "t": "Abad, FJ, Colom, R., Juan-Espinosa, M., & Garcia, LF (2003). Intelligence differentiation in adult samples. Intelligence, 31, 157-166. normal"
+        }
+      ],
+      "year_min": 1988,
+      "year_max": 2025
     },
     {
       "source": "salas_eduardo",
@@ -9647,6 +9949,79 @@
       "year_max": 2025
     },
     {
+      "source": "arthur_winfred",
+      "target": "villado_anton",
+      "weight": 22,
+      "venues": {
+        "jap": 3,
+        "ijsa": 1,
+        "hf": 2,
+        "iop": 1
+      },
+      "papers": [
+        {
+          "y": 2006,
+          "v": "jap",
+          "a": [
+            "General"
+          ],
+          "t": "The use of person\u2013organization fit in employment decision making: An assessment of its criterion-related validity"
+        },
+        {
+          "y": 2008,
+          "v": "jap",
+          "a": [
+            "Selection"
+          ],
+          "t": "The importance of distinguishing between constructs and methods when comparing predictors in personnel selection research and practice."
+        },
+        {
+          "y": 2010,
+          "v": "ijsa",
+          "a": [
+            "Selection",
+            "Individual Differences / Personality"
+          ],
+          "t": "The magnitude and extent of cheating and response distortion effects on unproctored internet\u2010based tests of cognitive ability and personality"
+        },
+        {
+          "y": 2013,
+          "v": "jap",
+          "a": [
+            "Teams"
+          ],
+          "t": "The comparative effect of subjective and objective after-action reviews on team performance on a complex task."
+        },
+        {
+          "y": 2005,
+          "v": "hf",
+          "a": [
+            "Teams"
+          ],
+          "t": "Team task analysis: Identifying tasks and jobs that are team based"
+        },
+        {
+          "y": 2009,
+          "v": "iop",
+          "a": [
+            "Selection",
+            "Individual Differences / Personality"
+          ],
+          "t": "Unproctored Internet-based tests of cognitive ability and personality: Magnitude of cheating and response distortion"
+        },
+        {
+          "y": 2012,
+          "v": "hf",
+          "a": [
+            "Teams"
+          ],
+          "t": "Team task analysis: Differentiating between tasks using team relatedness and team workflow as metrics of team task interdependence"
+        }
+      ],
+      "year_min": 2003,
+      "year_max": 2013
+    },
+    {
       "source": "day_arla",
       "target": "kelloway_kevin",
       "weight": 22,
@@ -11258,6 +11633,68 @@
       "year_max": 2020
     },
     {
+      "source": "gillespie_michael",
+      "target": "oswald_fred",
+      "weight": 15,
+      "venues": {
+        "jap": 3,
+        "pp": 1,
+        "ijsa": 2
+      },
+      "papers": [
+        {
+          "y": 2004,
+          "v": "jap",
+          "a": [
+            "Selection"
+          ],
+          "t": "Developing a biodata measure and situational judgment inventory as predictors of college student performance."
+        },
+        {
+          "y": 2003,
+          "v": "jap",
+          "a": [
+            "General"
+          ],
+          "t": "Impact of elaboration on socially desirable responding and the validity of biodata measures."
+        },
+        {
+          "y": 2004,
+          "v": "pp",
+          "a": [
+            "Careers"
+          ],
+          "t": "Matching individuals to occupations using abilities and the O* NET: Issues and an application in career guidance"
+        },
+        {
+          "y": 2004,
+          "v": "ijsa",
+          "a": [
+            "Selection"
+          ],
+          "t": "The Impact of Justice and Self\u2010Serving Bias Explanations of the Perceived Fairness of Different Types of Selection Tests"
+        },
+        {
+          "y": 2002,
+          "v": "jap",
+          "a": [
+            "General"
+          ],
+          "t": "Noncognitive predictors of college student success"
+        },
+        {
+          "y": 2005,
+          "v": "ijsa",
+          "a": [
+            "Selection"
+          ],
+          "t": "The impact of justice and self-serving bias explanation of the perceived fairness of different types of selection tests (vol 12, pg 168, 2005)"
+        }
+      ],
+      "year_min": 2002,
+      "year_max": 2006
+    },
+    {
       "source": "kozlowski_steve",
       "target": "olenick_jeffrey",
       "weight": 15,
@@ -11605,6 +12042,125 @@
       ],
       "year_min": 2010,
       "year_max": 2026
+    },
+    {
+      "source": "beal_daniel",
+      "target": "weiss_howard",
+      "weight": 13,
+      "venues": {
+        "jap": 3,
+        "amj": 1,
+        "orm": 1
+      },
+      "papers": [
+        {
+          "y": 2005,
+          "v": "jap",
+          "a": [
+            "General"
+          ],
+          "t": "An episodic process model of affective influences on performance."
+        },
+        {
+          "y": 2008,
+          "v": "amj",
+          "a": [
+            "Stress / Well-being"
+          ],
+          "t": "Making the break count: An episodic examination of recovery activities, emotional experiences, and positive affective displays"
+        },
+        {
+          "y": 2003,
+          "v": "orm",
+          "a": [
+            "Methods"
+          ],
+          "t": "Methods of ecological momentary assessment in organizational research"
+        },
+        {
+          "y": 2006,
+          "v": "jap",
+          "a": [
+            "Motivation / Attitudes"
+          ],
+          "t": "Episodic processes in emotional labor: Perceptions of affective delivery and regulation strategies."
+        },
+        {
+          "y": 2013,
+          "v": "jap",
+          "a": [
+            "General"
+          ],
+          "t": "Affect spin and the emotion regulation process at work."
+        }
+      ],
+      "year_min": 2003,
+      "year_max": 2020
+    },
+    {
+      "source": "beier_margaret",
+      "target": "kanfer_ruth",
+      "weight": 13,
+      "venues": {
+        "jedu": 3,
+        "pp": 1,
+        "war": 1,
+        "iop": 1
+      },
+      "papers": [
+        {
+          "y": 2001,
+          "v": "jedu",
+          "a": [
+            "Individual Differences / Personality",
+            "Diversity"
+          ],
+          "t": "Determinants of individual differences and gender differences in knowledge."
+        },
+        {
+          "y": 2013,
+          "v": "jedu",
+          "a": [
+            "Selection",
+            "Diversity"
+          ],
+          "t": "Trait complex, cognitive ability, and domain knowledge predictors of baccalaureate success, STEM persistence, and gender differences."
+        },
+        {
+          "y": 2022,
+          "v": "pp",
+          "a": [
+            "Careers"
+          ],
+          "t": "What's age got to do with it? A primer and review of the workplace aging literature"
+        },
+        {
+          "y": 2018,
+          "v": "war",
+          "a": [
+            "Careers"
+          ],
+          "t": "Successful motivational aging at work: Antecedents and retirement-related outcomes"
+        },
+        {
+          "y": 2015,
+          "v": "iop",
+          "a": [
+            "General"
+          ],
+          "t": "Generations at work: Don't throw the baby out with the bathwater"
+        },
+        {
+          "y": null,
+          "v": "jedu",
+          "a": [
+            "General"
+          ],
+          "t": "Abad, FJ, Colom, R., Juan-Espinosa, M., & Garcia, LF (2003). Intelligence differentiation in adult samples. Intelligence, 31, 157-166. normal"
+        }
+      ],
+      "year_min": 2001,
+      "year_max": 2022
     },
     {
       "source": "bowling_nathan",
@@ -13268,6 +13824,86 @@
       "year_max": 2023
     },
     {
+      "source": "hoff_kevin",
+      "target": "oswald_fred",
+      "weight": 11,
+      "venues": {
+        "jap": 1,
+        "jvb": 2,
+        "jbp": 2,
+        "ijsa": 1,
+        "jca": 2
+      },
+      "papers": [
+        {
+          "y": 2025,
+          "v": "jap",
+          "a": [
+            "Individual Differences / Personality"
+          ],
+          "t": "Toward whole-person fit assessment: Integrating interests, values, skills, knowledge, and personality using the Occupational Information Network (O* NET)."
+        },
+        {
+          "y": 2024,
+          "v": "jvb",
+          "a": [
+            "Diversity"
+          ],
+          "t": "Interested and employed? A national study of gender differences in basic interests and employment"
+        },
+        {
+          "y": 2024,
+          "v": "jvb",
+          "a": [
+            "General"
+          ],
+          "t": "Interests of the future: An integrative review and research agenda for an automated world of work"
+        },
+        {
+          "y": 2024,
+          "v": "jbp",
+          "a": [
+            "Careers"
+          ],
+          "t": "Interest gaps in the labor market: Comparing people\u2019s vocational interests with national job demands"
+        },
+        {
+          "y": 2025,
+          "v": "ijsa",
+          "a": [
+            "Careers"
+          ],
+          "t": "Comparing methods of measuring interest fit: A large prediction study with career choice satisfaction"
+        },
+        {
+          "y": 2026,
+          "v": "jca",
+          "a": [
+            "General"
+          ],
+          "t": "Interest Fit Beyond the RIASEC: The Comprehensive Assessment of Basic Interests\u2014O* NET (CABIN-NET)"
+        },
+        {
+          "y": 2026,
+          "v": "jca",
+          "a": [
+            "General"
+          ],
+          "t": "Expanding Links Between Work Values and Occupations: Development of the Occupational Values Inventory (OVI)"
+        },
+        {
+          "y": 2025,
+          "v": "jbp",
+          "a": [
+            "Careers"
+          ],
+          "t": "Correction to: Interest Gaps in the Labor Market: Comparing People's Vocational Interests with National Job Demands"
+        }
+      ],
+      "year_min": 2023,
+      "year_max": 2026
+    },
+    {
       "source": "king_eden",
       "target": "tonidandel_scott",
       "weight": 11,
@@ -13413,6 +14049,72 @@
       ],
       "year_min": 2008,
       "year_max": 2015
+    },
+    {
+      "source": "mcabee_samuel",
+      "target": "oswald_fred",
+      "weight": 11,
+      "venues": {
+        "brm": 1,
+        "pas": 1,
+        "assess": 1,
+        "iop": 3
+      },
+      "papers": [
+        {
+          "y": 2015,
+          "v": "brm",
+          "a": [
+            "Methods"
+          ],
+          "t": "The development of a short domain-general measure of working memory capacity"
+        },
+        {
+          "y": 2013,
+          "v": "pas",
+          "a": [
+            "Methods",
+            "Individual Differences / Personality"
+          ],
+          "t": "The criterion-related validity of personality measures for predicting GPA: A meta-analytic validity competition."
+        },
+        {
+          "y": 2020,
+          "v": "assess",
+          "a": [
+            "Methods",
+            "Individual Differences / Personality",
+            "Diversity"
+          ],
+          "t": "The practical effects of measurement invariance: Gender invariance in two Big Five personality measures"
+        },
+        {
+          "y": 2015,
+          "v": "iop",
+          "a": [
+            "Methods"
+          ],
+          "t": "Imperfect corrections or correct imperfections? Psychometric corrections in meta-analysis"
+        },
+        {
+          "y": 2014,
+          "v": "iop",
+          "a": [
+            "General"
+          ],
+          "t": "Including Science Advocacy in Industrial\u2013Organizational Curriculum"
+        },
+        {
+          "y": 2015,
+          "v": "iop",
+          "a": [
+            "Methods"
+          ],
+          "t": "Imperfect Corrections or Correct Imperfections?: Psychometric Corrections in Meta-Analysis\u2013ADDENDUM"
+        }
+      ],
+      "year_min": 2013,
+      "year_max": 2021
     },
     {
       "source": "saef_rachel",
@@ -13856,6 +14558,15 @@
       "year_max": 2025
     },
     {
+      "source": "finkelstein_lisa",
+      "target": "kanfer_ruth",
+      "weight": 10,
+      "venues": {},
+      "papers": [],
+      "year_min": 2012,
+      "year_max": 2021
+    },
+    {
       "source": "fletcher_keaton",
       "target": "french_kimberly",
       "weight": 10,
@@ -13944,52 +14655,6 @@
       ],
       "year_min": 2019,
       "year_max": 2026
-    },
-    {
-      "source": "gillespie_michael",
-      "target": "oswald_fred",
-      "weight": 10,
-      "venues": {
-        "jap": 2,
-        "pp": 1,
-        "ijsa": 1
-      },
-      "papers": [
-        {
-          "y": 2004,
-          "v": "jap",
-          "a": [
-            "Selection"
-          ],
-          "t": "Developing a biodata measure and situational judgment inventory as predictors of college student performance."
-        },
-        {
-          "y": 2003,
-          "v": "jap",
-          "a": [
-            "General"
-          ],
-          "t": "Impact of elaboration on socially desirable responding and the validity of biodata measures."
-        },
-        {
-          "y": 2004,
-          "v": "pp",
-          "a": [
-            "Careers"
-          ],
-          "t": "Matching individuals to occupations using abilities and the O* NET: Issues and an application in career guidance"
-        },
-        {
-          "y": 2004,
-          "v": "ijsa",
-          "a": [
-            "Selection"
-          ],
-          "t": "The Impact of Justice and Self\u2010Serving Bias Explanations of the Perceived Fairness of Different Types of Selection Tests"
-        }
-      ],
-      "year_min": 2002,
-      "year_max": 2006
     },
     {
       "source": "he_yimin",
@@ -14664,62 +15329,105 @@
       "year_max": 2022
     },
     {
-      "source": "mcabee_samuel",
-      "target": "oswald_fred",
+      "source": "oswald_fred",
+      "target": "rounds_james",
       "weight": 9,
       "venues": {
-        "brm": 1,
-        "pas": 1,
-        "assess": 1,
-        "iop": 2
+        "jap": 1,
+        "jvb": 1,
+        "jbp": 2,
+        "jca": 2
       },
       "papers": [
         {
-          "y": 2015,
-          "v": "brm",
+          "y": 2025,
+          "v": "jap",
           "a": [
-            "Methods"
-          ],
-          "t": "The development of a short domain-general measure of working memory capacity"
-        },
-        {
-          "y": 2013,
-          "v": "pas",
-          "a": [
-            "Methods",
             "Individual Differences / Personality"
           ],
-          "t": "The criterion-related validity of personality measures for predicting GPA: A meta-analytic validity competition."
+          "t": "Toward whole-person fit assessment: Integrating interests, values, skills, knowledge, and personality using the Occupational Information Network (O* NET)."
         },
         {
-          "y": 2020,
-          "v": "assess",
-          "a": [
-            "Methods",
-            "Individual Differences / Personality",
-            "Diversity"
-          ],
-          "t": "The practical effects of measurement invariance: Gender invariance in two Big Five personality measures"
-        },
-        {
-          "y": 2015,
-          "v": "iop",
-          "a": [
-            "Methods"
-          ],
-          "t": "Imperfect corrections or correct imperfections? Psychometric corrections in meta-analysis"
-        },
-        {
-          "y": 2014,
-          "v": "iop",
+          "y": 2024,
+          "v": "jvb",
           "a": [
             "General"
           ],
-          "t": "Including Science Advocacy in Industrial\u2013Organizational Curriculum"
+          "t": "Interests of the future: An integrative review and research agenda for an automated world of work"
+        },
+        {
+          "y": 2024,
+          "v": "jbp",
+          "a": [
+            "Careers"
+          ],
+          "t": "Interest gaps in the labor market: Comparing people\u2019s vocational interests with national job demands"
+        },
+        {
+          "y": 2026,
+          "v": "jca",
+          "a": [
+            "General"
+          ],
+          "t": "Interest fit beyond the RIASEC: The comprehensive assessment of basic interests\u2014O* NET (CABIN-NET)"
+        },
+        {
+          "y": 2026,
+          "v": "jca",
+          "a": [
+            "General"
+          ],
+          "t": "Expanding Links Between Work Values and Occupations: Development of the Occupational Values Inventory (OVI)"
+        },
+        {
+          "y": 2025,
+          "v": "jbp",
+          "a": [
+            "Careers"
+          ],
+          "t": "Correction to: Interest Gaps in the Labor Market: Comparing People's Vocational Interests with National Job Demands"
         }
       ],
-      "year_min": 2013,
-      "year_max": 2021
+      "year_min": 2023,
+      "year_max": 2026
+    },
+    {
+      "source": "randall_jason",
+      "target": "villado_anton",
+      "weight": 9,
+      "venues": {
+        "jbp": 1,
+        "hrmr": 1,
+        "ijsa": 1
+      },
+      "papers": [
+        {
+          "y": 2016,
+          "v": "jbp",
+          "a": [
+            "General"
+          ],
+          "t": "The effect of method characteristics on retest score gains and criterion-related validity"
+        },
+        {
+          "y": 2017,
+          "v": "hrmr",
+          "a": [
+            "General"
+          ],
+          "t": "Take two: Sources and deterrents of score change in employment retesting"
+        },
+        {
+          "y": 2017,
+          "v": "ijsa",
+          "a": [
+            "Individual Differences / Personality"
+          ],
+          "t": "Big Five traits: Predictors of retesting propensity and score improvement"
+        }
+      ],
+      "year_min": 2016,
+      "year_max": 2019
     },
     {
       "source": "salas_eduardo",
@@ -15071,6 +15779,15 @@
       "year_max": 2026
     },
     {
+      "source": "day_eric",
+      "target": "villado_anton",
+      "weight": 8,
+      "venues": {},
+      "papers": [],
+      "year_min": 2006,
+      "year_max": 2013
+    },
+    {
       "source": "finkelstein_lisa",
       "target": "king_eden",
       "weight": 8,
@@ -15287,70 +16004,6 @@
       "year_max": 2022
     },
     {
-      "source": "hoff_kevin",
-      "target": "oswald_fred",
-      "weight": 8,
-      "venues": {
-        "jap": 1,
-        "jvb": 1,
-        "jbp": 1,
-        "ijsa": 1,
-        "jca": 2
-      },
-      "papers": [
-        {
-          "y": 2025,
-          "v": "jap",
-          "a": [
-            "Individual Differences / Personality"
-          ],
-          "t": "Toward whole-person fit assessment: Integrating interests, values, skills, knowledge, and personality using the Occupational Information Network (O* NET)."
-        },
-        {
-          "y": 2024,
-          "v": "jvb",
-          "a": [
-            "General"
-          ],
-          "t": "Interests of the future: An integrative review and research agenda for an automated world of work"
-        },
-        {
-          "y": 2024,
-          "v": "jbp",
-          "a": [
-            "Careers"
-          ],
-          "t": "Interest gaps in the labor market: Comparing people\u2019s vocational interests with national job demands"
-        },
-        {
-          "y": 2025,
-          "v": "ijsa",
-          "a": [
-            "Careers"
-          ],
-          "t": "Comparing methods of measuring interest fit: A large prediction study with career choice satisfaction"
-        },
-        {
-          "y": 2026,
-          "v": "jca",
-          "a": [
-            "General"
-          ],
-          "t": "Interest Fit Beyond the RIASEC: The Comprehensive Assessment of Basic Interests\u2014O* NET (CABIN-NET)"
-        },
-        {
-          "y": 2026,
-          "v": "jca",
-          "a": [
-            "General"
-          ],
-          "t": "Expanding Links Between Work Values and Occupations: Development of the Occupational Values Inventory (OVI)"
-        }
-      ],
-      "year_min": 2023,
-      "year_max": 2026
-    },
-    {
       "source": "hunter_samuel",
       "target": "nguyen_tin",
       "weight": 8,
@@ -15479,69 +16132,6 @@
       ],
       "year_min": 2012,
       "year_max": 2019
-    },
-    {
-      "source": "oswald_fred",
-      "target": "rounds_james",
-      "weight": 8,
-      "venues": {
-        "jap": 1,
-        "jvb": 1,
-        "jbp": 2,
-        "jca": 2
-      },
-      "papers": [
-        {
-          "y": 2025,
-          "v": "jap",
-          "a": [
-            "Individual Differences / Personality"
-          ],
-          "t": "Toward whole-person fit assessment: Integrating interests, values, skills, knowledge, and personality using the Occupational Information Network (O* NET)."
-        },
-        {
-          "y": 2024,
-          "v": "jvb",
-          "a": [
-            "General"
-          ],
-          "t": "Interests of the future: An integrative review and research agenda for an automated world of work"
-        },
-        {
-          "y": 2024,
-          "v": "jbp",
-          "a": [
-            "Careers"
-          ],
-          "t": "Interest gaps in the labor market: Comparing people\u2019s vocational interests with national job demands"
-        },
-        {
-          "y": 2026,
-          "v": "jca",
-          "a": [
-            "General"
-          ],
-          "t": "Interest fit beyond the RIASEC: The comprehensive assessment of basic interests\u2014O* NET (CABIN-NET)"
-        },
-        {
-          "y": 2026,
-          "v": "jca",
-          "a": [
-            "General"
-          ],
-          "t": "Expanding Links Between Work Values and Occupations: Development of the Occupational Values Inventory (OVI)"
-        },
-        {
-          "y": 2025,
-          "v": "jbp",
-          "a": [
-            "Careers"
-          ],
-          "t": "Correction to: Interest Gaps in the Labor Market: Comparing People's Vocational Interests with National Job Demands"
-        }
-      ],
-      "year_min": 2023,
-      "year_max": 2026
     },
     {
       "source": "rupp_deborah",
@@ -16846,6 +17436,15 @@
       "year_max": 2013
     },
     {
+      "source": "dipboye_robert",
+      "target": "smith_claire",
+      "weight": 6,
+      "venues": {},
+      "papers": [],
+      "year_min": 1994,
+      "year_max": 1995
+    },
+    {
       "source": "drasgow_fritz",
       "target": "magley_vicki",
       "weight": 6,
@@ -16898,6 +17497,43 @@
       "papers": [],
       "year_min": 2021,
       "year_max": 2024
+    },
+    {
+      "source": "ford_kevin",
+      "target": "quinones_miguel",
+      "weight": 6,
+      "venues": {
+        "pp": 2,
+        "jap": 1
+      },
+      "papers": [
+        {
+          "y": 1995,
+          "v": "pp",
+          "a": [
+            "Performance"
+          ],
+          "t": "The relationship between work experience and job performance: A conceptual and meta\u2010analytic review"
+        },
+        {
+          "y": 1992,
+          "v": "pp",
+          "a": [
+            "General"
+          ],
+          "t": "Factors affecting the opportunity to perform trained tasks on the job"
+        },
+        {
+          "y": 1993,
+          "v": "jap",
+          "a": [
+            "Training"
+          ],
+          "t": "Impact of task experience and individual factors on training-emphasis ratings."
+        }
+      ],
+      "year_min": 1992,
+      "year_max": 2003
     },
     {
       "source": "ford_kevin",
@@ -17159,6 +17795,35 @@
       "year_max": 2006
     },
     {
+      "source": "martinraugh_michelle",
+      "target": "motowidlo_stephan",
+      "weight": 6,
+      "venues": {
+        "paid": 1,
+        "jasp": 1
+      },
+      "papers": [
+        {
+          "y": 2016,
+          "v": "paid",
+          "a": [
+            "General"
+          ],
+          "t": "Prosocial knowledge mediates effects of agreeableness and emotional intelligence on prosocial behavior"
+        },
+        {
+          "y": 2013,
+          "v": "jasp",
+          "a": [
+            "Individual Differences / Personality"
+          ],
+          "t": "Relations between personality, knowledge, and behavior in professional service encounters"
+        }
+      ],
+      "year_min": 2010,
+      "year_max": 2016
+    },
+    {
       "source": "min_hanyi",
       "target": "peng_yisheng",
       "weight": 6,
@@ -17329,6 +17994,35 @@
       ],
       "year_min": 2018,
       "year_max": 2025
+    },
+    {
+      "source": "oswald_fred",
+      "target": "sun_tianjun",
+      "weight": 6,
+      "venues": {
+        "assess": 1,
+        "ampps": 1
+      },
+      "papers": [
+        {
+          "y": 2026,
+          "v": "assess",
+          "a": [
+            "Methods"
+          ],
+          "t": "Modeling Individual Language Patterns and Psychological Constructs to Generate AI-Augmented Data for Scalable Psychological Assessment"
+        },
+        {
+          "y": 2026,
+          "v": "ampps",
+          "a": [
+            "Training"
+          ],
+          "t": "Ensuring Transparency and Trust in Supervised-Machine-Learning Studies: A Checklist for Psychological Researchers"
+        }
+      ],
+      "year_min": 2024,
+      "year_max": 2026
     },
     {
       "source": "reyes_denise",
@@ -18298,6 +18992,26 @@
     },
     {
       "source": "heggestad_eric",
+      "target": "kanfer_ruth",
+      "weight": 5,
+      "venues": {
+        "lid": 1
+      },
+      "papers": [
+        {
+          "y": 1996,
+          "v": "lid",
+          "a": [
+            "General"
+          ],
+          "t": "Motivational skills & self-regulation for learning: A trait perspective"
+        }
+      ],
+      "year_min": 1996,
+      "year_max": 2005
+    },
+    {
+      "source": "heggestad_eric",
       "target": "rogelberg_steven",
       "weight": 5,
       "venues": {
@@ -18411,6 +19125,26 @@
       "venues": {},
       "papers": [],
       "year_min": 2018,
+      "year_max": 2023
+    },
+    {
+      "source": "kanfer_ruth",
+      "target": "zaccaro_stephen",
+      "weight": 5,
+      "venues": {
+        "amd": 1
+      },
+      "papers": [
+        {
+          "y": 2023,
+          "v": "amd",
+          "a": [
+            "Teams"
+          ],
+          "t": "Staying apart to work better together: Team structure in cross-functional teams"
+        }
+      ],
+      "year_min": 2012,
       "year_max": 2023
     },
     {
@@ -18859,6 +19593,15 @@
       "year_max": 2021
     },
     {
+      "source": "beier_margaret",
+      "target": "villado_anton",
+      "weight": 4,
+      "venues": {},
+      "papers": [],
+      "year_min": 2017,
+      "year_max": 2021
+    },
+    {
       "source": "bisbey_tiffany",
       "target": "reyes_denise",
       "weight": 4,
@@ -18925,6 +19668,26 @@
       ],
       "year_min": 2020,
       "year_max": 2026
+    },
+    {
+      "source": "calderwood_charles",
+      "target": "kanfer_ruth",
+      "weight": 4,
+      "venues": {
+        "page": 1
+      },
+      "papers": [
+        {
+          "y": 2010,
+          "v": "page",
+          "a": [
+            "General"
+          ],
+          "t": "Use it or lose it? Wii brain exercise practice and reading for domain knowledge."
+        }
+      ],
+      "year_min": 2010,
+      "year_max": 2013
     },
     {
       "source": "calderwood_charles",
@@ -19704,6 +20467,26 @@
       "year_max": 2016
     },
     {
+      "source": "macnamara_brooke",
+      "target": "oswald_fred",
+      "weight": 4,
+      "venues": {
+        "psci": 1
+      },
+      "papers": [
+        {
+          "y": 2014,
+          "v": "psci",
+          "a": [
+            "Methods"
+          ],
+          "t": "Deliberate practice and performance in music, games, sports, education, and professions: A meta-analysis"
+        }
+      ],
+      "year_min": 2014,
+      "year_max": 2020
+    },
+    {
       "source": "martinraugh_michelle",
       "target": "watts_logan",
       "weight": 4,
@@ -19873,6 +20656,26 @@
       "year_max": 2021
     },
     {
+      "source": "quinones_miguel",
+      "target": "tonidandel_scott",
+      "weight": 4,
+      "venues": {
+        "jap": 1
+      },
+      "papers": [
+        {
+          "y": 2002,
+          "v": "jap",
+          "a": [
+            "General"
+          ],
+          "t": "Computer-adaptive testing: The impact of test characteristics on perceived performance and test takers' reactions."
+        }
+      ],
+      "year_min": 2002,
+      "year_max": 2003
+    },
+    {
       "source": "rogelberg_steven",
       "target": "tonidandel_scott",
       "weight": 4,
@@ -20018,35 +20821,6 @@
       "year_max": 2016
     },
     {
-      "source": "oswald_fred",
-      "target": "sun_tianjun",
-      "weight": 4,
-      "venues": {
-        "ampps": 1,
-        "assess": 1
-      },
-      "papers": [
-        {
-          "y": 2026,
-          "v": "ampps",
-          "a": [
-            "Training"
-          ],
-          "t": "Ensuring Transparency and Trust in Supervised-Machine-Learning Studies: A Checklist for Psychological Researchers"
-        },
-        {
-          "y": 2026,
-          "v": "assess",
-          "a": [
-            "Methods"
-          ],
-          "t": "Modeling individual language patterns and psychological constructs to generate AI-augmented data for scalable psychological assessment"
-        }
-      ],
-      "year_min": 2025,
-      "year_max": 2026
-    },
-    {
       "source": "tay_louis",
       "target": "wang_wei",
       "weight": 4,
@@ -20128,16 +20902,27 @@
     },
     {
       "source": "allen_tammy",
-      "target": "sinclair_robert",
+      "target": "motowidlo_stephan",
       "weight": 3,
-      "venues": {},
-      "papers": [],
-      "year_min": 2020,
-      "year_max": 2023
+      "venues": {
+        "ijsa": 1
+      },
+      "papers": [
+        {
+          "y": 2001,
+          "v": "ijsa",
+          "a": [
+            "Individual Differences / Personality"
+          ],
+          "t": "Personality predictors of citizenship performance"
+        }
+      ],
+      "year_min": 2001,
+      "year_max": 2001
     },
     {
       "source": "allen_tammy",
-      "target": "bergman_mindy",
+      "target": "sinclair_robert",
       "weight": 3,
       "venues": {},
       "papers": [],
@@ -20152,6 +20937,15 @@
       "papers": [],
       "year_min": 2020,
       "year_max": 2021
+    },
+    {
+      "source": "allen_tammy",
+      "target": "bergman_mindy",
+      "weight": 3,
+      "venues": {},
+      "papers": [],
+      "year_min": 2020,
+      "year_max": 2023
     },
     {
       "source": "allen_tammy",
@@ -20492,6 +21286,45 @@
       ],
       "year_min": 2024,
       "year_max": 2026
+    },
+    {
+      "source": "beier_margaret",
+      "target": "motowidlo_stephan",
+      "weight": 3,
+      "venues": {
+        "jap": 1,
+        "ijsa": 1,
+        "iop": 1
+      },
+      "papers": [
+        {
+          "y": 2010,
+          "v": "jap",
+          "a": [
+            "Selection"
+          ],
+          "t": "Differentiating specific job knowledge from implicit trait policies in procedural knowledge measured by a situational judgment test."
+        },
+        {
+          "y": 2011,
+          "v": "ijsa",
+          "a": [
+            "Selection",
+            "Individual Differences / Personality"
+          ],
+          "t": "Measuring relationships between personality, knowledge, and performance using single\u2010response situational judgment tests"
+        },
+        {
+          "y": 2016,
+          "v": "iop",
+          "a": [
+            "General"
+          ],
+          "t": "Scoring SJTs for traits and situational effectiveness"
+        }
+      ],
+      "year_min": 2010,
+      "year_max": 2016
     },
     {
       "source": "beier_margaret",
@@ -21063,7 +21896,7 @@
     },
     {
       "source": "cheung_hokwan",
-      "target": "roch_sylvia",
+      "target": "randall_jason",
       "weight": 3,
       "venues": {},
       "papers": [],
@@ -21072,7 +21905,7 @@
     },
     {
       "source": "cheung_hokwan",
-      "target": "randall_jason",
+      "target": "roch_sylvia",
       "weight": 3,
       "venues": {},
       "papers": [],
@@ -21259,6 +22092,42 @@
       "papers": [],
       "year_min": 2013,
       "year_max": 2013
+    },
+    {
+      "source": "dipboye_robert",
+      "target": "weiss_howard",
+      "weight": 3,
+      "venues": {
+        "obhdp": 3
+      },
+      "papers": [
+        {
+          "y": 1983,
+          "v": "obhdp",
+          "a": [
+            "General"
+          ],
+          "t": "The Editor wishes to acknowledge the efforts of the following individu-als who graciously served in an invited editorial capacity during 1982"
+        },
+        {
+          "y": 1982,
+          "v": "obhdp",
+          "a": [
+            "General"
+          ],
+          "t": "The Editor wishes to acknowledge the efforts of the following individu-als who graciously served in an invited editorial capacity during 1981"
+        },
+        {
+          "y": 1981,
+          "v": "obhdp",
+          "a": [
+            "General"
+          ],
+          "t": "The Editor wishes to acknowledge the efforts of the following individu-als who graciously served in an invited editorial capacity during 1980"
+        }
+      ],
+      "year_min": 1981,
+      "year_max": 1983
     },
     {
       "source": "dishop_christopher",
@@ -21476,6 +22345,15 @@
       ],
       "year_min": 2007,
       "year_max": 2019
+    },
+    {
+      "source": "fletcher_keaton",
+      "target": "kanfer_ruth",
+      "weight": 3,
+      "venues": {},
+      "papers": [],
+      "year_min": 2019,
+      "year_max": 2020
     },
     {
       "source": "folberg_abigail",
@@ -21831,6 +22709,64 @@
       "year_max": 2024
     },
     {
+      "source": "kanfer_ruth",
+      "target": "rudolph_cort",
+      "weight": 3,
+      "venues": {
+        "jap": 1
+      },
+      "papers": [
+        {
+          "y": 2018,
+          "v": "jap",
+          "a": [
+            "Methods"
+          ],
+          "t": "Future time perspective: A systematic review and meta-analysis."
+        }
+      ],
+      "year_min": 2015,
+      "year_max": 2018
+    },
+    {
+      "source": "kanfer_ruth",
+      "target": "kozlowski_steve",
+      "weight": 3,
+      "venues": {
+        "obhdp": 1
+      },
+      "papers": [
+        {
+          "y": 2009,
+          "v": "obhdp",
+          "a": [
+            "Motivation / Attitudes"
+          ],
+          "t": "The motivating potential of teams: Test and extension of cross-level model of motivation in teams"
+        }
+      ],
+      "year_min": 2009,
+      "year_max": 2012
+    },
+    {
+      "source": "kanfer_ruth",
+      "target": "king_eden",
+      "weight": 3,
+      "venues": {},
+      "papers": [],
+      "year_min": 2012,
+      "year_max": 2012
+    },
+    {
+      "source": "kanfer_ruth",
+      "target": "rupp_deborah",
+      "weight": 3,
+      "venues": {},
+      "papers": [],
+      "year_min": 2012,
+      "year_max": 2012
+    },
+    {
       "source": "kaplan_seth",
       "target": "king_eden",
       "weight": 3,
@@ -22034,26 +22970,6 @@
       "year_max": 2025
     },
     {
-      "source": "macnamara_brooke",
-      "target": "oswald_fred",
-      "weight": 3,
-      "venues": {
-        "psci": 1
-      },
-      "papers": [
-        {
-          "y": 2014,
-          "v": "psci",
-          "a": [
-            "Methods"
-          ],
-          "t": "Deliberate practice and performance in music, games, sports, education, and professions: A meta-analysis"
-        }
-      ],
-      "year_min": 2014,
-      "year_max": 2020
-    },
-    {
       "source": "martinez_larry",
       "target": "obrien_kimberly",
       "weight": 3,
@@ -22151,6 +23067,55 @@
       "year_max": 2019
     },
     {
+      "source": "oswald_fred",
+      "target": "rogelberg_steven",
+      "weight": 3,
+      "venues": {
+        "jbp": 1,
+        "iop": 1
+      },
+      "papers": [
+        {
+          "y": 2019,
+          "v": "jbp",
+          "a": [
+            "General"
+          ],
+          "t": "Answers to 18 questions about open science practices"
+        },
+        {
+          "y": 2014,
+          "v": "iop",
+          "a": [
+            "General"
+          ],
+          "t": "Including Science Advocacy in Industrial\u2013Organizational Curriculum"
+        }
+      ],
+      "year_min": 2014,
+      "year_max": 2019
+    },
+    {
+      "source": "oswald_fred",
+      "target": "sackett_paul",
+      "weight": 3,
+      "venues": {
+        "jap": 1
+      },
+      "papers": [
+        {
+          "y": 2000,
+          "v": "jap",
+          "a": [
+            "General"
+          ],
+          "t": "The homogeneity assumption in differential prediction analysis: Does it really matter?"
+        }
+      ],
+      "year_min": 2000,
+      "year_max": 2026
+    },
+    {
       "source": "benson_alex",
       "target": "prasad_josh",
       "weight": 3,
@@ -22205,35 +23170,6 @@
       "papers": [],
       "year_min": 2013,
       "year_max": 2022
-    },
-    {
-      "source": "oswald_fred",
-      "target": "rogelberg_steven",
-      "weight": 3,
-      "venues": {
-        "jbp": 1,
-        "iop": 1
-      },
-      "papers": [
-        {
-          "y": 2019,
-          "v": "jbp",
-          "a": [
-            "General"
-          ],
-          "t": "Answers to 18 questions about open science practices"
-        },
-        {
-          "y": 2014,
-          "v": "iop",
-          "a": [
-            "General"
-          ],
-          "t": "Including Science Advocacy in Industrial\u2013Organizational Curriculum"
-        }
-      ],
-      "year_min": 2014,
-      "year_max": 2019
     },
     {
       "source": "rounds_james",
@@ -22753,6 +23689,15 @@
     },
     {
       "source": "allen_tammy",
+      "target": "kanfer_ruth",
+      "weight": 2,
+      "venues": {},
+      "papers": [],
+      "year_min": 2012,
+      "year_max": 2012
+    },
+    {
+      "source": "allen_tammy",
       "target": "salas_eduardo",
       "weight": 2,
       "venues": {},
@@ -22830,7 +23775,7 @@
     },
     {
       "source": "allen_tammy",
-      "target": "rudolph_cort",
+      "target": "rupp_deborah",
       "weight": 2,
       "venues": {},
       "papers": [],
@@ -22839,7 +23784,7 @@
     },
     {
       "source": "allen_tammy",
-      "target": "rupp_deborah",
+      "target": "rudolph_cort",
       "weight": 2,
       "venues": {},
       "papers": [],
@@ -23078,6 +24023,44 @@
       "year_max": 2022
     },
     {
+      "source": "beal_daniel",
+      "target": "kaplan_seth",
+      "weight": 2,
+      "venues": {
+        "jom": 1
+      },
+      "papers": [
+        {
+          "y": 2011,
+          "v": "jom",
+          "a": [
+            "General"
+          ],
+          "t": "Just feelings? The role of affect in the formation of organizational fairness judgments"
+        }
+      ],
+      "year_min": 2011,
+      "year_max": 2012
+    },
+    {
+      "source": "beal_daniel",
+      "target": "hebl_mikki",
+      "weight": 2,
+      "venues": {},
+      "papers": [],
+      "year_min": 2008,
+      "year_max": 2009
+    },
+    {
+      "source": "beal_daniel",
+      "target": "beier_margaret",
+      "weight": 2,
+      "venues": {},
+      "papers": [],
+      "year_min": 2006,
+      "year_max": 2019
+    },
+    {
       "source": "beier_margaret",
       "target": "saxena_mahima",
       "weight": 2,
@@ -23219,6 +24202,35 @@
       "papers": [],
       "year_min": 2024,
       "year_max": 2026
+    },
+    {
+      "source": "bono_joyce",
+      "target": "liu_yihao",
+      "weight": 2,
+      "venues": {
+        "pp": 1
+      },
+      "papers": [
+        {
+          "y": 2017,
+          "v": "pp",
+          "a": [
+            "Diversity"
+          ],
+          "t": "Dropped on the way to the top: Gender and managerial derailment"
+        }
+      ],
+      "year_min": 2017,
+      "year_max": 2017
+    },
+    {
+      "source": "bono_joyce",
+      "target": "zaccaro_stephen",
+      "weight": 2,
+      "venues": {},
+      "papers": [],
+      "year_min": 2000,
+      "year_max": 2015
     },
     {
       "source": "boudrias_jeansebastien",
@@ -23564,15 +24576,6 @@
     },
     {
       "source": "chao_georgia",
-      "target": "king_eden",
-      "weight": 2,
-      "venues": {},
-      "papers": [],
-      "year_min": 2012,
-      "year_max": 2012
-    },
-    {
-      "source": "chao_georgia",
       "target": "zaccaro_stephen",
       "weight": 2,
       "venues": {},
@@ -23582,7 +24585,25 @@
     },
     {
       "source": "chao_georgia",
+      "target": "king_eden",
+      "weight": 2,
+      "venues": {},
+      "papers": [],
+      "year_min": 2012,
+      "year_max": 2012
+    },
+    {
+      "source": "chao_georgia",
       "target": "rupp_deborah",
+      "weight": 2,
+      "venues": {},
+      "papers": [],
+      "year_min": 2012,
+      "year_max": 2012
+    },
+    {
+      "source": "chao_georgia",
+      "target": "kanfer_ruth",
       "weight": 2,
       "venues": {},
       "papers": [],
@@ -23979,6 +25000,15 @@
       "year_max": 2004
     },
     {
+      "source": "dipboye_robert",
+      "target": "salas_eduardo",
+      "weight": 2,
+      "venues": {},
+      "papers": [],
+      "year_min": 2008,
+      "year_max": 2008
+    },
+    {
       "source": "dishop_christopher",
       "target": "griffin_daniel",
       "weight": 2,
@@ -24006,6 +25036,28 @@
       "papers": [],
       "year_min": 2023,
       "year_max": 2026
+    },
+    {
+      "source": "drasgow_fritz",
+      "target": "motowidlo_stephan",
+      "weight": 2,
+      "venues": {
+        "jap": 1
+      },
+      "papers": [
+        {
+          "y": 2001,
+          "v": "jap",
+          "a": [
+            "Methods",
+            "Performance",
+            "AI / Technology"
+          ],
+          "t": "An examination of the comparative reliability, validity, and accuracy of performance ratings made using computerized adaptive rating scales."
+        }
+      ],
+      "year_min": 1998,
+      "year_max": 2001
     },
     {
       "source": "drasgow_fritz",
@@ -24683,7 +25735,7 @@
     },
     {
       "source": "hebl_mikki",
-      "target": "rudolph_cort",
+      "target": "kanfer_ruth",
       "weight": 2,
       "venues": {},
       "papers": [],
@@ -24693,6 +25745,15 @@
     {
       "source": "hebl_mikki",
       "target": "rupp_deborah",
+      "weight": 2,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "hebl_mikki",
+      "target": "rudolph_cort",
       "weight": 2,
       "venues": {},
       "papers": [],
@@ -25297,6 +26358,27 @@
       "year_max": 2025
     },
     {
+      "source": "landers_richard",
+      "target": "oswald_fred",
+      "weight": 2,
+      "venues": {
+        "jbp": 1
+      },
+      "papers": [
+        {
+          "y": 2023,
+          "v": "jbp",
+          "a": [
+            "Selection",
+            "AI / Technology"
+          ],
+          "t": "Evaluating a natural language processing approach to estimating KSA and interest job analysis ratings"
+        }
+      ],
+      "year_min": 1945,
+      "year_max": 2023
+    },
+    {
       "source": "lebreton_james",
       "target": "michel_jesse",
       "weight": 2,
@@ -25853,6 +26935,35 @@
       "year_max": 2003
     },
     {
+      "source": "oswald_fred",
+      "target": "rupp_deborah",
+      "weight": 2,
+      "venues": {
+        "jbp": 1,
+        "jom": 1
+      },
+      "papers": [
+        {
+          "y": 2019,
+          "v": "jbp",
+          "a": [
+            "General"
+          ],
+          "t": "Answers to 18 questions about open science practices"
+        },
+        {
+          "y": 2015,
+          "v": "jom",
+          "a": [
+            "General"
+          ],
+          "t": "Rendezvous overdue: Bayes analysis meets organizational research"
+        }
+      ],
+      "year_min": 2015,
+      "year_max": 2019
+    },
+    {
       "source": "paolettihatcher_jensine",
       "target": "reyes_denise",
       "weight": 2,
@@ -26172,35 +27283,6 @@
       "year_max": 2019
     },
     {
-      "source": "oswald_fred",
-      "target": "rupp_deborah",
-      "weight": 2,
-      "venues": {
-        "jbp": 1,
-        "jom": 1
-      },
-      "papers": [
-        {
-          "y": 2019,
-          "v": "jbp",
-          "a": [
-            "General"
-          ],
-          "t": "Answers to 18 questions about open science practices"
-        },
-        {
-          "y": 2015,
-          "v": "jom",
-          "a": [
-            "General"
-          ],
-          "t": "Rendezvous overdue: Bayes analysis meets organizational research"
-        }
-      ],
-      "year_min": 2015,
-      "year_max": 2019
-    },
-    {
       "source": "rupp_deborah",
       "target": "zaccaro_stephen",
       "weight": 2,
@@ -26268,26 +27350,6 @@
       ],
       "year_min": 2013,
       "year_max": 2013
-    },
-    {
-      "source": "oswald_fred",
-      "target": "sackett_paul",
-      "weight": 2,
-      "venues": {
-        "jap": 1
-      },
-      "papers": [
-        {
-          "y": 2000,
-          "v": "jap",
-          "a": [
-            "General"
-          ],
-          "t": "The homogeneity assumption in differential prediction analysis: Does it really matter?"
-        }
-      ],
-      "year_min": 2000,
-      "year_max": 2026
     },
     {
       "source": "bruklee_valentina",
@@ -26601,7 +27663,7 @@
     },
     {
       "source": "ackerman_phillip",
-      "target": "rudolph_cort",
+      "target": "hebl_mikki",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -26610,16 +27672,7 @@
     },
     {
       "source": "ackerman_phillip",
-      "target": "king_eden",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "ackerman_phillip",
-      "target": "brown_douglas",
+      "target": "probst_tahira",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -26637,7 +27690,7 @@
     },
     {
       "source": "ackerman_phillip",
-      "target": "allen_tammy",
+      "target": "bowling_nathan",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -26664,7 +27717,43 @@
     },
     {
       "source": "ackerman_phillip",
+      "target": "bobocel_ramona",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "ackerman_phillip",
+      "target": "woehr_david",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "ackerman_phillip",
       "target": "rupp_deborah",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "ackerman_phillip",
+      "target": "rudolph_cort",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "ackerman_phillip",
+      "target": "allen_tammy",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -26691,7 +27780,7 @@
     },
     {
       "source": "ackerman_phillip",
-      "target": "probst_tahira",
+      "target": "brown_douglas",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -26709,24 +27798,6 @@
     },
     {
       "source": "ackerman_phillip",
-      "target": "woehr_david",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "ackerman_phillip",
-      "target": "hebl_mikki",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "ackerman_phillip",
       "target": "ford_kevin",
       "weight": 1,
       "venues": {},
@@ -26736,16 +27807,7 @@
     },
     {
       "source": "ackerman_phillip",
-      "target": "bowling_nathan",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "ackerman_phillip",
-      "target": "bobocel_ramona",
+      "target": "king_eden",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -27030,6 +28092,15 @@
     },
     {
       "source": "allen_tammy",
+      "target": "dipboye_robert",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2009,
+      "year_max": 2009
+    },
+    {
+      "source": "allen_tammy",
       "target": "grandey_alicia",
       "weight": 1,
       "venues": {
@@ -27088,52 +28159,7 @@
     },
     {
       "source": "allen_tammy",
-      "target": "brown_douglas",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "allen_tammy",
       "target": "zaccaro_stephen",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "allen_tammy",
-      "target": "shuffler_marissa",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "allen_tammy",
-      "target": "coleman_peter",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "allen_tammy",
-      "target": "woehr_david",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "allen_tammy",
-      "target": "ford_kevin",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -27160,7 +28186,7 @@
     },
     {
       "source": "allen_tammy",
-      "target": "melsonsilimon_arturia",
+      "target": "woehr_david",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -27169,7 +28195,34 @@
     },
     {
       "source": "allen_tammy",
-      "target": "day_arla",
+      "target": "shuffler_marissa",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "allen_tammy",
+      "target": "brown_douglas",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "allen_tammy",
+      "target": "coleman_peter",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "allen_tammy",
+      "target": "ford_kevin",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -27187,7 +28240,7 @@
     },
     {
       "source": "allen_tammy",
-      "target": "woo_sang",
+      "target": "day_arla",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -27222,6 +28275,24 @@
       "year_max": 0
     },
     {
+      "source": "allen_tammy",
+      "target": "woo_sang",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "allen_tammy",
+      "target": "melsonsilimon_arturia",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
       "source": "arthur_winfred",
       "target": "bergman_mindy",
       "weight": 1,
@@ -27240,6 +28311,15 @@
       ],
       "year_min": 2010,
       "year_max": 2010
+    },
+    {
+      "source": "arthur_winfred",
+      "target": "dipboye_robert",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2005,
+      "year_max": 2005
     },
     {
       "source": "arthur_winfred",
@@ -27308,7 +28388,7 @@
     },
     {
       "source": "baker_nathan",
-      "target": "stark_stephen",
+      "target": "drasgow_fritz",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -27317,7 +28397,7 @@
     },
     {
       "source": "baker_nathan",
-      "target": "drasgow_fritz",
+      "target": "stark_stephen",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -27395,26 +28475,6 @@
     },
     {
       "source": "banks_george",
-      "target": "bowling_nathan",
-      "weight": 1,
-      "venues": {
-        "iop": 1
-      },
-      "papers": [
-        {
-          "y": 2026,
-          "v": "iop",
-          "a": [
-            "General"
-          ],
-          "t": "Read my lips: No new constructs! Construct proliferation as a threat to the future of IO psychology"
-        }
-      ],
-      "year_min": 2026,
-      "year_max": 2026
-    },
-    {
-      "source": "banks_george",
       "target": "sessa_valerie",
       "weight": 1,
       "venues": {
@@ -27435,7 +28495,27 @@
     },
     {
       "source": "banks_george",
-      "target": "lenoble_chelsea",
+      "target": "bowling_nathan",
+      "weight": 1,
+      "venues": {
+        "iop": 1
+      },
+      "papers": [
+        {
+          "y": 2026,
+          "v": "iop",
+          "a": [
+            "General"
+          ],
+          "t": "Read my lips: No new constructs! Construct proliferation as a threat to the future of IO psychology"
+        }
+      ],
+      "year_min": 2026,
+      "year_max": 2026
+    },
+    {
+      "source": "banks_george",
+      "target": "fisher_gwen",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -27471,7 +28551,7 @@
     },
     {
       "source": "banks_george",
-      "target": "fisher_gwen",
+      "target": "lenoble_chelsea",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -27480,7 +28560,16 @@
     },
     {
       "source": "banks_george",
-      "target": "reiterpalmon_roni",
+      "target": "kanfer_ruth",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2012,
+      "year_max": 2012
+    },
+    {
+      "source": "banks_george",
+      "target": "powell_deborah",
       "weight": 1,
       "venues": {
         "jom": 1
@@ -27500,7 +28589,7 @@
     },
     {
       "source": "banks_george",
-      "target": "powell_deborah",
+      "target": "reiterpalmon_roni",
       "weight": 1,
       "venues": {
         "jom": 1
@@ -27547,16 +28636,7 @@
     },
     {
       "source": "banks_george",
-      "target": "melsonsilimon_arturia",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "banks_george",
-      "target": "rudolph_cort",
+      "target": "hebl_mikki",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -27574,25 +28654,7 @@
     },
     {
       "source": "banks_george",
-      "target": "highhouse_scott",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "banks_george",
       "target": "britt_thomas",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "banks_george",
-      "target": "sinclair_robert",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -27610,7 +28672,16 @@
     },
     {
       "source": "banks_george",
-      "target": "bergman_mindy",
+      "target": "motowidlo_stephan",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "banks_george",
+      "target": "sinclair_robert",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -27628,7 +28699,7 @@
     },
     {
       "source": "banks_george",
-      "target": "hebl_mikki",
+      "target": "rudolph_cort",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -27638,6 +28709,33 @@
     {
       "source": "banks_george",
       "target": "clark_malissa",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "banks_george",
+      "target": "melsonsilimon_arturia",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "banks_george",
+      "target": "highhouse_scott",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "banks_george",
+      "target": "bergman_mindy",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -27773,6 +28871,15 @@
     },
     {
       "source": "bauer_kristina",
+      "target": "bono_joyce",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2011,
+      "year_max": 2011
+    },
+    {
+      "source": "bauer_kristina",
       "target": "gonzalez_manuel",
       "weight": 1,
       "venues": {},
@@ -27832,7 +28939,7 @@
     },
     {
       "source": "bazzoli_andrea",
-      "target": "bowling_nathan",
+      "target": "brossoit_rebecca",
       "weight": 1,
       "venues": {
         "chb": 1
@@ -27852,7 +28959,7 @@
     },
     {
       "source": "bazzoli_andrea",
-      "target": "brossoit_rebecca",
+      "target": "bowling_nathan",
       "weight": 1,
       "venues": {
         "chb": 1
@@ -27889,6 +28996,102 @@
       ],
       "year_min": 2026,
       "year_max": 2026
+    },
+    {
+      "source": "beal_daniel",
+      "target": "newman_daniel",
+      "weight": 1,
+      "venues": {
+        "war": 1
+      },
+      "papers": [
+        {
+          "y": 2017,
+          "v": "war",
+          "a": [
+            "General"
+          ],
+          "t": "Longitudinal research: A panel discussion on conceptual issues, research design, and statistical techniques"
+        }
+      ],
+      "year_min": 2017,
+      "year_max": 2017
+    },
+    {
+      "source": "beal_daniel",
+      "target": "dalal_reeshad",
+      "weight": 1,
+      "venues": {
+        "jap": 1
+      },
+      "papers": [
+        {
+          "y": 2013,
+          "v": "jap",
+          "a": [
+            "General"
+          ],
+          "t": "Affect spin and the emotion regulation process at work."
+        }
+      ],
+      "year_min": 2013,
+      "year_max": 2013
+    },
+    {
+      "source": "beal_daniel",
+      "target": "payne_stephanie",
+      "weight": 1,
+      "venues": {
+        "jpers": 1
+      },
+      "papers": [
+        {
+          "y": 2009,
+          "v": "jpers",
+          "a": [
+            "Individual Differences / Personality"
+          ],
+          "t": "Personality predictors of extreme response style"
+        }
+      ],
+      "year_min": 2009,
+      "year_max": 2009
+    },
+    {
+      "source": "beal_daniel",
+      "target": "king_eden",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2009,
+      "year_max": 2009
+    },
+    {
+      "source": "beal_daniel",
+      "target": "rupp_deborah",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2007,
+      "year_max": 2007
+    },
+    {
+      "source": "beal_daniel",
+      "target": "kelloway_kevin",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2012,
+      "year_max": 2012
+    },
+    {
+      "source": "beal_daniel",
+      "target": "kim_jeongjin",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2023,
+      "year_max": 2023
     },
     {
       "source": "beier_margaret",
@@ -28045,7 +29248,7 @@
     },
     {
       "source": "bergman_mindy",
-      "target": "sabat_isaac",
+      "target": "martinez_larry",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28054,7 +29257,7 @@
     },
     {
       "source": "bergman_mindy",
-      "target": "martinez_larry",
+      "target": "sabat_isaac",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28081,16 +29284,7 @@
     },
     {
       "source": "bergman_mindy",
-      "target": "melsonsilimon_arturia",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "bergman_mindy",
-      "target": "rudolph_cort",
+      "target": "tonidandel_scott",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28108,7 +29302,52 @@
     },
     {
       "source": "bergman_mindy",
-      "target": "highhouse_scott",
+      "target": "shoss_mindy",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bergman_mindy",
+      "target": "motowidlo_stephan",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bergman_mindy",
+      "target": "grand_james",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bergman_mindy",
+      "target": "rupp_deborah",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bergman_mindy",
+      "target": "rudolph_cort",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bergman_mindy",
+      "target": "clark_malissa",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28135,7 +29374,7 @@
     },
     {
       "source": "bergman_mindy",
-      "target": "rupp_deborah",
+      "target": "melsonsilimon_arturia",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28144,34 +29383,7 @@
     },
     {
       "source": "bergman_mindy",
-      "target": "shoss_mindy",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "bergman_mindy",
-      "target": "grand_james",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "bergman_mindy",
-      "target": "tonidandel_scott",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "bergman_mindy",
-      "target": "clark_malissa",
+      "target": "highhouse_scott",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28181,6 +29393,15 @@
     {
       "source": "bisbey_tiffany",
       "target": "king_eden",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2001,
+      "year_max": 2001
+    },
+    {
+      "source": "bisbey_tiffany",
+      "target": "bono_joyce",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28236,7 +29457,7 @@
     },
     {
       "source": "blanchard_anita",
-      "target": "fritzsche_barbara",
+      "target": "block_caryn",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28245,7 +29466,7 @@
     },
     {
       "source": "blanchard_anita",
-      "target": "block_caryn",
+      "target": "fritzsche_barbara",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28370,7 +29591,7 @@
     },
     {
       "source": "bobocel_ramona",
-      "target": "rudolph_cort",
+      "target": "hebl_mikki",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28379,16 +29600,7 @@
     },
     {
       "source": "bobocel_ramona",
-      "target": "king_eden",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "bobocel_ramona",
-      "target": "brown_douglas",
+      "target": "probst_tahira",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28398,6 +29610,15 @@
     {
       "source": "bobocel_ramona",
       "target": "zaccaro_stephen",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bobocel_ramona",
+      "target": "bowling_nathan",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28424,6 +29645,24 @@
     },
     {
       "source": "bobocel_ramona",
+      "target": "woehr_david",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bobocel_ramona",
+      "target": "rudolph_cort",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bobocel_ramona",
       "target": "salas_eduardo",
       "weight": 1,
       "venues": {},
@@ -28442,7 +29681,16 @@
     },
     {
       "source": "bobocel_ramona",
-      "target": "probst_tahira",
+      "target": "kanfer_ruth",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bobocel_ramona",
+      "target": "brown_douglas",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28460,24 +29708,6 @@
     },
     {
       "source": "bobocel_ramona",
-      "target": "woehr_david",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "bobocel_ramona",
-      "target": "hebl_mikki",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "bobocel_ramona",
       "target": "ford_kevin",
       "weight": 1,
       "venues": {},
@@ -28487,7 +29717,7 @@
     },
     {
       "source": "bobocel_ramona",
-      "target": "bowling_nathan",
+      "target": "king_eden",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28497,6 +29727,120 @@
     {
       "source": "bobocel_ramona",
       "target": "hausdorf_peter",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bobocel_ramona",
+      "target": "oswald_fred",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bono_joyce",
+      "target": "viswesvaran_chockalingam",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2011,
+      "year_max": 2011
+    },
+    {
+      "source": "bono_joyce",
+      "target": "king_eden",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2011,
+      "year_max": 2011
+    },
+    {
+      "source": "bono_joyce",
+      "target": "bourdage_joshua",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2000,
+      "year_max": 2000
+    },
+    {
+      "source": "bono_joyce",
+      "target": "dickson_marcus",
+      "weight": 1,
+      "venues": {
+        "pp": 1
+      },
+      "papers": [
+        {
+          "y": 2011,
+          "v": "pp",
+          "a": [
+            "General"
+          ],
+          "t": "List of Ad-Hoc Reviewers for Personnel Psychology, Volume 64"
+        }
+      ],
+      "year_min": 2011,
+      "year_max": 2011
+    },
+    {
+      "source": "bono_joyce",
+      "target": "chao_georgia",
+      "weight": 1,
+      "venues": {
+        "ijsa": 1
+      },
+      "papers": [
+        {
+          "y": 2002,
+          "v": "ijsa",
+          "a": [
+            "General"
+          ],
+          "t": "Deniz S. Ones and Jesus F. Salgado"
+        }
+      ],
+      "year_min": 2002,
+      "year_max": 2002
+    },
+    {
+      "source": "bono_joyce",
+      "target": "kuncel_nathan",
+      "weight": 1,
+      "venues": {
+        "ijsa": 1
+      },
+      "papers": [
+        {
+          "y": 2002,
+          "v": "ijsa",
+          "a": [
+            "General"
+          ],
+          "t": "Deniz S. Ones and Jesus F. Salgado"
+        }
+      ],
+      "year_min": 2002,
+      "year_max": 2002
+    },
+    {
+      "source": "bono_joyce",
+      "target": "rupp_deborah",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bono_joyce",
+      "target": "brummel_bradley",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28577,7 +29921,7 @@
     },
     {
       "source": "bourdage_joshua",
-      "target": "roch_sylvia",
+      "target": "carpenter_nichelle",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28586,7 +29930,25 @@
     },
     {
       "source": "bourdage_joshua",
-      "target": "carpenter_nichelle",
+      "target": "hoffman_brian",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2014,
+      "year_max": 2014
+    },
+    {
+      "source": "bourdage_joshua",
+      "target": "bowling_nathan",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2014,
+      "year_max": 2014
+    },
+    {
+      "source": "bourdage_joshua",
+      "target": "viswesvaran_chockalingam",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28613,25 +29975,7 @@
     },
     {
       "source": "bourdage_joshua",
-      "target": "bowling_nathan",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2014,
-      "year_max": 2014
-    },
-    {
-      "source": "bourdage_joshua",
-      "target": "hoffman_brian",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2014,
-      "year_max": 2014
-    },
-    {
-      "source": "bourdage_joshua",
-      "target": "viswesvaran_chockalingam",
+      "target": "roch_sylvia",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28650,26 +29994,6 @@
     {
       "source": "bowling_nathan",
       "target": "brossoit_rebecca",
-      "weight": 1,
-      "venues": {
-        "chb": 1
-      },
-      "papers": [
-        {
-          "y": 2026,
-          "v": "chb",
-          "a": [
-            "General"
-          ],
-          "t": "The work-related consequences of employees\u2019 media-based political information consumption: A nine-wave weekly study during the 2024 US Presidential Primary Season"
-        }
-      ],
-      "year_min": 2026,
-      "year_max": 2026
-    },
-    {
-      "source": "bowling_nathan",
-      "target": "keith_melissa",
       "weight": 1,
       "venues": {
         "chb": 1
@@ -28709,6 +30033,26 @@
     },
     {
       "source": "bowling_nathan",
+      "target": "keith_melissa",
+      "weight": 1,
+      "venues": {
+        "chb": 1
+      },
+      "papers": [
+        {
+          "y": 2026,
+          "v": "chb",
+          "a": [
+            "General"
+          ],
+          "t": "The work-related consequences of employees\u2019 media-based political information consumption: A nine-wave weekly study during the 2024 US Presidential Primary Season"
+        }
+      ],
+      "year_min": 2026,
+      "year_max": 2026
+    },
+    {
+      "source": "bowling_nathan",
       "target": "lenoble_chelsea",
       "weight": 1,
       "venues": {},
@@ -28718,43 +30062,7 @@
     },
     {
       "source": "bowling_nathan",
-      "target": "roch_sylvia",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2015,
-      "year_max": 2015
-    },
-    {
-      "source": "bowling_nathan",
       "target": "carpenter_nichelle",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2015,
-      "year_max": 2015
-    },
-    {
-      "source": "bowling_nathan",
-      "target": "meyer_john",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2015,
-      "year_max": 2015
-    },
-    {
-      "source": "bowling_nathan",
-      "target": "highhouse_scott",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2015,
-      "year_max": 2015
-    },
-    {
-      "source": "bowling_nathan",
-      "target": "oneill_thomas",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28781,7 +30089,43 @@
     },
     {
       "source": "bowling_nathan",
+      "target": "oneill_thomas",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2015,
+      "year_max": 2015
+    },
+    {
+      "source": "bowling_nathan",
+      "target": "meyer_john",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2015,
+      "year_max": 2015
+    },
+    {
+      "source": "bowling_nathan",
+      "target": "highhouse_scott",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2015,
+      "year_max": 2015
+    },
+    {
+      "source": "bowling_nathan",
       "target": "powell_deborah",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2015,
+      "year_max": 2015
+    },
+    {
+      "source": "bowling_nathan",
+      "target": "roch_sylvia",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28799,7 +30143,7 @@
     },
     {
       "source": "bowling_nathan",
-      "target": "rudolph_cort",
+      "target": "hebl_mikki",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28808,16 +30152,7 @@
     },
     {
       "source": "bowling_nathan",
-      "target": "king_eden",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "bowling_nathan",
-      "target": "brown_douglas",
+      "target": "probst_tahira",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28862,6 +30197,15 @@
     },
     {
       "source": "bowling_nathan",
+      "target": "rudolph_cort",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bowling_nathan",
       "target": "salas_eduardo",
       "weight": 1,
       "venues": {},
@@ -28880,7 +30224,16 @@
     },
     {
       "source": "bowling_nathan",
-      "target": "probst_tahira",
+      "target": "kanfer_ruth",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bowling_nathan",
+      "target": "brown_douglas",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28898,7 +30251,7 @@
     },
     {
       "source": "bowling_nathan",
-      "target": "hebl_mikki",
+      "target": "ford_kevin",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28907,7 +30260,7 @@
     },
     {
       "source": "bowling_nathan",
-      "target": "ford_kevin",
+      "target": "king_eden",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28990,6 +30343,15 @@
     },
     {
       "source": "britt_thomas",
+      "target": "oswald_fred",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2011,
+      "year_max": 2011
+    },
+    {
+      "source": "britt_thomas",
       "target": "drasgow_fritz",
       "weight": 1,
       "venues": {},
@@ -28999,7 +30361,7 @@
     },
     {
       "source": "britt_thomas",
-      "target": "melsonsilimon_arturia",
+      "target": "hebl_mikki",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -29008,16 +30370,7 @@
     },
     {
       "source": "britt_thomas",
-      "target": "king_eden",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "britt_thomas",
-      "target": "rudolph_cort",
+      "target": "tonidandel_scott",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -29035,7 +30388,70 @@
     },
     {
       "source": "britt_thomas",
-      "target": "highhouse_scott",
+      "target": "shoss_mindy",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "britt_thomas",
+      "target": "rogelberg_steven",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "britt_thomas",
+      "target": "motowidlo_stephan",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "britt_thomas",
+      "target": "grand_james",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "britt_thomas",
+      "target": "cartersowell_adrienne",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "britt_thomas",
+      "target": "rupp_deborah",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "britt_thomas",
+      "target": "rudolph_cort",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "britt_thomas",
+      "target": "clark_malissa",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -29062,7 +30478,7 @@
     },
     {
       "source": "britt_thomas",
-      "target": "rupp_deborah",
+      "target": "melsonsilimon_arturia",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -29071,7 +30487,7 @@
     },
     {
       "source": "britt_thomas",
-      "target": "shoss_mindy",
+      "target": "highhouse_scott",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -29080,52 +30496,7 @@
     },
     {
       "source": "britt_thomas",
-      "target": "cartersowell_adrienne",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "britt_thomas",
-      "target": "grand_james",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "britt_thomas",
-      "target": "tonidandel_scott",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "britt_thomas",
-      "target": "hebl_mikki",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "britt_thomas",
-      "target": "rogelberg_steven",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "britt_thomas",
-      "target": "clark_malissa",
+      "target": "king_eden",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -29281,26 +30652,6 @@
     },
     {
       "source": "brossoit_rebecca",
-      "target": "keith_melissa",
-      "weight": 1,
-      "venues": {
-        "chb": 1
-      },
-      "papers": [
-        {
-          "y": 2026,
-          "v": "chb",
-          "a": [
-            "General"
-          ],
-          "t": "The work-related consequences of employees\u2019 media-based political information consumption: A nine-wave weekly study during the 2024 US Presidential Primary Season"
-        }
-      ],
-      "year_min": 2026,
-      "year_max": 2026
-    },
-    {
-      "source": "brossoit_rebecca",
       "target": "hughes_ian",
       "weight": 1,
       "venues": {
@@ -29320,8 +30671,28 @@
       "year_max": 2026
     },
     {
+      "source": "brossoit_rebecca",
+      "target": "keith_melissa",
+      "weight": 1,
+      "venues": {
+        "chb": 1
+      },
+      "papers": [
+        {
+          "y": 2026,
+          "v": "chb",
+          "a": [
+            "General"
+          ],
+          "t": "The work-related consequences of employees\u2019 media-based political information consumption: A nine-wave weekly study during the 2024 US Presidential Primary Season"
+        }
+      ],
+      "year_min": 2026,
+      "year_max": 2026
+    },
+    {
       "source": "brown_douglas",
-      "target": "rudolph_cort",
+      "target": "hebl_mikki",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -29330,7 +30701,7 @@
     },
     {
       "source": "brown_douglas",
-      "target": "king_eden",
+      "target": "probst_tahira",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -29366,7 +30737,25 @@
     },
     {
       "source": "brown_douglas",
+      "target": "woehr_david",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "brown_douglas",
       "target": "rupp_deborah",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "brown_douglas",
+      "target": "rudolph_cort",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -29393,7 +30782,7 @@
     },
     {
       "source": "brown_douglas",
-      "target": "probst_tahira",
+      "target": "kanfer_ruth",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -29411,25 +30800,16 @@
     },
     {
       "source": "brown_douglas",
-      "target": "woehr_david",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "brown_douglas",
-      "target": "hebl_mikki",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "brown_douglas",
       "target": "ford_kevin",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "brown_douglas",
+      "target": "king_eden",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -29526,7 +30906,7 @@
     },
     {
       "source": "brummel_bradley",
-      "target": "shoss_mindy",
+      "target": "probst_tahira",
       "weight": 1,
       "venues": {
         "jbp": 1
@@ -29546,7 +30926,7 @@
     },
     {
       "source": "brummel_bradley",
-      "target": "probst_tahira",
+      "target": "shoss_mindy",
       "weight": 1,
       "venues": {
         "jbp": 1
@@ -29737,7 +31117,25 @@
     },
     {
       "source": "carpenter_nichelle",
-      "target": "roch_sylvia",
+      "target": "hoffman_brian",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2018,
+      "year_max": 2018
+    },
+    {
+      "source": "carpenter_nichelle",
+      "target": "viswesvaran_chockalingam",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2018,
+      "year_max": 2018
+    },
+    {
+      "source": "carpenter_nichelle",
+      "target": "oneill_thomas",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -29764,34 +31162,16 @@
     },
     {
       "source": "carpenter_nichelle",
-      "target": "oneill_thomas",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2018,
-      "year_max": 2018
-    },
-    {
-      "source": "carpenter_nichelle",
-      "target": "hoffman_brian",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2018,
-      "year_max": 2018
-    },
-    {
-      "source": "carpenter_nichelle",
-      "target": "viswesvaran_chockalingam",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2018,
-      "year_max": 2018
-    },
-    {
-      "source": "carpenter_nichelle",
       "target": "powell_deborah",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2018,
+      "year_max": 2018
+    },
+    {
+      "source": "carpenter_nichelle",
+      "target": "roch_sylvia",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -29899,15 +31279,6 @@
     },
     {
       "source": "cartersowell_adrienne",
-      "target": "he_yimin",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2020,
-      "year_max": 2020
-    },
-    {
-      "source": "cartersowell_adrienne",
       "target": "payne_stephanie",
       "weight": 1,
       "venues": {},
@@ -29917,25 +31288,16 @@
     },
     {
       "source": "cartersowell_adrienne",
-      "target": "melsonsilimon_arturia",
+      "target": "he_yimin",
       "weight": 1,
       "venues": {},
       "papers": [],
-      "year_min": 9999,
-      "year_max": 0
+      "year_min": 2020,
+      "year_max": 2020
     },
     {
       "source": "cartersowell_adrienne",
-      "target": "king_eden",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "cartersowell_adrienne",
-      "target": "rudolph_cort",
+      "target": "tonidandel_scott",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -29953,7 +31315,70 @@
     },
     {
       "source": "cartersowell_adrienne",
-      "target": "highhouse_scott",
+      "target": "shoss_mindy",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "cartersowell_adrienne",
+      "target": "rogelberg_steven",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "cartersowell_adrienne",
+      "target": "motowidlo_stephan",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "cartersowell_adrienne",
+      "target": "sinclair_robert",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "cartersowell_adrienne",
+      "target": "grand_james",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "cartersowell_adrienne",
+      "target": "rupp_deborah",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "cartersowell_adrienne",
+      "target": "rudolph_cort",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "cartersowell_adrienne",
+      "target": "clark_malissa",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -29980,7 +31405,7 @@
     },
     {
       "source": "cartersowell_adrienne",
-      "target": "rupp_deborah",
+      "target": "melsonsilimon_arturia",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -29989,7 +31414,7 @@
     },
     {
       "source": "cartersowell_adrienne",
-      "target": "sinclair_robert",
+      "target": "highhouse_scott",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -29998,43 +31423,7 @@
     },
     {
       "source": "cartersowell_adrienne",
-      "target": "shoss_mindy",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "cartersowell_adrienne",
-      "target": "grand_james",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "cartersowell_adrienne",
-      "target": "tonidandel_scott",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "cartersowell_adrienne",
-      "target": "rogelberg_steven",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "cartersowell_adrienne",
-      "target": "clark_malissa",
+      "target": "king_eden",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30052,7 +31441,7 @@
     },
     {
       "source": "chang_daisy",
-      "target": "paolettihatcher_jensine",
+      "target": "salas_eduardo",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30061,7 +31450,7 @@
     },
     {
       "source": "chang_daisy",
-      "target": "salas_eduardo",
+      "target": "paolettihatcher_jensine",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30108,15 +31497,6 @@
     },
     {
       "source": "chao_georgia",
-      "target": "lenoble_chelsea",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2012,
-      "year_max": 2012
-    },
-    {
-      "source": "chao_georgia",
       "target": "fisher_gwen",
       "weight": 1,
       "venues": {},
@@ -30132,6 +31512,24 @@
       "papers": [],
       "year_min": 2012,
       "year_max": 2012
+    },
+    {
+      "source": "chao_georgia",
+      "target": "lenoble_chelsea",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2012,
+      "year_max": 2012
+    },
+    {
+      "source": "chao_georgia",
+      "target": "dipboye_robert",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2005,
+      "year_max": 2005
     },
     {
       "source": "chao_georgia",
@@ -30193,6 +31591,33 @@
     },
     {
       "source": "chao_georgia",
+      "target": "hebl_mikki",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "chao_georgia",
+      "target": "probst_tahira",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "chao_georgia",
+      "target": "woehr_david",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "chao_georgia",
       "target": "rudolph_cort",
       "weight": 1,
       "venues": {},
@@ -30211,34 +31636,7 @@
     },
     {
       "source": "chao_georgia",
-      "target": "probst_tahira",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "chao_georgia",
       "target": "coleman_peter",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "chao_georgia",
-      "target": "woehr_david",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "chao_georgia",
-      "target": "hebl_mikki",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30335,7 +31733,7 @@
     },
     {
       "source": "cheung_hokwan",
-      "target": "day_eric",
+      "target": "woehr_david",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30344,7 +31742,7 @@
     },
     {
       "source": "cheung_hokwan",
-      "target": "woehr_david",
+      "target": "day_eric",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30412,7 +31810,16 @@
     },
     {
       "source": "clark_malissa",
-      "target": "melsonsilimon_arturia",
+      "target": "hebl_mikki",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "clark_malissa",
+      "target": "tonidandel_scott",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30430,7 +31837,7 @@
     },
     {
       "source": "clark_malissa",
-      "target": "highhouse_scott",
+      "target": "rogelberg_steven",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30439,25 +31846,7 @@
     },
     {
       "source": "clark_malissa",
-      "target": "woo_sang",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "clark_malissa",
-      "target": "zickar_michael",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "clark_malissa",
-      "target": "rupp_deborah",
+      "target": "motowidlo_stephan",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30484,7 +31873,7 @@
     },
     {
       "source": "clark_malissa",
-      "target": "tonidandel_scott",
+      "target": "rupp_deborah",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30493,7 +31882,7 @@
     },
     {
       "source": "clark_malissa",
-      "target": "hebl_mikki",
+      "target": "woo_sang",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30502,7 +31891,25 @@
     },
     {
       "source": "clark_malissa",
-      "target": "rogelberg_steven",
+      "target": "zickar_michael",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "clark_malissa",
+      "target": "melsonsilimon_arturia",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "clark_malissa",
+      "target": "highhouse_scott",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30576,7 +31983,7 @@
     },
     {
       "source": "coleman_peter",
-      "target": "rudolph_cort",
+      "target": "hebl_mikki",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30585,7 +31992,7 @@
     },
     {
       "source": "coleman_peter",
-      "target": "king_eden",
+      "target": "probst_tahira",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30612,7 +32019,25 @@
     },
     {
       "source": "coleman_peter",
+      "target": "woehr_david",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "coleman_peter",
       "target": "rupp_deborah",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "coleman_peter",
+      "target": "rudolph_cort",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30639,25 +32064,7 @@
     },
     {
       "source": "coleman_peter",
-      "target": "probst_tahira",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "coleman_peter",
-      "target": "woehr_david",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "coleman_peter",
-      "target": "hebl_mikki",
+      "target": "kanfer_ruth",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30667,6 +32074,15 @@
     {
       "source": "coleman_peter",
       "target": "ford_kevin",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "coleman_peter",
+      "target": "king_eden",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30724,7 +32140,7 @@
     },
     {
       "source": "converse_patrick",
-      "target": "rogelberg_steven",
+      "target": "mcabee_samuel",
       "weight": 1,
       "venues": {
         "iop": 1
@@ -30744,7 +32160,7 @@
     },
     {
       "source": "converse_patrick",
-      "target": "king_eden",
+      "target": "rogelberg_steven",
       "weight": 1,
       "venues": {
         "iop": 1
@@ -30784,7 +32200,7 @@
     },
     {
       "source": "converse_patrick",
-      "target": "mcabee_samuel",
+      "target": "king_eden",
       "weight": 1,
       "venues": {
         "iop": 1
@@ -30920,6 +32336,15 @@
       ],
       "year_min": 2007,
       "year_max": 2007
+    },
+    {
+      "source": "dalal_reeshad",
+      "target": "kanfer_ruth",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2008,
+      "year_max": 2008
     },
     {
       "source": "dalal_reeshad",
@@ -31076,7 +32501,7 @@
     },
     {
       "source": "day_arla",
-      "target": "melsonsilimon_arturia",
+      "target": "hebl_mikki",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -31085,7 +32510,61 @@
     },
     {
       "source": "day_arla",
-      "target": "king_eden",
+      "target": "tonidandel_scott",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "day_arla",
+      "target": "shoss_mindy",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "day_arla",
+      "target": "rogelberg_steven",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "day_arla",
+      "target": "motowidlo_stephan",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "day_arla",
+      "target": "sinclair_robert",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "day_arla",
+      "target": "grand_james",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "day_arla",
+      "target": "rupp_deborah",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -31095,15 +32574,6 @@
     {
       "source": "day_arla",
       "target": "rudolph_cort",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "day_arla",
-      "target": "highhouse_scott",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -31130,7 +32600,7 @@
     },
     {
       "source": "day_arla",
-      "target": "rupp_deborah",
+      "target": "melsonsilimon_arturia",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -31139,7 +32609,7 @@
     },
     {
       "source": "day_arla",
-      "target": "sinclair_robert",
+      "target": "highhouse_scott",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -31148,7 +32618,7 @@
     },
     {
       "source": "day_arla",
-      "target": "shoss_mindy",
+      "target": "king_eden",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -31156,40 +32626,13 @@
       "year_max": 0
     },
     {
-      "source": "day_arla",
-      "target": "grand_james",
+      "source": "day_eric",
+      "target": "randall_jason",
       "weight": 1,
       "venues": {},
       "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "day_arla",
-      "target": "tonidandel_scott",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "day_arla",
-      "target": "hebl_mikki",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "day_arla",
-      "target": "rogelberg_steven",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
+      "year_min": 2022,
+      "year_max": 2022
     },
     {
       "source": "day_eric",
@@ -31202,12 +32645,21 @@
     },
     {
       "source": "day_eric",
-      "target": "randall_jason",
+      "target": "lebreton_james",
       "weight": 1,
       "venues": {},
       "papers": [],
-      "year_min": 2022,
-      "year_max": 2022
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "day_eric",
+      "target": "kozlowski_steve",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
     },
     {
       "source": "day_eric",
@@ -31229,24 +32681,6 @@
     },
     {
       "source": "day_eric",
-      "target": "newman_daniel",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "day_eric",
-      "target": "kozlowski_steve",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "day_eric",
       "target": "salas_eduardo",
       "weight": 1,
       "venues": {},
@@ -31256,7 +32690,7 @@
     },
     {
       "source": "day_eric",
-      "target": "lebreton_james",
+      "target": "newman_daniel",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -31370,13 +32804,87 @@
       "year_max": 0
     },
     {
-      "source": "dishop_christopher",
-      "target": "paolettihatcher_jensine",
+      "source": "dik_bryan",
+      "target": "kanfer_ruth",
       "weight": 1,
       "venues": {},
       "papers": [],
-      "year_min": 2019,
-      "year_max": 2019
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "dipboye_robert",
+      "target": "shahanidenning_comila",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2012,
+      "year_max": 2012
+    },
+    {
+      "source": "dipboye_robert",
+      "target": "tonidandel_scott",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2005,
+      "year_max": 2005
+    },
+    {
+      "source": "dipboye_robert",
+      "target": "newman_daniel",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2016,
+      "year_max": 2016
+    },
+    {
+      "source": "dipboye_robert",
+      "target": "wang_wei",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2016,
+      "year_max": 2016
+    },
+    {
+      "source": "dipboye_robert",
+      "target": "reiterpalmon_roni",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 1994,
+      "year_max": 1994
+    },
+    {
+      "source": "dipboye_robert",
+      "target": "fritzsche_barbara",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2016,
+      "year_max": 2016
+    },
+    {
+      "source": "dipboye_robert",
+      "target": "rounds_james",
+      "weight": 1,
+      "venues": {
+        "jvb": 1
+      },
+      "papers": [
+        {
+          "y": null,
+          "v": "jvb",
+          "a": [
+            "General"
+          ],
+          "t": "Berger, Philip K., 181 Bhagat, Rabi S., 317 Bingham, Rosie P., 242 C"
+        }
+      ],
+      "year_min": 9999,
+      "year_max": 0
     },
     {
       "source": "dishop_christopher",
@@ -31395,6 +32903,35 @@
       "papers": [],
       "year_min": 2019,
       "year_max": 2019
+    },
+    {
+      "source": "dishop_christopher",
+      "target": "paolettihatcher_jensine",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2019,
+      "year_max": 2019
+    },
+    {
+      "source": "drasgow_fritz",
+      "target": "kanfer_ruth",
+      "weight": 1,
+      "venues": {
+        "jap": 1
+      },
+      "papers": [
+        {
+          "y": 1985,
+          "v": "jap",
+          "a": [
+            "Methods"
+          ],
+          "t": "Equivalence of psychological measurement in heterogeneous populations."
+        }
+      ],
+      "year_min": 1985,
+      "year_max": 1985
     },
     {
       "source": "drasgow_fritz",
@@ -31471,6 +33008,15 @@
       "year_max": 2011
     },
     {
+      "source": "drasgow_fritz",
+      "target": "oswald_fred",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2011,
+      "year_max": 2011
+    },
+    {
       "source": "clark_malissa",
       "target": "drasgow_fritz",
       "weight": 1,
@@ -31531,6 +33077,15 @@
     {
       "source": "durik_amanda",
       "target": "macnamara_brooke",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "durik_amanda",
+      "target": "oswald_fred",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -31695,6 +33250,33 @@
     },
     {
       "source": "fisher_gwen",
+      "target": "zaccaro_stephen",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2012,
+      "year_max": 2012
+    },
+    {
+      "source": "fisher_gwen",
+      "target": "kozlowski_steve",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2012,
+      "year_max": 2012
+    },
+    {
+      "source": "fisher_gwen",
+      "target": "grand_james",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2012,
+      "year_max": 2012
+    },
+    {
+      "source": "fisher_gwen",
       "target": "king_eden",
       "weight": 1,
       "venues": {},
@@ -31713,34 +33295,16 @@
     },
     {
       "source": "fisher_gwen",
-      "target": "zaccaro_stephen",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2012,
-      "year_max": 2012
-    },
-    {
-      "source": "fisher_gwen",
-      "target": "grand_james",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2012,
-      "year_max": 2012
-    },
-    {
-      "source": "fisher_gwen",
-      "target": "kozlowski_steve",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2012,
-      "year_max": 2012
-    },
-    {
-      "source": "fisher_gwen",
       "target": "rupp_deborah",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2012,
+      "year_max": 2012
+    },
+    {
+      "source": "fisher_gwen",
+      "target": "kanfer_ruth",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -31917,15 +33481,6 @@
     },
     {
       "source": "ford_kevin",
-      "target": "ones_deniz",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2003,
-      "year_max": 2003
-    },
-    {
-      "source": "ford_kevin",
       "target": "viswesvaran_chockalingam",
       "weight": 1,
       "venues": {},
@@ -31935,34 +33490,16 @@
     },
     {
       "source": "ford_kevin",
-      "target": "rudolph_cort",
+      "target": "ones_deniz",
       "weight": 1,
       "venues": {},
       "papers": [],
-      "year_min": 9999,
-      "year_max": 0
+      "year_min": 2003,
+      "year_max": 2003
     },
     {
       "source": "ford_kevin",
-      "target": "king_eden",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "ford_kevin",
-      "target": "rupp_deborah",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "ford_kevin",
-      "target": "shuffler_marissa",
+      "target": "hebl_mikki",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -31989,7 +33526,43 @@
     },
     {
       "source": "ford_kevin",
-      "target": "hebl_mikki",
+      "target": "rupp_deborah",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "ford_kevin",
+      "target": "rudolph_cort",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "ford_kevin",
+      "target": "shuffler_marissa",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "ford_kevin",
+      "target": "kanfer_ruth",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "ford_kevin",
+      "target": "king_eden",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -32027,7 +33600,7 @@
     },
     {
       "source": "foti_roseanne",
-      "target": "grand_james",
+      "target": "hanges_paul",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -32036,7 +33609,7 @@
     },
     {
       "source": "foti_roseanne",
-      "target": "hanges_paul",
+      "target": "grand_james",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -32394,6 +33967,15 @@
     },
     {
       "source": "grand_james",
+      "target": "zaccaro_stephen",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2012,
+      "year_max": 2012
+    },
+    {
+      "source": "grand_james",
       "target": "lenoble_chelsea",
       "weight": 1,
       "venues": {},
@@ -32403,7 +33985,7 @@
     },
     {
       "source": "grand_james",
-      "target": "zaccaro_stephen",
+      "target": "kanfer_ruth",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -32430,7 +34012,34 @@
     },
     {
       "source": "grand_james",
-      "target": "melsonsilimon_arturia",
+      "target": "hebl_mikki",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "grand_james",
+      "target": "shoss_mindy",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "grand_james",
+      "target": "motowidlo_stephan",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "grand_james",
+      "target": "sinclair_robert",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -32440,15 +34049,6 @@
     {
       "source": "grand_james",
       "target": "rudolph_cort",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "grand_james",
-      "target": "highhouse_scott",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -32475,7 +34075,7 @@
     },
     {
       "source": "grand_james",
-      "target": "sinclair_robert",
+      "target": "melsonsilimon_arturia",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -32484,16 +34084,7 @@
     },
     {
       "source": "grand_james",
-      "target": "shoss_mindy",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "grand_james",
-      "target": "hebl_mikki",
+      "target": "highhouse_scott",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -32605,7 +34196,7 @@
     },
     {
       "source": "gray_cheryl",
-      "target": "keith_melissa",
+      "target": "lee_juseob",
       "weight": 1,
       "venues": {
         "chb": 1
@@ -32625,7 +34216,7 @@
     },
     {
       "source": "gray_cheryl",
-      "target": "lee_juseob",
+      "target": "keith_melissa",
       "weight": 1,
       "venues": {
         "chb": 1
@@ -32748,6 +34339,26 @@
     },
     {
       "source": "harriswatson_alex",
+      "target": "kanfer_ruth",
+      "weight": 1,
+      "venues": {
+        "amd": 1
+      },
+      "papers": [
+        {
+          "y": 2023,
+          "v": "amd",
+          "a": [
+            "Teams"
+          ],
+          "t": "Staying Apart to Work Better Together: Team Structure in Cross-Functional Teams"
+        }
+      ],
+      "year_min": 2023,
+      "year_max": 2023
+    },
+    {
+      "source": "harriswatson_alex",
       "target": "zaccaro_stephen",
       "weight": 1,
       "venues": {
@@ -32783,6 +34394,15 @@
       "papers": [],
       "year_min": 2026,
       "year_max": 2026
+    },
+    {
+      "source": "hausdorf_peter",
+      "target": "oswald_fred",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
     },
     {
       "source": "he_yimin",
@@ -32853,6 +34473,15 @@
     },
     {
       "source": "hebl_mikki",
+      "target": "villado_anton",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2017,
+      "year_max": 2017
+    },
+    {
+      "source": "hebl_mikki",
       "target": "sackett_paul",
       "weight": 1,
       "venues": {},
@@ -32862,7 +34491,7 @@
     },
     {
       "source": "hebl_mikki",
-      "target": "ones_deniz",
+      "target": "viswesvaran_chockalingam",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -32871,7 +34500,7 @@
     },
     {
       "source": "hebl_mikki",
-      "target": "viswesvaran_chockalingam",
+      "target": "ones_deniz",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -32898,15 +34527,6 @@
     },
     {
       "source": "hebl_mikki",
-      "target": "newman_daniel",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2012,
-      "year_max": 2012
-    },
-    {
-      "source": "hebl_mikki",
       "target": "tay_louis",
       "weight": 1,
       "venues": {},
@@ -32916,7 +34536,25 @@
     },
     {
       "source": "hebl_mikki",
-      "target": "melsonsilimon_arturia",
+      "target": "newman_daniel",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2012,
+      "year_max": 2012
+    },
+    {
+      "source": "hebl_mikki",
+      "target": "shoss_mindy",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "hebl_mikki",
+      "target": "motowidlo_stephan",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -32934,7 +34572,16 @@
     },
     {
       "source": "hebl_mikki",
-      "target": "shoss_mindy",
+      "target": "melsonsilimon_arturia",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "hebl_mikki",
+      "target": "probst_tahira",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -32961,25 +34608,16 @@
     },
     {
       "source": "hebl_mikki",
-      "target": "shuffler_marissa",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "hebl_mikki",
-      "target": "probst_tahira",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "hebl_mikki",
       "target": "woehr_david",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "hebl_mikki",
+      "target": "shuffler_marissa",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -33093,7 +34731,7 @@
     },
     {
       "source": "hernandez_ivan",
-      "target": "sun_tianjun",
+      "target": "hickman_louis",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -33102,7 +34740,7 @@
     },
     {
       "source": "hernandez_ivan",
-      "target": "hickman_louis",
+      "target": "sun_tianjun",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -33220,16 +34858,7 @@
     },
     {
       "source": "highhouse_scott",
-      "target": "roch_sylvia",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2014,
-      "year_max": 2014
-    },
-    {
-      "source": "highhouse_scott",
-      "target": "meyer_john",
+      "target": "viswesvaran_chockalingam",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -33247,7 +34876,7 @@
     },
     {
       "source": "highhouse_scott",
-      "target": "viswesvaran_chockalingam",
+      "target": "meyer_john",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -33265,7 +34894,16 @@
     },
     {
       "source": "highhouse_scott",
-      "target": "melsonsilimon_arturia",
+      "target": "roch_sylvia",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2014,
+      "year_max": 2014
+    },
+    {
+      "source": "highhouse_scott",
+      "target": "tonidandel_scott",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -33274,7 +34912,43 @@
     },
     {
       "source": "highhouse_scott",
-      "target": "king_eden",
+      "target": "shoss_mindy",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "highhouse_scott",
+      "target": "rogelberg_steven",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "highhouse_scott",
+      "target": "motowidlo_stephan",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "highhouse_scott",
+      "target": "sinclair_robert",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "highhouse_scott",
+      "target": "rupp_deborah",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -33301,7 +34975,7 @@
     },
     {
       "source": "highhouse_scott",
-      "target": "rupp_deborah",
+      "target": "melsonsilimon_arturia",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -33310,34 +34984,7 @@
     },
     {
       "source": "highhouse_scott",
-      "target": "sinclair_robert",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "highhouse_scott",
-      "target": "shoss_mindy",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "highhouse_scott",
-      "target": "tonidandel_scott",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "highhouse_scott",
-      "target": "rogelberg_steven",
+      "target": "king_eden",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -33442,16 +35089,7 @@
     },
     {
       "source": "hoffman_brian",
-      "target": "roch_sylvia",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2015,
-      "year_max": 2015
-    },
-    {
-      "source": "hoffman_brian",
-      "target": "meyer_john",
+      "target": "viswesvaran_chockalingam",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -33469,7 +35107,7 @@
     },
     {
       "source": "hoffman_brian",
-      "target": "viswesvaran_chockalingam",
+      "target": "meyer_john",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -33479,6 +35117,15 @@
     {
       "source": "hoffman_brian",
       "target": "powell_deborah",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2015,
+      "year_max": 2015
+    },
+    {
+      "source": "hoffman_brian",
+      "target": "roch_sylvia",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -33562,6 +35209,96 @@
       "year_max": 2024
     },
     {
+      "source": "kanfer_ruth",
+      "target": "levy_paul",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2020,
+      "year_max": 2020
+    },
+    {
+      "source": "kanfer_ruth",
+      "target": "ones_deniz",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 1989,
+      "year_max": 1989
+    },
+    {
+      "source": "kanfer_ruth",
+      "target": "viswesvaran_chockalingam",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 1989,
+      "year_max": 1989
+    },
+    {
+      "source": "kanfer_ruth",
+      "target": "weiss_howard",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "kanfer_ruth",
+      "target": "oswald_fred",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "kanfer_ruth",
+      "target": "kelloway_kevin",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "kanfer_ruth",
+      "target": "probst_tahira",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "kanfer_ruth",
+      "target": "woehr_david",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "kanfer_ruth",
+      "target": "salas_eduardo",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "kanfer_ruth",
+      "target": "shuffler_marissa",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
       "source": "kaplan_seth",
       "target": "santuzzi_alecia",
       "weight": 1,
@@ -33590,7 +35327,7 @@
     },
     {
       "source": "kaplan_seth",
-      "target": "oneill_thomas",
+      "target": "lenoble_chelsea",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -33599,7 +35336,7 @@
     },
     {
       "source": "kaplan_seth",
-      "target": "lenoble_chelsea",
+      "target": "oneill_thomas",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -33723,6 +35460,15 @@
       "year_max": 2016
     },
     {
+      "source": "beal_daniel",
+      "target": "keith_melissa",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2021,
+      "year_max": 2021
+    },
+    {
       "source": "kelloway_kevin",
       "target": "watts_logan",
       "weight": 1,
@@ -33818,6 +35564,26 @@
       "papers": [],
       "year_min": 2023,
       "year_max": 2023
+    },
+    {
+      "source": "king_eden",
+      "target": "quinones_miguel",
+      "weight": 1,
+      "venues": {
+        "jap": 1
+      },
+      "papers": [
+        {
+          "y": 2007,
+          "v": "jap",
+          "a": [
+            "Training"
+          ],
+          "t": "Expectations of obese trainees: How stigmatized trainee characteristics influence training effectiveness."
+        }
+      ],
+      "year_min": 2007,
+      "year_max": 2007
     },
     {
       "source": "king_eden",
@@ -33932,7 +35698,7 @@
     },
     {
       "source": "king_eden",
-      "target": "stark_stephen",
+      "target": "mcabee_samuel",
       "weight": 1,
       "venues": {
         "iop": 1
@@ -33952,7 +35718,7 @@
     },
     {
       "source": "king_eden",
-      "target": "mcabee_samuel",
+      "target": "stark_stephen",
       "weight": 1,
       "venues": {
         "iop": 1
@@ -33999,7 +35765,7 @@
     },
     {
       "source": "king_eden",
-      "target": "levy_paul",
+      "target": "lebreton_james",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34008,7 +35774,7 @@
     },
     {
       "source": "king_eden",
-      "target": "lebreton_james",
+      "target": "levy_paul",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34026,7 +35792,16 @@
     },
     {
       "source": "king_eden",
-      "target": "melsonsilimon_arturia",
+      "target": "shoss_mindy",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "king_eden",
+      "target": "motowidlo_stephan",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34053,7 +35828,7 @@
     },
     {
       "source": "king_eden",
-      "target": "shoss_mindy",
+      "target": "melsonsilimon_arturia",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34063,15 +35838,6 @@
     {
       "source": "grossman_rebecca",
       "target": "king_eden",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "king_eden",
-      "target": "shuffler_marissa",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34090,6 +35856,15 @@
     {
       "source": "king_eden",
       "target": "woehr_david",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "king_eden",
+      "target": "shuffler_marissa",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34116,7 +35891,7 @@
     },
     {
       "source": "kowalski_robin",
-      "target": "reiterpalmon_roni",
+      "target": "salas_eduardo",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34125,7 +35900,7 @@
     },
     {
       "source": "kowalski_robin",
-      "target": "rudolph_cort",
+      "target": "reiterpalmon_roni",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34143,7 +35918,7 @@
     },
     {
       "source": "kowalski_robin",
-      "target": "salas_eduardo",
+      "target": "rudolph_cort",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34152,7 +35927,7 @@
     },
     {
       "source": "kozlowski_steve",
-      "target": "lenoble_chelsea",
+      "target": "rogelberg_steven",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34161,7 +35936,7 @@
     },
     {
       "source": "kozlowski_steve",
-      "target": "rogelberg_steven",
+      "target": "lenoble_chelsea",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34197,6 +35972,15 @@
     },
     {
       "source": "kozlowski_steve",
+      "target": "lebreton_james",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "kozlowski_steve",
       "target": "levy_paul",
       "weight": 1,
       "venues": {},
@@ -34215,24 +35999,6 @@
     },
     {
       "source": "kozlowski_steve",
-      "target": "lebreton_james",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "kozlowski_steve",
-      "target": "rudolph_cort",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "kozlowski_steve",
       "target": "probst_tahira",
       "weight": 1,
       "venues": {},
@@ -34243,6 +36009,15 @@
     {
       "source": "kozlowski_steve",
       "target": "woehr_david",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "kozlowski_steve",
+      "target": "rudolph_cort",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34365,6 +36140,15 @@
       "year_max": 2026
     },
     {
+      "source": "dipboye_robert",
+      "target": "kuncel_nathan",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2013,
+      "year_max": 2013
+    },
+    {
       "source": "kunstman_jonathan",
       "target": "watson_paige",
       "weight": 1,
@@ -34448,27 +36232,6 @@
       "papers": [],
       "year_min": 9999,
       "year_max": 0
-    },
-    {
-      "source": "landers_richard",
-      "target": "oswald_fred",
-      "weight": 1,
-      "venues": {
-        "jbp": 1
-      },
-      "papers": [
-        {
-          "y": 2023,
-          "v": "jbp",
-          "a": [
-            "Selection",
-            "AI / Technology"
-          ],
-          "t": "Evaluating a natural language processing approach to estimating KSA and interest job analysis ratings"
-        }
-      ],
-      "year_min": 2023,
-      "year_max": 2023
     },
     {
       "source": "landers_richard",
@@ -34559,7 +36322,7 @@
     },
     {
       "source": "lebreton_james",
-      "target": "newman_daniel",
+      "target": "salas_eduardo",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34568,7 +36331,7 @@
     },
     {
       "source": "lebreton_james",
-      "target": "salas_eduardo",
+      "target": "newman_daniel",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34604,7 +36367,7 @@
     },
     {
       "source": "lenoble_chelsea",
-      "target": "steelman_lisa",
+      "target": "wildman_jessica",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34613,7 +36376,7 @@
     },
     {
       "source": "lenoble_chelsea",
-      "target": "wildman_jessica",
+      "target": "steelman_lisa",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34640,15 +36403,6 @@
     },
     {
       "source": "lenoble_chelsea",
-      "target": "rupp_deborah",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2012,
-      "year_max": 2012
-    },
-    {
-      "source": "lenoble_chelsea",
       "target": "rogelberg_steven",
       "weight": 1,
       "venues": {},
@@ -34658,7 +36412,25 @@
     },
     {
       "source": "lenoble_chelsea",
-      "target": "paolettihatcher_jensine",
+      "target": "rupp_deborah",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2012,
+      "year_max": 2012
+    },
+    {
+      "source": "kanfer_ruth",
+      "target": "lenoble_chelsea",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2012,
+      "year_max": 2012
+    },
+    {
+      "source": "lenoble_chelsea",
+      "target": "salas_eduardo",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34667,7 +36439,7 @@
     },
     {
       "source": "lenoble_chelsea",
-      "target": "salas_eduardo",
+      "target": "paolettihatcher_jensine",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34764,7 +36536,7 @@
     },
     {
       "source": "levy_paul",
-      "target": "newman_daniel",
+      "target": "salas_eduardo",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34773,7 +36545,7 @@
     },
     {
       "source": "levy_paul",
-      "target": "salas_eduardo",
+      "target": "newman_daniel",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34894,7 +36666,7 @@
     },
     {
       "source": "martinez_larry",
-      "target": "ones_deniz",
+      "target": "viswesvaran_chockalingam",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34903,7 +36675,7 @@
     },
     {
       "source": "martinez_larry",
-      "target": "viswesvaran_chockalingam",
+      "target": "ones_deniz",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -35127,6 +36899,15 @@
     },
     {
       "source": "meade_adam",
+      "target": "oswald_fred",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2024,
+      "year_max": 2024
+    },
+    {
+      "source": "meade_adam",
       "target": "shahanidenning_comila",
       "weight": 1,
       "venues": {},
@@ -35154,34 +36935,7 @@
     },
     {
       "source": "melsonsilimon_arturia",
-      "target": "rudolph_cort",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "melsonsilimon_arturia",
-      "target": "woo_sang",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "melsonsilimon_arturia",
-      "target": "rupp_deborah",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "melsonsilimon_arturia",
-      "target": "sinclair_robert",
+      "target": "tonidandel_scott",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -35199,7 +36953,7 @@
     },
     {
       "source": "melsonsilimon_arturia",
-      "target": "tonidandel_scott",
+      "target": "rogelberg_steven",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -35208,7 +36962,43 @@
     },
     {
       "source": "melsonsilimon_arturia",
-      "target": "rogelberg_steven",
+      "target": "motowidlo_stephan",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "melsonsilimon_arturia",
+      "target": "sinclair_robert",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "melsonsilimon_arturia",
+      "target": "rupp_deborah",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "melsonsilimon_arturia",
+      "target": "rudolph_cort",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "melsonsilimon_arturia",
+      "target": "woo_sang",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -35237,7 +37027,7 @@
     },
     {
       "source": "meyer_john",
-      "target": "ones_deniz",
+      "target": "salas_eduardo",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -35246,7 +37036,16 @@
     },
     {
       "source": "meyer_john",
-      "target": "salas_eduardo",
+      "target": "quinones_miguel",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 1997,
+      "year_max": 1997
+    },
+    {
+      "source": "meyer_john",
+      "target": "ones_deniz",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -35342,6 +37141,26 @@
     },
     {
       "source": "morris_scott",
+      "target": "oswald_fred",
+      "weight": 1,
+      "venues": {
+        "iop": 1
+      },
+      "papers": [
+        {
+          "y": 2020,
+          "v": "iop",
+          "a": [
+            "Methods"
+          ],
+          "t": "Methodological checklists for improving research quality and reporting consistency"
+        }
+      ],
+      "year_min": 2020,
+      "year_max": 2020
+    },
+    {
+      "source": "morris_scott",
       "target": "saxena_mahima",
       "weight": 1,
       "venues": {
@@ -35369,6 +37188,120 @@
       "papers": [],
       "year_min": 2021,
       "year_max": 2021
+    },
+    {
+      "source": "motowidlo_stephan",
+      "target": "stark_stephen",
+      "weight": 1,
+      "venues": {
+        "jap": 1
+      },
+      "papers": [
+        {
+          "y": 2001,
+          "v": "jap",
+          "a": [
+            "Methods",
+            "Performance",
+            "AI / Technology"
+          ],
+          "t": "An examination of the comparative reliability, validity, and accuracy of performance ratings made using computerized adaptive rating scales."
+        }
+      ],
+      "year_min": 2001,
+      "year_max": 2001
+    },
+    {
+      "source": "harvey_richard",
+      "target": "motowidlo_stephan",
+      "weight": 1,
+      "venues": {
+        "iop": 1
+      },
+      "papers": [
+        {
+          "y": 2016,
+          "v": "iop",
+          "a": [
+            "General"
+          ],
+          "t": "Scoring SJTs for traits and situational effectiveness"
+        }
+      ],
+      "year_min": 2016,
+      "year_max": 2016
+    },
+    {
+      "source": "motowidlo_stephan",
+      "target": "tonidandel_scott",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "motowidlo_stephan",
+      "target": "shoss_mindy",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "motowidlo_stephan",
+      "target": "rogelberg_steven",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "motowidlo_stephan",
+      "target": "sinclair_robert",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "motowidlo_stephan",
+      "target": "rupp_deborah",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "motowidlo_stephan",
+      "target": "rudolph_cort",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "motowidlo_stephan",
+      "target": "woo_sang",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "motowidlo_stephan",
+      "target": "zickar_michael",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
     },
     {
       "source": "highhouse_scott",
@@ -35517,7 +37450,7 @@
     },
     {
       "source": "olenick_jeffrey",
-      "target": "paolettihatcher_jensine",
+      "target": "salas_eduardo",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -35526,7 +37459,7 @@
     },
     {
       "source": "olenick_jeffrey",
-      "target": "salas_eduardo",
+      "target": "paolettihatcher_jensine",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -35600,15 +37533,6 @@
     },
     {
       "source": "oneill_thomas",
-      "target": "roch_sylvia",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2015,
-      "year_max": 2015
-    },
-    {
-      "source": "oneill_thomas",
       "target": "viswesvaran_chockalingam",
       "weight": 1,
       "venues": {},
@@ -35626,6 +37550,15 @@
       "year_max": 2015
     },
     {
+      "source": "oneill_thomas",
+      "target": "roch_sylvia",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2015,
+      "year_max": 2015
+    },
+    {
       "source": "burns_gary",
       "target": "oneill_thomas",
       "weight": 1,
@@ -35636,7 +37569,7 @@
     },
     {
       "source": "ones_deniz",
-      "target": "zickar_michael",
+      "target": "powell_deborah",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -35645,7 +37578,7 @@
     },
     {
       "source": "ones_deniz",
-      "target": "powell_deborah",
+      "target": "zickar_michael",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -35662,8 +37595,26 @@
       "year_max": 2007
     },
     {
+      "source": "ones_deniz",
+      "target": "quinones_miguel",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2007,
+      "year_max": 2007
+    },
+    {
       "source": "chang_daisy",
       "target": "ones_deniz",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2018,
+      "year_max": 2018
+    },
+    {
+      "source": "ones_deniz",
+      "target": "villado_anton",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -35689,8 +37640,212 @@
       "year_max": 2003
     },
     {
+      "source": "oswald_fred",
+      "target": "randall_jason",
+      "weight": 1,
+      "venues": {
+        "pbul": 1
+      },
+      "papers": [
+        {
+          "y": 2014,
+          "v": "pbul",
+          "a": [
+            "Methods"
+          ],
+          "t": "Mind-wandering, cognition, and performance: a theory-driven meta-analysis of attention regulation."
+        }
+      ],
+      "year_min": 2014,
+      "year_max": 2014
+    },
+    {
+      "source": "oswald_fred",
+      "target": "wessel_jennifer",
+      "weight": 1,
+      "venues": {
+        "jvb": 1
+      },
+      "papers": [
+        {
+          "y": 2008,
+          "v": "jvb",
+          "a": [
+            "General"
+          ],
+          "t": "The relationship between objective and perceived fit with academic major, adaptability, and major-related outcomes"
+        }
+      ],
+      "year_min": 2008,
+      "year_max": 2008
+    },
+    {
+      "source": "ford_kevin",
+      "target": "oswald_fred",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2003,
+      "year_max": 2003
+    },
+    {
+      "source": "oswald_fred",
+      "target": "woo_sang",
+      "weight": 1,
+      "venues": {
+        "pp": 1
+      },
+      "papers": [
+        {
+          "y": 2024,
+          "v": "pp",
+          "a": [
+            "AI / Technology"
+          ],
+          "t": "Artificial intelligence, machine learning, and big data: Improvements to the science of people at work and applications to practice"
+        }
+      ],
+      "year_min": 2024,
+      "year_max": 2024
+    },
+    {
+      "source": "oswald_fred",
+      "target": "tay_louis",
+      "weight": 1,
+      "venues": {
+        "pp": 1
+      },
+      "papers": [
+        {
+          "y": 2024,
+          "v": "pp",
+          "a": [
+            "AI / Technology"
+          ],
+          "t": "Artificial intelligence, machine learning, and big data: Improvements to the science of people at work and applications to practice"
+        }
+      ],
+      "year_min": 2024,
+      "year_max": 2024
+    },
+    {
+      "source": "oswald_fred",
+      "target": "silver_elisabeth",
+      "weight": 1,
+      "venues": {
+        "jap": 1
+      },
+      "papers": [
+        {
+          "y": 2025,
+          "v": "jap",
+          "a": [
+            "Methods",
+            "Individual Differences / Personality"
+          ],
+          "t": "Conscientiousness assessments for people with attention-deficit/hyperactivity disorder: Measurement properties and potential issues."
+        }
+      ],
+      "year_min": 2025,
+      "year_max": 2025
+    },
+    {
+      "source": "oswald_fred",
+      "target": "yang_liuqin",
+      "weight": 1,
+      "venues": {
+        "iop": 1
+      },
+      "papers": [
+        {
+          "y": 2014,
+          "v": "iop",
+          "a": [
+            "General"
+          ],
+          "t": "Including Science Advocacy in Industrial\u2013Organizational Curriculum"
+        }
+      ],
+      "year_min": 2014,
+      "year_max": 2014
+    },
+    {
+      "source": "oswald_fred",
+      "target": "stark_stephen",
+      "weight": 1,
+      "venues": {
+        "iop": 1
+      },
+      "papers": [
+        {
+          "y": 2014,
+          "v": "iop",
+          "a": [
+            "General"
+          ],
+          "t": "Including Science Advocacy in Industrial\u2013Organizational Curriculum"
+        }
+      ],
+      "year_min": 2014,
+      "year_max": 2014
+    },
+    {
+      "source": "oswald_fred",
+      "target": "probst_tahira",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2011,
+      "year_max": 2011
+    },
+    {
+      "source": "oswald_fred",
+      "target": "zaccaro_stephen",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2011,
+      "year_max": 2011
+    },
+    {
+      "source": "oswald_fred",
+      "target": "salas_eduardo",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2011,
+      "year_max": 2011
+    },
+    {
+      "source": "oswald_fred",
+      "target": "weiss_howard",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "beal_daniel",
+      "target": "oswald_fred",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "oswald_fred",
+      "target": "zhang_don",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
       "source": "paolettihatcher_jensine",
-      "target": "traylor_allison",
+      "target": "shuffler_marissa",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -35699,7 +37854,7 @@
     },
     {
       "source": "paolettihatcher_jensine",
-      "target": "shuffler_marissa",
+      "target": "traylor_allison",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -35841,6 +37996,15 @@
       "year_max": 2023
     },
     {
+      "source": "phetmisy_cassandra",
+      "target": "villado_anton",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
       "source": "pindek_shani",
       "target": "zhu_ze",
       "weight": 1,
@@ -35862,7 +38026,7 @@
     },
     {
       "source": "powell_deborah",
-      "target": "reiterpalmon_roni",
+      "target": "tonidandel_scott",
       "weight": 1,
       "venues": {
         "jom": 1
@@ -35882,7 +38046,7 @@
     },
     {
       "source": "powell_deborah",
-      "target": "tonidandel_scott",
+      "target": "reiterpalmon_roni",
       "weight": 1,
       "venues": {
         "jom": 1
@@ -35931,7 +38095,7 @@
     },
     {
       "source": "powell_deborah",
-      "target": "roch_sylvia",
+      "target": "viswesvaran_chockalingam",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -35940,7 +38104,7 @@
     },
     {
       "source": "powell_deborah",
-      "target": "viswesvaran_chockalingam",
+      "target": "roch_sylvia",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -35987,7 +38151,7 @@
     },
     {
       "source": "probst_tahira",
-      "target": "rudolph_cort",
+      "target": "woehr_david",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -36005,7 +38169,7 @@
     },
     {
       "source": "probst_tahira",
-      "target": "shuffler_marissa",
+      "target": "rudolph_cort",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -36014,7 +38178,7 @@
     },
     {
       "source": "probst_tahira",
-      "target": "woehr_david",
+      "target": "shuffler_marissa",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -36069,24 +38233,22 @@
       "year_max": 0
     },
     {
-      "source": "oswald_fred",
-      "target": "randall_jason",
+      "source": "quinones_miguel",
+      "target": "salas_eduardo",
       "weight": 1,
-      "venues": {
-        "pbul": 1
-      },
-      "papers": [
-        {
-          "y": 2014,
-          "v": "pbul",
-          "a": [
-            "Methods"
-          ],
-          "t": "Mind-wandering, cognition, and performance: a theory-driven meta-analysis of attention regulation."
-        }
-      ],
-      "year_min": 2014,
-      "year_max": 2014
+      "venues": {},
+      "papers": [],
+      "year_min": 2005,
+      "year_max": 2005
+    },
+    {
+      "source": "quinones_miguel",
+      "target": "viswesvaran_chockalingam",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2005,
+      "year_max": 2005
     },
     {
       "source": "obrien_kimberly",
@@ -36207,7 +38369,7 @@
     },
     {
       "source": "reiterpalmon_roni",
-      "target": "rudolph_cort",
+      "target": "salas_eduardo",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -36225,7 +38387,7 @@
     },
     {
       "source": "reiterpalmon_roni",
-      "target": "salas_eduardo",
+      "target": "rudolph_cort",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -36316,6 +38478,15 @@
       "year_max": 2012
     },
     {
+      "source": "kanfer_ruth",
+      "target": "rogelberg_steven",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2012,
+      "year_max": 2012
+    },
+    {
       "source": "rogelberg_steven",
       "target": "yang_liuqin",
       "weight": 1,
@@ -36366,6 +38537,24 @@
     },
     {
       "source": "rogelberg_steven",
+      "target": "shoss_mindy",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "rogelberg_steven",
+      "target": "sinclair_robert",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "rogelberg_steven",
       "target": "rudolph_cort",
       "weight": 1,
       "venues": {},
@@ -36385,24 +38574,6 @@
     {
       "source": "rogelberg_steven",
       "target": "zickar_michael",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "rogelberg_steven",
-      "target": "sinclair_robert",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "rogelberg_steven",
-      "target": "shoss_mindy",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -36570,6 +38741,15 @@
     },
     {
       "source": "rudolph_cort",
+      "target": "villado_anton",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2007,
+      "year_max": 2007
+    },
+    {
+      "source": "rudolph_cort",
       "target": "viswesvaran_chockalingam",
       "weight": 1,
       "venues": {},
@@ -36597,6 +38777,15 @@
     },
     {
       "source": "rudolph_cort",
+      "target": "woehr_david",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "rudolph_cort",
       "target": "shuffler_marissa",
       "weight": 1,
       "venues": {},
@@ -36606,7 +38795,16 @@
     },
     {
       "source": "rudolph_cort",
-      "target": "woehr_david",
+      "target": "tonidandel_scott",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "rudolph_cort",
+      "target": "sinclair_robert",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -36632,24 +38830,6 @@
       "year_max": 0
     },
     {
-      "source": "rudolph_cort",
-      "target": "sinclair_robert",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "rudolph_cort",
-      "target": "tonidandel_scott",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
       "source": "rupp_deborah",
       "target": "tay_louis",
       "weight": 1,
@@ -36660,7 +38840,7 @@
     },
     {
       "source": "rupp_deborah",
-      "target": "zickar_michael",
+      "target": "shoss_mindy",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -36678,7 +38858,7 @@
     },
     {
       "source": "rupp_deborah",
-      "target": "shoss_mindy",
+      "target": "zickar_michael",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -36696,7 +38876,7 @@
     },
     {
       "source": "rupp_deborah",
-      "target": "shuffler_marissa",
+      "target": "woehr_david",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -36705,7 +38885,7 @@
     },
     {
       "source": "rupp_deborah",
-      "target": "woehr_david",
+      "target": "shuffler_marissa",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -36749,6 +38929,15 @@
       "papers": [],
       "year_min": 2002,
       "year_max": 2002
+    },
+    {
+      "source": "bono_joyce",
+      "target": "sackett_paul",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2001,
+      "year_max": 2001
     },
     {
       "source": "saef_rachel",
@@ -36891,6 +39080,15 @@
     },
     {
       "source": "shoss_mindy",
+      "target": "tonidandel_scott",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "shoss_mindy",
       "target": "woo_sang",
       "weight": 1,
       "venues": {},
@@ -36901,15 +39099,6 @@
     {
       "source": "shoss_mindy",
       "target": "zickar_michael",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "shoss_mindy",
-      "target": "tonidandel_scott",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -36926,29 +39115,17 @@
       "year_max": 0
     },
     {
-      "source": "oswald_fred",
-      "target": "silver_elisabeth",
-      "weight": 1,
-      "venues": {
-        "jap": 1
-      },
-      "papers": [
-        {
-          "y": 2025,
-          "v": "jap",
-          "a": [
-            "Methods",
-            "Individual Differences / Personality"
-          ],
-          "t": "Conscientiousness assessments for people with attention-deficit/hyperactivity disorder: Measurement properties and potential issues."
-        }
-      ],
-      "year_min": 2025,
-      "year_max": 2025
-    },
-    {
       "source": "brown_douglas",
       "target": "sinclair_robert",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "sinclair_robert",
+      "target": "tonidandel_scott",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -36967,15 +39144,6 @@
     {
       "source": "sinclair_robert",
       "target": "zickar_michael",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "sinclair_robert",
-      "target": "tonidandel_scott",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -37041,26 +39209,6 @@
     {
       "source": "stark_stephen",
       "target": "yang_liuqin",
-      "weight": 1,
-      "venues": {
-        "iop": 1
-      },
-      "papers": [
-        {
-          "y": 2014,
-          "v": "iop",
-          "a": [
-            "General"
-          ],
-          "t": "Including Science Advocacy in Industrial\u2013Organizational Curriculum"
-        }
-      ],
-      "year_min": 2014,
-      "year_max": 2014
-    },
-    {
-      "source": "oswald_fred",
-      "target": "stark_stephen",
       "weight": 1,
       "venues": {
         "iop": 1
@@ -37175,26 +39323,6 @@
       ],
       "year_min": 2023,
       "year_max": 2023
-    },
-    {
-      "source": "oswald_fred",
-      "target": "tay_louis",
-      "weight": 1,
-      "venues": {
-        "pp": 1
-      },
-      "papers": [
-        {
-          "y": 2024,
-          "v": "pp",
-          "a": [
-            "AI / Technology"
-          ],
-          "t": "Artificial Intelligence, Machine Learning, and Big Data: Improvements to the Science of People at Work and Applications to Practice"
-        }
-      ],
-      "year_min": 2024,
-      "year_max": 2024
     },
     {
       "source": "tay_louis",
@@ -37353,6 +39481,24 @@
       "year_max": 2014
     },
     {
+      "source": "obrien_kimberly",
+      "target": "villado_anton",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2017,
+      "year_max": 2017
+    },
+    {
+      "source": "villado_anton",
+      "target": "viswesvaran_chockalingam",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2018,
+      "year_max": 2018
+    },
+    {
       "source": "chang_daisy",
       "target": "viswesvaran_chockalingam",
       "weight": 1,
@@ -37458,15 +39604,6 @@
       "year_max": 1987
     },
     {
-      "source": "oswald_fred",
-      "target": "weiss_howard",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
       "source": "cohencharash_yochi",
       "target": "weiss_howard",
       "weight": 1,
@@ -37483,26 +39620,6 @@
       "papers": [],
       "year_min": 9999,
       "year_max": 0
-    },
-    {
-      "source": "oswald_fred",
-      "target": "wessel_jennifer",
-      "weight": 1,
-      "venues": {
-        "jvb": 1
-      },
-      "papers": [
-        {
-          "y": 2008,
-          "v": "jvb",
-          "a": [
-            "General"
-          ],
-          "t": "The relationship between objective and perceived fit with academic major, adaptability, and major-related outcomes"
-        }
-      ],
-      "year_min": 2008,
-      "year_max": 2008
     },
     {
       "source": "wiese_christopher",
@@ -37592,26 +39709,6 @@
       "year_max": 0
     },
     {
-      "source": "oswald_fred",
-      "target": "woo_sang",
-      "weight": 1,
-      "venues": {
-        "pp": 1
-      },
-      "papers": [
-        {
-          "y": 2024,
-          "v": "pp",
-          "a": [
-            "AI / Technology"
-          ],
-          "t": "Artificial intelligence, machine learning, and big data: Improvements to the science of people at work and applications to practice"
-        }
-      ],
-      "year_min": 2024,
-      "year_max": 2024
-    },
-    {
       "source": "woo_sang",
       "target": "zickar_michael",
       "weight": 1,
@@ -37619,26 +39716,6 @@
       "papers": [],
       "year_min": 9999,
       "year_max": 0
-    },
-    {
-      "source": "oswald_fred",
-      "target": "yang_liuqin",
-      "weight": 1,
-      "venues": {
-        "iop": 1
-      },
-      "papers": [
-        {
-          "y": 2014,
-          "v": "iop",
-          "a": [
-            "General"
-          ],
-          "t": "Including Science Advocacy in Industrial\u2013Organizational Curriculum"
-        }
-      ],
-      "year_min": 2014,
-      "year_max": 2014
     },
     {
       "source": "allen_shalene",
@@ -37684,6 +39761,15 @@
       "papers": [],
       "year_min": 2005,
       "year_max": 2005
+    },
+    {
+      "source": "bono_joyce",
+      "target": "zickar_michael",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2001,
+      "year_max": 2001
     }
   ]
 }

@@ -92,11 +92,12 @@ def build_affiliations(
         iid = appt["institution_id"]
         slots[fid][iid] = {
             "institution_id": iid,
-            "name": inst_names.get(iid, iid),
-            "country": inst_countries.get(iid, ""),
+            "name": inst_names.get(iid) or appt.get("institution_name") or iid,
+            "country": inst_countries.get(iid, "") or ("US" if iid == "uci" else ""),
             "start_year": appt.get("start_year"),
             "end_year": appt.get("end_year"),
-            "current": fid in current_active and current_inst.get(fid) == iid,
+            "current": appt.get("end_year") is None
+            or (fid in current_active and current_inst.get(fid) == iid),
         }
         if appt.get("name"):
             names[fid] = appt["name"]
@@ -286,8 +287,10 @@ def main() -> None:
                 "kind": "roster",
                 "name": row["name"],
                 "institution_id": iid,
-                "institution": inst_names.get(iid, iid),
-                "country": inst_countries.get(iid, ""),
+                "institution": (primary or {}).get("name")
+                or inst_names.get(iid, iid),
+                "country": (primary or {}).get("country")
+                or inst_countries.get(iid, ""),
                 "institutions": affs,
                 "degree": int(degree[fid]),
                 "strength": int(strength[fid]),

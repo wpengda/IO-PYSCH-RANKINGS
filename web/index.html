@@ -47,7 +47,17 @@
       <label class="tb-field year-field" data-tour="years">
         <span>Years</span>
         <div class="year-range" id="yearRange">
-          <output class="year-box" id="yearFromOut">2017</output>
+          <input
+            type="number"
+            class="year-box"
+            id="yearFromOut"
+            value="2017"
+            min="1973"
+            max="2026"
+            step="1"
+            inputmode="numeric"
+            aria-label="From year"
+          />
           <div class="year-slider">
             <div class="year-track">
               <div class="year-fill" id="yearFill"></div>
@@ -55,7 +65,17 @@
             <input type="range" id="yearFrom" min="1973" max="2026" value="2017" step="1" aria-label="From year" />
             <input type="range" id="yearTo" min="1973" max="2026" value="2026" step="1" aria-label="To year" />
           </div>
-          <output class="year-box" id="yearToOut">2026</output>
+          <input
+            type="number"
+            class="year-box"
+            id="yearToOut"
+            value="2026"
+            min="1973"
+            max="2026"
+            step="1"
+            inputmode="numeric"
+            aria-label="To year"
+          />
         </div>
       </label>
       </div>
@@ -198,7 +218,17 @@
       <label class="tb-field year-field" data-tour="years">
         <span>Years</span>
         <div class="year-range" id="netYearRange">
-          <output class="year-box" id="netYearFromOut">2017</output>
+          <input
+            type="number"
+            class="year-box"
+            id="netYearFromOut"
+            value="2017"
+            min="1973"
+            max="2026"
+            step="1"
+            inputmode="numeric"
+            aria-label="From year"
+          />
           <div class="year-slider">
             <div class="year-track">
               <div class="year-fill" id="netYearFill"></div>
@@ -206,7 +236,17 @@
             <input type="range" id="netYearFrom" min="1973" max="2026" value="2017" step="1" aria-label="From year" />
             <input type="range" id="netYearTo" min="1973" max="2026" value="2026" step="1" aria-label="To year" />
           </div>
-          <output class="year-box" id="netYearToOut">2026</output>
+          <input
+            type="number"
+            class="year-box"
+            id="netYearToOut"
+            value="2026"
+            min="1973"
+            max="2026"
+            step="1"
+            inputmode="numeric"
+            aria-label="To year"
+          />
         </div>
       </label>
       </div>

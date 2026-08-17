@@ -346,7 +346,7 @@
     return Math.min(max, Math.max(min, n));
   }
 
-  function syncYearUI() {
+  function syncYearUI(forceBoxes) {
     const min = state.yearMin;
     const max = state.yearMax;
     const span = Math.max(1, max - min);
@@ -354,8 +354,12 @@
     const toPct = ((state.yearTo - min) / span) * 100;
     els.yearFrom.value = String(state.yearFrom);
     els.yearTo.value = String(state.yearTo);
-    els.yearFromOut.textContent = String(state.yearFrom);
-    els.yearToOut.textContent = String(state.yearTo);
+    if (forceBoxes || document.activeElement !== els.yearFromOut) {
+      els.yearFromOut.value = String(state.yearFrom);
+    }
+    if (forceBoxes || document.activeElement !== els.yearToOut) {
+      els.yearToOut.value = String(state.yearTo);
+    }
     els.yearFill.style.left = `${fromPct}%`;
     els.yearFill.style.width = `${Math.max(0, toPct - fromPct)}%`;
     if (state.yearFrom >= state.yearTo - 1) {
@@ -368,9 +372,12 @@
   }
 
   function setupYearSliderBounds() {
-    for (const el of [els.yearFrom, els.yearTo]) {
-      el.setAttribute("min", String(state.yearMin));
-      el.setAttribute("max", String(state.yearMax));
+    const min = String(state.yearMin);
+    const max = String(state.yearMax);
+    for (const el of [els.yearFrom, els.yearTo, els.yearFromOut, els.yearToOut]) {
+      if (!el) continue;
+      el.setAttribute("min", min);
+      el.setAttribute("max", max);
     }
   }
 
@@ -383,6 +390,48 @@
     state.yearTo = clampYear(to, state.yearMin, state.yearMax);
     syncYearUI();
     applyFilters();
+  }
+
+  function commitYearBox(which) {
+    const el = which === "from" ? els.yearFromOut : els.yearToOut;
+    const raw = Number(String(el.value).trim());
+    if (!Number.isFinite(raw) || raw < 1000) {
+      syncYearUI(true);
+      return;
+    }
+    let from = which === "from" ? raw : state.yearFrom;
+    let to = which === "to" ? raw : state.yearTo;
+    from = clampYear(from, state.yearMin, state.yearMax);
+    to = clampYear(to, state.yearMin, state.yearMax);
+    if (which === "from" && from > to) from = to;
+    if (which === "to" && to < from) to = from;
+    if (from === state.yearFrom && to === state.yearTo) {
+      syncYearUI(true);
+      return;
+    }
+    state.yearFrom = from;
+    state.yearTo = to;
+    syncYearUI(true);
+    applyFilters();
+  }
+
+  function bindYearBox(el, which) {
+    if (!el) return;
+    el.addEventListener("change", () => commitYearBox(which));
+    el.addEventListener("blur", () => commitYearBox(which));
+    el.addEventListener("keydown", (ev) => {
+      if (ev.key !== "Enter") return;
+      ev.preventDefault();
+      commitYearBox(which);
+      el.blur();
+    });
+    el.addEventListener(
+      "wheel",
+      (ev) => {
+        if (document.activeElement === el) ev.preventDefault();
+      },
+      { passive: false }
+    );
   }
 
   function refreshEdgeWeights() {
@@ -1297,6 +1346,8 @@
   els.countries.addEventListener("change", applyFilters);
   els.yearFrom.addEventListener("input", () => onYearInput("from"));
   els.yearTo.addEventListener("input", () => onYearInput("to"));
+  bindYearBox(els.yearFromOut, "from");
+  bindYearBox(els.yearToOut, "to");
   els.minWeight.addEventListener("input", () => {
     state.minWeight = Math.max(1, Number(els.minWeight.value) || 1);
     applyFilters();

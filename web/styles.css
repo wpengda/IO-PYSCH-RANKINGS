@@ -252,7 +252,7 @@ body {
 }
 
 .tb-field select,
-.tb-field input:not([type="range"]) {
+.tb-field input:not([type="range"]):not(.year-box) {
   font: inherit;
   font-size: 0.88rem;
   font-weight: 600;
@@ -268,7 +268,7 @@ body {
   line-height: 1.2;
 }
 
-.tb-field input[type="number"] {
+.tb-field input[type="number"]:not(.year-box) {
   width: 3.6rem;
   min-width: 0;
 }
@@ -317,17 +317,38 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  width: 2.9rem;
   min-width: 2.9rem;
   height: 1.35rem;
-  padding: 0 0.3rem;
+  margin: 0;
+  padding: 0;
   border: 1px solid #9bb8d0;
   border-radius: 3px;
   background: #f3f8fc;
   color: #1a4f75;
+  font-family: inherit;
   font-size: 0.84rem;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
-  line-height: 1;
+  letter-spacing: 0;
+  line-height: 1.35rem;
+  text-align: center;
+  text-transform: none;
+  cursor: text;
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.year-box::-webkit-outer-spin-button,
+.year-box::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.year-box:focus {
+  outline: none;
+  border-color: #6a93b3;
 }
 
 .year-slider {
@@ -1319,9 +1340,25 @@ th.col-fac {
   text-decoration: none;
 }
 
-.faculty-name.no-scholar:hover {
+.faculty-name-line {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.no-scholar-mark {
+  display: inline-block;
+  padding: 0.04rem 0.4rem;
+  border-radius: 999px;
+  background: #eceff1;
   color: #6b7078;
-  text-decoration: underline;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  vertical-align: middle;
 }
 
 .faculty-rank {

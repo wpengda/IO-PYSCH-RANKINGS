@@ -20,7 +20,6 @@ from config import (
     faculty_for_publication_fetch,
     has_google_scholar_id,
     load_faculty,
-    load_faculty_areas,
     load_venues,
     venue_name_lookup,
 )
@@ -34,20 +33,11 @@ WINDOWS = {
 }
 
 
-def faculty_area_labels(
-    papers: list[dict],
-    *,
-    curated: list[str] | None = None,
-    max_labels: int = 7,
-    min_share: float = 0.0,
-    min_credit: float = 0.0,
-) -> list[str]:
-    """
-    Faculty display labels ordered by paper count per area (high → low).
+def faculty_area_labels(papers: list[dict], *, max_labels: int = 7) -> list[str]:
+    """Top area pills from whitelist papers (count, then 1/N, then name).
 
-    A paper counts once toward each of its areas. Curated Scholar/homepage
-    areas with no pubs in this view still appear, but last (count 0).
-    Ties break by 1/N credit, then name.
+    A paper counts once toward each of its non-General areas. Labels do not
+    use Scholar/homepage interest phrases.
     """
     counts: dict[str, int] = defaultdict(int)
     weights: dict[str, float] = defaultdict(float)
@@ -61,12 +51,6 @@ def faculty_area_labels(
             counts[a] += 1
             weights[a] += share
 
-    if curated:
-        for a in curated:
-            if a and a != "General":
-                counts.setdefault(a, 0)
-                weights.setdefault(a, 0.0)
-
     if not counts:
         return []
 
@@ -75,6 +59,16 @@ def faculty_area_labels(
         key=lambda kv: (-kv[1], -weights.get(kv[0], 0.0), kv[0]),
     )
     return [area for area, _n in ranked[:max_labels]]
+
+
+def faculty_area_label_map(pubs: list[dict], *, max_labels: int = 7) -> dict[str, list[str]]:
+    """faculty_id -> top labels from that person's full whitelist paper list."""
+    by_fid: dict[str, list[dict]] = defaultdict(list)
+    for p in pubs:
+        fid = str(p.get("faculty_id") or "")
+        if fid:
+            by_fid[fid].append(p)
+    return {fid: faculty_area_labels(papers, max_labels=max_labels) for fid, papers in by_fid.items()}
 
 
 def ego_author_pos(authors: list | None, faculty_name: str) -> int | None:
@@ -124,7 +118,7 @@ def score_rows(
     window: int | None,
     include_cross_boundary: bool,
     current_year: int,
-    curated_areas: dict[str, list[str]] | None = None,
+    area_labels: dict[str, list[str]] | None = None,
     active_ids: set[str] | None = None,
 ) -> dict:
     fac_metrics: dict[str, dict[str, float]] = defaultdict(
@@ -226,7 +220,6 @@ def score_rows(
             fac_papers[fid],
             key=lambda x: (-(x["year"] or 0), -x["adj_credit"]),
         )
-        curated_map = curated_areas or {}
         has_scholar_data = has_google_scholar_id(row.get("google_scholar_id")) and (
             CACHE / "scholar" / f"{fid}.json"
         ).exists()
@@ -247,9 +240,7 @@ def score_rows(
                 "weighted_if": round(m["weighted_if"], 4),
                 "first_second_last": int(m["first_second_last"]),
                 "last_author": int(m["last_author"]),
-                "areas": faculty_area_labels(
-                    papers, curated=curated_map.get(str(fid))
-                ),
+                "areas": (area_labels or {}).get(str(fid), []),
                 "papers": papers,
             }
         )
@@ -315,9 +306,9 @@ def main() -> None:
     institutions = pd.read_csv(DATA / "institutions.csv")
     venues_doc = load_venues()
     venues = venue_name_lookup(venues_doc)
-    curated_areas = load_faculty_areas()
     all_pubs = [apply_venue(p, venues) for p in raw_pubs]
     pubs = all_pubs if args.all_venues else [p for p in all_pubs if p.get("in_whitelist")]
+    area_labels = faculty_area_label_map(pubs)
     appt_rows = appointments_payload()
     appt_coverage = appointment_coverage_ids()
 
@@ -332,7 +323,7 @@ def main() -> None:
                 window=wval,
                 include_cross_boundary=cross,
                 current_year=args.year,
-                curated_areas=curated_areas,
+                area_labels=area_labels,
                 active_ids=active_ids,
             )
 

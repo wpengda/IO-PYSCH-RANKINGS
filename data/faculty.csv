@@ -1,13 +1,16 @@
 faculty_id,name,institution_id,homepage,rank,active,notes,orcid,google_scholar_id
 sackett_paul,Paul R. Sackett,umn,https://cla.umn.edu/about/directory/profile/psackett,Professor,True,Core I-O; official UMN I-O page,,TXKXrhYAAAAJ
+dunnette_marvin,Marvin D. Dunnette,umn,,Professor Emeritus,False,No public Google Scholar profile; not on current scoring roster,,
+campbell_john,John P. Campbell,umn,https://cla.umn.edu/psychology/news-events/story/memoriam-emeritus-professor-and-former-chair-john-p-campbell,Professor Emeritus,False,No public Google Scholar profile; died July 2025,,
 kuncel_nathan,Nathan R. Kuncel,umn,https://cla.umn.edu/about/directory/profile/kunce001,Professor,True,Core I-O; official UMN I-O page,,Li_99XsAAAAJ
 landers_richard,Richard N. Landers,umn,https://cla.umn.edu/about/directory/profile/rlanders,Professor,True,Core I-O; official UMN I-O page,,wMsVHFYAAAAJ
 ones_deniz,Deniz S. Ones,umn,https://cla.umn.edu/about/directory/profile/denes,Professor,True,Core I-O area director; official UMN I-O page,,RfAFQMQAAAAJ
-schmidt_aaron,Aaron M. Schmidt,umn,https://cla.umn.edu/about/directory/profile/aschmidt,Associate Professor,True,Core I-O; official UMN I-O page,,
+schmidt_aaron,Aaron M. Schmidt,umn,https://cla.umn.edu/about/directory/profile/aschmidt,Associate Professor,True,Core I-O; official UMN I-O page; no public Google Scholar profile,,
 ryan_annmarie,Ann Marie Ryan,msu,https://psychology.msu.edu/about/people/ann-marie-ryan,Professor,False,Official MSU: Professor Emerita; not current Organizational core,,
 ford_kevin,J. Kevin Ford,msu,https://psychology.msu.edu/about/people/j-kevin-ford,Professor,True,,,eXNjTPIAAAAJ
 carter_nathan,Nathan T. Carter,msu,https://psychology.msu.edu/about/people/nathan-carter,Professor,True,,,QIjATukAAAAJ
 newman_daniel,Daniel A. Newman,uiuc,https://psychology.illinois.edu/directory/profile/d5n,Professor,True,,,CrOaqpsAAAAJ
+hulin_charles,Charles L. Hulin,uiuc,https://psychology.illinois.edu/directory/profile/clhulin,Professor Emeritus,False,No public Google Scholar profile; Professor Emeritus,,
 rounds_james,James Rounds,uiuc,https://psychology.illinois.edu/directory/profile/jrounds,Professor,False,Official UIUC: Professor Emeritus,,GDTpZuMAAAAJ
 drasgow_fritz,Fritz Drasgow,uiuc,https://psychology.illinois.edu/directory/profile/fdrasgow,Professor,False,"Official UIUC: Dean Emeritus, LER",,AXsNFH4AAAAJ
 highhouse_scott,Scott Highhouse,bgsu,https://www.bgsu.edu/arts-and-sciences/psychology/people/scott-highhouse.html,Professor,True,,,-n4MwyUAAAAJ
@@ -22,7 +25,8 @@ brossoit_rebecca,Rebecca Brossoit,rice,https://profiles.rice.edu/faculty/rebecca
 hebl_mikki,Michelle R. Hebl,rice,https://profiles.rice.edu/faculty/mikki-hebl,Professor,True,Official Rice faculty profile,,CCOSnCEAAAAJ
 king_danielle,Danielle King Jordan,rice,https://profiles.rice.edu/faculty/danielle-king-jordan,Associate Professor,True,Official Rice faculty profile; Associate Dean GPS,,qS6aIMUAAAAJ
 king_eden,Eden B. King,rice,https://profiles.rice.edu/faculty/eden-king,Professor,True,Official Rice faculty profile,,6gtdKWcAAAAJ
-oswald_fred,Frederick L. Oswald,rice,https://profiles.rice.edu/faculty/fred-oswald,Professor,False,Removed from Rice I-O roster per current program list,,jWlqGZcAAAAJ
+oswald_fred,Frederick L. Oswald,rice,https://profiles.rice.edu/faculty/fred-oswald,Professor,False,Left Rice I-O roster; University of California Irvine 2026–present,,jWlqGZcAAAAJ
+motowidlo_stephan,Stephan J. Motowidlo,rice,https://profiles.rice.edu/faculty/stephan-motowidlo,Professor Emeritus,False,Official Rice: Professor Emeritus,,nkq2kBQAAAAJ
 salas_eduardo,Eduardo Salas,rice,https://profiles.rice.edu/faculty/eduardo-salas,Professor,True,Official Rice faculty profile; Cline Chair,,pzOYmE0AAAAJ
 sun_tianjun,Tianjun Sun,rice,https://profiles.rice.edu/faculty/tianjun-sun,Assistant Professor,True,Official Rice faculty profile,,dn24ECQAAAAJ
 zaccaro_stephen,Stephen J. Zaccaro,gmu,https://psychology.gmu.edu/people/szaccaro,Professor,True,,,EtEt5w0AAAAJ
@@ -89,7 +93,7 @@ sonhing_leanne,Leanne S. Son Hing,guelph,https://www.uoguelph.ca/profile/leanne-
 gonzalezmorales_gloria,M. Gloria Gonzalez-Morales,guelph,https://www.uoguelph.ca/psychology/graduate/ios,Associate Professor,False,Not on current Guelph I-O directory,,
 finegan_joan,Joan Finegan,western,https://www.psychology.uwo.ca/people/faculty/profiles/finegan.html,Associate Professor,False,Official Western I/O: Professor Emeritus; not core,,
 goffin_richard,Richard D. Goffin,western,https://www.psychology.uwo.ca/people/faculty/profiles/goffin.html,Professor,False,Official Western I/O: Professor Emeritus; not core,,
-kanfer_ruth,Ruth Kanfer,gatech,https://psychology.gatech.edu/people/ruth-kanfer,Professor,False,Official GT news: deceased August 2025; stale people page,,
+kanfer_ruth,Ruth Kanfer,gatech,https://psychology.gatech.edu/people/ruth-kanfer,Professor,False,Official GT news: deceased August 2025; stale people page; UMN 1984–1997,,22Ph80MAAAAJ
 ackerman_phillip,Phillip L. Ackerman,gatech,https://psychology.gatech.edu/people/phillip-ackerman,Professor,True,Official GT I-O faculty,,YCmbxfIAAAAJ
 weiss_howard,Howard M. Weiss,gatech,https://psychology.gatech.edu/people/howard-m-weiss,Professor,True,Official GT I-O faculty,,zhUj2-oAAAAJ
 wiese_christopher,Christopher W. Wiese,gatech,https://psychology.gatech.edu/people/christopher-w-wiese,Associate Professor,True,Official GT I-O area director,,sYILK6YAAAAJ

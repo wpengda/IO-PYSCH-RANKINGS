@@ -334,11 +334,13 @@ def appointments_payload(appts: pd.DataFrame | None = None) -> list[dict]:
         return rows
     for _, r in df.iterrows():
         sid = _clean_scholar_id(r.get("google_scholar_id"))
+        iid = str(r.get("institution_id") or "").strip()
         rows.append(
             {
                 "faculty_id": str(r.get("faculty_id") or "").strip(),
                 "name": str(r.get("name") or "").strip(),
-                "institution_id": str(r.get("institution_id") or "").strip(),
+                "institution_id": iid,
+                "institution_name": _appointment_institution_name(iid),
                 "start_year": year_or_none(r.get("start_year")),
                 "end_year": year_or_none(r.get("end_year")),
                 "google_scholar_id": sid,
@@ -347,9 +349,21 @@ def appointments_payload(appts: pd.DataFrame | None = None) -> list[dict]:
     return [row for row in rows if row["faculty_id"] and row["institution_id"]]
 
 
+def _appointment_institution_name(iid: str) -> str:
+    labels = {
+        "uci": "University of California Irvine",
+    }
+    return labels.get(iid, "")
+
+
 def appointment_coverage_ids(appts: pd.DataFrame | None = None) -> list[str]:
+    """Schools that have a timeline AND are in the ranked institutions table."""
     rows = appointments_payload(appts)
-    return sorted({r["institution_id"] for r in rows})
+    inst_path = DATA / "institutions.csv"
+    known: set[str] = set()
+    if inst_path.exists():
+        known = set(pd.read_csv(inst_path)["institution_id"].astype(str))
+    return sorted({r["institution_id"] for r in rows if r["institution_id"] in known})
 
 
 def faculty_universe(*, active_only: bool = False) -> pd.DataFrame:

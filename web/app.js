@@ -389,7 +389,7 @@
     return "window_all__with_cross";
   }
 
-  function syncYearUI() {
+  function syncYearUI(forceBoxes) {
     const min = state.yearMin;
     const max = state.yearMax;
     const span = Math.max(1, max - min);
@@ -397,8 +397,12 @@
     const toPct = ((state.yearTo - min) / span) * 100;
     els.yearFrom.value = String(state.yearFrom);
     els.yearTo.value = String(state.yearTo);
-    els.yearFromOut.textContent = String(state.yearFrom);
-    els.yearToOut.textContent = String(state.yearTo);
+    if (forceBoxes || document.activeElement !== els.yearFromOut) {
+      els.yearFromOut.value = String(state.yearFrom);
+    }
+    if (forceBoxes || document.activeElement !== els.yearToOut) {
+      els.yearToOut.value = String(state.yearTo);
+    }
     els.yearFill.style.left = `${fromPct}%`;
     els.yearFill.style.width = `${Math.max(0, toPct - fromPct)}%`;
     // Keep the active thumb on top for easier grabbing when overlapping
@@ -416,9 +420,10 @@
       min: String(state.yearMin),
       max: String(state.yearMax),
     };
-    for (const [k, v] of Object.entries(attrs)) {
-      els.yearFrom.setAttribute(k, v);
-      els.yearTo.setAttribute(k, v);
+    for (const el of [els.yearFrom, els.yearTo, els.yearFromOut, els.yearToOut]) {
+      if (!el) continue;
+      el.setAttribute("min", attrs.min);
+      el.setAttribute("max", attrs.max);
     }
   }
 
@@ -439,7 +444,31 @@
   }
 
   function facultyMetricKey(metric) {
-    return metric.replace(/_per_faculty$/, "");
+    return String(metric || "").replace(/_per_faculty$/, "");
+  }
+
+  function isPerFacultyMetric(key) {
+    return String(key || "").endsWith("_per_faculty");
+  }
+
+  function metricOptions() {
+    const all = state.data?.metrics || [];
+    if (!state.facultyView) return all;
+    return all.filter((m) => !isPerFacultyMetric(m.key));
+  }
+
+  function fillMetricSelect() {
+    if (!els.metric || !state.data) return;
+    const options = metricOptions();
+    const keys = new Set(options.map((m) => m.key));
+    els.metric.innerHTML = options
+      .map((m) => `<option value="${m.key}">${m.label}</option>`)
+      .join("");
+    if (!keys.has(state.metric)) {
+      const fallback = facultyMetricKey(state.metric);
+      state.metric = keys.has(fallback) ? fallback : "adj_count";
+    }
+    els.metric.value = state.metric;
   }
 
   function metricLabel(key) {
@@ -559,8 +588,8 @@
       const open = appt.end_year == null || appt.end_year === "";
       byIid.set(appt.institution_id, {
         institution_id: appt.institution_id,
-        name: inst.name || appt.institution_id,
-        country: inst.country || "",
+        name: inst.name || appt.institution_name || appt.institution_id,
+        country: inst.country || (appt.institution_id === "uci" ? "US" : ""),
         start_year: appt.start_year,
         end_year: appt.end_year,
         current: Boolean(open),
@@ -613,14 +642,21 @@
     };
   }
 
-  function hasScholarProfile(f) {
-    const scholarId = String(f.google_scholar_id || "").trim();
+  function hasScholarId(value) {
+    const scholarId = String(value || "").trim();
     return (
-      f.has_scholar_data !== false &&
       Boolean(scholarId) &&
       scholarId.toLowerCase() !== "nan" &&
       scholarId.toLowerCase() !== "none"
     );
+  }
+
+  function noScholarMark() {
+    return `<span class="no-scholar-mark" title="No Google Scholar ID on file">no Scholar</span>`;
+  }
+
+  function hasScholarProfile(f) {
+    return f.has_scholar_data !== false && hasScholarId(f.google_scholar_id);
   }
 
   function emptyInst(base) {
@@ -704,13 +740,20 @@
       for (const appt of state.data.appointments || []) {
         const iid = appt.institution_id;
         if (!covered.has(iid)) continue;
-        if (!yearsOverlap(appt.start_year, appt.end_year, state.yearFrom, state.yearTo)) {
-          continue;
-        }
         const src = byFid.get(appt.faculty_id);
-        const papers = (src?.papers || []).filter((p) =>
-          paperInAppointment(p.year, appt.start_year, appt.end_year)
+        const scholarId = appt.google_scholar_id || src?.google_scholar_id || "";
+        const inWindow = yearsOverlap(
+          appt.start_year,
+          appt.end_year,
+          state.yearFrom,
+          state.yearTo
         );
+        if (!inWindow && hasScholarId(scholarId)) continue;
+        const papers = inWindow
+          ? (src?.papers || []).filter((p) =>
+              paperInAppointment(p.year, appt.start_year, appt.end_year)
+            )
+          : [];
         const key = `${appt.faculty_id}::${iid}`;
         const row = {
           ...(src || {
@@ -726,7 +769,7 @@
           faculty_id: appt.faculty_id,
           name: appt.name || src?.name || appt.faculty_id,
           institution_id: iid,
-          google_scholar_id: appt.google_scholar_id || src?.google_scholar_id || "",
+          google_scholar_id: scholarId,
           start_year: appt.start_year,
           end_year: appt.end_year,
           appointment_span: formatAppointmentSpan(appt.start_year, appt.end_year),
@@ -772,6 +815,7 @@
         ? "Programs and years on the roster"
         : "Faculty with a Google Scholar ID";
     }
+    fillMetricSelect();
   }
 
   function facultyRankingRows(view) {
@@ -1046,12 +1090,12 @@
     },
     {
       title: "Choose publication years",
-      body: "Drag the two handles to set the year range. Default is the most recent 10 years — useful for seeing who is currently active.",
+      body: "Drag the two handles, or type a year in either box. Default is the most recent 10 years — useful for seeing who is currently active.",
       selector: '[data-tour="years"]',
     },
     {
       title: "Pick a metric",
-      body: "Adjusted count (1/N) splits credit across coauthors (default). You can also rank by raw papers, 1st/2nd/last author, last author only, citations, impact-factor sum, or per-faculty versions.",
+      body: "Adjusted count (1/N) splits credit across coauthors (default). You can also rank by raw papers, 1st/2nd/last author, last author only, citations, impact-factor sum, or per-faculty versions (program ranking only).",
       selector: '[data-tour="metric"]',
     },
     {
@@ -1088,7 +1132,7 @@
     },
     {
       title: "Count by faculty appointment",
-      body: "Turn on by faculty appointment to score programs that have a faculty timeline using only papers published while that person was there. Schools without a timeline stay on the current-faculty default. UIUC is filled in first. This turns off faculty ranking.",
+      body: "Turn on by faculty appointment to score programs that have a faculty timeline using only papers published while that person was there. Schools without a timeline stay on the current-faculty default. UIUC, Rice, and Minnesota are filled in. This turns off faculty ranking.",
       selector: '[data-tour="appointment"]',
     },
     {
@@ -1396,17 +1440,18 @@
           !f.countriesFound.length ||
           f.countriesFound.some((c) => countries.has(c))
       )
+      .sort(
+        (a, b) =>
+          b._score - a._score || String(a.name || "").localeCompare(String(b.name || ""))
+      )
+      .map((f, idx) => ({ ...f, _rank: idx + 1 }))
       .filter((f) => {
         if (!q) return true;
         return (
           String(f.name || "").toLowerCase().includes(q) ||
           String(f.instName || "").toLowerCase().includes(q)
         );
-      })
-      .sort(
-        (a, b) =>
-          b._score - a._score || String(a.name || "").localeCompare(String(b.name || ""))
-      );
+      });
 
     els.tbody.innerHTML = "";
     if (!rows.length) {
@@ -1418,17 +1463,13 @@
     }
     els.empty.classList.add("hidden");
 
-    rows.forEach((f, idx) => {
+    rows.forEach((f) => {
       const tr = document.createElement("tr");
       tr.className = "fac-row";
       const pills = (f.areas || [])
         .map((a) => `<span class="fac-tag">${escapeHtml(a)}</span>`)
         .join("");
-      const hasScholar = Boolean(
-        f.google_scholar_id &&
-          String(f.google_scholar_id).trim() &&
-          String(f.google_scholar_id).toLowerCase() !== "nan"
-      );
+      const hasScholar = hasScholarId(f.google_scholar_id);
       const nameClass = hasScholar ? "faculty-name" : "faculty-name no-scholar";
       const nameTitle = hasScholar
         ? "View counted papers"
@@ -1444,10 +1485,13 @@
         })
         .join("");
       tr.innerHTML = `
-        <td class="col-rank">${idx + 1}</td>
+        <td class="col-rank">${f._rank}</td>
         <td class="col-inst">
           <div class="fac-row-name">
-            <button type="button" class="${nameClass}" data-fid="${escapeAttr(f._key || f.faculty_id)}" title="${escapeAttr(nameTitle)}">${escapeHtml(f.name)}</button>
+            <div class="faculty-name-line">
+              <button type="button" class="${nameClass}" data-fid="${escapeAttr(f._key || f.faculty_id)}" title="${escapeAttr(nameTitle)}">${escapeHtml(f.name)}</button>
+              ${hasScholar ? "" : noScholarMark()}
+            </div>
             ${pills ? `<span class="faculty-tags">${pills}</span>` : ""}
           </div>
         </td>
@@ -1504,9 +1548,10 @@
     const rows = view.institutions
       .filter((inst) => countries.has(inst.country))
       .filter((inst) => Number(inst.faculty_count) >= minFac)
-      .filter((inst) => !q || String(inst.name || "").toLowerCase().includes(q))
       .map((inst) => ({ ...inst, _score: metricValue(inst, metric) }))
-      .sort((a, b) => b._score - a._score || a.name.localeCompare(b.name));
+      .sort((a, b) => b._score - a._score || a.name.localeCompare(b.name))
+      .map((inst, idx) => ({ ...inst, _rank: idx + 1 }))
+      .filter((inst) => !q || String(inst.name || "").toLowerCase().includes(q));
 
     els.tbody.innerHTML = "";
     if (!rows.length) {
@@ -1520,7 +1565,7 @@
 
     const facMetric = facultyMetricKey(metric);
 
-    rows.forEach((inst, idx) => {
+    rows.forEach((inst) => {
       const tr = document.createElement("tr");
       tr.className = "inst-row";
       const expanded = state.expanded.has(inst.institution_id);
@@ -1533,7 +1578,7 @@
         ? `<span class="appt-mark" title="Counted from faculty appointment years">faculty appointment</span>`
         : "";
       tr.innerHTML = `
-        <td class="col-rank">${idx + 1}</td>
+        <td class="col-rank">${inst._rank}</td>
         <td class="inst-name">
           <button type="button" class="expand-btn" aria-label="Expand">${expanded ? "▼" : "▶"}</button>
           <span class="inst-label">${escapeHtml(inst.name)}</span>
@@ -1570,11 +1615,7 @@
             const pills = (f.areas || [])
               .map((a) => `<span class="fac-tag">${escapeHtml(a)}</span>`)
               .join("");
-            const hasScholar = Boolean(
-              f.google_scholar_id &&
-                String(f.google_scholar_id).trim() &&
-                String(f.google_scholar_id).toLowerCase() !== "nan"
-            );
+            const hasScholar = hasScholarId(f.google_scholar_id);
             const nameClass = hasScholar
               ? "faculty-name"
               : "faculty-name no-scholar";
@@ -1585,7 +1626,10 @@
             return `
             <li>
               <div class="faculty-main">
-                <button type="button" class="${nameClass}" data-fid="${escapeAttr(f._key || f.faculty_id)}" title="${escapeAttr(nameTitle)}">${escapeHtml(f.name)}</button>
+                <div class="faculty-name-line">
+                  <button type="button" class="${nameClass}" data-fid="${escapeAttr(f._key || f.faculty_id)}" title="${escapeAttr(nameTitle)}">${escapeHtml(f.name)}</button>
+                  ${hasScholar ? "" : noScholarMark()}
+                </div>
                 <span class="faculty-tags">${pills}</span>
               </div>
               <span class="faculty-rank">${escapeHtml(rankText)}</span>
@@ -1687,15 +1731,9 @@
     if (els.schoolSearch) els.schoolSearch.value = h.q || "";
     state.facultyView = Boolean(h.faculty);
     state.byAppointment = state.facultyView ? false : Boolean(h.appt);
+    state.metric = h.metric || "adj_count";
     syncApptToggle();
     syncFacToggle();
-    els.metric.innerHTML = state.data.metrics
-      .map((m) => `<option value="${m.key}">${m.label}</option>`)
-      .join("");
-    state.metric = state.data.metrics.some((m) => m.key === h.metric)
-      ? h.metric
-      : "adj_count";
-    els.metric.value = state.metric;
 
     const bounds = detectYearBounds(state.data);
     state.yearMin = bounds.min;
@@ -1737,6 +1775,48 @@
     render();
   }
 
+  function commitYearBox(which) {
+    const el = which === "from" ? els.yearFromOut : els.yearToOut;
+    const raw = Number(String(el.value).trim());
+    if (!Number.isFinite(raw) || raw < 1000) {
+      syncYearUI(true);
+      return;
+    }
+    let from = which === "from" ? raw : state.yearFrom;
+    let to = which === "to" ? raw : state.yearTo;
+    from = clampYear(from, state.yearMin, state.yearMax);
+    to = clampYear(to, state.yearMin, state.yearMax);
+    if (which === "from" && from > to) from = to;
+    if (which === "to" && to < from) to = from;
+    if (from === state.yearFrom && to === state.yearTo) {
+      syncYearUI(true);
+      return;
+    }
+    state.yearFrom = from;
+    state.yearTo = to;
+    syncYearUI(true);
+    render();
+  }
+
+  function bindYearBox(el, which) {
+    if (!el) return;
+    el.addEventListener("change", () => commitYearBox(which));
+    el.addEventListener("blur", () => commitYearBox(which));
+    el.addEventListener("keydown", (ev) => {
+      if (ev.key !== "Enter") return;
+      ev.preventDefault();
+      commitYearBox(which);
+      el.blur();
+    });
+    el.addEventListener(
+      "wheel",
+      (ev) => {
+        if (document.activeElement === el) ev.preventDefault();
+      },
+      { passive: false }
+    );
+  }
+
   async function init() {
     const res = await fetch("data/rankings.json");
     if (!res.ok) {
@@ -1773,6 +1853,8 @@
     }
     els.yearFrom.addEventListener("input", () => onYearInput("from"));
     els.yearTo.addEventListener("input", () => onYearInput("to"));
+    bindYearBox(els.yearFromOut, "from");
+    bindYearBox(els.yearToOut, "to");
     els.metric.addEventListener("change", () => {
       state.metric = els.metric.value;
       render();

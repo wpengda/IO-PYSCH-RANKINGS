@@ -1,13 +1,17 @@
 faculty_id,name,institution_id,google_scholar_id
 sackett_paul,Paul R. Sackett,umn,TXKXrhYAAAAJ
+dunnette_marvin,Marvin D. Dunnette,umn,
+campbell_john,John P. Campbell,umn,
 kuncel_nathan,Nathan R. Kuncel,umn,Li_99XsAAAAJ
 landers_richard,Richard N. Landers,umn,wMsVHFYAAAAJ
+bono_joyce,Joyce E. Bono,umn,pWKcSCsAAAAJ
 ones_deniz,Deniz S. Ones,umn,RfAFQMQAAAAJ
 schmidt_aaron,Aaron M. Schmidt,umn,
 ryan_annmarie,Ann Marie Ryan,msu,
 ford_kevin,J. Kevin Ford,msu,eXNjTPIAAAAJ
 carter_nathan,Nathan T. Carter,msu,QIjATukAAAAJ
 newman_daniel,Daniel A. Newman,uiuc,CrOaqpsAAAAJ
+hulin_charles,Charles L. Hulin,uiuc,
 rounds_james,James Rounds,uiuc,GDTpZuMAAAAJ
 drasgow_fritz,Fritz Drasgow,uiuc,AXsNFH4AAAAJ
 highhouse_scott,Scott Highhouse,bgsu,-n4MwyUAAAAJ
@@ -23,8 +27,13 @@ hebl_mikki,Michelle R. Hebl,rice,CCOSnCEAAAAJ
 king_danielle,Danielle King Jordan,rice,qS6aIMUAAAAJ
 king_eden,Eden B. King,rice,6gtdKWcAAAAJ
 oswald_fred,Frederick L. Oswald,rice,jWlqGZcAAAAJ
+motowidlo_stephan,Stephan J. Motowidlo,rice,nkq2kBQAAAAJ
 salas_eduardo,Eduardo Salas,rice,pzOYmE0AAAAJ
 sun_tianjun,Tianjun Sun,rice,dn24ECQAAAAJ
+dipboye_robert,Robert L. Dipboye,rice,zTkyXpMAAAAJ
+quinones_miguel,Miguel A. Quiñones,rice,_EIWn5sAAAAJ
+beal_daniel,Daniel J. Beal,rice,dphppLQAAAAJ
+villado_anton,Anton J. Villado,rice,4s6iN2AAAAAJ
 zaccaro_stephen,Stephen J. Zaccaro,gmu,EtEt5w0AAAAJ
 tetrick_lois,Lois E. Tetrick,gmu,
 dalal_reeshad,Reeshad S. Dalal,gmu,QkDLr-MAAAAJ
@@ -89,7 +98,7 @@ sonhing_leanne,Leanne S. Son Hing,guelph,
 gonzalezmorales_gloria,M. Gloria Gonzalez-Morales,guelph,
 finegan_joan,Joan Finegan,western,
 goffin_richard,Richard D. Goffin,western,
-kanfer_ruth,Ruth Kanfer,gatech,
+kanfer_ruth,Ruth Kanfer,gatech,22Ph80MAAAAJ
 ackerman_phillip,Phillip L. Ackerman,gatech,YCmbxfIAAAAJ
 weiss_howard,Howard M. Weiss,gatech,zhUj2-oAAAAJ
 wiese_christopher,Christopher W. Wiese,gatech,sYILK6YAAAAJ
