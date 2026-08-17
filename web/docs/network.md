@@ -1,14 +1,14 @@
 # How we network
 
-IO Psychology Network maps **coauthorship among current rostered faculty** at U.S. and Canadian I-O PhD programs.
+IO Psychology Network maps **coauthorship among faculty with a Google Scholar profile** at U.S. and Canadian I-O PhD programs — current members and people listed on a program’s faculty timeline.
 
-It uses the **same people, the same Google Scholar fetch, and the same journal whitelist** as [How we rank](ranking.md). A line is not a ranking score; it is a count of shared whitelist papers.
+It uses the **same Google Scholar fetch and the same journal whitelist** as [How we rank](ranking.md). A line is not a ranking score; it is a count of shared whitelist papers.
 
 ## Who appears
 
-A person is a node only if they are on the **current** program roster **and** have a fetched Google Scholar profile. Faculty without an ID (shown with score 0 on Rankings) do not appear here.
+A person is a node if they have a fetched Google Scholar profile and appear on `faculty.csv` or [`data/faculty_appointments.csv`](../../data/faculty_appointments.csv). Faculty without an ID do not appear here.
 
-Same inclusion rules as Rankings: tenure-track / full-time research faculty; current members only. Former faculty will be added in a later version.
+One person can belong to **more than one program** (for example Nathan Kuncel at Minnesota now and Illinois in 2003–2005). Searching a school keeps anyone with that affiliation, past or present. Region uses any of those programs. Node color is the current (or most recent) program.
 
 ## What a line means
 
@@ -34,7 +34,7 @@ Non-whitelist Scholar items do not add visible ties.
 | Region | Keep people at U.S. programs, Canadian programs, or both |
 | Min papers | Hide a line unless that pair shares at least this many counted papers |
 | Min connections | Hide people with fewer roster coauthors than this in the current filters (default 1 hides isolates) |
-| Faculty / Program | Type a name to keep that person or program, plus their visible neighbors |
+| Faculty / Program | Type a name or school to highlight matches and keep their coauthors (faded). |
 
 Click a person for their program and the shared papers behind each tie.
 
@@ -52,5 +52,5 @@ That writes `web/data/coauthor_network.json`. It is **not** part of `python pipe
 
 - Coverage follows Google Scholar (missing IDs, missing papers, messy titles and author strings).
 - Truncated Scholar author lists can miss a roster coauthor; title overlap on two profiles can still create the tie.
-- Current faculty only; a paper written with someone who has since left the roster does not show that former colleague as a node.
+- Appointment years are shown on the person; a line is still shared whitelist papers, not “they overlapped at the same school.”
 - This is a map of collaboration in the whitelist, not a measure of friendship, mentoring quality, or program prestige.

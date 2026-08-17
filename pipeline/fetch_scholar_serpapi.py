@@ -17,7 +17,15 @@ from pathlib import Path
 import httpx
 import pandas as pd
 
-from config import CACHE, DATA, ROOT, ensure_dirs, load_faculty, load_venues, venue_name_lookup
+from config import (
+    CACHE,
+    ROOT,
+    ensure_dirs,
+    faculty_for_publication_fetch,
+    has_google_scholar_id,
+    load_venues,
+    venue_name_lookup,
+)
 from fetch_scholar import records_from_raw, write_outputs
 
 SERPAPI = "https://serpapi.com/search.json"
@@ -137,10 +145,8 @@ def main() -> None:
     ensure_dirs()
     cache_dir = CACHE / "scholar"
     cache_dir.mkdir(exist_ok=True)
-    faculty = load_faculty()
-    faculty = faculty[faculty["active"].astype(str).str.lower().isin(["true", "1", "yes"])]
-    has_id = faculty["google_scholar_id"].fillna("").astype(str).str.strip()
-    faculty = faculty[~has_id.isin(["", "nan", "none"])]
+    faculty = faculty_for_publication_fetch()
+    faculty = faculty[faculty["google_scholar_id"].map(has_google_scholar_id)]
     venues = venue_name_lookup(load_venues())
 
     todo = []

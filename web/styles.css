@@ -980,6 +980,139 @@ a.journals-btn {
   display: flex;
   gap: 0.85rem;
   margin-bottom: 0.35rem;
+  align-items: center;
+}
+
+.appt-toggle {
+  appearance: none;
+  border: 1.5px solid #d97706;
+  background: #fff8eb;
+  color: #b45309;
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0.12rem 0.6rem;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.appt-toggle:hover {
+  background: #fde68a;
+}
+
+.appt-toggle.is-on {
+  background: #d97706;
+  color: #fff;
+  border-color: #b45309;
+}
+
+.fac-toggle {
+  appearance: none;
+  border: 1.5px solid #0f766e;
+  background: #f0fdfa;
+  color: #0f766e;
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0.12rem 0.6rem;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.fac-toggle:hover {
+  background: #ccfbf1;
+}
+
+.fac-toggle.is-on {
+  background: #0f766e;
+  color: #fff;
+  border-color: #115e59;
+}
+
+.table-expand-tools {
+  display: flex;
+  gap: 0.85rem;
+  align-items: center;
+}
+
+body.is-faculty-view .table-expand-tools,
+body.is-faculty-view [data-tour="minFaculty"] {
+  display: none;
+}
+
+body.is-faculty-view .col-fac,
+body.is-faculty-view th.col-fac {
+  text-align: left;
+  width: auto;
+  min-width: 10rem;
+  font-weight: 500;
+  font-variant-numeric: normal;
+}
+
+body.is-faculty-view .appt-toggle,
+body.is-appointment-view .fac-toggle {
+  opacity: 0.45;
+}
+
+body.is-faculty-view tbody td.col-fac {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.12rem;
+  flex-wrap: nowrap;
+}
+
+.affil-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  line-height: 1.25;
+}
+
+.affil-years {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+
+tbody tr.fac-row {
+  cursor: pointer;
+}
+
+tbody tr.fac-row:nth-child(odd) {
+  background: #fff;
+}
+
+tbody tr.fac-row:nth-child(even) {
+  background: var(--stripe);
+}
+
+tbody tr.fac-row:hover {
+  background: var(--hover);
+}
+
+.fac-row-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.appt-mark {
+  display: inline-block;
+  margin-left: 0.35rem;
+  padding: 0.04rem 0.4rem;
+  border-radius: 999px;
+  background: #fff3d6;
+  color: #b45309;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
 }
 
 .linkish {
@@ -1606,6 +1739,7 @@ th.col-fac {
 .net-meta {
   color: var(--muted) !important;
   font-size: 0.85rem !important;
+  line-height: 1.45;
 }
 
 .net-neighbors {

@@ -28,7 +28,7 @@ Those views are for exploration. Citation and IF numbers change quickly and can 
 
 ## Why are some well-known faculty missing?
 
-v1 is a **pilot**. Rosters are incomplete until each program is fully curated. The table also includes **current faculty only**; people who used to be in a program are not counted yet and will be added later. See [ranking.md](ranking.md).
+v1 is a **pilot**. Rosters are incomplete until each program is fully curated. The default table uses **current faculty only**. Turn on **by faculty appointment** to score schools that have a faculty timeline in [`data/faculty_appointments.csv`](../../data/faculty_appointments.csv) using only papers from those years (UIUC is filled in first). Turn on **faculty ranking** to sort every person by their full counted paper list (this turns off by faculty appointment). See [ranking.md](ranking.md).
 
 ## Why might a paper be missing?
 
@@ -43,7 +43,7 @@ They are in the **OB / Management** group and **on by default**. Uncheck those t
 
 ## What does the Network tab show?
 
-Coauthorship among **current** rostered faculty who have a Google Scholar profile, using the same journal whitelist as Rankings. A line is shared whitelist papers, not a ranking score. See [network.md](network.md).
+Coauthorship among faculty with a Google Scholar profile — including people on more than one program over time — using the same journal whitelist as Rankings. A line is shared whitelist papers, not a ranking score. See [network.md](network.md).
 
 ## How often is data refreshed?
 

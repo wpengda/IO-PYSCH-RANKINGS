@@ -69,7 +69,7 @@
         <input id="minFaculty" type="number" min="1" step="1" value="1" />
       </label>
       <label class="tb-field search-field" data-tour="search">
-        <span>School</span>
+        <span id="searchLabel">School</span>
         <input
           id="schoolSearch"
           type="search"
@@ -145,17 +145,35 @@
 
       <main class="main" data-tour="table">
         <div class="table-tools">
-          <button type="button" id="expandAll" class="linkish">expand all</button>
-          <button type="button" id="collapseAll" class="linkish">collapse all</button>
+          <button
+            type="button"
+            id="apptToggle"
+            class="appt-toggle"
+            data-tour="appointment"
+            aria-pressed="false"
+            title="Programs with a faculty timeline count only papers published while that person was on the roster. Other programs stay on the current-faculty default. Turns off faculty ranking."
+          >by faculty appointment</button>
+          <button
+            type="button"
+            id="facToggle"
+            class="fac-toggle"
+            data-tour="facultyRank"
+            aria-pressed="false"
+            title="Rank each person by all of their counted papers. If they were at more than one program, years at each school are listed. Turns off by faculty appointment."
+          >faculty ranking</button>
+          <span class="table-expand-tools">
+            <button type="button" id="expandAll" class="linkish">expand all</button>
+            <button type="button" id="collapseAll" class="linkish">collapse all</button>
+          </span>
         </div>
         <div class="table-wrap">
           <table id="rankTable">
             <thead>
               <tr>
                 <th class="col-rank">Rank</th>
-                <th class="col-inst">Institution</th>
+                <th class="col-inst" id="nameHead">Institution</th>
                 <th class="col-count" id="metricHead">Count</th>
-                <th class="col-fac" title="Faculty with a Google Scholar ID">Faculty</th>
+                <th class="col-fac" id="auxHead" title="Faculty with a Google Scholar ID">Faculty</th>
               </tr>
             </thead>
             <tbody></tbody>

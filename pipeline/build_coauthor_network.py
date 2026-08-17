@@ -1,8 +1,9 @@
 """Build coauthor nodes/edges from cached Scholar publications.
 
-Roster faculty who share a paper (same normalized title on two profiles, or
-a parsed author string matching another roster name) become an internal edge.
-Unmatched author strings are kept as external nodes on ego edges.
+Faculty with a Google Scholar ID (current roster, inactive, and
+appointment-only) who share a paper become an internal edge.
+A person may list several programs. Unmatched author strings are
+kept as external nodes on ego edges.
 
 Writes pipeline/cache/coauthor_network.json (gitignored) and
 web/data/coauthor_network.json (slim copy for later viz).
@@ -16,7 +17,17 @@ from collections import defaultdict
 
 import pandas as pd
 
-from config import CACHE, DATA, WEB_DATA, apply_venue, ensure_dirs, has_google_scholar_id, load_faculty, load_venues, venue_name_lookup
+from config import (
+    CACHE,
+    DATA,
+    WEB_DATA,
+    apply_venue,
+    appointments_payload,
+    ensure_dirs,
+    faculty_for_network,
+    load_venues,
+    venue_name_lookup,
+)
 
 SUFFIXES = {"jr", "sr", "ii", "iii", "iv", "phd", "ph.d"}
 
@@ -54,10 +65,69 @@ def name_keys(name: str) -> set[str]:
 
 
 def load_roster() -> pd.DataFrame:
-    faculty = load_faculty()
-    faculty = faculty[faculty["active"].astype(str).str.lower().isin(["true", "1", "yes"])]
-    faculty = faculty[faculty["google_scholar_id"].map(has_google_scholar_id)]
-    return faculty
+    return faculty_for_network()
+
+
+def build_affiliations(
+    faculty: pd.DataFrame,
+    inst_names: dict[str, str],
+    inst_countries: dict[str, str],
+) -> dict[str, list[dict]]:
+    """One person can list several programs (current faculty.csv row + appointments)."""
+    current_inst: dict[str, str] = {}
+    current_active: set[str] = set()
+    names: dict[str, str] = {}
+    for _, row in faculty.iterrows():
+        fid = str(row["faculty_id"])
+        names[fid] = str(row["name"] or "")
+        iid = str(row.get("institution_id") or "").strip()
+        if iid:
+            current_inst[fid] = iid
+        if str(row.get("active", True)).lower() in ("true", "1", "yes"):
+            current_active.add(fid)
+
+    slots: dict[str, dict[str, dict]] = defaultdict(dict)
+    for appt in appointments_payload():
+        fid = appt["faculty_id"]
+        iid = appt["institution_id"]
+        slots[fid][iid] = {
+            "institution_id": iid,
+            "name": inst_names.get(iid, iid),
+            "country": inst_countries.get(iid, ""),
+            "start_year": appt.get("start_year"),
+            "end_year": appt.get("end_year"),
+            "current": fid in current_active and current_inst.get(fid) == iid,
+        }
+        if appt.get("name"):
+            names[fid] = appt["name"]
+
+    for fid, iid in current_inst.items():
+        if not iid:
+            continue
+        if iid not in slots[fid]:
+            slots[fid][iid] = {
+                "institution_id": iid,
+                "name": inst_names.get(iid, iid),
+                "country": inst_countries.get(iid, ""),
+                "start_year": None,
+                "end_year": None,
+                "current": fid in current_active,
+            }
+        else:
+            slots[fid][iid]["current"] = fid in current_active and current_inst.get(fid) == iid
+
+    out: dict[str, list[dict]] = {}
+    for fid, by_iid in slots.items():
+        rows = list(by_iid.values())
+        rows.sort(
+            key=lambda r: (
+                0 if r.get("current") else 1,
+                -(r.get("end_year") or (9999 if r.get("current") else 0)),
+                r.get("name") or "",
+            )
+        )
+        out[fid] = rows
+    return out
 
 
 def roster_index(faculty: pd.DataFrame) -> dict[str, list[str]]:
@@ -195,6 +265,8 @@ def main() -> None:
             for _, r in inst.iterrows()
         }
 
+    affiliations = build_affiliations(faculty, inst_names, inst_countries)
+
     degree: dict[str, int] = defaultdict(int)
     strength: dict[str, int] = defaultdict(int)
     for (a, b), meta in roster_edges.items():
@@ -205,7 +277,9 @@ def main() -> None:
 
     nodes = []
     for fid, row in by_id.items():
-        iid = str(row["institution_id"])
+        affs = affiliations.get(fid) or []
+        primary = next((a for a in affs if a.get("current")), affs[0] if affs else None)
+        iid = str(primary["institution_id"]) if primary else str(row["institution_id"])
         nodes.append(
             {
                 "id": fid,
@@ -214,6 +288,7 @@ def main() -> None:
                 "institution_id": iid,
                 "institution": inst_names.get(iid, iid),
                 "country": inst_countries.get(iid, ""),
+                "institutions": affs,
                 "degree": int(degree[fid]),
                 "strength": int(strength[fid]),
             }

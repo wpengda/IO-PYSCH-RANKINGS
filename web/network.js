@@ -190,6 +190,43 @@
     return `hsl(${hashHue(instId)} 48% 42%)`;
   }
 
+  function nodeAffiliations(n) {
+    if (Array.isArray(n.institutions) && n.institutions.length) return n.institutions;
+    if (!n.institution_id && !n.institution) return [];
+    return [
+      {
+        institution_id: n.institution_id,
+        name: n.institution,
+        country: n.country,
+        current: true,
+      },
+    ];
+  }
+
+  function formatAffiliation(a) {
+    const name = a.name || a.institution_id || "";
+    const start = a.start_year;
+    const end = a.end_year;
+    let span = "";
+    if (start != null || end != null) {
+      const left = start == null ? "?" : String(start);
+      const right = end == null ? "present" : String(end);
+      span = `${left}–${right}`;
+    } else if (a.current) {
+      span = "current";
+    }
+    return span ? `${name} (${span})` : name;
+  }
+
+  function matchesProgram(n, pq) {
+    if (!pq) return true;
+    return nodeAffiliations(n).some((a) => {
+      const name = String(a.name || "").toLowerCase();
+      const iid = String(a.institution_id || "").toLowerCase();
+      return name.includes(pq) || iid.includes(pq);
+    });
+  }
+
   function disciplines() {
     return state.disciplines?.length ? state.disciplines : FALLBACK_DISCIPLINES;
   }
@@ -599,8 +636,22 @@
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   }
 
+  function isSearchHit(n) {
+    const q = state.query.trim().toLowerCase();
+    const pq = state.programQuery.trim().toLowerCase();
+    if (!q && !pq) return false;
+    const nameOk = !q || n.name.toLowerCase().includes(q);
+    const progOk = matchesProgram(n, pq);
+    return nameOk && progOk;
+  }
+
   function inRegion(node) {
-    return !node.country || selectedCountries().has(node.country);
+    const countries = selectedCountries();
+    const codes = nodeAffiliations(node)
+      .map((a) => a.country)
+      .filter(Boolean);
+    if (!codes.length) return !node.country || countries.has(node.country);
+    return codes.some((c) => countries.has(c));
   }
 
   function visibleSet() {
@@ -619,10 +670,7 @@
     for (const n of state.sim) {
       if (!inRegion(n)) continue;
       const nameOk = !q || n.name.toLowerCase().includes(q);
-      const progOk =
-        !pq ||
-        (n.institution || "").toLowerCase().includes(pq) ||
-        (n.institution_id || "").toLowerCase().includes(pq);
+      const progOk = matchesProgram(n, pq);
       if (!nameOk || !progOk) continue;
       if (!searching && (degree.get(n.id) || 0) < minDeg) continue;
       keep.add(n.id);
@@ -733,18 +781,29 @@
 
     const q = state.query.trim().toLowerCase();
     const pq = state.programQuery.trim().toLowerCase();
+    const searching = Boolean(q || pq);
     const focus = state.selected && state.selected.show ? state.selected : null;
     const neighborhood = focus ? neighborhoodSet(focus) : null;
+    const searchHits = searching
+      ? new Set(state.sim.filter((n) => n.show && isSearchHit(n)).map((n) => n.id))
+      : null;
 
     for (const e of state.simEdges) {
       if (e.weight < state.minWeight || !e.a.show || !e.b.show) continue;
-      const onFocus =
-        neighborhood && (neighborhood.has(e.a.id) && neighborhood.has(e.b.id) && (e.a === focus || e.b === focus));
-      const hot = onFocus || (!focus && state.hover && (e.a === state.hover || e.b === state.hover));
+      const onFocus = focus
+        ? neighborhood.has(e.a.id) &&
+          neighborhood.has(e.b.id) &&
+          (e.a === focus || e.b === focus)
+        : searching
+          ? searchHits.has(e.a.id) || searchHits.has(e.b.id)
+          : false;
+      const hot =
+        onFocus ||
+        (!focus && !searching && state.hover && (e.a === state.hover || e.b === state.hover));
       ctx.beginPath();
       ctx.moveTo(e.a.x, e.a.y);
       ctx.lineTo(e.b.x, e.b.y);
-      if (focus && !onFocus) {
+      if ((focus || searching) && !onFocus) {
         ctx.strokeStyle = "rgba(0,0,0,0.04)";
       } else {
         ctx.strokeStyle = hot ? "rgba(26,117,187,0.65)" : "rgba(0,0,0,0.12)";
@@ -755,25 +814,25 @@
 
     for (const n of state.sim) {
       if (!n.show) continue;
-      const named =
-        (q && n.name.toLowerCase().includes(q)) ||
-        (pq &&
-          ((n.institution || "").toLowerCase().includes(pq) ||
-            (n.institution_id || "").toLowerCase().includes(pq)));
-      const inFocus = !focus || neighborhood.has(n.id);
+      const named = isSearchHit(n);
+      const inFocus = focus
+        ? neighborhood.has(n.id)
+        : searching
+          ? named
+          : true;
       const hot = n === state.hover || n === state.selected || named;
       ctx.beginPath();
-      ctx.arc(n.x, n.y, n === focus ? n.r + 1.5 : n.r, 0, Math.PI * 2);
+      ctx.arc(n.x, n.y, n === focus || named ? n.r + 1.5 : n.r, 0, Math.PI * 2);
       ctx.fillStyle = colorFor(n.institution_id);
-      ctx.globalAlpha = inFocus ? 1 : 0.12;
+      ctx.globalAlpha = inFocus ? 1 : 0.16;
       ctx.fill();
       ctx.globalAlpha = 1;
-      ctx.lineWidth = ((n === focus ? 2.4 : hot ? 2 : 1) ) / state.transform.k;
-      ctx.strokeStyle = n === focus ? "#111" : hot ? "#333" : "rgba(0,0,0,0.35)";
+      ctx.lineWidth = ((n === focus || named ? 2.4 : hot ? 2 : 1) ) / state.transform.k;
+      ctx.strokeStyle = n === focus || named ? "#111" : hot ? "#333" : "rgba(0,0,0,0.35)";
       ctx.stroke();
-      if (inFocus && (hot || focus || state.transform.k > 1.35)) {
+      if (named || n === focus || (inFocus && (hot || state.transform.k > 1.35))) {
         ctx.fillStyle = inFocus ? "#111" : "#888";
-        ctx.font = `${(n === focus ? 13 : 12) / state.transform.k}px "Source Sans 3", sans-serif`;
+        ctx.font = `${(n === focus || named ? 13 : 12) / state.transform.k}px "Source Sans 3", sans-serif`;
         ctx.fillText(n.name, n.x + n.r + 3, n.y + 4 / state.transform.k);
       }
     }
@@ -785,10 +844,16 @@
     const keep = visibleSet();
     for (const n of state.sim) n.show = keep.has(n.id);
     const shown = state.sim.filter((n) => n.show).length;
+    const hits = state.sim.filter((n) => n.show && isSearchHit(n)).length;
     const ecount = state.simEdges.filter(
       (e) => e.weight >= state.minWeight && e.a.show && e.b.show
     ).length;
-    els.status.textContent = `${shown} faculty · ${ecount} ties · ${state.yearFrom}–${state.yearTo}`;
+    const searching = Boolean(
+      state.query.trim() || state.programQuery.trim()
+    );
+    els.status.textContent = searching
+      ? `${hits} match${hits === 1 ? "" : "es"} · ${shown} shown (plus coauthors) · ${state.yearFrom}–${state.yearTo}`
+      : `${shown} faculty · ${ecount} ties · ${state.yearFrom}–${state.yearTo}`;
     if (state.selected && !state.selected.show) {
       state.selected = null;
       showDetail(null);
@@ -833,11 +898,15 @@
       const v = state.venues.find((x) => x.id === id);
       return v ? venueShort(v) : id || "";
     };
+    const affilText = nodeAffiliations(node)
+      .map(formatAffiliation)
+      .filter(Boolean)
+      .join(" · ");
     els.pop.hidden = false;
     els.pop.classList.remove("hidden");
     els.popBody.innerHTML = `
       <h2>${escapeHtml(node.name)}</h2>
-      <p class="net-meta">${escapeHtml(node.institution || node.institution_id)}</p>
+      <p class="net-meta">${escapeHtml(affilText || node.institution || node.institution_id || "")}</p>
       <p>${neighbors.length} roster coauthor${neighbors.length === 1 ? "" : "s"} · ${neighbors.reduce((s, r) => s + r.weight, 0)} shared papers</p>
       <ol class="net-neighbors">
         ${neighbors
@@ -927,7 +996,7 @@
   const TOUR_STEPS = [
     {
       title: "Welcome to IO Psychology Network",
-      body: "This map shows coauthorship among rostered I-O faculty. A line means they share papers in the journals and years you select.",
+      body: "This map shows coauthorship among I-O faculty with a Google Scholar profile, including people on more than one program over time. A line means they share papers in the journals and years you select.",
       selector: null,
     },
     {
@@ -952,12 +1021,12 @@
     },
     {
       title: "Search faculty",
-      body: "Type a name to keep that person and everyone they coauthor with in the current filters.",
+      body: "Type a name to keep that person and their coauthors. The match is highlighted; everyone else on screen fades.",
       selector: '[data-tour="faculty"]',
     },
     {
       title: "Search programs",
-      body: "Type a school name to show that program’s faculty plus anyone connected to them.",
+      body: "Type a school name to highlight faculty who are or were at that program. Their coauthors stay on the map, faded.",
       selector: '[data-tour="program"]',
     },
     {

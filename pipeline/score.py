@@ -14,7 +14,10 @@ from config import (
     DATA,
     WEB_DATA,
     apply_venue,
+    appointment_coverage_ids,
+    appointments_payload,
     ensure_dirs,
+    faculty_for_publication_fetch,
     has_google_scholar_id,
     load_faculty,
     load_faculty_areas,
@@ -122,6 +125,7 @@ def score_rows(
     include_cross_boundary: bool,
     current_year: int,
     curated_areas: dict[str, list[str]] | None = None,
+    active_ids: set[str] | None = None,
 ) -> dict:
     fac_metrics: dict[str, dict[str, float]] = defaultdict(
         lambda: {
@@ -207,10 +211,15 @@ def score_rows(
             "faculty_ids": [],
         }
 
+    current_ids = active_ids if active_ids is not None else {
+        str(r["faculty_id"])
+        for _, r in faculty.iterrows()
+        if str(r.get("active", True)).lower() in ("true", "1", "yes")
+    }
+
     for _, row in faculty.iterrows():
-        if str(row.get("active", True)).lower() not in ("true", "1", "yes"):
-            continue
-        fid = row["faculty_id"]
+        fid = str(row["faculty_id"])
+        is_current = fid in current_ids
         iid = row["institution_id"]
         m = fac_metrics[fid]
         papers = sorted(
@@ -230,6 +239,7 @@ def score_rows(
                 "google_scholar_id": "" if pd.isna(row.get("google_scholar_id")) else str(row.get("google_scholar_id")),
                 "homepage": "" if pd.isna(row.get("homepage")) else str(row.get("homepage")),
                 "rank": "" if pd.isna(row.get("rank")) else str(row.get("rank")),
+                "current_roster": is_current,
                 "has_scholar_data": has_scholar_data,
                 "adj_count": round(m["adj_count"], 4),
                 "raw_count": int(m["raw_count"]),
@@ -243,6 +253,8 @@ def score_rows(
                 "papers": papers,
             }
         )
+        if not is_current:
+            continue
         if has_scholar_data:
             inst_agg[iid]["faculty_count"] += 1
         inst_agg[iid]["adj_count"] += m["adj_count"]
@@ -294,13 +306,20 @@ def main() -> None:
         raise SystemExit(f"Missing {pubs_path}; run fetch_scholar.py first")
 
     raw_pubs = json.loads(pubs_path.read_text(encoding="utf-8"))
-    faculty = load_faculty()
+    faculty_active = load_faculty()
+    faculty_active = faculty_active[
+        faculty_active["active"].astype(str).str.lower().isin(["true", "1", "yes"])
+    ]
+    active_ids = set(faculty_active["faculty_id"].astype(str))
+    faculty = faculty_for_publication_fetch()
     institutions = pd.read_csv(DATA / "institutions.csv")
     venues_doc = load_venues()
     venues = venue_name_lookup(venues_doc)
     curated_areas = load_faculty_areas()
     all_pubs = [apply_venue(p, venues) for p in raw_pubs]
     pubs = all_pubs if args.all_venues else [p for p in all_pubs if p.get("in_whitelist")]
+    appt_rows = appointments_payload()
+    appt_coverage = appointment_coverage_ids()
 
     views = {}
     for wkey, wval in WINDOWS.items():
@@ -314,6 +333,7 @@ def main() -> None:
                 include_cross_boundary=cross,
                 current_year=args.year,
                 curated_areas=curated_areas,
+                active_ids=active_ids,
             )
 
     default = views["window_10__core"]
@@ -337,6 +357,8 @@ def main() -> None:
         "domains": venues_doc.get("domains") or [],
         "disciplines": venues_doc.get("disciplines") or [],
         "venues": venues_doc["venues"],
+        "appointments": appt_rows,
+        "appointment_coverage": appt_coverage,
         "default": {
             "window": "10",
             "cross_boundary": True,

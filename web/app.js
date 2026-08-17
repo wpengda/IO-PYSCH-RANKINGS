@@ -154,6 +154,8 @@
     yearMax: 2026,
     yearFrom: 2017,
     yearTo: 2026,
+    byAppointment: false,
+    facultyView: false,
   };
 
   const els = {
@@ -190,6 +192,11 @@
     tourArrow: document.getElementById("tourArrow"),
     allAreas: document.getElementById("allAreas"),
     areaTree: document.getElementById("areaTree"),
+    apptToggle: document.getElementById("apptToggle"),
+    facToggle: document.getElementById("facToggle"),
+    searchLabel: document.getElementById("searchLabel"),
+    nameHead: document.getElementById("nameHead"),
+    auxHead: document.getElementById("auxHead"),
     expandAll: document.getElementById("expandAll"),
     collapseAll: document.getElementById("collapseAll"),
     tbody: document.querySelector("#rankTable tbody"),
@@ -337,6 +344,8 @@
       metric: params.get("metric") || "adj_count",
       minFaculty: Math.max(1, Number(params.get("min") || 1) || 1),
       q: params.get("q") || "",
+      appt: params.get("appt") === "1",
+      faculty: params.get("fac") === "1",
       areas,
       venues,
     };
@@ -351,6 +360,8 @@
     params.set("min", String(els.minFaculty.value || "1"));
     const q = (els.schoolSearch?.value || "").trim();
     if (q) params.set("q", q);
+    if (state.facultyView) params.set("fac", "1");
+    else if (state.byAppointment) params.set("appt", "1");
 
     const all = allAreaNames();
     if (state.selectedAreas.size === 0) params.set("areas", "");
@@ -495,95 +506,300 @@
       .map(([a]) => a);
   }
 
+  function appointmentCoverage() {
+    return new Set(state.data?.appointment_coverage || []);
+  }
+
+  function yearsOverlap(start, end, from, to) {
+    const s = start == null || start === "" ? 1900 : Number(start);
+    const e = end == null || end === "" ? 9999 : Number(end);
+    if (!Number.isFinite(s) || !Number.isFinite(e)) return true;
+    return s <= to && e >= from;
+  }
+
+  function paperInAppointment(year, start, end) {
+    const y = validYear(year);
+    if (y == null) return false;
+    const s = start == null || start === "" ? 1900 : Number(start);
+    const e = end == null || end === "" ? 9999 : Number(end);
+    return y >= s && y <= e;
+  }
+
+  function formatAppointmentSpan(start, end) {
+    const s = start == null || start === "" ? "?" : String(start);
+    const e = end == null || end === "" ? "present" : String(end);
+    return `${s}–${e}`;
+  }
+
+  function formatAffiliationYears(aff) {
+    const hasStart = aff.start_year != null && aff.start_year !== "";
+    const hasEnd = aff.end_year != null && aff.end_year !== "";
+    if (!hasStart && !hasEnd) return aff.current ? "present" : "";
+    return formatAppointmentSpan(aff.start_year, aff.end_year);
+  }
+
+  function instMetaMap(view) {
+    const map = new Map();
+    const add = (list) => {
+      for (const i of list || []) {
+        if (i?.institution_id && !map.has(i.institution_id)) map.set(i.institution_id, i);
+      }
+    };
+    add(view?.institutions);
+    for (const v of Object.values(state.data?.views || {})) add(v.institutions);
+    return map;
+  }
+
+  function affiliationsFor(f, instById) {
+    const fid = f.faculty_id;
+    const byIid = new Map();
+    for (const appt of state.data.appointments || []) {
+      if (appt.faculty_id !== fid) continue;
+      const inst = instById.get(appt.institution_id) || {};
+      const open = appt.end_year == null || appt.end_year === "";
+      byIid.set(appt.institution_id, {
+        institution_id: appt.institution_id,
+        name: inst.name || appt.institution_id,
+        country: inst.country || "",
+        start_year: appt.start_year,
+        end_year: appt.end_year,
+        current: Boolean(open),
+      });
+    }
+    if (f.institution_id && !byIid.has(f.institution_id)) {
+      const inst = instById.get(f.institution_id) || {};
+      byIid.set(f.institution_id, {
+        institution_id: f.institution_id,
+        name: inst.name || f.institution_id,
+        country: inst.country || "",
+        start_year: null,
+        end_year: null,
+        current: f.current_roster !== false,
+      });
+    }
+    return [...byIid.values()].sort((a, b) => {
+      if (Boolean(a.current) !== Boolean(b.current)) return a.current ? -1 : 1;
+      return (Number(b.start_year) || 0) - (Number(a.start_year) || 0);
+    });
+  }
+
+  function affiliationPhrase(aff) {
+    const years = formatAffiliationYears(aff);
+    return years ? `${aff.name} (${years})` : aff.name;
+  }
+
+  function tallyPapers(papers) {
+    let adj = 0;
+    let cites = 0;
+    let weighted = 0;
+    let firstSecondLast = 0;
+    let lastAuthor = 0;
+    for (const p of papers) {
+      adj += Number(p.adj_credit);
+      cites += Number(p.cited_by_count);
+      weighted += Number(p.weighted_if);
+      if (p.is_first_second_last || p.is_first || p.is_second || p.is_last) {
+        firstSecondLast += 1;
+      }
+      if (p.is_last) lastAuthor += 1;
+    }
+    return {
+      adj_count: adj,
+      raw_count: papers.length,
+      citations: cites,
+      weighted_if: weighted,
+      first_second_last: firstSecondLast,
+      last_author: lastAuthor,
+    };
+  }
+
+  function hasScholarProfile(f) {
+    const scholarId = String(f.google_scholar_id || "").trim();
+    return (
+      f.has_scholar_data !== false &&
+      Boolean(scholarId) &&
+      scholarId.toLowerCase() !== "nan" &&
+      scholarId.toLowerCase() !== "none"
+    );
+  }
+
+  function emptyInst(base) {
+    return {
+      ...base,
+      faculty_count: 0,
+      adj_count: 0,
+      raw_count: 0,
+      citations: 0,
+      weighted_if: 0,
+      first_second_last: 0,
+      last_author: 0,
+      faculty_ids: [],
+      by_appointment: false,
+    };
+  }
+
+  function addFacultyToInst(inst, row) {
+    if (hasScholarProfile(row)) inst.faculty_count += 1;
+    inst.adj_count += row.adj_count;
+    inst.raw_count += row.raw_count;
+    inst.citations += row.citations;
+    inst.weighted_if += row.weighted_if;
+    inst.first_second_last += row.first_second_last;
+    inst.last_author += row.last_author;
+    inst.faculty_ids.push(row._key || row.faculty_id);
+  }
+
+  function finalizeInst(inst) {
+    const fc = Math.max(1, inst.faculty_count);
+    return {
+      ...inst,
+      adj_count: Number(inst.adj_count.toFixed(4)),
+      raw_count: inst.raw_count,
+      citations: inst.citations,
+      weighted_if: Number(inst.weighted_if.toFixed(4)),
+      first_second_last: inst.first_second_last,
+      last_author: inst.last_author,
+      adj_count_per_faculty: Number((inst.adj_count / fc).toFixed(4)),
+      citations_per_faculty: Number((inst.citations / fc).toFixed(4)),
+      weighted_if_per_faculty: Number((inst.weighted_if / fc).toFixed(4)),
+    };
+  }
+
   function rescoreView(view) {
     const whitelist = new Set(allVenueIds());
-    const faculty = view.faculty.map((f) => {
+    const scoredFaculty = view.faculty.map((f) => {
       const papers = (f.papers || []).filter(paperMatches);
       const labelPapers = (f.papers || []).filter((p) =>
         whitelist.has(p.venue_id)
       );
-      let adj = 0;
-      let cites = 0;
-      let weighted = 0;
-      let firstSecondLast = 0;
-      let lastAuthor = 0;
-      for (const p of papers) {
-        adj += Number(p.adj_credit);
-        cites += Number(p.cited_by_count);
-        weighted += Number(p.weighted_if);
-        if (p.is_first_second_last || p.is_first || p.is_second || p.is_last) {
-          firstSecondLast += 1;
-        }
-        if (p.is_last) lastAuthor += 1;
-      }
       return {
         ...f,
         papers,
         areas: facultyAreasFromPapers(labelPapers, f.areas),
-        adj_count: adj,
-        raw_count: papers.length,
-        citations: cites,
-        weighted_if: weighted,
-        first_second_last: firstSecondLast,
-        last_author: lastAuthor,
+        ...tallyPapers(papers),
       };
     });
+    const byFid = new Map(scoredFaculty.map((f) => [f.faculty_id, f]));
+    const covered = appointmentCoverage();
+    const useAppt = Boolean(state.byAppointment);
 
     const byInst = new Map();
-    for (const f of faculty) {
-      if (!byInst.has(f.institution_id)) {
-        const base = view.institutions.find(
-          (i) => i.institution_id === f.institution_id
-        );
-        byInst.set(f.institution_id, {
-          ...base,
-          faculty_count: 0,
-          adj_count: 0,
-          raw_count: 0,
-          citations: 0,
-          weighted_if: 0,
-          first_second_last: 0,
-          last_author: 0,
-          faculty_ids: [],
-        });
-      }
+    for (const inst of view.institutions) {
+      byInst.set(inst.institution_id, emptyInst(inst));
+    }
+
+    const facultyOut = [];
+
+    for (const f of scoredFaculty) {
+      if (f.current_roster === false) continue;
+      if (useAppt && covered.has(f.institution_id)) continue;
       const inst = byInst.get(f.institution_id);
-      const scholarId = String(f.google_scholar_id || "").trim();
-      const hasScholarData =
-        f.has_scholar_data !== false &&
-        Boolean(scholarId) &&
-        scholarId.toLowerCase() !== "nan" &&
-        scholarId.toLowerCase() !== "none";
-      if (hasScholarData) {
-        inst.faculty_count += 1;
+      if (!inst) continue;
+      const row = { ...f, _key: f.faculty_id };
+      addFacultyToInst(inst, row);
+      facultyOut.push(row);
+    }
+
+    if (useAppt) {
+      for (const appt of state.data.appointments || []) {
+        const iid = appt.institution_id;
+        if (!covered.has(iid)) continue;
+        if (!yearsOverlap(appt.start_year, appt.end_year, state.yearFrom, state.yearTo)) {
+          continue;
+        }
+        const src = byFid.get(appt.faculty_id);
+        const papers = (src?.papers || []).filter((p) =>
+          paperInAppointment(p.year, appt.start_year, appt.end_year)
+        );
+        const key = `${appt.faculty_id}::${iid}`;
+        const row = {
+          ...(src || {
+            faculty_id: appt.faculty_id,
+            homepage: "",
+            orcid: "",
+            rank: "",
+            areas: [],
+            has_scholar_data: false,
+          }),
+          ...tallyPapers(papers),
+          papers,
+          faculty_id: appt.faculty_id,
+          name: appt.name || src?.name || appt.faculty_id,
+          institution_id: iid,
+          google_scholar_id: appt.google_scholar_id || src?.google_scholar_id || "",
+          start_year: appt.start_year,
+          end_year: appt.end_year,
+          appointment_span: formatAppointmentSpan(appt.start_year, appt.end_year),
+          _key: key,
+        };
+        const inst = byInst.get(iid);
+        if (!inst) continue;
+        inst.by_appointment = true;
+        addFacultyToInst(inst, row);
+        facultyOut.push(row);
       }
-      inst.adj_count += f.adj_count;
-      inst.raw_count += f.raw_count;
-      inst.citations += f.citations;
-      inst.weighted_if += f.weighted_if;
-      inst.first_second_last += f.first_second_last;
-      inst.last_author += f.last_author;
-      inst.faculty_ids.push(f.faculty_id);
     }
 
     return {
-      institutions: [...byInst.values()].map((inst) => {
-        const fc = Math.max(1, inst.faculty_count);
-        return {
-          ...inst,
-          adj_count: Number(inst.adj_count.toFixed(4)),
-          raw_count: inst.raw_count,
-          citations: inst.citations,
-          weighted_if: Number(inst.weighted_if.toFixed(4)),
-          first_second_last: inst.first_second_last,
-          last_author: inst.last_author,
-          adj_count_per_faculty: Number((inst.adj_count / fc).toFixed(4)),
-          citations_per_faculty: Number((inst.citations / fc).toFixed(4)),
-          weighted_if_per_faculty: Number((inst.weighted_if / fc).toFixed(4)),
-        };
-      }),
-      faculty,
+      institutions: [...byInst.values()].map(finalizeInst),
+      faculty: facultyOut,
     };
+  }
+
+  function syncApptToggle() {
+    const on = Boolean(state.byAppointment);
+    document.body.classList.toggle("is-appointment-view", on);
+    if (!els.apptToggle) return;
+    els.apptToggle.classList.toggle("is-on", on);
+    els.apptToggle.setAttribute("aria-pressed", on ? "true" : "false");
+  }
+
+  function syncFacToggle() {
+    const on = Boolean(state.facultyView);
+    document.body.classList.toggle("is-faculty-view", on);
+    if (els.facToggle) {
+      els.facToggle.classList.toggle("is-on", on);
+      els.facToggle.setAttribute("aria-pressed", on ? "true" : "false");
+    }
+    if (els.searchLabel) els.searchLabel.textContent = on ? "Faculty" : "School";
+    if (els.schoolSearch) {
+      els.schoolSearch.placeholder = on ? "Search names or schools…" : "Search schools…";
+    }
+    if (els.nameHead) els.nameHead.textContent = on ? "Faculty" : "Institution";
+    if (els.auxHead) {
+      els.auxHead.textContent = on ? "Institution" : "Faculty";
+      els.auxHead.title = on
+        ? "Programs and years on the roster"
+        : "Faculty with a Google Scholar ID";
+    }
+  }
+
+  function facultyRankingRows(view) {
+    const whitelist = new Set(allVenueIds());
+    const instById = instMetaMap(view);
+    const byId = new Map();
+    for (const f of view.faculty || []) {
+      const fid = f.faculty_id;
+      if (!fid) continue;
+      const papers = (f.papers || []).filter(paperMatches);
+      const labelPapers = (f.papers || []).filter((p) =>
+        whitelist.has(p.venue_id)
+      );
+      const affiliations = affiliationsFor(f, instById);
+      const row = {
+        ...f,
+        papers,
+        areas: facultyAreasFromPapers(labelPapers, f.areas),
+        ...tallyPapers(papers),
+        _key: fid,
+        affiliations,
+      };
+      const prev = byId.get(fid);
+      if (!prev || (prev.current_roster === false && f.current_roster !== false)) {
+        byId.set(fid, row);
+      }
+    }
+    return [...byId.values()];
   }
 
   function setAreas(areas) {
@@ -845,7 +1061,7 @@
     },
     {
       title: "Search schools",
-      body: "Type part of a university name to jump to matching programs.",
+      body: "Type part of a university name to jump to matching programs. In faculty ranking, search also matches people.",
       selector: '[data-tour="search"]',
     },
     {
@@ -855,7 +1071,7 @@
     },
     {
       title: "Network analysis",
-      body: "Switch to the Network tab for a coauthorship map of rostered faculty, using the same journal list.",
+      body: "Switch to the Network tab for a coauthorship map of faculty with a Google Scholar profile (including people who moved), using the same journal list.",
       selector: '[data-tour="network"]',
     },
     {
@@ -869,6 +1085,16 @@
       body: "Click a school to expand faculty. Click a name to see counted papers. Gray names mean no Google Scholar ID was found.",
       selector: '[data-tour="table"]',
       place: "left",
+    },
+    {
+      title: "Count by faculty appointment",
+      body: "Turn on by faculty appointment to score programs that have a faculty timeline using only papers published while that person was there. Schools without a timeline stay on the current-faculty default. UIUC is filled in first. This turns off faculty ranking.",
+      selector: '[data-tour="appointment"]',
+    },
+    {
+      title: "Faculty ranking",
+      body: "Turn on faculty ranking to sort every person instead of programs. Scores use that person’s full paper list (same years, journals, and areas). Appointment years are labels only. This turns off by faculty appointment.",
+      selector: '[data-tour="facultyRank"]',
     },
   ];
 
@@ -1078,8 +1304,17 @@
     }
 
     const facMetric = facultyMetricKey(metricKey);
+    const affilText = (faculty.affiliations || [])
+      .map((a) => escapeHtml(affiliationPhrase(a)))
+      .join("; ");
     els.modalTitle.textContent = faculty.name;
-    els.modalMeta.innerHTML = [escapeHtml(faculty.rank || ""), links.join(" · ")]
+    els.modalMeta.innerHTML = [
+      affilText ||
+        (faculty.appointment_span
+          ? escapeHtml(faculty.appointment_span)
+          : escapeHtml(faculty.rank || "")),
+      links.join(" · "),
+    ]
       .filter(Boolean)
       .join(" · ");
     els.modalScore.textContent = `${metricLabel(facMetric)}: ${formatScore(
@@ -1141,11 +1376,106 @@
     else els.modal.removeAttribute("open");
   }
 
+  function renderFacultyTable(view) {
+    const countries = new Set(els.countries.value.split(","));
+    const metric = facultyMetricKey(state.metric);
+    const q = (els.schoolSearch?.value || "").trim().toLowerCase();
+    const rows = facultyRankingRows(view)
+      .map((f) => {
+        const affiliations = f.affiliations || [];
+        const countriesFound = affiliations.map((a) => a.country).filter(Boolean);
+        return {
+          ...f,
+          instName: affiliations.map(affiliationPhrase).join("; "),
+          countriesFound,
+          _score: metricValue(f, metric),
+        };
+      })
+      .filter(
+        (f) =>
+          !f.countriesFound.length ||
+          f.countriesFound.some((c) => countries.has(c))
+      )
+      .filter((f) => {
+        if (!q) return true;
+        return (
+          String(f.name || "").toLowerCase().includes(q) ||
+          String(f.instName || "").toLowerCase().includes(q)
+        );
+      })
+      .sort(
+        (a, b) =>
+          b._score - a._score || String(a.name || "").localeCompare(String(b.name || ""))
+      );
+
+    els.tbody.innerHTML = "";
+    if (!rows.length) {
+      els.empty.textContent = q
+        ? `No faculty match “${els.schoolSearch.value.trim()}”.`
+        : "No faculty match the current filters.";
+      els.empty.classList.remove("hidden");
+      return;
+    }
+    els.empty.classList.add("hidden");
+
+    rows.forEach((f, idx) => {
+      const tr = document.createElement("tr");
+      tr.className = "fac-row";
+      const pills = (f.areas || [])
+        .map((a) => `<span class="fac-tag">${escapeHtml(a)}</span>`)
+        .join("");
+      const hasScholar = Boolean(
+        f.google_scholar_id &&
+          String(f.google_scholar_id).trim() &&
+          String(f.google_scholar_id).toLowerCase() !== "nan"
+      );
+      const nameClass = hasScholar ? "faculty-name" : "faculty-name no-scholar";
+      const nameTitle = hasScholar
+        ? "View counted papers"
+        : "No Google Scholar ID on file";
+      const affilHtml = (f.affiliations || [])
+        .map((a) => {
+          const years = formatAffiliationYears(a);
+          return `<div class="affil-item">
+            <span class="inst-label">${escapeHtml(a.name)}</span>
+            ${a.country ? `<span class="flag" title="${escapeAttr(a.country)}">${escapeHtml(a.country)}</span>` : ""}
+            ${years ? `<span class="affil-years">${escapeHtml(years)}</span>` : ""}
+          </div>`;
+        })
+        .join("");
+      tr.innerHTML = `
+        <td class="col-rank">${idx + 1}</td>
+        <td class="col-inst">
+          <div class="fac-row-name">
+            <button type="button" class="${nameClass}" data-fid="${escapeAttr(f._key || f.faculty_id)}" title="${escapeAttr(nameTitle)}">${escapeHtml(f.name)}</button>
+            ${pills ? `<span class="faculty-tags">${pills}</span>` : ""}
+          </div>
+        </td>
+        <td class="col-count">${formatScore(f._score, metric)}</td>
+        <td class="col-fac">${affilHtml}</td>
+      `;
+      tr.addEventListener("click", (ev) => {
+        if (ev.target.closest("button")) return;
+        if (hasScholar) openFacultyModal(f, state.metric);
+      });
+      const nameBtn = tr.querySelector(".faculty-name");
+      if (nameBtn && hasScholar) {
+        nameBtn.addEventListener("click", (ev) => {
+          ev.stopPropagation();
+          openFacultyModal(f, state.metric);
+        });
+      }
+      els.tbody.appendChild(tr);
+    });
+  }
+
   function render() {
     if (!state.data) return;
     writeHash();
     syncAreaUI();
     updateJournalsBtn();
+    syncApptToggle();
+    syncFacToggle();
 
     const baseView = state.data.views[viewKey()];
     if (!baseView) {
@@ -1154,15 +1484,23 @@
       return;
     }
 
+    els.metricHead.textContent = "Count";
+    els.metricHead.title = metricLabel(state.metric);
+
+    if (state.facultyView) {
+      renderFacultyTable(baseView);
+      return;
+    }
+
     const view = rescoreView(baseView);
     const countries = new Set(els.countries.value.split(","));
     const metric = state.metric;
     const minFac = Math.max(1, Number(els.minFaculty.value) || 1);
     const q = (els.schoolSearch?.value || "").trim().toLowerCase();
-    els.metricHead.textContent = "Count";
-    els.metricHead.title = metricLabel(metric);
 
-    const facultyById = new Map(view.faculty.map((f) => [f.faculty_id, f]));
+    const facultyById = new Map(
+      view.faculty.map((f) => [f._key || f.faculty_id, f])
+    );
     const rows = view.institutions
       .filter((inst) => countries.has(inst.country))
       .filter((inst) => Number(inst.faculty_count) >= minFac)
@@ -1191,6 +1529,9 @@
       const homeLink = home
         ? `<a class="inst-icon" href="${escapeAttr(home)}" target="_blank" rel="noopener" title="Program site" onclick="event.stopPropagation()">⌂</a>`
         : "";
+      const apptMark = inst.by_appointment
+        ? `<span class="appt-mark" title="Counted from faculty appointment years">faculty appointment</span>`
+        : "";
       tr.innerHTML = `
         <td class="col-rank">${idx + 1}</td>
         <td class="inst-name">
@@ -1198,6 +1539,7 @@
           <span class="inst-label">${escapeHtml(inst.name)}</span>
           ${homeLink}
           <span class="flag" title="${escapeAttr(inst.country)}">${escapeHtml(inst.country)}</span>
+          ${apptMark}
         </td>
         <td class="col-count">${formatScore(inst._score, metric)}</td>
         <td class="col-fac">${inst.faculty_count}</td>
@@ -1239,13 +1581,14 @@
             const nameTitle = hasScholar
               ? "View counted papers"
               : "No Google Scholar ID on file";
+            const rankText = f.appointment_span || f.rank || "";
             return `
             <li>
               <div class="faculty-main">
-                <button type="button" class="${nameClass}" data-fid="${escapeAttr(f.faculty_id)}" title="${escapeAttr(nameTitle)}">${escapeHtml(f.name)}</button>
+                <button type="button" class="${nameClass}" data-fid="${escapeAttr(f._key || f.faculty_id)}" title="${escapeAttr(nameTitle)}">${escapeHtml(f.name)}</button>
                 <span class="faculty-tags">${pills}</span>
               </div>
-              <span class="faculty-rank">${escapeHtml(f.rank || "")}</span>
+              <span class="faculty-rank">${escapeHtml(rankText)}</span>
               <span class="score">${formatScore(metricValue(f, facMetric), facMetric)}</span>
             </li>`;
           })
@@ -1342,6 +1685,10 @@
     els.countries.value = h.countries;
     els.minFaculty.value = String(h.minFaculty);
     if (els.schoolSearch) els.schoolSearch.value = h.q || "";
+    state.facultyView = Boolean(h.faculty);
+    state.byAppointment = state.facultyView ? false : Boolean(h.appt);
+    syncApptToggle();
+    syncFacToggle();
     els.metric.innerHTML = state.data.metrics
       .map((m) => `<option value="${m.key}">${m.label}</option>`)
       .join("");
@@ -1461,6 +1808,26 @@
     els.venuesAstar.addEventListener("click", () => setVenues(astarVenueIds()));
     els.venuesA.addEventListener("click", () => setVenues(aAndAstarVenueIds()));
     els.venuesNone.addEventListener("click", () => setVenues([]));
+    if (els.apptToggle) {
+      els.apptToggle.addEventListener("click", () => {
+        const next = !state.byAppointment;
+        state.byAppointment = next;
+        if (next) state.facultyView = false;
+        syncApptToggle();
+        syncFacToggle();
+        render();
+      });
+    }
+    if (els.facToggle) {
+      els.facToggle.addEventListener("click", () => {
+        const next = !state.facultyView;
+        state.facultyView = next;
+        if (next) state.byAppointment = false;
+        syncApptToggle();
+        syncFacToggle();
+        render();
+      });
+    }
     els.expandAll.addEventListener("click", () => {
       const view = state.data.views[viewKey()];
       if (!view) return;

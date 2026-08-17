@@ -8,10 +8,12 @@ Inspired by [CSRankings](https://csrankings.org/), but independent of it. Build 
 
 - Default ranking by **author-adjusted publication counts** (`1/N`) in a curated journal whitelist
 - Switchable metrics: raw count, 1st/2nd/last author, last author, citations, impact-factor sum, and per-faculty averages
-- **Network** tab: coauthorship among current rostered faculty (same journals and years)
+- **Network** tab: coauthorship among faculty with a Google Scholar profile, including past and present program affiliations
 - Continuous publication year range (default ≈ last 10 years)
 - Journals picker: all whitelist titles on by default, grouped by discipline and sorted by impact factor, with IF / JCR / ABDC columns; uncheck to exclude, or use **Q1 only** / **A* only** / **A* & A only**
 - School search in the toolbar
+- **By faculty appointment** toggle: for programs with a faculty timeline, count only papers from years that person was on the roster
+- **Faculty ranking** toggle: sort every person by their full counted paper list (cannot be on together with by faculty appointment)
 - Area filter (Selection, Leadership, Stress / Well-being, Methods, …)
 - Expand an institution to inspect faculty and counted papers
 - Shareable URL hash for the current view
@@ -40,6 +42,7 @@ Open http://127.0.0.1:8000/ — site docs are **How we rank** / **How we network
 | --- | --- |
 | `data/google_scholar.csv` | Google Scholar `user=` IDs used for scoring (source of truth) |
 | `data/faculty.csv` | Curated faculty + homepage ORCID / Google Scholar IDs |
+| `data/faculty_appointments.csv` | Faculty start/end years by program (used by the **by faculty appointment** ranking toggle) |
 | `data/institutions.csv` | U.S./Canada I-O PhD programs (62); `roster_status` marks complete vs seed |
 | `data/venues.json` | Journal whitelist, Clarivate IF, JCR quartile, ABDC rating, areas |
 | `pipeline/` | Scholar import + scoring (`pipeline/cache/` is gitignored) |
@@ -64,4 +67,4 @@ Commit `web/data/rankings.json` and `web/data/coauthor_network.json` so the live
 
 ## Disclaimer
 
-This is a pilot research tool, not an official SIOP/APA ranking. Faculty coverage is incomplete and currently includes **current program faculty only**. Always verify important cases against program websites. See [How we rank](web/docs/ranking.md).
+This is a pilot research tool, not an official SIOP/APA ranking. Faculty coverage is incomplete. The default ranking uses **current program faculty only**; **by faculty appointment** uses historical start/end years where they have been collected ([`data/faculty_appointments.csv`](data/faculty_appointments.csv)). Always verify important cases against program websites. See [How we rank](web/docs/ranking.md).

@@ -293,6 +293,116 @@ def load_faculty() -> pd.DataFrame:
     return apply_scholar_table(pd.read_csv(DATA / "faculty.csv"))
 
 
+def year_or_none(value) -> int | None:
+    if value is None:
+        return None
+    try:
+        if pd.isna(value):
+            return None
+    except (TypeError, ValueError):
+        pass
+    text = str(value).strip()
+    if not text or text.lower() in {"nan", "none", "present"}:
+        return None
+    try:
+        return int(float(text))
+    except (TypeError, ValueError):
+        return None
+
+
+def load_appointments() -> pd.DataFrame:
+    path = DATA / "faculty_appointments.csv"
+    if not path.exists():
+        return pd.DataFrame(
+            columns=[
+                "faculty_id",
+                "name",
+                "institution_id",
+                "start_year",
+                "end_year",
+                "google_scholar_id",
+                "notes",
+            ]
+        )
+    return pd.read_csv(path)
+
+
+def appointments_payload(appts: pd.DataFrame | None = None) -> list[dict]:
+    df = load_appointments() if appts is None else appts
+    rows: list[dict] = []
+    if df.empty:
+        return rows
+    for _, r in df.iterrows():
+        sid = _clean_scholar_id(r.get("google_scholar_id"))
+        rows.append(
+            {
+                "faculty_id": str(r.get("faculty_id") or "").strip(),
+                "name": str(r.get("name") or "").strip(),
+                "institution_id": str(r.get("institution_id") or "").strip(),
+                "start_year": year_or_none(r.get("start_year")),
+                "end_year": year_or_none(r.get("end_year")),
+                "google_scholar_id": sid,
+            }
+        )
+    return [row for row in rows if row["faculty_id"] and row["institution_id"]]
+
+
+def appointment_coverage_ids(appts: pd.DataFrame | None = None) -> list[str]:
+    rows = appointments_payload(appts)
+    return sorted({r["institution_id"] for r in rows})
+
+
+def faculty_universe(*, active_only: bool = False) -> pd.DataFrame:
+    """faculty.csv rows plus appointment-only people (not already on the csv)."""
+    faculty = load_faculty()
+    appts = load_appointments()
+    if active_only:
+        active_mask = faculty["active"].astype(str).str.lower().isin(["true", "1", "yes"])
+        keep_ids = set(faculty.loc[active_mask, "faculty_id"].astype(str))
+        if not appts.empty:
+            keep_ids.update(
+                str(x).strip() for x in appts["faculty_id"].dropna() if str(x).strip()
+            )
+        from_csv = faculty[faculty["faculty_id"].astype(str).isin(keep_ids)].copy()
+    else:
+        from_csv = faculty.copy()
+    have = set(from_csv["faculty_id"].astype(str))
+    extras: list[dict] = []
+    if not appts.empty:
+        for _, appt in appts.iterrows():
+            fid = str(appt.get("faculty_id") or "").strip()
+            if not fid or fid in have:
+                continue
+            extras.append(
+                {
+                    "faculty_id": fid,
+                    "name": str(appt.get("name") or fid).strip(),
+                    "institution_id": str(appt.get("institution_id") or "").strip(),
+                    "homepage": "",
+                    "rank": "",
+                    "active": False,
+                    "notes": str(appt.get("notes") or ""),
+                    "orcid": "",
+                    "google_scholar_id": _clean_scholar_id(appt.get("google_scholar_id")),
+                }
+            )
+            have.add(fid)
+    if extras:
+        from_csv = pd.concat([from_csv, pd.DataFrame(extras)], ignore_index=True)
+    return from_csv.reset_index(drop=True)
+
+
+def faculty_for_publication_fetch() -> pd.DataFrame:
+    """Active roster plus anyone listed in faculty_appointments.csv."""
+    return faculty_universe(active_only=True)
+
+
+def faculty_for_network() -> pd.DataFrame:
+    """Everyone with a Google Scholar ID, including former / appointment-only people."""
+    df = faculty_universe(active_only=False)
+    return df[df["google_scholar_id"].map(has_google_scholar_id)].reset_index(drop=True)
+
+
 def write_scholar_table(faculty: pd.DataFrame) -> None:
     cols = ["faculty_id", "name", "institution_id", "google_scholar_id"]
     df = faculty[cols].copy()
