@@ -8,9 +8,15 @@ A metrics-based ranking of U.S. and Canadian industrial-organizational (I-O) psy
 
 No. It is an independent open project. It does not represent SIOP, APA, or any university.
 
+## Why is UNC Charlotte’s whole Organizational Science faculty in the ranking?
+
+This ranking is by **program**, not by a psychology department. UNC Charlotte’s listed program is [Organizational Science](https://orgscience.charlotte.edu/), an interdisciplinary PhD whose faculty sit in Management, Sociology, Communication Studies, Psychological Science, and related units. Those people are counted because they are faculty of that program — that mix is a program feature, not an extra department being added on.
+
 ## Why journals instead of conferences?
 
-I-O psychology primarily evaluates research through peer-reviewed journals, so the core whitelist is journals. A separate **CS / HCI / ML conferences** group is also on by default: ACL, EMNLP, NAACL, EACL, COLM, ICLR, AAAI, ICML, NeurIPS, CVPR, ECCV, KDD, CHI, CSCW, IUI, and IMWUT. Uncheck that group (or use **Q1 only**) to score journals only. Book chapters and SIOP/AOM meeting papers are still not counted.
+I-O psychology primarily evaluates research through peer-reviewed journals, so the core whitelist is journals. A separate **CS / HCI / ML conferences** group is also on by default: ACL, EMNLP, NAACL, EACL, COLM, ICLR, AAAI, ICML, NeurIPS, CVPR, ECCV, KDD, CHI, CSCW, IUI, and IMWUT. In computer science, papers at these venues are the archival **peer-reviewed publication of record** (full papers, competitive acceptance), not a society-meeting talk. Uncheck that group (or use **Q1 only**) to score journals only.
+
+**SIOP, AOM Proceedings, and similar meeting papers are not counted.** In I-O and management those are conference presentations or short proceedings, not the archival publication of record — the version that “counts” is usually the later journal article. Counting both would double-count the same work. Book chapters are also excluded.
 
 ## What does “adjusted count” mean?
 
@@ -28,7 +34,7 @@ Those views are for exploration. Citation and IF numbers change quickly and can 
 
 ## Why are some well-known faculty missing?
 
-v1 is a **pilot**. Rosters are incomplete until each program is fully curated. The default table uses **current faculty only**. Turn on **by faculty appointment** to score schools that have a faculty timeline in [`data/faculty_appointments.csv`](../../data/faculty_appointments.csv) using only papers from those years (UIUC, Rice, and Minnesota so far). Turn on **faculty ranking** to sort every person by their full counted paper list (this turns off by faculty appointment). See [ranking.md](ranking.md).
+v1 is a **pilot**. Rosters are incomplete until each program is fully curated. The default table uses **current faculty only**. Turn on **by faculty appointment** to score schools that have a faculty timeline in [`data/faculty_appointments.csv`](../../data/faculty_appointments.csv) using only papers from those years (57 programs so far). Turn on **faculty ranking** to sort every person by their full counted paper list (this turns off by faculty appointment). See [ranking.md](ranking.md).
 
 ## Why might a paper be missing?
 

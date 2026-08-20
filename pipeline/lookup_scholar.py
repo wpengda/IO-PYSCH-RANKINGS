@@ -30,6 +30,19 @@ BLOCKED_IDS = {
     "qRrkCbkAAAAJ",  # Andrew F. Hayes PROCESS profile, not Ho Kwan Cheung
     "Io3oUv4AAAAJ",  # Robert Henning, University of Chicago crystallography
     "kZeVQQ0AAAAJ",  # Xiaohong (Violet) Xu, not Stephanie Payne
+    "UlYZ-RQAAAAJ",  # Kibeom Lee HEXACO profile; Scholar/SerpAPI 404
+    "0dpLJtwAAAAJ",  # Nicholas A. Smith lookup match; Scholar 404
+    "prsyEcQAAAAJ",  # different Rebecca Grossman (Columbia/CUMC); Hofstra I-O is s4feQ-wAAAAJ
+    "rmR5rTUAAAAJ",  # lookup hit for Betsy Albritton; Scholar 404 (Clemson page still links it)
+    "wSjJUsMAAAAJ",  # Kibeom Lee Seoul recommender-systems profile, not Calgary HEXACO
+    "Pk540RcAAAAJ",  # Kibeom Lee Gachon University, not Calgary HEXACO
+    "BaN8s-MAAAAJ",  # Aaron G. Schmidt Harvard Medical, not UMN I-O Aaron M. Schmidt
+    "I1VGsbAAAAAJ",  # Ryan E. Grant Queen's, not UNCC Ryan Grant
+    "leaDyIoAAAAJ",  # biomedical Ryan Grant, not UNCC
+    "tfTokuwAAAAJ",  # Kevin Nolan University College Dublin, not Hofstra
+    "tYGzwOIAAAAJ",  # Sophie Meunier Princeton, not UQAM
+    "sdaJew0AAAAJ",  # Xiaowen Chen George Mason, not SLU
+    "xYdlSLMAAAAJ",  # Corey Seemiller (Generation Z / leadership ed), not Wright State I-O Corey E. Miller
 }
 SCHOLAR_ID_RE = re.compile(r"^[A-Za-z0-9_-]{10,16}$")
 SUFFIXES = {"jr", "jr.", "sr", "sr.", "ii", "iii", "iv", "phd", "ph.d."}
@@ -114,11 +127,18 @@ def name_parts(name: str) -> tuple[str, list[str]]:
     return last, given
 
 
+def _name_token_in(hay: str, token: str) -> bool:
+    """Whole-token match so 'miller' does not hit 'Seemiller'."""
+    if not token:
+        return False
+    return re.search(rf"(?<![a-z]){re.escape(token.lower())}(?![a-z])", hay.lower()) is not None
+
+
 def _name_ok_one(hay: str, name: str) -> bool:
     last, given = name_parts(name)
-    if not last or last.lower() not in hay:
+    if not last or not _name_token_in(hay, last):
         return False
-    if given and not any(g.lower() in hay for g in given):
+    if given and not any(_name_token_in(hay, g) for g in given):
         return False
     return True
 

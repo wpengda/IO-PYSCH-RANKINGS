@@ -3,13 +3,13 @@ hulin_charles,Charles L. Hulin,uiuc,1966,2000,,No public Google Scholar profile 
 drasgow_fritz,Fritz Drasgow,uiuc,1982,2022,AXsNFH4AAAAJ,Dean Emeritus LER; inactive on faculty.csv
 fitzgerald_louise,Louise F. Fitzgerald,uiuc,1987,2008,N63MCPgAAAAJ,Professor Emerita; not on current scoring roster
 rounds_james,James Rounds,uiuc,1989,2024,GDTpZuMAAAAJ,Professor Emeritus; inactive on faculty.csv
-rupp_deborah,Deborah E. Rupp,uiuc,2002,2012,ioOrO_MAAAAJ,Now GMU (current faculty.csv)
+rupp_deborah,Deborah E. Rupp,uiuc,2002,2011,ioOrO_MAAAAJ,Now GMU (current faculty.csv); Purdue since 2011 so UIUC ends 2011 (transition year at both)
 kuncel_nathan,Nathan R. Kuncel,uiuc,2003,2005,Li_99XsAAAAJ,Now UMN (current faculty.csv)
 newman_daniel,Daniel A. Newman,uiuc,2008,,CrOaqpsAAAAJ,Current UIUC faculty
 carpenter_nichelle,Nichelle C. Carpenter,uiuc,2012,2016,GWVk-EgAAAAJ,Left for South Carolina then Rutgers; not on current scoring roster
 liu_yihao,Yihao Liu,uiuc,2017,2023,Xu1s0FIAAAAJ,Now UGA Terry Management; not on current scoring roster
 alexander_leo,Leo Alexander III,uiuc,2022,,oNYBNlcAAAAJ,Current UIUC faculty; I-O / LER joint
-zhang_bo,Bo Zhang,uiuc,2022,,S4qQ-3AAAAAJ,Current UIUC faculty; I-O / LER joint
+zhang_bo,Bo Zhang,uiuc,2022,,S4qQ-3AAAAAJ,Current UIUC faculty; I-O / LER joint; TAMU 2020–2022 also listed
 min_hanyi,Hanyi Min,uiuc,2024,,WhlHwoEAAAAJ,Current UIUC faculty; also Haylee Min; I-O / LER joint
 dunnette_marvin,Marvin D. Dunnette,umn,1961,1998,,No public Google Scholar profile found
 campbell_john,John P. Campbell,umn,1966,2016,,No public Google Scholar profile found; Professor Emeritus; died 2025
@@ -18,20 +18,513 @@ ones_deniz,Deniz S. Ones,umn,1996,,RfAFQMQAAAAJ,Current UMN faculty
 sackett_paul,Paul R. Sackett,umn,1998,,TXKXrhYAAAAJ,Current UMN faculty
 bono_joyce,Joyce E. Bono,umn,2001,2007,pWKcSCsAAAAJ,Left UMN; now University of Florida
 kuncel_nathan,Nathan R. Kuncel,umn,2005,,Li_99XsAAAAJ,Current UMN faculty; UIUC 2003–2005 also listed
-schmidt_aaron,Aaron M. Schmidt,umn,2010,,,"Start year approximate (~2010); no public Google Scholar profile; current UMN faculty"
+schmidt_aaron,Aaron M. Schmidt,umn,2010,,,Start year approximate (~2010); no public Google Scholar profile; current UMN faculty
 landers_richard,Richard N. Landers,umn,2018,,wMsVHFYAAAAJ,Current UMN faculty
 dipboye_robert,Robert L. Dipboye,rice,1978,2004,zTkyXpMAAAAJ,Left Rice; later UCF
 quinones_miguel,Miguel A. Quiñones,rice,1993,2003,_EIWn5sAAAAJ,Left Rice; now University of Richmond
 hebl_mikki,Michelle R. Hebl,rice,1998,,CCOSnCEAAAAJ,Current Rice faculty; also Mikki Hebl
 beier_margaret,Margaret E. Beier,rice,2004,,h9TnggYAAAAJ,Current Rice faculty
-beal_daniel,Daniel J. Beal,rice,2004,2012,dphppLQAAAAJ,Left Rice; now Virginia Tech Pamplin
+beal_daniel,Daniel J. Beal,rice,2004,2012,dphppLQAAAAJ,CV: Rice assistant July 2004–June 2011; associate through June 2012; then UTSA then VT Pamplin
 motowidlo_stephan,Stephan J. Motowidlo,rice,2005,2019,nkq2kBQAAAAJ,Professor Emeritus; inactive on faculty.csv
 oswald_fred,Frederick L. Oswald,rice,2008,2025,jWlqGZcAAAAJ,Left Rice I-O roster
 oswald_fred,Frederick L. Oswald,uci,2026,,jWlqGZcAAAAJ,University of California Irvine 2026–present
 villado_anton,Anton J. Villado,rice,2008,2016,4s6iN2AAAAAJ,Left Rice; now Amazon
-salas_eduardo,Eduardo Salas,rice,2015,,pzOYmE0AAAAJ,Current Rice faculty
+salas_eduardo,Eduardo Salas,rice,2015,,pzOYmE0AAAAJ,Current Rice faculty; previously UCF 1999–2015
 king_eden,Eden B. King,rice,2017,,6gtdKWcAAAAJ,Current Rice faculty
 king_danielle,Danielle King Jordan,rice,2018,,qS6aIMUAAAAJ,Current Rice faculty
 brossoit_rebecca,Rebecca Brossoit,rice,2024,,2_YzRxkAAAAJ,Current Rice faculty
-sun_tianjun,Tianjun Sun,rice,2024,,dn24ECQAAAAJ,Current Rice faculty
+sun_tianjun,Tianjun Sun,rice,2024,,dn24ECQAAAAJ,Current Rice faculty; previously Kansas State 2021–2024
 lebreton_james,James M. LeBreton,rice,2026,,RXXhYO0AAAAJ,Current Rice faculty; formerly Penn State
+ackerman_phillip,Phillip L. Ackerman,umn,1984,1997,YCmbxfIAAAAJ,Later Georgia Tech; current GT faculty
+ostroff_cheri,Cheri Ostroff,umn,1991,1993,zdSrW0AAAAAJ,UMN years from LinkedIn; Scholar profile verified
+landy_frank,Frank J. Landy,psu,1969,1995,,Obituary: taught 26 years from 1969; died 2010; no public Google Scholar profile found
+farr_james,James L. Farr,psu,1971,2013,4NAXGXgAAAAJ,Professor Emeritus July 2013; official PSU history joined 1971
+jacobs_rick,Rick R. Jacobs,psu,1979,2019,AjwKYsoAAAAJ,Retired 2019 after 40 years; PSU news; inactive on faculty.csv
+mathieu_john,John E. Mathieu,psu,1985,1999,EjYMg1MAAAAJ,PSU assistant through professor; UConn School of Business from 1999
+simkins_susan,Susan J. Simkins,psu,1996,,jHzOVXYAAAAJ,Official PSU history; formerly Mohammed; current faculty
+grandey_alicia,Alicia A. Grandey,psu,1999,,TYnFrXMAAAAJ,Official PSU history; current faculty
+lebreton_james,James M. LeBreton,psu,2013,2025,RXXhYO0AAAAJ,Official PSU history; Rice 2026–
+graham_baylor,Baylor A. Graham,psu,2024,,3_-_jfIAAAAJ,Start year approximate (~2024); Clemson PhD then UTA postdoc; current PSU faculty
+brooks_ricardo,Ricardo R. Brooks,psu,2024,,Pi2a1hkAAAAJ,Start year approximate (~2024); PhD Albany 2024; current PSU faculty
+schmitt_neal,Neal Schmitt,msu,1974,2011,,MSU Today: joined 1974 retired 2011; no public Google Scholar profile found
+ilgen_dan,Daniel R. Ilgen,msu,1983,2010,,Hannah Distinguished Professor Emeritus; end year approximate (~2010); MSU Scholar link 404; no public profile found
+ford_kevin,J. Kevin Ford,msu,1983,,eXNjTPIAAAAJ,CV: assistant January 1983; current faculty
+kozlowski_steve,Steve W. J. Kozlowski,msu,1982,2020,XEjiPNEAAAAJ,ORCID: MSU 1982–August 2020; now USF
+chao_georgia,Georgia T. Chao,msu,1985,2020,pOWIQxgAAAAJ,Joined MSU 1985; moved to USF with Kozlowski ~2020; now USF
+ostroff_cheri,Cheri Ostroff,msu,1983,1987,zdSrW0AAAAAJ,LinkedIn: MSU 1983–1987; later Minnesota
+ryan_annmarie,Ann Marie Ryan,msu,1996,2024,nD6g6YsAAAAJ,Retired 1 Jan 2025
+deshon_richard,Richard P. DeShon,msu,1993,2024,dTBmVogAAAAJ,CV: assistant 1993; MSU directory Professor Emeritus as of 2026; end year approximate
+chang_daisy,Chu-Hsiang (Daisy) Chang,msu,2010,,AVKtyvAAAAAJ,CV: assistant August 2010; current faculty; Roosevelt 2005–2007 and USF EOH 2007–2010 also listed
+nye_christopher,Christopher D. Nye,msu,2013,,mubiyMIAAAAJ,LinkedIn: assistant July 2013 after BGSU; current faculty
+carter_nathan,Nathan T. Carter,msu,2022,,QIjATukAAAAJ,MSU news October 2022; current faculty
+hoff_kevin,Kevin A. Hoff,msu,2022,,fvfo6KwAAAAJ,MSU news 2022 from Houston; current faculty
+silver_elisabeth,Elisabeth Silver,msu,2025,,JrigXcIAAAAJ,MSU news October 2025 new TT; current faculty
+lord_robert,Robert G. Lord,uakron,1974,2012,1IELMs8AAAAJ,Vita: first appointment 15 Sep 1974; Durham 2013
+doverspike_dennis,Dennis Doverspike,uakron,1984,2017,rX1mCNAAAAAJ,Vita: first appointment 1 Sep 1984; full-time through 2017 then part-time emeritus
+levy_paul,Paul E. Levy,uakron,1989,,KnOIC2AAAAAJ,Vita: first appointment 29 Aug 1989; current faculty
+hall_rosalie,Rosalie J. Hall,uakron,1988,2012,jAS6JTUAAAAJ,Start year approximate (~1988); Akron emeritus; Durham with Lord ~2013
+snell_andrea,Andrea F. Snell,uakron,1996,,W39kP8YAAAAJ,Start year approximate (~1996); PhD Georgia 1995; current faculty
+elicker_joelle,Joelle D. Elicker,uakron,2001,,D7_KI6oAAAAJ,Start year approximate (~2001); PhD Akron 2000; current faculty
+diefendorff_james,James M. Diefendorff,uakron,2006,2026,tiXCOg0AAAAJ,CV: assistant 2006; left June 2026 for Arkansas Walton; CU Denver 2004–2006 also listed
+thorntonlugo_meghan,Meghan A. Thornton-Lugo,uakron,2020,,iv8X37AAAAAJ,LinkedIn: assistant August 2020; current faculty
+siuta_rose,Rose L. Siuta,uakron,2024,,,Start year approximate (~2024); PhD 2024; current faculty; no public Google Scholar profile found
+kanfer_ruth,Ruth Kanfer,gatech,1997,2025,22Ph80MAAAAJ,UMN 1984–1997; GT until death August 2025
+ackerman_phillip,Phillip L. Ackerman,gatech,1997,,YCmbxfIAAAAJ,UMN 1984–1997; GT 1997–present
+weiss_howard,Howard M. Weiss,gatech,2012,2022,zhUj2-oAAAAJ,Purdue 1975–2012; GT chair 2012–2017; emeritus 2022; died February 2023
+wiese_christopher,Christopher W. Wiese,gatech,2018,,sYILK6YAAAAJ,ORCID: assistant August 2018; current faculty
+guion_robert,Robert M. Guion,bgsu,1952,1998,,Official BGSU I-O history; retired 1998; died 2012; no public Google Scholar profile found
+smith_patricia,Patricia Cain Smith,bgsu,1966,1980,,Official BGSU history and Doherty department history; died 2007; no public Google Scholar profile found
+balzer_william,William K. Balzer,bgsu,1983,2019,,Official BGSU history joined 1983; emeritus; end year approximate (~2019)
+smith_carlla,Carlla S. Smith,bgsu,1985,2002,,Official BGSU history; died July 2002; no public Google Scholar profile found
+ryan_annmarie,Ann Marie Ryan,bgsu,1987,1996,nD6g6YsAAAAJ,Official BGSU former faculty list; later Michigan State
+hakel_milton,Milton D. Hakel,bgsu,1991,2009,,Ohio Eminent Scholar 1991; retired 2009 when Highhouse named Eminent Scholar
+rogelberg_steven,Steven G. Rogelberg,bgsu,1994,2003,XXtn9GcWxe4C,CV: assistant 1994 associate 2000–2003; now UNC Charlotte
+highhouse_scott,Scott Highhouse,bgsu,1997,,-n4MwyUAAAAJ,Official BGSU history 1997; current faculty
+zickar_michael,Michael J. Zickar,bgsu,1997,,obkeqTgAAAAJ,Official BGSU history 1997; current faculty
+stanton_jeffrey,Jeffrey M. Stanton,bgsu,1997,2001,0UPnd6oAAAAJ,Doherty department history 1997–2001; later Syracuse
+jex_steve,Steve M. Jex,bgsu,2002,2017,L0gVAw4AAAAJ,CV: BGSU 2002–2017; now UCF
+fritz_charlotte,Charlotte Fritz,bgsu,2005,2009,HjqdbjQAAAAJ,OHSU bio: BGSU assistant 2005–2009; then Portland State
+brooks_margaret,Margaret E. Brooks,bgsu,2006,,Tz9tznkAAAAJ,BGSU management page: assistant August 2006; current dual appointment
+nye_christopher,Christopher D. Nye,bgsu,2011,2013,mubiyMIAAAAJ,Official BGSU history 2011; later Michigan State
+matthews_russell,Russell A. Matthews,bgsu,2012,2017,JJ8uqnkAAAAJ,LinkedIn: BGSU 2012–2017; now University of Alabama
+barratt_clare,Clare L. Barratt,bgsu,2014,,MLDrYREAAAAJ,Official BGSU history 2014; current faculty
+mcabee_samuel,Samuel T. McAbee,bgsu,2017,,JKCK2p0AAAAJ,Official BGSU history 2017; current faculty
+keith_melissa,Melissa G. Keith,bgsu,2019,,ix0bMCcAAAAJ,Official BGSU history 2019; current faculty
+bass_alan,Alan R. Bass,wayne,1964,1997,,Wayne memorial: I-O director; retired 1997; start year approximate (~1964)
+fisicaro_sebastian,Sebastiano A. Fisicaro,wayne,1989,2018,,Wayne memorial: I-O faculty 1989 until retirement 2018; died 2022
+dickson_marcus,Marcus W. Dickson,wayne,1997,,xhXn61QAAAAJ,PhD Maryland 1997; current Wayne I-O area head
+baltes_boris,Boris B. Baltes,wayne,1998,2025,6O-V-4MAAAAJ,CV: assistant 1998; CLAS memorial 2025
+brooks_margaret,Margaret E. Brooks,wayne,2004,2006,Tz9tznkAAAAJ,BGSU page: Wayne assistant August 2004–May 2006
+obrien_kimberly,Kimberly E. O'Brien,wayne,2008,2010,-K55amsAAAAJ,Official CMU page: Wayne assistant two years before CMU 2010; LinkedIn August 2008–August 2010
+rudolph_cort,Cort W. Rudolph,wayne,2023,,Z9W6egsAAAAJ,CV: Wayne full professor August 2023–present after SLU; PhD Wayne 2011
+speer_andrew,Andrew B. Speer,wayne,2017,2023,oNcmwSsAAAAJ,IU Kelley CV: Wayne 2017–2023; now IU
+chang_yingyi,Yingyi Chang,wayne,2024,,3FuemZsAAAAJ,LinkedIn: assistant August 2024; current faculty
+levine_edward,Edward L. Levine,usf,1973,2020,,USF emeritus 2020; start year approximate (~1973); no public Google Scholar ID found
+spector_paul,Paul E. Spector,usf,1982,2020,-Nh7u54AAAAJ,Personal site: returned to USF 1982; retired 2020 distinguished professor
+coovert_michael,Michael D. Coovert,usf,1985,2020,uCBg0zsAAAAJ,USF Professor Emeritus 2020; start year approximate (~1985)
+brannick_michael,Michael T. Brannick,usf,1987,2020,,USF Professor Emeritus 2020; start year approximate (~1987)
+borman_walter,Walter C. Borman,usf,1990,2020,,LinkedIn: professor USF August 1990–May 2020; emeritus
+allen_tammy,Tammy D. Allen,usf,1996,,C8nePQUAAAAJ,PhD Tennessee 1996; current Distinguished University Professor
+stark_stephen,Stephen Stark,usf,2002,,D7710wUAAAAJ,PhD Illinois 2002; current faculty
+gillespie_michael,Michael A. Gillespie,usf,2012,,PxNBgYUAAAAJ,BGSU School of Leadership 2008–2011 then USF; USF start year approximate (~2012)
+kozlowski_steve,Steve W. J. Kozlowski,usf,2020,,XEjiPNEAAAAJ,ORCID: USF from August 2020; previously MSU
+chao_georgia,Georgia T. Chao,usf,2020,,pOWIQxgAAAAJ,Moved to USF with Kozlowski ~2020; current area director
+smith_claire,Claire E. Smith,usf,2022,,olYdTMEAAAAJ,PhD BGSU 2021 then USF aging postdoc; start year approximate (~2022)
+griffin_daniel,Daniel Griffin,usf,2023,,Vplvdo0AAAAJ,PhD MSU 2023; current faculty
+hou_daphne,Daphne Xin Hou,usf,2025,,OCBbe2QAAAAJ,PhD Purdue 2025; current faculty
+arthur_winfred,Winfred Arthur Jr.,tamu,1987,,TjxUECcAAAAJ,Vita: assistant September 1987–present; current faculty
+payne_stephanie,Stephanie C. Payne,tamu,2000,,ilhYOKgAAAAJ,Vita: July 2000–present; current faculty
+bergman_mindy,Mindy E. Bergman,tamu,2001,,G-AO9gsAAAAJ,TAMU I-O materials: faculty since 2001; current faculty
+sabat_isaac,Isaac E. Sabat,tamu,2016,2023,A0Mhl98AAAAJ,LinkedIn: TAMU assistant August 2016–2023; now Houston
+zhu_ze,Ze (Mia) Zhu,tamu,2024,,nHECmAQAAAAJ,ORCID: assistant July 2024–present; current faculty
+hughes_ian,Ian M. Hughes,tamu,2025,,GynUkBgAAAAJ,Vita: assistant August 2025–present; previously NCSU 2023–2025
+brummel_bradley,Bradley J. Brummel,uh,2023,,s4jQwowAAAAJ,LinkedIn: professor August 2023–present; previously Tulsa
+sabat_isaac,Isaac E. Sabat,uh,2023,,A0Mhl98AAAAJ,LinkedIn: associate August 2023–present; previously TAMU
+mehta_paras,Paras D. Mehta,uh,2001,,4tefno0AAAAJ,UH hire date 24 September 2001; current faculty
+litson_kaylee,Kaylee Litson,uh,2023,,2Te_TMEAAAAJ,UH I-O newsletter: joined 2023; current faculty
+reyes_denise,Denise L. Reyes,uh,2021,,iaXc6NYAAAAJ,UH I-O newsletter: started 2021; current faculty
+eby_lillian,Lillian T. Eby,uga,1996,2025,OQZWpqMAAAAJ,CV: UGA 1996–2025; Distinguished Research Professor Emerita
+liu_yihao,Yihao Liu,uga,2023,,Xu1s0FIAAAAJ,Terry directory: UGA Management associate after UIUC 2017–2023; LinkedIn May 2023–present; not Psychology I-O roster
+hoffman_brian,Brian J. Hoffman,uga,2006,,lnPPKZUAAAAJ,CV: assistant August 2006–present; current faculty
+carter_nathan,Nathan T. Carter,uga,2012,2022,QIjATukAAAAJ,UGA CV: assistant 2012–2017; later Michigan State 2022
+carter_nathan,Nathan T. Carter,ucf,2010,2012,QIjATukAAAAJ,MSU CV: UCF assistant 2010–2012 then UGA 2012
+clark_malissa,Malissa A. Clark,uga,2013,,WqcFrlsAAAAJ,LinkedIn: assistant June 2013–present; current faculty
+shockley_kristen,Kristen M. Shockley,baruch,2010,2016,iebwc7MAAAAJ,LinkedIn: Baruch assistant August 2010–July 2015 associate through July 2016; then UGA
+shockley_kristen,Kristen M. Shockley,uga,2016,2023,iebwc7MAAAAJ,LinkedIn and UGA IOPSA Fall 2016 newsletter: joined UGA Fall 2016; left June 2023 for Auburn Harbert
+he_yimin,Yimin He,uga,2023,,ECRFCggAAAAJ,ORCID: UGA from June 2023; current faculty
+olenick_jeffrey,Jeffrey Olenick,uga,2023,,j2_Rn98AAAAJ,CV: assistant August 2023–present; current faculty
+robertson_melissa,Melissa M. Robertson,uga,2023,,GxOOhMwAAAAJ,UGA newsletter: hired Fall 2023 from Purdue; current faculty
+ehrhart_mark,Mark G. Ehrhart,ucf,2017,,9ER5GqgAAAAJ,CV: professor UCF 2017–present after SDSU 2001–2017; program director
+jex_steve,Steve M. Jex,ucf,2017,2024,L0gVAw4AAAAJ,CV: UCF professor 2017–May 2024; emeritus 2024
+shoss_mindy,Mindy K. Shoss,ucf,2015,,0MfACZAAAAAJ,CV: associate 2015; professor 2022–present
+fritzsche_barbara,Barbara A. Fritzsche,ucf,1996,,2xypKcwAAAAJ,Vita: assistant 1996–present; current faculty
+su_shiyang,Shiyang Su,ucf,2018,,QgTb0MMAAAAJ,CV: visiting 2017–2018 then assistant 2018–present; TT start used
+bowling_nathan,Nathan A. Bowling,ucf,2022,,MGKS_rYAAAAJ,CV: UCF December 2022–present; previously Wright State
+lenoble_chelsea,Chelsea LeNoble,ucf,2022,,uN9yD3IAAAAJ,CV: assistant August 2022–present; current faculty
+min_hanyi,Hanyi Min,ucf,2018,2021,WhlHwoEAAAAJ,CV: assistant August 2018–August 2021; later Penn State then UIUC 2024
+salas_eduardo,Eduardo Salas,ucf,1999,2015,pzOYmE0AAAAJ,CV: UCF professor June 1999–June 2015 supporting I-O doctoral program; now Rice
+min_hanyi,Hanyi Min,psu,2021,2023,WhlHwoEAAAAJ,ORCID: PSU assistant 2021-08-13 to 2023-12-31; then UIUC January 2024
+french_kimberly,Kimberly A. French,gatech,2018,2023,ekl67gcAAAAJ,CV: GT assistant January 2018–August 2023; now Colorado State
+fletcher_keaton,Keaton A. Fletcher,gatech,2019,2023,Z38glpIAAAAJ,LinkedIn: GT assistant July 2019–August 2023; now Colorado State
+hoff_kevin,Kevin A. Hoff,uh,2019,2022,fvfo6KwAAAAJ,CV: UH I-O assistant 2019–2022; then MSU 2022
+dik_bryan,Bryan J. Dik,csu,2005,,lJz8HB4AAAAJ,CV: assistant 2005; current official CSU I-O faculty
+fisher_gwen,Gwenith G. Fisher,csu,2013,,MU4Y7VYAAAAJ,ORCID: CSU from 15 August 2013; current faculty
+fletcher_keaton,Keaton A. Fletcher,csu,2023,,Z38glpIAAAAJ,LinkedIn: assistant August 2023 from Georgia Tech; current faculty
+french_kimberly,Kimberly A. French,csu,2023,,ekl67gcAAAAJ,CV: assistant August 2023 from Georgia Tech; current faculty
+gardner_danielle,Danielle M. Gardner,csu,2021,,CumJXukAAAAJ,CSU I-O 2021 newsletter: joined fall 2021; current faculty
+gibbons_alyssa,Alyssa M. Gibbons,csu,2007,,,CV: assistant 2007–present; current faculty; no public Google Scholar ID
+prasad_josh,Joshua J. Prasad,csu,2019,,JVRH_s0AAAAJ,CSU I-O newsletter: joined fall 2019; current faculty
+byrne_zinta,Zinta S. Byrne,csu,2002,2022,_paRTucAAAAJ,2008 CV: assistant August 2002; LinkedIn emerita from May 2022
+crain_tori,Tori L. Crain,csu,2015,2020,qUIckLcAAAAJ,CSU I-O newsletter: I-O faculty 2015; left spring 2020 for PDX
+crain_tori,Tori L. Crain,pdx,2020,,qUIckLcAAAAJ,PDX catalog: appointed 2020; official PDX I-O core
+paolettihatcher_jensine,Jensine Paoletti-Hatcher,pdx,2024,,J_GbL8MAAAAJ,PDX catalog: appointed 2024; official PDX I-O core
+randall_jason,Jason G. Randall,pdx,2023,,cT8LWcUAAAAJ,PDX catalog 2023; ORCID assistant 16 September 2023; current faculty
+fritz_charlotte,Charlotte Fritz,pdx,2009,2023,HjqdbjQAAAAJ,OHWC bio: PDX assistant Fall 2009 after BGSU; catalog appointed 2009 through 2022–23 bulletin
+martinez_larry,Larry R. Martinez,pdx,2016,2024,4CYnkDYAAAAJ,PDX catalog appointed 2016; LinkedIn assistant September 2016 then associate through July 2024; now UTA
+yang_liuqin,Liu-Qin Yang,pdx,2009,,arBLOxAAAAAJ,PDX catalog: appointed 2009; official PDX I-O core
+sinclair_robert,Robert R. Sinclair,pdx,2000,2008,p5lATEUAAAAJ,ORCID: Portland State 2000–2008; later Clemson
+zaccaro_stephen,Stephen J. Zaccaro,gmu,1988,,EtEt5w0AAAAJ,Start year from LinkedIn (September 1988); current TT I-O
+dalal_reeshad,Reeshad S. Dalal,gmu,2007,,QkDLr-MAAAAJ,Official GMU bio: joined August 2007 after Purdue; current TT I-O
+kaplan_seth,Seth A. Kaplan,gmu,2006,,Qlhi2hEAAAAJ,Start year approximate (~2006); LinkedIn assistant August 2006; current TT I-O
+kuykendall_lauren,Lauren E. Kuykendall,gmu,2015,,w1u2dLoAAAAJ,Official GMU bio: joined after Purdue PhD 2015; LinkedIn assistant August 2015
+lee_philseok,Philseok Lee,gmu,2018,,aNGET7sAAAAJ,Start year approximate (~2018); LinkedIn SDSU 2016–2018 then GMU; current TT I-O
+liang_yijue,Yijue Liang,gmu,2022,,HRORhnAAAAAJ,LinkedIn: assistant August 2022 after UIUC LER PhD; current TT I-O
+rupp_deborah,Deborah E. Rupp,gmu,2019,,ioOrO_MAAAAJ,Official GMU bio: joined Fall 2019 from Purdue; UIUC 2002–2011 also listed
+cortina_jose,Jose M. Cortina,gmu,1996,2017,a3Mt8EQAAAAJ,EuroPass CV: GMU I-O 1996–2017; ORCID VCU professor from August 2017
+king_eden,Eden B. King,gmu,2006,2017,6gtdKWcAAAAJ,Mason Spirit: joined 2006 after Rice PhD; WIA Report: 11 years then Rice 2017
+buffardi_louis,Louis C. Buffardi,gmu,1971,2012,M2YQX5IAAAAJ,Official GMU I-O bio: began teaching 1971; Mason Spirit 2012 retirement interview
+mumford_michael,Michael D. Mumford,gmu,1989,1994,mink4SYAAAAJ,OU vita: GMU associate professor of industrial psychology 1989–1994
+klimoski_richard,Richard J. Klimoski,gmu,1996,2024,M7DkznEAAAAJ,Start year approximate (~1996); official GMU retirees 2024 list: Business and Psychology 28 years 4 months
+tetrick_lois,Lois E. Tetrick,gmu,2003,,5vKyvtMAAAAJ,LinkedIn: professor August 2003–present from Houston I-O director; ION March 2003 hire announcement; GMU catalog University Professor Emerita; not on current I-O scoring roster
+stokes_garnett,Garnett S. Stokes,uga,1985,2011,,Official UGA bio: TT assistant 1985; left 2011 for FSU provost
+kuhnert_karl,Karl W. Kuhnert,uga,1989,2017,2XgUDAgAAAAJ,LinkedIn: associate August 1989–January 2017; later Emory
+lance_charles,Charles E. Lance,uga,1984,2014,,LinkedIn: professor of I-O September 1984–June 2014; official UGA retired professor
+lautenschlager_gary,Gary Lautenschlager,uga,1982,2020,xgX6IYEAAAAJ,LinkedIn: January 1982; IOPSA Fall 2020 newsletter: retired December 2020
+thomas_kecia,Kecia M. Thomas,uga,1993,2020,rS2BqxsAAAAJ,UGA CV: assistant 1993; UGA news: dean at UAB starting August 2020 after 27 years
+hanges_paul,Paul J. Hanges,umd,1986,,oEWUNuMAAAAJ,Start year from LinkedIn (assistant August 1986 after Akron PhD); current SDOS/I-O
+grand_james,James A. Grand,umd,2014,,Y1w9_1oAAAAJ,Personal CV: UMD assistant August 2014; associate August 2021–present
+wessel_jennifer,Jennifer L. Wessel,umd,2014,,m_tEihAAAAAJ,Start year approximate (~2014); LinkedIn assistant August 2014 after Akron; current SDOS/I-O
+phetmisy_cassandra,Cassandra Phetmisy,umd,2024,,wCqCJlgAAAAJ,Official BSOS: new faculty 2024–25 after Rice PhD; LinkedIn August 2024
+schneider_benjamin,Benjamin Schneider,umd,1971,1979,MY5QAxkAAAAJ,Prabook/Who's Who: UMD professor 1971–1979 then MSU Hannah chair
+schneider_benjamin,Benjamin Schneider,umd,1982,2003,MY5QAxkAAAAJ,LinkedIn: UMD professor/I-O program head 1982–2003; retired from Maryland 2003
+gelfand_michele,Michele J. Gelfand,umd,1996,2021,s6Q6ebMAAAAJ,NAS/Stanford: UMD Psychology 1996–2021; Stanford GSB 2021–
+goldstein_irwin,Irwin L. Goldstein,umd,1966,2003,,Official USM news: joined UMCP psychology 1966; BSOS dean 1991–2003
+tiffin_joseph,Joseph Tiffin,purdue,1938,1971,,Start year approximate (~1938); retired 1971 as Professor Emeritus of Industrial Psychology
+lawshe_charles,Charles H. Lawshe,purdue,1941,1964,,Start year approximate (~1941); PhD Purdue 1940; later School of Technology dean
+mccormick_ernest,Ernest J. McCormick,purdue,1948,1977,,American Men of Science: began teaching psychology at Purdue 1948; end year approximate (~1977)
+brogden_hubert,Hubert E. Brogden,purdue,1964,1979,,Local obituary: professor of psychology 1964–1979 then emeritus
+naylor_james,James C. Naylor,purdue,1968,1986,,Obituary: returned 1968 as department head then faculty until Ohio State chair 1986
+ilgen_dan,Daniel R. Ilgen,purdue,1972,1983,,Prabook: assistant through professor 1972–1983; later MSU
+weiss_howard,Howard M. Weiss,purdue,1975,2012,zhUj2-oAAAAJ,Purdue I-O news and SIOP obituary: joined 1975; left 2012 for Georgia Tech
+woo_sang,Sang Eun Woo,purdue,2009,,NRkfBhQAAAAJ,Purdue Today: joined faculty 2009; current faculty
+dalal_reeshad,Reeshad S. Dalal,purdue,2003,2007,QkDLr-MAAAAJ,Official GMU bio: four years at Purdue before Mason August 2007
+rupp_deborah,Deborah E. Rupp,purdue,2011,2019,ioOrO_MAAAAJ,Women in Academia Report: at Purdue since 2011 after Illinois; GMU profile: left Fall 2019
+tay_louis,Louis Tay,purdue,2012,,5_1xpscAAAAJ,LinkedIn: assistant December 2012; current faculty
+su_rong,Rong Su,purdue,2014,2017,vODzQzIAAAAJ,LinkedIn: assistant August 2014–May 2017 then Iowa Tippie
+kung_franki,Franki Y. H. Kung,purdue,2018,,sw-zZF0AAAAJ,LinkedIn: assistant August 2018; associate 2024; current faculty
+song_chelsea,Q. Chelsea Song,purdue,2018,2023,Pv7iFocAAAAJ,Kelley CV: assistant I-O Psychological Sciences 2018–2023; now IU Kelley
+behrend_tara,Tara S. Behrend,purdue,2020,2023,9jEw4s0AAAAJ,CV: associate 2020–2023 then MSU HRLR August 2023
+robertson_melissa,Melissa M. Robertson,purdue,2020,2023,GxOOhMwAAAAJ,CV: assistant August 2020–May 2023; now UGA
+macnamara_brooke,Brooke N. Macnamara,purdue,2024,,dKPihKcAAAAJ,CV: associate with tenure 2024–present; previously Case Western 2014–2024
+harriswatson_alex,Alexandra Harris-Watson,purdue,2024,,VaqrGQoAAAAJ,ORCID/LinkedIn: assistant August 2024; current faculty
+meade_adam,Adam W. Meade,ncsu,2002,,o3ZbR_0AAAAJ,CV: assistant Fall 2002; current professor
+craig_bart,S. Bartholomew Craig,ncsu,2002,,UogJDo8AAAAJ,Start year approximate (~2002); PhD Virginia Tech 2002; current faculty
+foster_lori,Lori Foster,ncsu,2004,,,CV: assistant August 2004; current professor; no public Google Scholar ID
+reichin_sydney,Sydney L. Reichin,ncsu,2024,,X-RXoNwAAAAJ,CHASS news: joined as assistant professor 2024
+mcchesney_jenna,Jenna McChesney,ncsu,2026,,ufCRd2YAAAAJ,faculty.csv: incoming TT started July 2026
+hughes_ian,Ian M. Hughes,ncsu,2023,2025,GynUkBgAAAAJ,Vita: NCSU assistant August 2023–July 2025; now TAMU
+steelejohnson_debra,Debra Steele-Johnson,wright,1995,,,LinkedIn: assistant September 1995; current professor; no public Google Scholar ID
+miller_corey,Corey E. Miller,wright,2000,,,WSU BOT minutes: appointed assistant effective 1 September 2000; Scholar xYdlSLMAAAAJ is Corey Seemiller not this I-O faculty
+lahuis_david,David M. LaHuis,wright,2003,,_Q1k5eoAAAAJ,Official Wright profile: joined Psychology 2003
+bowling_nathan,Nathan A. Bowling,wright,2005,2022,MGKS_rYAAAAJ,CV: assistant August 2005; left December 2022 for UCF
+burns_gary,Gary N. Burns,wright,2008,2018,fQpVNQUAAAAJ,LinkedIn: assistant January 2008; left August 2018 for FIT
+baker_nathan,Nathan Baker,wright,2025,,TnosyFsAAAAJ,Official Wright profile: joined 2025; LinkedIn July 2025
+mccord_mallory,Mallory A. McCord,odu,2022,2026,c2TKbj0AAAAJ,LinkedIn: ODU I-O assistant July 2022–May 2026
+mccord_mallory,Mallory A. McCord,wright,2026,,c2TKbj0AAAAJ,LinkedIn: Wright State I-O assistant May 2026–present supporting HFIO; official people.wright.edu Psychology page; Scholar still lists ODU email
+taylor_maryanne,Mary Anne Taylor,clemson,1991,,,LinkedIn: I-O professor January 1991–present; no public Google Scholar ID
+pury_cynthia,Cynthia Pury,clemson,1997,,jstExUUAAAAJ,LinkedIn: August 1997–present
+raymark_patrick,Patrick Raymark,clemson,1998,,DUaGhN8AAAAJ,Official Clemson profile: arrived 1998 after Ohio State
+britt_thomas,Thomas W. Britt,clemson,2000,,hlEVHFEAAAAJ,Clemson News: joined 2000
+kowalski_robin,Robin Kowalski,clemson,2003,,IroDjIkAAAAJ,CV: full professor Clemson 2003–present
+rosopa_patrick,Patrick J. Rosopa,clemson,2007,,k9FadEgAAAAJ,LinkedIn: assistant August 2007–present
+sinclair_robert,Robert R. Sinclair,clemson,2008,,p5lATEUAAAAJ,ORCID: joined Clemson 2008 after Portland State
+shuffler_marissa,Marissa Shuffler,clemson,2013,,Pv6vHP8AAAAJ,Clemson News: joining Department of Psychology 2013
+traylor_allison,Allison Traylor,clemson,2022,,9FhHossAAAAJ,Clemson News: postdoc 2021 then assistant professor 2022
+vanfossen_jenna,Jenna Van Fossen,clemson,2023,,h1WiANIAAAAJ,LinkedIn: assistant August 2023–present
+albritton_betsy,Betsy Albritton,clemson,2024,,,Clemson News: new CBSHS faculty Fall 2024; Scholar ID 404
+goldstein_harold,Harold W. Goldstein,baruch,1997,,,Official Baruch profile: joined 1997; no public Google Scholar ID
+watts_logan,Logan L. Watts,baruch,2017,2020,Wp0SaAsAAAAJ,ORCID and LinkedIn: Baruch assistant August 2017–July 2020; now UTA
+cohencharash_yochi,Yochi Cohen-Charash,baruch,2001,,z9zdLDIAAAAJ,LinkedIn: August 2001–present
+scherbaum_charles,Charles A. Scherbaum,baruch,2003,,UsVFH7cAAAAJ,2015 CV: September 2003–present
+wang_wei,Wei Wang,baruch,2019,,DwxPR9AAAAAJ,LinkedIn: CUNY GC August 2019–present
+chatterjee_dia,Dia Chatterjee,baruch,2022,,,LinkedIn: August 2022–present; Baruch convocation Fall 2022
+godollei_anna,Anna Godollei,baruch,2022,,s-GZAy8AAAAJ,PhD Waterloo 2022; Baruch 2022 convocation new FT faculty
+bazzoli_andrea,Andrea Bazzoli,baruch,2023,,zu8Us98AAAAJ,LinkedIn: June 2023–present
+yang_zhixu,Zhixu (Rick) Yang,baruch,2025,,0v2kCQEAAAAJ,LinkedIn: Baruch assistant August 2025–present
+dipboye_robert,Robert L. Dipboye,ucf,2004,2015,zTkyXpMAAAAJ,LinkedIn: August 2004; UCF awards history emeritus 2015; Rice 1978–2004 also listed
+wang_wei,Wei Wang,ucf,2013,2017,DwxPR9AAAAAJ,LinkedIn: assistant August 2013–July 2017; later Baruch
+foti_roseanne,Roseanne J. Foti,vt,1985,,3gTEOkYAAAAJ,LinkedIn: professor January 1985–present
+calderwood_charles,Charles Calderwood,vt,2017,,yIMzglsAAAAJ,CV: assistant August 2017; associate August 2022–present
+hernandez_ivan,Ivan Hernandez,vt,2018,,ANFTuKYAAAAJ,LinkedIn: August 2018–present
+hickman_louis,Louis Hickman,vt,2022,,wluq3hgRc10C,Official VT page: assistant professor 2022–current
+hsu_ning,Ning Hsu,vt,2022,,PpNCyiwAAAAJ,LinkedIn: assistant 2022–present; PhD UIUC 2022
+melsonsilimon_arturia,Arturia Melson-Silimon,vt,2024,,UZ_ImyQAAAAJ,UGA newsletter: starting August 2024; first VT appointment 2024
+zhang_don,Don Zhang,lsu,2016,,GTukwAEAAAAJ,LinkedIn: assistant August 2016; current program director
+brossoit_rebecca,Rebecca Brossoit,lsu,2021,2024,2_YzRxkAAAAJ,CV: assistant August 2021–June 2024; now Rice
+burke_vanessa,Vanessa Burke,lsu,2022,,XaLQFUMAAAAJ,Lab page and LinkedIn: joined 2022
+cobb_haley,Haley Cobb,lsu,2023,,IWPXrZUAAAAJ,LinkedIn: assistant August 2023–present
+probst_tahira,Tahira M. Probst,wsu,1998,,te6Pf2UAAAAJ,CV: assistant 1998–2003; current WSU faculty
+williams_kevin,Kevin J. Williams,ualbany,1987,,18FQvm8AAAAJ,CV: assistant 1987; current faculty
+roch_sylvia,Sylvia G. Roch,ualbany,2001,,zErez8gAAAAJ,LinkedIn: assistant September 2001; current faculty
+dalal_dev,Dev K. Dalal,ualbany,2016,,GoXKNzcAAAAJ,LinkedIn: assistant August 2016; current faculty
+randall_jason,Jason G. Randall,ualbany,2016,2023,cT8LWcUAAAAJ,ORCID: UAlbany assistant August 2016–August 2023; now PDX
+cheung_hokwan,Ho Kwan Cheung,ualbany,2018,2022,JwM1yyEAAAAJ,LinkedIn: UAlbany assistant August 2018–July 2022; now Calgary
+ayman_roya,Roya Ayman,iit,1983,,hPFmocsAAAAJ,LinkedIn: joined August 1983; current faculty
+morris_scott,Scott B. Morris,iit,1994,,aiWrHTkAAAAJ,LinkedIn: August 1994; current faculty
+bauer_kristina,Kristina N. Bauer,iit,2016,,4C46sfcAAAAJ,LinkedIn: TT assistant August 2016 after visiting 2015
+saxena_mahima,Mahima Saxena,iit,2013,2020,t2znOwkAAAAJ,IIT I-O newsletter November 2013: first year as assistant after 2012 visiting; Coursicle through Spring 2020; now UNO
+christiansen_neil,Neil D. Christiansen,cmich,1997,,,Official CMU page: came to CMU in 1997; current program director
+obrien_kimberly,Kimberly E. O'Brien,cmich,2010,,-K55amsAAAAJ,Official CMU page: joined 2010 after Wayne State; current faculty
+prewett_matthew,Matthew S. Prewett,cmich,2010,,vqpmPQsAAAAJ,Official CMU page: came to CMU in 2010; current faculty
+sheets_tilman,Tilman L. Sheets,latech,2003,,qgFwdgEAAAAJ,LinkedIn: professor September 2003–present; current faculty
+igou_frank,Frank Igou,latech,2007,2024,,LinkedIn: assistant September 2007; retiring effective September 2024
+toaddy_steven,Steven R. Toaddy,latech,2013,,,LinkedIn: assistant September 2013; current faculty
+lee_jin,Jin Lee,ksu,2016,,aWmsLwoAAAAJ,Start year approximate (~2016); CPH-NEW January 2017 lists KSU assistant; current faculty
+sun_tianjun,Tianjun Sun,ksu,2021,2024,dn24ECQAAAAJ,ORCID: KSU assistant August 2021–June 2024; Rice from July 2024
+allen_shalene,Shalene Allen,ksu,2024,,jnj5k-QAAAAJ,Official K-State page: joined 2024; current faculty
+tu_naidan,Naidan Tu,ksu,2024,,OsxbqScAAAAJ,K-State PsyTalk 2025: first year as assistant; current faculty
+offermann_lynn,Lynn R. Offermann,gwu,1983,,,Start year approximate (~1983); GWU affiliation from 1983; current OS I-O faculty
+peng_yisheng,Yisheng Peng,gwu,2019,,m1eZdgsAAAAJ,LinkedIn: assistant August 2019; current PhD director
+bisbey_tiffany,Tiffany M. Bisbey,gwu,2022,,qkRhEAYAAAAJ,LinkedIn: July 2022; CCAS new-faculty page after Rice PhD
+viswesvaran_chockalingam,Chockalingam Viswesvaran,fiu,1993,,QMtjpPAAAAAJ,ORCID: FIU August 1993–present; current faculty
+bruklee_valentina,Valentina Bruk-Lee,fiu,2009,,bxj2rK8AAAAJ,CV: assistant August 2009; current program director
+eaton_asia,Asia A. Eaton,fiu,2012,,NuAnBdYAAAAJ,LinkedIn: assistant August 2012; current faculty
+yost_paul,Paul R. Yost,spu,1999,,,Official SPU profile: at SPU since 1999; current faculty
+collins_joey,Joey Collins,spu,2005,,,Official SPU profile: at SPU since 2005; current faculty
+chung_helen,Helen Chung,spu,2021,,,Start year approximate (~2021) for I-O appointment; current I-O chair
+kendall_dana,Dana L. Kendall,spu,2010,2021,,SPU catalog/CV: at SPU since 2010; LinkedIn through July/August 2021
+kenworthy_jared,Jared B. Kenworthy,uta,2005,,z0AQMNEAAAAJ,Official UTA I-O page: joined 2005; current faculty
+watts_logan,Logan L. Watts,uta,2020,,Wp0SaAsAAAAJ,ORCID/LinkedIn: assistant 2020 after Baruch; current faculty
+martinraugh_michelle,Michelle P. Martín-Raugh,uta,2022,,lcfVb6EAAAAJ,Start year approximate (~2022); ETS 2013–2022 then UTA; current faculty
+martinez_larry,Larry R. Martinez,uta,2024,,4CYnkDYAAAAJ,UTA news: came spring 2024; current faculty
+smith_nicholas,Nicholas A. Smith,uta,2024,,,LinkedIn: assistant January 2024; current faculty; Scholar ID 404 on roster
+adair_wendi,Wendi L. Adair,waterloo,2006,,xmuke10AAAAJ,CV: assistant August 2006; current faculty
+beck_james,James W. Beck,waterloo,2012,,,CV: assistant July 2012; no public Scholar ID (botanist collision); current faculty
+bobocel_ramona,D. Ramona Bobocel,waterloo,1992,,hANFxFIAAAAJ,CV and ORCID: assistant 1992; current faculty
+brown_douglas,Douglas J. Brown,waterloo,2000,,VH40jFYAAAAJ,Start year approximate (~2000); December 2000 article lists him as Waterloo assistant
+hillebrandt_annika,Annika Hillebrandt,waterloo,2023,,GaU_pnoAAAAJ,Start year approximate (~2023); TMU Ted Rogers 2018–2023 then Waterloo
+bourdage_joshua,Joshua S. Bourdage,calgary,2013,,4zIeRX4AAAAJ,Calgary I-O faculty page: returned as faculty 2013; current faculty
+oneill_thomas,Thomas A. O'Neill,calgary,2011,,nYMDbHgAAAAJ,LinkedIn and UCalgary news: faculty since 2011; current faculty
+cheung_hokwan,Ho Kwan Cheung,calgary,2022,,JwM1yyEAAAAJ,Calgary profile and LinkedIn: joined July 2022; current faculty
+lee_kibeom,Kibeom Lee,calgary,2002,,,Calgary I-O faculty page: professor at Calgary since 2002; HEXACO Scholar UlYZ-RQAAAAJ 404s via fetch
+murry_adam,Adam T. Murry,calgary,2017,,xqiCRnIAAAAJ,ORCID/LinkedIn: assistant July 2017; current faculty
+kelloway_kevin,E. Kevin Kelloway,smu,1999,,k_Lo5MQAAAAJ,ORCID/LinkedIn: joined SMU September 1999; previously Guelph 1991–1999
+day_arla,Arla L. Day,smu,1996,,8PBf9psAAAAJ,LinkedIn and older CV: assistant 1996; current faculty
+gilin_debra,Debra Gilin,smu,2006,,MhSWUxUAAAAJ,Start year approximate (~2006); UMSL PhD then SMU; current faculty
+holmvall_camilla,Camilla M. Holmvall,smu,2003,,ZiTK7RgAAAAJ,SMU faculty page: joined July 2003; current faculty
+kocum_lucie,Lucie Kocum,smu,2009,,W2qysFUAAAAJ,Start year approximate (~2009); SMU affiliation by 2009; current faculty
+lukacik_edenraye,Eden-Raye Lukacik,smu,2022,,DNa_9JIAAAAJ,SMU faculty page and LinkedIn: joined 2022; current faculty
+roulin_nicolas,Nicolas Roulin,smu,2017,,SM-FgnMAAAAJ,ORCID: associate July 2017; current faculty
+fleming_mark,Mark Fleming,smu,2001,,,SMU research page and LinkedIn: joined Psychology 2001; current faculty
+carver_sarah,Sarah J. Carver,smu,2024,2025,i7T9I6AAAAAJ,Guelph profile: SMU assistant 2024–2025; now Guelph
+powell_deborah,Deborah M. Powell,guelph,2008,,FiQg1SgAAAAJ,LinkedIn: Guelph from July 2008; current faculty
+hausdorf_peter,Peter A. Hausdorf,guelph,1999,,tat03s0AAAAJ,LinkedIn: professor July 1999–present; current faculty
+sonhing_leanne,Leanne S. Son Hing,guelph,2000,,,LinkedIn: August 2000–present; PhD Waterloo 2000; current faculty
+carver_sarah,Sarah J. Carver,guelph,2025,,i7T9I6AAAAAJ,Guelph profile: joined August 2025; formerly SMU; current faculty
+gill_harjinder,Harjinder Gill,guelph,2005,,0hrcjSkAAAAJ,Start year approximate (~2005); PhD Western; current faculty
+spence_jeffrey,Jeffrey R. Spence,guelph,2010,,HeyarCAAAAAJ,Start year approximate (~2010); PhD Waterloo 2010; current faculty
+stanley_david,David J. Stanley,guelph,2004,,krwVUm4AAAAJ,LinkedIn: associate July 2004–present; current faculty
+gonzalezmorales_gloria,M. Gloria Gonzalez-Morales,guelph,2010,2020,S70Uu0YAAAAJ,CGU bio/LinkedIn: Guelph May 2010–January 2020; now Claremont
+kelloway_kevin,E. Kevin Kelloway,guelph,1991,1999,k_Lo5MQAAAAJ,ORCID/LinkedIn: Guelph 1991–1999 then Saint Mary's
+meyer_john,John P. Meyer,western,1981,,YUHwYTAAAAAJ,CV: assistant 1981; associate 1988; professor 1995–present
+benson_alex,Alex J. Benson,western,2017,,ey9Rd5YAAAAJ,CV/ORCID: assistant July 2017; current faculty
+espinoza_jose,Jose A. Espinoza,western,2025,,i5sc9xwAAAAJ,LinkedIn: assistant July 2025 after Winnipeg 2022–2025
+evans_blair,M. Blair Evans,western,2020,,htD1_KIAAAAJ,Western profile: arrived 2020 as assistant; current faculty
+finegan_joan,Joan Finegan,western,1990,2023,CU1dQC8AAAAJ,Start year approximate (~1990); sunshine list associate through 2023 then adjunct; Professor Emeritus
+goffin_richard,Richard D. Goffin,western,1995,2023,tY3o368AAAAJ,CV: assistant 1995; sunshine 2023 last full year; Professor Emeritus
+houlfort_nathalie,Nathalie Houlfort,uqam,2010,,HPgQ300AAAAJ,UQAM faculty news: Psychology professor since 2010; current faculty
+menard_julie,Julie Ménard,uqam,2010,,Na2bOIwAAAAJ,LinkedIn: Psychology professor August 2010–present
+meunier_sophie,Sophie Meunier,uqam,2016,,,UQAM announcement/ORCID: professor 1 June 2016; current faculty
+schattke_kaspar,Kaspar Philipp Schattke,uqam,2016,,lrRVSy0AAAAJ,ORCID: associate from June 2016; current faculty
+provostsavard_yanick,Yanick Provost Savard,uqam,2020,,DbEZmbMAAAAJ,LinkedIn/UQAM CV: professor from June 2020; current faculty
+daljeet_kabir,Kabir N. Daljeet,umontreal,2020,,n_P4qEIAAAAJ,LinkedIn: assistant August 2020; current faculty
+boivin_mariepier,Marie-Pier Boivin,umontreal,2023,,SfcRq7IAAAAJ,Start year approximate (~2023); PhD Sherbrooke 2022; current UdeM assistant
+boudrias_jeansebastien,Jean-Sébastien Boudrias,umontreal,2005,,y8FyEb4AAAAJ,LinkedIn: associate July 2005; professor from 2016; current faculty
+graditodubord_marcantoine,Marc-Antoine Gradito Dubord,umontreal,2024,,mdc1uSUAAAAJ,LinkedIn: professor June 2024; current faculty
+grenier_simon,Simon Grenier,umontreal,2017,,1Ny4r2MAAAAJ,LinkedIn: assistant June 2017; current faculty
+paquet_maxime,Maxime Paquet,umontreal,2018,,,LinkedIn: assistant January 2018; no Scholar profile; current faculty
+walker_lisa,Lisa Slattery Walker,uncc,1998,,_DnBkXMAAAAJ,Faculty page and CV: assistant professor 1998; formerly Rashotte
+blanchard_anita,Anita L. Blanchard,uncc,2001,,mnEZIz4AAAAJ,UNCC catalog (2001); CHESS news: joined 2001
+rogelberg_steven,Steven G. Rogelberg,uncc,2003,,XXtn9GcWxe4C,CV: UNCC professor 2003–present; official news joined 2003 from BGSU
+heggestad_eric,Eric D. Heggestad,csu,2000,2005,Ha40ALIAAAAJ,CV: CSU assistant 2000–2005; then UNCC
+heggestad_eric,Eric D. Heggestad,uncc,2005,,Ha40ALIAAAAJ,CV: assistant professor 2005–2008; Inside UNC Charlotte: joined 2005 from CSU
+scott_cliff,Cliff Scott,uncc,2005,,icbUKFkAAAAJ,CV: assistant professor of Communication Studies 7/05–6/11; catalog Clifton W. Scott (2005)
+gossett_loril,Loril M. Gossett,uncc,2008,,b94s48AAAAAJ,UNCC catalog (2008); LinkedIn: August 2008 after UT Austin
+gooty_janaki,Janaki Gooty,uncc,2010,,tYlf9PIAAAAJ,CV: assistant professor Belk/OS 2010–2016; previously Binghamton 2007–2010
+canevello_amy,Amy Canevello,uncc,2011,,72zO0DEAAAAJ,CV: assistant professor 08/11; UNCC catalog (2011)
+woehr_david,David J. Woehr,uncc,2011,,vdt4FQsAAAAJ,CV: professor of management 2011–present; Belk news: joined fall 2011 from Tennessee
+jason_kendra,Kendra Jason,uncc,2015,,xCxqw-sAAAAJ,CV: TT assistant professor Sociology 2015–2021; lecturer/advisor 2012–2014
+banks_george,George C. Banks,uncc,2015,,EWgu-gQAAAAJ,CV: assistant professor Management 2015–2018; Belk news fall 2015 hire
+mcgonagle_alyssa,Alyssa McGonagle,wayne,2011,2016,ZbSzNS8AAAAJ,LinkedIn: Wayne assistant July 2011–July 2016; then UNCC
+mcgonagle_alyssa,Alyssa McGonagle,uncc,2016,,ZbSzNS8AAAAJ,CV: assistant professor 2016–2020; previously Wayne State 2011–2016
+yavorsky_jill,Jill Yavorsky,uncc,2017,,3qAsZVAAAAAJ,Sociology news: new assistant professor Fall 2017; LinkedIn July 2017 after OSU PhD
+tonidandel_scott,Scott Tonidandel,uncc,2018,,EzgIBbcAAAAJ,CV: Professor of Management 2018–present; previously Davidson 2002–2018
+kronberg_annekathrin,Anne-Kathrin Kronberg,uncc,2018,,IyB0NnsAAAAJ,CV: assistant professor 2018–present after Goethe University postdoc
+endacott_camille,Camille G. Endacott,uncc,2021,,zdGitIIAAAAJ,CV: assistant professor Communication Studies/OS August 2021–
+strah_nicole,Nicole Strah,uncc,2022,,ZXDkcLwAAAAJ,CV: assistant professor of Management August 2022–present; GMU postdoc 2021–2022
+davenport_meghan,Meghan K. Davenport,uncc,2024,,d0dT5rMAAAAJ,LinkedIn: TT assistant August 2024–present; 2023–2024 was lecturer after Rice PhD (not counted)
+reed_brent,Brent Reed,uncc,2025,,9kHbKL8AAAAJ,Personal site: assistant professor Psychological and Organizational Science Fall 2025
+grant_ryan,Ryan Grant,uncc,2025,,,LinkedIn: assistant professor August 2025 after UGA I-O PhD; no public Scholar ID
+arvan_maryana,Maryana Arvan,uncc,2020,2022,aS1rk2UAAAAJ,LinkedIn: Assistant Professor of Organization Science August 2020–March 2022
+griffith_richard,Richard L. Griffith,fit,1998,,PDhejLwAAAAJ,FIT Pulse Spring 2012: recruited to establish the I/O Psychology Ph.D. program at FIT in 1998
+steelman_lisa,Lisa A. Steelman,fit,1999,,vxmpMEgAAAAJ,LinkedIn: FIT January 1999–present; CoPLA Communicator Fall 2018: 20th anniversary next fall
+converse_patrick,Patrick D. Converse,fit,2005,,15WPB2EAAAAJ,FIT news 22 Jul 2005: new assistant professor for fall 2005
+wildman_jessica,Jessica L. Wildman,fit,2011,,_JYUCtgAAAAJ,FIT news 9 Sep 2011: new assistant professor fall 2011; LinkedIn August 2011
+burns_gary,Gary N. Burns,fit,2018,,fQpVNQUAAAAJ,FIT faculty profile: professor 2018–present; LinkedIn August 2018 after Wright
+thayer_amanda,Amanda L. Thayer,uakron,2015,2020,zBaf1WIAAAAJ,FIT profile: Akron assistant 2015–2020 then FIT
+thayer_amanda,Amanda L. Thayer,fit,2020,,zBaf1WIAAAAJ,FIT profile: assistant 2020–2023 (associate 2023–); Akron assistant 2015–2020
+kreamer_liana,Liana Kreamer,fit,2023,,VjT01dEAAAAJ,LinkedIn: assistant professor August 2023; UNC Charlotte PhD 2023
+gutman_arthur,Arthur Gutman,fit,1979,2014,,LinkedIn: professor September 1979–May 2014; FIT Pulse Spring 2014: retiring end of Spring 2014; founding I-O faculty
+finkelstein_lisa,Lisa M. Finkelstein,niu,1996,,XpM3TEsAAAAJ,NIU Today: came to NIU in 1996 after Tulane PhD; ORCID NIU 1996–present
+sagarin_brad,Brad J. Sagarin,niu,1999,,9IlYGZAAAAAJ,CV: assistant August 1999–June 2005 then associate/professor
+durik_amanda,Amanda M. Durik,niu,2005,,FyOITO0AAAAJ,CV: assistant Fall 2005; official NIU bio and LinkedIn August 2005
+santuzzi_alecia,Alecia M. Santuzzi,niu,2009,,67qtXloAAAAJ,Start year approximate (~2009); NIU catalog assistant by 2009–2010; socialpsychology.org NIU by August 2009
+mccarthy_randy,Randy J. McCarthy,niu,2019,,5ONVkm8AAAAJ,Start year approximate (~2019); NIU Newsroom visiting assistant fall 2018; catalogs list assistant (not visiting) with 2019 hire Saef
+saef_rachel,Rachel Saef,niu,2019,,8JJtf4YAAAAJ,LinkedIn: assistant July 2019–present; Purdue PhD 2019
+valle_ibette,Ibette Valle,niu,2024,,K5SadLoAAAAJ,University of Portland instructor 2023–24; Coursicle NIU from Fall 2024; UCSC PhD 2023
+connelly_shane,Shane Connelly,ou,1999,,tBFPdoIAAAAJ,OU catalog service start 1999 (Mary S. Connelly Mumford); OU news: joined 1999
+mendoza_jorge,Jorge L. Mendoza,tamu,1984,1990,0RSUOPsAAAAJ,OU syllabus bio: TAMU from 1984 then returned to OU 1990
+mendoza_jorge,Jorge L. Mendoza,ou,1990,2023,0RSUOPsAAAAJ,LinkedIn: OU professor from June 1990; retired January 2023; I-O program founder; now emeritus
+mumford_michael,Michael D. Mumford,ou,1999,2025,mink4SYAAAAJ,OU vita: professor/program director 1999–present (2021 CV); Faculty Senate 2024–2025 retirees list; now emeritus
+day_eric,Eric A. Day,ou,2001,,tsxoQYQAAAAJ,OU catalog service start 2001; LinkedIn faculty August 2001 (assistant 2001–2007)
+snyder_lori,Lori Anderson Snyder,ou,2004,,,CV: assistant 2004–2010 then associate; OU catalog service start 2004; no public Google Scholar ID
+cartersowell_adrienne,Adrienne R. Carter-Sowell,ou,2021,,tGwBI80AAAAJ,CV and LinkedIn: professor July 2021–present from Texas A&M PBS 2010–2021
+he_yaqing,Yaqing He,ou,2024,,,OU catalog: assistant professor 2024; UIUC PhD 2024; no public Google Scholar ID
+kim_jeongjin,JeongJin Kim,ou,2025,,3312EoQAAAAJ,ORCID and LinkedIn: assistant August 2025; OU catalog service start 2025; GMU PhD 2025
+halpert_jane,Jane A. Halpert,depaul,1985,,,DePaul scholars: I-O faculty since 1985; LinkedIn September 1985; no public Google Scholar ID
+stuhlmacher_alice,Alice F. Stuhlmacher,depaul,1994,,IHuBNAoAAAAJ,Start year approximate (~1994); Feb 1994 OBHDP paper lists DePaul affiliation; LinkedIn DePaul from 1994
+magley_vicki,Vicki Magley,depaul,1997,2001,2T1ZakYAAAAJ,LinkedIn: DePaul assistant August 1997–July 2001; UConn Advance: arrived Storrs fall 2001
+rauvola_shelly,R. Shelly Rauvola,depaul,2020,,1ANFTW8AAAAJ,CV: tenure-track I-O September 2020–present
+katz_ian,Ian M. Katz,depaul,2024,,ywGflxEAAAAJ,LinkedIn: joining DePaul Fall 2024 after ODU assistant 2020–2024
+reiterpalmon_roni,Roni Reiter-Palmon,unomaha,1993,,k74dhjEAAAAJ,ORCID and LinkedIn: UNO from August 1993
+kramer_william,William S. Kramer,unomaha,2018,,4N5qvy4AAAAJ,LinkedIn: assistant August 2018 (Clemson PhD 2018)
+hunter_samuel,Samuel T. Hunter,psu,2007,2021,uJpT238AAAAJ,Start year approximate (~2007); 14 years at PSU ending summer 2021; OU PhD 2007
+hunter_samuel,Samuel T. Hunter,unomaha,2021,,uJpT238AAAAJ,Defense One: joined NCITE summer 2021 after 14 years at PSU
+folberg_abigail,Abigail M. Folberg,unomaha,2021,,iRqlSY8AAAAJ,ORCID 2021-08-16 and LinkedIn August 2021; UNO PhD 2019 then Kentucky postdoc
+saxena_mahima,Mahima Saxena,unomaha,2021,,t2znOwkAAAAJ,Start year approximate (~2021); Illinois Tech assistant through at least 2020; EJWOP 2021 lists UNO
+nguyen_tin,Tin L. Nguyen,unomaha,2024,,2EwFZG0AAAAJ,LinkedIn June 2024: joining UNO I/O this fall as assistant professor
+lazarte_alejandro,Alejandro A. Lazarte,auburn,1992,,,Auburn bulletin: appointed 1992; current official I/O faculty; no public Google Scholar ID
+svyantek_dan,Dan J. Svyantek,uakron,1987,2003,,Official Auburn bio: Akron I-O 1987–2003 then Auburn; no public Google Scholar ID
+svyantek_dan,Dan J. Svyantek,auburn,2003,,,Auburn bulletin: appointed 2003; official bio: Akron I-O 1987–2003 then Auburn
+clark_malissa,Malissa A. Clark,auburn,2010,2013,WqcFrlsAAAAJ,LinkedIn: Auburn assistant August 2010–June 2013; now UGA
+fan_jinyan,Jinyan Fan,auburn,2010,,OqjKABMAAAAJ,LinkedIn: Auburn assistant July 2010; bulletin appointed 2010
+michel_jesse,Jesse S. Michel,auburn,2014,,DwPB8h4AAAAJ,Official Auburn bio: joined 2014 from FIU/MSU; bulletin appointed 2014
+sawhney_gargi,Gargi Sawhney,auburn,2019,,-n9FF_MAAAAJ,Official Auburn bio: joined fall 2019 from Minnesota Duluth; LinkedIn assistant August 2019; bulletin appointed 2019
+kunstman_jonathan,Jonathan W. Kunstman,auburn,2021,,sDvT1HMAAAAJ,Official Auburn bio: joined 2021 from Miami University; bulletin appointed 2021
+watson_paige,Paige E. Watson,auburn,2023,,scnuEpwAAAAJ,LinkedIn: assistant August 2023; Auburn bulletin appointed 2023; Clemson PhD 2023
+dishop_christopher,Christopher R. Dishop,auburn,2025,,VSTAif8AAAAJ,CV: assistant 2025–present after Carnegie Mellon postdoc 2022–2025; LinkedIn July 2025
+mcgee_heather,Heather M. McGee,wmu,2005,,,WMU Board of Trustees: Assistant Professor effective August 1 2005; CV: assistant August 2005; no public Scholar ID
+dickinson_alyce,Alyce M. Dickinson,wmu,1984,2020,,WMU retirement dinner 2020 and Wikipedia: faculty 1984–2020; chaired I-O/IOBM 25 years
+austin_john,John Austin,wmu,1996,2011,duNPHZMAAAAJ,LinkedIn: professor August 1996–August 2011; personal site: 15 years at WMU
+vanhouten_ron,Ron Van Houten,wmu,2005,,6OWHfXAAAAAJ,WMU Board of Trustees July 28 2005: appointment with tenure as Professor effective August 1 2005
+rafacz_sharlet,Sharlet D. Rafacz,wmu,2022,,,LinkedIn: Associate Professor August 2022; previously Fresno State then Savannah State
+martini_kate,Kate Martini,wmu,2024,,,LinkedIn: Assistant Professor January 2024; current WMU IOBM faculty
+kwantes_catherine,Catherine T. Kwantes,windsor,2002,,bH3gHM8AAAAJ,Official Windsor psychology page: faculty since 2002; Wayne State PhD 1999
+chungyan_greg,Greg A. Chung-Yan,windsor,2006,,tpS0JC4AAAAJ,Personal site and LinkedIn: joined Windsor faculty in 2006 after Guelph PhD
+rudolph_cort,Cort W. Rudolph,fiu,2011,2013,Z9W6egsAAAAJ,CV: FIU I-O assistant August 2011; left for SLU August 2013
+behrend_tara,Tara S. Behrend,gwu,2009,2020,9jEw4s0AAAAJ,MSU HRLR CV: GWU Organizational Sciences assistant 2009–2015; associate 2015–2020; I-O PhD director 2017–2020
+oswald_fred,Frederick L. Oswald,purdue,1998,2000,jWlqGZcAAAAJ,Rice CV Jan 2022: Purdue Psychological Sciences assistant 1998–2000
+oswald_fred,Frederick L. Oswald,msu,2000,2008,jWlqGZcAAAAJ,Rice CV Jan 2022: MSU Psychology assistant 2000–2006; associate 2006–2008 then Rice
+lebreton_james,James M. LeBreton,wayne,2002,2006,RXXhYO0AAAAJ,PSU CV: Wayne Psychology assistant August 2002–July 2006
+lebreton_james,James M. LeBreton,purdue,2006,2013,RXXhYO0AAAAJ,PSU CV: Purdue Psychological Sciences associate August 2006–May 2013
+newman_daniel,Daniel A. Newman,tamu,2005,2008,CrOaqpsAAAAJ,UIUC CV: TAMU I-O assistant 2005–2008 then UIUC
+diefendorff_james,James M. Diefendorff,lsu,1999,2004,tiXCOg0AAAAJ,Akron 2024 CV: LSU Psychology assistant Fall 1999–Summer 2004
+bourdage_joshua,Joshua S. Bourdage,western,2012,2013,4zIeRX4AAAAJ,LinkedIn: Western I-O assistant July 2012–June 2013; then Calgary
+woehr_david,David J. Woehr,tamu,1988,1999,vdt4FQsAAAAJ,UNCC OS CV: TAMU Psychology assistant 1988–1994; associate 1994–1999
+tetrick_lois,Lois E. Tetrick,wayne,1983,1995,5vKyvtMAAAAJ,APA Handbook of OHP bio: Wayne Psychology I-O 1983–1995 then Houston
+tetrick_lois,Lois E. Tetrick,uh,1995,2003,5vKyvtMAAAAJ,APA Handbook of OHP bio: UH Psychology 1995–2003 then GMU I-O director August 2003
+chen_gilad,Gilad Chen,gatech,2001,2004,33wQ1VYAAAAJ,Smith School CV: Georgia Tech Psychology assistant 2001–2004
+schneider_benjamin,Benjamin Schneider,msu,1979,1982,MY5QAxkAAAAJ,Prabook: John A. Hannah professor of organizational psychology Michigan State 1979–1982; between UMD spells
+zhang_bo,Bo Zhang,tamu,2020,2022,S4qQ-3AAAAAJ,UIUC CV: TAMU Psychological and Brain Sciences assistant September 2020–May 2022 then UIUC
+rudolph_cort,Cort W. Rudolph,slu,2013,2023,Z9W6egsAAAAJ,CV: SLU I-O assistant August 2013; associate July 2019; full May 2023; Wayne August 2023
+harvey_richard,Richard D. Harvey,slu,1995,,1TVmkmsAAAAJ,LinkedIn: SLU associate August 1995–present; current I-O faculty
+chen_xiaowen,Xiaowen Chen,slu,2024,,,SLU new-faculty list and LinkedIn: assistant August 2024–present
+sabin_edward,Edward J. Sabin,slu,1983,,,Start year approximate (~1983); current SLU I-O program director; SLU PhD; SLU master's 1976; no public CV with appointment date
+thomas_candice,Candice L. Thomas,slu,2017,2025,nyZihOMAAAAJ,ORCID: SLU Psychology 20 August 2017–31 July 2025; now Arizona State
+jundt_dustin,Dustin K. Jundt,slu,2009,2023,URtvyAkAAAAJ,LinkedIn: SLU I-O assistant August 2009–June 2016; associate through June 2023
+shoss_mindy,Mindy K. Shoss,slu,2011,2015,0MfACZAAAAAJ,UCF 2025 CV: SLU Psychology TT assistant 2011–2015 then UCF
+he_yimin,Yimin He,unomaha,2020,2023,ECRFCggAAAAJ,ORCID and LinkedIn: UNO Psychology assistant August 2020–May 2023 then UGA
+dalal_dev,Dev K. Dalal,uconn,2012,2016,GoXKNzcAAAAJ,LinkedIn: UConn Psychology assistant August 2012–August 2016 then Albany
+magley_vicki,Vicki Magley,uconn,2001,,2T1ZakYAAAAJ,UConn Advance: arrived Storrs fall 2001 after DePaul; current I-O director
+henning_robert,Robert Henning,uconn,1990,,,NIOSH postdoc 1986–1989; University of Connecticut affiliation on 1993 HFES paper with Kissel and Maynard; start year approximate (~1990); current I-O faculty
+landers_richard,Richard N. Landers,odu,2009,2018,wMsVHFYAAAAJ,CV: ODU I-O assistant 2009–2015; associate 2015–May 2018 then Minnesota
+olenick_jeffrey,Jeffrey Olenick,odu,2020,2023,j2_Rn98AAAAJ,UGA CV: ODU I-O assistant July 2020–July 2023 then UGA
+katz_ian,Ian M. Katz,odu,2020,2024,ywGflxEAAAAJ,LinkedIn: ODU assistant 2020–2024 then DePaul
+brummel_bradley,Bradley J. Brummel,utulsa,2008,2023,s4jQwowAAAAJ,LinkedIn: Tulsa Psychology associate August 2008–June 2022; professor through July 2023 then Houston
+michel_jesse,Jesse S. Michel,fiu,2008,2014,DwPB8h4AAAAJ,Auburn bio: FIU Psychology then MSU HRLR then Auburn 2014; publication affiliations FIU 2008–2014; MSU HRLR years not found so not listed
+fan_jinyan,Jinyan Fan,hofstra,2004,2010,OqjKABMAAAAJ,LinkedIn: Hofstra assistant September 2004–May 2010 then Auburn
+peng_yisheng,Yisheng Peng,hofstra,2017,2019,m1eZdgsAAAAJ,LinkedIn: Hofstra assistant August 2017–August 2019 then GWU
+mcabee_samuel,Samuel T. McAbee,iit,2014,2017,JKCK2p0AAAAJ,Rice PhD 2014; IIT assistant (Coursicle through Spring 2017); BGSU 2017
+behrend_tara,Tara S. Behrend,msu,2023,,9jEw4s0AAAAJ,HRLR news: John Richard Butler II Endowed Professor from August 2023; courtesy Psychology
+chen_gilad,Gilad Chen,tamu,2004,2006,33wQ1VYAAAAJ,Smith School CV: TAMU Mays assistant 2004–2006 then Maryland Smith
+chen_gilad,Gilad Chen,umd,2006,,33wQ1VYAAAAJ,LinkedIn and Smith directory: Maryland Smith July 2006–present; affiliate Psychology 2010–
+shockley_kristen,Kristen M. Shockley,auburn,2023,,iebwc7MAAAAJ,Left UGA June 2023 for Auburn Harbert Management; Harbert faculty directory
+mathieu_john,John E. Mathieu,uconn,1999,,EjYMg1MAAAAJ,UConn School of Business after PSU 1999; not Psychology I-O roster
+chang_daisy,Chu-Hsiang (Daisy) Chang,roosevelt,2005,2007,AVKtyvAAAAAJ,2019 CV: Roosevelt Psychology assistant August 2005–May 2007
+chang_daisy,Chu-Hsiang (Daisy) Chang,usf,2007,2010,AVKtyvAAAAAJ,2019 CV: USF Environmental and Occupational Health assistant June 2007–August 2010
+cartersowell_adrienne,Adrienne R. Carter-Sowell,tamu,2010,2021,tGwBI80AAAAJ,OU/TAMU CV: PBS assistant August 2010–2017; associate through June 2021 then OU
+gillespie_michael,Michael A. Gillespie,bgsu,2008,2011,PxNBgYUAAAAJ,USF notes: BGSU School of Leadership 2008–2011 then USF
+thorntonlugo_meghan,Meghan A. Thornton-Lugo,utsa,2015,2020,iv8X37AAAAAJ,Akron 2020 CV: UTSA Management assistant August 2015–August 2020
+ehrhart_mark,Mark G. Ehrhart,sdsu,2001,2017,9ER5GqgAAAAJ,UCF 2023 CV: SDSU Psychology assistant 2001; associate 2007; professor 2016–2017
+macnamara_brooke,Brooke N. Macnamara,casewestern,2014,2024,dKPihKcAAAAJ,LinkedIn: Case Western assistant July 2014 until Purdue 2024
+hillebrandt_annika,Annika Hillebrandt,tmu,2018,2023,GaU_pnoAAAAJ,TRSM new-faculty list Fall 2018; Waterloo from ~2023
+espinoza_jose,Jose A. Espinoza,winnipeg,2022,2025,i5sc9xwAAAAJ,LinkedIn: Winnipeg 2022–2025 then Western July 2025
+woehr_david,David J. Woehr,utk,1999,2011,vdt4FQsAAAAJ,UNCC OS CV: Tennessee Management 1999–2011 then UNCC
+tonidandel_scott,Scott Tonidandel,davidson,2002,2018,EzgIBbcAAAAJ,UNCC CV: Davidson 2002–2018 then UNCC Management 2018
+diefendorff_james,James M. Diefendorff,ucdenver,2004,2006,tiXCOg0AAAAJ,Akron 2024 CV: Colorado Denver Management 2004–2006 between LSU and Akron
+diefendorff_james,James M. Diefendorff,arkansas,2026,,tiXCOg0AAAAJ,Left Akron June 2026 for Arkansas Walton College
+lee_philseok,Philseok Lee,sdsu,2016,2018,aNGET7sAAAAJ,LinkedIn: SDSU 2016–2018 then GMU
+cortina_jose,Jose M. Cortina,vcu,2017,,a3Mt8EQAAAAJ,ORCID: VCU professor from August 2017 after GMU
+gooty_janaki,Janaki Gooty,binghamton,2007,2010,tYlf9PIAAAAJ,UNCC CV: Binghamton 2007–2010 then UNCC
+su_rong,Rong Su,iowa,2017,,vODzQzIAAAAJ,LinkedIn: Iowa Tippie from May 2017 after Purdue
+shanock_linda,Linda Rhoades Shanock,uncc,2007,2024,cphMYKEAAAAJ,Albany through 2006; Heggestad CV BofA grant with Shanock at Charlotte 2007; OS faculty page emeritus by 2026; CHESS still listed professor Dec 2022; end year 2024 for emeritus transition
+long_shawn,Shawn D. Long,uncc,2000,2019,,CHESS obituary: Comm Studies and OS faculty from 2000; left July 2019 for Kennesaw State dean; died January 2021; no public Scholar ID found
+rubin_beth,Beth A. Rubin,uncc,2002,2017,,Personal vita: joined 2002 Belk Management; helped found OS; Sociology 2007; Professor Emerita 2017
+cao_yang,Yang Cao,uncc,2003,2013,Qc77bQgAAAAJ,Personal page: Sociology and Organizational Science assistant 2003–2008 associate 2008–2013; then Zhejiang; returned 2016 in Sociology and Public Policy not OS; Scholar Qc77bQgAAAAJ (charlotte.edu; prior ID dASg4QsAAAAJ 404)
+nolan_kevin,Kevin P. Nolan,hofstra,2012,,,LinkedIn: Hofstra assistant August 2012–present; PhD BGSU August 2012
+shahanidenning_comila,Comila Shahani-Denning,hofstra,1993,,EATozncAAAAJ,Hofstra bio: involved with MA since inception 1993 and doctoral program since 2004; current A/O faculty
+grossman_rebecca,Rebecca Grossman,hofstra,2014,,s4feQ-wAAAAJ,Human Factors 2015 bio: Hofstra assistant after UCF PhD 2014; Scholar s4feQ-wAAAAJ verified hofstra.edu
+salter_nicholas,Nicholas P. Salter,hofstra,2019,,csO4BBcAAAAJ,LinkedIn: Hofstra assistant September 2019 then associate; previously Ramapo TT; Hofstra adjunct 2014–2019 not counted
+pindek_shani,Shani Pindek,hofstra,2025,,_rWzco8AAAAJ,Hofstra News 25 Sep 2025 Fall 2025 new faculty: associate professor; previously Haifa then York visiting
+chebangore_yuliya,Yuliya Cheban-Gore,hofstra,2025,,_2_2JZUAAAAJ,LinkedIn: Hofstra assistant August 2025–present; Hofstra News Fall 2025 new faculty; PhD CUNY 2024
+liu_cong,Cong Liu,hofstra,2007,2024,YUUPLKIAAAAJ,LinkedIn: Hofstra assistant September 2007 through professor August 2024; Illinois State newsletter: left ISU 2007 for Hofstra I-O; now Rutgers
+sessa_valerie,Valerie I. Sessa,montclair,2003,,NqDo9IYAAAAJ,LinkedIn: professor September 2003–present from Center for Creative Leadership; current I-O doctoral director
+askew_kevin,Kevin Askew,montclair,2012,,,PhD USF 2012; Montclair affiliation on 2014 Computers in Human Behavior; start year approximate (~2012); current I-O faculty
+bragger_jennifer,Jennifer D. Bragger,montclair,1997,,14Q_wJwAAAAJ,LinkedIn: Montclair faculty January 1997–present; faculty bio PhD Temple 1997
+bixter_michael,Michael T. Bixter,montclair,2019,,QwuSiwEAAAAJ,OSF: assistant professor Psychology September 2019–ongoing after ASU/Georgia Tech postdocs
+gonzalez_manuel,Manuel F. Gonzalez,montclair,2023,,WM-5inkAAAAJ,LinkedIn: assistant August 2023–present from Seton Hall; current I-O faculty
+gray_cheryl,Cheryl E. Gray,montclair,2022,,dtJA5zcAAAAJ,LinkedIn: assistant professor of I-O Psychology September 2022–present after USF PhD
+digiovanni_ana,Ana M. DiGiovanni,montclair,2025,,y8Jmtu0AAAAJ,Inside Montclair 25 August 2025: new CHSS faculty; Fall 2025 new-faculty deck
+simonet_daniel,Daniel V. Simonet,montclair,2014,2022,,LinkedIn: I-O faculty January 2014–May 2022 then Amazon; BOT associate September 2020
+narayan_anupama,Anupama Narayan,utulsa,2008,,fHcB5e4AAAAJ,Wright State HF/IO alumni table: University of Tulsa 2008 matching PhD year; current TU I-O graduate adviser
+lee_juseob,Juseob Lee,utulsa,2023,,q9B3GQUAAAAJ,First listed 2023–24 TU graduate bulletin assistant professor; not in 2022–23 resident faculty
+thapa_stuti,Stuti Thapa,utulsa,2023,,xJRhc0sAAAAJ,LinkedIn: assistant August 2023–present; listed 2023–24 TU graduate bulletin
+tett_robert,Robert P. Tett,utulsa,2000,2023,7mCMbsUAAAAJ,TU news Outstanding Researchers 2023: joined 2000; last semester 2023; LinkedIn emeritus January 2024
+ragsdale_jennifer,Jennifer M. Ragsdale,utulsa,2011,2022,,TU news Outstanding Teachers 2021: began teaching Psychology in 2011; not in 2022–23 graduate resident faculty
+coleman_peter,Peter T. Coleman,tc,1999,,vtAunVIAAAAJ,CV: assistant Social-Organizational Psychology 1999–2005; research assistant professor 1997–1999 not counted
+block_caryn,Caryn J. Block,tc,1993,,ehtj-IYAAAAJ,Start year approximate (~1993); AMJ 1997 author note: assistant professor at Teachers College; Columbia Business School exec ed since 1997; current faculty
+westaby_james,James D. Westaby,tc,1998,,1CloGyAAAAAJ,Start year approximate (~1998); PhD Illinois 1995; PSU postdoc then NYU visiting assistant; Teachers College affiliation by 2004 AJPH; current faculty
+hewlin_patricia,Patricia Faison Hewlin,tc,2024,,omJHUc4AAAAJ,LinkedIn: professor of Social-Organizational Psychology January 2024–present after McGill
+noumair_debra,Debra A. Noumair,tc,1982,,,TC Campus News 27 June 2010: associate professor celebrating 28 years of service
+perry_elissa,Elissa L. Perry,tc,1998,,S9W3XA8AAAAJ,LinkedIn: professor January 1998–present; TC bio: Illinois LER assistant 1991–1998 then TC
+perry_elissa,Elissa L. Perry,uiuc,1991,1998,S9W3XA8AAAAJ,TC bio: Illinois LER assistant 1991–1998 then Teachers College
+barnesfarrell_janet,Janet L. Barnes-Farrell,uconn,1985,2022,cST1-dIAAAAJ,LinkedIn: professor of Psychology August 1985–August 2022; UConn emerita and former I-O division head
+tepas_donald,Donald I. Tepas,uconn,1985,1998,,UConn Today: joined Psychology 1985; first I-O division head 1985–1997; retired 1998
+sohn_youngwoo,Young Woo Sohn,uconn,1999,2002,,UConn Advance 30 Aug 1999 new faculty I-O; ORCID assistant 16 Aug 1999–7 Jan 2002 then Yonsei
+hauenstein_neil,Neil M. A. Hauenstein,vt,1987,2025,kgq0sLEAAAAJ,VT undergraduate catalog faculty listing 1987; VT News 23 Jul 2025: emeritus after more than 37 years
+beal_daniel,Daniel J. Beal,vt,2014,,dphppLQAAAAJ,CV and VT News: Pamplin Management associate June 2014–present; not Psychology I-O roster
+beal_daniel,Daniel J. Beal,utsa,2011,2014,dphppLQAAAAJ,CV: UTSA Psychology assistant August 2011–July 2013; associate through May 2014; overlapped Rice 2011–2012
+kline_theresa,Theresa J. Kline,calgary,1991,2013,,Official Calgary I-O page: hired 1991 and helped launch the I-O program; LinkedIn professor July 1991–August 2013 then emeritus
+lefkowitz_joel,Joel Lefkowitz,baruch,1965,2009,A1oO6mUAAAAJ,ORCID: Baruch Psychology professor 1965-09 to 2009-05 then emeritus; founded CUNY I-O PhD 1982
+raju_nambury,Nambury S. Raju,iit,1978,1993,,Joined IIT psychology 1978; left 1993 for Georgia Tech
+raju_nambury,Nambury S. Raju,gatech,1993,1996,,Left IIT for Georgia Tech 1993; returned to IIT 1996
+raju_nambury,Nambury S. Raju,iit,1996,2005,,Returned IIT 1996 as Distinguished Professor; died 27 Oct 2005
+catano_victor,Victor M. Catano,smu,1972,2019,,SMU oral history: began at Saint Mary's 1972; obituary: professor 46 years; died 10 May 2019
+downey_ronald,Ronald G. Downey,ksu,1975,2013,,Official K-State emeritus page: retired end of 2013 academic year after 38 years
+fullagar_clive,Clive Fullagar,ksu,1988,2019,,K-State bio: came to the US in 1988; K-State retirement celebration 14 May 2019
+knight_patrick,Patrick A. Knight,ksu,1980,2020,,K-State PsyTalk 2020: retiring Dec 2020 after 40.5 years; MIOP founding faculty
+switzer_fred,Fred S. Switzer III,clemson,1988,2023,L1n17WoAAAAJ,Success Portraits bio: faculty since UIUC I-O PhD 1988; LinkedIn 5 Sep 2023: emeritus after 35 years at Clemson
+wilson_mark,Mark A. Wilson,ncsu,1992,2023,,LinkedIn: associate professor of I-O Psychology January 1992–January 2023 then emeritus
+rowe_patricia,Patricia M. Rowe,waterloo,1963,2002,,UWaterloo Arts news: arrived 1963; retired from teaching 2002 after 39 years
+allen_joseph,Joseph A. Allen,unomaha,2013,2019,CPXZFC0AAAAJ,LinkedIn: UNO I-O assistant May 2013; associate 2016; professor May–August 2019 then Utah
+truxillo_donald,Donald M. Truxillo,pdx,1994,2018,eEKu2akAAAAJ,LinkedIn: PSU professor from January 1994; PSU I-O newsletter 2018: after 25 years leaving Fall 2018 for Limerick
+hammer_leslie,Leslie B. Hammer,pdx,1991,2022,r7mFNeoAAAAJ,CV: PSU assistant September 1991; LinkedIn Psychology September 1991–June 2022 then Professor Emerita
+james_lawrence,Lawrence R. James,gatech,1980,2013,,Official GT emeritus faculty list: James Lawrence Robert 1980–2013
+feldman_jack,Jack M. Feldman,gatech,1986,2010,z_YUopkAAAAJ,Official GT emeritus faculty list: Feldman Jack M. 1986–2010
+cleveland_jeanette,Jeanette N. Cleveland,csu,1983,2000,8KNKM2kAAAAJ,CSU I-O 2021 newsletter: I-O faculty 1983–2000 then Penn State
+cleveland_jeanette,Jeanette N. Cleveland,psu,2000,2011,8KNKM2kAAAAJ,CSU I-O 2021 newsletter: Penn State after 2000; returned to CSU 2011
+cleveland_jeanette,Jeanette N. Cleveland,csu,2011,2021,8KNKM2kAAAAJ,CSU I-O 2021 newsletter: returned 2011; retired May 2021
+murphy_kevin,Kevin R. Murphy,csu,1984,2000,CI7NSsoAAAAJ,CSU IOPAC 2011 newsletter: CSU faculty 1984–2000 with Cleveland then Penn State
+murphy_kevin,Kevin R. Murphy,psu,2000,2010,CI7NSsoAAAAJ,LinkedIn: professor of Psychology January 2000–January 2010
+speer_andrew,Andrew B. Speer,indiana,2023,,oNcmwSsAAAAJ,IU Kelley CV: assistant professor 2023–present after Wayne 2017–2023
+gonzalezmorales_gloria,M. Gloria Gonzalez-Morales,claremont,2020,,S70Uu0YAAAAJ,CGU bio/LinkedIn: Claremont from January 2020 after Guelph

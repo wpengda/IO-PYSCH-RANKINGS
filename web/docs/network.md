@@ -6,7 +6,7 @@ It uses the **same Google Scholar fetch and the same venue whitelist** (journals
 
 ## Who appears
 
-A person is a node if they have a fetched Google Scholar profile and appear on `faculty.csv` or [`data/faculty_appointments.csv`](../../data/faculty_appointments.csv). Faculty without an ID do not appear here.
+A person is a node if they have a fetched Google Scholar profile and appear on the current roster ([`data/faculty.csv`](../../data/faculty.csv)) or a faculty timeline ([`data/faculty_appointments.csv`](../../data/faculty_appointments.csv)). Faculty without an ID do not appear here.
 
 One person can belong to **more than one program** (for example Nathan Kuncel at Minnesota now and Illinois in 2003–2005). Searching a school keeps anyone with that affiliation, past or present. Region uses any of those programs. Node color is the current (or most recent) program.
 

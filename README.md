@@ -2,7 +2,7 @@
 
 Metrics-based ranking of **U.S. and Canadian industrial-organizational (I-O) psychology** programs by faculty research output in selective journals.
 
-Inspired by [CSRankings](https://csrankings.org/), but independent of it. Build each program’s faculty roster from the official I-O page first. Then attach Google Scholar IDs and import papers from Scholar profiles.
+Build each program’s faculty roster from the official I-O page first. Then attach Google Scholar IDs and import papers from Scholar profiles.
 
 ## Features
 
@@ -41,8 +41,8 @@ Open http://127.0.0.1:8000/ — site docs are **How we rank** / **How we network
 | Path | Purpose |
 | --- | --- |
 | `data/google_scholar.csv` | Google Scholar `user=` IDs used for scoring (source of truth) |
-| `data/faculty.csv` | Curated faculty + homepage ORCID / Google Scholar IDs |
-| `data/faculty_appointments.csv` | Faculty start/end years by program (used by the **by faculty appointment** ranking toggle) |
+| `data/faculty.csv` | Current roster (official I-O page) + homepage ORCID / Google Scholar IDs |
+| `data/faculty_appointments.csv` | Former and current start/end years by program (**by faculty appointment** + faculty ranking labels) |
 | `data/institutions.csv` | U.S./Canada I-O PhD programs (62); `roster_status` marks complete vs seed |
 | `data/venues.json` | Journal whitelist, Clarivate IF, JCR quartile, ABDC rating, areas |
 | `pipeline/` | Scholar import + scoring (`pipeline/cache/` is gitignored) |

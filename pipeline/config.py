@@ -500,7 +500,8 @@ def appointments_payload(appts: pd.DataFrame | None = None) -> list[dict]:
                 "faculty_id": str(r.get("faculty_id") or "").strip(),
                 "name": str(r.get("name") or "").strip(),
                 "institution_id": iid,
-                "institution_name": _appointment_institution_name(iid),
+                "institution_name": _appointment_institution_meta(iid)[0],
+                "country": _appointment_institution_meta(iid)[1],
                 "start_year": year_or_none(r.get("start_year")),
                 "end_year": year_or_none(r.get("end_year")),
                 "google_scholar_id": sid,
@@ -509,21 +510,65 @@ def appointments_payload(appts: pd.DataFrame | None = None) -> list[dict]:
     return [row for row in rows if row["faculty_id"] and row["institution_id"]]
 
 
+# Unranked (or not-in-institutions.csv) ids still shown on faculty ranking.
+_APPOINTMENT_INSTITUTIONS = {
+    "uci": ("University of California Irvine", "US"),
+    "sdsu": ("San Diego State University", "US"),
+    "davidson": ("Davidson College", "US"),
+    "utk": ("University of Tennessee Knoxville", "US"),
+    "casewestern": ("Case Western Reserve University", "US"),
+    "tmu": ("Toronto Metropolitan University", "CA"),
+    "winnipeg": ("University of Winnipeg", "CA"),
+    "ucdenver": ("University of Colorado Denver", "US"),
+    "arkansas": ("University of Arkansas", "US"),
+    "roosevelt": ("Roosevelt University", "US"),
+    "vcu": ("Virginia Commonwealth University", "US"),
+    "binghamton": ("Binghamton University", "US"),
+    "iowa": ("University of Iowa", "US"),
+    "indiana": ("Indiana University", "US"),
+    "claremont": ("Claremont Graduate University", "US"),
+}
+
+
+def _appointment_institution_meta(iid: str) -> tuple[str, str]:
+    return _APPOINTMENT_INSTITUTIONS.get(iid, ("", ""))
+
+
 def _appointment_institution_name(iid: str) -> str:
-    labels = {
-        "uci": "University of California Irvine",
-    }
-    return labels.get(iid, "")
+    return _appointment_institution_meta(iid)[0]
 
 
 def appointment_coverage_ids(appts: pd.DataFrame | None = None) -> list[str]:
-    """Schools that have a timeline AND are in the ranked institutions table."""
+    """Ranked schools whose appointment table includes every current (active) roster member.
+
+    Former-faculty rows can be added first; the school stays on the current-faculty
+    default until every active person at that school also has an appointment row.
+    """
     rows = appointments_payload(appts)
     inst_path = DATA / "institutions.csv"
     known: set[str] = set()
     if inst_path.exists():
         known = set(pd.read_csv(inst_path)["institution_id"].astype(str))
-    return sorted({r["institution_id"] for r in rows if r["institution_id"] in known})
+    by_school: dict[str, set[str]] = {}
+    for r in rows:
+        iid = r["institution_id"]
+        if iid not in known:
+            continue
+        by_school.setdefault(iid, set()).add(r["faculty_id"])
+    faculty = load_faculty()
+    active_by_school: dict[str, set[str]] = {}
+    if not faculty.empty:
+        active_mask = faculty["active"].astype(str).str.lower().isin(["true", "1", "yes"])
+        for _, f in faculty.loc[active_mask].iterrows():
+            iid = str(f.get("institution_id") or "").strip()
+            fid = str(f.get("faculty_id") or "").strip()
+            if iid and fid:
+                active_by_school.setdefault(iid, set()).add(fid)
+    return sorted(
+        iid
+        for iid, have in by_school.items()
+        if (needed := active_by_school.get(iid, set())) and needed <= have
+    )
 
 
 def faculty_universe(*, active_only: bool = False) -> pd.DataFrame:

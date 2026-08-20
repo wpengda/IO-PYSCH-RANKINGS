@@ -636,23 +636,6 @@
       }
     },
     {
-      "faculty_id": "caird_jeff",
-      "name": "Jeff K. Caird",
-      "phrases": [
-        "Clinical Research, and more, making a real-life impact with our researchers"
-      ],
-      "areas": [],
-      "unmapped": [
-        "Clinical Research",
-        "and more",
-        "making a real-life impact with our researchers"
-      ],
-      "source": {
-        "scholar": false,
-        "homepage": true
-      }
-    },
-    {
       "faculty_id": "calderwood_charles",
       "name": "Charles Calderwood",
       "phrases": [
@@ -3414,17 +3397,6 @@
       "unmapped": [],
       "source": {
         "scholar": true,
-        "homepage": false
-      }
-    },
-    {
-      "faculty_id": "outland_neal",
-      "name": "Neal Outland",
-      "phrases": [],
-      "areas": [],
-      "unmapped": [],
-      "source": {
-        "scholar": false,
         "homepage": false
       }
     },

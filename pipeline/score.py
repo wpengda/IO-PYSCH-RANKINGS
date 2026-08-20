@@ -306,7 +306,12 @@ def main() -> None:
     institutions = pd.read_csv(DATA / "institutions.csv")
     venues_doc = load_venues()
     venues = venue_name_lookup(venues_doc)
-    all_pubs = [apply_venue(p, venues) for p in raw_pubs]
+    keep_ids = set(faculty["faculty_id"].astype(str))
+    all_pubs = [
+        apply_venue(p, venues)
+        for p in raw_pubs
+        if str(p.get("faculty_id") or "") in keep_ids
+    ]
     pubs = all_pubs if args.all_venues else [p for p in all_pubs if p.get("in_whitelist")]
     area_labels = faculty_area_label_map(pubs)
     appt_rows = appointments_payload()

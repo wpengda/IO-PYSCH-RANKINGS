@@ -628,7 +628,7 @@
       byIid.set(appt.institution_id, {
         institution_id: appt.institution_id,
         name: inst.name || appt.institution_name || appt.institution_id,
-        country: inst.country || (appt.institution_id === "uci" ? "US" : ""),
+        country: inst.country || appt.country || "",
         start_year: appt.start_year,
         end_year: appt.end_year,
         current: Boolean(open),
@@ -1138,7 +1138,7 @@
   const TOUR_STEPS = [
     {
       title: "Welcome to IO Psychology Rankings",
-      body: "Find I-O PhD programs by faculty research output in selective journals — similar in spirit to CSRankings.",
+      body: "Find I-O PhD programs by faculty research output in a curated journal whitelist.",
       selector: null,
     },
     {
@@ -1190,7 +1190,7 @@
     },
     {
       title: "Count by faculty appointment",
-      body: "Turn on by faculty appointment to score programs that have a faculty timeline using only papers published while that person was there. Schools without a timeline stay on the current-faculty default. UIUC, Rice, and Minnesota are filled in. This turns off faculty ranking.",
+      body: "Turn on by faculty appointment to score programs that have a faculty timeline using only papers published while that person was there. Schools without a timeline stay on the current-faculty default. 57 programs currently have a complete timeline. This turns off faculty ranking.",
       selector: '[data-tour="appointment"]',
     },
     {

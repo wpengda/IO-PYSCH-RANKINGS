@@ -1,43 +1,27 @@
 faculty_id,name,institution_id,google_scholar_id
 sackett_paul,Paul R. Sackett,umn,TXKXrhYAAAAJ
-dunnette_marvin,Marvin D. Dunnette,umn,
-campbell_john,John P. Campbell,umn,
 kuncel_nathan,Nathan R. Kuncel,umn,Li_99XsAAAAJ
 landers_richard,Richard N. Landers,umn,wMsVHFYAAAAJ
-bono_joyce,Joyce E. Bono,umn,pWKcSCsAAAAJ
 ones_deniz,Deniz S. Ones,umn,RfAFQMQAAAAJ
 schmidt_aaron,Aaron M. Schmidt,umn,
-ryan_annmarie,Ann Marie Ryan,msu,
 ford_kevin,J. Kevin Ford,msu,eXNjTPIAAAAJ
 carter_nathan,Nathan T. Carter,msu,QIjATukAAAAJ
 newman_daniel,Daniel A. Newman,uiuc,CrOaqpsAAAAJ
-hulin_charles,Charles L. Hulin,uiuc,
-rounds_james,James Rounds,uiuc,GDTpZuMAAAAJ
-drasgow_fritz,Fritz Drasgow,uiuc,AXsNFH4AAAAJ
 highhouse_scott,Scott Highhouse,bgsu,-n4MwyUAAAAJ
 brooks_margaret,Margaret E. Brooks,bgsu,Tz9tznkAAAAJ
 zickar_michael,Michael J. Zickar,bgsu,obkeqTgAAAAJ
 levy_paul,Paul E. Levy,uakron,KnOIC2AAAAAJ
 elicker_joelle,Joelle D. Elicker,uakron,D7_KI6oAAAAJ
 lebreton_james,James M. LeBreton,rice,RXXhYO0AAAAJ
-jacobs_rick,Rick R. Jacobs,psu,
 beier_margaret,Margaret E. Beier,rice,h9TnggYAAAAJ
 brossoit_rebecca,Rebecca Brossoit,rice,2_YzRxkAAAAJ
 hebl_mikki,Michelle R. Hebl,rice,CCOSnCEAAAAJ
 king_danielle,Danielle King Jordan,rice,qS6aIMUAAAAJ
 king_eden,Eden B. King,rice,6gtdKWcAAAAJ
-oswald_fred,Frederick L. Oswald,rice,jWlqGZcAAAAJ
-motowidlo_stephan,Stephan J. Motowidlo,rice,nkq2kBQAAAAJ
 salas_eduardo,Eduardo Salas,rice,pzOYmE0AAAAJ
 sun_tianjun,Tianjun Sun,rice,dn24ECQAAAAJ
-dipboye_robert,Robert L. Dipboye,rice,zTkyXpMAAAAJ
-quinones_miguel,Miguel A. Quiñones,rice,_EIWn5sAAAAJ
-beal_daniel,Daniel J. Beal,rice,dphppLQAAAAJ
-villado_anton,Anton J. Villado,rice,4s6iN2AAAAAJ
 zaccaro_stephen,Stephen J. Zaccaro,gmu,EtEt5w0AAAAJ
-tetrick_lois,Lois E. Tetrick,gmu,
 dalal_reeshad,Reeshad S. Dalal,gmu,QkDLr-MAAAAJ
-eby_lillian,Lillian T. Eby,uga,
 hoffman_brian,Brian J. Hoffman,uga,lnPPKZUAAAAJ
 olenick_jeffrey,Jeffrey Olenick,uga,j2_Rn98AAAAJ
 arthur_winfred,Winfred Arthur Jr.,tamu,TjxUECcAAAAJ
@@ -50,11 +34,8 @@ hou_daphne,Daphne Xin Hou,usf,OCBbe2QAAAAJ
 kozlowski_steve,Steve W. J. Kozlowski,usf,XEjiPNEAAAAJ
 smith_claire,Claire E. Smith,usf,olYdTMEAAAAJ
 stark_stephen,Stephen Stark,usf,D7710wUAAAAJ
-spector_paul,Paul E. Spector,usf,
-borman_walter,Walter C. Borman,usf,
 woo_sang,Sang Eun Woo,purdue,NRkfBhQAAAAJ
 tay_louis,Louis Tay,purdue,5_1xpscAAAAJ
-witt_la,L. A. Witt,uh,
 brummel_bradley,Bradley J. Brummel,uh,s4jQwowAAAAJ
 sabat_isaac,Isaac E. Sabat,uh,A0Mhl98AAAAJ
 mehta_paras,Paras D. Mehta,uh,4tefno0AAAAJ
@@ -67,7 +48,6 @@ french_kimberly,Kimberly A. French,csu,ekl67gcAAAAJ
 gardner_danielle,Danielle M. Gardner,csu,CumJXukAAAAJ
 gibbons_alyssa,Alyssa M. Gibbons,csu,
 prasad_josh,Joshua J. Prasad,csu,JVRH_s0AAAAJ
-byrne_zinta,Zinta S. Byrne,csu,
 tonidandel_scott,Scott Tonidandel,uncc,EzgIBbcAAAAJ
 rogelberg_steven,Steven G. Rogelberg,uncc,XXtn9GcWxe4C
 mcgonagle_alyssa,Alyssa McGonagle,uncc,ZbSzNS8AAAAJ
@@ -81,26 +61,19 @@ gossett_loril,Loril M. Gossett,uncc,b94s48AAAAAJ
 grant_ryan,Ryan Grant,uncc,
 heggestad_eric,Eric D. Heggestad,uncc,Ha40ALIAAAAJ
 jason_kendra,Kendra Jason,uncc,xCxqw-sAAAAJ
-baltes_boris,Boris B. Baltes,wayne,
 dickson_marcus,Marcus W. Dickson,wayne,xhXn61QAAAAJ
 adair_wendi,Wendi L. Adair,waterloo,xmuke10AAAAJ
 beck_james,James W. Beck,waterloo,
 bobocel_ramona,D. Ramona Bobocel,waterloo,hANFxFIAAAAJ
 brown_douglas,Douglas J. Brown,waterloo,VH40jFYAAAAJ
 hillebrandt_annika,Annika Hillebrandt,waterloo,GaU_pnoAAAAJ
-chapman_derek,Derek S. Chapman,calgary,
 bourdage_joshua,Joshua S. Bourdage,calgary,4zIeRX4AAAAJ
 oneill_thomas,Thomas A. O'Neill,calgary,nYMDbHgAAAAJ
 kelloway_kevin,E. Kevin Kelloway,smu,k_Lo5MQAAAAJ
 powell_deborah,Deborah M. Powell,guelph,FiQg1SgAAAAJ
 hausdorf_peter,Peter A. Hausdorf,guelph,tat03s0AAAAJ
 sonhing_leanne,Leanne S. Son Hing,guelph,
-gonzalezmorales_gloria,M. Gloria Gonzalez-Morales,guelph,
-finegan_joan,Joan Finegan,western,
-goffin_richard,Richard D. Goffin,western,
-kanfer_ruth,Ruth Kanfer,gatech,22Ph80MAAAAJ
 ackerman_phillip,Phillip L. Ackerman,gatech,YCmbxfIAAAAJ
-weiss_howard,Howard M. Weiss,gatech,zhUj2-oAAAAJ
 wiese_christopher,Christopher W. Wiese,gatech,sYILK6YAAAAJ
 meade_adam,Adam W. Meade,ncsu,o3ZbR_0AAAAJ
 craig_bart,S. Bartholomew Craig,ncsu,UogJDo8AAAAJ
@@ -124,9 +97,6 @@ wang_wei,Wei Wang,baruch,DwxPR9AAAAAJ
 chatterjee_dia,Dia Chatterjee,baruch,
 godollei_anna,Anna Godollei,baruch,s-GZAy8AAAAJ
 bazzoli_andrea,Andrea Bazzoli,baruch,zu8Us98AAAAJ
-cigularov_konstantin,Konstantin P. Cigularov,odu,
-major_debra,Debra A. Major,odu,
-hu_xiaoxiao,Xiaoxiao Hu,odu,
 crain_tori,Tori L. Crain,pdx,qUIckLcAAAAJ
 paolettihatcher_jensine,Jensine Paoletti-Hatcher,pdx,J_GbL8MAAAAJ
 randall_jason,Jason G. Randall,pdx,cT8LWcUAAAAJ
@@ -135,12 +105,11 @@ hanges_paul,Paul J. Hanges,umd,oEWUNuMAAAAJ
 grand_james,James A. Grand,umd,Y1w9_1oAAAAJ
 wessel_jennifer,Jennifer L. Wessel,umd,m_tEihAAAAAJ
 lahuis_david,David M. LaHuis,wright,_Q1k5eoAAAAJ
-miller_corey,Corey E. Miller,wright,xYdlSLMAAAAJ
+miller_corey,Corey E. Miller,wright,
 steelejohnson_debra,Debra Steele-Johnson,wright,
 christiansen_neil,Neil D. Christiansen,cmich,
 obrien_kimberly,Kimberly E. O'Brien,cmich,-K55amsAAAAJ
 prewett_matthew,Matthew S. Prewett,cmich,vqpmPQsAAAAJ
-speer_andrew,Andrew B. Speer,wayne,
 burns_gary,Gary N. Burns,fit,fQpVNQUAAAAJ
 converse_patrick,Patrick D. Converse,fit,15WPB2EAAAAJ
 griffith_richard,Richard L. Griffith,fit,PDhejLwAAAAJ
@@ -177,12 +146,9 @@ hunter_samuel,Samuel T. Hunter,unomaha,uJpT238AAAAJ
 kramer_william,William S. Kramer,unomaha,4N5qvy4AAAAJ
 nguyen_tin,Tin L. Nguyen,unomaha,2EwFZG0AAAAJ
 saxena_mahima,Mahima Saxena,unomaha,t2znOwkAAAAJ
-tett_robert,Robert P. Tett,utulsa,
 narayan_anupama,Anupama Narayan,utulsa,fHcB5e4AAAAJ
 lee_juseob,Juseob Lee,utulsa,q9B3GQUAAAAJ
 thapa_stuti,Stuti Thapa,utulsa,xJRhc0sAAAAJ
-ragsdale_jennifer,Jennifer M. Ragsdale,utulsa,
-vancouver_jeffrey,Jeffrey B. Vancouver,ohio,
 bruklee_valentina,Valentina Bruk-Lee,fiu,bxj2rK8AAAAJ
 viswesvaran_chockalingam,Chockalingam Viswesvaran,fiu,QMtjpPAAAAAJ
 eaton_asia,Asia A. Eaton,fiu,NuAnBdYAAAAJ
@@ -194,12 +160,10 @@ michel_jesse,Jesse S. Michel,auburn,DwPB8h4AAAAJ
 sawhney_gargi,Gargi Sawhney,auburn,-n9FF_MAAAAJ
 svyantek_dan,Dan J. Svyantek,auburn,
 watson_paige,Paige E. Watson,auburn,scnuEpwAAAAJ
-hauenstein_neil,Neil M. A. Hauenstein,vt,
 foti_roseanne,Roseanne J. Foti,vt,3gTEOkYAAAAJ
 chen_xiaowen,Xiaowen Chen,slu,
 harvey_richard,Richard D. Harvey,slu,1TVmkmsAAAAJ
 sabin_edward,Edward J. Sabin,slu,
-thomas_candice,Candice L. Thomas,slu,
 mcgee_heather,Heather M. McGee,wmu,
 martini_kate,Kate Martini,wmu,
 rafacz_sharlet,Sharlet D. Rafacz,wmu,
@@ -211,18 +175,15 @@ bragger_jennifer,Jennifer D. Bragger,montclair,14Q_wJwAAAAJ
 gonzalez_manuel,Manuel F. Gonzalez,montclair,WM-5inkAAAAJ
 gray_cheryl,Cheryl E. Gray,montclair,dtJA5zcAAAAJ
 digiovanni_ana,Ana M. DiGiovanni,montclair,y8Jmtu0AAAAJ
-simonet_daniel,Daniel V. Simonet,montclair,
 chebangore_yuliya,Yuliya Cheban-Gore,hofstra,_2_2JZUAAAAJ
-grossman_rebecca,Rebecca Grossman,hofstra,prsyEcQAAAAJ
+grossman_rebecca,Rebecca Grossman,hofstra,s4feQ-wAAAAJ
 nolan_kevin,Kevin P. Nolan,hofstra,
 pindek_shani,Shani Pindek,hofstra,_rWzco8AAAAJ
 salter_nicholas,Nicholas P. Salter,hofstra,csO4BBcAAAAJ
 shahanidenning_comila,Comila Shahani-Denning,hofstra,EATozncAAAAJ
-liu_cong,Cong Liu,hofstra,
 chung_helen,Helen Chung,spu,
 collins_joey,Joey Collins,spu,
 yost_paul,Paul R. Yost,spu,
-kendall_dana,Dana L. Kendall,spu,
 block_caryn,Caryn J. Block,tc,ehtj-IYAAAAJ
 coleman_peter,Peter T. Coleman,tc,vtAunVIAAAAJ
 hewlin_patricia,Patricia Faison Hewlin,tc,omJHUc4AAAAJ
@@ -239,19 +200,13 @@ nye_christopher,Christopher D. Nye,msu,mubiyMIAAAAJ
 hoff_kevin,Kevin A. Hoff,msu,fvfo6KwAAAAJ
 sheets_tilman,Tilman L. Sheets,latech,qgFwdgEAAAAJ
 toaddy_steven,Steven R. Toaddy,latech,
-igou_frank,Frank Igou,latech,
-desselles_mitzi,Mitzi Desselles,latech,
-costanza_david,David P. Costanza,gwu,
 offermann_lynn,Lynn R. Offermann,gwu,
 bisbey_tiffany,Tiffany M. Bisbey,gwu,qkRhEAYAAAAJ
 peng_yisheng,Yisheng Peng,gwu,m1eZdgsAAAAJ
-lee_yuehting,Yueh-Ting Lee,siuc,
-jacobs_eric,Eric A. Jacobs,siuc,
 houlfort_nathalie,Nathalie Houlfort,uqam,HPgQ300AAAAJ
 menard_julie,Julie Ménard,uqam,Na2bOIwAAAAJ
 meunier_sophie,Sophie Meunier,uqam,
 schattke_kaspar,Kaspar Philipp Schattke,uqam,lrRVSy0AAAAJ
-taylor_genevieve,Genevieve Taylor,uqam,
 provostsavard_yanick,Yanick Provost Savard,uqam,DbEZmbMAAAAJ
 daljeet_kabir,Kabir N. Daljeet,umontreal,n_P4qEIAAAAJ
 boivin_mariepier,Marie-Pier Boivin,umontreal,SfcRq7IAAAAJ
@@ -272,7 +227,6 @@ benson_alex,Alex J. Benson,western,ey9Rd5YAAAAJ
 espinoza_jose,Jose A. Espinoza,western,i5sc9xwAAAAJ
 evans_blair,M. Blair Evans,western,htD1_KIAAAAJ
 meyer_john,John P. Meyer,western,YUHwYTAAAAAJ
-diefendorff_james,James M. Diefendorff,uakron,
 siuta_rose,Rose L. Siuta,uakron,
 thorntonlugo_meghan,Meghan A. Thornton-Lugo,uakron,iv8X37AAAAAJ
 snell_andrea,Andrea F. Snell,uakron,W39kP8YAAAAJ
@@ -280,20 +234,15 @@ grandey_alicia,Alicia A. Grandey,psu,TYnFrXMAAAAJ
 brooks_ricardo,Ricardo R. Brooks,psu,Pi2a1hkAAAAJ
 graham_baylor,Baylor A. Graham,psu,3_-_jfIAAAAJ
 simkins_susan,Susan J. Simkins,psu,jHzOVXYAAAAJ
-caird_jeff,Jeff K. Caird,calgary,J_4nig0AAAAJ
 lee_kibeom,Kibeom Lee,calgary,
 murry_adam,Adam T. Murry,calgary,xqiCRnIAAAAJ
 kaplan_seth,Seth A. Kaplan,gmu,Qlhi2hEAAAAJ
-ahmad_afra,Afra Saeed Ahmad,gmu,
 kuykendall_lauren,Lauren E. Kuykendall,gmu,w1u2dLoAAAAJ
 lee_philseok,Philseok Lee,gmu,aNGET7sAAAAJ
 liang_yijue,Yijue Liang,gmu,HRORhnAAAAAJ
 rupp_deborah,Deborah E. Rupp,gmu,ioOrO_MAAAAJ
-savage_nastassia,Nastassia Savage,gmu,
-stagl_kevin,Kevin C. Stagl,gmu,
 clark_malissa,Malissa A. Clark,uga,WqcFrlsAAAAJ
 he_yimin,Yimin He,uga,ECRFCggAAAAJ
-outland_neal,Neal Outland,uga,
 robertson_melissa,Melissa M. Robertson,uga,GxOOhMwAAAAJ
 bergman_mindy,Mindy E. Bergman,tamu,G-AO9gsAAAAJ
 hughes_ian,Ian M. Hughes,tamu,GynUkBgAAAAJ
@@ -332,6 +281,7 @@ harriswatson_alex,Alexandra Harris-Watson,purdue,VaqrGQoAAAAJ
 macnamara_brooke,Brooke N. Macnamara,purdue,dKPihKcAAAAJ
 silver_elisabeth,Elisabeth Silver,msu,JrigXcIAAAAJ
 baker_nathan,Nathan Baker,wright,TnosyFsAAAAJ
+mccord_mallory,Mallory A. McCord,wright,c2TKbj0AAAAJ
 rudolph_cort,Cort W. Rudolph,wayne,Z9W6egsAAAAJ
 reed_brent,Brent Reed,uncc,9kHbKL8AAAAJ
 walker_lisa,Lisa Slattery Walker,uncc,_DnBkXMAAAAJ
