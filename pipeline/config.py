@@ -166,6 +166,146 @@ def venue_name_lookup(venues_doc: dict) -> dict[str, dict]:
     return out
 
 
+def _unique_venue_records(venues: dict[str, dict]) -> list[dict]:
+    seen: set[str] = set()
+    out: list[dict] = []
+    for v in venues.values():
+        if not isinstance(v, dict):
+            continue
+        vid = str(v.get("id") or "")
+        if not vid or vid in seen:
+            continue
+        seen.add(vid)
+        out.append(v)
+    return out
+
+
+_NEEDLE_STOP = frozenset(
+    {
+        "a",
+        "an",
+        "and",
+        "annual",
+        "acm",
+        "conference",
+        "ieee",
+        "in",
+        "international",
+        "joint",
+        "meeting",
+        "of",
+        "on",
+        "proceedings",
+        "the",
+        "to",
+        "for",
+    }
+)
+
+
+def _needle_in_text(text: str, needle: str) -> bool:
+    n = (needle or "").lower().strip()
+    if not n or not text:
+        return False
+    pat = r"(?<![a-z0-9])" + re.escape(n) + r"(?![a-z0-9])"
+    if re.search(pat, text):
+        return True
+    # Scholar truncates venue strings ("…"). A distinctive prefix of a long
+    # name still counts, so "… Empirical Methods in Natural Language …"
+    # matches "empirical methods in natural language processing".
+    # Require ≥3 content words so "human factors in …" does not steal CHI
+    # into AHFE / "Human Factors in Productivity" / HFES-style strings.
+    if "…" not in text and "..." not in text:
+        return False
+    if len(n) < 16 or " " not in n:
+        return False
+    head = re.split(r"…|\.\.\.", text, maxsplit=1)[0]
+    words = n.split()
+    for k in range(len(words), 1, -1):
+        prefix = " ".join(words[:k])
+        if len(prefix) < 16:
+            break
+        content = [w for w in prefix.split() if w not in _NEEDLE_STOP and len(w) >= 4]
+        if len(content) < 3:
+            continue
+        m = re.search(r"(?<![a-z0-9])" + re.escape(prefix) + r"(?![a-z0-9])", head)
+        if not m:
+            continue
+        rest = re.sub(r"^[\s,.;:([{/|\-–—]+", "", head[m.end() :])
+        if not rest:
+            return True
+        nxt = re.match(r"[a-z0-9]+", rest)
+        if not nxt:
+            return True
+        if k >= len(words):
+            return True
+        expected = re.sub(r"[^a-z0-9]", "", words[k])
+        got = nxt.group(0)
+        if expected and (expected.startswith(got) or got.startswith(expected)):
+            return True
+    return False
+
+
+def match_conference(title_or_venue: str, venues: dict[str, dict]) -> dict | None:
+    """Match CS/HCI conference strings that do not start with the venue name.
+
+    Scholar often stores \"Proceedings of the 2026 CHI Conference…\". Longest
+    matching needle wins so NAACL beats the parent ACL string.
+    """
+    text = (title_or_venue or "").lower().strip()
+    if not text:
+        return None
+    best: dict | None = None
+    best_len = -1
+    for v in _unique_venue_records(venues):
+        if v.get("kind") != "conference":
+            continue
+        if any(_needle_in_text(text, ex) for ex in (v.get("match_exclude") or [])):
+            continue
+        needles = [*(v.get("match_needles") or []), v.get("name") or "", *(v.get("aliases") or [])]
+        for needle in needles:
+            n = str(needle).lower().strip()
+            if _needle_in_text(text, n) and len(n) > best_len:
+                best_len = len(n)
+                best = v
+    return best
+
+
+_MONTH = (
+    "january|february|march|april|may|june|july|august|september|october|"
+    "november|december"
+)
+
+
+def _rest_is_venue_subtitle(name: str, rest: str, rec: dict) -> bool:
+    """True when Scholar appended this venue's own subtitle / long form.
+
+    Covers truncated strings such as \"Industrial and Organizational Psychology:
+    Perspectives on Science and …\". Cousin titles (Journal of Management
+    Development, Applied Psychology: Health and Well-Being) do not match.
+    """
+    head = re.split(r"…|\.\.\.", rest, maxsplit=1)[0]
+    head = re.split(r"\s+\d", head, maxsplit=1)[0]
+    head = re.sub(r"[,.;]+.*$", "", head).strip(" :-–—")
+    if head.startswith("the "):
+        head = head[4:].strip()
+    if len(head) < 12:
+        return False
+    aliases = [rec.get("name") or "", *(rec.get("aliases") or [])]
+    for alias in aliases:
+        extra = str(alias).lower().strip()
+        if not extra.startswith(name) or extra == name:
+            continue
+        extra = extra[len(name) :].strip(" :-–—")
+        if extra.startswith("the "):
+            extra = extra[4:].strip()
+        if len(extra) < 12:
+            continue
+        if extra.startswith(head) or head.startswith(extra):
+            return True
+    return False
+
+
 def match_venue(title_or_venue: str, venues: dict[str, dict]) -> dict | None:
     """Match Scholar venue strings to whitelist entries.
 
@@ -173,17 +313,21 @@ def match_venue(title_or_venue: str, venues: dict[str, dict]) -> dict | None:
     continuation (volume/year), so short titles like \"Psychological Science\"
     or \"Journal of Management\" do not swallow longer unrelated names
     (e.g. Perspectives on Psychological Science, Journal of Management Development).
+    Conference venues (kind=conference) also match needles anywhere in the string.
     """
-    text = (title_or_venue or "").lower().strip()
-    if not text:
+    raw_text = (title_or_venue or "").lower().strip()
+    if not raw_text:
         return None
     names = sorted(
         (n for n in venues if n and any(ch.isalpha() for ch in n)),
         key=len,
         reverse=True,
     )
+    variants = [raw_text]
+    if raw_text.startswith("the "):
+        variants.append(raw_text[4:].lstrip())
 
-    def ok_continuation(name: str) -> bool:
+    def ok_continuation(text: str, name: str, rec: dict) -> bool:
         if text == name:
             return True
         if not text.startswith(name) or len(text) <= len(name):
@@ -201,16 +345,32 @@ def match_venue(title_or_venue: str, venues: dict[str, dict]) -> dict | None:
         # Typical Scholar: "Journal Name 12 (3), 45-67, 2020"
         if rest[0].isdigit() or rest.startswith("("):
             return True
+        # DOI-only or month/year instead of volume (common for HBR / in-press).
+        if rest.startswith("http"):
+            return True
+        if re.match(rf"(?:{_MONTH})\b", rest) and re.search(r"\b(19|20)\d{2}\b", text):
+            return True
+        # Advance-access ids such as "waac037, 2023"
+        if re.match(r"[a-z]{2,}\d+", rest) and re.search(r"\b(19|20)\d{2}\b", text):
+            return True
+        if rest.startswith("special issue") and re.search(r"\b(19|20)\d{2}\b", text):
+            return True
+        if _rest_is_venue_subtitle(name, rest, rec):
+            return True
         # Subtitle aliases (name already contains ":") may continue with
         # publisher fluff before the year, e.g. Wiley HRM long form.
         if ":" in name and re.search(r"\b(19|20)\d{2}\b", text):
             return True
         return False
 
-    for name in names:
-        if ok_continuation(name):
-            return venues[name]
-    return None
+    for text in variants:
+        for name in names:
+            rec = venues[name]
+            if rec.get("kind") == "conference":
+                continue
+            if ok_continuation(text, name, rec):
+                return rec
+    return match_conference(title_or_venue, venues)
 
 
 def apply_venue(pub: dict, venues: dict[str, dict]) -> dict:

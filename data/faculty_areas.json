@@ -2954,6 +2954,25 @@
       }
     },
     {
+      "faculty_id": "mcchesney_jenna",
+      "name": "Jenna McChesney",
+      "phrases": [
+        "personnel selection",
+        "mental health at work",
+        "job applicants"
+      ],
+      "areas": [
+        "Selection",
+        "Diversity",
+        "Stress / Well-being"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": false
+      }
+    },
+    {
       "faculty_id": "mcgee_heather",
       "name": "Heather M. McGee",
       "phrases": [
@@ -4407,6 +4426,27 @@
         "Leadership",
         "Diversity",
         "Stress / Well-being"
+      ],
+      "unmapped": [],
+      "source": {
+        "scholar": true,
+        "homepage": true
+      }
+    },
+    {
+      "faculty_id": "strah_nicole",
+      "name": "Nicole Strah",
+      "phrases": [
+        "organizational justice",
+        "diversity and inclusion",
+        "equal employment opportunity",
+        "job analysis",
+        "adverse impact"
+      ],
+      "areas": [
+        "Diversity",
+        "Selection",
+        "Motivation / Attitudes"
       ],
       "unmapped": [],
       "source": {

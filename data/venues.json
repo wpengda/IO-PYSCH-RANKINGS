@@ -216,6 +216,9 @@
       "areas": [
         "Leadership"
       ],
+      "aliases": [
+        "Leadership Quarterly"
+      ],
       "impact_factor": 10.0,
       "discipline": "ob_mgmt",
       "impact_factor_year": 2025,
@@ -1581,6 +1584,7 @@
       ],
       "aliases": [
         "Annu. Rev. Organ. Psychol. Organ. Behav.",
+        "Annu. Rev. Organ. Psychol. Organ. Behav",
         "Annu Rev Organ Psychol Organ Behav",
         "Annual Review of Organizational Psychology & Organizational Behavior",
         "AROPOB"
@@ -2066,6 +2070,34 @@
       "abdc": "A"
     },
     {
+      "id": "jbdm",
+      "name": "Journal of Behavioral Decision Making",
+      "issn": [
+        "0894-3257",
+        "1099-0771"
+      ],
+      "weight": 1.0,
+      "cross_boundary": true,
+      "areas": [
+        "Motivation / Attitudes",
+        "Individual Differences / Personality",
+        "Methods",
+        "Performance",
+        "General"
+      ],
+      "aliases": [
+        "J. Behav. Decis. Mak.",
+        "J Behav Decis Mak",
+        "J. Behav. Decis. Making",
+        "Journal of Behavioural Decision Making"
+      ],
+      "impact_factor": 1.5,
+      "discipline": "general_psych",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q3",
+      "abdc": "A"
+    },
+    {
       "id": "pspb",
       "name": "Personality and Social Psychology Bulletin",
       "issn": [
@@ -2386,7 +2418,8 @@
         "Hum. Factors",
         "Hum Factors",
         "Human Factors: The Journal of the Human Factors and Ergonomics Society",
-        "Human Factors The Journal of the Human Factors and Ergonomics Society"
+        "Human Factors The Journal of the Human Factors and Ergonomics Society",
+        "Human Factors-Journal of the Human Factors and Ergonomics Society"
       ],
       "impact_factor": 3.6,
       "discipline": "applied",
@@ -2578,6 +2611,423 @@
       "impact_factor_year": 2025,
       "jcr_quartile": "Q1",
       "abdc": "A"
+    },
+    {
+      "id": "acl",
+      "name": "Annual Meeting of the Association for Computational Linguistics",
+      "kind": "conference",
+      "issn": [],
+      "weight": 1.0,
+      "cross_boundary": true,
+      "areas": [
+        "AI / Technology",
+        "Methods"
+      ],
+      "discipline": "cs_conf",
+      "match_needles": [
+        "annual meeting of the association for computational linguistics",
+        "proceedings of the acl",
+        "proceedings of acl"
+      ],
+      "match_exclude": [
+        "naacl",
+        "emnlp",
+        "eacl"
+      ],
+      "core": "A*",
+      "core_source": "ICORE",
+      "core_year": 2026,
+      "ccf": "A",
+      "ccf_year": 2022,
+      "subfield": "nlp",
+      "list_order": 5
+    },
+    {
+      "id": "emnlp",
+      "name": "Conference on Empirical Methods in Natural Language Processing",
+      "kind": "conference",
+      "issn": [],
+      "weight": 1.0,
+      "cross_boundary": true,
+      "areas": [
+        "AI / Technology",
+        "Methods"
+      ],
+      "discipline": "cs_conf",
+      "match_needles": [
+        "association for computational linguistics: emnlp",
+        "empirical methods in natural language processing",
+        "empirical methods in natural language",
+        "emnlp"
+      ],
+      "core": "A*",
+      "core_source": "ICORE",
+      "core_year": 2026,
+      "ccf": "B",
+      "ccf_year": 2022,
+      "subfield": "nlp",
+      "list_order": 6
+    },
+    {
+      "id": "naacl",
+      "name": "Conference of the North American Chapter of the Association for Computational Linguistics",
+      "kind": "conference",
+      "issn": [],
+      "weight": 1.0,
+      "cross_boundary": true,
+      "areas": [
+        "AI / Technology",
+        "Methods"
+      ],
+      "discipline": "cs_conf",
+      "match_needles": [
+        "association for computational linguistics: naacl",
+        "north american chapter of the association for computational linguistics",
+        "naacl"
+      ],
+      "core": "A",
+      "core_source": "ICORE",
+      "core_year": 2026,
+      "ccf": "B",
+      "ccf_year": 2022,
+      "subfield": "nlp",
+      "list_order": 7
+    },
+    {
+      "id": "eacl",
+      "name": "Conference of the European Chapter of the Association for Computational Linguistics",
+      "kind": "conference",
+      "issn": [],
+      "weight": 1.0,
+      "cross_boundary": true,
+      "areas": [
+        "AI / Technology",
+        "Methods"
+      ],
+      "discipline": "cs_conf",
+      "match_needles": [
+        "european chapter of the association for computational linguistics",
+        "eacl"
+      ],
+      "core": "A",
+      "core_source": "ICORE",
+      "core_year": 2026,
+      "subfield": "nlp",
+      "list_order": 9
+    },
+    {
+      "id": "colm",
+      "name": "Conference on Language Modeling",
+      "kind": "conference",
+      "issn": [],
+      "weight": 1.0,
+      "cross_boundary": true,
+      "areas": [
+        "AI / Technology",
+        "Methods"
+      ],
+      "discipline": "cs_conf",
+      "match_needles": [
+        "conference on language modeling",
+        "conference on language models",
+        "colm"
+      ],
+      "subfield": "nlp",
+      "list_order": 8
+    },
+    {
+      "id": "iclr",
+      "name": "International Conference on Learning Representations",
+      "kind": "conference",
+      "issn": [],
+      "weight": 1.0,
+      "cross_boundary": true,
+      "areas": [
+        "AI / Technology",
+        "Methods"
+      ],
+      "discipline": "cs_conf",
+      "match_needles": [
+        "international conference on learning representations",
+        "iclr"
+      ],
+      "core": "A*",
+      "core_source": "ICORE",
+      "core_year": 2026,
+      "subfield": "ml",
+      "list_order": 2
+    },
+    {
+      "id": "aaai",
+      "name": "AAAI Conference on Artificial Intelligence",
+      "kind": "conference",
+      "issn": [],
+      "weight": 1.0,
+      "cross_boundary": true,
+      "areas": [
+        "AI / Technology",
+        "Methods"
+      ],
+      "discipline": "cs_conf",
+      "match_needles": [
+        "aaai conference on artificial intelligence",
+        "proceedings of the aaai"
+      ],
+      "match_exclude": [
+        "web and social media",
+        "symposium series"
+      ],
+      "core": "A*",
+      "core_source": "ICORE",
+      "core_year": 2026,
+      "ccf": "A",
+      "ccf_year": 2022,
+      "subfield": "ml",
+      "list_order": 4
+    },
+    {
+      "id": "icml",
+      "name": "International Conference on Machine Learning",
+      "kind": "conference",
+      "issn": [],
+      "weight": 1.0,
+      "cross_boundary": true,
+      "areas": [
+        "AI / Technology",
+        "Methods"
+      ],
+      "discipline": "cs_conf",
+      "match_needles": [
+        "international conference on machine learning",
+        "icml"
+      ],
+      "match_exclude": [
+        "machine learning and applications",
+        "icmla"
+      ],
+      "core": "A*",
+      "core_source": "ICORE",
+      "core_year": 2026,
+      "ccf": "A",
+      "ccf_year": 2022,
+      "subfield": "ml",
+      "list_order": 3
+    },
+    {
+      "id": "neurips",
+      "name": "Conference on Neural Information Processing Systems",
+      "kind": "conference",
+      "issn": [],
+      "weight": 1.0,
+      "cross_boundary": true,
+      "areas": [
+        "AI / Technology",
+        "Methods"
+      ],
+      "discipline": "cs_conf",
+      "match_needles": [
+        "advances in neural information processing systems",
+        "neural information processing systems",
+        "neurips",
+        "nips"
+      ],
+      "core": "A*",
+      "core_source": "ICORE",
+      "core_year": 2026,
+      "ccf": "A",
+      "ccf_year": 2022,
+      "subfield": "ml",
+      "list_order": 1
+    },
+    {
+      "id": "cvpr",
+      "name": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+      "kind": "conference",
+      "issn": [],
+      "weight": 1.0,
+      "cross_boundary": true,
+      "areas": [
+        "AI / Technology"
+      ],
+      "discipline": "cs_conf",
+      "match_needles": [
+        "computer vision and pattern recognition",
+        "cvpr"
+      ],
+      "core": "A*",
+      "core_source": "ICORE",
+      "core_year": 2026,
+      "ccf": "A",
+      "ccf_year": 2022,
+      "subfield": "vision",
+      "list_order": 10
+    },
+    {
+      "id": "eccv",
+      "name": "European Conference on Computer Vision",
+      "kind": "conference",
+      "issn": [],
+      "weight": 1.0,
+      "cross_boundary": true,
+      "areas": [
+        "AI / Technology"
+      ],
+      "discipline": "cs_conf",
+      "match_needles": [
+        "european conference on computer vision",
+        "eccv"
+      ],
+      "core": "A*",
+      "core_source": "ICORE",
+      "core_year": 2026,
+      "ccf": "B",
+      "ccf_year": 2022,
+      "subfield": "vision",
+      "list_order": 11
+    },
+    {
+      "id": "kdd",
+      "name": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+      "kind": "conference",
+      "issn": [],
+      "weight": 1.0,
+      "cross_boundary": true,
+      "areas": [
+        "AI / Technology",
+        "Methods"
+      ],
+      "discipline": "cs_conf",
+      "match_needles": [
+        "knowledge discovery and data mining",
+        "acm sigkdd",
+        "kdd"
+      ],
+      "core": "A*",
+      "core_source": "ICORE",
+      "core_year": 2026,
+      "ccf": "A",
+      "ccf_year": 2022,
+      "subfield": "kdd",
+      "list_order": 12
+    },
+    {
+      "id": "chi",
+      "name": "ACM CHI Conference on Human Factors in Computing Systems",
+      "kind": "conference",
+      "issn": [],
+      "weight": 1.0,
+      "cross_boundary": true,
+      "areas": [
+        "AI / Technology",
+        "Teams",
+        "Work Design"
+      ],
+      "discipline": "cs_conf",
+      "match_needles": [
+        "chi conference on human factors in computing systems",
+        "human factors in computing systems",
+        "proceedings of chi",
+        "chi conference"
+      ],
+      "match_exclude": [
+        "psi chi",
+        "ahfe"
+      ],
+      "core": "A*",
+      "core_source": "ICORE",
+      "core_year": 2026,
+      "ccf": "A",
+      "ccf_year": 2022,
+      "subfield": "hci",
+      "list_order": 13
+    },
+    {
+      "id": "cscw",
+      "name": "ACM Conference on Computer-Supported Cooperative Work and Social Computing",
+      "kind": "conference",
+      "issn": [
+        "2573-0142"
+      ],
+      "weight": 1.0,
+      "cross_boundary": true,
+      "areas": [
+        "AI / Technology",
+        "Teams",
+        "Work Design"
+      ],
+      "discipline": "cs_conf",
+      "match_needles": [
+        "proceedings of the acm on human-computer interaction",
+        "acm on human-computer interaction",
+        "computer-supported cooperative work",
+        "computer supported cooperative work",
+        "cscw"
+      ],
+      "match_exclude": [
+        "ecscw",
+        "cscwd",
+        "cooperative work in design"
+      ],
+      "core": "A",
+      "core_source": "ICORE",
+      "core_year": 2026,
+      "ccf": "A",
+      "ccf_year": 2022,
+      "subfield": "hci",
+      "list_order": 14
+    },
+    {
+      "id": "iui",
+      "name": "ACM International Conference on Intelligent User Interfaces",
+      "kind": "conference",
+      "issn": [],
+      "weight": 1.0,
+      "cross_boundary": true,
+      "areas": [
+        "AI / Technology",
+        "Work Design"
+      ],
+      "discipline": "cs_conf",
+      "match_needles": [
+        "intelligent user interfaces",
+        "conference on intelligent user",
+        "iui"
+      ],
+      "core": "A",
+      "core_source": "ICORE",
+      "core_year": 2026,
+      "ccf": "B",
+      "ccf_year": 2022,
+      "subfield": "hci",
+      "list_order": 15
+    },
+    {
+      "id": "imwut",
+      "name": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies",
+      "kind": "conference",
+      "issn": [
+        "2474-9567"
+      ],
+      "weight": 1.0,
+      "cross_boundary": true,
+      "areas": [
+        "AI / Technology",
+        "Teams"
+      ],
+      "discipline": "cs_conf",
+      "match_needles": [
+        "interactive, mobile, wearable and ubiquitous",
+        "pervasive and ubiquitous computing",
+        "imwut",
+        "ubicomp"
+      ],
+      "core": "A*",
+      "core_source": "CORE",
+      "core_year": 2018,
+      "ccf": "A",
+      "ccf_year": 2022,
+      "subfield": "hci",
+      "list_order": 16
     }
   ],
   "disciplines": [
@@ -2608,6 +3058,14 @@
     {
       "id": "applied",
       "label": "Human Factors / Health / Aging / Technology"
+    },
+    {
+      "id": "cs_conf",
+      "label": "CS / HCI / ML conferences"
     }
-  ]
+  ],
+  "core_year": 2026,
+  "ccf_year": 2022,
+  "core_note": "Conference core is the ICORE 2026 rank (A*, A, B, C). Successor to CORE. COLM is too new to be ranked.",
+  "ccf_note": "Conference ccf is the CCF 2022 recommended international conference catalog (A, B, C). ICLR, EACL, and COLM are not on that catalog."
 }

@@ -1,10 +1,10 @@
 {
   "stats": {
-    "publications": 24500,
-    "with_author_names": 24496,
-    "roster_nodes": 272,
-    "roster_edges": 1732,
-    "external_name_strings": 18887,
+    "publications": 24570,
+    "with_author_names": 24566,
+    "roster_nodes": 274,
+    "roster_edges": 1764,
+    "external_name_strings": 18934,
     "year_min": 1981,
     "year_max": 2026
   },
@@ -747,6 +747,17 @@
       "abdc": "A"
     },
     {
+      "id": "jbdm",
+      "name": "Journal of Behavioral Decision Making",
+      "cross_boundary": true,
+      "discipline": "general_psych",
+      "subfield": "",
+      "io_relevance": "",
+      "jcr_quartile": "Q3",
+      "impact_factor": 1.5,
+      "abdc": "A"
+    },
+    {
       "id": "pspb",
       "name": "Personality and Social Psychology Bulletin",
       "cross_boundary": true,
@@ -954,6 +965,182 @@
       "jcr_quartile": "Q1",
       "impact_factor": 6.2,
       "abdc": "A"
+    },
+    {
+      "id": "acl",
+      "name": "Annual Meeting of the Association for Computational Linguistics",
+      "cross_boundary": true,
+      "discipline": "cs_conf",
+      "subfield": "nlp",
+      "io_relevance": "",
+      "jcr_quartile": "",
+      "impact_factor": null,
+      "abdc": ""
+    },
+    {
+      "id": "emnlp",
+      "name": "Conference on Empirical Methods in Natural Language Processing",
+      "cross_boundary": true,
+      "discipline": "cs_conf",
+      "subfield": "nlp",
+      "io_relevance": "",
+      "jcr_quartile": "",
+      "impact_factor": null,
+      "abdc": ""
+    },
+    {
+      "id": "naacl",
+      "name": "Conference of the North American Chapter of the Association for Computational Linguistics",
+      "cross_boundary": true,
+      "discipline": "cs_conf",
+      "subfield": "nlp",
+      "io_relevance": "",
+      "jcr_quartile": "",
+      "impact_factor": null,
+      "abdc": ""
+    },
+    {
+      "id": "eacl",
+      "name": "Conference of the European Chapter of the Association for Computational Linguistics",
+      "cross_boundary": true,
+      "discipline": "cs_conf",
+      "subfield": "nlp",
+      "io_relevance": "",
+      "jcr_quartile": "",
+      "impact_factor": null,
+      "abdc": ""
+    },
+    {
+      "id": "colm",
+      "name": "Conference on Language Modeling",
+      "cross_boundary": true,
+      "discipline": "cs_conf",
+      "subfield": "nlp",
+      "io_relevance": "",
+      "jcr_quartile": "",
+      "impact_factor": null,
+      "abdc": ""
+    },
+    {
+      "id": "iclr",
+      "name": "International Conference on Learning Representations",
+      "cross_boundary": true,
+      "discipline": "cs_conf",
+      "subfield": "ml",
+      "io_relevance": "",
+      "jcr_quartile": "",
+      "impact_factor": null,
+      "abdc": ""
+    },
+    {
+      "id": "aaai",
+      "name": "AAAI Conference on Artificial Intelligence",
+      "cross_boundary": true,
+      "discipline": "cs_conf",
+      "subfield": "ml",
+      "io_relevance": "",
+      "jcr_quartile": "",
+      "impact_factor": null,
+      "abdc": ""
+    },
+    {
+      "id": "icml",
+      "name": "International Conference on Machine Learning",
+      "cross_boundary": true,
+      "discipline": "cs_conf",
+      "subfield": "ml",
+      "io_relevance": "",
+      "jcr_quartile": "",
+      "impact_factor": null,
+      "abdc": ""
+    },
+    {
+      "id": "neurips",
+      "name": "Conference on Neural Information Processing Systems",
+      "cross_boundary": true,
+      "discipline": "cs_conf",
+      "subfield": "ml",
+      "io_relevance": "",
+      "jcr_quartile": "",
+      "impact_factor": null,
+      "abdc": ""
+    },
+    {
+      "id": "cvpr",
+      "name": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+      "cross_boundary": true,
+      "discipline": "cs_conf",
+      "subfield": "vision",
+      "io_relevance": "",
+      "jcr_quartile": "",
+      "impact_factor": null,
+      "abdc": ""
+    },
+    {
+      "id": "eccv",
+      "name": "European Conference on Computer Vision",
+      "cross_boundary": true,
+      "discipline": "cs_conf",
+      "subfield": "vision",
+      "io_relevance": "",
+      "jcr_quartile": "",
+      "impact_factor": null,
+      "abdc": ""
+    },
+    {
+      "id": "kdd",
+      "name": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+      "cross_boundary": true,
+      "discipline": "cs_conf",
+      "subfield": "kdd",
+      "io_relevance": "",
+      "jcr_quartile": "",
+      "impact_factor": null,
+      "abdc": ""
+    },
+    {
+      "id": "chi",
+      "name": "ACM CHI Conference on Human Factors in Computing Systems",
+      "cross_boundary": true,
+      "discipline": "cs_conf",
+      "subfield": "hci",
+      "io_relevance": "",
+      "jcr_quartile": "",
+      "impact_factor": null,
+      "abdc": ""
+    },
+    {
+      "id": "cscw",
+      "name": "ACM Conference on Computer-Supported Cooperative Work and Social Computing",
+      "cross_boundary": true,
+      "discipline": "cs_conf",
+      "subfield": "hci",
+      "io_relevance": "",
+      "jcr_quartile": "",
+      "impact_factor": null,
+      "abdc": ""
+    },
+    {
+      "id": "iui",
+      "name": "ACM International Conference on Intelligent User Interfaces",
+      "cross_boundary": true,
+      "discipline": "cs_conf",
+      "subfield": "hci",
+      "io_relevance": "",
+      "jcr_quartile": "",
+      "impact_factor": null,
+      "abdc": ""
+    },
+    {
+      "id": "imwut",
+      "name": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies",
+      "cross_boundary": true,
+      "discipline": "cs_conf",
+      "subfield": "hci",
+      "io_relevance": "",
+      "jcr_quartile": "",
+      "impact_factor": null,
+      "abdc": ""
     }
   ],
   "areas": [
@@ -1057,6 +1244,10 @@
     {
       "id": "applied",
       "label": "Human Factors / Health / Aging / Technology"
+    },
+    {
+      "id": "cs_conf",
+      "label": "CS / HCI / ML conferences"
     }
   ],
   "nodes": [
@@ -1265,8 +1456,8 @@
           "current": true
         }
       ],
-      "degree": 44,
-      "strength": 100
+      "degree": 45,
+      "strength": 101
     },
     {
       "id": "brooks_margaret",
@@ -1305,8 +1496,8 @@
           "current": true
         }
       ],
-      "degree": 45,
-      "strength": 90
+      "degree": 46,
+      "strength": 91
     },
     {
       "id": "levy_paul",
@@ -1425,8 +1616,8 @@
           "current": true
         }
       ],
-      "degree": 65,
-      "strength": 248
+      "degree": 66,
+      "strength": 249
     },
     {
       "id": "king_danielle",
@@ -1465,8 +1656,8 @@
           "current": true
         }
       ],
-      "degree": 73,
-      "strength": 259
+      "degree": 74,
+      "strength": 261
     },
     {
       "id": "oswald_fred",
@@ -1513,8 +1704,8 @@
           "current": false
         }
       ],
-      "degree": 25,
-      "strength": 35
+      "degree": 26,
+      "strength": 36
     },
     {
       "id": "salas_eduardo",
@@ -1693,8 +1884,8 @@
           "current": true
         }
       ],
-      "degree": 65,
-      "strength": 148
+      "degree": 66,
+      "strength": 149
     },
     {
       "id": "chao_georgia",
@@ -1853,8 +2044,8 @@
           "current": true
         }
       ],
-      "degree": 33,
-      "strength": 98
+      "degree": 34,
+      "strength": 99
     },
     {
       "id": "tay_louis",
@@ -1873,8 +2064,8 @@
           "current": true
         }
       ],
-      "degree": 40,
-      "strength": 182
+      "degree": 41,
+      "strength": 183
     },
     {
       "id": "brummel_bradley",
@@ -2074,7 +2265,7 @@
         }
       ],
       "degree": 9,
-      "strength": 24
+      "strength": 23
     },
     {
       "id": "prasad_josh",
@@ -2113,8 +2304,8 @@
           "current": true
         }
       ],
-      "degree": 34,
-      "strength": 94
+      "degree": 35,
+      "strength": 95
     },
     {
       "id": "rogelberg_steven",
@@ -2133,8 +2324,8 @@
           "current": true
         }
       ],
-      "degree": 50,
-      "strength": 126
+      "degree": 51,
+      "strength": 127
     },
     {
       "id": "mcgonagle_alyssa",
@@ -2173,8 +2364,8 @@
           "current": true
         }
       ],
-      "degree": 46,
-      "strength": 101
+      "degree": 47,
+      "strength": 102
     },
     {
       "id": "gooty_janaki",
@@ -2681,8 +2872,8 @@
           "current": true
         }
       ],
-      "degree": 35,
-      "strength": 89
+      "degree": 36,
+      "strength": 90
     },
     {
       "id": "vanfossen_jenna",
@@ -2741,8 +2932,8 @@
           "current": true
         }
       ],
-      "degree": 32,
-      "strength": 97
+      "degree": 33,
+      "strength": 98
     },
     {
       "id": "ehrhart_mark",
@@ -2841,8 +3032,8 @@
           "current": true
         }
       ],
-      "degree": 37,
-      "strength": 63
+      "degree": 38,
+      "strength": 64
     },
     {
       "id": "su_shiyang",
@@ -2961,8 +3152,8 @@
           "current": true
         }
       ],
-      "degree": 9,
-      "strength": 37
+      "degree": 10,
+      "strength": 38
     },
     {
       "id": "crain_tori",
@@ -3081,8 +3272,8 @@
           "current": true
         }
       ],
-      "degree": 33,
-      "strength": 93
+      "degree": 34,
+      "strength": 94
     },
     {
       "id": "wessel_jennifer",
@@ -3341,8 +3532,8 @@
           "current": true
         }
       ],
-      "degree": 10,
-      "strength": 42
+      "degree": 11,
+      "strength": 44
     },
     {
       "id": "mccarthy_randy",
@@ -3421,8 +3612,8 @@
           "current": true
         }
       ],
-      "degree": 4,
-      "strength": 7
+      "degree": 5,
+      "strength": 9
     },
     {
       "id": "valle_ibette",
@@ -3521,8 +3712,8 @@
           "current": true
         }
       ],
-      "degree": 23,
-      "strength": 33
+      "degree": 24,
+      "strength": 34
     },
     {
       "id": "ayman_roya",
@@ -3581,8 +3772,8 @@
           "current": true
         }
       ],
-      "degree": 7,
-      "strength": 9
+      "degree": 8,
+      "strength": 11
     },
     {
       "id": "katz_ian",
@@ -3841,8 +4032,8 @@
           "current": true
         }
       ],
-      "degree": 11,
-      "strength": 16
+      "degree": 12,
+      "strength": 17
     },
     {
       "id": "narayan_anupama",
@@ -4441,8 +4632,8 @@
           "current": true
         }
       ],
-      "degree": 2,
-      "strength": 4
+      "degree": 3,
+      "strength": 5
     },
     {
       "id": "westaby_james",
@@ -4521,8 +4712,8 @@
           "current": true
         }
       ],
-      "degree": 9,
-      "strength": 26
+      "degree": 10,
+      "strength": 27
     },
     {
       "id": "martinraugh_michelle",
@@ -4662,7 +4853,7 @@
         }
       ],
       "degree": 6,
-      "strength": 12
+      "strength": 13
     },
     {
       "id": "houlfort_nathalie",
@@ -4901,8 +5092,8 @@
           "current": true
         }
       ],
-      "degree": 30,
-      "strength": 60
+      "degree": 31,
+      "strength": 61
     },
     {
       "id": "gilin_debra",
@@ -5101,8 +5292,8 @@
           "current": true
         }
       ],
-      "degree": 5,
-      "strength": 23
+      "degree": 6,
+      "strength": 24
     },
     {
       "id": "snell_andrea",
@@ -5261,8 +5452,8 @@
           "current": true
         }
       ],
-      "degree": 19,
-      "strength": 51
+      "degree": 20,
+      "strength": 54
     },
     {
       "id": "kuykendall_lauren",
@@ -5282,7 +5473,7 @@
         }
       ],
       "degree": 10,
-      "strength": 40
+      "strength": 42
     },
     {
       "id": "lee_philseok",
@@ -5302,7 +5493,7 @@
         }
       ],
       "degree": 7,
-      "strength": 32
+      "strength": 34
     },
     {
       "id": "liang_yijue",
@@ -5349,8 +5540,8 @@
           "current": false
         }
       ],
-      "degree": 58,
-      "strength": 138
+      "degree": 59,
+      "strength": 152
     },
     {
       "id": "clark_malissa",
@@ -5369,8 +5560,8 @@
           "current": true
         }
       ],
-      "degree": 31,
-      "strength": 55
+      "degree": 32,
+      "strength": 56
     },
     {
       "id": "he_yimin",
@@ -5429,8 +5620,8 @@
           "current": true
         }
       ],
-      "degree": 32,
-      "strength": 73
+      "degree": 33,
+      "strength": 74
     },
     {
       "id": "hughes_ian",
@@ -5529,8 +5720,8 @@
           "current": true
         }
       ],
-      "degree": 17,
-      "strength": 37
+      "degree": 18,
+      "strength": 38
     },
     {
       "id": "zhang_bo",
@@ -5570,7 +5761,7 @@
         }
       ],
       "degree": 15,
-      "strength": 35
+      "strength": 36
     },
     {
       "id": "alexander_leo",
@@ -5689,8 +5880,8 @@
           "current": true
         }
       ],
-      "degree": 24,
-      "strength": 29
+      "degree": 25,
+      "strength": 30
     },
     {
       "id": "carver_sarah",
@@ -5793,6 +5984,26 @@
       "strength": 9
     },
     {
+      "id": "mcchesney_jenna",
+      "kind": "roster",
+      "name": "Jenna McChesney",
+      "institution_id": "ncsu",
+      "institution": "North Carolina State University",
+      "country": "US",
+      "institutions": [
+        {
+          "institution_id": "ncsu",
+          "name": "North Carolina State University",
+          "country": "US",
+          "start_year": null,
+          "end_year": null,
+          "current": true
+        }
+      ],
+      "degree": 2,
+      "strength": 2
+    },
+    {
       "id": "phetmisy_cassandra",
       "kind": "roster",
       "name": "Cassandra Phetmisy",
@@ -5809,8 +6020,8 @@
           "current": true
         }
       ],
-      "degree": 11,
-      "strength": 24
+      "degree": 12,
+      "strength": 25
     },
     {
       "id": "yang_zhixu",
@@ -5950,7 +6161,7 @@
         }
       ],
       "degree": 5,
-      "strength": 10
+      "strength": 9
     },
     {
       "id": "kreamer_liana",
@@ -6149,8 +6360,8 @@
           "current": true
         }
       ],
-      "degree": 51,
-      "strength": 110
+      "degree": 52,
+      "strength": 111
     },
     {
       "id": "reed_brent",
@@ -6211,6 +6422,26 @@
       ],
       "degree": 30,
       "strength": 61
+    },
+    {
+      "id": "strah_nicole",
+      "kind": "roster",
+      "name": "Nicole Strah",
+      "institution_id": "uncc",
+      "institution": "University of North Carolina at Charlotte",
+      "country": "US",
+      "institutions": [
+        {
+          "institution_id": "uncc",
+          "name": "University of North Carolina at Charlotte",
+          "country": "US",
+          "start_year": null,
+          "end_year": null,
+          "current": true
+        }
+      ],
+      "degree": 29,
+      "strength": 46
     },
     {
       "id": "allen_shalene",
@@ -7632,8 +7863,8 @@
           "y": 2013,
           "v": "jedu",
           "a": [
-            "Selection",
-            "Diversity"
+            "Diversity",
+            "Selection"
           ],
           "t": "Trait complex, cognitive ability, and domain knowledge predictors of baccalaureate success, STEM persistence, and gender differences."
         },
@@ -8001,6 +8232,7 @@
       "venues": {
         "pp": 1,
         "jap": 3,
+        "iop": 1,
         "hrmr": 1,
         "hf": 2,
         "intel": 1,
@@ -8038,6 +8270,14 @@
             "Training"
           ],
           "t": "Dyadic versus individual training protocols: Loss and reacquisition of a complex skill."
+        },
+        {
+          "y": 2008,
+          "v": "iop",
+          "a": [
+            "Selection"
+          ],
+          "t": "Mend it, don\u2019t end it: An alternate view of assessment center construct-related validity evidence"
         },
         {
           "y": 2019,
@@ -8296,8 +8536,8 @@
           "y": 2013,
           "v": "jedu",
           "a": [
-            "Selection",
-            "Diversity"
+            "Diversity",
+            "Selection"
           ],
           "t": "Trait complex, cognitive ability, and domain knowledge predictors of baccalaureate success, STEM persistence, and gender differences."
         },
@@ -8383,7 +8623,7 @@
       "target": "ones_deniz",
       "weight": 32,
       "venues": {
-        "jpsp": 3,
+        "jpsp": 4,
         "pbul": 3,
         "jap": 1,
         "paid": 1,
@@ -8458,6 +8698,15 @@
             "Careers"
           ],
           "t": "Academic achievement, career potential, creativity, and job achievement: Can one construct predict them all"
+        },
+        {
+          "y": 2004,
+          "v": "jpsp",
+          "a": [
+            "Performance",
+            "Careers"
+          ],
+          "t": "Predicting academic performance, job performance, career potential, and creativity: Can one construct do it all"
         },
         {
           "y": null,
@@ -8883,6 +9132,14 @@
           "t": "Interest Fit Beyond the RIASEC: The Comprehensive Assessment of Basic Interests\u2014O* NET (CABIN-NET)"
         },
         {
+          "y": 2024,
+          "v": "jpsp",
+          "a": [
+            "General"
+          ],
+          "t": "Life goal development, educational attainment, and occupational outcomes: A 12-year, multisample longitudinal study."
+        },
+        {
           "y": 2026,
           "v": "jbp",
           "a": [
@@ -8897,14 +9154,6 @@
             "Diversity"
           ],
           "t": "Can everyone get interesting jobs? Estimating interest fit across gender, ethnicity, and education"
-        },
-        {
-          "y": 2024,
-          "v": "jpsp",
-          "a": [
-            "General"
-          ],
-          "t": "Life goal development, educational attainment, and occupational outcomes: A 12-year, multisample longitudinal study."
         },
         {
           "y": 2026,
@@ -9129,14 +9378,6 @@
         },
         {
           "y": 2024,
-          "v": "pp",
-          "a": [
-            "AI / Technology"
-          ],
-          "t": "Artificial Intelligence, Machine Learning, and Big Data: Improvements to the Science of People at Work and Applications to Practice"
-        },
-        {
-          "y": 2024,
           "v": "jap",
           "a": [
             "Selection",
@@ -9144,6 +9385,14 @@
             "AI / Technology"
           ],
           "t": "Are Automated Video Interviews Smart Enough? Behavioral Modes, Reliability, Validity, and Bias of Machine Learning Cognitive Ability Assessments"
+        },
+        {
+          "y": 2024,
+          "v": "pp",
+          "a": [
+            "AI / Technology"
+          ],
+          "t": "Artificial Intelligence, Machine Learning, and Big Data: Improvements to the Science of People at Work and Applications to Practice"
         },
         {
           "y": 2017,
@@ -9409,14 +9658,6 @@
           "t": "Work\u2013family conflict and mindfulness: Investigating the effectiveness of a brief training intervention"
         },
         {
-          "y": 2019,
-          "v": "jvb",
-          "a": [
-            "Work\u2013Family"
-          ],
-          "t": "The passage of time in work-family research: Toward a more dynamic perspective"
-        },
-        {
           "y": 2020,
           "v": "jap",
           "a": [
@@ -9424,6 +9665,14 @@
             "Work\u2013Family"
           ],
           "t": "Episodic work-family conflict and strain: A dynamic perspective."
+        },
+        {
+          "y": 2019,
+          "v": "jvb",
+          "a": [
+            "Work\u2013Family"
+          ],
+          "t": "The passage of time in work-family research: Toward a more dynamic perspective"
         },
         {
           "y": 2020,
@@ -10343,7 +10592,8 @@
         "ijsa": 5,
         "aropob": 1,
         "joop": 1,
-        "iop": 2
+        "iop": 2,
+        "jbdm": 1
       },
       "papers": [
         {
@@ -10433,6 +10683,14 @@
             "General"
           ],
           "t": "Apples, oranges, and ironing boards: Comparative effect sizes influence lay impressions of test validity"
+        },
+        {
+          "y": 2022,
+          "v": "jbdm",
+          "a": [
+            "General"
+          ],
+          "t": "Culture versus other sources of variance in risk and benefit perceptions: A comparison of Japan and the United States"
         },
         {
           "y": 2023,
@@ -10836,6 +11094,7 @@
         "jap": 4,
         "ampps": 1,
         "hrmj": 1,
+        "cscw": 2,
         "nature": 1,
         "ijsa": 1
       },
@@ -10879,12 +11138,30 @@
           "t": "Developing and Evaluating Language-Based Machine Learning Algorithms for Inferring Applicant Personality in Video Interviews"
         },
         {
+          "y": 2020,
+          "v": "cscw",
+          "a": [
+            "AI / Technology"
+          ],
+          "t": "Studying Politeness across Cultures using English Twitter and Mandarin Weibo"
+        },
+        {
           "y": 2026,
           "v": "nature",
           "a": [
             "General"
           ],
           "t": "Investigating the replicability of the social and behavioural sciences"
+        },
+        {
+          "y": 2021,
+          "v": "cscw",
+          "a": [
+            "AI / Technology",
+            "Motivation / Attitudes",
+            "Diversity"
+          ],
+          "t": "A Social Media Study on Demographic Differences in Perceived Job Satisfaction"
         },
         {
           "y": 2025,
@@ -11418,9 +11695,9 @@
       "venues": {
         "jom": 2,
         "perrev": 1,
+        "iop": 2,
         "ijhrm": 1,
-        "epm": 4,
-        "iop": 1
+        "epm": 4
       },
       "papers": [
         {
@@ -11448,6 +11725,14 @@
             "Individual Differences / Personality"
           ],
           "t": "Personality testing in employment settings: Problems and issues in the application of typical selection practices"
+        },
+        {
+          "y": 2008,
+          "v": "iop",
+          "a": [
+            "Selection"
+          ],
+          "t": "Mend it, don\u2019t end it: An alternate view of assessment center construct-related validity evidence"
         },
         {
           "y": 1995,
@@ -11699,12 +11984,22 @@
       "target": "olenick_jeffrey",
       "weight": 15,
       "venues": {
+        "imwut": 1,
         "johp": 1,
+        "iui": 1,
         "lq": 1,
         "jap": 1,
         "gom": 1
       },
       "papers": [
+        {
+          "y": 2018,
+          "v": "imwut",
+          "a": [
+            "AI / Technology"
+          ],
+          "t": "TeamSense: Assessing personal affect and group cohesion in small teams through dyadic interaction and behavior analysis with wearable sensors"
+        },
         {
           "y": 2022,
           "v": "johp",
@@ -11712,6 +12007,15 @@
             "Stress / Well-being"
           ],
           "t": "The dynamic nature of interpersonal conflict and psychological strain in extreme work settings."
+        },
+        {
+          "y": 2018,
+          "v": "iui",
+          "a": [
+            "AI / Technology",
+            "Teams"
+          ],
+          "t": "The I in team: Mining personal social interaction routine with topic models from long-term team data"
         },
         {
           "y": 2024,
@@ -12044,6 +12348,64 @@
       "year_max": 2026
     },
     {
+      "source": "rupp_deborah",
+      "target": "strah_nicole",
+      "weight": 14,
+      "venues": {
+        "iop": 2,
+        "jap": 1,
+        "job": 1,
+        "opr": 1
+      },
+      "papers": [
+        {
+          "y": 2020,
+          "v": "iop",
+          "a": [
+            "Selection",
+            "Diversity"
+          ],
+          "t": "Addressing the so-called validity\u2013diversity trade-off: Exploring the practicalities and legal defensibility of Pareto-optimization for reducing adverse impact within personnel \u2026"
+        },
+        {
+          "y": 2022,
+          "v": "jap",
+          "a": [
+            "Selection",
+            "Diversity"
+          ],
+          "t": "Are there cracks in our foundation? An integrative review of diversity issues in job analysis."
+        },
+        {
+          "y": 2022,
+          "v": "iop",
+          "a": [
+            "Selection"
+          ],
+          "t": "Job analysis and job classification for addressing pay inequality in organizations: Adjusting our methods within a shifting legal landscape"
+        },
+        {
+          "y": 2024,
+          "v": "job",
+          "a": [
+            "Motivation / Attitudes",
+            "Diversity"
+          ],
+          "t": "Why have we not detected gender differences in organizational justice perceptions?! An evidenced\u2010based argument for increasing inclusivity within justice research"
+        },
+        {
+          "y": 2025,
+          "v": "opr",
+          "a": [
+            "Selection"
+          ],
+          "t": "The application of within-person methods to promote inclusive job analysis"
+        }
+      ],
+      "year_min": 2019,
+      "year_max": 2025
+    },
+    {
       "source": "beal_daniel",
       "target": "weiss_howard",
       "weight": 13,
@@ -12121,8 +12483,8 @@
           "y": 2013,
           "v": "jedu",
           "a": [
-            "Selection",
-            "Diversity"
+            "Diversity",
+            "Selection"
           ],
           "t": "Trait complex, cognitive ability, and domain knowledge predictors of baccalaureate success, STEM persistence, and gender differences."
         },
@@ -12243,7 +12605,9 @@
       "weight": 13,
       "venues": {
         "job": 1,
+        "imwut": 1,
         "johp": 1,
+        "iui": 1,
         "jap": 1,
         "gom": 1
       },
@@ -12257,12 +12621,29 @@
           "t": "Teams in isolated, confined, and extreme (ICE) environments: Review and integration"
         },
         {
+          "y": 2018,
+          "v": "imwut",
+          "a": [
+            "AI / Technology"
+          ],
+          "t": "TeamSense: Assessing personal affect and group cohesion in small teams through dyadic interaction and behavior analysis with wearable sensors"
+        },
+        {
           "y": 2022,
           "v": "johp",
           "a": [
             "Stress / Well-being"
           ],
           "t": "The dynamic nature of interpersonal conflict and psychological strain in extreme work settings."
+        },
+        {
+          "y": 2018,
+          "v": "iui",
+          "a": [
+            "AI / Technology",
+            "Teams"
+          ],
+          "t": "The I in team: Mining personal social interaction routine with topic models from long-term team data"
         },
         {
           "y": 2024,
@@ -12900,7 +13281,8 @@
       "venues": {
         "paid": 1,
         "jbp": 1,
-        "ijsa": 3
+        "ijsa": 3,
+        "jap": 1
       },
       "papers": [
         {
@@ -12935,6 +13317,14 @@
             "Careers"
           ],
           "t": "The signals that matter: Resumes, cover letters, and success on the job search"
+        },
+        {
+          "y": 2026,
+          "v": "jap",
+          "a": [
+            "General"
+          ],
+          "t": "Are They Really Just Words? Investigating the Prevalence and Impact of Physical Disability Biased Language in Job Advertisements"
         },
         {
           "y": 2026,
@@ -13375,6 +13765,7 @@
         "aropob": 1,
         "orm": 1,
         "nature": 1,
+        "naacl": 1,
         "ampps": 1
       },
       "papers": [
@@ -13401,6 +13792,14 @@
             "General"
           ],
           "t": "Investigating the replicability of the social and behavioural sciences"
+        },
+        {
+          "y": 2025,
+          "v": "naacl",
+          "a": [
+            "AI / Technology"
+          ],
+          "t": "Language-based Valence and Arousal Expressions between the United States and China: a Cross-Cultural Examination"
         },
         {
           "y": 2026,
@@ -13703,7 +14102,7 @@
       "target": "zaccaro_stephen",
       "weight": 11,
       "venues": {
-        "lq": 5
+        "lq": 6
       },
       "papers": [
         {
@@ -13745,6 +14144,14 @@
             "Leadership"
           ],
           "t": "The influence of higher order cognitive capacities on leader organizational continuance and retention: The mediating role of developmental experiences"
+        },
+        {
+          "y": null,
+          "v": "lq",
+          "a": [
+            "Leadership"
+          ],
+          "t": "Leadership and performance"
         }
       ],
       "year_min": 1993,
@@ -14468,11 +14875,20 @@
       "target": "harriswatson_alex",
       "weight": 10,
       "venues": {
+        "jap": 1,
         "assess": 1,
-        "iop": 1,
+        "iop": 2,
         "jbp": 3
       },
       "papers": [
+        {
+          "y": 2019,
+          "v": "jap",
+          "a": [
+            "Motivation / Attitudes"
+          ],
+          "t": "Understanding job satisfaction in the causal attitude network (CAN) model."
+        },
         {
           "y": 2021,
           "v": "assess",
@@ -14480,6 +14896,14 @@
             "Methods"
           ],
           "t": "Fearless dominance/boldness is not strongly related to externalizing behaviors: An item response-based analysis"
+        },
+        {
+          "y": 2019,
+          "v": "iop",
+          "a": [
+            "Individual Differences / Personality"
+          ],
+          "t": "Personality testing and the Americans With Disabilities Act: Cause for concern as normal and abnormal personality models are integrated"
         },
         {
           "y": 2016,
@@ -14524,11 +14948,21 @@
       "target": "olenick_jeffrey",
       "weight": 10,
       "venues": {
+        "imwut": 1,
         "johp": 1,
+        "iui": 1,
         "jap": 1,
         "gom": 1
       },
       "papers": [
+        {
+          "y": 2018,
+          "v": "imwut",
+          "a": [
+            "AI / Technology"
+          ],
+          "t": "TeamSense: Assessing personal affect and group cohesion in small teams through dyadic interaction and behavior analysis with wearable sensors"
+        },
         {
           "y": 2022,
           "v": "johp",
@@ -14536,6 +14970,15 @@
             "Stress / Well-being"
           ],
           "t": "The dynamic nature of interpersonal conflict and psychological strain in extreme work settings."
+        },
+        {
+          "y": 2018,
+          "v": "iui",
+          "a": [
+            "AI / Technology",
+            "Teams"
+          ],
+          "t": "The I in team: Mining personal social interaction routine with topic models from long-term team data"
         },
         {
           "y": 2024,
@@ -14912,6 +15355,7 @@
       "weight": 10,
       "venues": {
         "hf": 1,
+        "odyn": 1,
         "hrmr": 1
       },
       "papers": [
@@ -14922,6 +15366,14 @@
             "General"
           ],
           "t": "Measuring cognition in teams: a cross-domain review"
+        },
+        {
+          "y": 2021,
+          "v": "odyn",
+          "a": [
+            "Training"
+          ],
+          "t": "Onboarding during COVID-19: Create structure, connect people, and continue adapting"
         },
         {
           "y": 2018,
@@ -15952,6 +16404,7 @@
       "target": "zhang_don",
       "weight": 8,
       "venues": {
+        "jbdm": 2,
         "jrp": 1,
         "paid": 1,
         "ijsa": 1,
@@ -15959,6 +16412,22 @@
         "apir": 1
       },
       "papers": [
+        {
+          "y": 2019,
+          "v": "jbdm",
+          "a": [
+            "Methods"
+          ],
+          "t": "Development and validation of the general risk propensity scale (GRiPS)"
+        },
+        {
+          "y": 2017,
+          "v": "jbdm",
+          "a": [
+            "General"
+          ],
+          "t": "Structure of the Dospert: Is there evidence for a general risk factor?"
+        },
         {
           "y": 2022,
           "v": "jrp",
@@ -16790,6 +17259,45 @@
       ],
       "year_min": 1993,
       "year_max": 2024
+    },
+    {
+      "source": "min_hanyi",
+      "target": "peng_yisheng",
+      "weight": 7,
+      "venues": {
+        "jap": 1,
+        "cdi": 1,
+        "war": 1
+      },
+      "papers": [
+        {
+          "y": 2021,
+          "v": "jap",
+          "a": [
+            "AI / Technology"
+          ],
+          "t": "Using machine learning to investigate the public\u2019s emotional responses to work from home during the COVID-19 pandemic."
+        },
+        {
+          "y": 2020,
+          "v": "cdi",
+          "a": [
+            "General"
+          ],
+          "t": "Older employees' postretirement work planning: An application of the theory of planned behavior"
+        },
+        {
+          "y": 2022,
+          "v": "war",
+          "a": [
+            "Methods",
+            "Diversity"
+          ],
+          "t": "Psychometric evaluation of age discrimination measures using classic test and item response theories"
+        }
+      ],
+      "year_min": 2016,
+      "year_max": 2025
     },
     {
       "source": "ones_deniz",
@@ -17675,10 +18183,18 @@
       "target": "yang_zhixu",
       "weight": 6,
       "venues": {
-        "iop": 1,
+        "iop": 2,
         "apir": 1
       },
       "papers": [
+        {
+          "y": 2023,
+          "v": "iop",
+          "a": [
+            "General"
+          ],
+          "t": "Employees\u2019 mindset matters: Leveraging cultural mindset to harness the benefits of organizational polyculturalism"
+        },
         {
           "y": 2024,
           "v": "iop",
@@ -17825,45 +18341,6 @@
     },
     {
       "source": "min_hanyi",
-      "target": "peng_yisheng",
-      "weight": 6,
-      "venues": {
-        "jap": 1,
-        "cdi": 1,
-        "war": 1
-      },
-      "papers": [
-        {
-          "y": 2021,
-          "v": "jap",
-          "a": [
-            "AI / Technology"
-          ],
-          "t": "Using machine learning to investigate the public\u2019s emotional responses to work from home during the COVID-19 pandemic."
-        },
-        {
-          "y": 2020,
-          "v": "cdi",
-          "a": [
-            "General"
-          ],
-          "t": "Older employees' postretirement work planning: An application of the theory of planned behavior"
-        },
-        {
-          "y": 2022,
-          "v": "war",
-          "a": [
-            "Methods",
-            "Diversity"
-          ],
-          "t": "Psychometric evaluation of age discrimination measures using classic test and item response theories"
-        }
-      ],
-      "year_min": 2016,
-      "year_max": 2022
-    },
-    {
-      "source": "min_hanyi",
       "target": "sun_tianjun",
       "weight": 6,
       "venues": {
@@ -18001,7 +18478,8 @@
       "weight": 6,
       "venues": {
         "assess": 1,
-        "ampps": 1
+        "ampps": 1,
+        "eacl": 1
       },
       "papers": [
         {
@@ -18019,6 +18497,16 @@
             "Training"
           ],
           "t": "Ensuring Transparency and Trust in Supervised-Machine-Learning Studies: A Checklist for Psychological Researchers"
+        },
+        {
+          "y": 2026,
+          "v": "eacl",
+          "a": [
+            "AI / Technology",
+            "Selection",
+            "Individual Differences / Personality"
+          ],
+          "t": "Generative Personality Simulation via Theory-Informed Structured Interview"
         }
       ],
       "year_min": 2024,
@@ -18535,7 +19023,7 @@
       "target": "melsonsilimon_arturia",
       "weight": 5,
       "venues": {
-        "iop": 1
+        "iop": 2
       },
       "papers": [
         {
@@ -18545,6 +19033,14 @@
             "Diversity"
           ],
           "t": "Neurodiversity in the workplace: Considering neuroatypicality as a form of diversity"
+        },
+        {
+          "y": 2019,
+          "v": "iop",
+          "a": [
+            "Individual Differences / Personality"
+          ],
+          "t": "Personality testing and the Americans With Disabilities Act: Cause for concern as normal and abnormal personality models are integrated"
         }
       ],
       "year_min": 2019,
@@ -20224,9 +20720,26 @@
       "target": "nye_christopher",
       "weight": 4,
       "venues": {
+        "jbdm": 2,
         "apir": 1
       },
       "papers": [
+        {
+          "y": 2019,
+          "v": "jbdm",
+          "a": [
+            "Methods"
+          ],
+          "t": "Development and validation of the general risk propensity scale (GRiPS)"
+        },
+        {
+          "y": 2017,
+          "v": "jbdm",
+          "a": [
+            "General"
+          ],
+          "t": "Structure of the Dospert: Is there evidence for a general risk factor?"
+        },
         {
           "y": 2019,
           "v": "apir",
@@ -20922,21 +21435,21 @@
     },
     {
       "source": "allen_tammy",
-      "target": "sinclair_robert",
-      "weight": 3,
-      "venues": {},
-      "papers": [],
-      "year_min": 2020,
-      "year_max": 2023
-    },
-    {
-      "source": "allen_tammy",
       "target": "britt_thomas",
       "weight": 3,
       "venues": {},
       "papers": [],
       "year_min": 2020,
       "year_max": 2021
+    },
+    {
+      "source": "allen_tammy",
+      "target": "sinclair_robert",
+      "weight": 3,
+      "venues": {},
+      "papers": [],
+      "year_min": 2020,
+      "year_max": 2023
     },
     {
       "source": "allen_tammy",
@@ -21896,7 +22409,7 @@
     },
     {
       "source": "cheung_hokwan",
-      "target": "randall_jason",
+      "target": "roch_sylvia",
       "weight": 3,
       "venues": {},
       "papers": [],
@@ -21905,7 +22418,7 @@
     },
     {
       "source": "cheung_hokwan",
-      "target": "roch_sylvia",
+      "target": "randall_jason",
       "weight": 3,
       "venues": {},
       "papers": [],
@@ -22768,12 +23281,63 @@
     },
     {
       "source": "kaplan_seth",
+      "target": "lee_philseok",
+      "weight": 3,
+      "venues": {
+        "orm": 1
+      },
+      "papers": [
+        {
+          "y": 2024,
+          "v": "orm",
+          "a": [
+            "Methods",
+            "Individual Differences / Personality",
+            "AI / Technology"
+          ],
+          "t": "\u201cTransforming\u201d personality scale development: Illustrating the potential of state-of-the-art natural language processing"
+        }
+      ],
+      "year_min": 2024,
+      "year_max": 2026
+    },
+    {
+      "source": "kaplan_seth",
       "target": "king_eden",
       "weight": 3,
       "venues": {},
       "papers": [],
       "year_min": 2008,
       "year_max": 2009
+    },
+    {
+      "source": "kaplan_seth",
+      "target": "kuykendall_lauren",
+      "weight": 3,
+      "venues": {
+        "ejwop": 1,
+        "jvb": 1
+      },
+      "papers": [
+        {
+          "y": 2023,
+          "v": "ejwop",
+          "a": [
+            "General"
+          ],
+          "t": "Going with (out) the flow at home: day-to-day variability in flow and performance while teleworking"
+        },
+        {
+          "y": 2025,
+          "v": "jvb",
+          "a": [
+            "Stress / Well-being"
+          ],
+          "t": "Commute experiences & well-being: exploring positive and negative effects through work-personal conflict"
+        }
+      ],
+      "year_min": 2023,
+      "year_max": 2026
     },
     {
       "source": "katz_ian",
@@ -23014,8 +23578,19 @@
       "source": "mcabee_samuel",
       "target": "zickar_michael",
       "weight": 3,
-      "venues": {},
-      "papers": [],
+      "venues": {
+        "iop": 1
+      },
+      "papers": [
+        {
+          "y": 2018,
+          "v": "iop",
+          "a": [
+            "General"
+          ],
+          "t": "Open science is robust science"
+        }
+      ],
       "year_min": 2018,
       "year_max": 2025
     },
@@ -23051,9 +23626,26 @@
       "target": "zhang_don",
       "weight": 3,
       "venues": {
+        "jbdm": 2,
         "apir": 1
       },
       "papers": [
+        {
+          "y": 2019,
+          "v": "jbdm",
+          "a": [
+            "Methods"
+          ],
+          "t": "Development and validation of the general risk propensity scale (GRiPS)"
+        },
+        {
+          "y": 2017,
+          "v": "jbdm",
+          "a": [
+            "General"
+          ],
+          "t": "Structure of the Dospert: Is there evidence for a general risk factor?"
+        },
         {
           "y": 2019,
           "v": "apir",
@@ -23775,7 +24367,7 @@
     },
     {
       "source": "allen_tammy",
-      "target": "rupp_deborah",
+      "target": "rudolph_cort",
       "weight": 2,
       "venues": {},
       "papers": [],
@@ -23784,7 +24376,7 @@
     },
     {
       "source": "allen_tammy",
-      "target": "rudolph_cort",
+      "target": "rupp_deborah",
       "weight": 2,
       "venues": {},
       "papers": [],
@@ -23908,26 +24500,6 @@
     },
     {
       "source": "banks_george",
-      "target": "thapa_stuti",
-      "weight": 2,
-      "venues": {
-        "nature": 1
-      },
-      "papers": [
-        {
-          "y": 2026,
-          "v": "nature",
-          "a": [
-            "General"
-          ],
-          "t": "Investigating the replicability of the social and behavioural sciences"
-        }
-      ],
-      "year_min": 2018,
-      "year_max": 2026
-    },
-    {
-      "source": "banks_george",
       "target": "tay_louis",
       "weight": 2,
       "venues": {
@@ -23944,6 +24516,26 @@
         }
       ],
       "year_min": 2026,
+      "year_max": 2026
+    },
+    {
+      "source": "banks_george",
+      "target": "thapa_stuti",
+      "weight": 2,
+      "venues": {
+        "nature": 1
+      },
+      "papers": [
+        {
+          "y": 2026,
+          "v": "nature",
+          "a": [
+            "General"
+          ],
+          "t": "Investigating the replicability of the social and behavioural sciences"
+        }
+      ],
+      "year_min": 2018,
       "year_max": 2026
     },
     {
@@ -24452,7 +25044,7 @@
       "target": "cobb_haley",
       "weight": 2,
       "venues": {
-        "iop": 1
+        "iop": 2
       },
       "papers": [
         {
@@ -24462,6 +25054,14 @@
             "General"
           ],
           "t": "Politics, policy, and pedagogy: Preparing IO psychology students amid ongoing policy shifts"
+        },
+        {
+          "y": 2025,
+          "v": "iop",
+          "a": [
+            "General"
+          ],
+          "t": "Politics, policy, and pedagogy: Preparing IO psychology students amidst ongoing policy shifts"
         }
       ],
       "year_min": 2025,
@@ -24555,26 +25155,6 @@
       "year_max": 2025
     },
     {
-      "source": "chang_yingyi",
-      "target": "gardner_danielle",
-      "weight": 2,
-      "venues": {
-        "cdi": 1
-      },
-      "papers": [
-        {
-          "y": 2026,
-          "v": "cdi",
-          "a": [
-            "General"
-          ],
-          "t": "Guest editorial: Introducing the \u201cchanging, evolving, persisting: exploring the role of masculinity in careers and family\u201d special issue"
-        }
-      ],
-      "year_min": 2026,
-      "year_max": 2026
-    },
-    {
       "source": "chao_georgia",
       "target": "zaccaro_stephen",
       "weight": 2,
@@ -24585,7 +25165,7 @@
     },
     {
       "source": "chao_georgia",
-      "target": "king_eden",
+      "target": "rupp_deborah",
       "weight": 2,
       "venues": {},
       "papers": [],
@@ -24594,7 +25174,7 @@
     },
     {
       "source": "chao_georgia",
-      "target": "rupp_deborah",
+      "target": "king_eden",
       "weight": 2,
       "venues": {},
       "papers": [],
@@ -25130,8 +25710,19 @@
       "source": "endacott_camille",
       "target": "reed_brent",
       "weight": 2,
-      "venues": {},
-      "papers": [],
+      "venues": {
+        "lq": 1
+      },
+      "papers": [
+        {
+          "y": 2026,
+          "v": "lq",
+          "a": [
+            "Leadership"
+          ],
+          "t": "Enacting Open Science values in qualitative leadership research: Existing practices and future directions"
+        }
+      ],
       "year_min": 2024,
       "year_max": 2026
     },
@@ -25166,6 +25757,15 @@
       ],
       "year_min": 2023,
       "year_max": 2024
+    },
+    {
+      "source": "finkelstein_lisa",
+      "target": "strah_nicole",
+      "weight": 2,
+      "venues": {},
+      "papers": [],
+      "year_min": 2019,
+      "year_max": 2019
     },
     {
       "source": "fisher_gwen",
@@ -25512,7 +26112,7 @@
     },
     {
       "source": "grand_james",
-      "target": "king_eden",
+      "target": "rupp_deborah",
       "weight": 2,
       "venues": {},
       "papers": [],
@@ -25521,7 +26121,7 @@
     },
     {
       "source": "grand_james",
-      "target": "rupp_deborah",
+      "target": "king_eden",
       "weight": 2,
       "venues": {},
       "papers": [],
@@ -25744,7 +26344,7 @@
     },
     {
       "source": "hebl_mikki",
-      "target": "rupp_deborah",
+      "target": "rudolph_cort",
       "weight": 2,
       "venues": {},
       "papers": [],
@@ -25753,7 +26353,7 @@
     },
     {
       "source": "hebl_mikki",
-      "target": "rudolph_cort",
+      "target": "rupp_deborah",
       "weight": 2,
       "venues": {},
       "papers": [],
@@ -25960,63 +26560,12 @@
     },
     {
       "source": "kaplan_seth",
-      "target": "lee_philseok",
-      "weight": 2,
-      "venues": {
-        "orm": 1
-      },
-      "papers": [
-        {
-          "y": 2024,
-          "v": "orm",
-          "a": [
-            "Methods",
-            "Individual Differences / Personality",
-            "AI / Technology"
-          ],
-          "t": "\u201cTransforming\u201d personality scale development: Illustrating the potential of state-of-the-art natural language processing"
-        }
-      ],
-      "year_min": 2024,
-      "year_max": 2024
-    },
-    {
-      "source": "kaplan_seth",
       "target": "zaccaro_stephen",
       "weight": 2,
       "venues": {},
       "papers": [],
       "year_min": 2008,
       "year_max": 2009
-    },
-    {
-      "source": "kaplan_seth",
-      "target": "kuykendall_lauren",
-      "weight": 2,
-      "venues": {
-        "ejwop": 1,
-        "jvb": 1
-      },
-      "papers": [
-        {
-          "y": 2023,
-          "v": "ejwop",
-          "a": [
-            "General"
-          ],
-          "t": "Going with (out) the flow at home: day-to-day variability in flow and performance while teleworking"
-        },
-        {
-          "y": 2025,
-          "v": "jvb",
-          "a": [
-            "Stress / Well-being"
-          ],
-          "t": "Commute experiences & well-being: exploring positive and negative effects through work-personal conflict"
-        }
-      ],
-      "year_min": 2023,
-      "year_max": 2025
     },
     {
       "source": "kaplan_seth",
@@ -26171,6 +26720,27 @@
       "papers": [],
       "year_min": 2023,
       "year_max": 2023
+    },
+    {
+      "source": "king_eden",
+      "target": "strah_nicole",
+      "weight": 2,
+      "venues": {
+        "job": 1
+      },
+      "papers": [
+        {
+          "y": 2024,
+          "v": "job",
+          "a": [
+            "Motivation / Attitudes",
+            "Diversity"
+          ],
+          "t": "Why have we not detected gender differences in organizational justice perceptions?! An evidenced\u2010based argument for increasing inclusivity within justice research"
+        }
+      ],
+      "year_min": 2024,
+      "year_max": 2024
     },
     {
       "source": "king_eden",
@@ -26334,6 +26904,15 @@
       "venues": {},
       "papers": [],
       "year_min": 1998,
+      "year_max": 2026
+    },
+    {
+      "source": "kuykendall_lauren",
+      "target": "lee_philseok",
+      "weight": 2,
+      "venues": {},
+      "papers": [],
+      "year_min": 2020,
       "year_max": 2026
     },
     {
@@ -26805,6 +27384,26 @@
       ],
       "year_min": 2024,
       "year_max": 2026
+    },
+    {
+      "source": "morris_scott",
+      "target": "strah_nicole",
+      "weight": 2,
+      "venues": {
+        "iop": 1
+      },
+      "papers": [
+        {
+          "y": 2022,
+          "v": "iop",
+          "a": [
+            "Selection"
+          ],
+          "t": "Job analysis and job classification for addressing pay inequality in organizations: Adjusting our methods within a shifting legal landscape"
+        }
+      ],
+      "year_min": 2022,
+      "year_max": 2022
     },
     {
       "source": "morris_scott",
@@ -27399,6 +27998,15 @@
       "year_max": 2015
     },
     {
+      "source": "santuzzi_alecia",
+      "target": "strah_nicole",
+      "weight": 2,
+      "venues": {},
+      "papers": [],
+      "year_min": 2019,
+      "year_max": 2019
+    },
+    {
       "source": "sawhney_gargi",
       "target": "watson_paige",
       "weight": 2,
@@ -27663,115 +28271,7 @@
     },
     {
       "source": "ackerman_phillip",
-      "target": "hebl_mikki",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "ackerman_phillip",
-      "target": "probst_tahira",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "ackerman_phillip",
-      "target": "zaccaro_stephen",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "ackerman_phillip",
       "target": "bowling_nathan",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "ackerman_phillip",
-      "target": "chao_georgia",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "ackerman_phillip",
-      "target": "kozlowski_steve",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "ackerman_phillip",
-      "target": "bobocel_ramona",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "ackerman_phillip",
-      "target": "woehr_david",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "ackerman_phillip",
-      "target": "rupp_deborah",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "ackerman_phillip",
-      "target": "rudolph_cort",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "ackerman_phillip",
-      "target": "allen_tammy",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "ackerman_phillip",
-      "target": "salas_eduardo",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "ackerman_phillip",
-      "target": "shuffler_marissa",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -27789,7 +28289,79 @@
     },
     {
       "source": "ackerman_phillip",
-      "target": "coleman_peter",
+      "target": "kozlowski_steve",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "ackerman_phillip",
+      "target": "woehr_david",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "ackerman_phillip",
+      "target": "zaccaro_stephen",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "ackerman_phillip",
+      "target": "hebl_mikki",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "ackerman_phillip",
+      "target": "allen_tammy",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "ackerman_phillip",
+      "target": "bobocel_ramona",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "ackerman_phillip",
+      "target": "chao_georgia",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "ackerman_phillip",
+      "target": "salas_eduardo",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "ackerman_phillip",
+      "target": "king_eden",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -27807,7 +28379,43 @@
     },
     {
       "source": "ackerman_phillip",
-      "target": "king_eden",
+      "target": "rudolph_cort",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "ackerman_phillip",
+      "target": "probst_tahira",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "ackerman_phillip",
+      "target": "rupp_deborah",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "ackerman_phillip",
+      "target": "shuffler_marissa",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "ackerman_phillip",
+      "target": "coleman_peter",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28159,43 +28767,7 @@
     },
     {
       "source": "allen_tammy",
-      "target": "zaccaro_stephen",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "allen_tammy",
       "target": "bowling_nathan",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "allen_tammy",
-      "target": "bobocel_ramona",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "allen_tammy",
-      "target": "woehr_david",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "allen_tammy",
-      "target": "shuffler_marissa",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28213,7 +28785,25 @@
     },
     {
       "source": "allen_tammy",
-      "target": "coleman_peter",
+      "target": "woehr_david",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "allen_tammy",
+      "target": "zaccaro_stephen",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "allen_tammy",
+      "target": "bobocel_ramona",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28231,7 +28821,7 @@
     },
     {
       "source": "allen_tammy",
-      "target": "banks_george",
+      "target": "shuffler_marissa",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28240,16 +28830,7 @@
     },
     {
       "source": "allen_tammy",
-      "target": "day_arla",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "allen_tammy",
-      "target": "shoss_mindy",
+      "target": "coleman_peter",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28267,7 +28848,7 @@
     },
     {
       "source": "allen_tammy",
-      "target": "clark_malissa",
+      "target": "day_arla",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28276,7 +28857,16 @@
     },
     {
       "source": "allen_tammy",
-      "target": "woo_sang",
+      "target": "strah_nicole",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "allen_tammy",
+      "target": "banks_george",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28286,6 +28876,33 @@
     {
       "source": "allen_tammy",
       "target": "melsonsilimon_arturia",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "allen_tammy",
+      "target": "clark_malissa",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "allen_tammy",
+      "target": "shoss_mindy",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "allen_tammy",
+      "target": "woo_sang",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28388,7 +29005,7 @@
     },
     {
       "source": "baker_nathan",
-      "target": "drasgow_fritz",
+      "target": "stark_stephen",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28397,7 +29014,7 @@
     },
     {
       "source": "baker_nathan",
-      "target": "stark_stephen",
+      "target": "drasgow_fritz",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28475,26 +29092,6 @@
     },
     {
       "source": "banks_george",
-      "target": "sessa_valerie",
-      "weight": 1,
-      "venues": {
-        "iop": 1
-      },
-      "papers": [
-        {
-          "y": 2026,
-          "v": "iop",
-          "a": [
-            "General"
-          ],
-          "t": "Read my lips: No new constructs! Construct proliferation as a threat to the future of IO psychology"
-        }
-      ],
-      "year_min": 2026,
-      "year_max": 2026
-    },
-    {
-      "source": "banks_george",
       "target": "bowling_nathan",
       "weight": 1,
       "venues": {
@@ -28515,7 +29112,27 @@
     },
     {
       "source": "banks_george",
-      "target": "fisher_gwen",
+      "target": "sessa_valerie",
+      "weight": 1,
+      "venues": {
+        "iop": 1
+      },
+      "papers": [
+        {
+          "y": 2026,
+          "v": "iop",
+          "a": [
+            "General"
+          ],
+          "t": "Read my lips: No new constructs! Construct proliferation as a threat to the future of IO psychology"
+        }
+      ],
+      "year_min": 2026,
+      "year_max": 2026
+    },
+    {
+      "source": "banks_george",
+      "target": "zaccaro_stephen",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28524,7 +29141,7 @@
     },
     {
       "source": "banks_george",
-      "target": "zaccaro_stephen",
+      "target": "kozlowski_steve",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28542,7 +29159,7 @@
     },
     {
       "source": "banks_george",
-      "target": "kozlowski_steve",
+      "target": "fisher_gwen",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28569,7 +29186,7 @@
     },
     {
       "source": "banks_george",
-      "target": "powell_deborah",
+      "target": "reiterpalmon_roni",
       "weight": 1,
       "venues": {
         "jom": 1
@@ -28589,7 +29206,7 @@
     },
     {
       "source": "banks_george",
-      "target": "reiterpalmon_roni",
+      "target": "powell_deborah",
       "weight": 1,
       "venues": {
         "jom": 1
@@ -28636,6 +29253,15 @@
     },
     {
       "source": "banks_george",
+      "target": "cartersowell_adrienne",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "banks_george",
       "target": "hebl_mikki",
       "weight": 1,
       "venues": {},
@@ -28654,7 +29280,7 @@
     },
     {
       "source": "banks_george",
-      "target": "britt_thomas",
+      "target": "bergman_mindy",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28663,7 +29289,7 @@
     },
     {
       "source": "banks_george",
-      "target": "shoss_mindy",
+      "target": "strah_nicole",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28681,34 +29307,7 @@
     },
     {
       "source": "banks_george",
-      "target": "sinclair_robert",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "banks_george",
-      "target": "cartersowell_adrienne",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "banks_george",
       "target": "rudolph_cort",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "banks_george",
-      "target": "clark_malissa",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28726,6 +29325,33 @@
     },
     {
       "source": "banks_george",
+      "target": "clark_malissa",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "banks_george",
+      "target": "britt_thomas",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "banks_george",
+      "target": "sinclair_robert",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "banks_george",
       "target": "highhouse_scott",
       "weight": 1,
       "venues": {},
@@ -28735,7 +29361,7 @@
     },
     {
       "source": "banks_george",
-      "target": "bergman_mindy",
+      "target": "shoss_mindy",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -28939,7 +29565,27 @@
     },
     {
       "source": "bazzoli_andrea",
-      "target": "brossoit_rebecca",
+      "target": "phetmisy_cassandra",
+      "weight": 1,
+      "venues": {
+        "apir": 1
+      },
+      "papers": [
+        {
+          "y": 2026,
+          "v": "apir",
+          "a": [
+            "Careers"
+          ],
+          "t": "Socioeconomic status across the career life cycle: A review and research agenda"
+        }
+      ],
+      "year_min": 2026,
+      "year_max": 2026
+    },
+    {
+      "source": "bazzoli_andrea",
+      "target": "bowling_nathan",
       "weight": 1,
       "venues": {
         "chb": 1
@@ -28959,7 +29605,7 @@
     },
     {
       "source": "bazzoli_andrea",
-      "target": "bowling_nathan",
+      "target": "brossoit_rebecca",
       "weight": 1,
       "venues": {
         "chb": 1
@@ -29302,7 +29948,7 @@
     },
     {
       "source": "bergman_mindy",
-      "target": "shoss_mindy",
+      "target": "strah_nicole",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -29329,43 +29975,7 @@
     },
     {
       "source": "bergman_mindy",
-      "target": "rupp_deborah",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "bergman_mindy",
       "target": "rudolph_cort",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "bergman_mindy",
-      "target": "clark_malissa",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "bergman_mindy",
-      "target": "woo_sang",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "bergman_mindy",
-      "target": "zickar_michael",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -29383,7 +29993,52 @@
     },
     {
       "source": "bergman_mindy",
+      "target": "clark_malissa",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bergman_mindy",
+      "target": "zickar_michael",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bergman_mindy",
       "target": "highhouse_scott",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bergman_mindy",
+      "target": "rupp_deborah",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bergman_mindy",
+      "target": "shoss_mindy",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bergman_mindy",
+      "target": "woo_sang",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -29450,8 +30105,20 @@
       "source": "blanchard_anita",
       "target": "smith_claire",
       "weight": 1,
-      "venues": {},
-      "papers": [],
+      "venues": {
+        "cscw": 1
+      },
+      "papers": [
+        {
+          "y": 2022,
+          "v": "cscw",
+          "a": [
+            "AI / Technology",
+            "Methods"
+          ],
+          "t": "The impact of governance bots on sense of virtual community: Development and validation of the gov-bots scale"
+        }
+      ],
       "year_min": 2022,
       "year_max": 2022
     },
@@ -29591,33 +30258,6 @@
     },
     {
       "source": "bobocel_ramona",
-      "target": "hebl_mikki",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "bobocel_ramona",
-      "target": "probst_tahira",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "bobocel_ramona",
-      "target": "zaccaro_stephen",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "bobocel_ramona",
       "target": "bowling_nathan",
       "weight": 1,
       "venues": {},
@@ -29627,7 +30267,7 @@
     },
     {
       "source": "bobocel_ramona",
-      "target": "chao_georgia",
+      "target": "brown_douglas",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -29654,7 +30294,25 @@
     },
     {
       "source": "bobocel_ramona",
-      "target": "rudolph_cort",
+      "target": "zaccaro_stephen",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bobocel_ramona",
+      "target": "hebl_mikki",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bobocel_ramona",
+      "target": "chao_georgia",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -29672,34 +30330,7 @@
     },
     {
       "source": "bobocel_ramona",
-      "target": "shuffler_marissa",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "bobocel_ramona",
-      "target": "kanfer_ruth",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "bobocel_ramona",
-      "target": "brown_douglas",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "bobocel_ramona",
-      "target": "coleman_peter",
+      "target": "king_eden",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -29717,7 +30348,43 @@
     },
     {
       "source": "bobocel_ramona",
-      "target": "king_eden",
+      "target": "rudolph_cort",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bobocel_ramona",
+      "target": "probst_tahira",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bobocel_ramona",
+      "target": "kanfer_ruth",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bobocel_ramona",
+      "target": "shuffler_marissa",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bobocel_ramona",
+      "target": "coleman_peter",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -29791,7 +30458,7 @@
     },
     {
       "source": "bono_joyce",
-      "target": "chao_georgia",
+      "target": "kuncel_nathan",
       "weight": 1,
       "venues": {
         "ijsa": 1
@@ -29811,7 +30478,7 @@
     },
     {
       "source": "bono_joyce",
-      "target": "kuncel_nathan",
+      "target": "chao_georgia",
       "weight": 1,
       "venues": {
         "ijsa": 1
@@ -29887,8 +30554,19 @@
       "source": "bourdage_joshua",
       "target": "spence_jeffrey",
       "weight": 1,
-      "venues": {},
-      "papers": [],
+      "venues": {
+        "jap": 1
+      },
+      "papers": [
+        {
+          "y": 2026,
+          "v": "jap",
+          "a": [
+            "General"
+          ],
+          "t": "Are They Really Just Words? Investigating the Prevalence and Impact of Physical Disability Biased Language in Job Advertisements"
+        }
+      ],
       "year_min": 2026,
       "year_max": 2026
     },
@@ -29921,25 +30599,16 @@
     },
     {
       "source": "bourdage_joshua",
-      "target": "carpenter_nichelle",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2014,
-      "year_max": 2014
-    },
-    {
-      "source": "bourdage_joshua",
-      "target": "hoffman_brian",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2014,
-      "year_max": 2014
-    },
-    {
-      "source": "bourdage_joshua",
       "target": "bowling_nathan",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2014,
+      "year_max": 2014
+    },
+    {
+      "source": "bourdage_joshua",
+      "target": "roch_sylvia",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -29975,7 +30644,16 @@
     },
     {
       "source": "bourdage_joshua",
-      "target": "roch_sylvia",
+      "target": "hoffman_brian",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2014,
+      "year_max": 2014
+    },
+    {
+      "source": "bourdage_joshua",
+      "target": "carpenter_nichelle",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -29993,7 +30671,7 @@
     },
     {
       "source": "bowling_nathan",
-      "target": "brossoit_rebecca",
+      "target": "hughes_ian",
       "weight": 1,
       "venues": {
         "chb": 1
@@ -30013,7 +30691,7 @@
     },
     {
       "source": "bowling_nathan",
-      "target": "hughes_ian",
+      "target": "brossoit_rebecca",
       "weight": 1,
       "venues": {
         "chb": 1
@@ -30062,16 +30740,7 @@
     },
     {
       "source": "bowling_nathan",
-      "target": "carpenter_nichelle",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2015,
-      "year_max": 2015
-    },
-    {
-      "source": "bowling_nathan",
-      "target": "hoffman_brian",
+      "target": "roch_sylvia",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30081,15 +30750,6 @@
     {
       "source": "bowling_nathan",
       "target": "viswesvaran_chockalingam",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2015,
-      "year_max": 2015
-    },
-    {
-      "source": "bowling_nathan",
-      "target": "oneill_thomas",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30116,7 +30776,7 @@
     },
     {
       "source": "bowling_nathan",
-      "target": "powell_deborah",
+      "target": "hoffman_brian",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30125,7 +30785,25 @@
     },
     {
       "source": "bowling_nathan",
-      "target": "roch_sylvia",
+      "target": "oneill_thomas",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2015,
+      "year_max": 2015
+    },
+    {
+      "source": "bowling_nathan",
+      "target": "carpenter_nichelle",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2015,
+      "year_max": 2015
+    },
+    {
+      "source": "bowling_nathan",
+      "target": "powell_deborah",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30143,34 +30821,7 @@
     },
     {
       "source": "bowling_nathan",
-      "target": "hebl_mikki",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "bowling_nathan",
-      "target": "probst_tahira",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "bowling_nathan",
-      "target": "zaccaro_stephen",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "bowling_nathan",
-      "target": "chao_georgia",
+      "target": "brown_douglas",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30188,7 +30839,7 @@
     },
     {
       "source": "bowling_nathan",
-      "target": "rupp_deborah",
+      "target": "zaccaro_stephen",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30197,7 +30848,16 @@
     },
     {
       "source": "bowling_nathan",
-      "target": "rudolph_cort",
+      "target": "hebl_mikki",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bowling_nathan",
+      "target": "chao_georgia",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30215,34 +30875,7 @@
     },
     {
       "source": "bowling_nathan",
-      "target": "shuffler_marissa",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "bowling_nathan",
-      "target": "kanfer_ruth",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "bowling_nathan",
-      "target": "brown_douglas",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "bowling_nathan",
-      "target": "coleman_peter",
+      "target": "king_eden",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30260,7 +30893,52 @@
     },
     {
       "source": "bowling_nathan",
-      "target": "king_eden",
+      "target": "rudolph_cort",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bowling_nathan",
+      "target": "probst_tahira",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bowling_nathan",
+      "target": "kanfer_ruth",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bowling_nathan",
+      "target": "rupp_deborah",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bowling_nathan",
+      "target": "shuffler_marissa",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "bowling_nathan",
+      "target": "coleman_peter",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30361,7 +31039,7 @@
     },
     {
       "source": "britt_thomas",
-      "target": "hebl_mikki",
+      "target": "tonidandel_scott",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30370,7 +31048,16 @@
     },
     {
       "source": "britt_thomas",
-      "target": "tonidandel_scott",
+      "target": "cartersowell_adrienne",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "britt_thomas",
+      "target": "hebl_mikki",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30388,16 +31075,7 @@
     },
     {
       "source": "britt_thomas",
-      "target": "shoss_mindy",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "britt_thomas",
-      "target": "rogelberg_steven",
+      "target": "strah_nicole",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30424,16 +31102,7 @@
     },
     {
       "source": "britt_thomas",
-      "target": "cartersowell_adrienne",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "britt_thomas",
-      "target": "rupp_deborah",
+      "target": "king_eden",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30451,7 +31120,7 @@
     },
     {
       "source": "britt_thomas",
-      "target": "clark_malissa",
+      "target": "melsonsilimon_arturia",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30460,7 +31129,7 @@
     },
     {
       "source": "britt_thomas",
-      "target": "woo_sang",
+      "target": "clark_malissa",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30478,15 +31147,6 @@
     },
     {
       "source": "britt_thomas",
-      "target": "melsonsilimon_arturia",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "britt_thomas",
       "target": "highhouse_scott",
       "weight": 1,
       "venues": {},
@@ -30496,7 +31156,34 @@
     },
     {
       "source": "britt_thomas",
-      "target": "king_eden",
+      "target": "rupp_deborah",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "britt_thomas",
+      "target": "shoss_mindy",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "britt_thomas",
+      "target": "rogelberg_steven",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "britt_thomas",
+      "target": "woo_sang",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30612,7 +31299,7 @@
     },
     {
       "source": "brossoit_rebecca",
-      "target": "cobb_haley",
+      "target": "rudolph_cort",
       "weight": 1,
       "venues": {
         "opr": 1
@@ -30632,7 +31319,7 @@
     },
     {
       "source": "brossoit_rebecca",
-      "target": "rudolph_cort",
+      "target": "cobb_haley",
       "weight": 1,
       "venues": {
         "opr": 1
@@ -30692,42 +31379,6 @@
     },
     {
       "source": "brown_douglas",
-      "target": "hebl_mikki",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "brown_douglas",
-      "target": "probst_tahira",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "brown_douglas",
-      "target": "zaccaro_stephen",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "brown_douglas",
-      "target": "chao_georgia",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "brown_douglas",
       "target": "kozlowski_steve",
       "weight": 1,
       "venues": {},
@@ -30746,7 +31397,7 @@
     },
     {
       "source": "brown_douglas",
-      "target": "rupp_deborah",
+      "target": "zaccaro_stephen",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30755,7 +31406,16 @@
     },
     {
       "source": "brown_douglas",
-      "target": "rudolph_cort",
+      "target": "hebl_mikki",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "brown_douglas",
+      "target": "chao_georgia",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30773,25 +31433,7 @@
     },
     {
       "source": "brown_douglas",
-      "target": "shuffler_marissa",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "brown_douglas",
-      "target": "kanfer_ruth",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "brown_douglas",
-      "target": "coleman_peter",
+      "target": "king_eden",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30809,7 +31451,52 @@
     },
     {
       "source": "brown_douglas",
-      "target": "king_eden",
+      "target": "rudolph_cort",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "brown_douglas",
+      "target": "probst_tahira",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "brown_douglas",
+      "target": "kanfer_ruth",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "brown_douglas",
+      "target": "rupp_deborah",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "brown_douglas",
+      "target": "shuffler_marissa",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "brown_douglas",
+      "target": "coleman_peter",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -30906,7 +31593,7 @@
     },
     {
       "source": "brummel_bradley",
-      "target": "probst_tahira",
+      "target": "shoss_mindy",
       "weight": 1,
       "venues": {
         "jbp": 1
@@ -30926,7 +31613,7 @@
     },
     {
       "source": "brummel_bradley",
-      "target": "shoss_mindy",
+      "target": "probst_tahira",
       "weight": 1,
       "venues": {
         "jbp": 1
@@ -30955,7 +31642,7 @@
     },
     {
       "source": "burke_vanessa",
-      "target": "finkelstein_lisa",
+      "target": "cheung_hokwan",
       "weight": 1,
       "venues": {
         "war": 1
@@ -30976,7 +31663,7 @@
     },
     {
       "source": "burke_vanessa",
-      "target": "cheung_hokwan",
+      "target": "finkelstein_lisa",
       "weight": 1,
       "venues": {
         "war": 1
@@ -31117,7 +31804,7 @@
     },
     {
       "source": "carpenter_nichelle",
-      "target": "hoffman_brian",
+      "target": "roch_sylvia",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -31127,15 +31814,6 @@
     {
       "source": "carpenter_nichelle",
       "target": "viswesvaran_chockalingam",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2018,
-      "year_max": 2018
-    },
-    {
-      "source": "carpenter_nichelle",
-      "target": "oneill_thomas",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -31162,7 +31840,7 @@
     },
     {
       "source": "carpenter_nichelle",
-      "target": "powell_deborah",
+      "target": "hoffman_brian",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -31171,7 +31849,16 @@
     },
     {
       "source": "carpenter_nichelle",
-      "target": "roch_sylvia",
+      "target": "oneill_thomas",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2018,
+      "year_max": 2018
+    },
+    {
+      "source": "carpenter_nichelle",
+      "target": "powell_deborah",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -31315,6 +32002,105 @@
     },
     {
       "source": "cartersowell_adrienne",
+      "target": "strah_nicole",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "cartersowell_adrienne",
+      "target": "motowidlo_stephan",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "cartersowell_adrienne",
+      "target": "grand_james",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "cartersowell_adrienne",
+      "target": "king_eden",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "cartersowell_adrienne",
+      "target": "rudolph_cort",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "cartersowell_adrienne",
+      "target": "melsonsilimon_arturia",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "cartersowell_adrienne",
+      "target": "clark_malissa",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "cartersowell_adrienne",
+      "target": "sinclair_robert",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "cartersowell_adrienne",
+      "target": "zickar_michael",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "cartersowell_adrienne",
+      "target": "highhouse_scott",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "cartersowell_adrienne",
+      "target": "rupp_deborah",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "cartersowell_adrienne",
       "target": "shoss_mindy",
       "weight": 1,
       "venues": {},
@@ -31333,60 +32119,6 @@
     },
     {
       "source": "cartersowell_adrienne",
-      "target": "motowidlo_stephan",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "cartersowell_adrienne",
-      "target": "sinclair_robert",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "cartersowell_adrienne",
-      "target": "grand_james",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "cartersowell_adrienne",
-      "target": "rupp_deborah",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "cartersowell_adrienne",
-      "target": "rudolph_cort",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "cartersowell_adrienne",
-      "target": "clark_malissa",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "cartersowell_adrienne",
       "target": "woo_sang",
       "weight": 1,
       "venues": {},
@@ -31395,44 +32127,8 @@
       "year_max": 0
     },
     {
-      "source": "cartersowell_adrienne",
-      "target": "zickar_michael",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "cartersowell_adrienne",
-      "target": "melsonsilimon_arturia",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "cartersowell_adrienne",
-      "target": "highhouse_scott",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "cartersowell_adrienne",
-      "target": "king_eden",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
       "source": "chang_daisy",
-      "target": "dishop_christopher",
+      "target": "paolettihatcher_jensine",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -31450,7 +32146,7 @@
     },
     {
       "source": "chang_daisy",
-      "target": "paolettihatcher_jensine",
+      "target": "dishop_christopher",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -31476,6 +32172,26 @@
       "year_max": 2009
     },
     {
+      "source": "chang_yingyi",
+      "target": "gardner_danielle",
+      "weight": 1,
+      "venues": {
+        "cdi": 1
+      },
+      "papers": [
+        {
+          "y": 2026,
+          "v": "cdi",
+          "a": [
+            "General"
+          ],
+          "t": "Guest editorial: Introducing the \u201cchanging, evolving, persisting: exploring the role of masculinity in careers and family\u201d special issue"
+        }
+      ],
+      "year_min": 2026,
+      "year_max": 2026
+    },
+    {
       "source": "chao_georgia",
       "target": "vanfossen_jenna",
       "weight": 1,
@@ -31497,7 +32213,7 @@
     },
     {
       "source": "chao_georgia",
-      "target": "fisher_gwen",
+      "target": "rogelberg_steven",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -31506,7 +32222,7 @@
     },
     {
       "source": "chao_georgia",
-      "target": "rogelberg_steven",
+      "target": "fisher_gwen",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -31533,7 +32249,7 @@
     },
     {
       "source": "chao_georgia",
-      "target": "dishop_christopher",
+      "target": "paolettihatcher_jensine",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -31542,7 +32258,7 @@
     },
     {
       "source": "chao_georgia",
-      "target": "paolettihatcher_jensine",
+      "target": "dishop_christopher",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -31591,24 +32307,6 @@
     },
     {
       "source": "chao_georgia",
-      "target": "hebl_mikki",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "chao_georgia",
-      "target": "probst_tahira",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "chao_georgia",
       "target": "woehr_david",
       "weight": 1,
       "venues": {},
@@ -31618,7 +32316,34 @@
     },
     {
       "source": "chao_georgia",
+      "target": "hebl_mikki",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "chao_georgia",
+      "target": "ford_kevin",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "chao_georgia",
       "target": "rudolph_cort",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "chao_georgia",
+      "target": "probst_tahira",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -31637,15 +32362,6 @@
     {
       "source": "chao_georgia",
       "target": "coleman_peter",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "chao_georgia",
-      "target": "ford_kevin",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -31810,7 +32526,7 @@
     },
     {
       "source": "clark_malissa",
-      "target": "hebl_mikki",
+      "target": "tonidandel_scott",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -31819,7 +32535,7 @@
     },
     {
       "source": "clark_malissa",
-      "target": "tonidandel_scott",
+      "target": "hebl_mikki",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -31837,7 +32553,7 @@
     },
     {
       "source": "clark_malissa",
-      "target": "rogelberg_steven",
+      "target": "strah_nicole",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -31855,43 +32571,7 @@
     },
     {
       "source": "clark_malissa",
-      "target": "sinclair_robert",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "clark_malissa",
       "target": "grand_james",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "clark_malissa",
-      "target": "rupp_deborah",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "clark_malissa",
-      "target": "woo_sang",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "clark_malissa",
-      "target": "zickar_michael",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -31909,7 +32589,52 @@
     },
     {
       "source": "clark_malissa",
+      "target": "sinclair_robert",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "clark_malissa",
+      "target": "zickar_michael",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "clark_malissa",
       "target": "highhouse_scott",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "clark_malissa",
+      "target": "rupp_deborah",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "clark_malissa",
+      "target": "rogelberg_steven",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "clark_malissa",
+      "target": "woo_sang",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -31983,33 +32708,6 @@
     },
     {
       "source": "coleman_peter",
-      "target": "hebl_mikki",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "coleman_peter",
-      "target": "probst_tahira",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "coleman_peter",
-      "target": "zaccaro_stephen",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "coleman_peter",
       "target": "kozlowski_steve",
       "weight": 1,
       "venues": {},
@@ -32028,7 +32726,7 @@
     },
     {
       "source": "coleman_peter",
-      "target": "rupp_deborah",
+      "target": "zaccaro_stephen",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -32037,7 +32735,7 @@
     },
     {
       "source": "coleman_peter",
-      "target": "rudolph_cort",
+      "target": "hebl_mikki",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -32055,16 +32753,7 @@
     },
     {
       "source": "coleman_peter",
-      "target": "shuffler_marissa",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "coleman_peter",
-      "target": "kanfer_ruth",
+      "target": "king_eden",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -32082,7 +32771,43 @@
     },
     {
       "source": "coleman_peter",
-      "target": "king_eden",
+      "target": "rudolph_cort",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "coleman_peter",
+      "target": "probst_tahira",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "coleman_peter",
+      "target": "kanfer_ruth",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "coleman_peter",
+      "target": "rupp_deborah",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "coleman_peter",
+      "target": "shuffler_marissa",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -32160,26 +32885,6 @@
     },
     {
       "source": "converse_patrick",
-      "target": "rogelberg_steven",
-      "weight": 1,
-      "venues": {
-        "iop": 1
-      },
-      "papers": [
-        {
-          "y": 2014,
-          "v": "iop",
-          "a": [
-            "General"
-          ],
-          "t": "Including Science Advocacy in Industrial\u2013Organizational Curriculum"
-        }
-      ],
-      "year_min": 2014,
-      "year_max": 2014
-    },
-    {
-      "source": "converse_patrick",
       "target": "stark_stephen",
       "weight": 1,
       "venues": {
@@ -32201,6 +32906,26 @@
     {
       "source": "converse_patrick",
       "target": "king_eden",
+      "weight": 1,
+      "venues": {
+        "iop": 1
+      },
+      "papers": [
+        {
+          "y": 2014,
+          "v": "iop",
+          "a": [
+            "General"
+          ],
+          "t": "Including Science Advocacy in Industrial\u2013Organizational Curriculum"
+        }
+      ],
+      "year_min": 2014,
+      "year_max": 2014
+    },
+    {
+      "source": "converse_patrick",
+      "target": "rogelberg_steven",
       "weight": 1,
       "venues": {
         "iop": 1
@@ -32501,6 +33226,15 @@
     },
     {
       "source": "day_arla",
+      "target": "tonidandel_scott",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "day_arla",
       "target": "hebl_mikki",
       "weight": 1,
       "venues": {},
@@ -32510,7 +33244,88 @@
     },
     {
       "source": "day_arla",
-      "target": "tonidandel_scott",
+      "target": "strah_nicole",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "day_arla",
+      "target": "motowidlo_stephan",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "day_arla",
+      "target": "grand_james",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "day_arla",
+      "target": "king_eden",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "day_arla",
+      "target": "rudolph_cort",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "day_arla",
+      "target": "melsonsilimon_arturia",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "day_arla",
+      "target": "sinclair_robert",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "day_arla",
+      "target": "zickar_michael",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "day_arla",
+      "target": "highhouse_scott",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "day_arla",
+      "target": "rupp_deborah",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -32537,102 +33352,12 @@
     },
     {
       "source": "day_arla",
-      "target": "motowidlo_stephan",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "day_arla",
-      "target": "sinclair_robert",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "day_arla",
-      "target": "grand_james",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "day_arla",
-      "target": "rupp_deborah",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "day_arla",
-      "target": "rudolph_cort",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "day_arla",
       "target": "woo_sang",
       "weight": 1,
       "venues": {},
       "papers": [],
       "year_min": 9999,
       "year_max": 0
-    },
-    {
-      "source": "day_arla",
-      "target": "zickar_michael",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "day_arla",
-      "target": "melsonsilimon_arturia",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "day_arla",
-      "target": "highhouse_scott",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "day_arla",
-      "target": "king_eden",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "day_eric",
-      "target": "randall_jason",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2022,
-      "year_max": 2022
     },
     {
       "source": "day_eric",
@@ -32645,6 +33370,24 @@
     },
     {
       "source": "day_eric",
+      "target": "randall_jason",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2022,
+      "year_max": 2022
+    },
+    {
+      "source": "day_eric",
+      "target": "kozlowski_steve",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "day_eric",
       "target": "lebreton_james",
       "weight": 1,
       "venues": {},
@@ -32654,7 +33397,16 @@
     },
     {
       "source": "day_eric",
-      "target": "kozlowski_steve",
+      "target": "newman_daniel",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "day_eric",
+      "target": "salas_eduardo",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -32673,24 +33425,6 @@
     {
       "source": "day_eric",
       "target": "levy_paul",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "day_eric",
-      "target": "salas_eduardo",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "day_eric",
-      "target": "newman_daniel",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -32796,7 +33530,7 @@
     },
     {
       "source": "dik_bryan",
-      "target": "hebl_mikki",
+      "target": "kanfer_ruth",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -32805,7 +33539,7 @@
     },
     {
       "source": "dik_bryan",
-      "target": "kanfer_ruth",
+      "target": "hebl_mikki",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -32832,7 +33566,7 @@
     },
     {
       "source": "dipboye_robert",
-      "target": "newman_daniel",
+      "target": "wang_wei",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -32841,7 +33575,7 @@
     },
     {
       "source": "dipboye_robert",
-      "target": "wang_wei",
+      "target": "newman_daniel",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -32897,7 +33631,7 @@
     },
     {
       "source": "dishop_christopher",
-      "target": "salas_eduardo",
+      "target": "paolettihatcher_jensine",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -32906,7 +33640,7 @@
     },
     {
       "source": "dishop_christopher",
-      "target": "paolettihatcher_jensine",
+      "target": "salas_eduardo",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -32964,24 +33698,6 @@
     },
     {
       "source": "drasgow_fritz",
-      "target": "hebl_mikki",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2012,
-      "year_max": 2012
-    },
-    {
-      "source": "drasgow_fritz",
-      "target": "king_eden",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2012,
-      "year_max": 2012
-    },
-    {
-      "source": "drasgow_fritz",
       "target": "rosopa_patrick",
       "weight": 1,
       "venues": {},
@@ -32992,6 +33708,24 @@
     {
       "source": "drasgow_fritz",
       "target": "newman_daniel",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2012,
+      "year_max": 2012
+    },
+    {
+      "source": "drasgow_fritz",
+      "target": "hebl_mikki",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2012,
+      "year_max": 2012
+    },
+    {
+      "source": "drasgow_fritz",
+      "target": "king_eden",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -33268,6 +34002,15 @@
     },
     {
       "source": "fisher_gwen",
+      "target": "rupp_deborah",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2012,
+      "year_max": 2012
+    },
+    {
+      "source": "fisher_gwen",
       "target": "grand_james",
       "weight": 1,
       "venues": {},
@@ -33287,15 +34030,6 @@
     {
       "source": "fisher_gwen",
       "target": "lenoble_chelsea",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2012,
-      "year_max": 2012
-    },
-    {
-      "source": "fisher_gwen",
-      "target": "rupp_deborah",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -33434,7 +34168,7 @@
     },
     {
       "source": "folberg_abigail",
-      "target": "he_yimin",
+      "target": "zhu_ze",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -33443,7 +34177,7 @@
     },
     {
       "source": "folberg_abigail",
-      "target": "zhu_ze",
+      "target": "he_yimin",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -33481,15 +34215,6 @@
     },
     {
       "source": "ford_kevin",
-      "target": "viswesvaran_chockalingam",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2003,
-      "year_max": 2003
-    },
-    {
-      "source": "ford_kevin",
       "target": "ones_deniz",
       "weight": 1,
       "venues": {},
@@ -33499,21 +34224,12 @@
     },
     {
       "source": "ford_kevin",
-      "target": "hebl_mikki",
+      "target": "viswesvaran_chockalingam",
       "weight": 1,
       "venues": {},
       "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "ford_kevin",
-      "target": "probst_tahira",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
+      "year_min": 2003,
+      "year_max": 2003
     },
     {
       "source": "ford_kevin",
@@ -33526,7 +34242,16 @@
     },
     {
       "source": "ford_kevin",
-      "target": "rupp_deborah",
+      "target": "hebl_mikki",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "ford_kevin",
+      "target": "king_eden",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -33544,7 +34269,7 @@
     },
     {
       "source": "ford_kevin",
-      "target": "shuffler_marissa",
+      "target": "probst_tahira",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -33562,7 +34287,16 @@
     },
     {
       "source": "ford_kevin",
-      "target": "king_eden",
+      "target": "rupp_deborah",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "ford_kevin",
+      "target": "shuffler_marissa",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -33647,7 +34381,7 @@
     },
     {
       "source": "french_kimberly",
-      "target": "hillebrandt_annika",
+      "target": "shoss_mindy",
       "weight": 1,
       "venues": {
         "jom": 1
@@ -33667,7 +34401,7 @@
     },
     {
       "source": "french_kimberly",
-      "target": "shoss_mindy",
+      "target": "hillebrandt_annika",
       "weight": 1,
       "venues": {
         "jom": 1
@@ -33689,8 +34423,19 @@
       "source": "french_kimberly",
       "target": "king_eden",
       "weight": 1,
-      "venues": {},
-      "papers": [],
+      "venues": {
+        "iop": 1
+      },
+      "papers": [
+        {
+          "y": 2026,
+          "v": "iop",
+          "a": [
+            "General"
+          ],
+          "t": "Developmental Reviewing: Is it Really Good for Science?"
+        }
+      ],
       "year_min": 2026,
       "year_max": 2026
     },
@@ -33846,7 +34591,7 @@
     },
     {
       "source": "gooty_janaki",
-      "target": "thapa_stuti",
+      "target": "hickman_louis",
       "weight": 1,
       "venues": {
         "nature": 1
@@ -33886,7 +34631,7 @@
     },
     {
       "source": "gooty_janaki",
-      "target": "hickman_louis",
+      "target": "thapa_stuti",
       "weight": 1,
       "venues": {
         "nature": 1
@@ -34021,7 +34766,7 @@
     },
     {
       "source": "grand_james",
-      "target": "shoss_mindy",
+      "target": "strah_nicole",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34039,34 +34784,7 @@
     },
     {
       "source": "grand_james",
-      "target": "sinclair_robert",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "grand_james",
       "target": "rudolph_cort",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "grand_james",
-      "target": "woo_sang",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "grand_james",
-      "target": "zickar_michael",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34084,7 +34802,43 @@
     },
     {
       "source": "grand_james",
+      "target": "sinclair_robert",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "grand_james",
+      "target": "zickar_michael",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "grand_james",
       "target": "highhouse_scott",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "grand_james",
+      "target": "shoss_mindy",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "grand_james",
+      "target": "woo_sang",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34158,7 +34912,7 @@
     },
     {
       "source": "grandey_alicia",
-      "target": "snell_andrea",
+      "target": "ones_deniz",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34167,7 +34921,7 @@
     },
     {
       "source": "grandey_alicia",
-      "target": "ones_deniz",
+      "target": "snell_andrea",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34339,7 +35093,7 @@
     },
     {
       "source": "harriswatson_alex",
-      "target": "kanfer_ruth",
+      "target": "zaccaro_stephen",
       "weight": 1,
       "venues": {
         "amd": 1
@@ -34359,7 +35113,7 @@
     },
     {
       "source": "harriswatson_alex",
-      "target": "zaccaro_stephen",
+      "target": "kanfer_ruth",
       "weight": 1,
       "venues": {
         "amd": 1
@@ -34464,7 +35218,7 @@
     },
     {
       "source": "hebl_mikki",
-      "target": "randall_jason",
+      "target": "villado_anton",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34473,7 +35227,7 @@
     },
     {
       "source": "hebl_mikki",
-      "target": "villado_anton",
+      "target": "randall_jason",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34491,7 +35245,7 @@
     },
     {
       "source": "hebl_mikki",
-      "target": "viswesvaran_chockalingam",
+      "target": "ones_deniz",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34500,7 +35254,7 @@
     },
     {
       "source": "hebl_mikki",
-      "target": "ones_deniz",
+      "target": "viswesvaran_chockalingam",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34527,15 +35281,6 @@
     },
     {
       "source": "hebl_mikki",
-      "target": "tay_louis",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2012,
-      "year_max": 2012
-    },
-    {
-      "source": "hebl_mikki",
       "target": "newman_daniel",
       "weight": 1,
       "venues": {},
@@ -34545,7 +35290,16 @@
     },
     {
       "source": "hebl_mikki",
-      "target": "shoss_mindy",
+      "target": "tay_louis",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2012,
+      "year_max": 2012
+    },
+    {
+      "source": "hebl_mikki",
+      "target": "strah_nicole",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34563,15 +35317,6 @@
     },
     {
       "source": "hebl_mikki",
-      "target": "woo_sang",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "hebl_mikki",
       "target": "melsonsilimon_arturia",
       "weight": 1,
       "venues": {},
@@ -34581,7 +35326,7 @@
     },
     {
       "source": "hebl_mikki",
-      "target": "probst_tahira",
+      "target": "shoss_mindy",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34590,7 +35335,7 @@
     },
     {
       "source": "hebl_mikki",
-      "target": "zaccaro_stephen",
+      "target": "woo_sang",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34609,6 +35354,24 @@
     {
       "source": "hebl_mikki",
       "target": "woehr_david",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "hebl_mikki",
+      "target": "zaccaro_stephen",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "hebl_mikki",
+      "target": "probst_tahira",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34840,15 +35603,6 @@
     },
     {
       "source": "highhouse_scott",
-      "target": "salter_nicholas",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2009,
-      "year_max": 2009
-    },
-    {
-      "source": "highhouse_scott",
       "target": "kozlowski_steve",
       "weight": 1,
       "venues": {},
@@ -34858,7 +35612,16 @@
     },
     {
       "source": "highhouse_scott",
-      "target": "viswesvaran_chockalingam",
+      "target": "salter_nicholas",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2009,
+      "year_max": 2009
+    },
+    {
+      "source": "highhouse_scott",
+      "target": "roch_sylvia",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34867,7 +35630,7 @@
     },
     {
       "source": "highhouse_scott",
-      "target": "oneill_thomas",
+      "target": "viswesvaran_chockalingam",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34885,7 +35648,7 @@
     },
     {
       "source": "highhouse_scott",
-      "target": "powell_deborah",
+      "target": "oneill_thomas",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34894,7 +35657,7 @@
     },
     {
       "source": "highhouse_scott",
-      "target": "roch_sylvia",
+      "target": "powell_deborah",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34912,16 +35675,7 @@
     },
     {
       "source": "highhouse_scott",
-      "target": "shoss_mindy",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "highhouse_scott",
-      "target": "rogelberg_steven",
+      "target": "strah_nicole",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34931,6 +35685,33 @@
     {
       "source": "highhouse_scott",
       "target": "motowidlo_stephan",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "highhouse_scott",
+      "target": "king_eden",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "highhouse_scott",
+      "target": "rudolph_cort",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "highhouse_scott",
+      "target": "melsonsilimon_arturia",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34957,7 +35738,16 @@
     },
     {
       "source": "highhouse_scott",
-      "target": "rudolph_cort",
+      "target": "shoss_mindy",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "highhouse_scott",
+      "target": "rogelberg_steven",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -34967,24 +35757,6 @@
     {
       "source": "highhouse_scott",
       "target": "woo_sang",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "highhouse_scott",
-      "target": "melsonsilimon_arturia",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "highhouse_scott",
-      "target": "king_eden",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -35089,7 +35861,7 @@
     },
     {
       "source": "hoffman_brian",
-      "target": "viswesvaran_chockalingam",
+      "target": "roch_sylvia",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -35098,7 +35870,7 @@
     },
     {
       "source": "hoffman_brian",
-      "target": "oneill_thomas",
+      "target": "viswesvaran_chockalingam",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -35116,7 +35888,7 @@
     },
     {
       "source": "hoffman_brian",
-      "target": "powell_deborah",
+      "target": "oneill_thomas",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -35125,7 +35897,7 @@
     },
     {
       "source": "hoffman_brian",
-      "target": "roch_sylvia",
+      "target": "powell_deborah",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -35264,15 +36036,6 @@
     },
     {
       "source": "kanfer_ruth",
-      "target": "probst_tahira",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "kanfer_ruth",
       "target": "woehr_david",
       "weight": 1,
       "venues": {},
@@ -35283,6 +36046,15 @@
     {
       "source": "kanfer_ruth",
       "target": "salas_eduardo",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "kanfer_ruth",
+      "target": "probst_tahira",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -35327,7 +36099,7 @@
     },
     {
       "source": "kaplan_seth",
-      "target": "lenoble_chelsea",
+      "target": "shuffler_marissa",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -35345,12 +36117,32 @@
     },
     {
       "source": "kaplan_seth",
-      "target": "shuffler_marissa",
+      "target": "lenoble_chelsea",
       "weight": 1,
       "venues": {},
       "papers": [],
       "year_min": 2021,
       "year_max": 2021
+    },
+    {
+      "source": "kaplan_seth",
+      "target": "strah_nicole",
+      "weight": 1,
+      "venues": {
+        "opr": 1
+      },
+      "papers": [
+        {
+          "y": 2025,
+          "v": "opr",
+          "a": [
+            "Selection"
+          ],
+          "t": "The application of within-person methods to promote inclusive job analysis"
+        }
+      ],
+      "year_min": 2025,
+      "year_max": 2025
     },
     {
       "source": "kaplan_seth",
@@ -35458,6 +36250,15 @@
       "papers": [],
       "year_min": 2016,
       "year_max": 2016
+    },
+    {
+      "source": "keith_melissa",
+      "target": "strah_nicole",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2025,
+      "year_max": 2025
     },
     {
       "source": "beal_daniel",
@@ -35792,15 +36593,6 @@
     },
     {
       "source": "king_eden",
-      "target": "shoss_mindy",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "king_eden",
       "target": "motowidlo_stephan",
       "weight": 1,
       "venues": {},
@@ -35810,7 +36602,7 @@
     },
     {
       "source": "king_eden",
-      "target": "woo_sang",
+      "target": "melsonsilimon_arturia",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -35828,7 +36620,16 @@
     },
     {
       "source": "king_eden",
-      "target": "melsonsilimon_arturia",
+      "target": "shoss_mindy",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "king_eden",
+      "target": "woo_sang",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -35846,7 +36647,7 @@
     },
     {
       "source": "king_eden",
-      "target": "probst_tahira",
+      "target": "woehr_david",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -35855,7 +36656,7 @@
     },
     {
       "source": "king_eden",
-      "target": "woehr_david",
+      "target": "probst_tahira",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -35891,15 +36692,6 @@
     },
     {
       "source": "kowalski_robin",
-      "target": "salas_eduardo",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2011,
-      "year_max": 2011
-    },
-    {
-      "source": "kowalski_robin",
       "target": "reiterpalmon_roni",
       "weight": 1,
       "venues": {},
@@ -35910,6 +36702,15 @@
     {
       "source": "kowalski_robin",
       "target": "simkins_susan",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2011,
+      "year_max": 2011
+    },
+    {
+      "source": "kowalski_robin",
+      "target": "salas_eduardo",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -35981,15 +36782,6 @@
     },
     {
       "source": "kozlowski_steve",
-      "target": "levy_paul",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "kozlowski_steve",
       "target": "newman_daniel",
       "weight": 1,
       "venues": {},
@@ -35999,7 +36791,7 @@
     },
     {
       "source": "kozlowski_steve",
-      "target": "probst_tahira",
+      "target": "levy_paul",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -36018,6 +36810,15 @@
     {
       "source": "kozlowski_steve",
       "target": "rudolph_cort",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "kozlowski_steve",
+      "target": "probst_tahira",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -36168,15 +36969,6 @@
     },
     {
       "source": "kuykendall_lauren",
-      "target": "lee_philseok",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2020,
-      "year_max": 2020
-    },
-    {
-      "source": "kuykendall_lauren",
       "target": "santuzzi_alecia",
       "weight": 1,
       "venues": {
@@ -36313,7 +37105,7 @@
     },
     {
       "source": "lebreton_james",
-      "target": "levy_paul",
+      "target": "newman_daniel",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -36331,7 +37123,7 @@
     },
     {
       "source": "lebreton_james",
-      "target": "newman_daniel",
+      "target": "levy_paul",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -36367,7 +37159,7 @@
     },
     {
       "source": "lenoble_chelsea",
-      "target": "wildman_jessica",
+      "target": "steelman_lisa",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -36376,7 +37168,7 @@
     },
     {
       "source": "lenoble_chelsea",
-      "target": "steelman_lisa",
+      "target": "wildman_jessica",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -36430,7 +37222,7 @@
     },
     {
       "source": "lenoble_chelsea",
-      "target": "salas_eduardo",
+      "target": "paolettihatcher_jensine",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -36439,7 +37231,7 @@
     },
     {
       "source": "lenoble_chelsea",
-      "target": "paolettihatcher_jensine",
+      "target": "salas_eduardo",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -36536,7 +37328,7 @@
     },
     {
       "source": "levy_paul",
-      "target": "salas_eduardo",
+      "target": "newman_daniel",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -36545,7 +37337,7 @@
     },
     {
       "source": "levy_paul",
-      "target": "newman_daniel",
+      "target": "salas_eduardo",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -36666,7 +37458,7 @@
     },
     {
       "source": "martinez_larry",
-      "target": "viswesvaran_chockalingam",
+      "target": "ones_deniz",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -36675,7 +37467,7 @@
     },
     {
       "source": "martinez_larry",
-      "target": "ones_deniz",
+      "target": "viswesvaran_chockalingam",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -36751,7 +37543,7 @@
     },
     {
       "source": "mcabee_samuel",
-      "target": "rogelberg_steven",
+      "target": "stark_stephen",
       "weight": 1,
       "venues": {
         "iop": 1
@@ -36771,7 +37563,7 @@
     },
     {
       "source": "mcabee_samuel",
-      "target": "stark_stephen",
+      "target": "rogelberg_steven",
       "weight": 1,
       "venues": {
         "iop": 1
@@ -36817,6 +37609,24 @@
       "papers": [],
       "year_min": 2021,
       "year_max": 2021
+    },
+    {
+      "source": "mcchesney_jenna",
+      "target": "perry_elissa",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2024,
+      "year_max": 2024
+    },
+    {
+      "source": "mcchesney_jenna",
+      "target": "saxena_mahima",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2023,
+      "year_max": 2023
     },
     {
       "source": "mcgonagle_alyssa",
@@ -36944,16 +37754,7 @@
     },
     {
       "source": "melsonsilimon_arturia",
-      "target": "shoss_mindy",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "melsonsilimon_arturia",
-      "target": "rogelberg_steven",
+      "target": "strah_nicole",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -36963,6 +37764,15 @@
     {
       "source": "melsonsilimon_arturia",
       "target": "motowidlo_stephan",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "melsonsilimon_arturia",
+      "target": "rudolph_cort",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -36989,7 +37799,16 @@
     },
     {
       "source": "melsonsilimon_arturia",
-      "target": "rudolph_cort",
+      "target": "shoss_mindy",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "melsonsilimon_arturia",
+      "target": "rogelberg_steven",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -37242,6 +38061,51 @@
     },
     {
       "source": "motowidlo_stephan",
+      "target": "strah_nicole",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "motowidlo_stephan",
+      "target": "rudolph_cort",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "motowidlo_stephan",
+      "target": "sinclair_robert",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "motowidlo_stephan",
+      "target": "zickar_michael",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "motowidlo_stephan",
+      "target": "rupp_deborah",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "motowidlo_stephan",
       "target": "shoss_mindy",
       "weight": 1,
       "venues": {},
@@ -37260,43 +38124,7 @@
     },
     {
       "source": "motowidlo_stephan",
-      "target": "sinclair_robert",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "motowidlo_stephan",
-      "target": "rupp_deborah",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "motowidlo_stephan",
-      "target": "rudolph_cort",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "motowidlo_stephan",
       "target": "woo_sang",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "motowidlo_stephan",
-      "target": "zickar_michael",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -37450,7 +38278,7 @@
     },
     {
       "source": "olenick_jeffrey",
-      "target": "salas_eduardo",
+      "target": "paolettihatcher_jensine",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -37459,7 +38287,7 @@
     },
     {
       "source": "olenick_jeffrey",
-      "target": "paolettihatcher_jensine",
+      "target": "salas_eduardo",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -37533,6 +38361,15 @@
     },
     {
       "source": "oneill_thomas",
+      "target": "roch_sylvia",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2015,
+      "year_max": 2015
+    },
+    {
+      "source": "oneill_thomas",
       "target": "viswesvaran_chockalingam",
       "weight": 1,
       "venues": {},
@@ -37550,15 +38387,6 @@
       "year_max": 2015
     },
     {
-      "source": "oneill_thomas",
-      "target": "roch_sylvia",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 2015,
-      "year_max": 2015
-    },
-    {
       "source": "burns_gary",
       "target": "oneill_thomas",
       "weight": 1,
@@ -37569,7 +38397,7 @@
     },
     {
       "source": "ones_deniz",
-      "target": "powell_deborah",
+      "target": "zickar_michael",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -37578,7 +38406,7 @@
     },
     {
       "source": "ones_deniz",
-      "target": "zickar_michael",
+      "target": "powell_deborah",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -37690,7 +38518,7 @@
     },
     {
       "source": "oswald_fred",
-      "target": "woo_sang",
+      "target": "tay_louis",
       "weight": 1,
       "venues": {
         "pp": 1
@@ -37710,7 +38538,7 @@
     },
     {
       "source": "oswald_fred",
-      "target": "tay_louis",
+      "target": "woo_sang",
       "weight": 1,
       "venues": {
         "pp": 1
@@ -37791,7 +38619,7 @@
     },
     {
       "source": "oswald_fred",
-      "target": "probst_tahira",
+      "target": "zaccaro_stephen",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -37800,7 +38628,7 @@
     },
     {
       "source": "oswald_fred",
-      "target": "zaccaro_stephen",
+      "target": "probst_tahira",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -38095,7 +38923,7 @@
     },
     {
       "source": "powell_deborah",
-      "target": "viswesvaran_chockalingam",
+      "target": "roch_sylvia",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -38104,7 +38932,7 @@
     },
     {
       "source": "powell_deborah",
-      "target": "roch_sylvia",
+      "target": "viswesvaran_chockalingam",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -38160,7 +38988,7 @@
     },
     {
       "source": "probst_tahira",
-      "target": "rupp_deborah",
+      "target": "rudolph_cort",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -38169,7 +38997,7 @@
     },
     {
       "source": "probst_tahira",
-      "target": "rudolph_cort",
+      "target": "rupp_deborah",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -38369,7 +39197,7 @@
     },
     {
       "source": "reiterpalmon_roni",
-      "target": "salas_eduardo",
+      "target": "simkins_susan",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -38378,7 +39206,7 @@
     },
     {
       "source": "reiterpalmon_roni",
-      "target": "simkins_susan",
+      "target": "salas_eduardo",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -38537,16 +39365,7 @@
     },
     {
       "source": "rogelberg_steven",
-      "target": "shoss_mindy",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "rogelberg_steven",
-      "target": "sinclair_robert",
+      "target": "strah_nicole",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -38564,7 +39383,7 @@
     },
     {
       "source": "rogelberg_steven",
-      "target": "woo_sang",
+      "target": "sinclair_robert",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -38574,6 +39393,24 @@
     {
       "source": "rogelberg_steven",
       "target": "zickar_michael",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "rogelberg_steven",
+      "target": "shoss_mindy",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "rogelberg_steven",
+      "target": "woo_sang",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -38768,7 +39605,7 @@
     },
     {
       "source": "rudolph_cort",
-      "target": "zaccaro_stephen",
+      "target": "woehr_david",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -38777,7 +39614,7 @@
     },
     {
       "source": "rudolph_cort",
-      "target": "woehr_david",
+      "target": "zaccaro_stephen",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -38804,6 +39641,15 @@
     },
     {
       "source": "rudolph_cort",
+      "target": "strah_nicole",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "rudolph_cort",
       "target": "sinclair_robert",
       "weight": 1,
       "venues": {},
@@ -38813,7 +39659,7 @@
     },
     {
       "source": "rudolph_cort",
-      "target": "woo_sang",
+      "target": "zickar_michael",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -38822,7 +39668,7 @@
     },
     {
       "source": "rudolph_cort",
-      "target": "zickar_michael",
+      "target": "woo_sang",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -38840,15 +39686,6 @@
     },
     {
       "source": "rupp_deborah",
-      "target": "shoss_mindy",
-      "weight": 1,
-      "venues": {},
-      "papers": [],
-      "year_min": 9999,
-      "year_max": 0
-    },
-    {
-      "source": "rupp_deborah",
       "target": "sinclair_robert",
       "weight": 1,
       "venues": {},
@@ -38859,6 +39696,15 @@
     {
       "source": "rupp_deborah",
       "target": "zickar_michael",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "rupp_deborah",
+      "target": "shoss_mindy",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -39089,7 +39935,7 @@
     },
     {
       "source": "shoss_mindy",
-      "target": "woo_sang",
+      "target": "strah_nicole",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -39099,6 +39945,15 @@
     {
       "source": "shoss_mindy",
       "target": "zickar_michael",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "shoss_mindy",
+      "target": "woo_sang",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -39134,7 +39989,7 @@
     },
     {
       "source": "sinclair_robert",
-      "target": "woo_sang",
+      "target": "strah_nicole",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -39144,6 +39999,15 @@
     {
       "source": "sinclair_robert",
       "target": "zickar_michael",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "sinclair_robert",
+      "target": "woo_sang",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -39254,6 +40118,60 @@
       ],
       "year_min": 1999,
       "year_max": 1999
+    },
+    {
+      "source": "strah_nicole",
+      "target": "tay_louis",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2024,
+      "year_max": 2024
+    },
+    {
+      "source": "strah_nicole",
+      "target": "thorntonlugo_meghan",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 2022,
+      "year_max": 2022
+    },
+    {
+      "source": "strah_nicole",
+      "target": "tonidandel_scott",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "strah_nicole",
+      "target": "zickar_michael",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "strah_nicole",
+      "target": "woo_sang",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
+    },
+    {
+      "source": "strah_nicole",
+      "target": "watts_logan",
+      "weight": 1,
+      "venues": {},
+      "papers": [],
+      "year_min": 9999,
+      "year_max": 0
     },
     {
       "source": "chang_yingyi",
@@ -39446,7 +40364,7 @@
     },
     {
       "source": "tonidandel_scott",
-      "target": "woo_sang",
+      "target": "zickar_michael",
       "weight": 1,
       "venues": {},
       "papers": [],
@@ -39455,7 +40373,7 @@
     },
     {
       "source": "tonidandel_scott",
-      "target": "zickar_michael",
+      "target": "woo_sang",
       "weight": 1,
       "venues": {},
       "papers": [],

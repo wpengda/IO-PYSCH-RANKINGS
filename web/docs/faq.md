@@ -10,7 +10,7 @@ No. It is an independent open project. It does not represent SIOP, APA, or any u
 
 ## Why journals instead of conferences?
 
-I-O psychology primarily evaluates research through peer-reviewed journals, so the whitelist is journals only.
+I-O psychology primarily evaluates research through peer-reviewed journals, so the core whitelist is journals. A separate **CS / HCI / ML conferences** group is also on by default: ACL, EMNLP, NAACL, EACL, COLM, ICLR, AAAI, ICML, NeurIPS, CVPR, ECCV, KDD, CHI, CSCW, IUI, and IMWUT. Uncheck that group (or use **Q1 only**) to score journals only. Book chapters and SIOP/AOM meeting papers are still not counted.
 
 ## What does “adjusted count” mean?
 
@@ -22,7 +22,7 @@ Those views are for exploration. Citation and IF numbers change quickly and can 
 
 **Citations** is not “cites received during the selected years.” The Years slider keeps whitelist papers by **publication year**; the metric sums each paper’s Google Scholar **lifetime** citation total as of the last profile fetch. See [ranking.md](ranking.md).
 
-**Impact factor (sum)** adds the journal’s Clarivate JIF (JCR 2026 / 2025 JIF) once per paper (no 1/N). The Journals list shows each title’s 2025 JIF, best JCR 2025 quartile, and 2025 ABDC rating (`A*`–`C`, or **—** if unlisted). The whitelist is Q1–Q2.
+**Impact factor (sum)** adds the journal’s Clarivate JIF (JCR 2026 / 2025 JIF) once per paper (no 1/N). The Journals list shows each title’s 2025 JIF, best JCR 2025 quartile, and 2025 ABDC rating (`A*`–`C`, or **—** if unlisted). Conference rows show ICORE 2026 and CCF 2022 instead. Journal titles on the list are Q1–Q2, except Journal of Behavioral Decision Making (Q3). CS/HCI/ML conferences are extra and have no JCR quartile.
 
 **1st / 2nd / last author** counts whitelist papers where the person is first, second, or last on Google Scholar’s author list (once per paper). **Last-author papers** counts only last position among two or more authors. Sole-author papers count as first, not last. See [ranking.md](ranking.md).
 

@@ -503,6 +503,84 @@ a.journals-btn {
   min-width: var(--tb-tour-w);
 }
 
+@media (max-width: 1100px) {
+  .toolbar {
+    flex-wrap: wrap;
+    overflow-x: visible;
+    align-items: flex-end;
+    row-gap: 0.55rem;
+  }
+
+  .tb-shared,
+  .tb-rest,
+  .tb-actions {
+    display: contents;
+  }
+
+  .year-field {
+    flex: 1 1 13rem;
+    width: auto;
+    min-width: 12rem;
+    max-width: none;
+  }
+
+  .tb-metric {
+    flex: 1 1 11rem;
+    min-width: 0;
+  }
+
+  .tb-metric select {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .tb-field select,
+  .tb-field input:not([type="range"]):not(.year-box) {
+    min-width: 0;
+  }
+
+  .search-field {
+    flex: 1 1 10rem;
+    max-width: none;
+  }
+
+  .tb-actions .journals-btn {
+    width: auto;
+    min-width: 8.5rem;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .tb-region {
+    flex: 1 1 8rem;
+    width: auto;
+  }
+
+  .year-field {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+
+  .tb-metric {
+    flex: 1 1 100%;
+  }
+
+  .tb-num {
+    flex: 1 1 6rem;
+    width: auto;
+  }
+
+  .search-field {
+    flex: 1 1 9rem;
+  }
+
+  .tb-actions .journals-btn {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+}
+
 .tour-btn:hover {
   background: #eef6fb;
 }
@@ -690,13 +768,15 @@ a.journals-btn {
 }
 
 .journals-card {
-  --venue-cols: 1.25rem 9.5rem minmax(7rem, 1fr) 2.55rem 2.2rem 2.55rem;
+  --venue-cols: 1.25rem 9.5rem minmax(7rem, 1fr) 2.55rem 4.4rem 4.6rem;
+  display: flex;
+  flex-direction: column;
   background: #fff;
   border: 1px solid var(--line);
   border-radius: 6px;
   max-height: min(85vh, 900px);
-  overflow: auto;
-  padding: 1rem 1.1rem 1.1rem;
+  overflow: hidden;
+  padding: 1rem 1.1rem 0;
 }
 
 .journals-head {
@@ -728,6 +808,11 @@ a.journals-btn {
 .venues-tree {
   display: grid;
   gap: 1rem;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  padding-right: 0.15rem;
+  margin-bottom: 0.25rem;
 }
 
 .venue-group-title,
@@ -780,10 +865,9 @@ a.journals-btn {
 }
 
 .venue-cols-head {
-  position: sticky;
-  top: 0;
+  flex-shrink: 0;
   z-index: 2;
-  margin: 0 -0.2rem 0.35rem;
+  margin: 0 -0.2rem 0;
   padding: 0.45rem 0.4rem 0.4rem;
   background: #fff;
   border-bottom: 1px solid var(--line);
@@ -904,12 +988,20 @@ a.journals-btn {
   color: #555;
 }
 
+.journals-head,
+.journals-presets,
+.venue-cols-head,
+.journals-foot {
+  flex-shrink: 0;
+}
+
 .journals-foot {
   display: flex;
   justify-content: flex-end;
-  margin-top: 1rem;
-  padding-top: 0.75rem;
+  margin-top: 0;
+  padding: 0.75rem 0 1.1rem;
   border-top: 1px solid var(--line);
+  background: #fff;
 }
 
 .primary-btn {

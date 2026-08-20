@@ -33,15 +33,15 @@ A person appears in the ranking after they are on the roster. **Scores are 0** u
 
 A paper counts toward the **ranking table** if it matches **all** of the following in the UI:
 
-1. The Scholar venue string matches a journal in `venues.json` (longest prefix match, then a volume/year-style continuation so handbooks and similarly named outlets are not counted).
-2. The journal is checked in **Journals**. Default is **all** whitelist titles. Uncheck a journal or a discipline header to exclude it. Presets: **Q1 only**, **A* only**, and **A* & A only**.
+1. The Scholar venue string matches a journal or listed CS/HCI/ML conference in `venues.json` (journals: longest prefix match, then a volume/year-style continuation so handbooks and similarly named outlets are not counted; conferences: needle match anywhere in the venue string).
+2. The venue is checked in **Journals**. Default is **all** whitelist titles. Uncheck a title or a discipline header to exclude it. Presets: **Q1 only**, **A* only**, and **A* & A only**. **A* only** includes ABDC A* journals and ICORE A* conferences. **Q1 only** is journals only.
 3. The publication year is inside the Years slider (default ≈ last 10 calendar years). Papers with no year count only when the slider covers the full available span.
 
-Scholar profiles include whatever Google Scholar lists (articles, and sometimes commentaries or other items). There is **no separate editorial/errata filter** beyond journal matching.
+Scholar profiles include whatever Google Scholar lists (articles, conference papers, and sometimes commentaries or other items). There is **no separate editorial/errata filter** beyond venue matching.
 
 ### Journal disciplines
 
-Journals are grouped by field in `venues.json` (`discipline`). Group membership is **not** the default-on switch — every title below is on until you uncheck it. Within a group, journals are sorted by **2025 JIF** (high → low). Each row shows that JIF, the journal’s **best Clarivate JCR 2025 quartile**, and its **2025 ABDC** rating (`A*`, `A`, `B`, `C`, or **—** if the title is not on the ABDC Journal Quality List). The whitelist is **Q1–Q2 only**. A journal indexed in two Web of Science categories may be Q1 in one and Q2 in another; the badge is the better of those.
+Journals are grouped by field in `venues.json` (`discipline`). Group membership is **not** the default-on switch — every title below is on until you uncheck it. Within a group, journals are sorted by **2025 JIF** (high → low). Each journal row shows that JIF, the journal’s **best Clarivate JCR 2025 quartile**, and its **2025 ABDC** rating (`A*`, `A`, `B`, `C`, or **—** if the title is not on the ABDC Journal Quality List). Conference rows show **ICORE 2026** and **CCF 2022** instead. Listed journals are **Q1–Q2 only**. A journal indexed in two Web of Science categories may be Q1 in one and Q2 in another; the badge is the better of those.
 
 **I-O / Work Psychology:** JAP, Personnel Psychology, *Industrial and Organizational Psychology*, JBP, JOHP, JOOP, Applied Psychology, EJWOP, IJSA, Organizational Psychology Review, Work & Stress, Work Aging and Retirement, *Annual Review of Organizational Psychology and Organizational Behavior*, Stress and Health, International Journal of Stress Management, Journal of Vocational Behavior, Journal of Career Assessment, Career Development International, Human Resource Development Quarterly, Military Psychology
 
@@ -49,13 +49,15 @@ Journals are grouped by field in `venues.json` (`discipline`). Group membership 
 
 **Methods / Measurement / Psychometrics:** ORM, Psychological Methods, AMPPS, Assessment, Behavior Research Methods, Educational and Psychological Measurement, Multivariate Behavioral Research, Psychological Assessment, Psychometrika, Sociological Methods & Research
 
-**General / Experimental / Decision Psychology:** Nature, Science, Psychological Bulletin, Nature Reviews Psychology, Nature Communications, Nature Human Behaviour, Psychological Science, PNAS, American Psychologist, Annual Review of Psychology, Current Directions in Psychological Science, Perspectives on Psychological Science, Psychological Review, Psychological Science in the Public Interest, JEP: General, Judgment and Decision Making
+**General / Experimental / Decision Psychology:** Nature, Science, Psychological Bulletin, Nature Reviews Psychology, Nature Communications, Nature Human Behaviour, Psychological Science, PNAS, American Psychologist, Annual Review of Psychology, Current Directions in Psychological Science, Perspectives on Psychological Science, Psychological Review, Psychological Science in the Public Interest, JEP: General, Judgment and Decision Making, Journal of Behavioral Decision Making
 
 **Social / Individual Differences:** JPSP, PSPB, PSPR, Journal of Applied Social Psychology, Journal of Personality, Journal of Research in Personality, Personality and Individual Differences, Intelligence, Learning and Individual Differences
 
 **Career / Vocational / Counseling / Educational Psychology:** Journal of Counseling Psychology, Journal of Educational Psychology
 
 **Human Factors / Health / Aging / Technology:** Computers in Human Behavior, Human Factors, Journal of Health Psychology, Psychology and Aging
+
+**CS / HCI / ML conferences:** ACL, EMNLP, NAACL, EACL, COLM, ICLR, AAAI (main conference, not ICWSM/symposia), ICML (not ICMLA), NeurIPS, CVPR, ECCV, KDD, CHI (including CHI Extended Abstracts when Scholar labels them as CHI), CSCW (including *Proceedings of the ACM on Human-Computer Interaction*), IUI, IMWUT (UbiComp archival papers since 2017). Rows show the full conference name, **ICORE 2026** rank (A* / A), and **CCF 2022** catalog class (A / B). COLM, ICLR, and EACL have no CCF class (not on the 2022 catalog); COLM is also unranked in ICORE. CSCW is ICORE A (not A*). IMWUT shows CORE 2018 A* (last UbiComp conference rank; ICORE now lists it as journal-published).
 
 ## Credit: adjusted counts (1/N)
 

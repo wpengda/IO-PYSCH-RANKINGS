@@ -67,6 +67,7 @@
     pspi: "PSPI",
     jepg: "JEP:Gen",
     jdm: "JDM",
+    jbdm: "JBDM",
     pspb: "PSPB",
     pspr: "PSPR",
     jpers: "J Pers",
@@ -86,6 +87,22 @@
     sah: "Stress & Health",
     ijsm: "IJSM",
     hbr: "HBR",
+    neurips: "NeurIPS",
+    iclr: "ICLR",
+    icml: "ICML",
+    aaai: "AAAI",
+    cvpr: "CVPR",
+    eccv: "ECCV",
+    kdd: "KDD",
+    chi: "CHI",
+    cscw: "CSCW",
+    acl: "ACL",
+    emnlp: "EMNLP",
+    naacl: "NAACL",
+    eacl: "EACL",
+    colm: "COLM",
+    iui: "IUI",
+    imwut: "IMWUT",
   };
 
   const FALLBACK_DISCIPLINES = [
@@ -96,6 +113,7 @@
     { id: "social_id", label: "Social / Individual Differences" },
     { id: "career", label: "Career / Vocational / Counseling / Educational Psychology" },
     { id: "applied", label: "Human Factors / Health / Aging / Technology" },
+    { id: "cs_conf", label: "CS / HCI / ML conferences" },
   ];
 
   const canvas = document.getElementById("netCanvas");
@@ -236,12 +254,28 @@
   }
 
   function sortVenues(list) {
+    const coreScore = (v) => {
+      const r = String(v.core || "").trim();
+      if (r === "A*") return 3;
+      if (r === "A") return 2;
+      if (r === "B") return 1;
+      return 0;
+    };
     return [...list].sort((a, b) => {
+      const oa = Number(a.list_order);
+      const ob = Number(b.list_order);
+      const ha = Number.isFinite(oa);
+      const hb = Number.isFinite(ob);
+      if (ha && hb && oa !== ob) return oa - ob;
+      if (ha !== hb) return ha ? -1 : 1;
       const ia = Number(a.impact_factor);
       const ib = Number(b.impact_factor);
       const na = Number.isFinite(ia) ? ia : -1;
       const nb = Number.isFinite(ib) ? ib : -1;
       if (nb !== na) return nb - na;
+      const ca = coreScore(a);
+      const cb = coreScore(b);
+      if (cb !== ca) return cb - ca;
       return String(a.name || "").localeCompare(String(b.name || ""));
     });
   }
@@ -264,15 +298,20 @@
 
   function astarVenueIds() {
     return state.venues
-      .filter((v) => String(v.abdc || "").trim() === "A*")
+      .filter((v) => {
+        const abdc = String(v.abdc || "").trim();
+        const core = String(v.core || "").trim();
+        return abdc === "A*" || core === "A*";
+      })
       .map((v) => v.id);
   }
 
   function aAndAstarVenueIds() {
     return state.venues
       .filter((v) => {
-        const r = String(v.abdc || "").trim();
-        return r === "A*" || r === "A";
+        const abdc = String(v.abdc || "").trim();
+        const core = String(v.core || "").trim();
+        return abdc === "A*" || abdc === "A" || core === "A*" || core === "A";
       })
       .map((v) => v.id);
   }
@@ -494,6 +533,16 @@
       return n.toFixed(1);
     };
     const jcrBadge = (v) => {
+      const core = String(v.core || "").trim();
+      if (v.kind === "conference" || core) {
+        if (!core) {
+          return `<span class="jcr-badge jcr-na" title="Not ranked in ICORE 2026">—</span>`;
+        }
+        const cls = core === "A*" ? "astar" : core.toLowerCase();
+        const year = v.core_year || 2026;
+        const src = v.core_source || "ICORE";
+        return `<span class="abdc-badge abdc-${cls}" title="${escapeAttr(String(src))} ${escapeAttr(String(year))} conference rank">${escapeHtml(core)}</span>`;
+      }
       const q = String(v.jcr_quartile || "").toUpperCase();
       if (!q) {
         return `<span class="jcr-badge jcr-na" title="Not in Web of Science; no JCR quartile">—</span>`;
@@ -501,6 +550,15 @@
       return `<span class="jcr-badge jcr-${q.toLowerCase()}" title="Best Clarivate JCR 2025 quartile across the journal’s Web of Science categories">${escapeHtml(q)}</span>`;
     };
     const abdcBadge = (v) => {
+      const ccf = String(v.ccf || "").trim();
+      if (v.kind === "conference" || ccf) {
+        if (!ccf) {
+          return `<span class="abdc-badge abdc-na" title="Not on the CCF 2022 recommended conference catalog">—</span>`;
+        }
+        const cls = ccf === "A*" ? "astar" : ccf.toLowerCase();
+        const year = v.ccf_year || 2022;
+        return `<span class="abdc-badge abdc-${cls}" title="CCF ${escapeAttr(String(year))} recommended conference catalog">${escapeHtml(ccf)}</span>`;
+      }
       const r = String(v.abdc || "").trim();
       if (!r) {
         return `<span class="abdc-badge abdc-na" title="Not on the 2025 ABDC Journal Quality List">—</span>`;
@@ -513,7 +571,7 @@
         <input type="checkbox" data-venue="${escapeAttr(v.id)}" />
         <span class="venue-short">${escapeHtml(venueShort(v))}</span>
         <span class="venue-name">${escapeHtml(v.name)}</span>
-        <span class="venue-if" title="Clarivate Journal Impact Factor 2025 (JCR 2026)">${escapeHtml(formatIf(v))}</span>
+        <span class="venue-if" title="${v.kind === "conference" ? "Conferences have no Journal Impact Factor; see CORE / CCF" : "Clarivate Journal Impact Factor 2025 (JCR 2026)"}">${escapeHtml(formatIf(v))}</span>
         ${jcrBadge(v)}
         ${abdcBadge(v)}
       </label>`;
@@ -1080,7 +1138,7 @@
     },
     {
       title: "Select journals",
-      body: "Open Journals to choose which venues count. All whitelist journals are on by default, grouped by discipline and sorted by impact factor. Each row shows JIF, JCR quartile, and ABDC rating. Use Q1 only, A* only, or A* & A only to narrow the set.",
+      body: "Open Journals to choose which venues count. All whitelist titles are on by default, grouped by discipline. Journal rows show JIF, JCR quartile, and ABDC. Conference rows show ICORE and CCF. Use Q1 only, A* only, or A* & A only to narrow the set.",
       selector: '[data-tour="journals"]',
     },
     {

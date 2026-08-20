@@ -2,7 +2,7 @@
 
 IO Psychology Network maps **coauthorship among faculty with a Google Scholar profile** at U.S. and Canadian I-O PhD programs — current members and people listed on a program’s faculty timeline.
 
-It uses the **same Google Scholar fetch and the same journal whitelist** as [How we rank](ranking.md). A line is not a ranking score; it is a count of shared whitelist papers.
+It uses the **same Google Scholar fetch and the same venue whitelist** (journals plus listed CS/HCI/ML conferences) as [How we rank](ranking.md). A line is not a ranking score; it is a count of shared whitelist papers.
 
 ## Who appears
 
