@@ -1891,6 +1891,43 @@
       "jcr_quartile": "Q1"
     },
     {
+      "id": "copsy",
+      "name": "Current Opinion in Psychology",
+      "issn": [
+        "2352-250X",
+        "2352-2518"
+      ],
+      "weight": 1.4,
+      "cross_boundary": true,
+      "areas": [
+        "Selection",
+        "Training",
+        "Individual Differences / Personality",
+        "Performance",
+        "Leadership",
+        "Motivation / Attitudes",
+        "Teams",
+        "Work Design",
+        "Culture / Climate",
+        "Diversity",
+        "Careers",
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety",
+        "AI / Technology",
+        "Methods",
+        "General"
+      ],
+      "aliases": [
+        "Curr. Opin. Psychol.",
+        "Curr Opin Psychol"
+      ],
+      "impact_factor": 6.9,
+      "discipline": "general_psych",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q1"
+    },
+    {
       "id": "pps",
       "name": "Perspectives on Psychological Science",
       "issn": [

@@ -47,7 +47,7 @@ Journals are grouped by field in `venues.json` (`discipline`). Group membership 
 
 **Methods / Measurement / Psychometrics:** ORM, Psychological Methods, AMPPS, Assessment, Behavior Research Methods, Educational and Psychological Measurement, Multivariate Behavioral Research, Psychological Assessment, Psychometrika, Sociological Methods & Research
 
-**General / Experimental / Decision Psychology:** Nature, Science, Psychological Bulletin, Nature Reviews Psychology, Nature Communications, Nature Human Behaviour, Psychological Science, PNAS, American Psychologist, Annual Review of Psychology, Current Directions in Psychological Science, Perspectives on Psychological Science, Psychological Review, Psychological Science in the Public Interest, JEP: General, Judgment and Decision Making, Journal of Behavioral Decision Making
+**General / Experimental / Decision Psychology:** Nature, Science, Psychological Bulletin, Nature Reviews Psychology, Nature Communications, Nature Human Behaviour, Psychological Science, PNAS, American Psychologist, Annual Review of Psychology, Current Opinion in Psychology, Current Directions in Psychological Science, Perspectives on Psychological Science, Psychological Review, Psychological Science in the Public Interest, JEP: General, Judgment and Decision Making, Journal of Behavioral Decision Making
 
 **Social / Individual Differences:** JPSP, PSPB, PSPR, Journal of Applied Social Psychology, Journal of Personality, Journal of Research in Personality, Personality and Individual Differences, Intelligence, Learning and Individual Differences
 
