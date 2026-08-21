@@ -879,6 +879,7 @@
     const on = Boolean(state.facultyView);
     document.body.classList.toggle("is-faculty-view", on);
     if (els.facToggle) {
+      els.facToggle.hidden = !on;
       els.facToggle.classList.toggle("is-on", on);
       els.facToggle.setAttribute("aria-pressed", on ? "true" : "false");
     }
@@ -1842,8 +1843,8 @@
     els.countries.value = h.countries;
     els.minFaculty.value = String(h.minFaculty);
     if (els.schoolSearch) els.schoolSearch.value = h.q || "";
-    state.facultyView = false;
-    state.byAppointment = Boolean(h.appt);
+    state.facultyView = Boolean(h.faculty);
+    state.byAppointment = state.facultyView ? false : Boolean(h.appt);
     state.metric = h.metric || "adj_count";
     syncApptToggle();
     syncFacToggle();
