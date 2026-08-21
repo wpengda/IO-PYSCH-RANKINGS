@@ -527,6 +527,9 @@ _APPOINTMENT_INSTITUTIONS = {
     "iowa": ("University of Iowa", "US"),
     "indiana": ("Indiana University", "US"),
     "claremont": ("Claremont Graduate University", "US"),
+    "uwoshkosh": ("University of Wisconsin Oshkosh", "US"),
+    "yale": ("Yale University", "US"),
+    "wvu": ("West Virginia University", "US"),
 }
 
 
@@ -543,6 +546,8 @@ def appointment_coverage_ids(appts: pd.DataFrame | None = None) -> list[str]:
 
     Former-faculty rows can be added first; the school stays on the current-faculty
     default until every active person at that school also has an appointment row.
+    Ranked schools with appointment rows and no current roster (empty programs)
+    are included so by-appointment scoring can use those histories.
     """
     rows = appointments_payload(appts)
     inst_path = DATA / "institutions.csv"
@@ -567,7 +572,7 @@ def appointment_coverage_ids(appts: pd.DataFrame | None = None) -> list[str]:
     return sorted(
         iid
         for iid, have in by_school.items()
-        if (needed := active_by_school.get(iid, set())) and needed <= have
+        if have and active_by_school.get(iid, set()) <= have
     )
 
 

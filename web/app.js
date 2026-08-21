@@ -578,19 +578,49 @@
     return new Set(state.data?.appointment_coverage || []);
   }
 
-  function yearsOverlap(start, end, from, to) {
-    const s = start == null || start === "" ? 1900 : Number(start);
-    const e = end == null || end === "" ? 9999 : Number(end);
-    if (!Number.isFinite(s) || !Number.isFinite(e)) return true;
-    return s <= to && e >= from;
-  }
-
-  function paperInAppointment(year, start, end) {
+  function paperCountsInAppointment(year, start, end) {
     const y = validYear(year);
     if (y == null) return false;
     const s = start == null || start === "" ? 1900 : Number(start);
     const e = end == null || end === "" ? 9999 : Number(end);
-    return y >= s && y <= e;
+    return y > s && y <= e;
+  }
+
+  function appointmentStartEnd(appt) {
+    const start = appt.start_year == null || appt.start_year === "" ? 0 : Number(appt.start_year);
+    const end =
+      appt.end_year == null || appt.end_year === "" ? 9999 : Number(appt.end_year);
+    return [start, end];
+  }
+
+  // Start year is exclusive (often PhD or previous-job work). Overlap years
+  // belong to the earlier appointment so one year is never scored twice.
+  function appointmentOwnsYear(personAppts, appt, year) {
+    const covering = (personAppts || []).filter((a) =>
+      paperCountsInAppointment(year, a.start_year, a.end_year)
+    );
+    if (!covering.length) return false;
+    covering.sort((a, b) => {
+      const [as, ae] = appointmentStartEnd(a);
+      const [bs, be] = appointmentStartEnd(b);
+      return (
+        as - bs ||
+        ae - be ||
+        String(a.institution_id || "").localeCompare(String(b.institution_id || ""))
+      );
+    });
+    return covering[0] === appt;
+  }
+
+  function appointmentOwnsYearsInRange(personAppts, appt, from, to) {
+    const [start, end] = appointmentStartEnd(appt);
+    const lo = Math.max(start || 1900, from);
+    const hi = Math.min(end, to);
+    if (!Number.isFinite(lo) || !Number.isFinite(hi) || lo > hi) return false;
+    for (let y = lo; y <= hi; y += 1) {
+      if (appointmentOwnsYear(personAppts, appt, y)) return true;
+    }
+    return false;
   }
 
   function formatAppointmentSpan(start, end) {
@@ -620,12 +650,14 @@
 
   function affiliationsFor(f, instById) {
     const fid = f.faculty_id;
-    const byIid = new Map();
+    const rows = [];
+    const seenIids = new Set();
     for (const appt of state.data.appointments || []) {
       if (appt.faculty_id !== fid) continue;
       const inst = instById.get(appt.institution_id) || {};
       const open = appt.end_year == null || appt.end_year === "";
-      byIid.set(appt.institution_id, {
+      seenIids.add(appt.institution_id);
+      rows.push({
         institution_id: appt.institution_id,
         name: inst.name || appt.institution_name || appt.institution_id,
         country: inst.country || appt.country || "",
@@ -634,9 +666,9 @@
         current: Boolean(open),
       });
     }
-    if (f.institution_id && !byIid.has(f.institution_id)) {
+    if (f.institution_id && !seenIids.has(f.institution_id)) {
       const inst = instById.get(f.institution_id) || {};
-      byIid.set(f.institution_id, {
+      rows.push({
         institution_id: f.institution_id,
         name: inst.name || f.institution_id,
         country: inst.country || "",
@@ -645,7 +677,7 @@
         current: f.current_roster !== false,
       });
     }
-    return [...byIid.values()].sort((a, b) => {
+    return rows.sort((a, b) => {
       if (Boolean(a.current) !== Boolean(b.current)) return a.current ? -1 : 1;
       return (Number(b.start_year) || 0) - (Number(a.start_year) || 0);
     });
@@ -776,21 +808,28 @@
     }
 
     if (useAppt) {
+      const apptsByFid = new Map();
+      for (const appt of state.data.appointments || []) {
+        const fid = appt.faculty_id;
+        if (!apptsByFid.has(fid)) apptsByFid.set(fid, []);
+        apptsByFid.get(fid).push(appt);
+      }
       for (const appt of state.data.appointments || []) {
         const iid = appt.institution_id;
         if (!covered.has(iid)) continue;
         const src = byFid.get(appt.faculty_id);
         const scholarId = appt.google_scholar_id || src?.google_scholar_id || "";
-        const inWindow = yearsOverlap(
-          appt.start_year,
-          appt.end_year,
+        const personAppts = apptsByFid.get(appt.faculty_id) || [appt];
+        const inWindow = appointmentOwnsYearsInRange(
+          personAppts,
+          appt,
           state.yearFrom,
           state.yearTo
         );
         if (!inWindow && hasScholarId(scholarId)) continue;
         const papers = inWindow
           ? (src?.papers || []).filter((p) =>
-              paperInAppointment(p.year, appt.start_year, appt.end_year)
+              appointmentOwnsYear(personAppts, appt, p.year)
             )
           : [];
         const key = `${appt.faculty_id}::${iid}`;
@@ -1190,7 +1229,7 @@
     },
     {
       title: "Count by faculty appointment",
-      body: "Turn on by faculty appointment to score programs that have a faculty timeline using only papers published while that person was there. Schools without a timeline stay on the current-faculty default. 57 programs currently have a complete timeline. This turns off faculty ranking.",
+      body: "Turn on by faculty appointment to score programs that have a faculty timeline using only papers published while that person was there. Each appointment’s start year is not counted at that school. Schools without a timeline stay on the current-faculty default. 61 programs currently have a complete timeline. This turns off faculty ranking.",
       selector: '[data-tour="appointment"]',
     },
     {

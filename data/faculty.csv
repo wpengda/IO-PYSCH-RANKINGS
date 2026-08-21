@@ -22,10 +22,10 @@ salas_eduardo,Eduardo Salas,rice,https://profiles.rice.edu/faculty/eduardo-salas
 sun_tianjun,Tianjun Sun,rice,https://profiles.rice.edu/faculty/tianjun-sun,Assistant Professor,True,Official Rice faculty profile,,dn24ECQAAAAJ
 zaccaro_stephen,Stephen J. Zaccaro,gmu,https://psychology.gmu.edu/people/szaccaro,Professor,True,,,EtEt5w0AAAAJ
 dalal_reeshad,Reeshad S. Dalal,gmu,https://psychology.gmu.edu/people/rdalal,Professor,True,,,QkDLr-MAAAAJ
-hoffman_brian,Brian J. Hoffman,uga,https://psychology.uga.edu/directory/people/brian-hoffman,Professor,True,,,lnPPKZUAAAAJ
+hoffman_brian,Brian J. Hoffman,uga,https://www.psychology.uga.edu/directory/people/brian-j-hoffman,Professor,True,,,lnPPKZUAAAAJ
 olenick_jeffrey,Jeffrey Olenick,uga,https://www.psychology.uga.edu/directory/people/jeffrey-olenick,Assistant Professor,True,Official UGA I-O PhD faculty; I-O program chair,,j2_Rn98AAAAJ
-arthur_winfred,Winfred Arthur Jr.,tamu,https://liberalarts.tamu.edu/psychology/profile/winfred-arthur/,Professor,True,,,TjxUECcAAAAJ
-payne_stephanie,Stephanie C. Payne,tamu,https://liberalarts.tamu.edu/psychology/profile/stephanie-payne/,Professor,True,Scholar ID from TAMU profile ilhYOKgAAAAJ,,ilhYOKgAAAAJ
+arthur_winfred,Winfred Arthur Jr.,tamu,https://artsci.tamu.edu/psychological-brain-sciences/contact/profiles/winfred-arthur-jr.html,Professor,True,,,TjxUECcAAAAJ
+payne_stephanie,Stephanie C. Payne,tamu,https://artsci.tamu.edu/psychological-brain-sciences/contact/profiles/stephanie-c-payne.html,Professor,True,Scholar ID from TAMU profile ilhYOKgAAAAJ,,ilhYOKgAAAAJ
 allen_tammy,Tammy D. Allen,usf,https://www.usf.edu/arts-sciences/departments/psychology/people/faculty/tammy-allen.aspx,Professor,True,Official USF I-O faculty table,,C8nePQUAAAAJ
 chao_georgia,Georgia T. Chao,usf,https://www.usf.edu/arts-sciences/departments/psychology/people/faculty/georgia-chao.aspx,Professor,True,Official USF I-O faculty table; Area Director,,pOWIQxgAAAAJ
 gillespie_michael,Michael A. Gillespie,usf,https://www.usf.edu/arts-sciences/departments/psychology/people/faculty/michael-gillespie.aspx,Associate Professor,True,Official USF I-O faculty table; Sarasota-Manatee,,PxNBgYUAAAAJ
@@ -70,8 +70,8 @@ hillebrandt_annika,Annika Hillebrandt,waterloo,https://uwaterloo.ca/psychology/p
 bourdage_joshua,Joshua S. Bourdage,calgary,https://profiles.ucalgary.ca/joshua-bourdage,Professor,True,Psychology I-O,,4zIeRX4AAAAJ
 oneill_thomas,Thomas A. O'Neill,calgary,https://profiles.ucalgary.ca/thomas-oneill,Professor,True,Psychology I-O program head,,nYMDbHgAAAAJ
 kelloway_kevin,E. Kevin Kelloway,smu,https://www.smu.ca/psychology/faculty-and-staff-profiles/faculty/e-kevin-kelloway.html,Professor,True,,,k_Lo5MQAAAAJ
-powell_deborah,Deborah M. Powell,guelph,https://www.uoguelph.ca/psychology/people/deborah-powell,Professor,True,Official Guelph I-O,,FiQg1SgAAAAJ
-hausdorf_peter,Peter A. Hausdorf,guelph,https://www.uoguelph.ca/psychology/people/peter-hausdorf,Professor,True,Official Guelph I-O,,tat03s0AAAAJ
+powell_deborah,Deborah M. Powell,guelph,https://www.uoguelph.ca/profile/deborah-powell,Professor,True,Official Guelph I-O,,FiQg1SgAAAAJ
+hausdorf_peter,Peter A. Hausdorf,guelph,https://www.uoguelph.ca/profile/peter-hausdorf,Professor,True,Official Guelph I-O,,tat03s0AAAAJ
 sonhing_leanne,Leanne S. Son Hing,guelph,https://www.uoguelph.ca/profile/leanne-son-hing,Professor,True,Official Guelph I-O,,
 ackerman_phillip,Phillip L. Ackerman,gatech,https://psychology.gatech.edu/people/phillip-ackerman,Professor,True,Official GT I-O faculty,,YCmbxfIAAAAJ
 wiese_christopher,Christopher W. Wiese,gatech,https://psychology.gatech.edu/people/christopher-w-wiese,Associate Professor,True,Official GT I-O area director,,sYILK6YAAAAJ
@@ -93,7 +93,7 @@ su_shiyang,Shiyang Su,ucf,https://sciences.ucf.edu/psychology/person/shiyang-su/
 goldstein_harold,Harold W. Goldstein,baruch,https://www.baruch.cuny.edu/profiles/faculty/Harold-Goldstein,Professor,True,CUNY GC I-O training area full-time faculty,,
 cohencharash_yochi,Yochi Cohen-Charash,baruch,https://www.gc.cuny.edu/people/yochi-cohen-charash,Professor,True,CUNY GC I-O training area full-time faculty,,z9zdLDIAAAAJ
 scherbaum_charles,Charles A. Scherbaum,baruch,https://www.gc.cuny.edu/people/charles-scherbaum,Professor,True,CUNY GC I-O PhD director,,UsVFH7cAAAAJ
-wang_wei,Wei Wang,baruch,https://www.iopsych-baruch.com/wei-wang,Associate Professor,True,CUNY GC I-O training area full-time faculty,,DwxPR9AAAAAJ
+wang_wei,Wei Wang,baruch,https://www.gc.cuny.edu/people/wei-wang,Associate Professor,True,CUNY GC I-O training area full-time faculty; official GC people page,,DwxPR9AAAAAJ
 chatterjee_dia,Dia Chatterjee,baruch,https://www.gc.cuny.edu/people/dia-chatterjee,Assistant Professor,True,CUNY GC I-O training area full-time faculty,,
 godollei_anna,Anna Godollei,baruch,https://www.gc.cuny.edu/people/anna-godollei,Assistant Professor,True,CUNY GC I-O training area full-time faculty,,s-GZAy8AAAAJ
 bazzoli_andrea,Andrea Bazzoli,baruch,https://www.gc.cuny.edu/people/andrea-bazzoli,Assistant Professor,True,CUNY GC I-O training area full-time faculty,,zu8Us98AAAAJ
@@ -129,7 +129,6 @@ he_yaqing,Yaqing He,ou,https://www.ou.edu/cas/psychology/people/faculty/yaqing-h
 kim_jeongjin,JeongJin Kim,ou,https://www.ou.edu/cas/psychology/people/faculty/jeongjin-kim,Assistant Professor,True,Official OU Psychology I-O area,,3312EoQAAAAJ
 snyder_lori,Lori Anderson Snyder,ou,https://www.ou.edu/cas/psychology/people/faculty/lori-snyder,Professor,True,Official OU Psychology I-O area; removed Scholar ID XbsL6hsAAAAJ (Lori Snyder Bennear / environmental economics; not on homepage),,
 cartersowell_adrienne,Adrienne R. Carter-Sowell,ou,https://www.ou.edu/cas/psychology/people/faculty/adrienne-carter-sowell,Professor,True,Official OU faculty; I-O / workplace access,,tGwBI80AAAAJ
-ayman_roya,Roya Ayman,iit,https://www.iit.edu/directory/people/roya-ayman,Professor,True,Official IIT I-O featured faculty,,hPFmocsAAAAJ
 bauer_kristina,Kristina N. Bauer,iit,https://www.iit.edu/directory/people/kristina-bauer,Associate Professor,True,Official IIT I-O featured faculty,,4C46sfcAAAAJ
 morris_scott,Scott B. Morris,iit,https://www.iit.edu/directory/people/scott-morris,Professor,True,Official IIT I-O program director,,aiWrHTkAAAAJ
 halpert_jane,Jane A. Halpert,depaul,https://www.depaul.edu/faculty/jane-halpert,Professor,True,Official DePaul I-O faculty page,,
@@ -167,21 +166,21 @@ sabin_edward,Edward J. Sabin,slu,https://www.slu.edu/arts-and-sciences/psycholog
 mcgee_heather,Heather M. McGee,wmu,https://wmich.edu/psychology/directory/mcgee,Professor,True,Official WMU IOBM faculty; program chair; removed Scholar ID BGPQnmAAAAAJ (oncology/immunology Heather McGee; not on homepage),,
 martini_kate,Kate Martini,wmu,https://wmich.edu/psychology/directory/martini,Assistant Professor,True,Official WMU IOBM faculty,,
 rafacz_sharlet,Sharlet D. Rafacz,wmu,https://wmich.edu/psychology/directory/rafacz,Associate Professor,True,Official WMU IOBM faculty,,
-vanhouten_ron,Ron Van Houten,wmu,https://wmich.edu/psychology/directory/vanhouten,Professor,True,Official WMU IOBM faculty,,6OWHfXAAAAAJ
+vanhouten_ron,Ron Van Houten,wmu,https://wmich.edu/psychology/directory/van-houten,Professor,True,Official WMU IOBM faculty,,6OWHfXAAAAAJ
 sessa_valerie,Valerie I. Sessa,montclair,https://researchwith.montclair.edu/en/persons/valerie-sessa/,Professor,True,Official Montclair I-O PhD faculty; doctoral director,,NqDo9IYAAAAJ
 askew_kevin,Kevin Askew,montclair,https://www.montclair.edu/faculty-staff/kevin-askew,Associate Professor,True,Official Montclair I-O faculty,,
 bixter_michael,Michael T. Bixter,montclair,https://researchwith.montclair.edu/en/persons/michael-bixter/,Associate Professor,True,Official Montclair I-O faculty,,QwuSiwEAAAAJ
 bragger_jennifer,Jennifer D. Bragger,montclair,https://researchwith.montclair.edu/en/persons/jennifer-bragger/,Professor,True,Official Montclair I-O faculty,,14Q_wJwAAAAJ
 gonzalez_manuel,Manuel F. Gonzalez,montclair,https://inside.montclair.edu/directory/manuel-gonzalez,Assistant Professor,True,Official Montclair I-O faculty,,WM-5inkAAAAJ
-gray_cheryl,Cheryl E. Gray,montclair,https://www.montclair.edu/profilepages/view_profile.php?username=graych,Assistant Professor,True,Official Montclair I-O faculty,,dtJA5zcAAAAJ
-digiovanni_ana,Ana M. DiGiovanni,montclair,https://www.montclair.edu/profilepages/view_profile.php?username=digiovannia,Assistant Professor,True,Official Montclair I-O faculty,,y8Jmtu0AAAAJ
-chebangore_yuliya,Yuliya Cheban-Gore,hofstra,https://www.hofstra.edu/applied-organizational-psychology/faculty.html,Assistant Professor,True,Official Hofstra A/O core faculty,,_2_2JZUAAAAJ
-grossman_rebecca,Rebecca Grossman,hofstra,https://www.hofstra.edu/applied-organizational-psychology/faculty.html,Associate Professor,True,Official Hofstra A/O core; PhD director; Scholar s4feQ-wAAAAJ (hofstra.edu); prior ID was a different Rebecca Grossman,,s4feQ-wAAAAJ
-nolan_kevin,Kevin P. Nolan,hofstra,https://kevinpnolan3.wixsite.com/website,Associate Professor,True,Official Hofstra A/O core faculty,,
-pindek_shani,Shani Pindek,hofstra,https://shanipindek.com/,Associate Professor,True,Official Hofstra A/O core faculty,,_rWzco8AAAAJ
-salter_nicholas,Nicholas P. Salter,hofstra,https://sites.hofstra.edu/nicholas-salter/,Associate Professor,True,Official Hofstra A/O core faculty,,csO4BBcAAAAJ
-shahanidenning_comila,Comila Shahani-Denning,hofstra,https://www.hofstra.edu/applied-organizational-psychology/faculty.html,Professor,True,Official Hofstra A/O core faculty,,EATozncAAAAJ
-chung_helen,Helen Chung,spu,https://spu.edu/academics/college-applied-natural-sciences/graduate-programs/industrial-organizational-psychology-phd,Assistant Professor,True,Official SPU I-O PhD faculty; chair,,
+gray_cheryl,Cheryl E. Gray,montclair,https://www.montclair.edu/faculty-staff/cheryl-gray,Assistant Professor,True,Official Montclair I-O faculty,,dtJA5zcAAAAJ
+digiovanni_ana,Ana M. DiGiovanni,montclair,https://www.montclair.edu/faculty-staff/ana-digiovanni,Assistant Professor,True,Official Montclair I-O faculty,,y8Jmtu0AAAAJ
+chebangore_yuliya,Yuliya Cheban-Gore,hofstra,https://www.hofstra.edu/faculty-profile/?id=11571,Assistant Professor,True,Official Hofstra A/O core faculty,,_2_2JZUAAAAJ
+grossman_rebecca,Rebecca Grossman,hofstra,https://www.hofstra.edu/faculty-staff/faculty-profile.html?id=4723,Associate Professor,True,Official Hofstra A/O core; PhD director; Scholar s4feQ-wAAAAJ (hofstra.edu); prior ID was a different Rebecca Grossman,,s4feQ-wAAAAJ
+nolan_kevin,Kevin P. Nolan,hofstra,https://www.hofstra.edu/faculty-staff/faculty-profile.html?id=2832,Associate Professor,True,Official Hofstra A/O core faculty,,
+pindek_shani,Shani Pindek,hofstra,https://www.hofstra.edu/faculty-profile/?id=11577,Associate Professor,True,Official Hofstra A/O core faculty,,_rWzco8AAAAJ
+salter_nicholas,Nicholas P. Salter,hofstra,https://sites.hofstra.edu/nicholas-salter/,Associate Professor,True,Official Hofstra A/O core faculty; Hofstra Sites profile,,csO4BBcAAAAJ
+shahanidenning_comila,Comila Shahani-Denning,hofstra,https://www.hofstra.edu/faculty-staff/faculty-profile.html?id=1376,Professor,True,Official Hofstra A/O core faculty,,EATozncAAAAJ
+chung_helen,Helen Chung,spu,https://spu.edu/academics/college-applied-natural-sciences/faculty-staff/helen-chung-profile,Assistant Professor,True,Official SPU I-O PhD faculty; chair,,
 collins_joey,Joey Collins,spu,https://spu.edu/academics/college-applied-natural-sciences/faculty-staff/joey-collins-profile,Assistant Professor,True,Official SPU I-O PhD faculty,,
 yost_paul,Paul R. Yost,spu,https://spu.edu/academics/college-applied-natural-sciences/faculty-staff/paul-yost-profile,Associate Professor,True,Official SPU I-O PhD faculty,,
 block_caryn,Caryn J. Block,tc,https://www.tc.columbia.edu/faculty/cjb17/,Professor,True,Official TC Social-Organizational faculty,,ehtj-IYAAAAJ
@@ -198,11 +197,11 @@ martinraugh_michelle,Michelle P. Martín-Raugh,uta,https://www.uta.edu/academics
 chang_daisy,Chu-Hsiang (Daisy) Chang,msu,https://psychology.msu.edu/directory/chang-daisy.html,Professor,True,MSU Organizational Psychology faculty,,AVKtyvAAAAAJ
 nye_christopher,Christopher D. Nye,msu,https://psychology.msu.edu/directory/nye-christopher.html,Associate Professor,True,MSU Organizational Psychology faculty,,mubiyMIAAAAJ
 hoff_kevin,Kevin A. Hoff,msu,https://psychology.msu.edu/directory/hoff-kevin.html,Assistant Professor,True,MSU Organizational Psychology faculty,,fvfo6KwAAAAJ
-sheets_tilman,Tilman L. Sheets,latech,https://www.latech.edu/directory/tilman-lee-sheets.php,Professor,True,LaTech I-O faculty; interim department head,,qgFwdgEAAAAJ
+sheets_tilman,Tilman L. Sheets,latech,https://latech.elsevierpure.com/en/persons/tilman-sheets/,Professor,True,LaTech I-O faculty; university research portal (public directory slug currently 404),,qgFwdgEAAAAJ
 toaddy_steven,Steven R. Toaddy,latech,https://www.latech.edu/directory/steven-r-toaddy.php,Associate Professor,True,LaTech I-O faculty,,
 offermann_lynn,Lynn R. Offermann,gwu,https://orgsciandcomm.columbian.gwu.edu/lynn-offermann,Professor,True,Official GWU I-O faculty,,
 bisbey_tiffany,Tiffany M. Bisbey,gwu,https://orgsciandcomm.columbian.gwu.edu/tiffany-bisbey,Assistant Professor,True,Official GWU I-O faculty,,qkRhEAYAAAAJ
-peng_yisheng,Yisheng Peng,gwu,https://orgsciandcomm.columbian.gwu.edu/people,Assistant Professor,True,Official GWU OS I-O faculty; PhD director,,m1eZdgsAAAAJ
+peng_yisheng,Yisheng Peng,gwu,https://orgsciandcomm.columbian.gwu.edu/yisheng-peng,Assistant Professor,True,Official GWU OS I-O faculty; PhD director,,m1eZdgsAAAAJ
 houlfort_nathalie,Nathalie Houlfort,uqam,https://professeurs.uqam.ca/professeur/houlfort.nathalie/,Professor,True,Official UQAM PTO section faculty,,HPgQ300AAAAJ
 menard_julie,Julie Ménard,uqam,https://professeurs.uqam.ca/professeur/menard.julie/,Professor,True,Official UQAM PTO section faculty,,Na2bOIwAAAAJ
 meunier_sophie,Sophie Meunier,uqam,https://professeurs.uqam.ca/professeur/meunier.sophie,Professor,True,Official UQAM PTO section faculty,,
@@ -227,9 +226,9 @@ benson_alex,Alex J. Benson,western,https://www.psychology.uwo.ca/people/faculty/
 espinoza_jose,Jose A. Espinoza,western,https://www.psychology.uwo.ca/people/faculty/espinoza.html,Assistant Professor,True,Official Western I/O core faculty,,i5sc9xwAAAAJ
 evans_blair,M. Blair Evans,western,https://www.psychology.uwo.ca/research/io/contact.html,Associate Professor,True,Official Western I/O core; area chair,,htD1_KIAAAAJ
 meyer_john,John P. Meyer,western,https://psychology.uwo.ca/people/faculty/Meyer.html,Professor,True,Official Western I/O core faculty,0000-0001-8377-2003,YUHwYTAAAAAJ
-siuta_rose,Rose L. Siuta,uakron,https://www.uakron.edu/psychology/faculty-staff/,Assistant Professor,True,Official Akron I/O faculty,,
-thorntonlugo_meghan,Meghan A. Thornton-Lugo,uakron,https://www.uakron.edu/psychology/faculty-staff/,Assistant Professor,True,Official Akron I/O faculty,,iv8X37AAAAAJ
-snell_andrea,Andrea F. Snell,uakron,https://www.uakron.edu/psychology/faculty-staff/,Associate Professor,True,Official Akron I/O faculty,,W39kP8YAAAAJ
+siuta_rose,Rose L. Siuta,uakron,https://www.uakron.edu/psychology/faculty-staff/bio-detail.dot?u=rsiuta,Assistant Professor,True,Official Akron I/O faculty,,
+thorntonlugo_meghan,Meghan A. Thornton-Lugo,uakron,https://www.uakron.edu/psychology/faculty-staff/bio-detail.dot?u=mlugo1,Assistant Professor,True,Official Akron I/O faculty,,iv8X37AAAAAJ
+snell_andrea,Andrea F. Snell,uakron,https://www.uakron.edu/psychology/faculty-staff/bio-detail.dot?u=asnell,Associate Professor,True,Official Akron I/O faculty,,W39kP8YAAAAJ
 grandey_alicia,Alicia A. Grandey,psu,https://psych.la.psu.edu/people/aag6/,Professor,True,Official PSU I-O faculty; area coordinator,,TYnFrXMAAAAJ
 brooks_ricardo,Ricardo R. Brooks,psu,https://psych.la.psu.edu/people/ricardo-brooks/,Assistant Professor,True,Official PSU I-O doctoral faculty,,Pi2a1hkAAAAJ
 graham_baylor,Baylor A. Graham,psu,https://psych.la.psu.edu/people/baylor-graham/,Assistant Professor,True,Official PSU I-O doctoral faculty,,3_-_jfIAAAAJ
@@ -251,11 +250,10 @@ barratt_clare,Clare L. Barratt,bgsu,https://www.bgsu.edu/arts-and-sciences/psych
 mcabee_samuel,Samuel T. McAbee,bgsu,https://www.bgsu.edu/arts-and-sciences/psychology/people/samuel-mcabee.html,Associate Professor,True,Official BGSU I-O core faculty,,JKCK2p0AAAAJ
 keith_melissa,Melissa G. Keith,bgsu,https://www.bgsu.edu/arts-and-sciences/psychology/people/melissa-keith.html,Associate Professor,True,Official BGSU I-O core faculty,,ix0bMCcAAAAJ
 zhang_bo,Bo Zhang,uiuc,https://psychology.illinois.edu/directory/profile/bozhang3,Associate Professor,True,UIUC I-O / LER joint,,S4qQ-3AAAAAJ
-min_hanyi,Hanyi Min,uiuc,https://psychology.illinois.edu/news/2024-01-30t034853/new-faculty-profile-assistant-professor-hanyi-min,Assistant Professor,True,UIUC I-O / LER joint,,WhlHwoEAAAAJ
+min_hanyi,Hanyi Min,uiuc,https://psychology.illinois.edu/directory/profile/hanyimin,Assistant Professor,True,UIUC I-O / LER joint; directory listed as Haylee Min,,WhlHwoEAAAAJ
 alexander_leo,Leo Alexander III,uiuc,https://psychology.illinois.edu/directory/profile/leoa2,Assistant Professor,True,UIUC I-O / LER joint,,oNYBNlcAAAAJ
 calderwood_charles,Charles Calderwood,vt,https://support.psyc.vt.edu/users/ccharl2,Associate Professor,True,Official VT I-O training faculty,,yIMzglsAAAAJ
 hernandez_ivan,Ivan Hernandez,vt,https://support.psyc.vt.edu/users/ivanhernandez,Associate Professor,True,Official VT I-O area director,,ANFTuKYAAAAJ
-hickman_louis,Louis Hickman,vt,https://support.psyc.vt.edu/users/louishickman,Assistant Professor,True,Official VT I-O training faculty,,wluq3hgRc10C
 hsu_ning,Ning Hsu,vt,https://support.psyc.vt.edu/users/ningh,Assistant Professor,True,Official VT I-O training faculty,,PpNCyiwAAAAJ
 melsonsilimon_arturia,Arturia Melson-Silimon,vt,https://support.psyc.vt.edu/users/arturiam,Assistant Professor,True,Official VT I-O training faculty,,UZ_ImyQAAAAJ
 carver_sarah,Sarah J. Carver,guelph,https://www.uoguelph.ca/profile/sarah-carver,Assistant Professor,True,Official Guelph I-O directory; formerly SMU,,i7T9I6AAAAAJ
@@ -263,7 +261,7 @@ gill_harjinder,Harjinder Gill,guelph,https://www.uoguelph.ca/psychology/users/ha
 spence_jeffrey,Jeffrey R. Spence,guelph,https://www.uoguelph.ca/psychology/users/jeffrey-spence,Professor,True,Official Guelph I-O directory,,HeyarCAAAAAJ
 stanley_david,David J. Stanley,guelph,https://www.uoguelph.ca/profile/david-stanley,Associate Professor,True,Official Guelph I-O directory,,krwVUm4AAAAJ
 reichin_sydney,Sydney L. Reichin,ncsu,https://chass.ncsu.edu/people/slreichi/,Assistant Professor,True,Official NC State I-O faculty group,0000-0003-1143-6056,X-RXoNwAAAAJ
-mcchesney_jenna,Jenna McChesney,ncsu,,Assistant Professor,True,Incoming NC State I-O TT (started Jul 2026); no faculty page yet; Scholar ufCRd2YAAAAJ,,ufCRd2YAAAAJ
+mcchesney_jenna,Jenna McChesney,ncsu,https://chass.ncsu.edu/people/jemcches/,Assistant Professor,True,Official CHASS people page; NC State I-O TT (started Jul 2026),,ufCRd2YAAAAJ
 phetmisy_cassandra,Cassandra Phetmisy,umd,https://psyc.umd.edu/facultyprofile/phetmisy/cassandra,Assistant Professor,True,Official UMD SDOS / I-O faculty,,wCqCJlgAAAAJ
 yang_zhixu,Zhixu (Rick) Yang,baruch,https://www.baruch.cuny.edu/profiles/faculty/Zhixu-Yang,Assistant Professor,True,CUNY GC I-O handbook 2025-26 faculty; Baruch FT,,0v2kCQEAAAAJ
 kowalski_robin,Robin Kowalski,clemson,https://www.clemson.edu/cbshs/about/profiles/index.html?userid=RKOWALS,Professor,True,Official Clemson I-O faculty list,,IroDjIkAAAAJ
@@ -279,7 +277,8 @@ scott_cliff,Cliff Scott,uncc,https://orgscience.charlotte.edu/directory/cliff-sc
 kung_franki,Franki Y. H. Kung,purdue,https://hhs.purdue.edu/directory/franki-y-h-kung/,Associate Professor,True,Official Purdue I-O program people page,,sw-zZF0AAAAJ
 harriswatson_alex,Alexandra Harris-Watson,purdue,https://hhs.purdue.edu/directory/alexandra-harris-watson/,Assistant Professor,True,Official Purdue I-O program people page,0000-0001-6136-8069,VaqrGQoAAAAJ
 macnamara_brooke,Brooke N. Macnamara,purdue,https://hhs.purdue.edu/directory/brooke-macnamara/,Associate Professor,True,Official Purdue I-O program people page,,dKPihKcAAAAJ
-silver_elisabeth,Elisabeth Silver,msu,https://psychology.msu.edu/news-events/news/elisabeth-silver.html,Assistant Professor,True,Official MSU news 2025-10: new Organizational Psychology TT,,JrigXcIAAAAJ
+silver_elisabeth,Elisabeth Silver,msu,https://psychology.msu.edu/about/people/elisabeth-silver,Assistant Professor,True,Official MSU Psychology people page; Organizational Psychology TT,,JrigXcIAAAAJ
+roberson_quinetta,Quinetta M. Roberson,msu,https://psychology.msu.edu/directory/roberson-quinetta.html,Professor,True,Official MSU Psychology Organizational directory (not Affiliated); Hannah Distinguished Professor; majority Broad Management / minority Psychology,,nSGCQB0AAAAJ
 baker_nathan,Nathan Baker,wright,https://people.wright.edu/nathan.baker,Assistant Professor,True,Official Wright people profile; joined 2025,,TnosyFsAAAAJ
 mccord_mallory,Mallory A. McCord,wright,https://people.wright.edu/mallory.mccord,Assistant Professor,True,Official Wright people Psychology profile; LinkedIn I-O assistant May 2026 supporting HFIO; directory title still Instructor,,c2TKbj0AAAAJ
 rudolph_cort,Cort W. Rudolph,wayne,https://clasprofiles.wayne.edu/profile/az0662,Professor,True,Official Wayne CLAS: Professor of I-O Psychology,,Z9W6egsAAAAJ
@@ -296,3 +295,6 @@ zhang_don,Don Zhang,lsu,https://www.lsu.edu/hss/psychology/faculty/industrial/zh
 burke_vanessa,Vanessa Burke,lsu,https://www.lsu.edu/hss/psychology/faculty/industrial/vanessa_burke.php,Assistant Professor,True,Official LSU I-O core faculty,,XaLQFUMAAAAJ
 cobb_haley,Haley Cobb,lsu,https://lsu.edu/hss/psychology/faculty/industrial/cobb.php,Assistant Professor,True,Official LSU I-O core faculty,,IWPXrZUAAAAJ
 probst_tahira,Tahira M. Probst,wsu,https://psychology.wsu.edu/research-labs/wsu-profile/probst/,Professor,True,Official WSU Psychological Science I-O associated faculty; Scholar ID from CHEW lab page,,te6Pf2UAAAAJ
+wittman_sarah,Sarah Wittman,gmu,https://io.gmu.edu/people/swittman,Associate Professor,True,Official GMU tenure-line I-O faculty; Costello College of Business Management; I-O courtesy from 2024,,d5GxCGYAAAAJ
+mellor_steven,Steven Mellor,uconn,https://psychology.uconn.edu/person/steven-mellor/,Associate Professor,True,Official UConn I-O tag page; teaches Organizational Psychology and Work Motivation,,
+solis_lorena,Lorena Solis,uconn,https://psychology.uconn.edu/person/lorena-solis/,Assistant Professor,True,Official UConn I-O tag page; Hartford campus; El Instituto joint; Calgary I-O PhD 2023,,
