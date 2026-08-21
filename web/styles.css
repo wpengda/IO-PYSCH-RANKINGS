@@ -1134,6 +1134,10 @@ a.journals-btn {
   text-decoration: none;
 }
 
+.fac-toggle[hidden] {
+  display: none !important;
+}
+
 .fac-toggle:hover {
   background: #ccfbf1;
 }

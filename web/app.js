@@ -1370,7 +1370,20 @@
     }
   }
 
+  function tourStepVisible(step) {
+    if (!step?.selector) return true;
+    const el = tourEl(step.selector);
+    return Boolean(el && !el.hidden);
+  }
+
   function showTourStep() {
+    while (tourIndex < TOUR_STEPS.length && !tourStepVisible(TOUR_STEPS[tourIndex])) {
+      tourIndex += 1;
+    }
+    if (tourIndex >= TOUR_STEPS.length) {
+      endTour();
+      return;
+    }
     const step = TOUR_STEPS[tourIndex];
     clearTourTarget();
     els.tourTitle.textContent = step.title;
@@ -1423,6 +1436,9 @@
   function tourBack() {
     if (tourIndex <= 0) return;
     tourIndex -= 1;
+    while (tourIndex > 0 && !tourStepVisible(TOUR_STEPS[tourIndex])) {
+      tourIndex -= 1;
+    }
     showTourStep();
   }
 
@@ -1826,8 +1842,8 @@
     els.countries.value = h.countries;
     els.minFaculty.value = String(h.minFaculty);
     if (els.schoolSearch) els.schoolSearch.value = h.q || "";
-    state.facultyView = Boolean(h.faculty);
-    state.byAppointment = state.facultyView ? false : Boolean(h.appt);
+    state.facultyView = false;
+    state.byAppointment = Boolean(h.appt);
     state.metric = h.metric || "adj_count";
     syncApptToggle();
     syncFacToggle();
