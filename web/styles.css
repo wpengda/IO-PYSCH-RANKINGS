@@ -1163,6 +1163,10 @@ body.is-map-view .table-expand-tools {
   background: #e8eef3;
 }
 
+.rank-map .leaflet-control-attribution {
+  display: none;
+}
+
 .map-legend {
   margin: 0;
   padding: 0.45rem 0.7rem 0.55rem;
