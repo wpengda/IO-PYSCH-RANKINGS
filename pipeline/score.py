@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 from collections import defaultdict
 from datetime import datetime, timezone
 
@@ -31,6 +32,21 @@ WINDOWS = {
     "10": 10,
     "all": None,
 }
+
+
+def _coord(val):
+    if val is None or (isinstance(val, str) and not val.strip()):
+        return None
+    try:
+        if pd.isna(val):
+            return None
+    except (TypeError, ValueError):
+        pass
+    try:
+        x = float(val)
+        return round(x, 4) if math.isfinite(x) else None
+    except (TypeError, ValueError):
+        return None
 
 
 def faculty_area_labels(papers: list[dict], *, max_labels: int = 7) -> list[str]:
@@ -193,6 +209,9 @@ def score_rows(
             "name": meta.get("name", iid),
             "country": meta.get("country", ""),
             "city": meta.get("city", ""),
+            "address": "" if pd.isna(meta.get("address")) else str(meta.get("address") or ""),
+            "lat": _coord(meta.get("lat")),
+            "lng": _coord(meta.get("lng")),
             "program_url": meta.get("program_url", ""),
             "roster_status": meta.get("roster_status", ""),
             "faculty_count": 0,

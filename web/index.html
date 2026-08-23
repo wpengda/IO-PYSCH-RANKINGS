@@ -8,6 +8,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
   <link rel="prefetch" href="data/coauthor_network.json" />
 </head>
 <body class="is-rankings">
@@ -186,8 +192,12 @@
             <button type="button" id="expandAll" class="linkish">expand all</button>
             <button type="button" id="collapseAll" class="linkish">collapse all</button>
           </span>
+          <span class="view-switch" id="viewSwitch" data-tour="map" role="group" aria-label="Ranking layout">
+            <button type="button" id="listViewBtn" class="view-switch-btn is-on" aria-pressed="true">List</button>
+            <button type="button" id="mapViewBtn" class="view-switch-btn" aria-pressed="false">Map</button>
+          </span>
         </div>
-        <div class="table-wrap">
+        <div class="table-wrap" id="tableWrap">
           <table id="rankTable">
             <thead>
               <tr>
@@ -200,6 +210,11 @@
             <tbody></tbody>
           </table>
           <p id="empty" class="empty hidden">No institutions match the current filters.</p>
+        </div>
+        <div class="map-wrap hidden" id="mapWrap" hidden>
+          <div id="rankMap" class="rank-map" role="img" aria-label="Program locations"></div>
+          <p class="map-legend" id="mapLegend">Pin size follows the current metric. The number is rank. Click a pin for the school, or Open in list to expand it in the table.</p>
+          <p id="mapEmpty" class="empty hidden">No institutions match the current filters.</p>
         </div>
       </main>
     </div>
@@ -378,6 +393,11 @@
     </div>
   </dialog>
 
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
   <script src="views.js"></script>
   <script src="app.js"></script>
   <script src="network.js"></script>

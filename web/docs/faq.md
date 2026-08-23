@@ -51,6 +51,10 @@ They are in the **OB / Management** group and **on by default**. Uncheck those t
 
 Coauthorship among faculty with a Google Scholar profile — including people on more than one program over time — using the same journal whitelist as Rankings. A line is shared whitelist papers, not a ranking score. See [network.md](network.md).
 
+## What does the Rankings map show?
+
+Each pin is that I-O program’s campus (street address and a campus photo in the popup), not a city centroid. Size follows the metric you selected (adjusted count by default); the number is that program’s rank under the current filters. Same Region / Years / Journals / Areas as the table. Faculty ranking does not have a map. See [ranking.md](ranking.md).
+
 ## How often is data refreshed?
 
 When someone re-runs `python pipeline/run_all.py` and commits `web/data/rankings.json`. The Network tab also needs `python pipeline/build_coauthor_network.py` and a commit of `web/data/coauthor_network.json`.

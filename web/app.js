@@ -174,6 +174,8 @@
     yearTo: 2026,
     byAppointment: false,
     facultyView: false,
+    mapView: false,
+    locations: {},
   };
 
   const els = {
@@ -217,6 +219,14 @@
     auxHead: document.getElementById("auxHead"),
     expandAll: document.getElementById("expandAll"),
     collapseAll: document.getElementById("collapseAll"),
+    viewSwitch: document.getElementById("viewSwitch"),
+    listViewBtn: document.getElementById("listViewBtn"),
+    mapViewBtn: document.getElementById("mapViewBtn"),
+    tableWrap: document.getElementById("tableWrap"),
+    mapWrap: document.getElementById("mapWrap"),
+    rankMap: document.getElementById("rankMap"),
+    mapEmpty: document.getElementById("mapEmpty"),
+    mapLegend: document.getElementById("mapLegend"),
     tbody: document.querySelector("#rankTable tbody"),
     metricHead: document.getElementById("metricHead"),
     empty: document.getElementById("empty"),
@@ -385,12 +395,14 @@
       q: params.get("q") || "",
       appt: params.get("appt") === "1",
       faculty: params.get("fac") === "1",
+      map: params.get("map") === "1",
       areas,
       venues,
     };
   }
 
   function writeHash() {
+    if (document.body.classList.contains("is-network")) return;
     const params = new URLSearchParams();
     params.set("countries", els.countries.value);
     params.set("from", String(state.yearFrom));
@@ -401,6 +413,7 @@
     if (q) params.set("q", q);
     if (state.facultyView) params.set("fac", "1");
     else if (state.byAppointment) params.set("appt", "1");
+    if (state.mapView && !state.facultyView) params.set("map", "1");
 
     const all = allAreaNames();
     if (state.selectedAreas.size === 0) params.set("areas", "");
@@ -897,6 +910,212 @@
     fillMetricSelect();
   }
 
+  let rankMap = null;
+  let rankMarkers = null;
+
+  function coordsFor(inst) {
+    const loc = state.locations[inst.institution_id] || {};
+    const lat = Number(loc.lat ?? inst.lat);
+    const lng = Number(loc.lng ?? inst.lng);
+    if (!Number.isFinite(lat) || !Number.isFinite(lng)) return null;
+    return { lat, lng };
+  }
+
+  function syncMapToggle() {
+    const on = Boolean(state.mapView) && !state.facultyView;
+    state.mapView = on;
+    document.body.classList.toggle("is-map-view", on);
+    if (els.listViewBtn) {
+      els.listViewBtn.classList.toggle("is-on", !on);
+      els.listViewBtn.setAttribute("aria-pressed", on ? "false" : "true");
+    }
+    if (els.mapViewBtn) {
+      els.mapViewBtn.classList.toggle("is-on", on);
+      els.mapViewBtn.setAttribute("aria-pressed", on ? "true" : "false");
+    }
+    if (els.viewSwitch) els.viewSwitch.hidden = Boolean(state.facultyView);
+    if (els.tableWrap) {
+      els.tableWrap.hidden = on;
+      els.tableWrap.classList.toggle("hidden", on);
+    }
+    if (els.mapWrap) {
+      els.mapWrap.hidden = !on;
+      els.mapWrap.classList.toggle("hidden", !on);
+    }
+  }
+
+  function pinColor(rank) {
+    if (rank <= 10) return "#1a75bb";
+    if (rank <= 25) return "#3d8fc4";
+    return "#7eabce";
+  }
+
+  function pinSize(score, maxScore) {
+    const t = maxScore > 0 ? Math.sqrt(Math.max(0, score) / maxScore) : 0;
+    return Math.round(22 + t * 18);
+  }
+
+  function ensureRankMap() {
+    if (rankMap || !els.rankMap || typeof L === "undefined") return rankMap;
+    rankMap = L.map(els.rankMap, {
+      scrollWheelZoom: true,
+      worldCopyJump: true,
+    });
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+      subdomains: "abcd",
+      maxZoom: 18,
+    }).addTo(rankMap);
+    rankMarkers = L.layerGroup().addTo(rankMap);
+    return rankMap;
+  }
+
+  function openProgramInList(institutionId) {
+    state.mapView = false;
+    state.facultyView = false;
+    state.expanded.add(institutionId);
+    syncFacToggle();
+    render();
+    requestAnimationFrame(() => {
+      const row = els.tbody.querySelector(
+        `tr[data-iid="${CSS.escape(institutionId)}"]`
+      );
+      if (!row) return;
+      row.scrollIntoView({ block: "center", behavior: "smooth" });
+      row.classList.add("map-flash");
+      row.addEventListener(
+        "animationend",
+        () => row.classList.remove("map-flash"),
+        { once: true }
+      );
+    });
+  }
+
+  function renderMap(rows) {
+    syncMapToggle();
+    if (!els.mapWrap) return;
+    if (typeof L === "undefined") {
+      if (els.mapEmpty) {
+        els.mapEmpty.textContent = "Map library failed to load.";
+        els.mapEmpty.classList.remove("hidden");
+      }
+      return;
+    }
+    const map = ensureRankMap();
+    if (!map || !rankMarkers) return;
+    rankMarkers.clearLayers();
+
+    const placed = [];
+    const maxScore = Math.max(0, ...rows.map((r) => Number(r._score) || 0));
+    for (const inst of rows) {
+      const xy = coordsFor(inst);
+      if (!xy) continue;
+      const size = pinSize(inst._score, maxScore);
+      const color = pinColor(inst._rank);
+      const icon = L.divIcon({
+        className: "map-pin-wrap",
+        html: `<div class="map-pin" style="--pin-bg:${color};width:${size}px;height:${size}px;font-size:${Math.max(
+          10,
+          Math.round(size * 0.38)
+        )}px">${inst._rank}</div>`,
+        iconSize: [size, size],
+        iconAnchor: [size / 2, size / 2],
+        popupAnchor: [0, -size / 2],
+      });
+      const loc = state.locations[inst.institution_id] || {};
+      const city = [inst.city, inst.country].filter(Boolean).join(", ");
+      const addr = loc.address || inst.address || "";
+      const home = inst.program_url || inst.homepage;
+      const homeLink = home
+        ? `<a href="${escapeAttr(home)}" target="_blank" rel="noopener">Program site</a>`
+        : "";
+      const photo = loc.image
+        ? `<div class="map-pop-photo"><img src="${escapeAttr(loc.image)}" alt="${escapeAttr(
+            inst.name
+          )} campus" loading="lazy" decoding="async"></div>`
+        : "";
+      const credit = loc.image_page
+        ? `<div class="map-pop-credit"><a href="${escapeAttr(
+            loc.image_page
+          )}" target="_blank" rel="noopener">Photo: Wikimedia Commons</a></div>`
+        : "";
+      const html = `
+        <div class="map-pop">
+          ${photo}
+          <div class="map-pop-body">
+          <div class="map-pop-rank">#${inst._rank}</div>
+          <div class="map-pop-name">${escapeHtml(inst.name)}</div>
+          <div class="map-pop-meta">${escapeHtml(addr || city)}</div>
+          <div class="map-pop-score">${escapeHtml(metricLabel(state.metric))}: ${formatScore(
+            inst._score,
+            state.metric
+          )} · ${inst.faculty_count} faculty</div>
+          <div class="map-pop-links">
+            ${homeLink}
+            <button type="button" data-open-list="${escapeAttr(inst.institution_id)}">Open in list</button>
+          </div>
+          ${credit}
+          </div>
+        </div>`;
+      const marker = L.marker([xy.lat, xy.lng], {
+        icon,
+        title: `${inst._rank}. ${inst.name}`,
+        zIndexOffset: 10000 - inst._rank,
+      }).bindPopup(html, { maxWidth: 320, minWidth: 260, className: "map-pop-wrap" });
+      marker.on("popupopen", (ev) => {
+        const root = ev.popup.getElement();
+        const btn = root?.querySelector("[data-open-list]");
+        btn?.addEventListener(
+          "click",
+          () => openProgramInList(inst.institution_id),
+          { once: true }
+        );
+        const img = root?.querySelector(".map-pop-photo img");
+        if (!img) return;
+        const sync = () => ev.popup.update();
+        if (img.complete && img.naturalWidth) sync();
+        img.addEventListener("load", sync, { once: true });
+        img.addEventListener(
+          "error",
+          () => {
+            img.closest(".map-pop-photo")?.remove();
+            root?.querySelector(".map-pop-credit")?.remove();
+            sync();
+          },
+          { once: true }
+        );
+      });
+      rankMarkers.addLayer(marker);
+      placed.push([xy.lat, xy.lng]);
+    }
+
+    if (els.mapEmpty) {
+      if (!rows.length) {
+        const q = (els.schoolSearch?.value || "").trim();
+        els.mapEmpty.textContent = q
+          ? `No schools match “${q}”.`
+          : "No institutions match the current filters.";
+        els.mapEmpty.classList.remove("hidden");
+      } else if (!placed.length) {
+        els.mapEmpty.textContent = "No campus coordinates for the current programs.";
+        els.mapEmpty.classList.remove("hidden");
+      } else {
+        els.mapEmpty.classList.add("hidden");
+      }
+    }
+
+    requestAnimationFrame(() => {
+      map.invalidateSize();
+      if (placed.length === 1) map.setView(placed[0], 8);
+      else if (placed.length > 1) {
+        map.fitBounds(placed, { padding: [36, 36], maxZoom: 8 });
+      } else {
+        map.setView([43.5, -95], 4);
+      }
+    });
+  }
+
   function facultyRankingRows(view) {
     const whitelist = new Set(allVenueIds());
     const instById = instMetaMap(view);
@@ -1227,6 +1446,11 @@
       body: "Click a school to expand faculty. Click a name to see counted papers. Gray names mean no Google Scholar ID was found.",
       selector: '[data-tour="table"]',
       place: "left",
+    },
+    {
+      title: "Map of programs",
+      body: "Switch to Map to place each program on a North America map. Pin size follows the current metric; the number is rank. Filters still apply. Click a pin, then Open in list, to expand that school in the table.",
+      selector: '[data-tour="map"]',
     },
     {
       title: "Count by faculty appointment",
@@ -1634,6 +1858,8 @@
     updateJournalsBtn();
     syncApptToggle();
     syncFacToggle();
+    if (state.facultyView) state.mapView = false;
+    syncMapToggle();
 
     const baseView = state.data.views[viewKey()];
     if (!baseView) {
@@ -1667,6 +1893,11 @@
       .map((inst, idx) => ({ ...inst, _rank: idx + 1 }))
       .filter((inst) => !q || String(inst.name || "").toLowerCase().includes(q));
 
+    if (state.mapView) {
+      renderMap(rows);
+      return;
+    }
+
     els.tbody.innerHTML = "";
     if (!rows.length) {
       els.empty.textContent = q
@@ -1682,6 +1913,7 @@
     rows.forEach((inst) => {
       const tr = document.createElement("tr");
       tr.className = "inst-row";
+      tr.dataset.iid = inst.institution_id;
       const expanded = state.expanded.has(inst.institution_id);
       tr.setAttribute("aria-expanded", expanded ? "true" : "false");
       const home = inst.program_url || inst.homepage;
@@ -1845,6 +2077,7 @@
     if (els.schoolSearch) els.schoolSearch.value = h.q || "";
     state.facultyView = Boolean(h.faculty);
     state.byAppointment = state.facultyView ? false : Boolean(h.appt);
+    state.mapView = Boolean(h.map) && !state.facultyView;
     state.metric = h.metric || "adj_count";
     syncApptToggle();
     syncFacToggle();
@@ -1940,6 +2173,12 @@
       return;
     }
     state.data = await res.json();
+    try {
+      const locRes = await fetch("data/program_locations.json");
+      state.locations = locRes.ok ? await locRes.json() : {};
+    } catch (err) {
+      state.locations = {};
+    }
     if (els.dataStamp && state.data.generated_at) {
       const d = new Date(state.data.generated_at);
       if (!Number.isNaN(d.getTime())) {
@@ -2018,12 +2257,36 @@
       els.facToggle.addEventListener("click", () => {
         const next = !state.facultyView;
         state.facultyView = next;
-        if (next) state.byAppointment = false;
+        if (next) {
+          state.byAppointment = false;
+          state.mapView = false;
+        }
         syncApptToggle();
         syncFacToggle();
         render();
       });
     }
+    if (els.listViewBtn) {
+      els.listViewBtn.addEventListener("click", () => {
+        if (!state.mapView) return;
+        state.mapView = false;
+        render();
+      });
+    }
+    if (els.mapViewBtn) {
+      els.mapViewBtn.addEventListener("click", () => {
+        if (state.mapView) return;
+        state.mapView = true;
+        state.facultyView = false;
+        syncFacToggle();
+        render();
+      });
+    }
+    window.addEventListener("site-view", (ev) => {
+      if (ev.detail === "rankings" && state.mapView) {
+        requestAnimationFrame(() => rankMap?.invalidateSize());
+      }
+    });
     els.expandAll.addEventListener("click", () => {
       const view = state.data.views[viewKey()];
       if (!view) return;

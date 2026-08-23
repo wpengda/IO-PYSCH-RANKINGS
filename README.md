@@ -16,6 +16,7 @@ Build each program’s faculty roster from the official I-O page first. Then att
 - **Faculty ranking** toggle: sort every person by their full counted paper list (cannot be on together with by faculty appointment)
 - Area filter (Selection, Leadership, Stress / Well-being, Methods, …)
 - Expand an institution to inspect faculty and counted papers
+- **Map** layout on Rankings: programs as ranked pins on a North America map (same filters as the table)
 - Shareable URL hash for the current view
 - Header links: How we rank, How we network, FAQ, and a [feedback form](https://docs.google.com/forms/d/e/1FAIpQLSco-_VbMsAgw0Qgz3H2d4-yFXM68cbcLk00zZdiM1RIEtegEQ/viewform)
 

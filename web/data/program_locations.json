@@ -1,0 +1,436 @@
+{
+  "umn": {
+    "lat": 44.974,
+    "lng": -93.2277,
+    "address": "75 East River Parkway, Minneapolis, MN 55455",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/University_of_Minnesota.jpg/960px-University_of_Minnesota.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:University_of_Minnesota.jpg"
+  },
+  "msu": {
+    "lat": 42.7018,
+    "lng": -84.4822,
+    "address": "316 Physics Road, East Lansing, MI 48824",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Michigan_State_University_Olds_Hall_Entrance_2016-1465.jpg/960px-Michigan_State_University_Olds_Hall_Entrance_2016-1465.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Michigan_State_University_Olds_Hall_Entrance_2016-1465.jpg"
+  },
+  "uiuc": {
+    "lat": 40.102,
+    "lng": -88.2272,
+    "address": "603 East Daniel Street, Champaign, IL 61820",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/UIUC_Main_Quad.jpg/960px-UIUC_Main_Quad.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:UIUC_Main_Quad.jpg"
+  },
+  "bgsu": {
+    "lat": 41.3765,
+    "lng": -83.6305,
+    "address": "1001 East Wooster Street, Bowling Green, OH 43403",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Mosley_Hall_in_the_Fall.jpg/960px-Mosley_Hall_in_the_Fall.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Mosley_Hall_in_the_Fall.jpg"
+  },
+  "uakron": {
+    "lat": 41.0755,
+    "lng": -81.5115,
+    "address": "290 East Buchtel Avenue, Akron, OH 44325",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/University_of_Akron_Arts_and_Sciences.JPG/960px-University_of_Akron_Arts_and_Sciences.JPG",
+    "image_page": "https://commons.wikimedia.org/wiki/File:University_of_Akron_Arts_and_Sciences.JPG"
+  },
+  "psu": {
+    "lat": 40.7982,
+    "lng": -77.8599,
+    "address": "140 Moore Building, University Park, PA 16802",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Pattee_Mall_PSU.jpg/960px-Pattee_Mall_PSU.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Pattee_Mall_PSU.jpg"
+  },
+  "rice": {
+    "lat": 29.7174,
+    "lng": -95.4018,
+    "address": "6100 Main Street, Houston, TX 77005",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/Lovett_Hall.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Lovett_Hall.jpg"
+  },
+  "gmu": {
+    "lat": 38.8308,
+    "lng": -77.3075,
+    "address": "4400 University Drive, Fairfax, VA 22030",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/GMU_Fairfax_Campus.JPG/960px-GMU_Fairfax_Campus.JPG",
+    "image_page": "https://commons.wikimedia.org/wiki/File:GMU_Fairfax_Campus.JPG"
+  },
+  "uga": {
+    "lat": 33.948,
+    "lng": -83.3773,
+    "address": "125 Baldwin Street, Athens, GA 30602",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/UGA_Main_Library.jpg/960px-UGA_Main_Library.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:UGA_Main_Library.jpg"
+  },
+  "tamu": {
+    "lat": 30.6187,
+    "lng": -96.3365,
+    "address": "4235 TAMU, College Station, TX 77843",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/TAMUcampus.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:TAMUcampus.jpg"
+  },
+  "usf": {
+    "lat": 28.0587,
+    "lng": -82.4139,
+    "address": "4202 East Fowler Avenue, Tampa, FL 33620",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/USF_Library.jpg/960px-USF_Library.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:USF_Library.jpg"
+  },
+  "purdue": {
+    "lat": 40.4237,
+    "lng": -86.9212,
+    "address": "703 Third Street, West Lafayette, IN 47907",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Purdue_University%2C_West_Lafayette%2C_Indiana%2C_Estados_Unidos%2C_2012-10-15%2C_DD_08.jpg/960px-Purdue_University%2C_West_Lafayette%2C_Indiana%2C_Estados_Unidos%2C_2012-10-15%2C_DD_08.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Purdue_University,_West_Lafayette,_Indiana,_Estados_Unidos,_2012-10-15,_DD_08.jpg"
+  },
+  "uh": {
+    "lat": 29.7199,
+    "lng": -95.3422,
+    "address": "3695 Cullen Boulevard, Houston, TX 77204",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Roy_Gustav_Cullen_Building.JPG/960px-Roy_Gustav_Cullen_Building.JPG",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Roy_Gustav_Cullen_Building.JPG"
+  },
+  "pdx": {
+    "lat": 45.5123,
+    "lng": -122.6834,
+    "address": "1825 SW Broadway, Portland, OR 97201",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Shattuck_Hall-2.jpg/960px-Shattuck_Hall-2.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Shattuck_Hall-2.jpg"
+  },
+  "csu": {
+    "lat": 40.5734,
+    "lng": -105.0865,
+    "address": "1876 Campus Delivery, Fort Collins, CO 80523",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/CSU_The_Oval4.jpg/960px-CSU_The_Oval4.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:CSU_The_Oval4.jpg"
+  },
+  "uncc": {
+    "lat": 35.3071,
+    "lng": -80.7352,
+    "address": "9201 University City Boulevard, Charlotte, NC 28223",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1c/UNCCNewQuad.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:UNCCNewQuad.jpg"
+  },
+  "ncsu": {
+    "lat": 35.7847,
+    "lng": -78.6821,
+    "address": "2310 Stinson Drive, Raleigh, NC 27695",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/College_of_Humanities_and_Social_Science.JPG/960px-College_of_Humanities_and_Social_Science.JPG",
+    "image_page": "https://commons.wikimedia.org/wiki/File:College_of_Humanities_and_Social_Science.JPG"
+  },
+  "gatech": {
+    "lat": 33.7756,
+    "lng": -84.3963,
+    "address": "654 Cherry Street NW, Atlanta, GA 30332",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Tech_Tower-6.jpg/960px-Tech_Tower-6.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Tech_Tower-6.jpg"
+  },
+  "umd": {
+    "lat": 38.9869,
+    "lng": -76.9426,
+    "address": "4094 Campus Drive, College Park, MD 20742",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/McKeldin_Mall_sunset_University_Maryland_College_Park.jpg/960px-McKeldin_Mall_sunset_University_Maryland_College_Park.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:McKeldin_Mall_sunset_University_Maryland_College_Park.jpg"
+  },
+  "baruch": {
+    "lat": 40.7403,
+    "lng": -73.9834,
+    "address": "55 Lexington Avenue, New York, NY 10010",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Baruch_College_-_Newman_Vertical_Campus_%2851709671813%29.jpg/960px-Baruch_College_-_Newman_Vertical_Campus_%2851709671813%29.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Baruch_College_-_Newman_Vertical_Campus_(51709671813).jpg"
+  },
+  "clemson": {
+    "lat": 34.6834,
+    "lng": -82.8374,
+    "address": "418 Brackett Hall, Clemson, SC 29634",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/CU_Sikes_Hall_Aug2010_01.jpg/960px-CU_Sikes_Hall_Aug2010_01.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:CU_Sikes_Hall_Aug2010_01.jpg"
+  },
+  "wright": {
+    "lat": 39.7803,
+    "lng": -84.0646,
+    "address": "3640 Colonel Glenn Highway, Dayton, OH 45435",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/95/ShimadaK2008-Wright_State_Univ_main_Fawcett_Hall-PICT2829.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:ShimadaK2008-Wright_State_Univ_main_Fawcett_Hall-PICT2829.jpg"
+  },
+  "cmich": {
+    "lat": 43.5906,
+    "lng": -84.775,
+    "address": "1200 South Franklin Street, Mount Pleasant, MI 48859",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/CMU_Park_Library.JPG/960px-CMU_Park_Library.JPG",
+    "image_page": "https://commons.wikimedia.org/wiki/File:CMU_Park_Library.JPG"
+  },
+  "wayne": {
+    "lat": 42.357,
+    "lng": -83.066,
+    "address": "5057 Woodward Avenue, Detroit, MI 48202",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Detroit_December_2021_02_%28Wayne_State_University_Old_Main%29.jpg/960px-Detroit_December_2021_02_%28Wayne_State_University_Old_Main%29.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Detroit_December_2021_02_(Wayne_State_University_Old_Main).jpg"
+  },
+  "fit": {
+    "lat": 28.0657,
+    "lng": -80.6232,
+    "address": "150 West University Boulevard, Melbourne, FL 32901",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/FlTechSUB.jpg/960px-FlTechSUB.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:FlTechSUB.jpg"
+  },
+  "ucf": {
+    "lat": 28.6024,
+    "lng": -81.2001,
+    "address": "4000 Central Florida Boulevard, Orlando, FL 32816",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/75/UCFlibrary.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:UCFlibrary.jpg"
+  },
+  "odu": {
+    "lat": 36.8865,
+    "lng": -76.3052,
+    "address": "5115 Hampton Boulevard, Norfolk, VA 23529",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Rollins_Hall.JPG/960px-Rollins_Hall.JPG",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Rollins_Hall.JPG"
+  },
+  "niu": {
+    "lat": 41.9338,
+    "lng": -88.7664,
+    "address": "1425 West Lincoln Highway, DeKalb, IL 60115",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Northern_Illinois_University%2C_College_of_Law%2C_Swen_Parson_Hall.jpg/960px-Northern_Illinois_University%2C_College_of_Law%2C_Swen_Parson_Hall.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Northern_Illinois_University,_College_of_Law,_Swen_Parson_Hall.jpg"
+  },
+  "ou": {
+    "lat": 35.2058,
+    "lng": -97.4457,
+    "address": "455 West Lindsey Street, Norman, OK 73019",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/University_of_Oklahoma_July_2019_69_%28Bizzell_Memorial_Library%29.jpg/960px-University_of_Oklahoma_July_2019_69_%28Bizzell_Memorial_Library%29.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:University_of_Oklahoma_July_2019_69_(Bizzell_Memorial_Library).jpg"
+  },
+  "iit": {
+    "lat": 41.835,
+    "lng": -87.6275,
+    "address": "10 West 35th Street, Chicago, IL 60616",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Crown_Hall_1.jpg/960px-Crown_Hall_1.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Crown_Hall_1.jpg"
+  },
+  "depaul": {
+    "lat": 41.9224,
+    "lng": -87.6546,
+    "address": "2219 North Kenmore Avenue, Chicago, IL 60614",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e3/RichardsonLibraryDePaul.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:RichardsonLibraryDePaul.jpg"
+  },
+  "ualbany": {
+    "lat": 42.686,
+    "lng": -73.824,
+    "address": "1400 Washington Avenue, Albany, NY 12222",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/UAlbany_Podium.jpg/960px-UAlbany_Podium.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:UAlbany_Podium.jpg"
+  },
+  "unomaha": {
+    "lat": 41.2584,
+    "lng": -96.0106,
+    "address": "6001 Dodge Street, Omaha, NE 68182",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/University_of_Nebraska-Omaha_campus-2.JPG/960px-University_of_Nebraska-Omaha_campus-2.JPG",
+    "image_page": "https://commons.wikimedia.org/wiki/File:University_of_Nebraska-Omaha_campus-2.JPG"
+  },
+  "utulsa": {
+    "lat": 36.152,
+    "lng": -95.946,
+    "address": "800 South Tucker Drive, Tulsa, OK 74104",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/McFarlin_Library_front_University_of_Tulsa_OK_2026-05-23_19-43-21_%28cropped%29.jpg/960px-McFarlin_Library_front_University_of_Tulsa_OK_2026-05-23_19-43-21_%28cropped%29.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:McFarlin_Library_front_University_of_Tulsa_OK_2026-05-23_19-43-21_(cropped).jpg"
+  },
+  "ohio": {
+    "lat": 39.324,
+    "lng": -82.1014,
+    "address": "200 Porter Hall, Athens, OH 45701",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Front_of_Cutler_Hall_at_Ohio_University.jpg/960px-Front_of_Cutler_Hall_at_Ohio_University.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Front_of_Cutler_Hall_at_Ohio_University.jpg"
+  },
+  "latech": {
+    "lat": 32.5281,
+    "lng": -92.6499,
+    "address": "305 Wisteria Street, Ruston, LA 71272",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Revised_Wyly_Tower_of_Learning_in_Ruston%2C_LA_IMG_5673.JPG/960px-Revised_Wyly_Tower_of_Learning_in_Ruston%2C_LA_IMG_5673.JPG",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Revised_Wyly_Tower_of_Learning_in_Ruston,_LA_IMG_5673.JPG"
+  },
+  "fiu": {
+    "lat": 25.7541,
+    "lng": -80.3734,
+    "address": "11200 SW 8th Street, Miami, FL 33199",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/FIU_plaza.JPG/960px-FIU_plaza.JPG",
+    "image_page": "https://commons.wikimedia.org/wiki/File:FIU_plaza.JPG"
+  },
+  "umsl": {
+    "lat": 38.7105,
+    "lng": -90.3113,
+    "address": "1 University Boulevard, St. Louis, MO 63121",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/UMSL_MSC.png",
+    "image_page": "https://commons.wikimedia.org/wiki/File:UMSL_MSC.png"
+  },
+  "auburn": {
+    "lat": 32.5934,
+    "lng": -85.4952,
+    "address": "226 Thach Hall, Auburn, AL 36849",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/AuburnUniversity-SamfordHall.jpg/960px-AuburnUniversity-SamfordHall.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:AuburnUniversity-SamfordHall.jpg"
+  },
+  "vt": {
+    "lat": 37.2284,
+    "lng": -80.4234,
+    "address": "109 Williams Hall, Blacksburg, VA 24061",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Virginia_Tech_Main_Eggleston_Hall.jpg/960px-Virginia_Tech_Main_Eggleston_Hall.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Virginia_Tech_Main_Eggleston_Hall.jpg"
+  },
+  "slu": {
+    "lat": 38.6368,
+    "lng": -90.2336,
+    "address": "1 North Grand Boulevard, St. Louis, MO 63103",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Slu_clock_tower.jpg/960px-Slu_clock_tower.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Slu_clock_tower.jpg"
+  },
+  "wmu": {
+    "lat": 42.2826,
+    "lng": -85.6142,
+    "address": "1903 West Michigan Avenue, Kalamazoo, MI 49008",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/WMUCampus2.jpg/960px-WMUCampus2.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:WMUCampus2.jpg"
+  },
+  "montclair": {
+    "lat": 40.8616,
+    "lng": -74.1981,
+    "address": "1 Normal Avenue, Montclair, NJ 07043",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/MSU_Dickson_%26_University_Hall.jpg/960px-MSU_Dickson_%26_University_Hall.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:MSU_Dickson_%26_University_Hall.jpg"
+  },
+  "hofstra": {
+    "lat": 40.7168,
+    "lng": -73.5996,
+    "address": "1000 Fulton Avenue, Hempstead, NY 11549",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Hofstra_Hall_2021.jpg/960px-Hofstra_Hall_2021.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Hofstra_Hall_2021.jpg"
+  },
+  "spu": {
+    "lat": 47.65,
+    "lng": -122.3615,
+    "address": "3307 3rd Avenue West, Seattle, WA 98119",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Seattle_Pacific_University_Alexander_Hall_04.jpg/960px-Seattle_Pacific_University_Alexander_Hall_04.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Seattle_Pacific_University_Alexander_Hall_04.jpg"
+  },
+  "tc": {
+    "lat": 40.8103,
+    "lng": -73.9607,
+    "address": "525 West 120th Street, New York, NY 10027",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Teachers_College_of_Columbia_University_-_panoramio.jpg/960px-Teachers_College_of_Columbia_University_-_panoramio.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Teachers_College_of_Columbia_University_-_panoramio.jpg"
+  },
+  "gwu": {
+    "lat": 38.8997,
+    "lng": -77.0486,
+    "address": "600 21st Street NW, Washington, DC 20052",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Professor%27s_Gate_-_GWU.JPG/960px-Professor%27s_Gate_-_GWU.JPG",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Professor%27s_Gate_-_GWU.JPG"
+  },
+  "uta": {
+    "lat": 32.7299,
+    "lng": -97.115,
+    "address": "501 South Nedderman Drive, Arlington, TX 76019",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/University_of_Texas_at_Arlington_March_2021_141_%28The_Commons%29.jpg/960px-University_of_Texas_at_Arlington_March_2021_141_%28The_Commons%29.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:University_of_Texas_at_Arlington_March_2021_141_(The_Commons).jpg"
+  },
+  "utsa": {
+    "lat": 29.5833,
+    "lng": -98.6194,
+    "address": "1 UTSA Circle, San Antonio, TX 78249",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/University_of_Texas_at_San_Antonio_commons.jpg/960px-University_of_Texas_at_San_Antonio_commons.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:University_of_Texas_at_San_Antonio_commons.jpg"
+  },
+  "siuc": {
+    "lat": 37.7136,
+    "lng": -89.2192,
+    "address": "1125 Lincoln Drive, Carbondale, IL 62901",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Southern_Illinois_University_Carbondale_Campus_Lake.jpg/960px-Southern_Illinois_University_Carbondale_Campus_Lake.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Southern_Illinois_University_Carbondale_Campus_Lake.jpg"
+  },
+  "ksu": {
+    "lat": 39.1974,
+    "lng": -96.5847,
+    "address": "492 Bluemont Hall, Manhattan, KS 66506",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/KSU_Anderson_Hall.jpg/960px-KSU_Anderson_Hall.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:KSU_Anderson_Hall.jpg"
+  },
+  "uconn": {
+    "lat": 41.8077,
+    "lng": -72.254,
+    "address": "406 Babbidge Road, Storrs, CT 06269",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Campus_view_-_University_of_Connecticut_-_DSC09948.JPG/960px-Campus_view_-_University_of_Connecticut_-_DSC09948.JPG",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Campus_view_-_University_of_Connecticut_-_DSC09948.JPG"
+  },
+  "lsu": {
+    "lat": 30.4133,
+    "lng": -91.18,
+    "address": "236 Audubon Hall, Baton Rouge, LA 70803",
+    "image": "https://upload.wikimedia.org/wikipedia/en/2/25/Lastatemiddleton.jpg",
+    "image_page": "https://en.wikipedia.org/wiki/File:Lastatemiddleton.jpg"
+  },
+  "wsu": {
+    "lat": 45.731,
+    "lng": -122.6339,
+    "address": "14204 NE Salmon Creek Avenue, Vancouver, WA 98686",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/WSU_Vancouver.jpg/960px-WSU_Vancouver.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:WSU_Vancouver.jpg"
+  },
+  "waterloo": {
+    "lat": 43.4723,
+    "lng": -80.5449,
+    "address": "200 University Avenue West, Waterloo, ON N2L 3G1",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Panorama_MC_green_small.jpg/960px-Panorama_MC_green_small.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Panorama_MC_green_small.jpg"
+  },
+  "calgary": {
+    "lat": 51.0775,
+    "lng": -114.1331,
+    "address": "2500 University Drive NW, Calgary, AB T2N 1N4",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/University_of_Calgary_entrance.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:University_of_Calgary_entrance.jpg"
+  },
+  "smu": {
+    "lat": 44.6318,
+    "lng": -63.5806,
+    "address": "923 Robie Street, Halifax, NS B3H 3C3",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Saint_Marys_HFX.jpg/960px-Saint_Marys_HFX.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Saint_Marys_HFX.jpg"
+  },
+  "guelph": {
+    "lat": 43.5327,
+    "lng": -80.2262,
+    "address": "50 Stone Road East, Guelph, ON N1G 2W1",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Johnston-Clock-Tower.jpg/960px-Johnston-Clock-Tower.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Johnston-Clock-Tower.jpg"
+  },
+  "western": {
+    "lat": 43.0096,
+    "lng": -81.2737,
+    "address": "1151 Richmond Street, London, ON N6A 3K7",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/University_College%2C_Western_University.jpg/960px-University_College%2C_Western_University.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:University_College,_Western_University.jpg"
+  },
+  "uqam": {
+    "lat": 45.5091,
+    "lng": -73.5694,
+    "address": "100 rue Sherbrooke Ouest, Montreal, QC H2X 3P2",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Pavillon_Judith-Jasmin_UQAM_11.JPG/960px-Pavillon_Judith-Jasmin_UQAM_11.JPG",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Pavillon_Judith-Jasmin_UQAM_11.JPG"
+  },
+  "umontreal": {
+    "lat": 45.5048,
+    "lng": -73.6132,
+    "address": "2900 boulevard Edouard-Montpetit, Montreal, QC H3T 1J4",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Universit%C3%A9_de_Montr%C3%A9al%2C_Pavillon_Roger-Gaudry.JPG/960px-Universit%C3%A9_de_Montr%C3%A9al%2C_Pavillon_Roger-Gaudry.JPG",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Universit%C3%A9_de_Montr%C3%A9al,_Pavillon_Roger-Gaudry.JPG"
+  },
+  "windsor": {
+    "lat": 42.3047,
+    "lng": -83.066,
+    "address": "401 Sunset Avenue, Windsor, ON N9B 3P4",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Dillon_Hall%2C_University_of_Windsor%2C_Windsor%2C_Ontario%2C_2026-04-26_08.jpg/960px-Dillon_Hall%2C_University_of_Windsor%2C_Windsor%2C_Ontario%2C_2026-04-26_08.jpg",
+    "image_page": "https://commons.wikimedia.org/wiki/File:Dillon_Hall,_University_of_Windsor,_Windsor,_Ontario,_2026-04-26_08.jpg"
+  }
+}

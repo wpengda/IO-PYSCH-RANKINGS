@@ -1094,6 +1094,211 @@ a.journals-btn {
   gap: 0.85rem;
   margin-bottom: 0.35rem;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.view-switch {
+  display: inline-flex;
+  margin-left: auto;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--panel);
+}
+
+.view-switch[hidden] {
+  display: none !important;
+}
+
+.view-switch-btn {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0.16rem 0.75rem;
+}
+
+.view-switch-btn:hover {
+  color: var(--ink);
+}
+
+.view-switch-btn.is-on {
+  background: var(--accent);
+  color: #fff;
+}
+
+body.is-faculty-view .view-switch,
+body.is-map-view .table-expand-tools,
+body.is-map-view .table-expand-tools {
+  display: none;
+}
+
+.map-wrap {
+  position: relative;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+  min-height: 70vh;
+}
+
+.map-wrap[hidden],
+.map-wrap.hidden {
+  display: none !important;
+}
+
+.rank-map {
+  height: min(70vh, 720px);
+  min-height: 420px;
+  width: 100%;
+  z-index: 0;
+}
+
+.rank-map.leaflet-container {
+  font-family: inherit;
+  background: #e8eef3;
+}
+
+.map-legend {
+  margin: 0;
+  padding: 0.45rem 0.7rem 0.55rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+}
+
+.map-pin-wrap {
+  background: none;
+  border: 0;
+}
+
+.map-pin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--pin-bg, var(--accent));
+  color: #fff;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.28);
+  border: 2px solid #fff;
+}
+
+.leaflet-popup.map-pop-wrap .leaflet-popup-content-wrapper {
+  padding: 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.leaflet-popup.map-pop-wrap .leaflet-popup-content {
+  margin: 0;
+  min-width: 260px;
+}
+
+.map-pop-photo {
+  height: 148px;
+  background: #d4dee8;
+  overflow: hidden;
+}
+
+.map-pop-photo img {
+  display: block;
+  width: 100%;
+  height: 148px;
+  object-fit: cover;
+}
+
+.map-pop-body {
+  padding: 10px 12px 11px;
+}
+
+.map-pop-rank {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.map-pop-name {
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0.1rem 0 0.15rem;
+}
+
+.map-pop-meta,
+.map-pop-score {
+  font-size: 0.84rem;
+  color: var(--muted);
+  margin: 0.08rem 0;
+}
+
+.map-pop-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 0.85rem;
+  margin-top: 0.45rem;
+}
+
+.map-pop-links a,
+.map-pop-links button {
+  appearance: none;
+  border: 0;
+  background: none;
+  padding: 0;
+  color: var(--accent);
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.map-pop-links a:hover,
+.map-pop-links button:hover {
+  text-decoration: underline;
+}
+
+.map-pop-credit {
+  margin-top: 0.4rem;
+  font-size: 0.68rem;
+  color: var(--muted);
+}
+
+.map-pop-credit a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.map-pop-credit a:hover {
+  text-decoration: underline;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  font-family: var(--font);
+}
+
+.leaflet-container a {
+  color: var(--accent);
+}
+
+tr.inst-row.map-flash {
+  animation: mapFlash 1.2s ease;
+}
+
+@keyframes mapFlash {
+  from {
+    background: #dbeafe;
+  }
+  to {
+    background: transparent;
+  }
 }
 
 .appt-toggle {
