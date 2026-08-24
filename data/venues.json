@@ -288,6 +288,29 @@
       "abdc": "A"
     },
     {
+      "id": "ohs",
+      "name": "Occupational Health Science",
+      "issn": [
+        "2367-0134",
+        "2367-0142"
+      ],
+      "weight": 1.1,
+      "cross_boundary": false,
+      "areas": [
+        "Stress / Well-being",
+        "Work–Family",
+        "Safety"
+      ],
+      "aliases": [
+        "Occup. Health Sci.",
+        "Occup Health Sci"
+      ],
+      "impact_factor": 2.4,
+      "discipline": "io",
+      "impact_factor_year": 2025,
+      "jcr_quartile": "Q2"
+    },
+    {
       "id": "hrm",
       "name": "Human Resource Management",
       "issn": [
