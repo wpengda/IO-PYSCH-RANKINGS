@@ -912,6 +912,9 @@
 
   let rankMap = null;
   let rankMarkers = null;
+  const photoReady = new Set();
+  let photoQueue = [];
+  let photoInflight = 0;
 
   function coordsFor(inst) {
     const loc = state.locations[inst.institution_id] || {};
@@ -919,6 +922,44 @@
     const lng = Number(loc.lng ?? inst.lng);
     if (!Number.isFinite(lat) || !Number.isFinite(lng)) return null;
     return { lat, lng };
+  }
+
+  function enqueueCampusPhotos() {
+    for (const loc of Object.values(state.locations || {})) {
+      const url = loc && loc.image;
+      if (!url || photoReady.has(url) || photoQueue.includes(url)) continue;
+      photoQueue.push(url);
+    }
+    pumpPhotoPrefetch(4);
+  }
+
+  function pumpPhotoPrefetch(limit) {
+    const max = Math.max(1, limit || 4);
+    while (photoInflight < max && photoQueue.length) {
+      const url = photoQueue.shift();
+      if (!url || photoReady.has(url)) continue;
+      photoInflight += 1;
+      const img = new Image();
+      img.decoding = "async";
+      img.fetchPriority = "low";
+      const done = () => {
+        photoReady.add(url);
+        photoInflight = Math.max(0, photoInflight - 1);
+        pumpPhotoPrefetch(max);
+      };
+      img.onload = done;
+      img.onerror = done;
+      img.src = url;
+    }
+  }
+
+  function schedulePhotoPrefetch() {
+    const run = () => enqueueCampusPhotos();
+    if (typeof requestIdleCallback === "function") {
+      requestIdleCallback(run, { timeout: 1200 });
+    } else {
+      setTimeout(run, 300);
+    }
   }
 
   function syncMapToggle() {
@@ -1004,6 +1045,7 @@
     }
     const map = ensureRankMap();
     if (!map || !rankMarkers) return;
+    pumpPhotoPrefetch(8);
     rankMarkers.clearLayers();
 
     const placed = [];
@@ -1033,7 +1075,7 @@
       const photo = loc.image
         ? `<div class="map-pop-photo"><img src="${escapeAttr(loc.image)}" alt="${escapeAttr(
             inst.name
-          )} campus" loading="lazy" decoding="async"></div>`
+          )} campus" loading="eager" fetchpriority="high" decoding="async"></div>`
         : "";
       const credit = loc.image_page
         ? `<div class="map-pop-credit"><a href="${escapeAttr(
@@ -2179,6 +2221,7 @@
     } catch (err) {
       state.locations = {};
     }
+    schedulePhotoPrefetch();
     if (els.dataStamp && state.data.generated_at) {
       const d = new Date(state.data.generated_at);
       if (!Number.isNaN(d.getTime())) {
