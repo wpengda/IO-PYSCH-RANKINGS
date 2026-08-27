@@ -30,7 +30,6 @@ BLOCKED_IDS = {
     "qRrkCbkAAAAJ",  # Andrew F. Hayes PROCESS profile, not Ho Kwan Cheung
     "Io3oUv4AAAAJ",  # Robert Henning, University of Chicago crystallography
     "kZeVQQ0AAAAJ",  # Xiaohong (Violet) Xu, not Stephanie Payne
-    "UlYZ-RQAAAAJ",  # Kibeom Lee HEXACO profile; Scholar/SerpAPI 404
     "0dpLJtwAAAAJ",  # Nicholas A. Smith lookup match; Scholar 404
     "prsyEcQAAAAJ",  # different Rebecca Grossman (Columbia/CUMC); Hofstra I-O is s4feQ-wAAAAJ
     "rmR5rTUAAAAJ",  # lookup hit for Betsy Albritton; Scholar 404 (Clemson page still links it)
