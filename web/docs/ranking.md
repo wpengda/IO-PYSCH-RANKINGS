@@ -96,7 +96,7 @@ Rules shared by both:
 - Middle authors (3rd of 4, etc.) do not add to these counts. They still count in raw / 1/N / citations / IF.
 - If the name cannot be matched (typos, unusual initials, truncated lists), the paper counts in raw / 1/N / citations / IF but **not** here.
 
-Position comes from Scholar’s author string, not the publisher XML. Scholar often abbreviates names (`PL Ackerman`) and sometimes truncates long lists, so “last” on a long author string may not be the true senior author. Matching uses the roster name against that string (same style of initial/last-name keys as the coauthor network).
+Position comes from Scholar’s author string, not the publisher XML. Scholar often abbreviates names (`PL Ackerman`) and sometimes truncates long lists, so “last” on a long author string may not be the true senior author. Matching uses the roster name against that string (full given name or 2+ initials; a single initial plus last name is accepted only when it cannot be a different given name).
 
 These views are for exploration (e.g. student-led vs. senior-authored work). They are **not** the default ranking.
 

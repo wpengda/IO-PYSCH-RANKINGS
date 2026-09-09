@@ -30,6 +30,39 @@ from config import (
 )
 
 SUFFIXES = {"jr", "sr", "ii", "iii", "iv", "phd", "ph.d"}
+# Given-name pairs that are not prefixes of each other (Tom/Thomas is).
+_NICKNAMES = {
+    frozenset(p)
+    for p in (
+        ("mike", "michael"),
+        ("bob", "robert"),
+        ("bill", "william"),
+        ("will", "william"),
+        ("jim", "james"),
+        ("joe", "joseph"),
+        ("liz", "elizabeth"),
+        ("beth", "elizabeth"),
+        ("kate", "katherine"),
+        ("kathy", "katherine"),
+        ("katie", "katherine"),
+        ("cathy", "catherine"),
+        ("chris", "christopher"),
+        ("tom", "thomas"),
+        ("steve", "stephen"),
+        ("cliff", "clifford"),
+        ("cliff", "clifton"),
+        ("mikki", "michelle"),
+        ("dia", "deepshikha"),
+        ("jenny", "jennifer"),
+        ("jen", "jennifer"),
+        ("rick", "richard"),
+        ("dick", "richard"),
+        ("ted", "theodore"),
+        ("tony", "anthony"),
+        ("matt", "matthew"),
+        ("nick", "nicholas"),
+    )
+}
 
 
 def norm_title(title: str) -> str:
@@ -62,6 +95,81 @@ def name_keys(name: str) -> set[str]:
     else:
         keys.add(last)
     return {k for k in keys if k}
+
+
+def _split_name(name: str) -> tuple[list[str], str]:
+    parts = tokens(name)
+    if not parts:
+        return [], ""
+    return parts[:-1], parts[-1]
+
+
+def _is_nickname(a: str, b: str) -> bool:
+    return a != b and frozenset({a, b}) in _NICKNAMES
+
+
+def _given_token_compatible(author: str, roster: str) -> bool:
+    if author == roster:
+        return True
+    if _is_nickname(author, roster):
+        return True
+    if len(author) == 1:
+        return roster.startswith(author)
+    if len(roster) == 1:
+        return author.startswith(roster)
+    # Alex / Alexander. Length-2 prefixes are too loose (Je / Julie, Ti / Tianjun).
+    if len(author) >= 3 and roster.startswith(author):
+        return True
+    if len(roster) >= 3 and author.startswith(roster):
+        return True
+    return False
+
+
+def _givens_compatible(author_given: list[str], roster_given: list[str]) -> bool:
+    if not author_given or not roster_given:
+        return True
+    n = min(len(author_given), len(roster_given))
+    if all(_given_token_compatible(author_given[i], roster_given[i]) for i in range(n)):
+        return True
+    # Parenthetical / extra given names: Daisy vs Chu-Hsiang (Daisy).
+    for a in author_given:
+        if len(a) == 1:
+            if any(r.startswith(a) for r in roster_given):
+                continue
+            return False
+        if not any(_given_token_compatible(a, r) for r in roster_given):
+            return False
+    return True
+
+
+def match_strength(author: str, roster_name: str) -> str | None:
+    """How specifically `author` can refer to `roster_name`.
+
+    ``strong`` — full given name, nickname, or 2+ initials (TD Allen, AM Ryan).
+    ``weak`` — last name plus a single initial (T Sun), or last name only.
+    ``None`` — different given name (Tianlu vs Tianjun) or clashing initials (JE vs JV).
+    """
+    ag, alast = _split_name(author)
+    rg, rlast = _split_name(roster_name)
+    if not alast or not rlast or alast != rlast:
+        return None
+    if not ag:
+        return "weak"
+    if not rg:
+        return "weak"
+    ri = "".join(g[0] for g in rg if g)
+    if len(ag) == 1 and 2 <= len(ag[0]) <= 4 and ag[0].isalpha():
+        blob = ag[0]
+        if ri.startswith(blob):
+            return "strong"
+        if any(_given_token_compatible(blob, r) for r in rg):
+            return "strong"
+        return None
+    if not _givens_compatible(ag, rg):
+        return None
+    if any(len(t) >= 2 for t in ag):
+        return "strong"
+    return "weak"
 
 
 def load_roster() -> pd.DataFrame:
@@ -141,19 +249,54 @@ def roster_index(faculty: pd.DataFrame) -> dict[str, list[str]]:
     return dict(by_key)
 
 
-def match_author(name: str, by_key: dict[str, list[str]], ego: str) -> str | None:
+def match_author(
+    name: str,
+    by_key: dict[str, list[str]],
+    ego: str,
+    roster_names: dict[str, str] | None = None,
+    *,
+    title_key: str = "",
+    titles_by_fid: dict[str, set[str]] | None = None,
+) -> str | None:
+    """Match a Scholar author string to a roster id (not the paper's ego).
+
+    Weak matches (T Sun) need the same normalized title on that person's
+    Scholar profile so an unlisted Tianlu Sun is not attached to Tianjun Sun.
+    Ambiguous initials (J Lee with two J. Lees on the roster) are left unmatched;
+    title overlap can still create the tie if both profiles list the paper.
+    """
     hits: list[str] = []
     for key in name_keys(name):
         for fid in by_key.get(key, []):
             if fid not in hits:
                 hits.append(fid)
-    if ego in hits and len(hits) == 1:
-        return ego
-    others = [h for h in hits if h != ego]
-    if len(others) == 1:
-        return others[0]
-    if len(hits) == 1:
-        return hits[0]
+    names = roster_names or {}
+    ranked: list[tuple[str, str]] = []
+    for fid in hits:
+        roster = names.get(fid) or ""
+        kind = match_strength(name, roster) if roster else "weak"
+        if kind:
+            ranked.append((fid, kind))
+    compatible = [fid for fid, _ in ranked]
+    strengths = {fid: kind for fid, kind in ranked}
+
+    def _accept(fid: str) -> str | None:
+        if fid == ego:
+            return None
+        if strengths.get(fid) == "weak" and titles_by_fid is not None:
+            if title_key not in (titles_by_fid.get(fid) or set()):
+                return None
+        return fid
+
+    if len(compatible) > 1:
+        strong_others = [
+            fid for fid in compatible if fid != ego and strengths[fid] == "strong"
+        ]
+        if len(strong_others) == 1:
+            return _accept(strong_others[0])
+        return None
+    if len(compatible) == 1:
+        return _accept(compatible[0])
     return None
 
 
@@ -203,9 +346,11 @@ def main() -> None:
     pubs = [apply_venue(p, venues) for p in pubs]
     faculty = load_roster()
     by_id = {str(r["faculty_id"]): r for _, r in faculty.iterrows()}
+    roster_names = {fid: str(row["name"] or "") for fid, row in by_id.items()}
     by_key = roster_index(faculty)
 
     title_faculty: dict[str, set[str]] = defaultdict(set)
+    titles_by_fid: dict[str, set[str]] = defaultdict(set)
     with_authors = 0
     for p in pubs:
         fid = str(p.get("faculty_id") or "")
@@ -214,6 +359,7 @@ def main() -> None:
         t = norm_title(p.get("title") or "")
         if t:
             title_faculty[t].add(fid)
+            titles_by_fid[fid].add(t)
         if p.get("authors"):
             with_authors += 1
 
@@ -242,7 +388,14 @@ def main() -> None:
             add_undirected(ego_edges, f"roster:{ego}", f"roster:{other}", tkey, year, venue_id, areas, title)
 
         for name in p.get("authors") or []:
-            matched = match_author(name, by_key, ego)
+            matched = match_author(
+                name,
+                by_key,
+                ego,
+                roster_names,
+                title_key=tkey,
+                titles_by_fid=titles_by_fid,
+            )
             if matched:
                 add_undirected(roster_edges, ego, matched, tkey, year, venue_id, areas, title)
                 add_undirected(ego_edges, f"roster:{ego}", f"roster:{matched}", tkey, year, venue_id, areas, title)

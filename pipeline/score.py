@@ -24,7 +24,7 @@ from config import (
     load_venues,
     venue_name_lookup,
 )
-from build_coauthor_network import name_keys
+from build_coauthor_network import match_strength
 
 
 WINDOWS = {
@@ -89,10 +89,7 @@ def faculty_area_label_map(pubs: list[dict], *, max_labels: int = 7) -> dict[str
 
 def ego_author_pos(authors: list | None, faculty_name: str) -> int | None:
     """0-based index of this faculty member in the Scholar author list, if matched."""
-    keys = name_keys(faculty_name)
-    if not keys:
-        return None
-    hits = [i for i, a in enumerate(authors or []) if name_keys(a) & keys]
+    hits = [i for i, a in enumerate(authors or []) if match_strength(a, faculty_name)]
     return hits[0] if hits else None
 
 

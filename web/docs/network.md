@@ -52,5 +52,6 @@ That writes `web/data/coauthor_network.json`. It is **not** part of `python pipe
 
 - Coverage follows Google Scholar (missing IDs, missing papers, messy titles and author strings).
 - Truncated Scholar author lists can miss a roster coauthor; title overlap on two profiles can still create the tie.
+- Scholar often shortens names (`T Sun`). A last name plus one initial is linked to a roster person only if that paper also appears on their Scholar profile. That stops an unlisted coauthor (Tianlu Sun) from attaching to the roster person with the same initial (Tianjun Sun). Two roster people who share a last name and first initial (`J Lee`) are not linked from that string alone.
 - Appointment years are shown on the person; a line is still shared whitelist papers, not “they overlapped at the same school.”
 - This is a map of collaboration in the whitelist, not a measure of friendship, mentoring quality, or program prestige.
