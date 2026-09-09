@@ -368,6 +368,10 @@
   function parseHash() {
     const raw = location.hash.replace(/^#/, "");
     const params = new URLSearchParams(raw);
+    const search = new URLSearchParams(location.search);
+    if (!params.has("fac") && search.get("fac") === "1") params.set("fac", "1");
+    if (!params.has("appt") && search.get("appt") === "1") params.set("appt", "1");
+    if (!params.has("map") && search.get("map") === "1") params.set("map", "1");
     const areasRaw = params.get("areas");
     let areas = null;
     if (areasRaw === "") areas = [];
@@ -411,8 +415,7 @@
     params.set("min", String(els.minFaculty.value || "1"));
     const q = (els.schoolSearch?.value || "").trim();
     if (q) params.set("q", q);
-    if (state.facultyView) params.set("fac", "1");
-    else if (state.byAppointment) params.set("appt", "1");
+    if (state.byAppointment && !state.facultyView) params.set("appt", "1");
     if (state.mapView && !state.facultyView) params.set("map", "1");
 
     const all = allAreaNames();
@@ -433,7 +436,14 @@
     else if (selectionMatches(aAndAstarVenueIds())) params.set("venues", "a");
     else params.set("venues", selected.join("|"));
 
-    history.replaceState(null, "", `#${params.toString()}`);
+    const next = new URL(location.href);
+    if (state.facultyView) next.searchParams.set("fac", "1");
+    else next.searchParams.delete("fac");
+    history.replaceState(
+      null,
+      "",
+      `${next.pathname}${next.search}#${params.toString()}`
+    );
   }
 
   function viewKey() {
@@ -892,7 +902,7 @@
     const on = Boolean(state.facultyView);
     document.body.classList.toggle("is-faculty-view", on);
     if (els.facToggle) {
-      els.facToggle.hidden = !on;
+      els.facToggle.hidden = true;
       els.facToggle.classList.toggle("is-on", on);
       els.facToggle.setAttribute("aria-pressed", on ? "true" : "false");
     }
