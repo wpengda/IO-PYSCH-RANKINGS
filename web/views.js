@@ -29,7 +29,12 @@
 
   function urlFor(view) {
     const path = `${location.pathname}${location.search}`;
-    return view === "network" ? `${path}#network` : path;
+    if (view === "network") return `${path}#network`;
+    const hash = location.hash;
+    if (hash && hash !== "#network" && hash !== "#rankings") {
+      return `${path}${hash}`;
+    }
+    return path;
   }
 
   let current = null;
