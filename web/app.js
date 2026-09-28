@@ -1013,11 +1013,14 @@
       worldCopyJump: true,
       attributionControl: false,
     });
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
-      attribution: "",
-      subdomains: "abcd",
-      maxZoom: 18,
-    }).addTo(rankMap);
+    L.tileLayer(
+      "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+      { attribution: "", maxZoom: 16 }
+    ).addTo(rankMap);
+    L.tileLayer(
+      "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}",
+      { attribution: "", maxZoom: 16 }
+    ).addTo(rankMap);
     rankMarkers = L.layerGroup().addTo(rankMap);
     return rankMap;
   }
